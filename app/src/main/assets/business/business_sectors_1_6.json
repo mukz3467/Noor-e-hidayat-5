@@ -1,0 +1,422 @@
+{
+  "sectors": [
+    {
+      "id": "sector_1_retail",
+      "sectorNumber": 1,
+      "name": {
+        "en": "1. Retail Store Business",
+        "ur": "1. ریٹیل اسٹور اور دکان داری",
+        "ar": "١. تجارة التجزئة والمحلات",
+        "hi": "1. खुदरा दुकान व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Retail is Halal by default, yet becomes Haram if stocking unlawful items, rigging scales, concealing defects, or taking interest loans.",
+        "ur": "دکان داری بنیادی طور پر حلال ہے، مگر ناجائز اشیاء بیچنے، کم تولنے، عیب چھپانے یا سودی قرض لینے سے حرام عناصر آ جاتے ہیں۔",
+        "ar": "تجارة التجزئة مباحة في الأصل وتُحكم بجواز السلع وصحة العقود وانتفاء الغش.",
+        "hi": "खुदरा व्यापार मूलतः हलाल है, पर अवैध वस्तुओं, कम तौल, धोखे या सूदी ऋण से अवैध तत्व आते हैं।"
+      },
+      "introductionA": {
+        "en": "Direct brick-and-mortar consumer retail selling finished everyday goods from shop shelves.",
+        "ur": "صارفین کو براہِ راست دکان سے روزمرہ اشیاء فروخت کرنے کا کاروبار۔",
+        "ar": "بيع السلع الاستهلاكية مباشرةً للمستهلك النهائي.",
+        "hi": "उपभोक्ताओं को दुकान से सीधे दैनिक वस्तुएं बेचने का व्यवसाय।"
+      },
+      "howItOperatesB": {
+        "en": "Purchases bulk stock from distributors, displays transparent shelf prices, settles cash/card, and honors defect returns.",
+        "ur": "ہول سیلرز سے مال خریدنا، واضح ریٹ لگانا، نقد/کارڈ وصولی اور عیب پر واپسی کا نظام۔",
+        "ar": "شراء البضائع جملةً، تسعيرها بوضوح، البيع النقدي، ومعالجة المرتجعات.",
+        "hi": "थोक विक्रेताओं से माल खरीदना, स्पष्ट मूल्य दिखाना और दोष होने पर वापसी स्वीकार करना।"
+      },
+      "startupRequirementsC": {
+        "en": "Local shop lease (Ijarah), municipal/tax registration, calibrated POS scales, and initial shelving inventory.",
+        "ur": "دکان کا شرعی اجارہ معاہدہ، بلدیاتی و ٹیکس رجسٹریشن، درست ترازو اور ابتدائی اسٹاک۔",
+        "ar": "عقد إيجار واضح، ترخيص تجاري، موازين معتمدة، ومخزون مبدئي.",
+        "hi": "दुकान पट्टा अनुबंध, स्थानीय पंजीकरण, सही तराजू और प्रारंभिक स्टॉक।"
+      },
+      "capitalAndInvestmentD": {
+        "en": "Personal savings, Qard Hasan, or Musharakah/Mudarabah partner equity—never interest overdraft lines.",
+        "ur": "ذاتی بچت، قرضِ حسن یا مشارکہ/مضاربت؛ سودی اوور ڈرافٹ سے مکمل پرہیز۔",
+        "ar": "تمويل ذاتي أو قرض حسن أو مشاركة بعيداً عن السحب الربوي.",
+        "hi": "स्वयं की बचत, क़र्ज़-ए-हसन या मुशारकाह—सूदी ओवरड्राफ्ट से बचें।"
+      },
+      "supplierSelectionE": {
+        "en": "Vet manufacturers for Halal certifications, authentic barcodes, and non-stolen origin.",
+        "ur": "سپلائرز سے حلال سرٹیفکیٹ، اصل کمپنی بل اور چوری/جعلی مال سے پاک ہونے کی تصدیق کریں۔",
+        "ar": "التحقق من مصادر الموردين وخلو البضاعة من المسروقات والمقلدات.",
+        "hi": "आपूर्तिकर्ताओं से हलाल प्रमाणन, असली बिल और वैध स्रोत की पुष्टि करें।"
+      },
+      "purchasingProcurementF": {
+        "en": "Execute Musawamah or Murabaha stock orders; verify expiry dates before accepting crates.",
+        "ur": "مساومہ یا مرابحہ سے خریداری کریں اور وصولی کے وقت ایکسپائری تاریخ چیک کریں۔",
+        "ar": "الشراء بالمساومة أو المرابحة وفحص التواريخ عند الاستلام.",
+        "hi": "मुसावमह या मुराबहा से खरीदें और प्राप्ति पर एक्सपायरी जांचें।"
+      },
+      "ownershipPossessionG": {
+        "en": "Store takes physical Qabd in storeroom before shelf display; consignment stock remains supplier-owned.",
+        "ur": "گودام میں قبضہ کر کے بیچیں؛ امانتاً رکھا کنسائنمنٹ مال سپلائر کی ملکیت رہتا ہے۔",
+        "ar": "قبض البضاعة قبل البيع، ومعاملة بضاعة الأمانة حسب شروطها.",
+        "hi": "बिक्री से पहले गोदाम में क़ब्ज़ लें; कंसाइनमेंट माल आपूर्तिकर्ता के स्वामित्व में रहता है।"
+      },
+      "productsServicesH": {
+        "en": "Strictly screen out tobacco/intoxicant gimmicks, gambling scratch cards, or counterfeit goods.",
+        "ur": "تمباکو/نشہ آور اشیاء، لاٹری ٹکٹ یا جعلی کاپی مصنوعات دکان میں نہ رکھیں۔",
+        "ar": "استبعاد المسكرات وبطاقات الحظ والسلع المقلدة.",
+        "hi": "नशीले पदार्थ, लॉटरी टिकट और नकली उत्पाद दुकान में न रखें।"
+      },
+      "pricingProfitI": {
+        "en": "Display clear per-unit prices; avoid false 'Was/Now' discounts and respect essential statutory MRPs.",
+        "ur": "واضح قیمت درج کریں؛ جھوٹی سیل قیمتوں اور سرکاری نرخ کی خلاف ورزی سے بچیں۔",
+        "ar": "تسعير واضح ومنع التخفيضات الوهمية واحترام الأسعار القانونية.",
+        "hi": "स्पष्ट मूल्य प्रदर्शित करें, नकली छूट और अवैध मूल्यवृद्धि से बचें।"
+      },
+      "customerRightsJ": {
+        "en": "Honor Khiyar al-'Ayb return/exchange for defective goods and speak truthfully without excessive oaths.",
+        "ur": "خراب مال کی واپسی یا تبدیلی (خیارِ عیب) کا حق دیں اور جھوٹی قسمیں نہ کھائیں۔",
+        "ar": "ضمان استبدال المعيب وتجنب الحلف الكاذب.",
+        "hi": "दोषपूर्ण वस्तु की वापसी स्वीकार करें और झूठी कसमें न खाएं।"
+      },
+      "employeeRightsK": {
+        "en": "Written wages paid on the 1st, safe break seating, and scheduled Salah intervals.",
+        "ur": "مقررہ تاریخ پر پوری تنخواہ، بیٹھنے کا انتظام اور نماز کا وقت دیں۔",
+        "ar": "الرواتب في موعدها وتوفير استراحة وأوقات الصلاة.",
+        "hi": "समय पर वेतन, विश्राम व्यवस्था और नमाज़ का समय सुनिश्चित करें।"
+      },
+      "relevantContractsL": {
+        "en": ["Musawamah", "Ijarah (Shop Lease)", "Murabaha", "Wakalah", "Qard Hasan"],
+        "ur": ["مساومہ", "اجارہ (دکان)", "مرابحہ", "وکالت", "قرضِ حسن"],
+        "ar": ["المساومة", "الإجارة", "المرابحة", "الوكالة", "القرض الحسن"],
+        "hi": ["मुसावमह", "इजाराह", "मुराबहा", "वकालह", "क़र्ज़-ए-हसन"]
+      },
+      "potentialProhibitedM": {
+        "en": ["Selling expired items quietly", "Short-weighing packaging as net weight", "Bank overdraft Riba"],
+        "ur": ["میعاد ختم مال بیچنا", "ڈبے سمیت وزن کرنا", "سودی بینک اوور ڈرافٹ"],
+        "ar": ["بيع المنتهي الصلاحية", "التطفيف في الوزن", "القرض الربوي"],
+        "hi": ["एक्सपायर्ड माल बेचना", "डिब्बे सहित तौलना", "सूदी ओवरड्राफ्ट"]
+      },
+      "halalChecklistN": {
+        "en": ["Verify all SKUs halal", "Calibrate scales weekly", "Clear defect return sign"],
+        "ur": ["تمام مصنوعات کی حلت چیک", "ترازو کی جانچ", "واپسی کی واضح پالیسی"],
+        "ar": ["فحص السلع", "معايرة الميزان", "سياسة استرجاع واضحة"],
+        "hi": ["उत्पाद हलाल जांच", "तराजू अंशांकन", "स्पष्ट वापसी नीति"]
+      },
+      "realisticCaseStudyO": {
+        "en": "Zayd opens a corner mart via $8k family Musharakah instead of an interest bank loan, removes tobacco & lottery scratchers, and gains loyal neighborhood trust.",
+        "ur": "زید نے سودی قرض کے بجائے خاندانی مشارکہ سے اسٹور کھولا، لاٹری و سگریٹ ہٹائے اور محلے کا مستقل اعتماد جیت لیا۔",
+        "ar": "افتتح زيد متجراً بمشاركة عائلية دون ربا واستبعد التبغ واليانصيب فكسب ثقة الحي.",
+        "hi": "ज़ैद ने सूदी ऋण के बजाय पारिवारिक मुशारकाह से दुकान खोली और लॉटरी व तंबाकू हटाकर भरोसेमंद ग्राहक बनाए।"
+      },
+      "commonMistakesP": {
+        "en": ["Using 'Goods sold will never be exchanged' signs to refuse legitimately defective items."],
+        "ur": ["عیب دار مال پر بھی 'بکا ہوا مال واپس نہیں ہوگا' لکھ کر ظلم کرنا۔"],
+        "ar": ["رفض رد السلعة المعيبة بدعوى البضاعة لا تُرد."],
+        "hi": ["दोषपूर्ण सामान पर भी 'बिका हुआ माल वापस नहीं होगा' कहकर मना करना।"]
+      },
+      "practicalAssignmentQ": {
+        "en": "Draft a clear 3-line Shop Return & Defect Transparency policy for your retail checkout counter.",
+        "ur": "دکان کے کاؤنٹر کے لیے عیب اور واپسی کی 3 سطری شفاف پالیسی تحریر کریں۔",
+        "ar": "صغ سياسة استرجاع واضحة من ٣ أسطر لمتجرك.",
+        "hi": "दुकान के काउंटर के लिए 3 पंक्तियों की स्पष्ट रिटर्न व दोष नीति लिखें।"
+      },
+      "referencesR": [
+        { "title": "Bukhari 2079 & Quran 83:1-3", "category": "direct_quran", "attribution": "Quran.com & Sunnah.com", "url": "https://quran.com/83/1-3" }
+      ],
+      "quranRefSpecs": [
+        {
+          "surahNumber": 83,
+          "startAyah": 1,
+          "endAyah": 3,
+          "contextNote": { "en": "Exact measure for all buyers.", "ur": "ہر گاہک کو پورا ناپ تول دینے کا حکم۔", "ar": "الوفاء بالكيل والميزان.", "hi": "पूरा नाप-तौल देने का आदेश।" },
+          "businessRelevance": { "en": "Honest POS scales & labeled pack sizes.", "ur": "صحیح ترازو اور پیکٹ کا درست وزن۔", "ar": "دقة الميزان والعبوات.", "hi": "सही तराजू व पैक वज़न।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_1",
+          "question": { "en": "Can a retail shop refuse to take back an item whose hidden factory defect existed before sale?", "ur": "کیا دکاندار پہلے سے موجود خفیہ عیب والی شے کی واپسی سے انکار کر سکتا ہے؟", "ar": "هل يحق للبائع رفض رد سلعة بها عيب خفي قديم؟", "hi": "क्या दुकानदार पहले से मौजूद छिपे दोष वाली वस्तु वापस लेने से मना कर सकता है?" },
+          "options": { "en": ["No; Khiyar al-'Ayb grants the buyer the right to return undisclosed defective goods", "Yes, always", "Only on weekends"], "ur": ["نہیں؛ خفیہ عیب چھپانے پر خریدار کو واپسی کا شرعی حق حاصل ہے", "ہاں ہمیشہ", "صرف اتوار کو"], "ar": ["لا؛ يثبت للمشتري خيار العيب ما لم يُبلَّغ مسبقاً", "نعم دائماً"], "hi": ["नहीं; छिपा दोष होने पर खरीदार को वापसी का पूरा अधिकार है", "हाँ, हमेशा"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Unless explicitly disclosed and accepted upfront, undisclosed defects give the buyer valid return rights.", "ur": "اگر عیب پہلے نہ بتایا گیا ہو تو خریدار کو واپسی کا پورا حق حاصل ہے۔", "ar": "ما لم يُعلَم بالعيب ويُرض به، يثبت حق الرد.", "hi": "पहले न बताए गए दोष पर ग्राहक को वापसी का अधिकार है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_2_wholesale",
+      "sectorNumber": 2,
+      "name": {
+        "en": "2. Wholesale Distribution Business",
+        "ur": "2. ہول سیل اور تھوک ڈسٹری بیوشن",
+        "ar": "٢. تجارة الجملة والتوزيع",
+        "hi": "2. थोक एवं वितरण व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Wholesale trade is Halal when inventory is genuinely possessed, credit terms exclude Riba penalties, and goods are never hoarded to starve markets.",
+        "ur": "تھوک کاروبار حلال ہے بشرطیکہ مال قبضے میں ہو، ادھار میں سودی جرمانہ نہ ہو اور ذخیرہ اندوزی نہ کی جائے۔",
+        "ar": "تجارة الجملة مشروعة عند تحقق القبض وخلو الآجل من فوائد التأخير ومنع الاحتكار.",
+        "hi": "थोक व्यापार हलाल है जब माल पर क़ब्ज़ हो, उधार में सूदी जुर्माना न हो और जमाखोरी न की जाए।"
+      },
+      "introductionA": { "en": "Bulk purchasing from manufacturers and supplying retail shops at volume margins.", "ur": "فیکٹریوں سے تھوک مال خرید کر پرچون دکانوں کو فراہم کرنا۔", "ar": "شراء السلع بكميات كبيرة وتوزيعها على متاجر التجزئة.", "hi": "निर्माताओं से थोक माल खरीदकर खुदरा विक्रेताओं को आपूर्ति करना।" },
+      "howItOperatesB": { "en": "Aggregates orders, manages warehouse pallets, extends written 15–30 day trade credit, and runs route fleets.", "ur": "آرڈرز جمع کرنا، گودام میں مال رکھنا، تحریری ادھار اور سپلائی روٹس چلانا۔", "ar": "إدارة المستودعات وتقديم ائتمان تجاري موثق وتنظيم خطوط التوزيع.", "hi": "गोदाम प्रबंधन, लिखित व्यापार ऋण और डिलीवरी रूट चलाना।" },
+      "startupRequirementsC": { "en": "Warehouse Ijarah, inventory software, GST/tax invoice books, and delivery vans.", "ur": "گودام کا اجارہ، اسٹاک رجسٹر، سیلز ٹیکس رسیدیں اور ڈلیوری گاڑیاں۔", "ar": "مستودع، نظام محاسبة، وفواتير نظامية، ومركبات نقل.", "hi": "गोदाम, इन्वेंटरी प्रणाली, वैध चालान और डिलीवरी वाहन।" },
+      "capitalAndInvestmentD": { "en": "Partner Musharakah equity, supplier Salam/Murabaha lines, or retained cash.", "ur": "شراکتِ مشارکہ، بینک مرابحہ یا ذاتی ورکنگ کیپیٹل۔", "ar": "مشاركة أو خطوط مرابحة للبضائع.", "hi": "मुशारकाह साझेदारी या इस्लामी मुराबहा स्टॉक लाइन।" },
+      "supplierSelectionE": { "en": "Direct manufacturer authorization preventing counterfeit batches and bribery kickbacks.", "ur": "اصل کمپنی سے ڈیلرشپ لیں؛ جعلی مال یا پرچیز کمیشن رشوت سے بچیں۔", "ar": "التعامل مع المصانع المعتمدة ومنع العمولات السرية.", "hi": "सीधे अधिकृत निर्माताओं से जुड़ें और रिश्वत से बचें।" },
+      "purchasingProcurementF": { "en": "Formal POs + warehouse GRN checks matching carton count and quality.", "ur": "باقاعدہ پرچیز آرڈر اور گودام میں مال گن کر وصولی کی رسید۔", "ar": "أوامر شراء موثقة وفحص الكميات عند الاستلام.", "hi": "औपचारिक PO और गोदाम में मात्रा व गुणवत्ता जांच।" },
+      "ownershipPossessionG": { "en": "Physical offloading into distributor warehouse establishes clear Qabd before B2B invoicing.", "ur": "گودام میں مال اترنے سے واضح قبضہ ثابت ہوتا ہے، تب آگے بل کٹے گا۔", "ar": "دخول البضاعة للمستودع يحقق القبض قبل الفوترة للتجار.", "hi": "गोदाम में माल उतरने पर वास्तविक क़ब्ज़ होता है, तभी बिल जारी करें।" },
+      "productsServicesH": { "en": "Screen SKUs strictly Halal; avoid distributing banned intoxicants or expired batches.", "ur": "حلال اشیاء تقسیم کریں؛ نشہ آور یا تاریخ گزیدہ بیچ ہرگز نہ چلائیں۔", "ar": "توزيع سلع مباحة صالحة وتجنب المنتهية.", "hi": "केवल वैध व ताज़ा माल वितरित करें।" },
+      "pricingProfitI": { "en": "Fixed spot vs fixed deferred Musawamah pricing agreed upfront (cannot escalate after sale due to delay).", "ur": "نقد اور ادھار قیمت شروع میں الگ متعین ہو سکتی ہے؛ مگر بیع کے بعد تاخیر پر اضافہ حرام ہے۔", "ar": "تثبيت الثمن الآجل عند التعاقد دون زيادة لاحقة عند التأخير.", "hi": "उधार कीमत सौदे के समय तय हो सकती है; देरी पर बढ़ाना हराम है।" },
+      "customerRightsJ": { "en": "Accurate carton counts, credit notes for damaged transit goods, and respite if a retailer faces calamity (2:280).", "ur": "پوری گنتی، ٹوٹ پھوٹ کا کریڈٹ نوٹ اور آفت زدہ دکاندار کو مہلت۔", "ar": "العد الصحيح، وتعويض التالف في النقل، وإمهال المتعثر.", "hi": "सही गिनती, क्षतिग्रस्त माल का क्रेडिट नोट और संकट में मोहलत।" },
+      "employeeRightsK": { "en": "Fair driver/loader wages paid on time; realistic delivery schedules avoiding unsafe exhaustion.", "ur": "ڈرائیورز اور لوڈرز کو وقت پر اجرت اور محفوظ اوقاتِ سفر۔", "ar": "أجور عادلة للسائقين والعمال وجداول نقل آمنة.", "hi": "ड्राइवरों व लोडरों को समय पर वेतन और सुरक्षित समय सारणी।" },
+      "relevantContractsL": { "en": ["Musawamah", "Murabaha", "Wakalah", "Hawalah", "Rahn", "Musharakah"], "ur": ["مساومہ", "مرابحہ", "وکالت", "حوالہ", "رہن", "مشارکہ"], "ar": ["المساومة", "المرابحة", "الوكالة", "الحوالة", "الرهن", "المشاركة"], "hi": ["मुसावमह", "मुराबहा", "वकालह", "हवालह", "रहन", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Hoarding essentials during price spikes (Ihtikar)", "Interest late charges on B2B ledgers", "Unapproved backroom samples substitution"], "ur": ["ضروری اشیاء ذخیرہ کر کے مہنگی بیچنا", "ادھار کھاتوں پر لیٹ انٹرسٹ", "معیار بدل دینا"], "ar": ["الاحتكار", "فوائد تأخير الفواتير", "تبديل العينات"], "hi": ["जमाखोरी", "बकाया खातों पर ब्याज", "नमूने से घटिया माल देना"] },
+      "halalChecklistN": { "en": ["Written 2:282 B2B credit ledgers", "Zero hoarding", "Fixed prices free of late interest"], "ur": ["تحریری ادھار کھاتہ", "ذخیرہ اندوزی سے پاک", "بغیر لیٹ سود متعین قیمت"], "ar": ["دفاتر دين مكتوبة", "منع الاحتكار", "ثبات الثمن"], "hi": ["लिखित उधार खाता", "शून्य जमाखोरी", "ब्याज-मुक्त निश्चित कीमत"] },
+      "realisticCaseStudyO": { "en": "A rice wholesaler refuses to lock warehouse stocks during a flood spike, rotates inventory at fair 6% margin, and schedules flexible interest-free recovery for flooded shops.", "ur": "چاول کے تھوک تاجر نے سیلاب میں گودام بند کر کے ذخیرہ اندوزی کرنے سے انکار کیا اور متاثرہ دکانداروں کو بلاسود مہلت دی۔", "ar": "تاجر أرز يرفض الاحتكار وقت الأزمة ويبيع بهامش معتدل ويمهل المتضررين دون فوائد.", "hi": "चावल थोक व्यापारी संकट में जमाखोरी ठुकराता है और प्रभावित दुकानदारों को बिना ब्याज मोहलत देता है।" },
+      "commonMistakesP": { "en": ["Threatening retailers with '2% monthly surcharge' after invoice due date."], "ur": ["انوائس تاخیر پر 'ماہانہ 2 فیصد اضافی چارج' عائد کرنا۔"], "ar": ["فرض زيادة ٢٪ شهرياً على الفواتير المتأخرة."], "hi": ["बकाया बिल पर '2% मासिक अतिरिक्त शुल्क' लगाना।"] },
+      "practicalAssignmentQ": { "en": "Write a 2:282 B2B Credit Ledger Header capturing invoice #, maturity date, zero-interest clause, and charity-deterrence notice.", "ur": "اپنے ہول سیل ادھار بل کے لیے تحریری معاہدہ کا خانہ تیار کریں جس میں تاریخِ ادائیگی اور بلاسود اصول درج ہو۔", "ar": "صمم ترويسة فاتورة آجل موثقة متوافقة مع الآية ٢:٢٨٢.", "hi": "बिल नंबर, देय तिथि व शून्य-ब्याज शर्त दर्शाता B2B उधार चालान हेडर तैयार करें।" },
+      "referencesR": [
+        { "title": "Quran 2:280 & 2:282; Bukhari 2400", "category": "direct_quran", "attribution": "Quran.com & Sunnah.com", "url": "https://quran.com/2/282" }
+      ],
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 282,
+          "endAyah": 282,
+          "contextNote": { "en": "Written trade credit.", "ur": "تجارتی ادھار کی تحریر۔", "ar": "كتابة الديون التجارية.", "hi": "व्यापारिक उधार का लिखित दस्तावेज़।" },
+          "businessRelevance": { "en": "Signed B2B delivery challans prevent ledger disputes.", "ur": "دستخط شدہ بل اور رسیدیں جھگڑوں سے بچاتی ہیں۔", "ar": "إيصالات التسليم الموقعة تمنع الخلافات.", "hi": "हस्ताक्षरित डिलीवरी रसीद विवाद रोकती है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2400"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_2",
+          "question": { "en": "May a wholesaler set a higher fixed total price upfront for 60-day deferred credit than cash, provided it never increases afterward if delayed?", "ur": "کیا ہول سیلر نقد کے مقابلے میں 60 دن کے ادھار کی قیمت شروع ہی میں کچھ زیادہ مگر حتمی متعین کر سکتا ہے؟", "ar": "هل يجوز بيع الجملة بسعر آجل أعلى من النقدي مع ثبات الثمن وعدم زيادته لاحقاً؟", "hi": "क्या थोक व्यापारी सौदे के समय 60-दिन के उधार की एक स्थिर कीमत नक़द से अधिक तय कर सकता है जो बाद में न बढ़े?" },
+          "options": { "en": ["Yes; majority of Fiqh schools and IIFA Resolution 51 permit distinct fixed deferred price if agreed conclusively at sale without subsequent late increase", "No, never", "Only if compounded monthly"], "ur": ["جی ہاں؛ جمہور فقہا اور مجمع الفقہ (قرارداد 51) کے مطابق شروع میں طے متعین ادھار قیمت جائز ہے بشرطیکہ بعد میں نہ بڑھے", "نہیں کبھی نہیں", "صرف ماہانہ اضافے سے"], "ar": ["نعم؛ يجوز باتفاق المجامع إذا حُسم الثمن عند العقد دون زيادة عند التأخير", "لا أبداً"], "hi": ["हाँ; सौदे के समय निश्चित कीमत तय करना वैध है बशर्ते बाद में देरी पर न बढ़े", "कभी नहीं"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Time-differentiated fixed price of goods in an actual sale is valid (IIFA Res. 51), unlike increasing a monetary debt after contract execution.", "ur": "بیع کے وقت ادھار قیمت متعین کرنا جائز ہے؛ عقد کے بعد قرض میں اضافہ سود ہے۔", "ar": "زيادة ثمن السلعة للأجل عند العقد جائزة، أما زيادة الدين بعد ثبوته فربا.", "hi": "अनुबंध के समय उधार मूल्य तय करना वैध है; बाद में बढ़ाना सूद है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_3_grocery",
+      "sectorNumber": 3,
+      "name": {
+        "en": "3. Grocery & Food Store",
+        "ur": "3. کریانہ اور غذائی اشیاء کی دکان",
+        "ar": "٣. البقالة والمواد الغذائية",
+        "hi": "3. किराना और खाद्य भंडार"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Essential and deeply blessed trade when scales are honest, food is Tayyib & unspoiled, and non-halal additives/alcohol items are strictly absent.",
+        "ur": "انتہائی ضروری اور بابرکت کاروبار، بشرطیکہ ترازو پورا ہو، غذا صاف و حلال ہو اور ملاوٹ یا حرام اشیاء نہ ہوں۔",
+        "ar": "نشاط مبارك وحيوي متى تحققت الطهارة والحلّ وصدق الميزان وانتفى الغش.",
+        "hi": "यह अत्यंत उपयोगी व बरकत वाला व्यवसाय है बशर्ते तौल पूरा हो, भोजन हलाल व शुद्ध हो और मिलावट न हो।"
+      },
+      "introductionA": { "en": "Neighborhood and supermarket retail of grains, dairy, produce, spices, and household staples.", "ur": "آٹا، دال، چاول، دودھ، سبزیاں اور گھریلو ضروریات کی روزمرہ فراہمی۔", "ar": "توفير الحبوب والألبان والخضروات والاحتياجات الغذائية اليومية.", "hi": "दैनिक अनाज, डेयरी, मसाले व घरेलू खाद्य सामग्री की दुकान।" },
+      "howItOperatesB": { "en": "Daily fresh produce sourcing, FIFO shelf rotation, refrigeration maintenance, and quick neighborhood billing.", "ur": "تازہ منڈی خریداری، پرانا اسٹاک پہلے فروخت (بغیر ملاوٹ)، کولڈ چین اور فوری بلنگ۔", "ar": "توريد يومي، وتدوير المخزون، وضبط التبريد، ووزن دقيق.", "hi": "दैनिक ताज़ा खरीद, सही कोल्ड स्टोरेज व सटीक तौल द्वारा बिक्री।" },
+      "startupRequirementsC": { "en": "Food-authority hygiene license, calibrated electronic scales, chillers, and ventilated dry storage.", "ur": "فوڈ اتھارٹی لائسنس، الیکٹرانک ترازو، فریزر اور خشک صاف گودام۔", "ar": "ترخيص صحي، وميزان معاير، وبرادات، ومخزن نظيف.", "hi": "खाद्य लाइसेंस, डिजिटल तराजू, फ्रिज व स्वच्छ गोदाम।" },
+      "capitalAndInvestmentD": { "en": "Equity savings, halal partner investment, or direct agricultural Salam/Murabaha.", "ur": "ذاتی سرمایہ، حلال شراکت یا زرعی بیع سلم و مرابحہ۔", "ar": "رأس مال ذاتي أو شراكة أو سلم زراعي.", "hi": "निजी बचत, साझेदारी या मुराबहा/सलम आपूर्ति।" },
+      "supplierSelectionE": { "en": "Check Halal ingredient verification (gelatin, emulsifiers, oils, Zabihah meat sources) and farm hygiene.", "ur": "جیلاٹین، تیل، ذبیحہ اور مصالحوں کے حلال و خالص ذرائع کی تصدیق۔", "ar": "التأكد من حلّ الإضافات الغذائية ومصادر اللحوم والتوابل.", "hi": "जिलेटिन, तेल, मसाले व मांस के हलाल स्रोत की पुष्टि।" },
+      "purchasingProcurementF": { "en": "Inspect grain bags for moisture, tampering, or adulterated oil labels before accepting.", "ur": "اناج کی بوری میں نمی، کیڑا یا ملاوٹی تیل کی جانچ کر کے خریدیں۔", "ar": "فحص الأغذية قبل قبولها لمنع الفساد والغش.", "hi": "अनाज में नमी व तेल में मिलावट जांचकर ही खरीदें।" },
+      "ownershipPossessionG": { "en": "Classical Hadith specifically mandates taking clear Qabd over purchased food staples before reselling them.", "ur": "احادیثِ صحیحہ میں غذائی اجناس کو قبضے میں لینے سے پہلے آگے بیچنے کی خاص ممانعت آئی ہے۔", "ar": "تشدد الأحاديث الصحيحة على قبض الطعام قبل إعادة بيعه.", "hi": "सहीह हदीसों में खाद्य पदार्थों को क़ब्ज़ में लेने से पहले बेचने से विशेष रूप से मना किया गया है।" },
+      "productsServicesH": { "en": "Wholesome halal food (2:168); exclude pork, alcohol-infused sauces, uncertified gelatin treats, and stale/adulterated spice blends.", "ur": "حلال و طیب غذا (2:168)؛ مشکوک جیلاٹین، ملاوٹی مرچ/دودھ اور حرام مصنوعات سے مکمل پرہیز۔", "ar": "الطيبات الحلال واستبعاد الخنزير والكحول والمغشوش.", "hi": "शुद्ध हलाल भोजन रखें और मिलावट या हराम तत्वों से बचें।" },
+      "pricingProfitI": { "en": "Transparent per-kg rates; zero crisis hoarding of flour, sugar, or cooking oil.", "ur": "فی کلو واضح نرخ اور آٹا، چینی و گھی کی ذخیرہ اندوزی سے مکمل اجتناب۔", "ar": "أسعار واضحة ومنع احتكار القوت.", "hi": "स्पष्ट प्रति-किलो भाव और आटा-चीनी की जमाखोरी से पूर्ण बचाव।" },
+      "customerRightsJ": { "en": "Place bruised produce visibly (Muslim 102), zero water-injection/soaking for weight, instant replacement for sour milk.", "ur": "خراب یا گیلی سبزی/پھل اوپر دکھائیں، وزن بڑھانے کو پانی نہ ڈالیں، خراب دودھ فوراً تبدیل کریں۔", "ar": "إظهار المعيب، ومنع رش الماء لزيادة الوزن، واستبدال التالف.", "hi": "खराब फल अलग दिखाएं, वज़न हेतु पानी न मिलाएं और खराब दूध तुरंत बदलें।" },
+      "employeeRightsK": { "en": "Hygiene gloves, ergonomic lifting aids for 50kg sacks, fair wages, and Jumu'ah rotation.", "ur": "بھاری بوریوں کے لیے حفاظتی سہولت، مناسب اجرت اور نماز جمعہ کا انتظام۔", "ar": "وسائل السلامة للحمّالين وأجور منصفة.", "hi": "भारी बोरे उठाने हेतु सुरक्षा सहायता, उचित वेतन और नमाज़ व्यवस्था।" },
+      "relevantContractsL": { "en": ["Musawamah", "Salam (Farm Crops)", "Murabaha", "Qard Hasan (Local credit)"], "ur": ["مساومہ", "بیعِ سلم", "مرابحہ", "قرضِ حسن (ادھار)"], "ar": ["المساومة", "السلم", "المرابحة", "القرض الحسن"], "hi": ["मुसावमह", "सलम", "मुराबहा", "क़र्ज़-ए-हसन"] },
+      "potentialProhibitedM": { "en": ["Mixing inferior old rice under top fresh rice (Muslim 102)", "Spraying water to boost greens weight", "Changing expiry ink"], "ur": ["اچھے چاول کے نیچے ردی چاول ملانا", "وزن بڑھانے کو پانی چھڑکنا", "ایکسپائری تاریخ مٹانا"], "ar": ["خلط الرديء بالجيد", "زيادة الوزن بالماء", "تزوير الصلاحية"], "hi": ["नीचे सस्ता चावल मिलाना", "वज़न बढ़ाने हेतु पानी छिड़कना", "एक्सपायरी बदलना"] },
+      "halalChecklistN": { "en": ["Clean net-weight tare", "Halal ingredient label audit", "Zero hidden inferior produce"], "ur": ["ڈبہ/شاپر منہا کر کے پورا وزن", "اجزاء کا حلال آڈٹ", "خراب مال الگ رکھنا"], "ar": ["تصفير العبوة", "فحص المكونات", "عزل التالف"], "hi": ["पैकेट वज़न शून्य करना", "सामग्री हलाल जांच", "सड़ा माल अलग रखना"] },
+      "realisticCaseStudyO": { "en": "A grocer sets a 'Bargain Basket' for slightly bruised apples at 40% off instead of hiding them inside bags, building unmatched customer loyalty.", "ur": "سبزی فروش نے ہلکے دبے پھل تھیلے میں چھپانے کے بجائے الگ کم قیمت ٹوکری میں رکھے اور علاقے کا سب سے معتبر تاجر بن گیا۔", "ar": "بقال يعزل الفاكهة المتضررة بسعر مخفض بدلاً من دسّها في الأكياس فكسب ولاء الحي.", "hi": "किराना दुकानदार ने दबे फलों को थैलों में छिपाने के बजाय अलग छूट बास्केट में रखा और ग्राहकों का भरोसा जीता।" },
+      "commonMistakesP": { "en": ["Reselling bagged sugar/rice wholesale before taking physical warehouse delivery."], "ur": ["گودام میں قبضہ لیے بغیر غذائی بوری آگے فروخت کر دینا۔"], "ar": ["بيع الطعام قبل قبضه."], "hi": ["क़ब्ज़ लिए बिना अनाज की बोरियाँ आगे बेच देना।"] },
+      "practicalAssignmentQ": { "en": "Audit 5 packaged snack/sauce brands in a grocery aisle for gelatin, E-number emulsifiers, and alcohol extract transparency.", "ur": "دکان کی 5 پیکڈ اشیاء کے اجزاء (جیلاٹین، ایملسیفائرز) کی حلال جانچ کریں۔", "ar": "افحص مكونات ٥ منتجات غذائية معلبة للتحقق من خلوها من المضافات المشبوهة.", "hi": "किराने के 5 पैकेज्ड उत्पादों की सामग्री (जिलेटिन, इमल्सीफायर) की हलाल जांच करें।" },
+      "referencesR": [
+        { "title": "Sahih Muslim 102 & Quran 17:35", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/muslim:102" }
+      ],
+      "quranRefSpecs": [
+        {
+          "surahNumber": 17,
+          "startAyah": 35,
+          "endAyah": 35,
+          "contextNote": { "en": "Precision weighing for food retail.", "ur": "غذا کے ناپ تول میں انصاف۔", "ar": "القسطاس المستقيم في الغذاء.", "hi": "खाद्य तौल में पूर्ण ईमानदारी।" },
+          "businessRelevance": { "en": "Net weight must exclude heavy bags/containers.", "ur": "ترازو خالص غذا کا وزن بتائے۔", "ar": "إخراج الوزن الصافي للمستهلك.", "hi": "शुद्ध खाद्य वज़न ही तौला जाए।" }
+        }
+      ],
+      "hadithIds": ["muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_3",
+          "question": { "en": "What did the Prophet ﷺ command upon discovering damp food hidden underneath dry food in Sahih Muslim 102?",
+          "ur": "صحیح مسلم 102 میں خشک اناج کے نیچے بھیگا اناج دیکھ کر نبی اکرم ﷺ نے کیا فرمایا؟",
+          "ar": "ماذا أمر النبي ﷺ عند رؤية الطعام المبلول تحت الجاف في صحيح مسلم ١٠٢؟",
+          "hi": "सहीह मुस्लिम 102 में सूखे अनाज के नीचे गीला अनाज देखकर नबी ﷺ ने क्या आदेश दिया?" },
+          "options": { "en": ["Place the damp/defective portion visibly on top so buyers see it—'Whoever deceives us is not of us'", "Hide it deeper", "Charge double"], "ur": ["بھیگا حصہ اوپر رکھو تاکہ لوگ دیکھ سکیں؛ جس نے دھوکہ دیا وہ ہم میں سے نہیں", "اندر چھپا دو", "دوگنی قیمت لو"], "ar": ["ضعه فوق الطعام كي يراه الناس، من غش فليس منا", "أخفه في الأسفل"], "hi": ["गीला हिस्सा ऊपर रखो ताकि लोग देख सकें; धोखा देने वाला हममें से नहीं", "नीचे छिपा दो"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Sahih Muslim 102 requires complete visibility of flaws rather than deceptive top-dressing.", "ur": "صحیح مسلم 102 عیب کو نمایاں رکھنے کا حکم دیتی ہے۔", "ar": "الحديث يوجب كشف العيب للمشتري.", "hi": "सहीह मुस्लिम 102 दोष को स्पष्ट दिखाने का आदेश देती है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_4_restaurant",
+      "sectorNumber": 4,
+      "name": {
+        "en": "4. Halal Restaurant & Catering",
+        "ur": "4. حلال ریسٹورنٹ اور کیٹرنگ سروس",
+        "ar": "٤. المطاعم والتموين الغذائي الحلال",
+        "hi": "4. हलाल रेस्टोरेंट और केटरिंग व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Hospitality and catering are praiseworthy if meat is verified Zabihah Halal, kitchens are spotless, and bookings avoid waste & interest financing.",
+        "ur": "مہمان نوازی و کھانا کھلانا بہترین کاروبار ہے بشرطیکہ گوشت مستند ذبیحہ حلال ہو، صفائی ہو اور کھانے و معاہدے میں دھوکہ یا اسراف نہ ہو۔",
+        "ar": "نشاط طيب بشرط الذبح الشرعي والنظافة وصدق الوزن وتجنب الإسراف.",
+        "hi": "यह उत्तम व्यवसाय है बशर्ते मांस प्रमाणित ज़बीहा हलाल हो, रसोई स्वच्छ हो और बर्बादी/धोखा न हो।"
+      },
+      "introductionA": { "en": "Dine-in restaurants, cloud kitchens, and event catering services preparing freshly cooked halal meals.", "ur": "ڈائن ان ریسٹورنٹ، کلاؤڈ کچن اور شادی و تقریبات کی کیٹرنگ۔", "ar": "تقديم الوجبات والمأكولات والمناسبات وفق الضوابط الشرعية.", "hi": "रेस्टोरेंट, क्लाउड किचन और इवेंट केटरिंग सेवाएं।" },
+      "howItOperatesB": { "en": "Sources verified ingredients, prepares dishes hygienically, prices transparent menus, and fulfills catering SLAs.", "ur": "حلال اجزاء کی خریداری، حفظانِ صحت سے تیاری، واضح مینو قیمت اور تقریبات کی بروقت فراہمی۔", "ar": "شراء مكونات حلال، طهي صحي، قوائم شفافة، وخدمة المناسبات.", "hi": "हलाल सामग्री खरीद, स्वच्छ पाक कला, पारदर्शी मेनू और समय पर केटरिंग।" },
+      "startupRequirementsC": { "en": "Commercial kitchen lease, Zabihah Halal supply proof, municipal hygiene permit, and fire/gas safety.", "ur": "کمرشل کچن، ذبیحہ حلال تصدیق، فوڈ اتھارٹی سرٹیفکیٹ اور حفاظتی آلات۔", "ar": "مطبخ مرخص، إثبات الذبح الشرعي، وسلامة الأغذية.", "hi": "लाइसेंस प्राप्त रसोई, ज़बीहा हलाल प्रमाण और सुरक्षा मानक।" },
+      "capitalAndInvestmentD": { "en": "Partner Musharakah equity, kitchen equipment Ijarah, never conventional interest restaurant loans.", "ur": "مشارکہ شراکت یا کچن مشینری پر شرعی اجارہ؛ سودی قرض نہیں۔", "ar": "شراكة أو إجارة لمعدات المطبخ.", "hi": "मुशारकाह निवेश या उपकरण इज़ाराह; ब्याज वाले ऋण नहीं।" },
+      "supplierSelectionE": { "en": "Verify slaughterhouse Zabihah compliance personally; avoid unverified frozen chicken/spices.", "ur": "گوشت و مرغی کے ذبح خانے کا خود معائنہ کریں؛ غیر مصدقہ فروزن گوشت سے بچیں۔", "ar": "فحص المسالخ الموردة للحوم للتأكد من التذكية الشرعية.", "hi": "बूचड़खाने का स्वयं सत्यापन करें और अपुष्ट मीट से बचें।" },
+      "purchasingProcurementF": { "en": "Fresh daily sourcing and documented spice/oil vendor logs preventing stale oil reuse.", "ur": "تازہ خریداری اور پرانے جلے ہوئے تیل کے دوبارہ استعمال سے سخت اجتناب۔", "ar": "توريد طازج ومنع إعادة استخدام الزيوت التالفة.", "hi": "ताज़ी खरीद और जले हुए तेल के दोबारा उपयोग पर रोक।" },
+      "ownershipPossessionG": { "en": "Catering deposits are held against real kitchen Istisna/service obligations, clearly itemized.", "ur": "کیٹرنگ آرڈر کی پیشگی رقم واضح مینو اور تعداد کے مطابق بطور معاہدہ طے ہو۔", "ar": "توثيق عربون الولائم ومواصفات الضيافة كتابةً.", "hi": "केटरिंग अग्रिम राशि स्पष्ट मेनू और प्लेट संख्या के साथ दर्ज हो।" },
+      "productsServicesH": { "en": "100% Zabihah halal meat, zero wine/rum cooking flavors, zero non-halal gelatin.", "ur": "100% حلال ذبیحہ، الکحل فری مصالحے/فلیور، اور صاف تیل۔", "ar": "لحوم مذكاة شرعاً وخالية تماماً من الكحول والجيلاتين المحرم.", "hi": "100% ज़बीहा हलाल मांस और अल्कोहल-मुक्त फ्लेवर।" },
+      "pricingProfitI": { "en": "List taxes/service charges transparently on menus; match advertised portion grams.", "ur": "مینو پر ٹیکس و سروس چارجز پہلے واضح لکھیں اور پلیٹ کا وزن پورا دیں۔", "ar": "إظهار الضرائب والرسوم بوضوح على القائمة والوفاء بحجم الحصص.", "hi": "मेनू पर सभी शुल्क व मात्रा स्पष्ट लिखें।" },
+      "customerRightsJ": { "en": "Honest allergen info, hygienic kitchens, and prompt refund/remake for cold or short orders.", "ur": "الرجی سے آگاہی، صاف کچن اور خراب/کم آرڈر کی فوری تلافی۔", "ar": "بيان مسببات الحساسية والنظافة وتعويض الطلب الناقص.", "hi": "एलर्जी जानकारी, स्वच्छता व कम या खराब ऑर्डर की तुरंत भरपाई।" },
+      "employeeRightsK": { "en": "Chefs, dishwashers, and servers receive prompt salaries, staff meals, and fair shift rest.", "ur": "باورچی، ویٹرز اور صفائی عملے کو وقت پر تنخواہ، کھانا اور آرام کا حق۔", "ar": "أجور عادلة للطهاة والعمال مع وجبات واستراحات لائقة.", "hi": "रसोइयों व वेटरों को समय पर वेतन, भोजन और उचित विश्राम।" },
+      "relevantContractsL": { "en": ["Istisna / Food Prep Order", "Ijarah (Kitchen & Staff)", "Musawamah", "Musharakah"], "ur": ["استصناع/تیاری آرڈر", "اجارہ", "مساومہ", "مشارکہ"], "ar": ["الاستصناع/التجهيز", "الإجارة", "المساومة", "المشاركة"], "hi": ["इस्तिसना/तैयारी", "इजाराह", "मुसावमह", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Serving questionable stun/machine meat unverified", "Reheating leftovers dishonestly", "Paying chefs below agreed overtime"], "ur": ["غیر مصدقہ گوشت استعمال کرنا", "باسی کھانا تازہ کہہ کر دینا", "ملازمین کا اوور ٹائم کھانا"], "ar": ["لحوم غير موثوقة التذكية", "بيع البائت كطازج", "هضم أجر العامل"], "hi": ["अप्रमाणित मीट", "बासी खाना ताज़ा कहकर देना", "कर्मचारियों का ओवरटाइम रोकना"] },
+      "halalChecklistN": { "en": ["Signed Halal meat invoices displayed", "Surplus food rescue charity protocol", "Clear net catering menu counts"], "ur": ["حلال گوشت رسیدوں کی نمائش", "بچ جانے والے صاف کھانے کی خیراتی تقسیم", "واضح مینو گنتی"], "ar": ["عرض فواتير الذبح الحلال", "حفظ الفائض للفقراء", "دقة كميات التموين"], "hi": ["हलाल मीट बिल प्रदर्शन", "बचे भोजन का दान प्रबंधन", "सही प्लेट गिनती"] },
+      "realisticCaseStudyO": { "en": "A caterer stops inflating phantom plate counts for weddings, serves verified Zabihah beef, and partners with a local charity to box untouched surplus safely.", "ur": "کیٹرر نے شادی ہالوں میں جھوٹی پلیٹیں گننا بند کیا، مصدقہ حلال گوشت رکھا اور بچا ہوا کھانا باعزت طریقے سے مستحقین تک پہنچایا۔", "ar": "متعهد تموين يمنع التلاعب بعدد الصحون ويتعاقد مع جمعية لتوزيع الفائض الصالح.", "hi": "केटरर ने झूठी प्लेट गिनती रोकी और बचा हुआ स्वच्छ भोजन गरीबों में बांटने की व्यवस्था की।" },
+      "commonMistakesP": { "en": ["Ordering wholesale chicken wings purely on cheapest quote without verifying hand-Zabihah practices."], "ur": ["صرف سستا ہونے کی بنیاد پر ذبح کی تحقیق کیے بغیر مرغی خرید لینا۔"], "ar": ["شراء الدواجن الأرخص دون التحقق من التذكية."], "hi": ["बिना ज़बीहा जांच के केवल सस्ते दाम पर चिकन खरीदना।"] },
+      "practicalAssignmentQ": { "en": "Build a Surplus Food Zero-Waste Charter partnering with a nearby shelter or mosque kitchen.", "ur": "بچ جانے والے صاف کھانے کو ضائع ہونے سے بچانے کے لیے قریبی دسترخوان سے معاہدے کا خاکہ لکھیں۔", "ar": "صمم بروتوكولاً للتبرع بفائض الطعام السليم لدار إطعام قريبة.", "hi": "बचे हुए शुद्ध भोजन को नज़दीकी लंगर या आश्रय तक पहुँचाने की योजना बनाएं।" },
+      "referencesR": [
+        { "title": "Quran 2:168 & Sahih Muslim 102", "category": "direct_quran", "attribution": "Quran.com & Sunnah.com", "url": "https://quran.com/2/168" }
+      ],
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Honest consensual hospitality.", "ur": "دیانتدارانہ ضیافت و کھانا فراہمی۔", "ar": "الصدق والتراضي في الضيافة والتموين.", "hi": "ईमानदार और सहमति-आधारित खानपान।" },
+          "businessRelevance": { "en": "Accurate event plate counts and clear prices.", "ur": "کیٹرنگ پلیٹوں کی درست گنتی اور واضح قیمت۔", "ar": "صدق احتساب الوجبات والمكونات.", "hi": "सही प्लेट गिनती और स्पष्ट कीमत।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_4",
+          "question": { "en": "Why should a Halal restaurant maintain supplier slaughterhouse documentation rather than assuming local labels?", "ur": "حلال ریسٹورنٹ کو محض زبانی دعوے کے بجائے ذبح خانے کی تحریری تصدیق کیوں رکھنی چاہیے؟", "ar": "لماذا يجب توثيق مصدر التذكية الشرعية للحوم في المطعم بدلاً من الاكتفاء بالملصق؟", "hi": "हलाल रेस्टोरेंट को केवल लेबल मानने के बजाय बूचड़खाने का प्रमाण क्यों रखना चाहिए?" },
+          "options": { "en": ["Because food Amanah requires verifying permissible Zabihah ingredients cleanly to protect Muslim diners", "For decoration only", "To charge higher prices"], "ur": ["کیونکہ مسلمانوں کو حلال و طیب کھلانا امانت ہے جس کی تصدیق لازم ہے", "محض سجاوٹ کے لیے", "قیمت بڑھانے کے لیے"], "ar": ["لأن إطعام الناس لحماً حلالاً أمانة شرعية تستوجب التحقق", "للزينة فقط"], "hi": ["क्योंकि ग्राहकों को शुद्ध हलाल खिलाना अमानत है जिसकी पुष्टि अनिवार्य है", "सजावट के लिए"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Unverified meat exposes the business to Haram sourcing liability; keeping verified Zabihah logs fulfills 4:58 trust.", "ur": "غیر مصدقہ گوشت سے بچنے کے لیے سپلائر کی تحقیق امانت کا تقاضا ہے۔", "ar": "التحقق من المسلخ يحفظ الأمانة ويمنع الشبهة.", "hi": "सत्यापित स्रोत रखना अमानतदारी का अनिवार्य हिस्सा है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_5_clothing",
+      "sectorNumber": 5,
+      "name": {
+        "en": "5. Clothing & Fashion Business",
+        "ur": "5. ملبوسات اور فیشن کا کاروبار",
+        "ar": "٥. تجارة الملابس والأزياء",
+        "hi": "5. वस्त्र और फ़ैशन व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Apparel is Halal and thriving when designs respect modesty/dignity, avoid stolen luxury trademarks, and workshops pay tailors fairly.",
+        "ur": "کپڑے کی تجارت حلال و بابرکت ہے جب لباس شائستہ ہو، جعلی برانڈ لوگو نہ ہوں اور درزیوں کو پوری اجرت ملے۔",
+        "ar": "تجارة الملابس مباحة وتُضبط بالحشمة ومنع التقليد التجاري وإنصاف العمال.",
+        "hi": "वस्त्र व्यापार हलाल है जब डिज़ाइन शालीन हों, नकली ब्रांड न बेचें जाएं और कारीगरों को पूरा वेतन मिले।"
+      },
+      "introductionA": { "en": "Designing, stitching, wholesaling, or retailing everyday apparel, abayas, menswear, and modest attire.", "ur": "روزمرہ لباس، شلوار قمیص، عبایا اور باحیا ملبوسات کی تیاری و فروخت۔", "ar": "تصميم وخياطة وبيع الملابس المحتشمة والأزياء المتنوعة.", "hi": "दैनिक परिधान, मेन्सवियर, अबाया और शालीन वस्त्रों का निर्माण व बिक्री।" },
+      "howItOperatesB": { "en": "Selects fabrics, stitches runs via Istisna/in-house tailors, shoots honest product visuals, and distributes online/in-store.", "ur": "کپڑا خریدنا، سلائی کروانا، سچی تصاویر لگانا اور دکان یا آن لائن بیچنا۔", "ar": "اختيار الأقمشة، التفصيل، التصوير الصادق، والتوزيع.", "hi": "कपड़ा चयन, सिलाई, सच्ची तस्वीरें और खुदरा या ऑनलाइन बिक्री।" },
+      "startupRequirementsC": { "en": "Fabric suppliers, cutting/stitching machines, original brand tag, and size charts.", "ur": "کپڑے کے ہول سیلرز، سلائی یونٹ، اپنا اصل برانڈ ٹیگ اور درست سائز چارٹ۔", "ar": "موردو أقمشة، مشاغل خياطة، علامة تجارية أصلية، وجدول مقاسات.", "hi": "कपड़ा आपूर्तिकर्ता, सिलाई इकाई, मूल ब्रांड टैग और सही आकार चार्ट।" },
+      "capitalAndInvestmentD": { "en": "Own savings, Mudarabah boutique equity, or machine Ijarah.", "ur": "ذاتی بچت، مضاربت یا سلائی مشینوں کا اجارہ۔", "ar": "تمويل ذاتي أو مضاربة أو إجارة معدات.", "hi": "स्वयं की बचत, मुदारबाह साझेदारी या मशीन इज़ाराह।" },
+      "supplierSelectionE": { "en": "Audit dye mills for skin-safe pigments and factories free of sweatshop abuse.", "ur": "کپڑے کے رنگ اور فیکٹری میں مزدوروں سے حسنِ سلوک کی جانچ۔", "ar": "فحص جودة الصبغة وضمان بيئة عمل لائقة.", "hi": "रंग की गुणवत्ता और कारखाने में श्रमिक सम्मान की जांच।" },
+      "purchasingProcurementF": { "en": "Order fabric lots by exact meterage/GSM; contract stitching runs via Istisna/piece-rate Ijarah.", "ur": "میٹر اور معیار کے مطابق کپڑا خریدیں اور درزیوں سے واضح ریٹ طے کریں۔", "ar": "شراء الأقمشة بالوزن والطول الدقيق والتعاقد بالاستصناع.", "hi": "सटीक मीटर/गुणवत्ता से कपड़ा खरीदें और सिलाई दर स्पष्ट तय करें।" },
+      "ownershipPossessionG": { "en": "Own fabric/garments before final sale; disclose 'pre-order custom tailoring' clearly as Istisna.", "ur": "تیار سوٹ قبضے میں رکھ کر بیچیں؛ آرڈر پر سلائی کو استصناع کے طور پر واضح کریں۔", "ar": "التملك قبل البيع وتوضيح التفصيل المسبق كاستصناع.", "hi": "तैयार कपड़े स्वामित्व में लेकर बेचें; कस्टम सिलाई को इस्तिसना के रूप में स्पष्ट करें।" },
+      "productsServicesH": { "en": "Avoid indecent/revealing garments, offensive slogans, or men's pure-silk/gold-threaded attire (Islamic restriction).", "ur": "بے حیا یا فحش تحریر والے ملبوسات اور مردوں کے لیے خالص ریشم سے پرہیز۔", "ar": "تجنب الملابس الكاشفة والشعارات المخالفة والحرير الخالص للرجال.", "hi": "अशोभनीय वस्त्र, गलत स्लोगन और पुरुषों हेतु शुद्ध रेशम से बचें।" },
+      "pricingProfitI": { "en": "Transparent pricing per fabric quality without exaggerating synthetic silk as '100% pure wool/linen'.", "ur": "کپڑے کی اصل قسم (کاٹن، لیلن، پولیسٹر) سچ بتا کر قیمت طے کریں۔", "ar": "الصدق في وصف نوع القماش وتسعيره بعدل.", "hi": "कपड़े के वास्तविक प्रकार (सूती/पॉलिएस्टर) के अनुसार ईमानदार मूल्य रखें।" },
+      "customerRightsJ": { "en": "Accurate unedited fabric colors, shrinkage warnings, and hassle-free size exchanges.", "ur": "اصل رنگ کی تصویر، سکڑنے کی اطلاع اور سائز تبدیلی کی سہولت۔", "ar": "صور ألوان حقيقية وتنبيه الانكماش واستبدال المقاس.", "hi": "असली रंग की फोटो, सिकुड़न चेतावनी और आकार बदलने की सुविधा।" },
+      "employeeRightsK": { "en": "Piece-rate tailors paid immediately upon batch inspection (Ibn Majah 2443), well-lit ventilation.", "ur": "درزیوں کو کام پورا ہوتے ہی اجرت، روشن اور ہوادار ورکشاپ۔", "ar": "أجور الخياطين فور التسليم وإضاءة وتهوية مناسبة.", "hi": "सिलाई कारीगरों को तुरंत मजदूरी और सुरक्षित प्रकाश/हवा।" },
+      "relevantContractsL": { "en": ["Musawamah", "Istisna (Stitching)", "Ijarah", "Musharakah"], "ur": ["مساومہ", "استصناع", "اجارہ", "مشارکہ"], "ar": ["المساومة", "الاستصناع", "الإجارة", "المشاركة"], "hi": ["मुसावमह", "इस्तिसना", "इजाराह", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Stitching fake branded replicas", "Using immodest advertising imagery", "Swapping lower-thread-count fabric after sample approval"], "ur": ["جعلی برانڈ کاپی بنانا", "اشتہار میں بے پردہ نمائش", "سیمپل دکھا کر ہلکا کپڑا دینا"], "ar": ["تزوير العلامات التجارية", "إعلانات غير محتشمة", "تبديل جودة القماش"], "hi": ["नकली ब्रांड बनाना", "अशोभनीय विज्ञापन", "नमूने से हल्का कपड़ा देना"] },
+      "halalChecklistN": { "en": ["Original brand identity", "Honest fabric composition tag", "Modest visual presentation"], "ur": ["اپنا اصل برانڈ نام", "کپڑے کے اجزاء کا سچا لیبل", "باوقار و باحیا تشہیر"], "ar": ["علامة أصلية", "بطاقة قماش صادقة", "عرض محتشم"], "hi": ["मूल ब्रांड नाम", "सही कपड़ा लेबल", "शालीन प्रस्तुति"] },
+      "realisticCaseStudyO": { "en": "A boutique stops ordering cheap replica lawn prints, registers its own original modest design label, uses mannequin photography, and scales cleanly online.", "ur": "بوتیک نے جعلی برانڈ کاپیاں بند کر کے اپنا اصل باحیا ڈیزائن برانڈ لانچ کیا اور آن لائن شاندار اعتماد حاصل کیا۔", "ar": "بوتيك ترك المقلدات وأطلق علامته الأصلية المحتشمة بنجاح.", "hi": "बुटिक ने नकली ब्रांड प्रिंट बंद कर अपना मूल शालीन डिज़ाइन ब्रांड लॉन्च किया।" },
+      "commonMistakesP": { "en": ["Heavily color-filtering photos so a dull maroon dress arrives looking bright crimson."], "ur": ["تصویروں میں فلٹر لگا کر رنگ بدل دینا جس سے گاہک کو دھوکہ ہو۔"], "ar": ["تعديل ألوان الصور رقمياً بشكل مضلل."], "hi": ["फ़िल्टर से कपड़े का रंग बदलकर दिखाना जिससे ग्राहक ठगा महसूस करे।"] },
+      "practicalAssignmentQ": { "en": "Write honest Care & Material tags stating fiber blend %, shrinkage guidance, and modest lookbook photography standards.", "ur": "اپنے ملبوسات کے لیے سچا فیبرک ٹیگ اور باحیا فوٹوگرافی گائیڈ لکھیں۔", "ar": "أعد بطاقة وصف قماش صادقة وضوابط تصوير محتشمة.", "hi": "सही सामग्री टैग और शालीन फ़ोटोग्राफ़ी मानक लिखें।" },
+      "referencesR": [
+        { "title": "IIFA Res. 43 (IP) & Sahih Muslim 102", "category": "contemporary_resolution", "attribution": "IIFA & Sunnah.com", "url": "https://iifa-aifi.org/en/" }
+      ],
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Truthful apparel commerce.", "ur": "ملبوسات کی دیانتدارانہ تجارت۔", "ar": "التراضي والصدق في بيع الملابس.", "hi": "ईमानदार वस्त्र व्यापार।" },
+          "businessRelevance": { "en": "Delivered fabric must match advertised blend and photos.", "ur": "بھیجا گیا کپڑا اشتہار اور تصویر کے مطابق ہونا لازم ہے۔", "ar": "مطابقة القماش للوصف والصورة.", "hi": "डिलीवर कपड़ा विज्ञापन व फोटो के अनुरूप होना चाहिए।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_5",
+          "question": { "en": "Why should a garment seller photograph clothing items on mannequins/flat-lays with true unedited lighting rather than deceiving filters?", "ur": "کپڑوں کے آن لائن بیچنے والے کو فلٹر لگا کر رنگ بدلنے کے بجائے اصل تصویر کیوں لگانی چاہیے؟", "ar": "لماذا يجب عرض صور الملابس بألوانها الحقيقية دون فلاتر مضللة؟", "hi": "वस्त्र विक्रेता को भ्रामक फ़िल्टर के बजाय असली रंग की फोटो क्यों दिखानी चाहिए?" },
+          "options": { "en": ["To fulfill truthful transparency (Bukhari 2079 / Muslim 102) so buyers receive exactly what they consented to", "Because filters take time", "For camera battery"], "ur": ["تاکہ بخاری 2079 اور مسلم 102 کے مطابق سچائی قائم رہے اور گاہک کو عین مطلوبہ چیز ملے", "وقت بچانے کو", "بیٹری کے لیے"], "ar": ["تحقيقاً للصدق ومنعاً للتدليس (البخاري ٢٠٧٩ ومسلم ١٠٢)", "لتوفير الوقت"], "hi": ["ताकि बुखारी 2079 व मुस्लिम 102 के अनुसार पारदर्शिता रहे और ग्राहक को वही वस्तु मिले", "समय बचाने हेतु"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Misleading filters create visual Ghish and erode Barakah.", "ur": "دھوکہ دینے والے فلٹر غِش کا سبب اور برکت مٹانے والے ہیں۔", "ar": "التضليل البصري غش يمحق البركة.", "hi": "भ्रामक फ़िल्टर धोखा है जो बरकत नष्ट करता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_6_ecommerce",
+      "sectorNumber": 6,
+      "name": {
+        "en": "6. E-Commerce Store Business",
+        "ur": "6. ای کامرس اور آن لائن اسٹور",
+        "ar": "٦. التجارة الإلكترونية والمتاجر الرقمية",
+        "hi": "6. ई-कॉमर्स और ऑनलाइन स्टोर व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "E-commerce is completely Halal when items are genuinely owned before final sale, product specs are truthful, and payment gateways avoid Riba/hidden fees.",
+        "ur": "ای کامرس مکمل حلال ہے جب بیچنے سے پہلے مال ملکیت میں ہو، تفصیلات سچی ہوں اور ادائیگی سود و دھوکے سے پاک ہو۔",
+        "ar": "التجارة الإلكترونية مشروعة عند توفر التملك والصدق ووسائل الدفع الحلال.",
+        "hi": "ई-कॉमर्स पूर्णतः हलाल है जब बिक्री से पहले स्वामित्व हो, विवरण सत्य हो और भुगतान ब्याज-मुक्त हो।"
+      },
+      "introductionA": { "en": "Operating branded online stores or marketplace shops (Amazon/Daraz/Shopify) delivering parcels nationwide or globally.", "ur": "اپنی ویب سائٹ، شاپ فائی، دراز یا ایمازون پر آن لائن دکان چلانا۔", "ar": "إدارة متجر رقمي أو حساب على منصات البيع مع التوصيل للعملاء.", "hi": "अपनी वेबसाइट, शॉपिफ़ाई, अमेज़न या दराज़ पर ऑनलाइन स्टोर चलाना।" },
+      "howItOperatesB": { "en": "Lists real warehouse inventory, captures click-wrap orders, dispatches tracked couriers, and reconciles COD/card payouts.", "ur": "گودام کا مال لسٹ کرنا، آن لائن آرڈر لینا، ٹریکنگ سے کوریئر بھجوانا اور پیمنٹ تصفیہ۔", "ar": "عرض المخزون الفعلي، استلام الطلبات، الشحن بالتتبع، وتسوية الدفعات.", "hi": "वास्तविक स्टॉक सूचीबद्ध करना, ऑर्डर लेना, ट्रैकड कूरियर भेजना और भुगतान मिलान।" },
+      "startupRequirementsC": { "en": "Owned inventory lot, e-commerce site/marketplace KYC, courier contract, and transparent return portal.", "ur": "ملکیتی اسٹاک، اسٹور اکاؤنٹ، کوریئر معاہدہ اور آسان واپسی پالیسی۔", "ar": "مخزون مملوك، متجر موثق، شركة شحن، وسياسة استرجاع.", "hi": "स्वयं का स्टॉक, स्टोर पंजीकरण, कूरियर अनुबंध और रिटर्न नीति।" },
+      "capitalAndInvestmentD": { "en": "Start lean with own cash or Musharakah equity; reject high-APR credit-card ad debt or interest merchant cash advances.", "ur": "ذاتی بچت یا مشارکہ سے آغاز؛ اشتہارات کے لیے سودی قرض یا مرچنٹ ایڈوانس سے بچیں۔", "ar": "تمويل ذاتي أو شراكة؛ وتجنب التمويل الربوي للإعلانات.", "hi": "स्वयं की बचत या मुशारकाह से शुरू करें; विज्ञापन हेतु सूदी ऋण न लें।" },
+      "supplierSelectionE": { "en": "Audit factory samples first-hand; verify genuine brand authorization on marketplaces.", "ur": "پہلے سیمپل خود چیک کریں اور برانڈ فروخت کی قانونی اجازت لیں۔", "ar": "فحص العينات وتوثيق تفويض العلامات التجارية.", "hi": "पहले नमूने स्वयं जांचें और ब्रांड बेचने का वैध अधिकार लें।" },
+      "purchasingProcurementF": { "en": "Pay suppliers via Halal bank/escrow; inspect batch defects prior to 3PL/FBA inbound shipping.", "ur": "سپلائر کو حلال بینک سے ادائیگی اور ویئرہاؤس بھیجنے سے پہلے مال کی جانچ۔", "ar": "سداد الموردين عبر قنوات حلال وفحص الشحنات قبل التخزين.", "hi": "आपूर्तिकर्ताओं को हलाल चैनल से भुगतान करें और गोदाम भेजने से पहले माल जांचें।" },
+      "ownershipPossessionG": { "en": "Ensure inventory sits under your risk (own warehouse or FBA/3PL bin) prior to customer checkout completion.", "ur": "گاہک کے آرڈر مکمل کرنے سے پہلے مال آپ کے گودام یا 3PL میں آپ کے رسک پر موجود ہو۔", "ar": "وجود المخزون في ملكيتك وضمانك في مستودعك أو لدى شركة الشحن قبل البيع.", "hi": "चेकआउट से पहले माल आपके गोदाम या 3PL में आपके जोखिम पर होना चाहिए।" },
+      "productsServicesH": { "en": "Halal utility products; exclude pirated digital keys, counterfeit items, and immodest/harmful goods.", "ur": "حلال و مفید مصنوعات؛ جعلی چابیاں، نقلی برانڈز اور مضر اشیاء سے پرہیز۔", "ar": "سلع مباحة نافعة ومنع المقلد والمقرصن.", "hi": "वैध उपयोगी उत्पाद बेचें; नकली या पायरेटेड वस्तुएं न बेचें।" },
+      "pricingProfitI": { "en": "State total price including shipping/tax cleanly before checkout; ban fake urgency timers.", "ur": "چیک آؤٹ سے پہلے شپنگ و ٹیکس سمیت کل قیمت بتائیں؛ جعلی ٹائمر نہ لگائیں۔", "ar": "بيان السعر الشامل مع الشحن والضرائب دون مؤقتات خداعية.", "hi": "चेकआउट से पहले शिपिंग/टैक्स सहित कुल कीमत दिखाएं और नकली टाइमर हटाएं।" },
+      "customerRightsJ": { "en": "7–14 day honest defect/description-mismatch return window, prompt COD/card refunds.", "ur": "عیب یا غلط تفصیل پر 7 سے 14 دن میں آسان واپسی اور فوری ریفنڈ۔", "ar": "حق الاسترجاع عند العيب أو المخالفة واسترداد المبلغ بسرعة.", "hi": "दोष या विवरण अंतर पर 7-14 दिन में वापसी और तुरंत रिफंड।" },
+      "employeeRightsK": { "en": "Fair compensation for customer-support, packing staff, and social ad specialists.", "ur": "پیکنگ عملے، کسٹمر سپورٹ اور مارکیٹنگ ٹیم کو وقت پر مناسب اجرت۔", "ar": "أجور منصفة لفريق التعبئة والدعم والتسويق.", "hi": "पैकिंग, सपोर्ट व मार्केटिंग स्टाफ को समय पर उचित वेतन।" },
+      "relevantContractsL": { "en": ["Musawamah", "Wakalah (Marketplace / 3PL)", "Ijarah (Courier / Hosting)", "Musharakah"], "ur": ["مساومہ", "وکالت (مارکیٹ پلیس)", "اجارہ (کوریئر)", "مشارکہ"], "ar": ["المساومة", "الوكالة", "الإجارة", "المشاركة"], "hi": ["मुसावमह", "वकालह", "इजाराह", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Buy-Now-Pay-Later plans carrying hidden interest penalties", "Paid fake review farms", "Fake scarcity badges"], "ur": ["تاخیر پر سود لینے والی قسط اسکیمیں", "جعلی ریویوز خریدنا", "فرضی 'صرف 2 پیس باقی' لکھنا"], "ar": ["برامج التقسيط الربوية", "شراء التقييمات المزيفة", "الندرة الوهمية"], "hi": ["ब्याज वाली BNPL योजनाएं", "नकली रिव्यू खरीदना", "झूठी कमी दिखाना"] },
+      "halalChecklistN": { "en": ["Stock owned pre-sale", "Checkout shows full price", "No fake countdowns/reviews"], "ur": ["فروخت سے پہلے مال ملکیت میں", "مکمل قیمت کی وضاحت", "جعلی ریویوز سے پاک"], "ar": ["تملك مسبق", "وضوح السعر الكلي", "تقييمات حقيقية"], "hi": ["बिक्री से पहले स्वामित्व", "पूर्ण कीमत प्रकटीकरण", "वास्तविक समीक्षाएं"] },
+      "realisticCaseStudyO": { "en": "An online kitchenware brand switches from risky unowned AliExpress dropshipping to stocking 100 units locally in Karachi, halving delivery time and eliminating Shariah flaws.", "ur": "آن لائن کچن اسٹور نے غیر مملوک ڈراپ شپنگ چھوڑ کر مقامی گودام میں 100 یونٹس اسٹاک کیے، جس سے ڈلیوری بھی تیز اور کاروبار بھی مکمل حلال ہو گیا۔", "ar": "متجر أدوات مطبخ استبدل الدروبشيبينغ غير المملوك بتخزين ١٠٠ وحدة محلياً فأسرع التسليم وصحح العقد.", "hi": "ऑनलाइन किचन ब्रांड ने बिना-स्टॉक ड्रॉपशीपिंग छोड़कर स्थानीय गोदाम में 100 यूनिट रखे, जिससे डिलीवरी तेज़ और व्यापार पूरी तरह हलाल हुआ।" },
+      "commonMistakesP": { "en": ["Copying competitor studio photos while shipping cheap lookalike knockoffs."], "ur": ["کسی برانڈ کی اصلی تصویر لگا کر سستا نقلی مال بھیج دینا۔"], "ar": ["عرض صور أصلية وشحن تقليد رديء."], "hi": ["असली ब्रांड की फोटो लगाकर सस्ता नकली उत्पाद भेजना।"] },
+      "practicalAssignmentQ": { "en": "Audit your checkout flow: remove dark patterns, add crystal-clear shipping/return terms, and verify Qabd stage.", "ur": "اپنے آن لائن چیک آؤٹ سے ہر دھوکہ دہی والا بٹن ہٹائیں اور واضح شپنگ و واپسی پالیسی شامل کریں۔", "ar": "افحص صفحة الدفع لإزالة أي خداع بصري وتوضيح سياسة الشحن والاسترجاع.", "hi": "चेकआउट से भ्रामक डिज़ाइन हटाएं और स्पष्ट शिपिंग व रिटर्न नीति जोड़ें।" },
+      "referencesR": [
+        { "title": "Sahih Muslim 102 & AAOIFI SS 18", "category": "authentic_hadith", "attribution": "Sunnah.com & AAOIFI", "url": "https://sunnah.com/muslim:102" }
+      ],
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Informed digital consent.", "ur": "آن لائن خریداری میں مکمل آگاہی و رضامندی۔", "ar": "التراضي الرقمي الواضح.", "hi": "डिजिटल लेनदेन में सूचित सहमति।" },
+          "businessRelevance": { "en": "No surprise checkout fees or dark-pattern subscriptions.", "ur": "چیک آؤٹ پر خفیہ چارجز یا زبردستی سبسکرپشن نہ ہو۔", "ar": "منع الرسوم المخفية عند الدفع.", "hi": "चेकआउट पर छिपे शुल्क या जबरन सदस्यता न हो।" }
+        }
+      ],
+      "hadithIds": ["muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_6",
+          "question": { "en": "Is displaying an artificial countdown clock reading 'Offer expires in 04:59!' that resets automatically for every visitor Islamically permissible?", "ur": "کیا ویب سائٹ پر ہر آنے والے کے لیے دوبارہ شروع ہونے والا جعلی 'صرف 5 منٹ باقی' ٹائمر لگانا جائز ہے؟", "ar": "هل يجوز وضع مؤقت تنازلي وهمي يتجدد تلقائياً لكل زائر للضغط عليه بالشراء؟", "hi": "क्या हर विज़िटर के लिए रीसेट होने वाला नकली 'केवल 5 मिनट शेष' टाइमर लगाना वैध है?" },
+          "options": { "en": ["No; fabricating false scarcity/urgency constitutes deceptive marketing (Ghish)", "Yes, standard marketing", "Only on Fridays"], "ur": ["نہیں؛ جھوٹی قلت یا فرضی وقت دکھانا دھوکہ (غِش) اور ناجائز ہے", "ہاں جائز ہے", "صرف جمعہ کو"], "ar": ["لا؛ اصطناع الندرة الكاذبة غش وتضليل محرم", "نعم تسويق عادي"], "hi": ["नहीं; झूठी कमी दिखाना धोखा (ग़िश) है", "हाँ, सामान्य मार्केटिंग है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Artificial countdowns mislead customers into rushed non-informed choices, violating Muslim 102.", "ur": "فرضی کاؤنٹ ڈاؤن گاہک کو دھوکے میں ڈال کر جلد بازی پر مجبور کرتا ہے، جو مسلم 102 کے خلاف ہے۔", "ar": "المؤقتات الوهمية تخدع المشتري وتنافي الصدق.", "hi": "नकली टाइमर ग्राहकों को भ्रमित करते हैं और मुस्लिम 102 के विरुद्ध हैं।" }
+        }
+      ]
+    }
+  ]
+}

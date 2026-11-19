@@ -1,0 +1,1625 @@
+{
+  "lessons": [
+    {
+      "id": "faraid_01",
+      "departmentId": "dept_faraid",
+      "order": 1,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Foundations", "ur": "بنیادی اصول", "ar": "المبادئ الأساسية", "hi": "मूल सिद्धांत"},
+      "title": {
+        "en": "What is Ilm-ul-Faraid (Science of Inheritance)?",
+        "ur": "علم الفرائض (وراثت کا شرعی علم) کیا ہے؟",
+        "ar": "ما هو علم الفرائض والمواريث؟",
+        "hi": "इल्म-उल-फ़राइज़ (विरासत का विज्ञान) क्या है?"
+      },
+      "introduction": {
+        "en": "Ilm-ul-Faraid is the disciplined Islamic science specifying who inherits a deceased person's estate, why they qualify, who blocks whom, and each heir's exact share fixed directly by Allah.",
+        "ur": "علم الفرائض وہ منظم شرعی علم ہے جو متوفی کے ترکے کے مستحقین، محجوب ہونے کے قواعد اور ہر وارث کے مقررہ حصے کو قرآن و سنت کی روشنی میں متعین کرتا ہے۔",
+        "ar": "علم الفرائض هو العلم الشرعي الذي يحدد المستحقين لتركة المتوفى ونصيب كل وارث بالعدل الإلهي.",
+        "hi": "इल्म-उल-फ़राइज़ वह इस्लामी विज्ञान है जो मृतक की संपत्ति में वारिसों, अवरोध नियमों और निश्चित हिस्सों को तय करता है।"
+      },
+      "explanation": {
+        "en": "Unlike systems driven purely by personal whims or primogeniture that hand wealth to one favored heir, Islamic inheritance distributes wealth widely across nuclear and extended family ties after death, preventing wealth concentration while protecting vulnerable dependents—especially wives, daughters, mothers, and orphans.",
+        "ur": "جاگیردارانہ یا صرف ایک اولاد کو سب کچھ دینے والے نظام کے برعکس، اسلام میت کے بعد دولت کو خاندان کے مستحق افراد میں پھیلاتا ہے تاکہ دولت چند ہاتھوں میں قید نہ ہو اور بیوہ، بیٹیوں، والدہ اور کمزور ورثاء کا حق محفوظ رہے۔",
+        "ar": "بخلاف الأنظمة التي تحصر التركة في شخص واحد، يوزع الإسلام الثروة بعد الوفاة على الأسرة بعدل ويحفظ حقوق النساء والضعفاء.",
+        "hi": "इस्लामी विरासत प्रणाली धन को किसी एक व्यक्ति तक सीमित रखने के बजाय पत्नी, बेटियों, माता-पिता व अन्य वारिसों में न्यायपूर्वक वितरित करती है।"
+      },
+      "practicalWays": {
+        "en": ["Keep transparent records of personal assets vs joint family or business debts", "Learn primary fixed shares before estate disputes arise in the family"],
+        "ur": ["ذاتی جائیداد، مشترکہ کاروبار اور قرضوں کا تحریری ریکارڈ زندگی ہی میں صاف رکھیں", "خاندانی تنازعات سے بچنے کے لیے وراثت کے بنیادی حصے پہلے سے سیکھیں"],
+        "ar": ["توثيق الممتلكات والديون الشخصية كتابياً في الحياة", "تعلم الأسهم الشرعية قبل وقوع الخلافات"],
+        "hi": ["जीवन में ही निजी संपत्ति व कर्ज़ का लिखित रिकॉर्ड रखें", "परिवार में विवाद से पहले मूल हिस्से सीखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Clarifying exactly what a deceased father owned individually versus a house built jointly by sons prevents decades of bitter litigation."],
+        "ur": ["وفات سے پہلے یہ واضح رکھنا کہ گھر والد کی ذاتی ملکیت ہے یا بیٹوں کی مشترکہ کمائی، برسوں کی عدالتی جنگ روک دیتا ہے۔"],
+        "ar": ["توضيح الملكية الفردية للوالد مقابل مساهمات الأبناء يمنع النزاعات الطويلة."],
+        "hi": ["पिता की निजी संपत्ति और बेटों के साझा योगदान को स्पष्ट रखना वर्षों के विवाद से बचाता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Dividing property based on local tribal customs instead of Quranic shares", "Delaying inheritance distribution for decades while heirs pass away"],
+        "ur": ["قرآنی حصوں کے بجائے مقامی رسم و رواج کے مطابق تقسیم کرنا", "برسوں تک ترکہ تقسیم نہ کرنا جس سے اصل ورثاء بھی وفات پا جائیں"],
+        "ar": ["تقسيم التركة وفق الأعراف المخالفة للشرع", "تأخير القسمة لسنوات طويلة"],
+        "hi": ["क़ुरआनी हिस्सों के बजाय स्थानीय रीति-रिवाजों से बंटवारा करना", "वर्षों तक विरासत का वितरण टालना"]
+      },
+      "actionSteps": {
+        "en": ["Prepare a clean personal asset & debt ledger accessible to trusted family members", "Consult qualified scholars early when real estate titles are complex"],
+        "ur": ["اپنے اثاثوں اور قرضوں کی ایک معتبر تحریری فہرست تیار رکھیں", "پیچیدہ مشترکہ جائیداد کی صورت میں مستند عالم و مفتی سے بروقت رہنمائی لیں"],
+        "ar": ["إعداد سجل واضح للممتلكات والديون", "استشارة أهل العلم عند تعقيد التركة"],
+        "hi": ["अपनी संपत्ति व कर्ज़ की स्पष्ट सूची तैयार रखें", "जटिल संपत्ति मामलों में विद्वानों से समय पर सलाह लें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 7, "endAyah": 7, "contextExplanation": {"en": "Establishes independent inheritance rights for both men and women.", "ur": "مردوں اور عورتوں دونوں کے لیے متعین شرعی حقِ وراثت کا اعلان۔", "ar": "إقرار حق الذكور والإناث في الميراث.", "hi": "पुरुषों और स्त्रियों दोनों के स्वतंत्र विरासत अधिकार की घोषणा।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:7 — Quran.com", "attribution": "Quranic Legislation", "url": "https://quran.com/4/7"}],
+      "mcqs": [{
+        "id": "faraid_01_q1",
+        "question": {"en": "Who determines the foundational fixed shares (Furood) in Islamic inheritance?", "ur": "اسلامی وراثت کے بنیادی مقررہ حصے کس نے متعین فرمائے ہیں؟", "ar": "من الذي حدد أنصبة الفروض الأساسية في الميراث؟", "hi": "इस्लामी विरासत में मूल निश्चित हिस्से किसने निर्धारित किए हैं?"},
+        "options": {"en": ["Allah in the Quran and authentic Sunnah", "Tribal elders", "Local customs only", "Any single eldest son"], "ur": ["اللہ تعالیٰ نے قرآن و سنت میں", "قبائلی سرداروں نے", "محض مقامی رواج نے", "صرف سب سے بڑے بیٹے نے"], "ar": ["الله تعالى في القرآن والسنة", "شيوخ القبيلة", "العرف المحلي فقط", "الابن الأكبر وحده"], "hi": ["अल्लाह ने क़ुरआन और सुन्नत में", "कबायली बुजुर्गों ने", "केवल स्थानीय रिवाज ने", "अकेले बड़े बेटे ने"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Allah directly legislated the fixed shares in Surah An-Nisa (4:11-12, 176), calling them 'ordained obligations from Allah'.", "ur": "اللہ تعالیٰ نے سورۂ نساء میں خود مقررہ حصے بیان فرما کر انہیں 'فریضۃ من اللہ' قرار دیا۔", "ar": "شرع الله الأنصبة بنفسه في سورة النساء وسماها فريضة من الله.", "hi": "अल्लाह ने सूरह निसा में स्वयं हिस्से निर्धारित किए हैं।"}
+      }]
+    },
+    {
+      "id": "faraid_02",
+      "departmentId": "dept_faraid",
+      "order": 2,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Foundations", "ur": "بنیادی اصول", "ar": "المبادئ الأساسية", "hi": "मूल सिद्धांत"},
+      "title": {
+        "en": "Importance in Quran & Sunnah (Boundaries of Allah)",
+        "ur": "قرآن و سنت میں وراثت کی اہمیت (حدود اللہ)",
+        "ar": "أهمية المواريث في القرآن والسنة (حدود الله)",
+        "hi": "क़ुरआन और सुन्नत में विरासत का महत्व (अल्लाह की सीमाएं)"
+      },
+      "introduction": {
+        "en": "Immediately after revealing inheritance verses, Allah calls these rules 'Hudoodullah' (Boundaries of Allah), promising Paradise for justice and warning severely against usurping heirs.",
+        "ur": "وراثت کی آیات کے فوراً بعد اللہ تعالیٰ نے ان احکام کو 'حدود اللہ' قرار دے کر اطاعت پر جنت کی بشارت اور حق تلفی پر سخت وعید سنائی۔",
+        "ar": "بعد آيات المواريث مباشرة سمى الله هذه الأحكام حدوده وتوعد من يتعداها.",
+        "hi": "विरासत की आयतों के तुरंत बाद अल्लाह ने इन्हें 'हुदूदुल्लाह' कहा और उल्लंघन करने पर कड़ी चेतावनी दी।"
+      },
+      "explanation": {
+        "en": "Very few legal subjects in the Quran are spelled out with exact fractions like 1/2, 1/4, 1/8, 2/3, 1/3, and 1/6. Depriving sisters, widows, or younger siblings out of greed or pride is not a minor cultural slip—it directly violates explicit Quranic limits.",
+        "ur": "قرآنِ مجید میں بہت کم مسائل ایسے ہیں جن کی جزئیات اور کسر (1/2، 1/4، 1/8، 2/3، 1/3، 1/6) اتنی صراحت سے بیان کی گئی ہوں؛ لہٰذا لالچ یا رسم کی خاطر بہنوں یا بیواؤں کو محروم کرنا صریح گناہ ہے۔",
+        "ar": "قلما وردت تفاصيل حسابية في القرآن كما وردت في الفرائض، مما يبين خطورة حرمان أي وارث.",
+        "hi": "क़ुरआन में बहुत कम विषय इतने सटीक भिन्नों (1/2, 1/4, 1/8, 2/3, 1/3, 1/6) के साथ बताए गए हैं, इसलिए किसी वारिस का हक़ मारना बड़ा अन्याय है।"
+      },
+      "practicalWays": {
+        "en": ["Treat inheritance distribution with the same reverence as Salah and fasting", "Support sisters and widows in claiming their rightful shares without guilt-tripping"],
+        "ur": ["وراثت کی عدل پر مبنی تقسیم کو نماز و روزے جیسی فرض عبادت کا درجہ دیں", "بہنوں اور بیواؤں کو طعنوں یا جذباتی دباؤ کے بغیر ان کا پورا حصہ دیں"],
+        "ar": ["التعامل مع قسمة التركة كفريضة تعبدية", "تمكين الأخوات والأرامل من حقهن دون إحراج"],
+        "hi": ["विरासत बंटवारे को धार्मिक कर्तव्य मानें", "बहनों और विधवाओं को बिना दबाव के उनका पूरा हिस्सा दें"]
+      },
+      "realLifeExamples": {
+        "en": ["Brothers sitting together transparently with sisters and an Islamic scholar immediately after the mourning period to inventory and distribute fairly."],
+        "ur": ["عدت یا سوگ کے بعد بھائیوں کا بہنوں کے ساتھ بیٹھ کر شفاف حساب سے شرعی وراثت تقسیم کرنا۔"],
+        "ar": ["اجتماع الإخوة والأخوات بشفافية بعد الوفاة لتوزيع الحقوق."],
+        "hi": ["शोक अवधि के बाद भाइयों व बहनों का पारदर्शी ढंग से हिस्सा बांटना।"]
+      },
+      "commonMistakes": {
+        "en": ["Claiming 'our daughters took dowry so they have no inheritance left'", "Keeping all inherited farmland undivided under male control only"],
+        "ur": ["یہ کہنا کہ بیٹی کو جہیز دے دیا لہٰذا وراثت میں حصہ نہیں", "زرعی زمین کو صرف مردوں کے قبضے میں رکھ کر خواتین کو محروم کرنا"],
+        "ar": ["الزعم بأن جهاز العروس يغني عن نصيبها في الميراث", "حرمان النساء من الأراضي الزراعية"],
+        "hi": ["यह कहना कि दहेज दे दिया तो बेटी का विरासत में हिस्सा नहीं", "खेती की ज़मीन पर केवल पुरुषों का कब्ज़ा रखना"]
+      },
+      "actionSteps": {
+        "en": ["Recite Quran 4:13-14 when discussing estate fairness", "Separate gifts/dowry during life cleanly from post-death inheritance rights"],
+        "ur": ["تقسیمِ ترکہ کے وقت سورۂ نساء آیات 13-14 کو پیشِ نظر رکھیں", "زندگی کے تحائف یا جہیز کو وراثت کے شرعی حق کا متبادل نہ سمجھیں"],
+        "ar": ["استحضار الآية ١٣-١٤ من سورة النساء", "التمييز بين الهبة في الحياة وحق الميراث بعد الوفاة"],
+        "hi": ["बंटवारे के समय क़ुरआन 4:13-14 याद रखें", "जीवन में दिए उपहार को मृत्यु बाद के विरासत अधिकार का विकल्प न मानें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 13, "endAyah": 14, "contextExplanation": {"en": "Promises eternal Gardens for obeying Allah's inheritance laws and sternly warns against transgressing them.", "ur": "احکامِ وراثت کی اطاعت پر جنت کی بشارت اور تجاوز پر سخت تنبیہ۔", "ar": "تلك حدود الله وما يترتب على طاعتها أو تعديها.", "hi": "विरासत नियमों के पालन पर जन्नत और उल्लंघन पर कड़ी चेतावनी।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:13-14 — Quran.com", "attribution": "Quranic Warning", "url": "https://quran.com/4/13-14"}],
+      "mcqs": [{
+        "id": "faraid_02_q1",
+        "question": {"en": "Does giving a daughter marriage gifts cancel her Quranic right to inherit later?", "ur": "کیا شادی پر بیٹی کو تحائف یا جہیز دینے سے اس کا وراثت کا شرعی حق ساقط ہو جاتا ہے؟", "ar": "هل يُسقط جهاز الزواج حق البنت في الميراث؟", "hi": "क्या शादी के उपहार/दहेज से बेटी का विरासत अधिकार समाप्त हो जाता है?"},
+        "options": {"en": ["No, her post-death inheritance right remains intact unless waived freely afterward", "Yes, dowry replaces inheritance", "Only if brothers agree", "Only for houses, not land"], "ur": ["نہیں، اس کا وراثتی حق بدستور قائم رہتا ہے", "جی ہاں، جہیز وراثت کی جگہ لے لیتا ہے", "اگر بھائی راضی ہوں تو ساقط ہے", "صرف گھر میں نہیں ملتا"], "ar": ["لا، يبقى حقها في الميراث قائماً بعد الوفاة", "نعم، الجهاز يلغي الميراث", "بموافقة الإخوة فقط", "لا ترث في الأراضي"], "hi": ["नहीं, मृत्यु के बाद उसका विरासत अधिकार पूरी तरह सुरक्षित रहता है", "हाँ, दहेज से समाप्त हो जाता है", "केवल भाइयों की सहमति पर", "केवल ज़मीन में नहीं मिलता"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Gifts during a parent's life do not erase Quranic inheritance rights after death.", "ur": "زندگی میں والدین کی طرف سے دیے گئے تحائف موت کے بعد کے شرعی حقِ وراثت کو ختم نہیں کرتے۔", "ar": "الهبة في الحياة لا تسقط نصيب الوارث بعد الممات.", "hi": "माता-पिता के जीवन के उपहार मृत्यु के बाद के विरासत हक़ को खत्म नहीं करते।"}
+      }]
+    },
+    {
+      "id": "faraid_03",
+      "departmentId": "dept_faraid",
+      "order": 3,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Pre-Distribution Priority", "ur": "تقسیم سے قبل واجبات", "ar": "الحقوق المتعلقة بالتركة", "hi": "वितरण से पूर्व दायित्व"},
+      "title": {
+        "en": "Four Duties Before Distributing the Estate",
+        "ur": "ترکہ تقسیم کرنے سے پہلے چار لازمی حقوق",
+        "ar": "الحقوق الأربعة المتعلقة بالتركة بالترتيب",
+        "hi": "संपत्ति वितरण से पहले चार अनिवार्य दायित्व"
+      },
+      "introduction": {
+        "en": "Heirs do not touch the estate first. Shariah establishes a strict four-tier priority queue before any inheritance division begins.",
+        "ur": "ورثاء سب سے پہلے ترکہ نہیں بانٹتے؛ شریعت نے تقسیمِ وراثت سے قبل چار حقوق کا واضح ترتیب وار نظام مقرر کیا ہے۔",
+        "ar": "لا يُقسم الميراث أولاً، بل تتعلق بالتركة أربعة حقوق مرتبة شرعاً.",
+        "hi": "वारिस पहले हिस्सा नहीं लेते; शरीअत ने वितरण से पूर्व चार क्रमिक दायित्व तय किए हैं।"
+      },
+      "explanation": {
+        "en": "The agreed sequence in Islamic jurisprudence is: (1) Moderate funeral and burial expenses (Tajheez wa Takfeen), (2) Settlement of all proven financial debts (including unpaid Mahr owed to the wife and zakat/rights per school), (3) Valid Wasiyyat (bequest) strictly within 1/3 to non-heirs, and (4) Distribution of the remaining net estate among rightful heirs.",
+        "ur": "ترتیب یہ ہے: (1) میت کی معتدل تجہیز و تکفین کے اخراجات، (2) تمام واجب الادا قرضے (بشمول بیوی کا غیر ادا شدہ مہر)، (3) غیر وارث کے حق میں ایک تہائی تک جائز وصیت کا نفاذ، (4) بقیہ خالص ترکے کی ورثاء میں تقسیم۔",
+        "ar": "الترتيب الشرعي: ١- مؤنة التجهيز بالمعروف، ٢- سداد الديون، ٣- تنفيذ الوصية الصحيحة في حدود الثلث، ٤- توزيع الباقي على الورثة.",
+        "hi": "सही क्रम है: (1) अंतिम संस्कार के उचित खर्च, (2) सभी कर्ज़ों (पत्नी का बकाया महर सहित) की अदायगी, (3) गैर-वारिस के लिए 1/3 तक वसीयत, (4) शेष संपत्ति का वारिसों में वितरण।"
+      },
+      "practicalWays": {
+        "en": ["Pay debts and unreturned deposits/trusts (Amanat) before splitting assets", "Include unpaid Mahr (dower) owed by a deceased husband as a debt from his estate"],
+        "ur": ["ترکہ تقسیم کرنے سے پہلے تمام قرضے اور لوگوں کی امانتیں واپس کریں", "شوہر کے ذمے بیوی کا غیر ادا شدہ حقِ مہر بھی وراثت سے پہلے قرض کے طور پر ادا کریں"],
+        "ar": ["سداد الديون ورد الأمانات قبل القسمة", "اعتبار المهر المؤخر غير المدفوع ديناً على التركة"],
+        "hi": ["बंटवारे से पहले सभी कर्ज़ और अमानतें लौटाएं", "पति द्वारा बकाया महर को भी संपत्ति से कर्ज़ के रूप में पहले चुकाएं"]
+      },
+      "realLifeExamples": {
+        "en": ["Using our Inheritance Calculator's funeral, debt, and wasiyyat deduction fields before calculating net shares."],
+        "ur": ["وراثت کیلکولیٹر میں کل مال سے پہلے تجہیز، قرض اور وصیت منہا کر کے خالص ترکہ نکالنا۔"],
+        "ar": ["خصم التجهيز والديون والوصية أولاً في حاسبة المواريث."],
+        "hi": ["कैलकुलेटर में अंतिम संस्कार खर्च, कर्ज़ व वसीयत घटाकर शुद्ध संपत्ति निकालना।"]
+      },
+      "commonMistakes": {
+        "en": ["Sharing out cash and gold while ignoring bank or personal loans of the deceased", "Treating extravagant ceremonial feasts (Chehlum/Qul feasts) as obligatory funeral deductions from orphans' wealth"],
+        "ur": ["میت کے قرضے ادا کیے بغیر نقدی اور سونا آپس میں بانٹ لینا", "بھاری دعوتوں کے اخراجات یتیموں یا ورثاء کے مال سے زبردستی کاٹنا"],
+        "ar": ["تقسيم المال مع تجاهل الديون المستحقة", "إنفاق أموال القصر والورثة في ولائم غير مشروعة"],
+        "hi": ["कर्ज़ चुकाए बिना नकद व सोना बांट लेना", "दिखावे के भोज का खर्च अनाथों व वारिसों की संपत्ति से काटना"]
+      },
+      "actionSteps": {
+        "en": ["Invite creditors to settle verified debts promptly", "Keep burial costs dignified and moderate without waste"],
+        "ur": ["قرض خواہوں سے رابطہ کر کے مصدقہ قرض فوری ادا کریں", "تجہیز و تکفین مسنون اور معتدل انداز میں کریں"],
+        "ar": ["حصر الديون الثابتة وسدادها بسرعة", "الاقتصاد والاعتدال في نفقات الجنازة"],
+        "hi": ["सत्यापित कर्ज़दारों का हिसाब जल्द चुकाएं", "दफ़्न खर्च मर्यादित और सादगी से रखें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Explicitly repeats '(Inheritance takes place) after any bequest made or debt paid.'", "ur": "قرآنِ کریم میں بار بار تاکید: 'وصیت کی تکمیل اور قرض کی ادائیگی کے بعد'۔", "ar": "من بعد وصية يوصي بها أو دين.", "hi": "स्पष्ट आदेश: किसी वसीयत के निष्पादन या कर्ज़ की अदायगी के बाद।"}}],
+      "hadithIds": ["bukhari_2742"],
+      "sourceLinks": [{"title": "Quran 4:11 — Quran.com", "attribution": "Order of Rights", "url": "https://quran.com/4/11"}],
+      "mcqs": [{
+        "id": "faraid_03_q1",
+        "question": {"en": "In Quran 4:11 'after bequest or debt', which takes priority legally according to the Prophet's practice?", "ur": "قرآنی ترتیب و سنت کی رو سے قرض اور وصیت میں عملاً کون مقدم ہے؟", "ar": "ما الذي يُقدَّم عملاً بين الدين والوصية حسب السنة؟", "hi": "सुन्नत के अनुसार कर्ज़ और वसीयत में किसे प्राथमिकता दी जाती है?"},
+        "options": {"en": ["Verified debts come before optional bequests", "Optional bequests cancel debts", "Heirs can choose randomly", "Daughters pay all debts alone"], "ur": ["مصدقہ قرض وصیت سے مقدم ہوتے ہیں", "وصیت قرض کو ختم کر دیتی ہے", "ورثاء اپنی مرضی سے طے کریں", "صرف بیٹیاں قرض دیں"], "ar": ["الدين الثابت مقدم على الوصية التطوعية", "الوصية تلغي الدين", "الأمر عشوائي", "البنات يدفعن الدين وحدهن"], "hi": ["सत्यापित कर्ज़ वसीयत से पहले चुकाया जाता है", "वसीयत कर्ज़ रद्द कर देती है", "वारिस अपनी मर्ज़ी से चुनें", "केवल बेटियाँ कर्ज़ चुकाएं"]},
+        "correctIndex": 0,
+        "explanation": {"en": "The Prophet ﷺ ruled that debt precedes bequest because debt is a binding right on the deceased's liability.", "ur": "نبی کریم ﷺ کا عمل مبارک اور اجماعِ امت یہ ہے کہ قرض کی ادائیگی وصیت پر مقدم ہے کیونکہ وہ بندوں کا واجب حق ہے۔", "ar": "قضى النبي ﷺ بالدين قبل الوصية لأنه حق لازم للعباد.", "hi": "पैग़ंबर ﷺ ने फ़रमाया कि कर्ज़ की अदायगी वसीयत से पहले होती है।"}
+      }]
+    },
+    {
+      "id": "faraid_04",
+      "departmentId": "dept_faraid",
+      "order": 4,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Pre-Distribution Priority", "ur": "تقسیم سے قبل واجبات", "ar": "الحقوق المتعلقة بالتركة", "hi": "वितरण से पूर्व दायित्व"},
+      "title": {
+        "en": "Funeral Expenses & Settling Debts Honestly",
+        "ur": "تجہیز و تکفین اور قرضوں کی دیانت دارانہ ادائیگی",
+        "ar": "مؤونة التجهيز وقضاء الديون بأمانة",
+        "hi": "अंतिम संस्कार खर्च और ईमानदारी से कर्ज़ चुकाना"
+      },
+      "introduction": {
+        "en": "A believer's soul remains encumbered by unpaid debts until settled. Honest estate settlement is an act of immense loyalty to the deceased.",
+        "ur": "میت کے ذمے قرض کی ادائیگی ورثاء کی اولین ذمہ داری اور مرحوم کے ساتھ سب سے بڑا احسان ہے۔",
+        "ar": "نفس المؤمن معلقة بدينه حتى يُقضى عنه، وسداد الدين أعظم بر بالميت.",
+        "hi": "मृतक के कर्ज़ को चुकाना वारिसों का प्रथम दायित्व और उसके प्रति सच्ची निष्ठा है।"
+      },
+      "explanation": {
+        "en": "Funeral expenses cover shrouding (Kafan), washing, grave preparation, and basic transportation without extravagance. Debts owed to people (loans, unpaid salaries, rent, trade invoices, Mahr) are settled strictly from the estate before heirs share anything; heirs are not personally obligated beyond the estate unless they voluntarily assume it.",
+        "ur": "تجہیز و تکفین میں غسل، کفن، قبر اور ضروری تدفین کے معتدل اخراجات شامل ہیں۔ اس کے بعد لوگوں کے قرض، ملازمین کی تنخواہ، کاروباری واجبات اور مہر ترکے سے ادا کیے جاتے ہیں۔ اگر ترکہ کافی نہ ہو تو ورثاء پر ذاتی مال سے قرض دینا لازم نہیں مگر احساناً ادا کرنا افضل ہے۔",
+        "ar": "تشمل التجهيز الغسل والكفن والدفن بلا إسراف، ثم تقضى الديون من التركة ولا يلزم الورثة بأكثر مما ترك الميت إلا تبرعاً.",
+        "hi": "अंतिम संस्कार में कफ़न-दफ़्न का उचित खर्च आता है। फिर सभी कर्ज़, वेतन व महर संपत्ति से अदा किए जाते हैं; संपत्ति समाप्त होने पर वारिस व्यक्तिगत रूप से बाध्य नहीं होते।"
+      },
+      "practicalWays": {
+        "en": ["Ask publicly at the funeral gathering or via trusted elders for anyone owed money by the deceased", "Distinguish between Islamic debt obligations and un-Islamic social show-off dinners"],
+        "ur": ["مرحوم کے قرض خواہوں کے لیے خاندان و محلے میں مناسب اطلاع دیں تاکہ کوئی حق باقی نہ رہے", "واجب تدفین اور غیر شرعی دکھاوے کی دعوتوں میں واضح فرق کریں"],
+        "ar": ["الإعلان في محيط الأسرة والأصدقاء لمن له دين على المتوفى", "تجنب الإسراف في ولائم العزاء من مال التركة"],
+        "hi": ["मृतक के कर्ज़दारों को सामने आने का अवसर दें", "जरूरी दफ़्न खर्च और दिखावटी दावतों में अंतर रखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Heirs selling a plot first to clear the deceased's supplier invoices before dividing the remainder cleanly."],
+        "ur": ["ورثاء کا پہلے مرحوم کے کاروباری قرض ادا کرنا اور پھر بقیہ جائیداد شرعی حصوں میں بانٹنا۔"],
+        "ar": ["سداد ديون الموردين من أصول التركة قبل توزيع المتبقي."],
+        "hi": ["व्यापारिक बकाया चुकाने के बाद शेष संपत्ति का न्यायसंगत वितरण।"]
+      },
+      "commonMistakes": {
+        "en": ["Demanding that only one son pay all the father's debts while others demand equal shares", "Ignoring verbal/informal loans verified by witnesses"],
+        "ur": ["والد کا قرض صرف ایک بیٹے پر ڈال کر خود پورا حصہ لینا", "معتبر گواہوں سے ثابت شدہ زبانی قرض کا انکار کرنا"],
+        "ar": ["تحميل أحد الأبناء الديون وحده مع اقتسام الغلة", "إنكار الديون المثبتة بالبينة"],
+        "hi": ["पिता का सारा कर्ज़ एक बेटे पर डालना", "गवाहों से प्रमाणित मौखिक कर्ज़ से इनकार करना"]
+      },
+      "actionSteps": {
+        "en": ["Audit bank statements, written IOUs, and unpaid Mahr notes", "Verify claims reasonably against written or witness proof"],
+        "ur": ["بینک ریکارڈ، تحریری دستاویزات اور نکاح نامے میں مہر کی صورتحال چیک کریں", "دعوؤں کی تصدیق معتبر شواہد سے کریں"],
+        "ar": ["مراجعة الحسابات والوثائق وعقد النكاح للمهر المؤخر", "التثبت من الديون بالبينة"],
+        "hi": ["बैंक विवरण, दस्तावेज़ और निकाहनामे में महर जांचें", "दावों का प्रमाण से सत्यापन करें"]
+      },
+      "scholarlyNuance": {
+        "en": "Fuqaha differ on whether personal religious expiations/debts (Huqooqullah like unpaid Zakat/Hajj) precede or follow human debts when an estate is insufficient; consult a Mufti if debts exceed assets.",
+        "ur": "جب ترکہ کم ہو تو حقوق اللہ (مثلاً قضا زکوٰۃ) اور حقوق العباد کے ترجیحی درجے میں فقہاء کے ہاں تفصیل موجود ہے؛ ایسی صورت میں مستند مفتی سے رجوع کریں۔",
+        "ar": "يختلف الفقهاء في تقديم ديون الله على ديون العباد إذا ضاقت التركة، ويُرجع فيها للمفتي.",
+        "hi": "संपत्ति कम पड़ने पर धार्मिक कर्ज़ (ज़कात) व मानवीय कर्ज़ की प्राथमिकता पर फ़िक़्ह में मतभेद है; मुफ़्ती से पूछें।"
+      },
+      "evidenceBadge": "madhhab_difference",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 12, "endAyah": 12, "contextExplanation": {"en": "Repeatedly emphasizes settlement after bequest or debt without causing harm.", "ur": "بغیر نقصان پہنچائے قرض اور وصیت کی ادائیگی کی تاکید۔", "ar": "من بعد وصية يوصى بها أو دين غير مضار.", "hi": "बिना नुकसान पहुँचाए कर्ज़ और वसीयत चुकाने का आदेश।"}}],
+      "hadithIds": ["bukhari_2742"],
+      "sourceLinks": [{"title": "Quran 4:12 — Quran.com", "attribution": "Debt Before Distribution", "url": "https://quran.com/4/12"}],
+      "mcqs": [{
+        "id": "faraid_04_q1",
+        "question": {"en": "What happens if an estate equals 500,000 and verified debts equal 600,000?", "ur": "اگر کل ترکہ 5 لاکھ ہو اور مصدقہ قرض 6 لاکھ ہوں تو کیا حکم ہوگا؟", "ar": "إذا بلغت التركة ٥٠٠ ألف والديون ٦٠٠ ألف فما الحكم؟", "hi": "यदि कुल संपत्ति 5 लाख और कर्ज़ 6 लाख हो तो क्या नियम है?"},
+        "options": {"en": ["The estate pays creditors proportionally; nothing remains to distribute to heirs", "Heirs split 500,000 and ignore creditors", "Wasiyyat still takes 1/3", "Eldest child goes to prison"], "ur": ["پورا ترکہ قرض خواہوں میں تقسیم ہوگا، وراثت کے لیے کچھ نہیں بچے گا", "ورثاء 5 لاکھ آپس میں بانٹ لیں", "پھر بھی ایک تہائی وصیت نافذ ہوگی", "بڑے بیٹے پر زبردستی جرمانہ ہوگا"], "ar": ["تُصرف التركة للغرماء قسمة غرماء ولا شيء للورثة", "يقتسم الورثة المال ويتركون الديون", "تُنفذ الوصية بالثلث أولاً", "يلزم الابن الأكبر جبراً"], "hi": ["सारी संपत्ति कर्ज़दारों में बंटेगी और विरासत के लिए कुछ नहीं बचेगा", "वारिस आपस में बांट लें", "फिर भी 1/3 वसीयत लागू होगी", "बड़ा बेटा कानूनी दंड भोगेगा"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Debts completely precede both Wasiyyat and inheritance.", "ur": "قرض ہر حال میں وصیت اور وراثت دونوں پر مقدم ہے۔", "ar": "الدين مقدم على الوصية والميراث مطلقاً.", "hi": "कर्ज़ वसीयत और विरासत दोनों से पहले आता है।"}
+      }]
+    },
+    {
+      "id": "faraid_05",
+      "departmentId": "dept_faraid",
+      "order": 5,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Pre-Distribution Priority", "ur": "تقسیم سے قبل واجبات", "ar": "الحقوق المتعلقة بالتركة", "hi": "वितरण से पूर्व दायित्व"},
+      "title": {
+        "en": "Limits of Wasiyyat (Max 1/3 & Not to an Heir)",
+        "ur": "وصیت کی شرعی حدود (زیادہ سے زیادہ 1/3 اور غیر وارث کے لیے)",
+        "ar": "حدود الوصية الشرعية (لا تتجاوز الثلث ولا وصية لوارث)",
+        "hi": "वसीयत की शरीअत सीमाएं (अधिकतम 1/3 व गैर-वारिस)"
+      },
+      "introduction": {
+        "en": "Unlike Western wills that can disinherit spouses or children completely, Islamic Wasiyyat is strictly capped to protect heirs from emotional favoritism.",
+        "ur": "مغربی وصیت کے برعکس جہاں کسی کو مکمل عاق کیا جا سکتا ہے، اسلام میں ورثاء کے تحفظ کے لیے وصیت پر دو سخت شرعی حدود عائد ہیں۔",
+        "ar": "على خلاف القوانين التي تجيز حرمان الورثة بالوصية، قيّد الإسلام الوصية لحماية الحقوق.",
+        "hi": "पश्चिमी वसीयत के विपरीत जो वारिसों को बेदखल कर सकती है, इस्लाम में वसीयत पर दो सख्त सीमाएं हैं।"
+      },
+      "explanation": {
+        "en": "Two core rules govern Wasiyyat after funeral and debts: (1) It cannot exceed 1/3 of the remaining estate unless all adult heirs freely consent after death (Sahih al-Bukhari 2742); (2) 'La Wasiyyata li-Warith'—no extra bequest may be left to an existing heir unless all other heirs freely agree after the testator's death. It is ideal for charity (Sadaqah Jariyah) or needy non-inheriting relatives (like orphaned grandchildren if excluded by uncles—note also regional statutes).",
+        "ur": "وصیت کے دو بنیادی قواعد: (1) قرض کے بعد بقیہ ترکے کے ایک تہائی (1/3) سے زائد وصیت تمام بالغ ورثاء کی وفات کے بعد آزادانہ رضامندی کے بغیر نافذ نہیں ہوتی (صحیح بخاری 2742)۔ (2) کسی وارث کے حق میں اضافی وصیت جائز نہیں الا یہ کہ باقی تمام ورثاء بخوشی اجازت دیں۔ وصیت صدقۂ جاریہ یا غیر وارث مستحق رشتہ داروں (مثلاً محروم پوتے پوتیوں) کے لیے بہترین ذریعہ ہے۔",
+        "ar": "ضابطان للوصية: لا تزيد عن الثلث ولا تجوز لوارث إلا بإجازة بقية الورثة البالغين بعد الوفاة، وتصلح للصدقة الجارية والأقارب غير الوارثين.",
+        "hi": "वसीयत के दो मुख्य नियम: (1) 1/3 से अधिक नहीं हो सकती, जब तक सभी वयस्क वारिस मृत्यु के बाद सहमत न हों (बुखारी 2742); (2) किसी वारिस के पक्ष में अतिरिक्त वसीयत वैध नहीं।"
+      },
+      "practicalWays": {
+        "en": ["Use your 1/3 Wasiyyat thoughtfully for Masjid, welfare, or orphaned grandchildren excluded by surviving uncles", "Never write a will saying 'disinherit my disobedient son or married daughter'—such clauses are void in Shariah"],
+        "ur": ["اپنے 1/3 حصے کی وصیت صدقۂ جاریہ یا ضرورت مند غیر وارث رشتہ داروں (مثلاً چچاؤں کی وجہ سے محروم یتیم پوتے پوتیوں) کے لیے کریں", "ناراضگی میں کسی بیٹے یا بیٹی کو عاق کرنے کی وصیت نہ لکھیں؛ شرعاً ایسی شرط باطل ہے"],
+        "ar": ["استثمار ثلث الوصية في الصدقة الجارية أو للأحفاد المحجوبين", "الوصية بحرمان وارث شرعي باطلة"],
+        "hi": ["अपने 1/3 हिस्से का उपयोग सदाक़ह या अनाथ पोते-पोतियों की सहायता हेतु करें", "किसी संतान को बेदखल करने की वसीयत न लिखें—शरीअत में अमान्य है"]
+      },
+      "realLifeExamples": {
+        "en": ["A grandfather dedicating 20% of his estate via Wasiyyat to his deceased son's orphaned children so they stay financially secure."],
+        "ur": ["دادا کا اپنے مرحوم بیٹے کے یتیم بچوں کے لیے جائز ایک تہائی کے اندر وصیت کرنا تاکہ ان کا مستقبل محفوظ رہے۔"],
+        "ar": ["إيصاء الجد بنسبة من الثلث لأبناء ابنه المتوفى."],
+        "hi": ["दादा द्वारा अपने मृत बेटे के अनाथ बच्चों के लिए वैध 1/3 के भीतर वसीयत करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Leaving 100% of assets to one favorite son by 'will' after death", "Coercing sisters to 'consent' to an unlawful will under social pressure"],
+        "ur": ["وفات کے بعد پوری جائیداد صرف ایک بیٹے کو وصیت میں دے جانا", "سماجی دباؤ میں بہنوں سے ناجائز وصیت پر زبردستی دستخط لینا"],
+        "ar": ["كتابة كامل التركة لابن واحد", "إكراه الأخوات على إجازة وصية غير شرعية"],
+        "hi": ["एक बेटे के नाम पूरी संपत्ति की वसीयत कर देना", "दबाव डालकर बहनों से अनुचित वसीयत पर सहमति लेना"]
+      },
+      "actionSteps": {
+        "en": ["Validate Wasiyyat amount in our calculator against the 1/3 cap", "Check statutory rules in your country (e.g., Sec 4 of MFLO 1961 in Pakistan for orphaned grandchildren vs classical Fiqh—consult a Mufti & lawyer)"],
+        "ur": ["ہمارے کیلکولیٹر میں وصیت کی حد (1/3) چیک کریں", "یتیم پوتوں کے سلسلے میں کلاسیکی فقہ اور ملکی قانون (مثلاً پاکستان کا فیملی لاز آرڈیننس 1961 سیکشن 4) کے فرق پر عالم و وکیل سے رہنمائی لیں"],
+        "ar": ["فحص حد الثلث في الحاسبة", "الاطلاع على الفرق بين الفقه الكلاسيكي والقوانين المحلية في الوصية الواجبة"],
+        "hi": ["कैलकुलेटर में 1/3 सीमा की जांच करें", "अनाथ पोतों के मामले में शास्त्रीय फ़िक़्ह और स्थानीय कानून का अंतर मुफ़्ती व वकील से समझें"]
+      },
+      "scholarlyNuance": {
+        "en": "Some Muslim countries enforce 'Obligatory Bequest' (Wasiyyah Wajibah) up to 1/3 for orphaned grandchildren, while Pakistan's MFLO Section 4 alters direct inheritance per representation—widely critiqued by scholars who advise voluntary 1/3 Wasiyyat instead.",
+        "ur": "متعدد عرب ممالک میں 'وصیتِ واجبہ' (1/3 تک) کا قانون رائج ہے، جبکہ پاکستان میں MFLO سیکشن 4 پر جمہور علماء کی طرف سے فقہی تحفظات کے ساتھ متبادل کے طور پر 1/3 تک اختیاری وصیت تجویز کی جاتی ہے۔",
+        "ar": "تأخذ بعض الدول بالوصية الواجبة في حدود الثلث للأحفاد.",
+        "hi": "कई देशों में 'वसीयत वाजिबा' लागू है; भारत-पाक के कई विद्वान इसके बजाय दादा द्वारा स्वैच्छिक 1/3 वसीयत करने की सलाह देते हैं।"
+      },
+      "evidenceBadge": "national_law",
+      "quranRefSpecs": [{"surahNumber": 2, "startAyah": 180, "endAyah": 182, "contextExplanation": {"en": "Warns strongly against harming heirs through unfair bequests.", "ur": "وصیت میں حق تلفی اور گناہ سے بچنے کا حکم۔", "ar": "تنظيم الوصية والتحذير من الجنف والإثم.", "hi": "वसीयत में अन्याय व पक्षपात से बचने की चेतावनी।"}}],
+      "hadithIds": ["bukhari_2742"],
+      "sourceLinks": [
+        {"title": "Sahih al-Bukhari 2742 — Sunnah.com", "attribution": "1/3 Bequest Limit", "url": "https://sunnah.com/bukhari:2742"},
+        {"title": "Council of Islamic Ideology (Pakistan)", "attribution": "Jurisprudence & Family Laws", "url": "https://cii.gov.pk/"}
+      ],
+      "mcqs": [{
+        "id": "faraid_05_q1",
+        "question": {"en": "Can a dying person leave 50% of the net estate to charity if the children do NOT consent?", "ur": "اگر ورثاء راضی نہ ہوں تو کیا میت کی 50 فیصد خیراتی وصیت نافذ ہو سکتی ہے؟", "ar": "هل تنفذ الوصية بنصف التركة لغير وارث إذا لم يُجزها الورثة؟", "hi": "यदि वारिस सहमत न हों तो क्या 50% दान की वसीयत लागू हो सकती है?"},
+        "options": {"en": ["No, only up to 1/3 (33.33%) is automatically valid without heirs' consent", "Yes, 100% is valid", "Yes, 50% is valid", "Charity cancels children's shares"], "ur": ["نہیں، ورثاء کی رضامندی کے بغیر صرف ایک تہائی (1/3) تک نافذ ہوگی", "جی ہاں 100% نافذ ہوگی", "جی ہاں 50% نافذ ہوگی", "خیرات بچوں کا حق ختم کر دیتی ہے"], "ar": ["لا، تنفذ في حدود الثلث فقط دون إجازة الورثة", "نعم تنفذ كاملة", "نعم ٥٠٪ نافذة", "الصدقة تلغي الميراث"], "hi": ["नहीं, वारिसों की सहमति बिना केवल 1/3 तक ही लागू होगी", "हाँ 100% वैध है", "हाँ 50% वैध है", "दान बच्चों का हक़ खत्म करता है"]},
+        "correctIndex": 0,
+        "explanation": {"en": "The excess above 1/3 requires free post-death consent from adult heirs (Bukhari 2742).", "ur": "ایک تہائی سے زائد وصیت تمام بالغ ورثاء کی اجازت پر موقوف ہوتی ہے (بخاری 2742)۔", "ar": "ما زاد عن الثلث موقوف على إجازة الورثة.", "hi": "1/3 से अधिक भाग वयस्क वारिसों की सहमति पर निर्भर है।"}
+      }]
+    },
+    {
+      "id": "faraid_06",
+      "departmentId": "dept_faraid",
+      "order": 6,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Foundations", "ur": "بنیادی اصول", "ar": "المبادئ الأساسية", "hi": "मूल सिद्धांत"},
+      "title": {
+        "en": "Pillars & Conditions of Inheritance (Arkan wa Shuroot)",
+        "ur": "وراثت کے ارکان اور شرائط",
+        "ar": "أركان الميراث وشروطه الشرعية",
+        "hi": "विरासत के स्तंभ और शर्तें"
+      },
+      "introduction": {
+        "en": "Inheritance only triggers legally after three pillars and three strict conditions are verified.",
+        "ur": "وراثت کا شرعی نظام صرف اس وقت نافذ ہوتا ہے جب اس کے تین ارکان اور تین شرائط پوری ہوں۔",
+        "ar": "لا يثبت الإرث شرعاً إلا بتوافر ثلاثة أركان وثلاثة شروط.",
+        "hi": "विरासत तभी लागू होती है जब इसके तीन स्तंभ और तीन शर्तें पूरी हों।"
+      },
+      "explanation": {
+        "en": "Three Pillars (Arkan): (1) Deceased owner (Muwarrith), (2) Eligible surviving heir (Warith), (3) Heritable estate (Mawrooth). Three Conditions (Shuroot): (1) Verified death (real or judicial, as in missing persons), (2) Confirmed survival of the heir at the moment of the owner's death (even a newborn breathing briefly), (3) Absence of any impediment (Mawani'). Inheritance never activates during a living parent's lifetime—that is only a gift (Hiba).",
+        "ur": "تین ارکان: (1) مورِّث (وفات پانے والا)، (2) وارث، (3) موروث (ترکہ)۔ تین شرائط: (1) مورث کی موت کا یقینی تحقق، (2) موت کے وقت وارث کا زندہ ہونا (خواہ نوزائیدہ چند لمحے ہی زندہ رہا ہو)، (3) مانعِ وراثت کا نہ ہونا۔ زندہ شخص کی جائیداد پر وراثت لاگو نہیں ہوتی؛ زندگی میں تقسیم ہبہ (تحفہ) کہلاتی ہے۔",
+        "ar": "الأركان: المورث والوارث والتركة. الشروط: تحقق موت المورث، حياة الوارث عند موته ولو بلحظة، وانتفاء الموانع.",
+        "hi": "तीन स्तंभ: मृतक, वारिस, संपत्ति। तीन शर्तें: मृत्यु का सत्यापन, मृत्यु के समय वारिस का जीवित होना, और कोई बाधा न होना। जीवित व्यक्ति की संपत्ति का बंटवारा विरासत नहीं बल्कि उपहार (हिबा) है।"
+      },
+      "practicalWays": {
+        "en": ["Do not treat parents' assets as 'our inheritance' while they are alive", "Record exact sequence of deaths in tragic accidents affecting multiple family members"],
+        "ur": ["والدین کی زندگی میں ان کے مال کو اپنا حقِ وراثت نہ سمجھیں", "کسی حادثے میں ایک سے زائد افراد کی وفات پر وفات کی ترتیب یا معاملہ مفتی کے سامنے رکھیں"],
+        "ar": ["لا يُطالب بالميراث في حياة الوالدين", "تحديد ترتيب الوفيات في الحوادث الجماعية"],
+        "hi": ["माता-पिता के जीवित रहते उनकी संपत्ति को अपनी विरासत न मानें", "दुर्घटना में एकाधिक मृत्यु होने पर क्रम स्पष्ट रखें"]
+      },
+      "realLifeExamples": {
+        "en": ["A child who passed away BEFORE his father does not inherit directly from that father (as the survival condition at father's death is absent)."],
+        "ur": ["اگر بیٹا والد کی زندگی میں وفات پا جائے تو وہ براہِ راست والد کا وارث نہیں بنتا کیونکہ والد کی وفات کے وقت وہ زندہ نہیں تھا۔"],
+        "ar": ["الابن الذي يموت قبل أبيه لا يرثه لانتفاء شرط الحياة وقت الموت."],
+        "hi": ["यदि बेटा पिता से पहले मर जाए तो वह सीधा वारिस नहीं बनता क्योंकि मृत्यु के समय जीवित नहीं था।"]
+      },
+      "commonMistakes": {
+        "en": ["Demanding 'inheritance share' from a living father or mother", "Assuming an unborn pregnancy gets no reserve—a share is held pending birth"],
+        "ur": ["زندہ والدین سے زبردستی اپنا حصہ مانگنا", "حمل میں موجود بچے کا حصہ رکھے بغیر جلدی میں ترکہ بانٹ لینا"],
+        "ar": ["مطالبة الأب الحي بالميراث", "تقسيم التركة قبل احتساب الحمل الموجود"],
+        "hi": ["जीवित माता-पिता से विरासत मांगना", "गर्भस्थ शिशु का हिस्सा सुरक्षित रखे बिना संपत्ति बांट लेना"]
+      },
+      "actionSteps": {
+        "en": ["When a pregnant widow/wife exists, reserve the maximum possible share for the unborn child until delivery", "Keep clear birth/death certificates"],
+        "ur": ["اگر میت کی بیوہ حاملہ ہو تو وضعِ حمل تک احتیاطی حصہ محفوظ رکھیں یا مستند مفتی سے تقسیم کرائیں", "پیدائش اور وفات کے درست سرٹیفکیٹ محفوظ رکھیں"],
+        "ar": ["التريث أو حجز أوفر النصيبين للحمل حتى الولادة", "توثيق شهادات الميلاد والوفاة"],
+        "hi": ["यदि विधवा गर्भवती हो तो प्रसव तक अधिकतम संभावित हिस्सा सुरक्षित रखें", "जन्म-मृत्यु प्रमाणपत्र सुरक्षित रखें"]
+      },
+      "evidenceBadge": "scholarly_consensus",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Specifies inheritance upon death when heirs are verified.", "ur": "موت کے بعد زندہ ورثاء میں تقسیم کا بیان۔", "ar": "تنظيم الميراث بعد الوفاة.", "hi": "मृत्यु के बाद जीवित वारिसों में वितरण का विधान।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:11 — Quran.com", "attribution": "Faraid Pillars", "url": "https://quran.com/4/11"}],
+      "mcqs": [{
+        "id": "faraid_06_q1",
+        "question": {"en": "Can adult children legally demand their Quranic 'inheritance share' while their father is alive?", "ur": "کیا بالغ اولاد والد کی زندگی میں اپنا شرعی حقِ وراثت مانگ سکتی ہے؟", "ar": "هل يحق للأولاد المطالبة بنصيب الميراث في حياة والدهم؟", "hi": "क्या संतान पिता के जीवित रहते विरासत का हिस्सा मांग सकती है?"},
+        "options": {"en": ["No, inheritance only begins after verified death; living transfers are gifts (Hiba)", "Yes, anytime after age 18", "Yes, at marriage", "Yes, if they split the house"], "ur": ["نہیں، وراثت صرف وفات کے بعد شروع ہوتی ہے؛ زندگی میں دینا ہبہ/تحفہ ہے", "جی ہاں 18 سال کے بعد", "جی ہاں شادی پر", "جی ہاں اگر الگ گھر بنائیں"], "ar": ["لا، الميراث لا يثبت إلا بعد الموت، وفي الحياة يُسمى هبة", "نعم عند سن ١٨", "نعم عند الزواج", "نعم عند الاستقلال"], "hi": ["नहीं, विरासत केवल मृत्यु के बाद शुरू होती है; जीवन में देना उपहार (हिबा) है", "हाँ, 18 वर्ष के बाद", "हाँ, विवाह पर", "हाँ, घर बंटने पर"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Death of the owner is the first condition (Shart) of Ilm-ul-Faraid.", "ur": "مورث کی وفات علم الفرائض کی پہلی بنیادی شرط ہے۔", "ar": "تحقق موت المورث هو الشرط الأول للميراث.", "hi": "संपत्ति स्वामी की मृत्यु इल्म-उल-फ़राइज़ की पहली शर्त है।"}
+      }]
+    },
+    {
+      "id": "faraid_07",
+      "departmentId": "dept_faraid",
+      "order": 7,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Foundations", "ur": "بنیادی اصول", "ar": "المبادئ الأساسية", "hi": "मूल सिद्धांत"},
+      "title": {
+        "en": "Three Causes of Inheritance (Nikah, Nasab, Wala)",
+        "ur": "وراثت کے تین اسباب (نکاح، نسب، ولاء)",
+        "ar": "أسباب الميراث الثلاثة (النكاح، النسب، الولاء)",
+        "hi": "विरासत के तीन कारण (निकाह, नसब, वला)"
+      },
+      "introduction": {
+        "en": "A person only inherits when linked to the deceased by one of three Shariah-recognized causes.",
+        "ur": "کوئی شخص صرف اس وقت وارث بنتا ہے جب اس کا مرحوم سے شریعت کے تسلیم شدہ تین اسباب میں سے کوئی تعلق ہو۔",
+        "ar": "لا يرث الشخص إلا بوجود سبب من أسباب الإرث الثلاثة المشروعة.",
+        "hi": "कोई व्यक्ति तभी वारिस होता है जब उसका मृतक से तीन शरीअत कारणों में से कोई संबंध हो।"
+      },
+      "explanation": {
+        "en": "The three causes are: (1) Valid Marriage (Nikah Sahih)—spouses inherit from each other even before consummation and during a revocable divorce (Talaq Raj'i) waiting period; (2) Blood Lineage (Nasab)—parents, children, siblings, grandparents, uncles; (3) Legal Emancipation loyalty (Wala)—historical institution of freeing a slave, inapplicable today in modern abolition, though discussed classically.",
+        "ur": "تین اسباب یہ ہیں: (1) صحیح نکاح—میاں بیوی ایک دوسرے کے وارث ہوتے ہیں (حتیٰ کہ طلاقِ رجعی کی عدت میں بھی)؛ (2) نسبی قرابت—والدین، اولاد، بہن بھائی، دادا دادی وغیرہ؛ (3) ولاء—قدیم دور میں غلام آزاد کرنے کا تعلق (جو دورِ حاضر میں عملی طور پر موجود نہیں)۔ منہ بولی گود لی گئی اولاد نسبی وارث نہیں بنتی بلکہ ان کی مدد 1/3 وصیت یا ہبہ سے کی جاتی ہے۔",
+        "ar": "الأسباب: النكاح الصحيح (بما يشمل عدة الطلاق الرجعي)، والنسب (الأصول والفروع والحواشي)، والولاء. أما التبني فلا يثبت به نسب ولا إرث.",
+        "hi": "तीन कारण हैं: (1) वैध निकाह (तलाक़-ए-रजी की इद्दत सहित), (2) रक्त संबंध (माता-पिता, संतान, भाई-बहन), (3) वला। गोद लिए बच्चे रक्त-वारिस नहीं बनते; उनकी सहायता 1/3 वसीयत या उपहार से की जा सकती है।"
+      },
+      "practicalWays": {
+        "en": ["Support adopted/fostered children generously through Hiba (gifts) during life or up to 1/3 Wasiyyat—without fabricating lineage", "Know that a revocably divorced wife in Iddah still inherits"],
+        "ur": ["گود لیے بچوں کا نسب تبدیل کیے بغیر انہیں زندگی میں تحائف یا 1/3 وصیت کے ذریعے مالی تحفظ دیں", "جانیں کہ طلاقِ رجعی کی عدت میں میاں بیوی ایک دوسرے کے وارث رہتے ہیں"],
+        "ar": ["دعم المكفولين بالهبة في الحياة أو بالوصية ضمن الثلث دون تغيير النسب", "المعتدة من طلاق رجعي ترث"],
+        "hi": ["गोद लिए बच्चों को वंशावली बदले बिना उपहार या 1/3 वसीयत से सुरक्षित करें", "तलाक़-ए-रजी की इद्दत में पति-पत्नी वारिस रहते हैं"]
+      },
+      "realLifeExamples": {
+        "en": ["A couple formally signs a valid Nikah contract; if one spouse dies before Rukhsati, the surviving spouse legally inherits the spousal share."],
+        "ur": ["نکاح کے بعد اگر رخصتی سے پہلے ہی کسی ایک شریکِ حیات کا انتقال ہو جائے تو دوسرا شریکِ حیات شرعی وارث ہوگا۔"],
+        "ar": ["إذا مات أحد الزوجين بعد العقد الصحيح وقبل الدخول، يثبت الميراث."],
+        "hi": ["सही निकाह के बाद रुख़सती से पहले मृत्यु होने पर भी जीवनसाथी वारिस होता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Treating step-children or adopted children as automatic blood heirs while cutting off surviving relatives", "Denying a newly married wife her inheritance just because Walima/Rukhsati had not occurred"],
+        "ur": ["سوتیلی یا منہ بولی اولاد کو نسبی وارث قرار دے کر اصل رشتہ داروں کا حق مارنا", "نکاح کے بعد محض رخصتی نہ ہونے پر بیوہ کو وراثت سے محروم کرنا"],
+        "ar": ["إدخال المتبنى في الميراث وحرمان الورثة", "حرمان الزوجة المعقود عليها قبل الزفاف"],
+        "hi": ["सौतेली या गोद ली संतान को जैविक वारिस मान लेना", "रुख़सती न होने के बहाने विवाहिता विधवा को हिस्से से वंचित करना"]
+      },
+      "actionSteps": {
+        "en": ["Document marriage contracts properly", "Use 1/3 Wasiyyat for fostered dependents or step-children you wish to care for"],
+        "ur": ["نکاح نامے اور قانونی دستاویزات محفوظ رکھیں", "زیرِ کفالت غیر نسبی بچوں کے لیے 1/3 تک وصیت یا ہبہ کی منصوبہ بندی کریں"],
+        "ar": ["توثيق عقود الزواج رسمياً", "تخصيص وصية ضمن الثلث للمكفولين المحتاجين"],
+        "hi": ["निकाह दस्तावेज़ सुरक्षित रखें", "आश्रित गैर-जैविक बच्चों हेतु 1/3 वसीयत की योजना बनाएं"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 33, "startAyah": 4, "endAyah": 5, "contextExplanation": {"en": "Preserves real biological lineage while allowing kindness and bequests to adopted/fostered children.", "ur": "حقیقی نسب کی حفاظت اور لے پالک بچوں کے ساتھ احسان کا حکم۔", "ar": "حفظ الأنساب الحقيقية ومعاملة المكفولين بالبر.", "hi": "वास्तविक वंश की सुरक्षा व दत्तक बच्चों से नेकी का निर्देश।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 33:4-5 — Quran.com", "attribution": "Lineage & Adoption", "url": "https://quran.com/33/4-5"}],
+      "mcqs": [{
+        "id": "faraid_07_q1",
+        "question": {"en": "How can someone legally secure financial care after death for an orphaned child they raised (fostered/adopted)?", "ur": "لے پالک بچے کے لیے وفات کے بعد مالی مدد کا جائز شرعی طریقہ کیا ہے؟", "ar": "ما الطريقة الشرعية لتأمين المكفول مالياً بعد الوفاة؟", "hi": "पालित बच्चे को मृत्यु के बाद आर्थिक सुरक्षा देने का वैध तरीक़ा क्या है?"},
+        "options": {"en": ["Via gifts during life or Wasiyyat up to 1/3 of the net estate", "By falsifying birth certificates as biological son", "By excluding daughters", "Adopted children get nothing ever"], "ur": ["زندگی میں ہبہ یا وفات کے لیے ایک تہائی (1/3) تک وصیت کے ذریعے", "جعلی پیدائشی سرٹیفکیٹ بنوا کر", "بیٹیوں کا حصہ ختم کر کے", "کوئی صورت جائز نہیں"], "ar": ["بالهبة في الحياة أو الوصية في حدود الثلث", "بتزوير شهادة النسب", "بإسقاط البنات", "لا سبيل لدعمه"], "hi": ["जीवन में उपहार या 1/3 तक वसीयत के द्वारा", "जन्म प्रमाणपत्र में झूठा नाम लिखकर", "बेटियों को बेदखल करके", "कोई तरीका नहीं"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Islam honors caring for orphans via Hiba and up to 1/3 Wasiyyat while keeping lineage honest.", "ur": "اسلام نسب کو بدلنے کے بجائے ہبہ اور 1/3 وصیت کے ذریعے یتیم کی کفالت کی ترغیب دیتا ہے۔", "ar": "يجوز الإحسان للمكفول بالهبة والوصية بالثلث مع حفظ نسبه الحقيقي.", "hi": "इस्लाम असली वंश सुरक्षित रखते हुए उपहार व 1/3 वसीयत से मदद को प्रोत्साहित करता है।"}
+      }]
+    },
+    {
+      "id": "faraid_08",
+      "departmentId": "dept_faraid",
+      "order": 8,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Foundations", "ur": "بنیادی اصول", "ar": "المبادئ الأساسية", "hi": "मूल सिद्धांत"},
+      "title": {
+        "en": "Impediments to Inheritance (Mawani' al-Irth)",
+        "ur": "موانعِ وراثت (کن اسباب سے وارث محروم ہوتا ہے)",
+        "ar": "موانع الإرث الشرعية",
+        "hi": "विरासत में अवरोध (मवानि-उल-इर्स)"
+      },
+      "introduction": {
+        "en": "Even a close blood relative or spouse loses all inheritance eligibility if a strict Shariah impediment applies.",
+        "ur": "قریبی رشتہ دار یا شریکِ حیات بھی اگر کسی مانعِ وراثت میں مبتلا ہو تو ترکے سے محروم ہو جاتا ہے۔",
+        "ar": "يُحرم القريب من الميراث إذا وُجد فيه مانع من موانع الإرث.",
+        "hi": "निकट संबंधी या जीवनसाथी भी यदि कोई शरीअत अवरोध लागू हो तो विरासत से वंचित हो जाता है।"
+      },
+      "explanation": {
+        "en": "The primary impediments recognized across Fiqh schools are: (1) Intentional unlawful killing (Qatl) of the deceased by the heir—so no one profits by murdering for inheritance; (2) Difference of religion between a Muslim and a non-Muslim (Bukhari 6764)—though a Muslim may lawfully receive or give via 1/3 Wasiyyat (with school nuances); (3) Historical bondage (inapplicable today). In modern criminal cases or mixed-faith families, consult a Mufti and local inheritance courts.",
+        "ur": "اہم موانعِ وراثت: (1) قتلِ ناحق—جو وارث مورث کو قتل کر دے وہ وراثت سے محروم ہو جاتا ہے تاکہ کوئی مال کے لالچ میں خون نہ بہائے؛ (2) اختلافِ دین—مسلمان اور غیر مسلم کے درمیان بلاواسطہ وراثت جاری نہیں ہوتی (البتہ غیر وارث رشتہ داروں کے لیے 1/3 تک وصیت و حسنِ سلوک کے فقہی پہلو علماء سے معلوم کیے جائیں)۔",
+        "ar": "أهم الموانع: القتل العمد بغير حق (لا يرث القاتل)، واختلاف الدين بين المسلم وغير المسلم (مع جواز الوصية في حدود الثلث بالضوابط الشرعية).",
+        "hi": "मुख्य अवरोध: (1) हत्या—मृतक की हत्या करने वाला वारिस वंचित हो जाता है; (2) धर्म की भिन्नता—मुस्लिम व गैर-मुस्लिम के बीच सीधी विरासत नहीं होती (हालांकि 1/3 वसीयत व सद्व्यवहार वैध है)।"
+      },
+      "practicalWays": {
+        "en": ["Provide kindly for non-Muslim parents or family through living gifts or valid 1/3 Wasiyyat", "Refer any suspicious death or disputed conversion timing to both legal courts and a qualified Mufti"],
+        "ur": ["غیر مسلم والدین یا رشتہ داروں کے ساتھ حسنِ سلوک اور مالی تعاون زندگی کے ہبہ یا 1/3 وصیت سے کریں", "مشکوک وفات یا مذہب کی تبدیلی کے پیچیدہ معاملات عدالت اور مفتی کے سامنے پیش کریں"],
+        "ar": ["الإحسان للأقارب غير المسلمين بالهبة والوصية المشروعة", "رفع قضايا القتل أو التوقيت المعقد للقضاء والمفتي"],
+        "hi": ["गैर-मुस्लिम माता-पिता/रिश्तेदारों की सहायता उपहार या 1/3 वसीयत से करें", "संदिग्ध मृत्यु के मामलों में अदालत व मुफ़्ती से परामर्श लें"]
+      },
+      "realLifeExamples": {
+        "en": ["A convert Muslim living faithfully with elderly non-Muslim parents caring for them generously and using Wasiyyat responsibly."],
+        "ur": ["نو مسلم فرد کا اپنے غیر مسلم والدین کی خدمت کرنا اور 1/3 وصیت یا ہبہ سے ان کی کفالت کا انتظام کرنا۔"],
+        "ar": ["رعاية المسلم الجديد لوالديه غير المسلمين بالهبة والإنفاق الواجب."],
+        "hi": ["नव-मुस्लिम द्वारा अपने गैर-मुस्लिम माता-पिता की सेवा और जीवन में उपहार/वसीयत से सहायता।"]
+      },
+      "commonMistakes": {
+        "en": ["Cutting off kindness or duty of financial maintenance toward needy non-Muslim parents (Quran 31:15 commands good companionship)"],
+        "ur": ["وراثت نہ ملنے کا مطلب والدین کی خدمت اور نفقہ ختم سمجھ لینا (جبکہ سورۂ لقمان 31:15 حسنِ سلوک کا حکم دیتی ہے)۔"],
+        "ar": ["ظن أن اختلاف الدين يمنع البر والإنفاق على الوالدين"],
+        "hi": ["विरासत न होने को माता-पिता की सेवा समाप्त होने का कारण समझ लेना (क़ुरआन 31:15 सद्व्यवहार का आदेश देता है)"]
+      },
+      "actionSteps": {
+        "en": ["Distinguish clearly between inheritance rules and filial maintenance duties", "Consult qualified scholars in convert inheritance scenarios"],
+        "ur": ["وراثت اور والدین کی خدمت و نفقہ کے فرق کو سمجھیں", "نو مسلم خاندانی معاملات میں عالم سے مشورہ کریں"],
+        "ar": ["التمييز بين أحكام الإرث وواجب البر والنفقة", "استشارة أهل العلم في حالات الأسرة المختلطة"],
+        "hi": ["विरासत और माता-पिता की सेवा के बीच अंतर समझें", "मिश्रित आस्था वाले परिवारों में विद्वानों से सलाह लें"]
+      },
+      "scholarlyNuance": {
+        "en": "Schools differ on accidental killing (Qatl Khata') vs intentional murder and certain apostasy/timeline details; always seek Mufti ruling in real cases.",
+        "ur": "قتلِ خطا اور عمد کی فقہی تفصیلات میں مذاہبِ فقہ کے درمیان جزئی فرق موجود ہیں؛ عملی مقدمات میں مفتی سے رجوع لازم ہے۔",
+        "ar": "تختلف المذاهب في القتل الخطأ وتفاصيله؛ يُستفتى فيه عالم مختص.",
+        "hi": "ग़लती से हुई मृत्यु (क़त्ल ख़ता) आदि विवरणों पर फ़िक़्ह मतों में भिन्नता है; मुफ़्ती से पूछें।"
+      },
+      "evidenceBadge": "madhhab_difference",
+      "quranRefSpecs": [{"surahNumber": 31, "startAyah": 15, "endAyah": 15, "contextExplanation": {"en": "Commands honorable worldly companionship even toward parents of a different faith.", "ur": "مختلف عقیدے کے باوجود والدین کے ساتھ دنیا میں حسنِ سلوک کا حکم۔", "ar": "وجوب مصاحبة الوالدين بالمعروف مهما كان دينهما.", "hi": "विभिन्न आस्था के बावजूद माता-पिता से श्रेष्ठ व्यवहार का आदेश।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 31:15 — Quran.com", "attribution": "Duties to Parents", "url": "https://quran.com/31/15"}],
+      "mcqs": [{
+        "id": "faraid_08_q1",
+        "question": {"en": "Why does Shariah completely bar a murderer from inheriting from the victim?", "ur": "شریعت قاتل کو مقتول کی وراثت سے کیوں محروم کرتی ہے؟", "ar": "لماذا يُمنع القاتل من ميراث المقتول؟", "hi": "शरीअत हत्यारे को मृतक की विरासत से क्यों वंचित करती है?"},
+        "options": {"en": ["To prevent people from accelerating inheritance through violence", "Only as a minor fine", "He still gets half", "Only applies to cousins"], "ur": ["تاکہ کوئی شخص جلد وراثت پانے کے لیے قتل کا ارتکاب نہ کرے", "محض معمولی جرمانے کے طور پر", "قاتل کو نصف ملتا ہے", "صرف چچازاد پر لاگو ہے"], "ar": ["سداً لذريعة استعجال الميراث بالعدوان", "مجرد غرامة", "يأخذ النصف", "ينطبق على الأقارب البعداء فقط"], "hi": ["ताकि कोई व्यक्ति संपत्ति के लालच में हिंसा न करे", "केवल छोटे जुर्माने के लिए", "उसे आधा मिलता है", "केवल चचेरे भाइयों पर लागू"]},
+        "correctIndex": 0,
+        "explanation": {"en": "A foundational Fiqh maxim states: 'Whoever hastens something before its appointed time through unlawful means is punished by deprivation.'", "ur": "مشہور فقہی قاعدہ ہے: 'من استعجل الشيء قبل أوانه عوقب بحرمانه'۔", "ar": "القاعدة الفقهية: من استعجل الشيء قبل أوانه عوقب بحرمانه.", "hi": "फ़िक़्ह सिद्धांत: जो व्यक्ति समय से पहले अवैध तरीक़े से चीज़ पाना चाहता है, वह उससे वंचित कर दिया जाता है।"}
+      }]
+    },
+    {
+      "id": "faraid_09",
+      "departmentId": "dept_faraid",
+      "order": 9,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Share Categories", "ur": "حصوں کی اقسام", "ar": "أقسام الورثة", "hi": "हिस्सों की श्रेणियां"},
+      "title": {
+        "en": "Ashab-ul-Furood (The Six Quranic Fixed Fractions)",
+        "ur": "اصحاب الفروض (قرآن کے چھ مقررہ حصے)",
+        "ar": "أصحاب الفروض الستة في القرآن",
+        "hi": "असहाब-उल-फ़ुरूद (क़ुरआन के छह निश्चित हिस्से)"
+      },
+      "introduction": {
+        "en": "Ashab-ul-Furood are heirs whose exact fractional shares are explicitly fixed in the Quran and authentic Sunnah and paid first.",
+        "ur": "اصحاب الفروض وہ اولین ورثاء ہیں جن کے مقررہ کسری حصے قرآن و سنت میں صراحت سے طے ہیں اور سب سے پہلے دیے جاتے ہیں۔",
+        "ar": "أصحاب الفروض هم أول من يُعطى أنصبتهم المقدرة شرعاً في التركة.",
+        "hi": "असहाब-उल-फ़ुरूद वे वारिस हैं जिनके निश्चित भिन्न क़ुरआन और सुन्नत में तय हैं और सबसे पहले दिए जाते हैं।"
+      },
+      "explanation": {
+        "en": "There are six Quranic fractions: Half (1/2), Quarter (1/4), Eighth (1/8), Two-Thirds (2/3), One-Third (1/3), and One-Sixth (1/6). Roughly twelve classes of heirs qualify under specific conditions: Husband, Wife, Father, Mother, Paternal Grandfather, Grandmothers, Daughter, Son's Daughter, Full Sister, Paternal Sister, Maternal Brother, and Maternal Sister. Each may shift between shares or to Asabah depending on who else survived.",
+        "ur": "قرآن میں چھ مقررہ کسریں ہیں: نصف (1/2)، ربع (1/4)، ثمن (1/8)، ثلثان (2/3)، ثلث (1/3) اور سدس (1/6)۔ بارہ اصنافِ ورثاء مختلف شرائط کے تحت ان میں شامل ہوتے ہیں: شوہر، بیوی، والد، والدہ، دادا، دادی/نانی، بیٹی، پوتی، حقیقی بہن، علاتی بہن، اخیافی بھائی اور اخیافی بہن۔",
+        "ar": "الفروض المقدرة ستة: النصف والربع والثمن والثلثان والثلث والسدس، ويستحقها اثنا عشر صنفاً بحسب شروطهم.",
+        "hi": "छह निश्चित भिन्न हैं: 1/2, 1/4, 1/8, 2/3, 1/3, और 1/6। शर्तों के अनुसार 12 श्रेणियों (पति, पत्नी, माता-पिता, दादा-दादी, बेटी, पोती, बहनें आदि) को ये हिस्से मिलते हैं।"
+      },
+      "practicalWays": {
+        "en": ["Memorize the six fractions in pairs: (1/2, 1/4, 1/8) and (2/3, 1/3, 1/6)", "Always pay Ashab-ul-Furood before computing residue (Asabah)"],
+        "ur": ["چھ حصوں کو دو جوڑوں میں یاد رکھیں: (1/2، 1/4، 1/8) اور (2/3، 1/3، 1/6)", "ہمیشہ پہلے اصحاب الفروض کو دیں پھر عصبہ کو بقیہ ملے گا (صحیح بخاری 6732)"],
+        "ar": ["حفظ الفروض في مجموعتين: (١/٢، ١/٤، ١/٨) و(٢/٣، ١/٣، ١/٦)", "البدء دائماً بأصحاب الفروض"],
+        "hi": ["छह हिस्सों को दो जोड़ों में याद रखें: (1/2, 1/4, 1/8) व (2/3, 1/3, 1/6)", "हमेशा पहले असहाब-उल-फ़ुरूद को दें (बुखारी 6732)"]
+      },
+      "realLifeExamples": {
+        "en": ["When Husband (1/4), Mother (1/6), Daughter (1/2) survive, they receive their fixed fractions first, leaving 1/12 residue."],
+        "ur": ["اگر شوہر (1/4)، والدہ (1/6) اور ایک بیٹی (1/2) ہوں تو پہلے یہ مقررہ حصے دیے جاتے ہیں، باقی 1/12 بچتا ہے۔"],
+        "ar": ["زوج (١/٤) وأم (١/٦) وبنت (١/٢) يأخذون فروضهم أولاً."],
+        "hi": ["यदि पति (1/4), माँ (1/6) व एक बेटी (1/2) हों तो पहले ये निश्चित हिस्से दिए जाते हैं।"]
+      },
+      "commonMistakes": {
+        "en": ["Giving sons everything and treating mother's 1/6 or wife's 1/8 as optional charity"],
+        "ur": ["بیٹوں کا سب کچھ رکھ کر والدہ کے 1/6 یا بیوی کے 1/8 کو احسان یا معمولی سمجھنا۔"],
+        "ar": ["إهمال فرض الأم أو الزوجة أمام الابن"],
+        "hi": ["बेटों द्वारा सब कुछ रखकर माँ के 1/6 या पत्नी के 1/8 की अनदेखी करना"]
+      },
+      "actionSteps": {
+        "en": ["Test multi-heir combinations in the built-in Faraid Calculator", "Verify common denominator steps carefully"],
+        "ur": ["ایپ کے وراثت کیلکولیٹر میں مختلف ورثاء کے امتزاج چیک کریں", "مخرج نکالنے کے مراحل سمجھیں"],
+        "ar": ["تجربة الحالات المتعددة في حاسبة الفرائض", "مراجعة أصل المسألة الحسابي"],
+        "hi": ["ऐप के विरासत कैलकुलेटर में विभिन्न संयोजन जांचें", "अंश-हर गणना चरण देखें"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 12, "contextExplanation": {"en": "Specifies all six core Quranic fractions.", "ur": "قرآن میں چھ مقررہ کسری حصوں کی تفصیل۔", "ar": "بيان الفروض الستة المقدرة.", "hi": "सभी छह क़ुरआनी हिस्सों का विवरण।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Sahih al-Bukhari 6732 — Sunnah.com", "attribution": "Faraid Priority", "url": "https://sunnah.com/bukhari:6732"}],
+      "mcqs": [{
+        "id": "faraid_09_q1",
+        "question": {"en": "Which fraction is NOT among the six Quranic fixed Faraid fractions?", "ur": "ان میں سے کون سا حصہ قرآن کے چھ مقررہ فرائض میں شامل نہیں؟", "ar": "أي كسر ليس من الفروض الستة المقدرة في القرآن؟", "hi": "इनमें से कौन सा भिन्न क़ुरआन के छह निश्चित हिस्सों में शामिल नहीं है?"},
+        "options": {"en": ["1/5 (One-Fifth)", "1/8 (One-Eighth)", "1/6 (One-Sixth)", "2/3 (Two-Thirds)"], "ur": ["1/5 (پانچواں حصہ)", "1/8 (آٹھواں حصہ)", "1/6 (چھٹا حصہ)", "2/3 (دو تہائی)"], "ar": ["١/٥ (الخمس)", "١/٨ (الثمن)", "١/٦ (السدس)", "٢/٣ (الثلثان)"], "hi": ["1/5 (पांचवां)", "1/8 (आठवां)", "1/6 (छठा)", "2/3 (दो-तिहाई)"]},
+        "correctIndex": 0,
+        "explanation": {"en": "1/5 applies to Khums (war/mineral treasure law), not the six inheritance shares (1/2, 1/4, 1/8, 2/3, 1/3, 1/6).", "ur": "چھ مقررہ حصے صرف 1/2، 1/4، 1/8، 2/3، 1/3 اور 1/6 ہیں؛ 1/5 وراثت کا فرض نہیں۔", "ar": "الفروض الستة هي النصف والربع والثمن والثلثان والثلث والسدس فقط.", "hi": "छह निश्चित हिस्से केवल 1/2, 1/4, 1/8, 2/3, 1/3 व 1/6 हैं।"}
+      }]
+    },
+    {
+      "id": "faraid_10",
+      "departmentId": "dept_faraid",
+      "order": 10,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Share Categories", "ur": "حصوں کی اقسام", "ar": "أقسام الورثة", "hi": "हिस्सों की श्रेणियां"},
+      "title": {
+        "en": "Asabah (Residuary Heirs & Bukhari 6732)",
+        "ur": "عصبہ (باقی ماندہ ترکے کے حقدار اور حدیثِ بخاری 6732)",
+        "ar": "العصبات وأقسامها (حديث البخاري ٦٧٣٢)",
+        "hi": "असबा (शेष संपत्ति के वारिस व बुखारी 6732)"
+      },
+      "introduction": {
+        "en": "After fixed Quranic shares are paid, whoever inherits the remaining balance is called Asabah.",
+        "ur": "اصحاب الفروض کو ان کے مقررہ حصے دینے کے بعد جو ترکہ بچتا ہے اسے لینے والا وارث 'عصبہ' کہلاتا ہے۔",
+        "ar": "بعد إعطاء أصحاب الفروض أنصبتهم، يأخذ الباقي أو جميع المال عند عدمهم الوارثُ العصبة.",
+        "hi": "निश्चित हिस्से देने के बाद जो शेष बचता है उसे पाने वाले वारिस 'असबा' कहलाते हैं।"
+      },
+      "explanation": {
+        "en": "Three types of Asabah exist: (1) Asabah bi-nafsihi (male agnatic line ranked strictly: Descendants -> Father -> Paternal Grandfather/Brothers -> Nephews -> Uncles); (2) Asabah bil-ghayr (daughters with sons, granddaughters with grandsons, full sisters with full brothers, consanguine sisters with consanguine brothers, sharing at 2:1); (3) Asabah ma'al ghayr (full sister or paternal sister acting as residuary when surviving with daughter/granddaughter).",
+        "ur": "عصبہ کی تین اقسام: (1) عصبہ بنفسہ (بیٹا، پوتا، باپ، دادا، بھائی، بھتیجا، چچا بالترتیب)؛ (2) عصبہ بالغیر (بیٹی بیٹے کے ساتھ، پوتی پوتے کے ساتھ، بہن بھائی کے ساتھ 2:1 سے)؛ (3) عصبہ مع الغیر (حقیقی یا علاتی بہن جب میت کی بیٹی یا پوتی موجود ہو تو بقیہ ترکے کی حقدار بنتی ہے)۔",
+        "ar": "أقسام العصبة: بالنفس (الأبناء فالآباء فالإخوة فالأعمام)، وبالغير (البنت مع الابن والأخت مع الأخ)، ومع الغير (الأخت مع البنت).",
+        "hi": "असबा के तीन प्रकार: (1) स्वयं असबा (बेटा, पोता, पिता, भाई, चाचा क्रम में), (2) अन्य के साथ असबा (बेटे के साथ बेटी आदि 2:1 में), (3) असबा मअल-गैर (बेटी/पोती के साथ बहन)।"
+      },
+      "practicalWays": {
+        "en": ["Apply strict Asabah hierarchy—never let an uncle inherit when a son or father survives", "Understand that being Asabah does NOT guarantee a surplus if fixed shares exhaust 100%"],
+        "ur": ["عصبہ کی ترتیب کا سختی سے لحاظ رکھیں—بیٹے یا والد کی موجودگی میں چچا یا بھائی عصبہ نہیں بنتے", "سمجھیں کہ کبھی اصحاب الفروض پورا مال لے لیتے ہیں اور عصبہ کے لیے کچھ نہیں بچتا"],
+        "ar": ["الالتزام بترتيب جهات العصوبة (البنوة ثم الأبوة ثم الأخوة ثم العمومة)", "العاصب يأخذ الباقي إن بقي شيء"],
+        "hi": ["असबा क्रम का पालन करें—बेटा या पिता होने पर भाई/चाचा को नहीं मिलता", "यदि निश्चित हिस्से 100% भर दें तो असबा के लिए कुछ नहीं बचता"]
+      },
+      "realLifeExamples": {
+        "en": ["Wife (1/8), Mother (1/6), 1 Son, 1 Daughter -> after 7/24 goes to wife and mother, 17/24 residue goes to the Son and Daughter in a 2:1 ratio."],
+        "ur": ["بیوی (1/8)، والدہ (1/6)، ایک بیٹا اور ایک بیٹی: 7/24 کے بعد بقیہ 17/24 بیٹے اور بیٹی میں 2:1 سے تقسیم ہوگا۔"],
+        "ar": ["زوجة (١/٨) وأم (١/٦) وابن وبنت: يأخذ الابن والبنت الباقي ١٧/٢٤ للذكر مثل حظ الأنثيين."],
+        "hi": ["पत्नी (1/8), माँ (1/6), 1 बेटा व 1 बेटी: शेष 17/24 बेटे व बेटी में 2:1 अनुपात में बंटेगा।"]
+      },
+      "commonMistakes": {
+        "en": ["Giving a deceased man's brothers a share even though he left behind a son or father"],
+        "ur": ["میت کے بیٹے یا والد کی موجودگی میں بھائیوں کو زبردستی حصہ دینا۔"],
+        "ar": ["إشراك الإخوة مع وجود الابن أو الأب"],
+        "hi": ["मृतक के बेटे या पिता होने के बावजूद भाइयों को हिस्सा देना"]
+      },
+      "actionSteps": {
+        "en": ["Verify hierarchy rank: Son > Father > Full Brother > Paternal Brother", "Check Bukhari 6732"],
+        "ur": ["درجہ بندی یاد رکھیں: بیٹا مقدم از والد، والد مقدم از بھائی، حقیقی بھائی مقدم از علاتی بھائی", "حدیثِ بخاری 6732 پڑھیں"],
+        "ar": ["ضبط ترتيب الأولوية في العصبة", "مراجعة حديث البخاري ٦٧٣٢"],
+        "hi": ["क्रम याद रखें: बेटा > पिता > सगा भाई > पितृ सौतेला भाई", "बुखारी 6732 पढ़ें"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Establishes 2:1 Asabah sharing among sons and daughters.", "ur": "بیٹوں اور بیٹیوں کے درمیان عصبہ بالغیر کا اصول۔", "ar": "تنظيم العصبة بالغير بين الابن والبنت.", "hi": "बेटों व बेटियों के बीच 2:1 हिस्से का नियम।"}}],
+      "hadithIds": ["bukhari_6732", "bukhari_6736"],
+      "sourceLinks": [{"title": "Sahih al-Bukhari 6732 — Sunnah.com", "attribution": "Asabah Rule", "url": "https://sunnah.com/bukhari:6732"}],
+      "mcqs": [{
+        "id": "faraid_10_q1",
+        "question": {"en": "Who is highest in priority among Asabah bi-nafsihi if both a Son and a Father survive?", "ur": "اگر میت کے بیٹا اور والد دونوں زندہ ہوں تو عصبہ بنفسہ ہونے کا پہلا حق کس کا ہے؟", "ar": "إذا اجتمع الابن والأب، من المقدم في العصوبة؟", "hi": "यदि बेटा और पिता दोनों जीवित हों तो असबा की प्राथमिकता किसे मिलती है?"},
+        "options": {"en": ["The Son takes the residue (while Father receives fixed 1/6)", "Father takes everything", "They split Asabah 50/50", "Brother takes residue"], "ur": ["بیٹا عصبہ بن کر بقیہ لے گا اور والد کو مقررہ 1/6 ملے گا", "والد سب کچھ لے گا", "دونوں برابر عصبہ ہوں گے", "بھائی عصبہ ہوگا"], "ar": ["الابن يأخذ الباقي تعصيباً ويأخذ الأب السدس فرضاً", "يأخذ الأب الكل", "يتقاسمان التعصيب", "الأخ يأخذ الباقي"], "hi": ["बेटा शेष असबा लेता है और पिता को निश्चित 1/6 मिलता है", "पिता सब कुछ लेता है", "दोनों आधा-आधा बांटते हैं", "भाई शेष लेता है"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Descending line (Son) takes Asabah priority over ascending line (Father), who receives 1/6 Fard.", "ur": "بنوت (بیٹا) ابوت (والد) پر عصبہ میں مقدم ہے اور والد اپنا فرض 1/6 لیتے ہیں۔", "ar": "جهة البنوة مقدمة في التعصيب على جهة الأبوة.", "hi": "संतान श्रेणी (बेटा) पिता श्रेणी से असबा में आगे है; पिता को 1/6 निश्चित हिस्सा मिलता है।"}
+      }]
+    },
+    {
+      "id": "faraid_11",
+      "departmentId": "dept_faraid",
+      "order": 11,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Share Categories", "ur": "حصوں کی اقسام", "ar": "أقسام الورثة", "hi": "हिस्सों की श्रेणियां"},
+      "title": {
+        "en": "Dhawil-Arham (Distant Kindred & Mufti Review)",
+        "ur": "ذوی الارحام (دور کے رشتہ دار اور مفتی کی رہنمائی)",
+        "ar": "ذوو الأرحام وضوابط إرثهم",
+        "hi": "ज़विल-अरहाम (दूर के रिश्तेदार व मुफ़्ती समीक्षा)"
+      },
+      "introduction": {
+        "en": "When a deceased leaves NO fixed-share blood heirs and NO agnatic Asabah (except possibly a spouse), extended relatives called Dhawil-Arham enter the picture.",
+        "ur": "جب میت کے پیچھے کوئی نسبی صاحبِ فرض یا عصبہ موجود نہ ہو (ماسوائے زوج یا زوجہ کے) تو ذوی الارحام یعنی نانیہالی یا بیٹی/بہن کی اولاد وغیرہ کا مرحلہ آتا ہے۔",
+        "ar": "ذوو الأرحام هم الأقارب الذين ليسوا من أصحاب الفروض ولا العصبات، كأبناء البنات والأخوال.",
+        "hi": "जब कोई निश्चित-हिस्सा रक्त वारिस या असबा न हो, तब बेटी के बच्चे, मामा, खाला आदि (ज़विल-अरहाम) सामने आते हैं।"
+      },
+      "explanation": {
+        "en": "Dhawil-Arham include maternal uncles/aunts (Khalu/Khala), daughter's children (Nawasa/Nawasi), sister's children (Bhanja/Bhanji), and paternal aunts (Phuphi). Classical schools differ significantly on how Dhawil-Arham inherit when present (Ahl al-Tanzil vs Ahl al-Qarabah vs classical Maliki/Shafi'i Bayt al-Mal rule). Therefore, our offline calculator honestly stops and instructs users to consult a qualified Mufti whenever no Fard/Asabah heirs exist.",
+        "ur": "ذوی الارحام میں نواسے نواسیاں، بھانجے بھانجیاں، ماموں، خالہ اور پھوپھی وغیرہ شامل ہیں۔ ان کے طریقۂ تقسیم میں اہلِ تنزیل، اہلِ قرابت اور بیت المال کے فقہی اختلافات موجود ہیں؛ اس لیے جب صرف ذوی الارحام ہوں تو ہمارا کیلکولیٹر غلط اندازے کے بجائے مستند مفتی سے رجوع کی رہنمائی کرتا ہے۔",
+        "ar": "منهم الخال والخالة وأولاد البنات وأولاد الأخوات؛ وفي توريثهم مذاهب متعددة (أهل القرابة وأهل التنزيل)، لذا يجب الرجوع لمفتٍ مختص.",
+        "hi": "इसमें बेटी के बच्चे, बहन के बच्चे, मामा, मौसी, बुआ आदि आते हैं। इनके वितरण पर फ़िक़्ह मतों में अंतर है, इसलिए ऐसे मामलों में हमारा कैलकुलेटर मुफ़्ती से परामर्श करने का निर्देश देता है।"
+      },
+      "practicalWays": {
+        "en": ["If someone has no close Fard/Asabah heirs, write a lawful up-to-1/3 Wasiyyat and consult a scholar early"],
+        "ur": ["اگر کسی کے کوئی قریبی شرعی ورثاء نہ ہوں تو 1/3 تک جائز وصیت اور مستند مفتی سے مشورہ کریں"],
+        "ar": ["كتابة وصية مشروعة في الثلث واستشارة عالم إذا انعدم الفرض والعصبة"],
+        "hi": ["यदि कोई निकट वारिस न हो तो 1/3 वसीयत लिखें व विद्वान से पूछें"]
+      },
+      "realLifeExamples": {
+        "en": ["A deceased woman leaves only her maternal aunt and daughter's son—handled via Mufti evaluation."],
+        "ur": ["ایک خاتون کے پیچھے صرف خالہ اور نواسہ زندہ ہوں تو فقہی مسلک اور ملکی قانون کے تحت مفتی رہنمائی کریں گے۔"],
+        "ar": ["وفاة امرأة لم تترك إلا خالة وابن بنت يتطلب فتوى مختصة."],
+        "hi": ["यदि केवल मौसी व नाती जीवित हों तो मुफ़्ती के माध्यम से निर्णय लिया जाता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Assuming distant cousins automatically take everything without checking closer daughter's children or Bayt al-Mal jurisprudence"],
+        "ur": ["تحقیق کیے بغیر ذوی الارحام کی تقسیم کا خودساختہ فیصلہ کر لینا۔"],
+        "ar": ["التصرف في التركة دون مراجعة مذهب القرابة أو التنزيل"],
+        "hi": ["बिना फ़िक़्ह जांच के दूर के रिश्तेदारों का बंटवारा स्वयं कर लेना"]
+      },
+      "actionSteps": {
+        "en": ["Take full family tree details to a certified Darul Ifta if only Dhawil-Arham survive"],
+        "ur": ["صرف ذوی الارحام ہونے کی صورت میں مکمل شجرۂ نسب دارالافتاء میں پیش کریں"],
+        "ar": ["تقديم شجرة العائلة كاملة لجهة الإفتاء عند انحصار القرابة في ذوي الأرحام"],
+        "hi": ["केवल ज़विल-अरहाम होने पर पूरा पारिवारिक वृक्ष दारुल-इफ़्ता में प्रस्तुत करें"]
+      },
+      "scholarlyNuance": {
+        "en": "Hanafi & Hanbali traditions generally inherit Dhawil-Arham (differing between Qarabah and Tanzil calculation methods), whereas early Maliki/Shafi'i routed to an organized Bayt al-Mal (though later Shafi'i/Maliki jurists adopted inheritance for Dhawil-Arham where no valid Bayt al-Mal exists).",
+        "ur": "فقہِ حنفی (اہلِ قرابت) اور حنبلی (اہلِ تنزیل) میں ذوی الارحام وارث ہوتے ہیں؛ متاخرین مالکیہ و شافعیہ نے بھی غیر منظم بیت المال کی صورت میں ذوی الارحام کے حق کو تسلیم کیا ہے۔",
+        "ar": "اختلاف المذاهب بين أهل القرابة وأهل التنزيل ومسألة بيت المال يوجب الرجوع للمفتي.",
+        "hi": "हनफ़ी व हंबली मतों में इन्हें हिस्सा मिलता है पर गणना पद्धति भिन्न है, अतः मुफ़्ती से समीक्षा आवश्यक है।"
+      },
+      "evidenceBadge": "mufti_review",
+      "isDisputedOrComplex": true,
+      "quranRefSpecs": [{"surahNumber": 8, "startAyah": 75, "endAyah": 75, "contextExplanation": {"en": "Affirms priority of blood relatives (Ulul-Arham) in Allah's Book.", "ur": "کتاب اللہ میں رشتہ داروں (اولوالارحام) کی ترجیح کا بیان۔", "ar": "وأولو الأرحام بعضهم أولى ببعض في كتاب الله.", "hi": "अल्लाह की किताब में रक्त संबंधियों की प्राथमिकता।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 8:75 — Quran.com", "attribution": "Ulul-Arham", "url": "https://quran.com/8/75"}],
+      "mcqs": [{
+        "id": "faraid_11_q1",
+        "question": {"en": "When someone dies leaving ONLY a maternal uncle (Khalu) and a daughter's son (Nawasa), what is the responsible step?", "ur": "اگر میت کے پیچھے صرف ماموں اور نواسہ ہوں تو کیا کرنا لازم ہے؟", "ar": "إذا لم يبق إلا الخال وابن البنت، فما الإجراء الصحيح؟", "hi": "जब केवल मामा व नाती शेष हों तो सही कदम क्या है?"},
+        "options": {"en": ["Consult a qualified Mufti since Dhawil-Arham calculation methods differ across Fiqh schools", "Give 100% to neighbor", "Split 50/50 randomly", "Send to stranger"], "ur": ["مستند مفتی سے رجوع کریں کیونکہ ذوی الارحام کی تقسیم کے فقہی طریقے مختلف ہیں", "سارا مال پڑوسی کو دے دیں", "اندازے سے آدھا آدھا کر لیں", "اجنبی کو دے دیں"], "ar": ["مراجعة مفتٍ مختص لاختلاف طرق توريث ذوي الأرحام", "إعطاء الجار", "القسمة العشوائية", "ترك المال للغرباء"], "hi": ["योग्य मुफ़्ती से परामर्श लें क्योंकि ज़विल-अरहाम के तरीके अलग हैं", "पड़ोसी को दे दें", "अंदाजे से आधा बांट लें", "अजनबी को दें"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Dhawil-Arham distribution requires Ahl al-Qarabah vs Ahl al-Tanzil jurisprudence evaluation.", "ur": "ذوی الارحام میں اہلِ قرابت بمقابلہ اہلِ تنزیل کی فقہی تحقیق ضروری ہے۔", "ar": "حساب ذوي الأرحام يتطلب مراعاة مذهب القرابة أو التنزيل.", "hi": "ज़विल-अरहाम की गणना हेतु फ़िक़्ह विशेषज्ञ मुफ़्ती से समीक्षा आवश्यक है।"}
+      }]
+    },
+    {
+      "id": "faraid_12",
+      "departmentId": "dept_faraid",
+      "order": 12,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Core Mechanics", "ur": "کلیدی قواعد", "ar": "القواعد المحورية", "hi": "मुख्य नियम"},
+      "title": {
+        "en": "Hajb (Exclusion & Reduction Rules)",
+        "ur": "حجب کے اصول (مکمل محجوبی اور حصے کی کمی)",
+        "ar": "أحكام الحجب (حجب الحرمان وحجب النقصان)",
+        "hi": "हजब के नियम (पूर्ण बहिष्करण और कमी)"
+      },
+      "introduction": {
+        "en": "Hajb explains why closer relatives reduce or completely block more distant relatives from inheriting.",
+        "ur": "حجب وہ نظام ہے جس کے تحت قریبی وارث کی موجودگی دور کے وارث کا حصہ کم کر دیتی ہے یا اسے مکمل روک دیتی ہے۔",
+        "ar": "الحجب هو منع شخص معين من كل الميراث أو بعضه لوجود من هو أولى منه.",
+        "hi": "हजब बताता है कि कैसे निकट वारिस दूर के वारिस का हिस्सा कम कर देते हैं या पूर्णतः रोक देते हैं।"
+      },
+      "explanation": {
+        "en": "Two types of Hajb exist: (1) Hajb Nuqsan (Reduction)—e.g., a child reduces Husband from 1/2 to 1/4, Wife from 1/4 to 1/8, Mother from 1/3 to 1/6; (2) Hajb Hirman (Complete Block)—e.g., Father blocks Paternal Grandfather and all siblings; Son blocks Grandsons, Granddaughters, and all siblings; Mother blocks Grandmothers; Full Brother blocks Paternal Brother; 2+ Daughters block a lone Granddaughter unless a Grandson rescues her. Six heirs are NEVER completely blocked: Husband, Wife, Father, Mother, Son, Daughter.",
+        "ur": "حجب کی دو اقسام ہیں: (1) حجبِ نقصان: مثلاً اولاد کی وجہ سے شوہر 1/2 سے 1/4، بیوی 1/4 سے 1/8 اور والدہ 1/3 سے 1/6 پر آ جاتی ہیں۔ (2) حجبِ حرمان: والد دادا اور تمام بہن بھائیوں کو محجوب کرتے ہیں؛ بیٹا پوتے پوتیوں اور بہن بھائیوں کو محجوب کرتا ہے؛ والدہ نانی/دادی کو محجوب کرتی ہیں؛ 2 بیٹیاں اکیلی پوتی کو محجوب کرتی ہیں الا یہ کہ پوتا ساتھ ہو۔ چھ ورثاء کبھی محجوب نہیں ہوتے: شوہر، بیوی، والد، والدہ، بیٹا، بیٹی۔",
+        "ar": "حجب النقصان يخفض النصيب (مثل الزوج من ١/٢ إلى ١/٤ مع الولد)، وحجب الحرمان يمنع البعيد (الأب يحجب الإخوة والجد، والابن يحجب الأحفاد والإخوة). وستة لا يُحجبون حجب حرمان أبداً: الزوجان والأبوان والابن والبنت.",
+        "hi": "दो प्रकार: (1) कमी (संतान से पति 1/2 से 1/4 व पत्नी 1/4 से 1/8 हो जाती है); (2) पूर्ण रोक (पिता दादा व भाई-बहनों को रोकता है; बेटा पोते व भाई-बहनों को रोकता है)। छह वारिस कभी पूर्णतः नहीं रुकते: पति, पत्नी, माता, पिता, बेटा, बेटी।"
+      },
+      "practicalWays": {
+        "en": ["Never exclude one of the six primary heirs (Husband, Wife, Father, Mother, Son, Daughter)", "Remember 1/3 Wasiyyat can still help blocked relatives like orphaned grandchildren"],
+        "ur": ["چھ بنیادی ورثاء (شوہر، بیوی، والد، والدہ، بیٹا، بیٹی) میں سے کسی کو کبھی محروم نہ کریں", "محجوب یتیم پوتے پوتیوں کی مدد کے لیے 1/3 وصیت کا شرعی راستہ اختیار کریں"],
+        "ar": ["عدم حرمان أي من الورثة الستة المباشرين", "استخدام الوصية بالثلث لمساعدة المحجوبين كالأحفاد الأيتام"],
+        "hi": ["छह मुख्य वारिसों को कभी वंचित न करें", "बहिष्कृत अनाथ पोते-पोतियों की सहायता 1/3 वसीयत से करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Deceased leaves Wife, Father, Son, and Full Brother: Full Brother receives 0 because both Father and Son block siblings."],
+        "ur": ["میت کے بیوی، والد، بیٹا اور حقیقی بھائی ہوں تو بھائی محجوب ہوگا کیونکہ والد اور بیٹا دونوں اسے روکتے ہیں۔"],
+        "ar": ["ترك زوجة وأباً وابناً وأخاً شقيقاً: الأخ محجوب بالأب والابن."],
+        "hi": ["पत्नी, पिता, बेटा व सगा भाई होने पर भाई हजब के कारण वंचित रहता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Assuming uncles or brothers always inherit regardless of surviving sons", "Forgetting that a single Grandson rescues Granddaughters when 2+ Daughters exist"],
+        "ur": ["یہ سمجھنا کہ ہر حال میں بھائی یا چچا وارث ہوتے ہیں", "یہ بھول جانا کہ دو بیٹیوں کے ساتھ اگر پوتا موجود ہو تو پوتی محجوب نہیں ہوتی بلکہ عصبہ بن جاتی ہے"],
+        "ar": ["الظن بأن الإخوة يرثون مع الأب أو الابن", "نسيان ابن الابن المعصب لبنت الابن عند وجود البنتين"],
+        "hi": ["यह मानना कि बेटे के रहते भी भाई हमेशा वारिस होते हैं", "भूल जाना कि पोते के होने पर दो बेटियों के साथ भी पोती असबा बनती है"]
+      },
+      "actionSteps": {
+        "en": ["Check the 'Excluded Heirs (Hajb)' section of the built-in calculator to inspect blocking reasons"],
+        "ur": ["کیلکولیٹر میں 'محجوب ورثاء (Hajb)' کا خانہ دیکھیں جہاں ہر محجوبی کی وجہ لکھی ہوتی ہے"],
+        "ar": ["مراجعة قسم المحجوبين في الحاسبة لفهم السبب"],
+        "hi": ["कैलकुलेटर में 'बहिष्कृत वारिस' अनुभाग देखें"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 12, "contextExplanation": {"en": "Illustrates Hajb Nuqsan as children shift parents' and spouses' fractions.", "ur": "اولاد کی موجودگی میں والدین اور میاں بیوی کے حصوں میں حجبِ نقصان کا قرآنی بیان۔", "ar": "تأثير وجود الفرع الوارث على أنصبة الزوجين والأم.", "hi": "संतान होने पर पति-पत्नी व माता के हिस्से घटने का विवरण।"}}],
+      "hadithIds": ["bukhari_6732", "bukhari_6736"],
+      "sourceLinks": [{"title": "Sahih al-Bukhari 6732 — Sunnah.com", "attribution": "Closer Heir Priority", "url": "https://sunnah.com/bukhari:6732"}],
+      "mcqs": [{
+        "id": "faraid_12_q1",
+        "question": {"en": "Which group of heirs can NEVER be completely blocked (Hajb Hirman) by anyone?", "ur": "کون سے ورثاء کبھی کسی دوسرے وارث کی وجہ سے مکمل محجوب نہیں ہوتے؟", "ar": "من هم الورثة الذين لا يُحجبون حجب حرمان أبداً؟", "hi": "कौन से वारिस कभी भी किसी के द्वारा पूर्णतः बहिष्कृत नहीं होते?"},
+        "options": {"en": ["Husband, Wife, Father, Mother, Son, Daughter", "Brothers and Sisters", "Uncles and Nephews", "Grandfathers and Grandmothers"], "ur": ["شوہر، بیوی، والد، والدہ، بیٹا، بیٹی", "بہن بھائی", "چچا اور بھتیجے", "دادا اور نانی"], "ar": ["الزوج والزوجة والأب والأم والابن والبنت", "الإخوة والأخوات", "الأعمام وأبناؤهم", "الأجداد والجدات"], "hi": ["पति, पत्नी, पिता, माता, बेटा, बेटी", "भाई-बहन", "चाचा और भतीजे", "दादा-नानी"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Direct spouses, parents, and immediate children are always guaranteed an inheritance right when eligible.", "ur": "میاں بیوی، والدین اور سگی اولاد براہِ راست متوفی سے جڑے ہوتے ہیں اس لیے کبھی محجوب نہیں ہوتے۔", "ar": "هؤلاء الستة مرتبطون بالمتوفى مباشرة فلا يحجبهم أحد حجب حرمان.", "hi": "ये छह प्रत्यक्ष वारिस कभी पूर्णतः बहिष्कृत नहीं होते।"}
+      }]
+    },
+    {
+      "id": "faraid_13",
+      "departmentId": "dept_faraid",
+      "order": 13,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Inheritance of the Husband (Quran 4:12)",
+        "ur": "شوہر کا وراثتی حصہ (سورۂ نساء 4:12)",
+        "ar": "ميراث الزوج (النساء ١٢)",
+        "hi": "पति का विरासत हिस्सा (क़ुरआन 4:12)"
+      },
+      "introduction": {
+        "en": "When a wife passes away, her surviving husband has one of two clear Quranic shares: 1/2 or 1/4.",
+        "ur": "بیوی کی وفات پر شوہر کو دو میں سے ایک مقررہ حصہ ملتا ہے: 1/2 یا 1/4۔",
+        "ar": "يرث الزوج من زوجته المتوفاة فرضاً واحداً من اثنين: النصف أو الربع.",
+        "hi": "पत्नी की मृत्यु पर पति को दो निश्चित हिस्सों में से एक मिलता है: 1/2 या 1/4।"
+      },
+      "explanation": {
+        "en": "Per Quran 4:12: (1) The husband receives 1/2 if the deceased wife leaves NO surviving children or son's grandchildren (whether from him or a prior marriage); (2) He receives 1/4 if she leaves ANY surviving child or son's grandchild (even from her previous marriage). A wife's personal gold, Mahr, salary, and inherited land are 100% hers—her husband does NOT own them automatically while she lives, nor after death beyond his fixed 1/2 or 1/4 share.",
+        "ur": "قرآنِ کریم (النساء 4:12) کے مطابق: (1) اگر مرحومہ بیوی کی کوئی اولاد یا پوتا پوتی موجود نہ ہو تو شوہر کو 1/2 ملے گا؛ (2) اگر بیوی کی کوئی بھی اولاد (خواہ پہلے شوہر سے ہو) موجود ہو تو شوہر کو 1/4 ملے گا۔ یاد رہے کہ بیوی کا ذاتی زیور، کمائی اور مہر اسی کا مال ہے اور شوہر صرف اپنے مقررہ حصے کا حقدار ہے۔",
+        "ar": "يأخذ الزوج النصف عند عدم الفرع الوارث للزوجة، والربع عند وجود الفرع الوارث (ولو من زوج سابق). وأموال الزوجة ومهرها ملك خالص لها.",
+        "hi": "क़ुरआन 4:12: यदि पत्नी की कोई संतान या पोते न हों तो पति को 1/2, और यदि कोई संतान (पूर्व विवाह से भी) हो तो 1/4 मिलता है।"
+      },
+      "practicalWays": {
+        "en": ["Recognize that a wife's parents/children inherit alongside the husband—do not seize her Mahr or gold"],
+        "ur": ["بیوی کی وفات پر اس کے والدین اور بچوں کا حصہ نکال کر شوہر صرف 1/4 یا 1/2 لے", "بیوی کے مہر اور ذاتی زیور کو خاوند کی ذاتی ملکیت نہ سمجھیں"],
+        "ar": ["أخذ الزوج لفرضه فقط وتمكين والدي الزوجة وأولادها من حقهم", "احترام ملكية الزوجة لمهرها ومالها"],
+        "hi": ["पत्नी के माता-पिता व बच्चों को उनका हिस्सा दें; पति केवल 1/2 या 1/4 लें"]
+      },
+      "realLifeExamples": {
+        "en": ["Deceased wife leaves Husband, Mother, Father, and 1 Daughter -> Husband gets 1/4 (3/12), Daughter 1/2 (6/12), Mother 1/6 (2/12), Father 1/6 (2/12) -> Awl 13."],
+        "ur": ["بیوی کے شوہر، والد، والدہ اور ایک بیٹی: شوہر کو 1/4، بیٹی کو 1/2، والدین کو 1/6-1/6 (مجموعی عول 13)۔"],
+        "ar": ["زوج (١/٤) وأب (١/٦) وأم (١/٦) وبنت (١/٢): تعول المسألة إلى ١٣."],
+        "hi": ["पत्नी के पीछे पति (1/4), पिता (1/6), माँ (1/6) व एक बेटी (1/2) होने पर औल 13 लागू होता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Thinking a wife's wealth belongs 100% to her husband without giving her parents or children their Quranic shares"],
+        "ur": ["یہ سمجھنا کہ بیوی کی جائیداد یا تنخواہ ساری کی ساری شوہر کی ہے اور اس کے والدین یا بچوں کا کچھ نہیں۔"],
+        "ar": ["استيلاء الزوج على تركة زوجته وحرمان والديها"],
+        "hi": ["यह सोचना कि पत्नी की पूरी संपत्ति पति की है और उसके माता-पिता का कुछ नहीं"]
+      },
+      "actionSteps": {
+        "en": ["Verify whether the wife had children from any prior marriage when computing husband's 1/4 vs 1/2"],
+        "ur": ["شوہر کا 1/4 یا 1/2 طے کرتے وقت بیوی کی سابقہ شادی کی اولاد کا بھی لحاظ رکھیں"],
+        "ar": ["التحقق من وجود أي فرع وارث للزوجة مطلقاً"],
+        "hi": ["पति का हिस्सा तय करते समय पूर्व विवाह की संतान की भी जांच करें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 12, "endAyah": 12, "contextExplanation": {"en": "Direct Quranic text granting husband 1/2 or 1/4.", "ur": "شوہر کے 1/2 اور 1/4 حصے کی صریح قرآنی آیت۔", "ar": "نص قرآني يحدد نصيب الزوج.", "hi": "पति के 1/2 या 1/4 हिस्से की स्पष्ट आयत।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:12 — Quran.com", "attribution": "Husband's Share", "url": "https://quran.com/4/12"}],
+      "mcqs": [{
+        "id": "faraid_13_q1",
+        "question": {"en": "What is the husband's share if his deceased wife had a son from her previous marriage and no children with him?", "ur": "اگر مرحومہ بیوی کے پہلے شوہر سے ایک بیٹا ہو مگر موجودہ شوہر سے کوئی اولاد نہ ہو تو شوہر کو کتنا ملے گا؟", "ar": "ما نصيب الزوج إذا كان للزوجة المتوفاة ابن من زواج سابق؟", "hi": "यदि मृत पत्नी का पूर्व विवाह से बेटा हो तो वर्तमान पति को कितना हिस्सा मिलेगा?"},
+        "options": {"en": ["1/4, because the wife left a surviving child", "1/2, because the child isn't his", "Nothing", "1/8"], "ur": ["1/4، کیونکہ مرحومہ بیوی کی اولاد موجود ہے", "1/2، کیونکہ وہ اس کا اپنا بیٹا نہیں", "کچھ نہیں", "1/8"], "ar": ["الربع (١/٤) لوجود فرع وارث للمتوفاة", "النصف (١/٢)", "لا شيء", "الثمن"], "hi": ["1/4, क्योंकि मृतका की संतान जीवित है", "1/2", "कुछ नहीं", "1/8"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Quran 4:12 says 'if they have a child'—referring to the wife's descendants regardless of father.", "ur": "آیت میں 'ان کی اولاد' سے مراد مرحومہ کی اولاد ہے خواہ کسی شوہر سے ہو۔", "ar": "المعتبر وجود فرع وارث للزوجة المتوفاة.", "hi": "आयत में मृतका की अपनी संतान का अस्तित्व देखा जाता है।"}
+      }]
+    },
+    {
+      "id": "faraid_14",
+      "departmentId": "dept_faraid",
+      "order": 14,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Inheritance of the Wife / Wives & Widow Protection",
+        "ur": "بیوی (یا بیویوں) کا حصہ اور بیوہ کے حقوق کا تحفظ",
+        "ar": "ميراث الزوجة والزوجات وحماية حق الأرملة",
+        "hi": "पत्नी / पत्नियों का हिस्सा और विधवा अधिकार"
+      },
+      "introduction": {
+        "en": "A surviving wife (or up to four wives jointly) receives 1/4 without descendants or 1/8 with descendants—completely separate from her unpaid Mahr.",
+        "ur": "بیوہ (یا متعدد بیویاں مشترکہ طور پر) اولاد نہ ہونے پر 1/4 اور اولاد ہونے پر 1/8 کی حقدار ہوتی ہیں—اور یہ حقِ مہر کے علاوہ ہوتا ہے۔",
+        "ar": "تستحق الزوجة (أو الزوجات مشتركات) الربع دون فرع وارث والثمن معه، فضلاً عن مهرها المستحق.",
+        "hi": "विधवा (या पत्नियाँ साझा रूप से) संतान न होने पर 1/4 व संतान होने पर 1/8 पाती हैं—जो महर से अलग होता है।"
+      },
+      "explanation": {
+        "en": "Under Quran 4:12: (1) Wife takes 1/4 if husband left no child or son's grandchild; (2) 1/8 if he left any descendant (even from another wife); (3) Multiple wives share that same 1/4 or 1/8 equally among themselves. Importantly, any unpaid Mahr is deducted as a DEBT first before inheritance begins, and a widow can NEVER be turned out of her house unjustly during Iddah or cheated out of her 1/8 or 1/4.",
+        "ur": "قرآنِ کریم (النساء 4:12): (1) شوہر کی اولاد نہ ہونے پر بیوی کا حصہ 1/4؛ (2) اولاد (خواہ دوسری بیوی سے ہو) ہونے پر 1/8؛ (3) اگر دو، تین یا چار بیویاں ہوں تو سب اسی 1/4 یا 1/8 میں برابر شریک ہوں گی۔ اس کے علاوہ بیوی کا باقی مہر بطور قرض پہلے ادا کیا جائے گا اور عدت کے دوران اسے گھر سے نکالنا یا وراثت سے محروم کرنا صریح ظلم ہے۔",
+        "ar": "للمتوفاة زوجة أو زوجات: الربع دون فرع وارث، والثمن مع وجوده، وتُدفع ديون مهرها أولاً قبل القسمة.",
+        "hi": "संतान न होने पर पत्नी को 1/4, संतान होने पर 1/8, और अनेक पत्नियाँ होने पर वे उसी 1/4 या 1/8 को बराबर बांटती हैं। बकाया महर पहले कर्ज़ के रूप में दिया जाता है।"
+      },
+      "practicalWays": {
+        "en": ["Separate the widow's personal gold, Mahr debt, and her 1/8 or 1/4 inheritance clearly"],
+        "ur": ["بیوہ کا ذاتی زیور، غیر ادا شدہ مہر اور 1/8 یا 1/4 حصہ وراثت صاف طور پر الگ کر کے دیں"],
+        "ar": ["تمكين الأرملة من مهرها وممتلكاتها مع فرضها كاملاً"],
+        "hi": ["विधवा का निजी सोना, बकाया महर और 1/8 या 1/4 विरासत स्पष्ट अलग रखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Deceased leaves 2 wives and 2 sons: first pay unpaid Mahr debts, then the 2 wives share 1/8 equally (1/16 each), and 2 sons split 7/8."],
+        "ur": ["دو بیویاں اور دو بیٹے ہوں تو پہلے مہر ادا ہو گا، پھر دونوں بیویوں کو مشترکہ 1/8 (یعنی ہر ایک کو 1/16) اور باقی 7/8 بیٹوں کو ملے گا۔"],
+        "ar": ["زوجتان وابنان: للزوجتين الثمن مناصفة (١/١٦ لكل منهما) وللابنين ٧/٨."],
+        "hi": ["दो पत्नियाँ व दो बेटे होने पर पहले महर चुकाया जाए, फिर पत्नियों को मिलकर 1/8 (प्रत्येक को 1/16) और बेटों को 7/8 मिलेगा।"]
+      },
+      "commonMistakes": {
+        "en": ["Giving 'maintenance/allowance' to a widow while refusing to hand over her actual 1/8 ownership share", "Sending a young widow back empty-handed to her parents"],
+        "ur": ["بیوہ کو صرف ماہانہ خرچہ دے کر جائیداد میں اس کا 1/8 حقِ ملکیت دبا لینا", "جوان بیوہ کو سسرال سے خالی ہاتھ واپس میکے بھیج دینا"],
+        "ar": ["الاكتفاء بنفقة رمزية للأرملة وحرمانها من التمليك الفعلي لنصيبها"],
+        "hi": ["विधवा को संपत्ति में 1/8 मालिकाना हक़ देने के बजाय केवल गुजारा देकर टाल देना"]
+      },
+      "actionSteps": {
+        "en": ["Ensure widows sign only upon full informed valuation of the estate, never blind waivers"],
+        "ur": ["بیوہ کے حصے کی باقاعدہ قیمتِ بازار لگا کر اس کی مکمل آگاہی کے ساتھ حق ادا کریں"],
+        "ar": ["تمكين الأرملة من معرفة القيمة الحقيقية لنصيبها قبل أي صلح"],
+        "hi": ["संपत्ति के सही बाज़ार मूल्यांकन के साथ विधवा को उसका पूरा हिस्सा सौंपें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 12, "endAyah": 12, "contextExplanation": {"en": "Grants wives 1/4 or 1/8 explicitly.", "ur": "بیویوں کے 1/4 اور 1/8 حصے کا قرآنی حکم۔", "ar": "تحديد نصيب الزوجات في سورة النساء.", "hi": "पत्नियों के 1/4 या 1/8 हिस्से का क़ुरआनी आदेश।"}}],
+      "hadithIds": ["muslim_1218a", "bukhari_5353"],
+      "sourceLinks": [{"title": "Quran 4:12 — Quran.com", "attribution": "Wives' Share", "url": "https://quran.com/4/12"}],
+      "mcqs": [{
+        "id": "faraid_14_q1",
+        "question": {"en": "If a man leaves 2 wives and 1 son, how much does EACH wife receive?", "ur": "اگر کسی شخص کی دو بیویاں اور ایک بیٹا ہو تو ہر بیوی کو کل کتنا حصہ ملے گا؟", "ar": "إذا ترك رجل زوجتين وابناً، فكم نصيب كل زوجة؟", "hi": "यदि किसी व्यक्ति की 2 पत्नियाँ और 1 बेटा हो तो प्रत्येक पत्नी को कितना मिलेगा?"},
+        "options": {"en": ["1/16 each (sharing the 1/8 collectively)", "1/8 each (1/4 total)", "1/4 each", "Nothing until sons allow"], "ur": ["ہر بیوی کو 1/16 (مشترکہ 1/8 کا نصف)", "ہر ایک کو 1/8 (کل 1/4)", "ہر ایک کو 1/4", "بیٹوں کی مرضی پر منحصر ہے"], "ar": ["١/١٦ لكل زوجة (تقسمان الثمن بينهما)", "١/٨ لكل واحدة", "١/٤ لكل واحدة", "لا شيء"], "hi": ["प्रत्येक को 1/16 (साझा 1/8 का आधा)", "प्रत्येक को 1/8", "प्रत्येक को 1/4", "बेटों की मर्ज़ी पर"]},
+        "correctIndex": 0,
+        "explanation": {"en": "All wives jointly share 1/8 when descendants exist (1/8 ÷ 2 = 1/16).", "ur": "اولاد ہونے کی صورت میں تمام بیویاں 1/8 میں برابر شریک ہوتی ہیں، پس دو میں سے ہر ایک کو 1/16 ملے گا۔", "ar": "تشترك الزوجات في الثمن عند وجود الولد (١/٨ ÷ ٢ = ١/١٦).", "hi": "संतान होने पर सभी पत्नियाँ 1/8 को बराबर बांटती हैं (1/8 ÷ 2 = 1/16)।"}
+      }]
+    },
+    {
+      "id": "faraid_15",
+      "departmentId": "dept_faraid",
+      "order": 15,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Father, Mother & Umariyyatayn Cases",
+        "ur": "والد اور والدہ کے حصے اور مسئلۂ عمریتین",
+        "ar": "ميراث الأب والأم ومسألتا العمريتين",
+        "hi": "पिता और माता के हिस्से व उमरिय्यतैन नियम"
+      },
+      "introduction": {
+        "en": "Parents inherit in nearly every scenario—their shares adjust gracefully between fixed portions, residuary rights, and the classic Umariyyatayn ruling.",
+        "ur": "والدین میت کے بنیادی ورثاء ہیں؛ ان کے حصے اولاد اور بہن بھائیوں کی موجودگی کے مطابق تبدیل ہوتے ہیں اور خاص صورت میں 'عمریتین' لاگو ہوتا ہے۔",
+        "ar": "الأبوان من أقرب الورثة؛ وتتنوع حالاتهم بين الفرض والتعصيب ومسألتي العمريتين.",
+        "hi": "माता-पिता प्राथमिक वारिस हैं; उनके हिस्से संतान व भाई-बहनों के अनुसार बदलते हैं।"
+      },
+      "explanation": {
+        "en": "Mother gets: (1) 1/6 if deceased left any descendant OR 2+ siblings (of any kind); (2) 1/3 if neither exists; (3) 1/3 of REMAINDER in Umariyyatayn (Spouse + Mother + Father only, no descendants, <2 siblings), so Wife(1/4)+Mother(1/4=1/3 of 3/4)+Father(2/4) and Husband(1/2)+Mother(1/6=1/3 of 1/2)+Father(2/6). Father gets: (1) 1/6 fixed with sons/grandsons; (2) 1/6 fixed PLUS remaining Asabah with daughters only; (3) pure Asabah when no descendants exist.",
+        "ur": "والدہ: (1) اولاد یا دو یا زائد بہن بھائیوں کی موجودگی میں 1/6؛ (2) ان کے بغیر 1/3؛ (3) عمریتین (صرف میاں یا بیوی + والدہ + والد، اولاد و دو بھائی نہ ہوں) میں باقی ماندہ کا 1/3 تاکہ والد کا حصہ ماں سے دوگنا رہے۔ والد: (1) بیٹے/پوتے کی موجودگی میں 1/6؛ (2) صرف بیٹیوں کے ساتھ 1/6 فرض + بقیہ عصبہ؛ (3) اولاد نہ ہونے پر خالص عصبہ۔",
+        "ar": "الأم: السدس مع الفرع أو جمع الإخوة، والثلث عند عدمهما، وثلث الباقي في العمريتين. الأب: السدس مع الابن، والسدس + الباقي مع البنت فقط، والتعصيب المحض دون فرع.",
+        "hi": "माँ: संतान या 2+ भाई-बहन होने पर 1/6, वरना 1/3, और उमरिय्यतैन में शेष का 1/3। पिता: बेटे के साथ 1/6, केवल बेटी के साथ 1/6 + शेष असबा, संतान न होने पर पूर्ण असबा।"
+      },
+      "practicalWays": {
+        "en": ["Test both Umariyyatayn scenarios in the built-in Calculator to see exact step-by-step math"],
+        "ur": ["ہمارے کیلکولیٹر میں شوہر+والد+والدہ اور بیوی+والد+والدہ دونوں صورتیں چلا کر عمریتین کا حساب دیکھیں"],
+        "ar": ["تجربة مسألتي العمريتين في الحاسبة المدمجة"],
+        "hi": ["कैलकुलेटर में दोनों उमरिय्यतैन मामले चलाकर सटीक गणना देखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Husband + Mother + Father -> Husband 1/2 (3/6), Mother 1/6 (1/3 of 1/2), Father 2/6 (1/3)."],
+        "ur": ["شوہر، والدہ اور والد: شوہر 1/2 (3/6)، والدہ باقی 1/2 کا تہائی یعنی 1/6، والد بقیہ 2/6 (1/3)۔"],
+        "ar": ["زوج (١/٢) وأم (١/٦) وأب (١/٣) في إحدى العمريتين."],
+        "hi": ["पति (1/2) + माँ (1/6) + पिता (1/3) = पूर्ण 1।"]
+      },
+      "commonMistakes": {
+        "en": ["Giving Mother 1/3 of total estate in Husband+Mother+Father (leaving Father only 1/6—less than Mother!) instead of Umariyyatayn"],
+        "ur": ["شوہر+والد+والدہ میں والدہ کو کل مال کا 1/3 دے کر والد کو 1/6 دینا (جو ماں سے آدھا ہو جائے گا)۔"],
+        "ar": ["إعطاء الأم ثلث الأصل في العمريتين مما يجعل نصيبها ضعف الأب"],
+        "hi": ["पति+माँ+पिता में माँ को कुल का 1/3 दे देना जिससे पिता को माँ से कम मिल जाए"]
+      },
+      "actionSteps": {
+        "en": ["Verify sibling count (even blocked siblings >=2 reduce Mother from 1/3 to 1/6!)"],
+        "ur": ["دھیان رکھیں کہ دو یا زائد بہن بھائی خواہ والد سے محجوب ہوں تب بھی والدہ کو 1/3 سے 1/6 کر دیتے ہیں"],
+        "ar": ["ملاحظة أن وجود جمع من الإخوة يحجب الأم من الثلث إلى السدس وإن حُجبوا هم بالأب"],
+        "hi": ["ध्यान रखें कि पिता द्वारा बहिष्कृत 2+ भाई-बहन भी माँ को 1/3 से 1/6 पर ले आते हैं"]
+      },
+      "evidenceBadge": "scholarly_consensus",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Specifies Mother's 1/6 and 1/3 and Father's 1/6.", "ur": "والدین کے 1/6 اور 1/3 حصے کا قرآنی بیان۔", "ar": "أنصبة الأبوين في سورة النساء.", "hi": "माता-पिता के 1/6 व 1/3 हिस्सों का विवरण।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:11 — Quran.com", "attribution": "Parents' Shares", "url": "https://quran.com/4/11"}],
+      "mcqs": [{
+        "id": "faraid_15_q1",
+        "question": {"en": "In Husband + Mother + Father (with no children or siblings), what share does the Mother receive under Umariyyatayn?", "ur": "شوہر، والدہ اور والد (بغیر اولاد و بہن بھائی) کی صورت میں والدہ کو کتنا حصہ ملے گا؟", "ar": "في زوج وأم وأب فقط، كم تأخذ الأم؟", "hi": "पति + माँ + पिता (बिना संतान) के मामले में माँ को कितना हिस्सा मिलता है?"},
+        "options": {"en": ["1/6 of the total estate (1/3 of remainder after Husband's 1/2)", "1/3 of total estate", "1/2 of total estate", "Nothing"], "ur": ["کل ترکے کا 1/6 (شوہر کے 1/2 کے بعد باقی کا تہائی)", "کل مال کا 1/3", "نصف", "کچھ نہیں"], "ar": ["١/٦ من التركة (ثلث الباقي بعد الزوج)", "١/٣ من التركة", "النصف", "لا شيء"], "hi": ["कुल संपत्ति का 1/6 (पति के 1/2 के बाद शेष का 1/3)", "कुल का 1/3", "आधा", "कुछ नहीं"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Umar (RA) and the Sahabah agreed she receives 1/3 of the remainder after the spouse, which equals 1/6 here.", "ur": "حضرت عمرؓ اور صحابہ کرامؓ کے اجماع کے مطابق بیوی/شوہر کے بعد باقی کا تہائی ملتا ہے جو یہاں 1/6 بنتا ہے۔", "ar": "قضى عمر والصحابة بأن لها ثلث الباقي بعد الزوج.", "hi": "सहाबा की सहमति से जीवनसाथी के बाद शेष का 1/3 (अर्थात 1/6) मिलता है।"}
+      }]
+    },
+    {
+      "id": "faraid_16",
+      "departmentId": "dept_faraid",
+      "order": 16,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Sons & Daughters (Understanding 2:1 Equity)",
+        "ur": "بیٹوں اور بیٹیوں کے حصے اور 2:1 کی حکمت",
+        "ar": "ميراث الأبناء والبنات وحكمة التفاوت في التكاليف",
+        "hi": "बेटों और बेटियों के हिस्से व 2:1 का न्याय"
+      },
+      "introduction": {
+        "en": "Direct children are the strongest heirs: daughters have protected Quranic fractions alone or share 2:1 with brothers.",
+        "ur": "سگی اولاد سب سے مضبوط ورثاء ہیں؛ بیٹیوں کے تنہا مقررہ حصے ہیں اور بھائیوں کے ساتھ 2:1 کا اصول ہے۔",
+        "ar": "الأولاد أقرب الورثة؛ للبنات فرض محدد عند انفرادهن، وللذكر مثل حظ الأنثيين مع البنين.",
+        "hi": "बच्चे सबसे निकट वारिस हैं; अकेली बेटियों के निश्चित हिस्से हैं व भाइयों के साथ 2:1 नियम है।"
+      },
+      "explanation": {
+        "en": "Three rules from Quran 4:11: (1) One daughter (no sons) -> 1/2; (2) Two or more daughters (no sons) -> 2/3 shared equally; (3) Sons + Daughters together -> share residue (or whole if no fixed heirs) with 1 male portion = 2 female portions. In Islam, women keep 100% of their wealth debt-free with zero legal duty to spend on husband or children—while men carry mandatory Mahr and lifelong household Nafaqah duties. Notably, in many cases (e.g. Father+Mother+Daughter alone), a daughter actually receives MORE than an adult brother would.",
+        "ur": "سورۂ نساء (4:11): (1) اکیلی بیٹی (بغیر بیٹے) کو 1/2؛ (2) دو یا زائد بیٹیاں (بغیر بیٹے) کو مشترکہ 2/3؛ (3) بیٹے اور بیٹیاں ساتھ ہوں تو بقیہ مال میں بیٹے کو دو بیٹیوں کے برابر۔ حکمت یہ ہے کہ عورت پر کوئی مالی کفالت لازم نہیں جبکہ مرد پر مہر اور بیوی بچوں سمیت خاندان کا نفقہ شرعاً فرض ہے۔ متعدد صورتوں میں بیٹی کا حصہ برابر یا زیادہ ہوتا ہے۔",
+        "ar": "للبنت الواحدة النصف، وللبنتين فأكثر الثلثان، ومع الابن للذكر مثل حظ الأنثيين؛ لأن الرجل ملزم بالمهر والنفقة دون المرأة.",
+        "hi": "अकेली बेटी को 1/2, दो+ बेटियों को 2/3, व बेटों संग 2:1। पुरुष पर महर और जीवनभर परिवार के भरण-पोषण की अनिवार्य ज़िम्मेदारी होती है जबकि स्त्री की संपत्ति पूरी तरह निजी होती है।"
+      },
+      "practicalWays": {
+        "en": ["Pay daughters' full 1/2, 2/3, or 1-part Asabah shares promptly upon estate settlement"],
+        "ur": ["تقسیمِ وراثت پر بیٹیوں کو ان کا پورا 1/2، 2/3 یا عصبہ حصہ بلا تاخیر حوالے کریں"],
+        "ar": ["تمكين البنات من أنصبتهن الشرعية كاملة دون مماطلة"],
+        "hi": ["बेटियों को उनका पूरा 1/2, 2/3 या असबा हिस्सा बिना देरी सौंपें"]
+      },
+      "realLifeExamples": {
+        "en": ["1 Son + 2 Daughters with no other heirs: 4 units total -> Son gets 2/4 (50%), each Daughter gets 1/4 (25%)."],
+        "ur": ["1 بیٹا اور 2 بیٹیاں (اور کوئی وارث نہ ہو): کل 4 حصے -> بیٹا 2/4 (50%)، ہر بیٹی 1/4 (25%)۔"],
+        "ar": ["ابن وبنتان: للابن ٢/٤ (٥٠٪) ولكل بنت ١/٤ (٢٥٪)."],
+        "hi": ["1 बेटा + 2 बेटियाँ: बेटा 2/4 (50%), प्रत्येक बेटी 1/4 (25%)।"]
+      },
+      "commonMistakes": {
+        "en": ["Using brothers' duty of care as an excuse to steal sisters' inheritance outright!"],
+        "ur": ["بھائیوں کے خرچ کرنے کا بہانہ بنا کر بہنوں کا شرعی حصہ بالکل ہڑپ کر جانا صریح حرام ہے۔"],
+        "ar": ["استغلال وجوب النفقة ذريعةً لأكل ميراث الأخوات"],
+        "hi": ["भाइयों के खर्च का बहाना बनाकर बहनों का विरासत हक़ हड़प लेना घोर अन्याय है"]
+      },
+      "actionSteps": {
+        "en": ["Ensure married and unmarried daughters receive identical inheritance shares"],
+        "ur": ["شادی شدہ اور غیر شادی شدہ ہر بیٹی کو برابر شرعی حصہ دیں"],
+        "ar": ["مساواة البنت المتزوجة وغير المتزوجة في الميراث"],
+        "hi": ["विवाहित और अविवाहित सभी बेटियों को समान शरीअत हिस्सा दें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Reveals exact shares for sons and daughters.", "ur": "بیٹوں اور بیٹیوں کے حصوں کی قرآنی آیت۔", "ar": "أحكام ميراث الأولاد والبنات.", "hi": "बेटों और बेटियों के हिस्से की आयत।"}}],
+      "hadithIds": ["bukhari_6736"],
+      "sourceLinks": [{"title": "Quran 4:11 — Quran.com", "attribution": "Children's Inheritance", "url": "https://quran.com/4/11"}],
+      "mcqs": [{
+        "id": "faraid_16_q1",
+        "question": {"en": "Does a daughter lose any part of her inheritance share because her parents paid for her wedding?", "ur": "کیا والدین کے شادی کے اخراجات کرنے سے بیٹی کا وراثت کا حصہ کم ہو جاتا ہے؟", "ar": "هل ينقص نصيب البنت بسبب تكاليف زواجها؟", "hi": "क्या विवाह के खर्चों के कारण बेटी का विरासत हिस्सा कम हो जाता है?"},
+        "options": {"en": ["No, wedding expenses do not reduce her inheritance fraction", "Yes, reduced by half", "Yes, 0%", "Only if married outside city"], "ur": ["نہیں، شادی کے اخراجات سے اس کا شرعی حصہ ہرگز کم نہیں ہوتا", "آدھا ہو جاتا ہے", "صفر ہو جاتا ہے", "صرف شہر سے باہر شادی پر"], "ar": ["لا، لا ينقص نصيبها أبداً", "ينقص للنصف", "يُحرم", "خارج المدينة فقط"], "hi": ["नहीं, विवाह खर्च से उसका हिस्सा बिल्कुल कम नहीं होता", "आधा हो जाता है", "शून्य हो जाता है", "केवल बाहर शादी पर"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Marriage gifts and wedding hospitality are not deductions from inheritance.", "ur": "شادی کے تحائف و اخراجات وراثت سے کٹوتی نہیں شمار ہوتے۔", "ar": "نفقات الزواج والهدايا لا تُخصم من الميراث.", "hi": "शादी के खर्च व उपहार विरासत से नहीं घटाए जाते।"}
+      }]
+    },
+    {
+      "id": "faraid_17",
+      "departmentId": "dept_faraid",
+      "order": 17,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Grandsons & Granddaughters (Son's Children & Bukhari 6736)",
+        "ur": "پوتے اور پوتیوں کی وراثت (تکمیلِ ثلثین)",
+        "ar": "ميراث أولاد الابن (ابناء وبنات الابن)",
+        "hi": "पोते और पोतियों की विरासत (बुखारी 6736)"
+      },
+      "introduction": {
+        "en": "A son's children step into the children's position when closer sons are absent—including the famous 1/6 completion rule for granddaughters.",
+        "ur": "بیٹے کی عدم موجودگی میں پوتے پوتیاں اولاد کی قائم مقامی کرتے ہیں، جن میں ایک بیٹی کے ساتھ پوتی کو 1/6 ملنے کا مشہور نبوی فیصلہ بھی شامل ہے۔",
+        "ar": "يقوم أولاد الابن مقام الأولاد عند عدم الابن، ومنه قاعدة السدس لبنت الابن مع البنت الواحدة.",
+        "hi": "बेटे की अनुपस्थिति में बेटे की संतान (पोते-पोतियां) स्थान लेती है, जिसमें एक बेटी संग पोती का 1/6 नियम प्रसिद्ध है।"
+      },
+      "explanation": {
+        "en": "Rules (excluding daughter's children, who are Dhawil-Arham): (1) Any surviving Son completely blocks Grandsons & Granddaughters under classical Sunni Fiqh; (2) With no Sons, Grandsons & Granddaughters act as children (2:1, or fixed 1/2 / 2/3 if Granddaughters only); (3) With 1 Daughter & 0 Sons/Grandsons -> Granddaughter receives 1/6 to complete the 2/3 female cap (Bukhari 6736); (4) With 2+ Daughters -> Granddaughter receives 0 unless a Grandson exists to turn her into Asabah ('the blessed boy').",
+        "ur": "احکام (نوٹ: نواسے نواسیاں ذوی الارحام میں آتے ہیں): (1) جمہور فقہِ سنی کے مطابق میت کے سگے بیٹے کی موجودگی میں پوتے پوتیاں محجوب ہو جاتے ہیں (یتیم پوتوں کے لیے 1/3 وصیت یا ملکی قانون کا فرق نوٹ کریں)؛ (2) بیٹے کے نہ ہونے پر پوتے پوتیاں اولاد کی جگہ لیتے ہیں؛ (3) ایک بیٹی کے ساتھ پوتی کو 2/3 پورا کرنے کے لیے 1/6 ملتا ہے (بخاری 6736)؛ (4) دو بیٹیوں کے ساتھ پوتی محجوب ہوگی الا یہ کہ پوتا ساتھ ہو۔",
+        "ar": "الابن يحجب أولاد الابن، ومع عدمه يأخذ ابن الابن نصيبه، وتأخذ بنت الابن السدس مع البنت الواحدة تكملة للثلثين (البخاري ٦٧٣٦).",
+        "hi": "नियम: (1) जीवित बेटे की उपस्थिति में पोते-पोतियाँ शास्त्रीय फ़िक़्ह में बहिष्कृत रहते हैं; (2) बेटा न होने पर वे स्थान लेते हैं; (3) एक बेटी के साथ पोती को 2/3 पूर्ण करने हेतु 1/6 मिलता है (बुखारी 6736)।"
+      },
+      "practicalWays": {
+        "en": ["If a grandparent wants orphaned grandchildren from a predeceased son to be cared for when uncles survive, prepare a valid up-to-1/3 Wasiyyat"],
+        "ur": ["اگر چچا زندہ ہوں تو دادا اپنے مرحوم بیٹے کے یتیم بچوں کے لیے 1/3 تک وصیت کر کے جائیں"],
+        "ar": ["الوصية للأحفاد المحجوبين بحدود الثلث"],
+        "hi": ["यदि चाचा जीवित हों तो दादा को अनाथ पोते-पोतियों के लिए 1/3 वसीयत लिखनी चाहिए"]
+      },
+      "realLifeExamples": {
+        "en": ["1 Daughter + 1 Son's Daughter + 1 Full Brother -> Daughter 1/2, Granddaughter 1/6, Brother 1/3 residue (exact Bukhari 6736 precedent)."],
+        "ur": ["ایک بیٹی، ایک پوتی اور ایک حقیقی بہن/بھائی: بیٹی 1/2، پوتی 1/6 اور بقیہ 1/3 بہن/بھائی کو (بخاری 6736)۔"],
+        "ar": ["بنت (١/٢) وبنت ابن (١/٦) وأخت (١/٣) — قضاء النبي ﷺ في البخاري ٦٧٣٦."],
+        "hi": ["1 बेटी (1/2) + 1 पोती (1/6) + बहन (1/3) — बुखारी 6736 निर्णय।"]
+      },
+      "commonMistakes": {
+        "en": ["Confusing daughter's children (Maternal grandchildren / Nawasa) with son's children (Paternal grandchildren / Pota)"],
+        "ur": ["نواسے نواسیوں اور پوتے پوتیوں کے شرعی احکام کو آپس میں گڈمڈ کر دینا۔"],
+        "ar": ["الخلط بين أولاد الابن (فروض/عصبة) وأولاد البنت (ذوي أرحام)"],
+        "hi": ["नाती-नातिन (बेटी के बच्चे) और पोते-पोती (बेटे के बच्चे) के नियमों को मिला देना"]
+      },
+      "actionSteps": {
+        "en": ["Enter Daughter + Granddaughter in the Inheritance Calculator to verify the 1/2 + 1/6 rule live"],
+        "ur": ["کیلکولیٹر میں 1 بیٹی + 1 پوتی + 1 بھائی ڈال کر 1/2 + 1/6 کی عملی تصدیق کریں"],
+        "ar": ["تجربة حالة البنت وبنت الابن في الحاسبة"],
+        "hi": ["कैलकुलेटर में 1 बेटी + 1 पोती डालकर 1/2 + 1/6 नियम की जांच करें"]
+      },
+      "scholarlyNuance": {
+        "en": "Note distinction between classical Sunni consensus (uncles block orphaned grandchildren -> resolved by Wasiyyat <= 1/3 or Wasiyyah Wajibah in Egypt/Syria) vs Section 4 of Pakistan's MFLO 1961 (statutory representation). Both scholarly and legal contexts are disclosed transparently.",
+        "ur": "کلاسیکی اجماع میں چچا کی موجودگی میں یتیم پوتا محجوب ہوتا ہے (جس کا حل 1/3 وصیت یا عرب ممالک کی وصیتِ واجبہ ہے)، جبکہ پاکستان کے MFLO سیکشن 4 کا قانونی طریقہ الگ ہے۔",
+        "ar": "فرق بين الإجماع الفقهي التقليدي وقانون الوصية الواجبة أو تمثيل الحفيد.",
+        "hi": "शास्त्रीय फ़िक़्ह (चाचा होने पर पोते का बहिष्करण -> 1/3 वसीयत द्वारा समाधान) और क्षेत्रीय पारिवारिक कानूनों के बीच अंतर स्पष्ट समझें।"
+      },
+      "evidenceBadge": "national_law",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Daughters' inheritance extended through the male agnatic descent line.", "ur": "اولادِ بنین کے ذریعے تکمیلِ حصص کا اصول۔", "ar": "امتداد ميراث الفروع عبر أبناء الابن.", "hi": "बेटे के माध्यम से वंशजों के हिस्से का विस्तार।"}}],
+      "hadithIds": ["bukhari_6736"],
+      "sourceLinks": [{"title": "Sahih al-Bukhari 6736 — Sunnah.com", "attribution": "Daughter & Granddaughter Ruling", "url": "https://sunnah.com/bukhari:6736"}],
+      "mcqs": [{
+        "id": "faraid_17_q1",
+        "question": {"en": "When 1 Daughter, 1 Granddaughter (son's daughter), and 1 Full Sister survive (no sons/parents), what share does the Granddaughter get?", "ur": "اگر 1 بیٹی، 1 پوتی اور 1 حقیقی بہن زندہ ہوں تو پوتی کو کتنا حصہ ملے گا؟", "ar": "ما نصيب بنت الابن مع بنت واحدة وأخت شقيقة؟", "hi": "जब 1 बेटी, 1 पोती व 1 सगी बहन जीवित हों तो पोती को कितना मिलेगा?"},
+        "options": {"en": ["1/6 (completing 2/3 with the Daughter — Bukhari 6736)", "Nothing", "1/2", "1/3"], "ur": ["1/6 (بیٹی کے 1/2 کے ساتھ دو تہائی پورا کرنے کے لیے — بخاری 6736)", "کچھ نہیں", "1/2", "1/3"], "ar": ["١/٦ تكملة للثلثين (البخاري ٦٧٣٦)", "لا شيء", "١/٢", "١/٣"], "hi": ["1/6 (बेटी के साथ 2/3 पूर्ण करने हेतु — बुखारी 6736)", "कुछ नहीं", "1/2", "1/3"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Reported directly by Ibn Mas'ud (RA) as the ruling of Prophet Muhammad ﷺ.", "ur": "سیدنا عبداللہ بن مسعودؓ نے یہی نبوی فیصلہ روایت فرمایا (صحیح بخاری 6736)۔", "ar": "حكم ثابت عن النبي ﷺ رواه ابن مسعود في الصحيح.", "hi": "इब्न मसूद (रज़ि.) ने पैग़ंबर ﷺ का यही निर्णय वर्णित किया है।"}
+      }]
+    },
+    {
+      "id": "faraid_18",
+      "departmentId": "dept_faraid",
+      "order": 18,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Grandparents (Grandfather & Grandmothers)",
+        "ur": "دادا، دادی اور نانی کی وراثت",
+        "ar": "ميراث الجد والجدات",
+        "hi": "दादा, दादी और नानी की विरासत"
+      },
+      "introduction": {
+        "en": "When immediate parents have passed away, the true Paternal Grandfather and Grandmothers step in under specific conditions.",
+        "ur": "والدین کی عدم موجودگی میں صحیح دادا، دادی اور نانی مخصوص شرائط کے تحت وارث بنتے ہیں۔",
+        "ar": "عند فقد الأبوين يقوم الجد الصحيح والجدات مقامهما بشروط معروفة.",
+        "hi": "माता-पिता की अनुपस्थिति में दादा, दादी और नानी विशेष शर्तों के तहत वारिस बनते हैं।"
+      },
+      "explanation": {
+        "en": "(1) True Grandmothers (Maternal Grandmother & Paternal Grandmother): blocked by the Mother (and Paternal Grandmother is also blocked by Father according to majority Hanafi/Shafi'i/Maliki view; Hanbali note noted). If eligible, single grandmother or two grandmothers share 1/6 total. (2) Paternal Grandfather (Father's father): blocked by Father; without Father and without siblings, takes Father's place (1/6 or Asabah). When Paternal Grandfather meets Full/Consanguine siblings (Al-Jadd ma'al-Ikhwah), classical schools differ strictly (Hanafi: Grandfather blocks siblings; Majority: Muqasamah sharing)—so our calculator triggers 'Qualified Scholar Review Required'.",
+        "ur": "(1) نانی اور دادی: والدہ کی موجودگی میں دونوں محجوب ہو جاتی ہیں (نیز جمہور حنفی/شافعی/مالکی کے نزدیک والد بھی دادی کو محجوب کرتے ہیں)۔ عدمِ حجاب پر ایک یا دونوں مشترکہ 1/6 پاتی ہیں۔ (2) دادا (والد کے والد): والد کی موجودگی میں محجوب؛ بغیر والد و بھائیوں کے والد کے قائم مقام (1/6 یا عصبہ)۔ البتہ دادا کے ساتھ حقیقی/علاتی بہن بھائیوں کے اجتماع میں فقہِ حنفی (حجبِ اخوہ) اور جمہور (مقاسمہ) میں بڑا اختلاف ہے—لہٰذا کیلکولیٹر اس پر مستند مفتی سے رجوع کا مشورہ دیتا ہے۔",
+        "ar": "الجدة أو الجدات يأخذن السدس عند عدم الأم (والأب للأبوية عند الجمهور). والجد يقوم مقام الأب عند عدمه، إلا مع الإخوة ففيها خلاف مشهور يوجب الفتوى.",
+        "hi": "(1) दादी व नानी को माँ न होने पर मिलकर 1/6 मिलता है। (2) पिता न होने पर दादा स्थान लेते हैं, पर दादा + भाई-बहनों के मामले में हनफ़ी (दादा रोकते हैं) व जम्हूर (मुक़ासमह) में मतभेद होने से मुफ़्ती समीक्षा आवश्यक है।"
+      },
+      "practicalWays": {
+        "en": ["Never calculate 'Grandfather + Siblings' blindly online—have your local Mufti apply your jurisdiction/school"],
+        "ur": ["دادا اور بہن بھائیوں کے اجتماع والا مسئلہ کبھی اندازے سے حل نہ کریں بلکہ مستند مفتی سے پوچھیں"],
+        "ar": ["عدم الاجتهاد الفردي في مسألة الجد مع الإخوة"],
+        "hi": ["दादा + भाई-बहनों का मामला बिना मुफ़्ती सलाह के हल न करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Deceased leaves Maternal Grandmother (1/6), Daughter (1/2), Son's Son (Asabah 1/3)."],
+        "ur": ["نانی (1/6)، بیٹی (1/2) اور پوتا (بقیہ 1/3 عصبہ)۔"],
+        "ar": ["جدة لأم (١/٦) وبنت (١/٢) وابن ابن (١/٣)."],
+        "hi": ["नानी (1/6) + बेटी (1/2) + पोता (1/3 असबा)।"]
+      },
+      "commonMistakes": {
+        "en": ["Giving maternal grandfather (Nana) a fixed Fard share—maternal grandfather falls under Dhawil-Arham"],
+        "ur": ["نانا (ماں کے والد) کو دادا کی طرح عصبہ یا فرض سمجھ لینا، حالانکہ نانا ذوی الارحام میں شمار ہوتے ہیں"],
+        "ar": ["عدّ الجد لأم (أبو الأم) عصبة، وهو من ذوي الأرحام"],
+        "hi": ["नाना (माँ के पिता) को दादा के समान फ़र्ज़/असबा समझना, जबकि वे ज़विल-अरहाम हैं"]
+      },
+      "actionSteps": {
+        "en": ["Identify whether grandmother is maternal (mother's mother) or paternal (father's mother)", "Refer Grandfather+Siblings cases to Darul Ifta"],
+        "ur": ["دادی اور نانی کا فرق واضح رکھیں", "دادا مع الاخوہ کے مسائل دارالافتاء سے حل کرائیں"],
+        "ar": ["تمييز الجدة لأم عن الجدة لأب", "استفتاء عالم في الجد مع الإخوة"],
+        "hi": ["दादी और नानी का भेद स्पष्ट रखें", "दादा+भाई मामलों में दारुल-इफ़्ता से पूछें"]
+      },
+      "scholarlyNuance": {
+        "en": "Hanafi & Abu Bakr (RA) position holds the grandfather excludes siblings just as a father does; Malik, Shafi'i, Abu Yusuf, Muhammad, and Zayd ibn Thabit (RA) compute Muqasamah (grandfather takes best of 1/3, sharing with siblings, or 1/6 if fixed heirs exist).",
+        "ur": "امام ابو حنیفہؒ کے نزدیک دادا بالکل والد کی طرح بہن بھائیوں کو محجوب کرتے ہیں؛ جبکہ جمہور صحابہ و فقہاء (زید بن ثابتؓ، شافعی، مالکی، صاحبین) مقاسمہ کے قائل ہیں۔",
+        "ar": "خلاف معروف بين مذهب الصديق وأبي حنيفة ومذهب زيد والجمهور في الجد مع الإخوة.",
+        "hi": "हनफ़ी मत में दादा भाई-बहनों को रोकते हैं, जबकि जम्हूर मत में मुक़ासमह प्रणाली लागू होती है।"
+      },
+      "evidenceBadge": "mufti_review",
+      "isDisputedOrComplex": true,
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Uses 'Abawayh' (forefathers/parents) broadly while details derive from Sunnah & Sahabah consensus.", "ur": "ابوین کے عموم اور اجماعِ صحابہ و سنت سے جدات و جد کے احکام کا ماخذ۔", "ar": "عموم لفظ الأبوين واجتهاد الصحابة في الجد.", "hi": "माता-पिता सिद्धांत का दादा-दादी पर विस्तार।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:11 — Quran.com", "attribution": "Ascendants Rules", "url": "https://quran.com/4/11"}],
+      "mcqs": [{
+        "id": "faraid_18_q1",
+        "question": {"en": "When the deceased's Mother is still alive, what share does the Maternal Grandmother (Nani) get?", "ur": "میت کی والدہ زندہ ہوں تو نانی کو کتنا حصہ ملتا ہے؟", "ar": "كم تأخذ الجدة لأم إذا كانت الأم على قيد الحياة؟", "hi": "यदि मृतक की माँ जीवित हो तो नानी को कितना हिस्सा मिलता है?"},
+        "options": {"en": ["0 — Mother completely blocks all grandmothers", "1/6", "1/12", "1/3"], "ur": ["صفر — والدہ تمام دادیوں اور نانیوں کو محجوب کر دیتی ہیں", "1/6", "1/12", "1/3"], "ar": ["لا شيء — الأم تحجب جميع الجدات", "١/٦", "١/١٢", "١/٣"], "hi": ["शून्य — माँ सभी दादी/नानी को रोक देती हैं", "1/6", "1/12", "1/3"]},
+        "correctIndex": 0,
+        "explanation": {"en": "It is unanimously agreed that the Mother excludes all grandmothers.", "ur": "متفقہ اصول ہے کہ والدہ اپنی والدہ (نانی) اور دادی سب کو محجوب کرتی ہیں۔", "ar": "الأم تحجب الجدات مطلقاً بالإجماع.", "hi": "सर्वसम्मति से माँ सभी दादी-नानी को रोक देती हैं।"}
+      }]
+    },
+    {
+      "id": "faraid_19",
+      "departmentId": "dept_faraid",
+      "order": 19,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Full Siblings (Brothers & Sisters from Same Parents)",
+        "ur": "حقیقی (سگے) بھائی اور بہنوں کی وراثت",
+        "ar": "ميراث الإخوة والأخوات الأشقاء",
+        "hi": "सगे भाई-बहनों की विरासत"
+      },
+      "introduction": {
+        "en": "Full siblings inherit only in Kalalah (no Father, no Sons, no Grandsons) and receive strong Quranic protections.",
+        "ur": "حقیقی بھائی بہن کلالہ (والد اور مذکر اولاد کی عدم موجودگی) میں وارث بنتے ہیں اور سورۂ نساء 4:176 میں ان کا واضح حکم موجود ہے۔",
+        "ar": "يرث الإخوة الأشقاء في الكلالة (عدم الأب والفرع الذكر) وفق الآية ١٧٦ من سورة النساء.",
+        "hi": "सगे भाई-बहन केवल कलालह (पिता व पुत्र/पोते की अनुपस्थिति) में क़ुरआन 4:176 के तहत वारिस होते हैं।"
+      },
+      "explanation": {
+        "en": "Rules (when Father, Sons, Grandsons are absent): (1) Single Full Sister alone -> 1/2 (4:176); (2) Two or more Full Sisters -> 2/3 shared equally; (3) Full Brothers + Sisters -> Asabah 2:1; (4) Full Sisters alongside Daughter(s)/Granddaughter(s) with no Full Brothers -> Asabah ma'al ghayr (take remaining estate after Daughters, blocking paternal siblings!).",
+        "ur": "احکام (جب والد اور بیٹا/پوتا نہ ہوں): (1) اکیلی حقیقی بہن کو 1/2 (النساء 4:176)؛ (2) دو یا زائد حقیقی بہنوں کو مشترکہ 2/3؛ (3) حقیقی بھائی بہن ساتھ ہوں تو 2:1 عصبہ؛ (4) میت کی بیٹی یا پوتی کے ساتھ حقیقی بہن موجود ہو تو وہ عصبہ مع الغیر بن کر بقیہ لیتی ہے اور علاتی بہن بھائیوں کو محجوب کر دیتی ہے۔",
+        "ar": "للشقيقة الواحدة النصف، وللشقيقتين الثلثان، ومع الشقيق للذكر مثل حظ الأنثيين، ومع البنت تأخذ الشقيقة الباقي عصبة مع الغير.",
+        "hi": "अकेली सगी बहन को 1/2, दो+ को 2/3, सगे भाई के साथ 2:1 असबा, व बेटी/पोती के साथ शेष असबा (4:176)।"
+      },
+      "practicalWays": {
+        "en": ["Recognize that in '1 Daughter + 1 Full Sister', the Sister takes the remaining 1/2—never exclude her in favor of uncles"],
+        "ur": ["ایک بیٹی اور ایک سگی بہن کی صورت میں بہن بقیہ 1/2 کی حقدار ہے؛ چچا یا تایا اس کا حق نہیں لے سکتے"],
+        "ar": ["الأخت الشقيقة مع البنت تقدم على الأعمام وتأخذ الباقي"],
+        "hi": ["1 बेटी + 1 सगी बहन होने पर शेष 1/2 बहन को मिलता है, चाचा को नहीं"]
+      },
+      "realLifeExamples": {
+        "en": ["Unmarried brother dies leaving only 2 Full Sisters -> 2/3 fixed, plus Radd gives them the remaining 1/3 so they receive 100%."],
+        "ur": ["غیر شادی شدہ بھائی کے پیچھے صرف دو سگی بہنیں ہوں تو 2/3 فرض اور 1/3 رد سے پورا 100% انہی کو ملے گا۔"],
+        "ar": ["مات عن أختين شقيقتين فقط: تأخذان كامل التركة فرضاً ورداً."],
+        "hi": ["यदि केवल 2 सगी बहनें शेष हों तो 2/3 निश्चित + 1/3 रद्द से 100% उन्हीं को मिलता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Believing a sister never inherits if a daughter exists—in fact 'Make sisters with daughters Asabah' is an established Prophetic/Sahabah rule"],
+        "ur": ["یہ غلط فہمی کہ بیٹی کی موجودگی میں سگی بہن کو کچھ نہیں ملتا؛ بلکہ بیٹی کے بعد بقیہ عصبہ سگی بہن کو ملتا ہے۔"],
+        "ar": ["حرمان الأخت مع البنت؛ والصواب 'اجعلوا الأخوات مع البنات عصبة'"],
+        "hi": ["यह ग़लतफ़हमी कि बेटी होने पर सगी बहन को कुछ नहीं मिलता—वह असबा बनती है"]
+      },
+      "actionSteps": {
+        "en": ["Test 'Full Sister + Daughter' in the Calculator"],
+        "ur": ["وراثت کیلکولیٹر میں بیٹی + سگی بہن درج کر کے نتیجہ دیکھیں"],
+        "ar": ["تجربة حالة البنت والأخت الشقيقة في الحاسبة"],
+        "hi": ["कैलकुलेटर में बेटी + सगी बहन जांचें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 176, "endAyah": 176, "contextExplanation": {"en": "Specifies Kalalah inheritance for full/paternal siblings.", "ur": "حقیقی و علاتی بہن بھائیوں کے کلالہ احکام۔", "ar": "آية الكلالة في ميراث الإخوة لغير أم.", "hi": "सगे व पितृ सौतेले भाई-बहनों का कलालह नियम।"}}],
+      "hadithIds": ["bukhari_6736"],
+      "sourceLinks": [{"title": "Quran 4:176 — Quran.com", "attribution": "Full Siblings", "url": "https://quran.com/4/176"}],
+      "mcqs": [{
+        "id": "faraid_19_q1",
+        "question": {"en": "If a deceased person leaves 1 Daughter and 1 Full Sister (and no sons/parents/spouse), how is the estate split?", "ur": "اگر میت کے پیچھے 1 بیٹی اور 1 سگی بہن ہوں تو ترکہ کیسے تقسیم ہوگا؟", "ar": "ما نصيب كل من البنت والأخت الشقيقة إذا انفردتا؟", "hi": "यदि 1 बेटी व 1 सगी बहन ही जीवित हों तो बंटवारा कैसे होगा?"},
+        "options": {"en": ["Daughter gets 1/2 (fixed), Full Sister gets remaining 1/2 (Asabah ma'al ghayr)", "Daughter takes 100%", "Sister takes 100%", "Split 2/3 and 1/3"], "ur": ["بیٹی کو 1/2 فرض اور سگی بہن کو بقیہ 1/2 بطور عصبہ مع الغیر", "بیٹی کو 100%", "بہن کو 100%", "2/3 اور 1/3"], "ar": ["للبنت النصف فرضاً وللأخت النصف الباقي تعصيباً مع الغير", "للبنت الكل", "للأخت الكل", "الثلثان والثلث"], "hi": ["बेटी को 1/2 (निश्चित) व सगी बहन को शेष 1/2 (असबा)", "बेटी को 100%", "बहन को 100%", "2/3 और 1/3"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Confirmed in Sahih al-Bukhari (e.g. 6736 / 6741) from Ibn Mas'ud & Mu'adh ibn Jabal (RA).", "ur": "صحیح بخاری میں ابن مسعودؓ و معاذ بن جبلؓ کے مطابق یہی نبوی فیصلہ ہے۔", "ar": "ثابت في صحيح البخاري: للأخت ما بقي بعد البنت.", "hi": "सहीह बुखारी में बेटी के बाद शेष सगी बहन को मिलने का निर्णय प्रमाणित है।"}
+      }]
+    },
+    {
+      "id": "faraid_20",
+      "departmentId": "dept_faraid",
+      "order": 20,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Specific Heirs", "ur": "مخصوص ورثاء کے حصے", "ar": "أنصبة الورثة", "hi": "विशिष्ट वारिस"},
+      "title": {
+        "en": "Half-Siblings: Paternal (Consanguine) vs Maternal (Uterine)",
+        "ur": "علاتی (باپ شریک) اور اخیافی (ماں شریک) بہن بھائی",
+        "ar": "الإخوة لأب والإخوة لأم (فروق جوهرية)",
+        "hi": "सौतेले भाई-बहन: पितृ पक्ष (अलाती) बनाम मातृ पक्ष (अख़याफ़ी)"
+      },
+      "introduction": {
+        "en": "Half-siblings through the same father (consanguine) and half-siblings through the same mother (uterine) follow two completely distinct Quranic rules.",
+        "ur": "صرف باپ شریک (علاتی) اور صرف ماں شریک (اخیافی) بہن بھائیوں کے شرعی احکام بالکل مختلف ہیں۔",
+        "ar": "يختلف ميراث الإخوة لأب تماماً عن ميراث الإخوة لأم في الشروط والأنصبة.",
+        "hi": "पिता की ओर से सौतेले (अलाती) और माता की ओर से सौतेले (अख़याफ़ी) भाई-बहनों के नियम पूरी तरह भिन्न हैं।"
+      },
+      "explanation": {
+        "en": "(A) Paternal (Consanguine) Siblings: Blocked by Father, Male Descendants, Full Brother, or Full Sister as Asabah. Without Full Siblings, they inherit like Full Siblings (1/2, 2/3, or 2:1). With 1 Full Sister, 1+ Paternal Sisters take 1/6 completing 2/3. (B) Maternal (Uterine) Siblings (Quran 4:12): Blocked by ANY descendant (even daughters!) and Father/Grandfather. When not blocked: 1 alone takes 1/6; 2 or more share 1/3 EQUALLY with males and females receiving the EXACT SAME share—nor does a Full Brother block them!",
+        "ur": "(الف) باپ شریک (علاتی) بہن بھائی: والد، مذکر اولاد اور حقیقی بھائی (یا بیٹی کے ساتھ حقیقی بہن) سے محجوب ہوتے ہیں۔ ان کی عدم موجودگی میں حقیقی بہن بھائیوں جیسے حصے پاتے ہیں؛ اور ایک حقیقی بہن کے ساتھ علاتی بہن تکمیلِ ثلثین کے لیے 1/6 لیتی ہے۔ (ب) ماں شریک (اخیافی) بہن بھائی (النساء 4:12): کسی بھی اولاد (حتیٰ کہ بیٹی) اور والد/دادا سے محجوب ہو جاتے ہیں؛ اگر محجوب نہ ہوں تو ایک کو 1/6 اور دو یا زائد کو مشترکہ 1/3 ملتا ہے جس میں مذکر و مؤنث کا حصہ بالکل برابر ہوتا ہے۔",
+        "ar": "الإخوة لأب يحلّون محل الأشقاء عند عدمهم، وتأخذ الأخت لأب السدس مع الشقيقة الواحدة. أما الإخوة لأم فيُحجبون بالفرع مطلقاً (ذكراً أو أنثى) وبالأصل الذكر، وإلا فللواحد السدس وللاثنين الثلث بالسوية بين الذكر والأنثى.",
+        "hi": "(A) पितृ सौतेले भाई-बहन: पिता, पुत्र व सगे भाई से रुकते हैं; 1 सगी बहन संग पितृ बहन को 1/6। (B) मातृ सौतेले (4:12): किसी भी संतान (बेटी भी) व पिता/दादा से रुकते हैं; न रुकने पर अकेले को 1/6 व 2+ को 1/3—लड़का और लड़की बिल्कुल बराबर!"
+      },
+      "practicalWays": {
+        "en": ["Distinguish carefully in blended families between father-side half-siblings and mother-side half-siblings"],
+        "ur": ["دوسری شادی والے خاندانوں میں باپ شریک اور ماں شریک بہن بھائیوں کا اندراج الگ الگ درست کریں"],
+        "ar": ["التدقيق بين الإخوة لأب والإخوة لأم في الأسر ذات الزواج المتعدد"],
+        "hi": ["पुनर्विवाह वाले परिवारों में पिता-पक्ष व माता-पक्ष भाई-बहनों का अंतर सावधानी से दर्ज करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Widow remarries and has 1 son and 1 daughter with second husband: if a child from her first marriage dies in Kalalah leaving those 2 maternal half-siblings, both share 1/3 equally (1/6 boy, 1/6 girl)!"],
+        "ur": ["بیوہ کی دوسری شادی سے ایک بیٹا اور ایک بیٹی ہو، اور پہلی شادی کی اولاد کلالہ وفات پائے تو وہ دونوں اخیافی بہن بھائی 1/3 کو بالکل برابر (1/6 اور 1/6) بانٹیں گے۔"],
+        "ar": ["أخ لأم وأخت لأم يأخذان الثلث مناصفة: ١/٦ للذكر و١/٦ للأنثى."],
+        "hi": ["1 मातृ भाई + 1 मातृ बहन मिलकर 1/3 बराबर (1/6 और 1/6) पाते हैं।"]
+      },
+      "commonMistakes": {
+        "en": ["Applying the 2:1 ratio to Maternal (Uterine) siblings—Quran 4:12 explicitly gives them EQUAL shares ('shuraka'u fil-thuluth')"],
+        "ur": ["ماں شریک اخیافی بہن بھائیوں میں بھی 2:1 لگانا، حالانکہ قرآنِ کریم (4:12) نے واضح فرمایا: 'وہ سب تہائی میں برابر کے شریک ہیں'۔"],
+        "ar": ["تطبيق قاعدة للذكر مثل حظ الأنثيين على الإخوة لأم؛ بل هم متساوون بنص القرآن"],
+        "hi": ["मातृ सौतेले भाई-बहनों में भी 2:1 लगाना, जबकि क़ुरआन 4:12 उन्हें बराबर हिस्सा देता है"]
+      },
+      "actionSteps": {
+        "en": ["Notice Uterine Siblings share 1/3 equally in our Calculator when eligible"],
+        "ur": ["کیلکولیٹر میں اخیافی بہن بھائیوں کی مساوی تقسیم دیکھیں"],
+        "ar": ["مراجعة قسمة الإخوة لأم المتساوية في الحاسبة"],
+        "hi": ["कैलकुलेटर में मातृ सौतेले भाई-बहनों का समान विभाजन जांचें"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 12, "endAyah": 12, "contextExplanation": {"en": "Equal 1/6 or 1/3 shares for maternal siblings.", "ur": "اخیافی بہن بھائیوں کے مساوی 1/6 یا 1/3 حصے کا بیان۔", "ar": "تساوي الإخوة لأم في الثلث أو السدس.", "hi": "मातृ सौतेले भाई-बहनों के समान 1/6 या 1/3 हिस्से।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:12 — Quran.com", "attribution": "Uterine Siblings", "url": "https://quran.com/4/12"}],
+      "mcqs": [{
+        "id": "faraid_20_q1",
+        "question": {"en": "How do 1 Maternal Brother and 1 Maternal Sister divide their 1/3 share in Kalalah?", "ur": "کلالہ کی صورت میں ایک اخیافی بھائی اور ایک اخیافی بہن اپنا 1/3 حصہ کیسے بانٹیں گے؟", "ar": "كيف يقتسم الأخ لأم والأخت لأم الثلث في الكلالة؟", "hi": "कलालह में 1 मातृ भाई व 1 मातृ बहन अपना 1/3 हिस्सा कैसे बांटते हैं?"},
+        "options": {"en": ["Equally — 1/6 for the brother and 1/6 for the sister", "2:1 ratio (2/9 and 1/9)", "Brother takes all 1/3", "Sister takes all 1/3"], "ur": ["بالکل برابر — 1/6 بھائی کو اور 1/6 بہن کو", "2:1 سے", "پورا 1/3 بھائی لے گا", "پورا 1/3 بہن لے گی"], "ar": ["بالتساوي: ١/٦ للأخ و١/٦ للأخت", "للذكر ضعف الأنثى", "للأخ وحده", "للأخت وحدها"], "hi": ["बिल्कुल बराबर — 1/6 भाई को और 1/6 बहन को", "2:1 में", "भाई सब लेगा", "बहन सब लेगी"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Quran 4:12 ('they are equal partners in one-third') explicitly establishes equality for uterine siblings.", "ur": "سورۂ نساء (4:12) میں اخیافی بہن بھائیوں کو تہائی میں برابر کا شریک فرمایا گیا ہے۔", "ar": "قوله تعالى: فهم شركاء في الثلث أي بالسوية.", "hi": "क़ुरआन 4:12 स्पष्ट कहता है कि वे एक-तिहाई में बराबर के भागीदार हैं।"}
+      }]
+    },
+    {
+      "id": "faraid_21",
+      "departmentId": "dept_faraid",
+      "order": 21,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Core Mechanics", "ur": "کلیدی قواعد", "ar": "القواعد المحورية", "hi": "मुख्य नियम"},
+      "title": {
+        "en": "Meaning of Kalalah (Quran 4:12 vs Quran 4:176)",
+        "ur": "کلالہ کا مفہوم (سورۂ نساء 4:12 بمقابلہ 4:176)",
+        "ar": "معنى الكلالة والفرق بين آيتي النساء ١٢ و١٧٦",
+        "hi": "कलालह का अर्थ (क़ुरआन 4:12 बनाम 4:176)"
+      },
+      "introduction": {
+        "en": "Why does Quran 4:12 give a sibling 1/6 while Quran 4:176 gives a sister 1/2? Classical Tafseer resolves this apparent puzzle seamlessly.",
+        "ur": "سورۂ نساء کی آیت 12 میں بھائی بہن کو 1/6 اور آیت 176 میں بہن کو 1/2 کیوں دیا گیا؟ تفسیر و فقہ اس کی بالکل واضح توضیح کرتی ہے۔",
+        "ar": "لماذا أعطت النساء ١٢ للأخ السدس بينما أعطت ١٧٦ للأخت النصف؟ تفسير الصحابة يحل المسألة بوضوح.",
+        "hi": "क़ुरआन 4:12 में भाई/बहन को 1/6 व 4:176 में बहन को 1/2 क्यों दिया गया? यह दो अलग रिश्तों की व्याख्या है।"
+      },
+      "explanation": {
+        "en": "Kalalah means a deceased person who leaves NO surviving descendant (children/grandchildren) and NO surviving Father (nor Grandfather). Abu Bakr as-Siddiq (RA) and scholarly consensus explain: Quran 4:12 refers strictly to MATERNAL (Uterine) siblings (same mother, different father -> 1/6 or 1/3 equal), whereas Quran 4:176 refers to FULL or PATERNAL (Consanguine) siblings (1/2, 2/3, or 2:1).",
+        "ur": "کلالہ اس میت کو کہتے ہیں جس کے پیچھے نہ کوئی اولاد (بیٹا/بیٹی/پوتا/پوتی) ہو اور نہ والد/دادا۔ سیدنا ابوبکر صدیقؓ اور جمہور امت کی تفسیر کے مطابق سورۂ نساء 4:12 میں کلالہ سے مراد ماں شریک (اخیافی) بہن بھائی ہیں (1/6 یا 1/3)، جبکہ 4:176 میں سگے یا باپ شریک (حقیقی و علاتی) بہن بھائی مراد ہیں (1/2، 2/3 یا 2:1)۔",
+        "ar": "الكلالة من لا ولد له ولا والد؛ وآية ١٢ في الإخوة لأم، بينما آية ١٧٦ في الإخوة الأشقاء أو لأب.",
+        "hi": "कलालह अर्थात ऐसा मृतक जिसकी कोई संतान व पिता न हो। 4:12 मातृ सौतेले (अख़याफ़ी) भाई-बहनों के लिए है, जबकि 4:176 सगे या पितृ सौतेले भाई-बहनों के लिए।"
+      },
+      "practicalWays": {
+        "en": ["Distinguish both verses cleanly when teaching or answering family questions"],
+        "ur": ["خاندان میں وراثت سمجھاتے وقت 4:12 اور 4:176 کا فرق واضح بیان کریں"],
+        "ar": ["بيان الفرق بين آيتي الكلالة عند التعليم"],
+        "hi": ["समझाते समय 4:12 व 4:176 का अंतर स्पष्ट बताएं"]
+      },
+      "realLifeExamples": {
+        "en": ["Husband + Mother + 2 Maternal Siblings + 2 Full Brothers -> Known as Al-Mushtarakah case in classical Fiqh (Hanafi vs Shafi'i difference on sharing 1/3!)."],
+        "ur": ["شوہر، والدہ، دو اخیافی اور دو حقیقی بھائی (مسئلۂ مشترکہ / حماریہ) جس میں فقہاء کا معروف اجتہادی اختلاف موجود ہے۔"],
+        "ar": ["المسألة المشتركة (الحمارية) بين الإخوة لأم والأشقاء."],
+        "hi": ["पति + माँ + 2 मातृ भाई + 2 सगे भाई (अल-मुश्तरका मामला) जिसमें शास्त्रीय मतभेद रहा है।"]
+      },
+      "commonMistakes": {
+        "en": ["Confusing maternal sibling shares (4:12) with full sister shares (4:176)"],
+        "ur": ["آیت 12 اور آیت 176 دونوں کا ایک ہی رشتے پر اطلاق کر کے الجھن پیدا کرنا۔"],
+        "ar": ["الخلط بين نصيب الإخوة لأم والإخوة الأشقاء في الآيتين"],
+        "hi": ["दोनों आयतों को एक ही भाई-बहन प्रकार पर लागू करके भ्रमित होना"]
+      },
+      "actionSteps": {
+        "en": ["Verify whether Al-Mushtarakah (Husband + Mother + 2+ Uterine + Full Brothers) occurs; seek Mufti if full brothers remain with 0"],
+        "ur": ["اگر شوہر، والدہ، اخیافی اور حقیقی بھائی سب بیک وقت جمع ہوں تو مستند مفتی سے مسلک کے مطابق فیصلہ کرائیں"],
+        "ar": ["في حالة المشتركة يُراجع المفتي للمذهب المعمول به"],
+        "hi": ["अल-मुश्तरका जैसे जटिल मामलों में योग्य मुफ़्ती से समीक्षा लें"]
+      },
+      "scholarlyNuance": {
+        "en": "Note Al-Mushtarakah: Hanafi & Hanbali give Full Brothers 0 because fixed shares exhaust 1 (1/2+1/6+1/3=1); Maliki & Shafi'i allow Full Brothers to share the 1/3 equally with Uterine siblings as children of the same mother.",
+        "ur": "مسئلۂ مشترکہ (شوہر 1/2، والدہ 1/6، اخیافی 1/3 = 1 مکمل): فقہِ حنفی و حنبلی میں حقیقی بھائیوں کو کچھ نہیں بچتا؛ جبکہ مالکی و شافعی میں ماں کی جہت سے وہ 1/3 میں شریک ہوتے ہیں۔",
+        "ar": "في المشتركة: يحرم الأشقاء عند الحنفية والحنابلة ويشركهم المالكية والشافعية في الثلث.",
+        "hi": "अल-मुश्तरका में हनफ़ी व हंबली मत में सगे भाइयों को शेष शून्य मिलता है, जबकि मालिकी व शाफ़िई मत में वे माँ के नाते 1/3 में शामिल होते हैं।"
+      },
+      "evidenceBadge": "madhhab_difference",
+      "isDisputedOrComplex": true,
+      "quranRefSpecs": [
+        {"surahNumber": 4, "startAyah": 12, "endAyah": 12, "contextExplanation": {"en": "First Kalalah ruling (uterine siblings).", "ur": "کلالہ اولیٰ (اخیافی بہن بھائی)۔", "ar": "آية الكلالة الأولى للإخوة لأم.", "hi": "प्रथम कलालह आयत (मातृ भाई-बहन)।"}},
+        {"surahNumber": 4, "startAyah": 176, "endAyah": 176, "contextExplanation": {"en": "Second Kalalah ruling (full/paternal siblings).", "ur": "کلالہ ثانیہ (حقیقی و علاتی بہن بھائی)۔", "ar": "آية الكلالة الثانية للأشقاء ولأب.", "hi": "द्वितीय कलालह आयत (सगे/पितृ भाई-बहन)।"}}
+      ],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:176 — Quran.com", "attribution": "Kalalah Tafseer", "url": "https://quran.com/4/176"}],
+      "mcqs": [{
+        "id": "faraid_21_q1",
+        "question": {"en": "What makes a deceased person 'Kalalah'?", "ur": "کس شخص کو 'کلالہ' کہا جاتا ہے؟", "ar": "من هو الميت الذي يُعدّ كلالة؟", "hi": "किस मृतक को 'कलालह' कहा जाता है?"},
+        "options": {"en": ["One who leaves neither surviving descendants nor surviving father/grandfather", "One who leaves 3 sons", "One who leaves a father", "Anyone unmarried with children"], "ur": ["وہ میت جس کے پیچھے نہ اولاد ہو اور نہ والد/دادا", "جس کے 3 بیٹے ہوں", "جس کے والد زندہ ہوں", "ہر کنوارا چاہے والد زندہ ہوں"], "ar": ["من مات وليس له ولد ولا والد", "من ترك ثلاثة أبناء", "من ترك أباً", "كل أعزب ولو عاش أبوه"], "hi": ["वह मृतक जिसकी न संतान हो और न ही पिता/दादा", "जिसके 3 बेटे हों", "जिसके पिता जीवित हों", "कोई भी अविवाहित चाहे पिता हों"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Kalalah lacks both vertical branches (Usul fathers and Furu' children).", "ur": "کلالہ میں میت کی نہ اصولِ مذکر (باپ/دادا) ہوتی ہیں اور نہ فروع (اولاد)۔", "ar": "الكلالة من لا أصل له ولا فرع.", "hi": "कलालह में न पिता/दादा होते हैं और न ही संतान।"}
+      }]
+    },
+    {
+      "id": "faraid_22",
+      "departmentId": "dept_faraid",
+      "order": 22,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Core Mechanics", "ur": "کلیدی قواعد", "ar": "القواعد المحورية", "hi": "मुख्य नियम"},
+      "title": {
+        "en": "Principle of Awl (Proportional Reduction)",
+        "ur": "اصولِ عول (مجموعی حصوں کے 100% سے بڑھ جانے پر متناسب کمی)",
+        "ar": "العول (النقص النسبي عند زيادة السهام على أصل المسألة)",
+        "hi": "औल सिद्धांत (कुल हिस्से 100% से अधिक होने पर आनुपातिक कमी)"
+      },
+      "introduction": {
+        "en": "Sometimes the sum of rightful Quranic fixed fractions exceeds 1 (100%). Instead of cutting off any heir arbitrarily, Awl scales the denominator up proportionally.",
+        "ur": "کبھی متعدد اصحاب الفروض کے مقررہ حصوں کا مجموعہ 100% سے بڑھ جاتا ہے؛ ایسے میں کسی کو محروم کرنے کے بجائے عول کے ذریعے سب کے حصے متناسب کم کیے جاتے ہیں۔",
+        "ar": "قد يزيد مجموع الفروض على الواحد الصحيح، فيُعمل بالعول بزيادة أصل المسألة لينقص كل وارث بنسبة عادلة.",
+        "hi": "कभी-कभी निश्चित हिस्सों का योग 100% से अधिक हो जाता है; तब 'औल' से सभी हिस्सों को समान अनुपात में समायोजित किया जाता है।"
+      },
+      "explanation": {
+        "en": "Historical Origin: During Caliph Umar ibn al-Khattab's (RA) era, a woman died leaving her Husband (1/2) and 2 Full Sisters (2/3). Sum = 3/6 + 4/6 = 7/6 (> 1)! On companions' counsel, Umar raised the base from 6 to 7—so Husband took 3/7 and Sisters took 4/7 (2/7 each). Just like creditors sharing a finite estate proportionally when claims exceed assets, Awl treats every fixed heir with exact mathematical fairness. Common Awl bases: 6 -> 7, 8, 9, 10; 12 -> 13, 15, 17; 24 -> 27 (Al-Minbariyyah).",
+        "ur": "تاریخی آغاز: سیدنا عمر فاروقؓ کے دور میں پہلا مسئلہ پیش آیا: شوہر (1/2) اور دو سگی بہنیں (2/3) = 3/6 + 4/6 = 7/6! صحابہ کے مشورے سے مخرج 6 کو بڑھا کر 7 کر دیا گیا: شوہر کو 3/7 اور بہنوں کو 4/7۔ عول کے معروف مخارج: 6 (7، 8، 9، 10 تک)، 12 (13، 15، 17 تک) اور 24 (27 تک — مسئلۂ منبریہ)۔ ہمارا کیلکولیٹر عول کی حسابی کارروائی خودکار طریقے سے درست کرتا ہے۔",
+        "ar": "أول مسألة عول وقعت في عهد عمر رضي الله عنه: زوج (١/٢ = ٣/٦) وأختان شقيقتان (٢/٣ = ٤/٦)، فعالت من ٦ إلى ٧.",
+        "hi": "ऐतिहासिक उदाहरण: ख़लीफ़ा उमर (रज़ि.) के समय पति (1/2 = 3/6) व 2 सगी बहनें (2/3 = 4/6) का योग 7/6 हुआ; आधार 6 से 7 किया गया (पति 3/7, बहनें 4/7)।"
+      },
+      "practicalWays": {
+        "en": ["Try Husband + 2 Full Sisters + Mother in our Inheritance Calculator to observe Awl (6 -> 8)"],
+        "ur": ["ہمارے کیلکولیٹر میں شوہر + 2 حقیقی بہنیں + والدہ درج کر کے عول (6 سے 8) کا عملی مظاہرہ دیکھیں"],
+        "ar": ["تجربة مسألة عول من ٦ إلى ٨ في الحاسبة"],
+        "hi": ["कैलकुलेटर में पति + 2 सगी बहनें + माँ डालकर औल (6 से 8) देखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Wife (1/8=3/24) + Father (1/6=4/24) + Mother (1/6=4/24) + 2 Daughters (2/3=16/24) -> Sum = 27/24 (Al-Minbariyyah), Wife gets 3/27, Parents 4/27 each, Daughters 16/27."],
+        "ur": ["مسئلۂ منبریہ: بیوی (3/24) + والد (4/24) + والدہ (4/24) + دو بیٹیاں (16/24) -> کل 27 حصے: بیوی کو 3/27، والدین کو 4/27 فی کس اور بیٹیوں کو 16/27۔"],
+        "ar": ["المسألة المنبرية: زوجة وأبوان وبنتان تعول من ٢٤ إلى ٢٧."],
+        "hi": ["पत्नी (3/24) + पिता (4/24) + माँ (4/24) + 2 बेटियाँ (16/24) -> औल 27 में बदलता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Deleting one heir's share to 'force' the total down to 100% instead of applying Awl"],
+        "ur": ["مجموعہ 100% سے بڑھنے پر کسی ایک وارث کا حصہ سرے سے کاٹ دینا۔"],
+        "ar": ["إسقاط فرض أحد الورثة عند الازدحام بدل إعمال العول"],
+        "hi": ["100% से अधिक होने पर किसी वारिस को बाहर कर देना"]
+      },
+      "actionSteps": {
+        "en": ["Check whether total fixed fractions exceed 1 whenever multiple fixed female/spouse/parent heirs converge"],
+        "ur": ["جب شوہر/بیوی، والدین اور بیٹیاں/بہنیں جمع ہوں تو ہمیشہ عول چیک کریں"],
+        "ar": ["التحقق من مجموع الفروض كلما اجتمع الزوجان مع الأصول والفروع الإناث"],
+        "hi": ["कई निश्चित वारिस एक साथ आने पर औल की जांच करें"]
+      },
+      "evidenceBadge": "scholarly_consensus",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 12, "contextExplanation": {"en": "Balances multiple simultaneously valid Quranic claims justly.", "ur": "بیک وقت تمام قرآنی حق داروں میں انصاف و تناسب قائم کرنا۔", "ar": "التوفيق العادل بين الفروض القرآنية المجتمعة.", "hi": "सभी वैध क़ुरआनी हिस्सों के बीच न्यायसंगत संतुलन।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:11-12 — Quran.com", "attribution": "Sahabah Consensus on Awl", "url": "https://quran.com/4/11-12"}],
+      "mcqs": [{
+        "id": "faraid_22_q1",
+        "question": {"en": "When a woman dies leaving Husband (1/2) and 2 Full Sisters (2/3), what does Awl produce?", "ur": "شوہر (1/2) اور 2 سگی بہنوں (2/3) میں عول کے بعد حتمی حصے کیا ہوں گے؟", "ar": "ما القسمة الصحيحة بالعول لزوج وأختين شقيقتين؟", "hi": "पति (1/2) व 2 सगी बहनों (2/3) में औल के बाद क्या हिस्से बनते हैं?"},
+        "options": {"en": ["Husband gets 3/7 and the 2 Sisters share 4/7 (2/7 each)", "Husband gets 1/2, Sisters get 1/2", "Sisters get 2/3, Husband gets 1/3", "Invalid case"], "ur": ["شوہر کو 3/7 اور دونوں بہنوں کو 4/7 (فی کس 2/7)", "شوہر کو 1/2 اور بہنوں کو 1/2", "بہنوں کو 2/3 اور شوہر کو 1/3", "ناجائز صورت"], "ar": ["للزوج ٣/٧ وللأختين ٤/٧ (٢/٧ لكل منهما)", "النصف والنصف", "الثلثان والثلث", "لا يصح"], "hi": ["पति को 3/7 और दोनों बहनों को 4/7 (प्रत्येक को 2/7)", "आधा-आधा", "2/3 व 1/3", "अमान्य"]},
+        "correctIndex": 0,
+        "explanation": {"en": "3/6 + 4/6 = 7/6 -> denominator shifts to 7: Husband 3/7, Sisters 4/7.", "ur": "3/6 + 4/6 = 7/6، پس مخرج 7 ہو گیا: شوہر 3/7 اور دو بہنیں 4/7۔", "ar": "المجموع ٧/٦ فيعود المقام إلى ٧.", "hi": "3/6 + 4/6 = 7/6, इसलिए आधार 7 बनता है: 3/7 व 4/7।"}
+      }]
+    },
+    {
+      "id": "faraid_23",
+      "departmentId": "dept_faraid",
+      "order": 23,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Core Mechanics", "ur": "کلیدی قواعد", "ar": "القواعد المحورية", "hi": "मुख्य नियम"},
+      "title": {
+        "en": "Principle of Radd (Return of Surplus & Spouse Exclusion)",
+        "ur": "اصولِ رد (بقیہ ترکے کی واپسی اور میاں بیوی کے حصے کا حکم)",
+        "ar": "الرد على أصحاب الفروض وحكم الزوجين",
+        "hi": "रद्द सिद्धांत (शेष की वापसी व जीवनसाथी नियम)"
+      },
+      "introduction": {
+        "en": "When fixed shares total LESS than 100% and NO Asabah (residuary heir) survives, the surplus returns proportionally via Radd.",
+        "ur": "جب اصحاب الفروض کے حصے 100% سے کم رہ جائیں اور کوئی عصبہ موجود نہ ہو تو بچ جانے والا مال 'رد' کے ذریعے خون کے قریبی ورثاء میں متناسب واپس تقسیم ہوتا ہے۔",
+        "ar": "إذا بقي شيء من التركة بعد الفروض ولم يوجد عاصب، رُدّ الباقي على أصحاب الفروض بنسبة فروضهم.",
+        "hi": "जब निश्चित हिस्से 100% से कम रहें और कोई असबा न हो, तो शेष भाग 'रद्द' द्वारा आनुपातिक रूप से लौटता है।"
+      },
+      "explanation": {
+        "en": "Under the overwhelming majority Sunni position (Hanafi, Hanbali, later Shafi'i & Maliki): Radd returns surplus proportionally to BLOOD Ashab-ul-Furood (like Mother, Daughter, Granddaughter, Sisters), EXCLUDING the Husband and Wife—because spousal link rests on marriage contract rather than blood kinship (Quran 8:75). Only Uthman ibn Affan (RA) / one minor opinion included spouses; our calculator follows the majority rule (excluding spouse from Radd) and discloses this clearly.",
+        "ur": "جمہور ائمہ و صحابہ (حنفیہ، حنابلہ اور متاخرین شافعیہ و مالکیہ) کے مطابق: رد میں بقیہ مال صرف نسبی اصحاب الفروض (والدہ، بیٹی، پوتی، بہنیں وغیرہ) کو ان کے حصوں کے تناسب سے واپس لوٹایا جاتا ہے؛ شوہر یا بیوی پر رد نہیں ہوتا کیونکہ ان کا حقِ وراثت نکاح پر مبنی ہے نہ کہ نسبی قرابت پر۔ ہمارا کیلکولیٹر اسی جمہور اصول پر عمل کرتا ہے اور اسے صراحت سے ظاہر کرتا ہے۔",
+        "ar": "مذهب الجمهور أن الرد يوزع على أصحاب الفروض النسبية دون الزوجين لأن سببهما الزوجية لا الرحم.",
+        "hi": "अधिकांश फ़िक़्ह मतों (हनफ़ी, हंबली आदि) के अनुसार, रद्द केवल रक्त संबंधी वारिसों (माँ, बेटी, बहनें आदि) को आनुपातिक रूप से मिलता है, पति या पत्नी को नहीं। कैलकुलेटर इसे स्पष्ट रूप से बताता है।"
+      },
+      "practicalWays": {
+        "en": ["Test 'Mother + 1 Daughter' (1/6 + 1/2 -> becomes 1/4 + 3/4) and 'Wife + Mother + Daughter' in our Calculator"],
+        "ur": ["ہمارے کیلکولیٹر میں 'والدہ + 1 بیٹی' (1/4 اور 3/4) اور 'بیوی + والدہ + 1 بیٹی' آزما کر رد کا حساب دیکھیں"],
+        "ar": ["تجربة الأم والبنت، والزوجة مع الأم والبنت في الحاسبة"],
+        "hi": ["कैलकुलेटर में 'माँ + बेटी' तथा 'पत्नी + माँ + बेटी' जांचकर रद्द देखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Mother (1/6) + 1 Daughter (1/2 = 3/6) -> Sum = 4/6. Since no Asabah exists, base reduces to 4 -> Mother gets 1/4 (25%), Daughter gets 3/4 (75%)."],
+        "ur": ["والدہ (1/6) اور ایک بیٹی (1/2 = 3/6): مجموعہ 4/6؛ عصبہ نہ ہونے پر مخرج 4 کر کے والدہ کو 1/4 (25%) اور بیٹی کو 3/4 (75%) ملے گا۔"],
+        "ar": ["أم (١/٦) وبنت (١/٢ = ٣/٦) يرد إلى ٤: للأم ١/٤ وللبنت ٣/٤."],
+        "hi": ["माँ (1/6) व 1 बेटी (3/6): कोई असबा न होने पर हर 4 बनता है -> माँ 1/4 (25%), बेटी 3/4 (75%)।"]
+      },
+      "commonMistakes": {
+        "en": ["Sending the remaining 1/3 in 'Mother + Daughter' to a distant stranger or excluding Daughter from Radd"],
+        "ur": ["والدہ اور بیٹی کے بعد بچنے والا 1/3 حصہ غیر مستحق کو دے دینا۔"],
+        "ar": ["صرف الباقي لغير مستحق مع وجود البنت والأم"],
+        "hi": ["माँ व बेटी के बाद बचे हुए 1/3 को किसी असंबद्ध व्यक्ति को दे देना"]
+      },
+      "actionSteps": {
+        "en": ["Always check if NO Asabah remains before applying Radd"],
+        "ur": ["رد لگانے سے پہلے یقین کر لیں کہ کوئی عصبہ (جیسے چچا/بھائی) موجود نہیں"],
+        "ar": ["التأكد من عدم وجود عاصب قبل الرد"],
+        "hi": ["रद्द लागू करने से पहले सुनिश्चित करें कि कोई असबा मौजूद नहीं है"]
+      },
+      "scholarlyNuance": {
+        "en": "Note: Only when a deceased leaves ONLY a Husband or Wife with ZERO blood relatives anywhere (no Fard, no Asabah, no Dhawil-Arham), contemporary laws/muftis often grant the spouse the remainder rather than a corrupt treasury; our calculator triggers Mufti review for spouse-only estates.",
+        "ur": "نوٹ: اگر میت کا صرف شوہر یا بیوی ہو اور کوئی نسبی وارث یا ذوی الارحام سرے سے موجود نہ ہو تو متاخر فقہاء و عدالتیں شوہر/بیوی کو بقیہ دے دیتی ہیں—ایسی نادر صورت میں مفتی سے رجوع کریں۔",
+        "ar": "إن لم يوجد إلا أحد الزوجين ولا رحم أصلاً، فيُرجع للمفتي في الرد عليه.",
+        "hi": "यदि केवल पति या पत्नी हों और कोई रक्त संबंधी न हो तो मुफ़्ती से समीक्षा आवश्यक है।"
+      },
+      "evidenceBadge": "madhhab_difference",
+      "quranRefSpecs": [{"surahNumber": 8, "startAyah": 75, "endAyah": 75, "contextExplanation": {"en": "Blood relatives hold priority over remaining property.", "ur": "باقی ماندہ ترکے میں خون کے قریبی رشتہ داروں کی ترجیح۔", "ar": "أولوية ذوي الأرحام في المتبقي.", "hi": "शेष संपत्ति में रक्त संबंधियों की प्राथमिकता।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 8:75 — Quran.com", "attribution": "Radd Basis", "url": "https://quran.com/8/75"}],
+      "mcqs": [{
+        "id": "faraid_23_q1",
+        "question": {"en": "If Mother (1/6) and 1 Daughter (1/2) survive alone (no Asabah), what is the Daughter's final share after Radd?", "ur": "اگر میت کے پیچھے صرف والدہ اور 1 بیٹی ہوں تو رد کے بعد بیٹی کا حتمی حصہ کتنا ہوگا؟", "ar": "إذا ترك الميت أماً وبنتاً فقط، فكم نصيب البنت بعد الرد؟", "hi": "यदि केवल माँ व 1 बेटी जीवित हों तो रद्द के बाद बेटी का अंतिम हिस्सा क्या होगा?"},
+        "options": {"en": ["3/4 (75%), while Mother gets 1/4 (25%)", "1/2 (50%)", "2/3 (66.7%)", "100%"], "ur": ["3/4 (75%) اور والدہ کو 1/4 (25%)", "1/2 (50%)", "2/3", "100%"], "ar": ["٣/٤ (٧٥٪) وللأم ١/٤ (٢٥٪)", "١/٢", "٢/٣", "١٠٠٪"], "hi": ["3/4 (75%) और माँ को 1/4 (25%)", "1/2 (50%)", "2/3", "100%"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Fixed shares 1/6 and 3/6 scale cleanly to 1/4 and 3/4.", "ur": "1/6 اور 3/6 کا مجموعہ 4/6 تھا؛ رد کے بعد مخرج 4 بنا تو والدہ 1/4 اور بیٹی 3/4 کی حقدار ہوئیں۔", "ar": "نسبة الأم للبنت ١:٣، فبعد الرد تأخذ الأم الربع والبنت ثلاثة أرباع.", "hi": "1:3 के अनुपात में माँ को 1/4 (25%) और बेटी को 3/4 (75%) मिलता है।"}
+      }]
+    },
+    {
+      "id": "faraid_24",
+      "departmentId": "dept_faraid",
+      "order": 24,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Protection of Rights", "ur": "حقوق کا تحفظ", "ar": "حماية الحقوق", "hi": "अधिकारों की रक्षा"},
+      "title": {
+        "en": "Protecting Women's Inheritance Rights (Against Coercion)",
+        "ur": "خواتین کے حقِ وراثت کا تحفظ اور جبری دستبرداری کی ممانعت",
+        "ar": "حماية حق المرأة في الميراث ومنع الإكراه على التنازل",
+        "hi": "महिलाओं के विरासत अधिकार की रक्षा (ज़बरन त्याग के विरुद्ध)"
+      },
+      "introduction": {
+        "en": "Depriving mothers, widows, daughters, and sisters through emotional manipulation or forged 'relinquishment deeds' is widespread injustice—strictly forbidden in Islam and punishable by law.",
+        "ur": "ماں، بیوہ، بیٹی اور بہنوں کو جذباتی دباؤ، طعنوں یا دستبرداری ناموں کے ذریعے وراثت سے محروم کرنا بدترین ظلم اور شرعاً و قانوناً حرام ہے۔",
+        "ar": "حرمان الأمهات والأرامل والبنات والأخوات بالإكراه أو الحياء ظلم عظيم ومحرم شرعاً وقانوناً.",
+        "hi": "माँ, विधवा, बेटी व बहनों को भावनात्मक दबाव या झूठे त्याग-पत्र से विरासत से वंचित करना घोर अन्याय व गैर-कानूनी है।"
+      },
+      "explanation": {
+        "en": "Key Islamic & legal safeguards: (1) Coerced or guilt-induced renunciation (Tanazul/Haq Bakhshwana under threat of cutting family ties) is INVALID morally before Allah; a genuine gift back only happens AFTER the woman takes full free possession and understands its exact market value; (2) Quran 4:19 expressly forbids forcefully inheriting or pressuring women; (3) Statutory laws in Pakistan (Prevention of Anti-Women Practices Act 2011 / PPC Sec 498A) criminalize depriving women of inheritance.",
+        "ur": "شرعی و قانونی اصول: (1) بھائیوں کے ناراض ہونے یا رشتہ توڑنے کے خوف سے بہن کا 'حق بخشنا' باطل اور گناہِ کبیرہ ہے؛ دستبرداری صرف اس وقت معتبر ہے جب عورت کو اصل قیمتِ بازار بتائی جائے، مکمل قبضہ دیا جائے اور وہ بغیر کسی سماجی دباؤ کے آزادانہ تحفہ دے؛ (2) قرآن 4:19 خواتین کا مال دبانے یا ان پر جبر کرنے سے سختی سے روکتا ہے؛ (3) ملکی قانون (تعزیراتِ پاکستان دفعہ 498A) کے تحت خواتین کو وراثت سے محروم کرنا قابلِ سزا جرم ہے۔",
+        "ar": "الإكراه على التنازل أو الإحراج الاجتماعي باطل شرعاً؛ لا يصح التنازل إلا بعد معرفة القيمة الكاملة والحوز الاختياري التام.",
+        "hi": "असली मूल्य बताए बिना या रिश्ते टूटने के डर से बहनों से हक़ छुड़वाना अमान्य है। पाकिस्तान व अन्य कानूनों में महिलाओं को विरासत से वंचित करना दंडनीय अपराध है।"
+      },
+      "practicalWays": {
+        "en": ["Disclose full independent property valuation to every female heir", "Hand over title mutation or cash transfer directly without asking them to sign away rights"],
+        "ur": ["ہر خاتون وارث کو جائیداد کی حقیقی مارکیٹ قیمت کی تفصیل پیش کریں", "ان سے دستبرداری کا تقاضا کرنے کے بجائے ان کا حق خود ان کے حوالے کریں"],
+        "ar": ["إطلاع الوريثة على التقييم السوقي العادل", "تسليم الحق مباشرة دون طلب التنازل"],
+        "hi": ["प्रत्येक महिला वारिस को संपत्ति का सही बाज़ार मूल्य बताएं", "त्याग पत्र मांगने के बजाय सीधे उनका हिस्सा सौंपें"]
+      },
+      "realLifeExamples": {
+        "en": ["A brother transferring his sister's 1/3 market value directly into her own bank account—later she still has freedom over her wealth."],
+        "ur": ["بھائی کا بہن کے شرعی حصے کی درست قیمت نکال کر براہِ راست اس کے بینک اکاؤنٹ میں منتقل کرنا۔"],
+        "ar": ["تحويل القيمة السوقية الكاملة لنصيب الأخت إلى حسابها الخاص."],
+        "hi": ["भाई द्वारा बहन के हिस्से का सही बाज़ार मूल्य सीधे उसके बैंक खाते में हस्तांतरित करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Showing a 'forged thumbprint' or pressuring sisters at the father's funeral before grief even subsides"],
+        "ur": ["سوگ یا جنازے کے فوراً بعد بہنوں سے 'حق معاف کرنے' کے کاغذ پر دستخط یا انگوٹھے لگوانا۔"],
+        "ar": ["استغلال صدمة الحزن لأخذ توقيع النساء على التنازل"],
+        "hi": ["शोक के दौरान ही बहनों से त्याग-पत्र पर हस्ताक्षर कराना"]
+      },
+      "actionSteps": {
+        "en": ["If a woman is coerced, know she has full Islamic & legal right to seek Ombudsman / Family Court / Darul Ifta remedies"],
+        "ur": ["اگر کسی خاتون پر وراثت چھوڑنے کے لیے دباؤ ڈالا جائے تو وہ شرعاً اپنا حق واپس مانگنے اور قانونی محتسب/عدالت سے رجوع کرنے کی مکمل مجاز ہے"],
+        "ar": ["للمرأة المكرهة كامل الحق الشرعي والقانوني في المطالبة بنصيبها"],
+        "hi": ["दबाव डाले जाने पर महिला को धार्मिक व कानूनी न्याय पाने का पूरा अधिकार है"]
+      },
+      "evidenceBadge": "national_law",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 19, "endAyah": 19, "contextExplanation": {"en": "Prohibits forcefully oppressing women or seizing their financial rights.", "ur": "عورتوں پر جبر کر کے ان کا حق و مال ہڑپ کرنے کی قطعی ممانعت۔", "ar": "تحريم عضل النساء وأكل حقوقهن.", "hi": "स्त्रियों पर ज़ोर-ज़बरदस्ती व उनका धन हड़पने का निषेध।"}}],
+      "hadithIds": ["muslim_1218a", "bukhari_2452"],
+      "sourceLinks": [
+        {"title": "Quran 4:19 — Quran.com", "attribution": "Women's Property Rights", "url": "https://quran.com/4/19"},
+        {"title": "Pakistan Code — PPC Sec 498A", "attribution": "Statutory Protection Against Deprivation", "url": "https://pakistancode.gov.pk/"}
+      ],
+      "mcqs": [{
+        "id": "faraid_24_q1",
+        "question": {"en": "If a sister signs a relinquishment paper ONLY because she fears her brothers will sever family ties otherwise, is that renunciation morally lawful in Shariah?", "ur": "اگر بہن صرف بھائیوں کی ناراضگی یا تعلق ٹوٹنے کے ڈر سے وراثت معاف کرے تو کیا بھائیوں کے لیے وہ مال حلال ہوگا؟", "ar": "هل يحل للإخوة أخذ نصيب أختهم إذا تنازلت خوفاً من قطيعتهم؟", "hi": "यदि बहन भाइयों के संबंध तोड़ने के डर से विरासत छोड़े, तो क्या वह धन भाइयों के लिए वैध होगा?"},
+        "options": {"en": ["No — coerced or guilt-pressured waiver is unlawful (Haram/Ghصب); it is invalid unless freely given with full knowledge and possession", "Yes, because there is a signature", "Yes, always", "Sisters do not own land"], "ur": ["نہیں — دباؤ یا خوفِ قرابت سے لیا گیا حصہ حرام و غصب ہے؛ اصل قیمت جان کر اور قبضے کے بعد آزادانہ ہبہ ہی معتبر ہے", "جی ہاں دستخط کافی ہیں", "جی ہاں ہمیشہ", "خواتین زمین کی مالک نہیں ہوتیں"], "ar": ["لا، التنازل حياءً أو خوفاً من القطيعة باطل وأكل للمال بالباطل", "نعم يكفي التوقيع", "نعم دائماً", "المرأة لا تملك عقاراً"], "hi": ["नहीं — दबाव या डर से लिया गया त्याग अवैध है; सही ज्ञान व स्वतंत्र सहमति अनिवार्य है", "हाँ हस्ताक्षर काफी हैं", "हाँ हमेशा", "स्त्रियां ज़मीन नहीं रख सकतीं"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Wealth is only lawful through genuine willing consent ('An taradin minkum' - Quran 4:29).", "ur": "قرآن 4:29 کے مطابق باہمی دلی رضامندی کے بغیر کسی کا مال لینا باطل ہے۔", "ar": "لا يحل مال امرئ مسلم إلا عن طيب نفس منه.", "hi": "बिना सच्ची हार्दिक सहमति के किसी का धन लेना अवैध है (क़ुरआन 4:29)।"}
+      }]
+    },
+    {
+      "id": "faraid_25",
+      "departmentId": "dept_faraid",
+      "order": 25,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Worked Practice", "ur": "عملی مشقیں", "ar": "تطبيقات عملية", "hi": "व्यावहारिक उदाहरण"},
+      "title": {
+        "en": "Practical Worked Examples (Nuclear Family, Kalalah & Awl)",
+        "ur": "وراثت کے عملی حل شدہ نمونے (خاندان، کلالہ اور عول)",
+        "ar": "أمثلة تطبيقية محلولة في المواريث",
+        "hi": "विरासत के हल किए गए व्यावहारिक उदाहरण"
+      },
+      "introduction": {
+        "en": "Step-by-step walkthrough of three real-life inheritance calculations you can immediately verify inside this app's Calculator.",
+        "ur": "تین حقیقی وراثتی کیسز کا مکمل مرحلہ وار حساب جنہیں آپ ایپ کے کیلکولیٹر میں بھی چیک کر سکتے ہیں۔",
+        "ar": "ثلاث مسائل تطبيقية محلولة خطوة بخطوة يمكن التحقق منها في الحاسبة.",
+        "hi": "तीन वास्तविक विरासत उदाहरण जिनकी जांच आप ऐप के कैलकुलेटर में भी कर सकते हैं।"
+      },
+      "explanation": {
+        "en": "Case 1 (Standard Nuclear Family, Net Estate 2,400,000): Wife (1/8 = 300,000) + Mother (1/6 = 400,000) + Father (1/6 = 400,000) + 1 Son & 1 Daughter sharing remaining 13/24 (1,300,000) at 2:1 -> Son 866,666.67, Daughter 433,333.33. Case 2 (Husband + Mother + Father, Estate 600,000 -> Umariyyatayn): Husband 1/2 (300,000), Mother 1/6 (100,000), Father 1/3 (200,000). Case 3 (Husband + 2 Full Sisters, Estate 700,000 -> Awl 7): Husband 3/7 (300,000), Each Sister 2/7 (200,000).",
+        "ur": "مثال 1 (خالص ترکہ 24 لاکھ: بیوی، والد، والدہ، 1 بیٹا، 1 بیٹی): بیوی 1/8 (3 لاکھ)، والدہ 1/6 (4 لاکھ)، والد 1/6 (4 لاکھ)، باقی 13 لاکھ بیٹا اور بیٹی 2:1 سے لیں گے۔ مثال 2 (6 لاکھ: شوہر، والد، والدہ -> عمریتین): شوہر 3 لاکھ، والدہ 1 لاکھ، والد 2 لاکھ۔ مثال 3 (7 لاکھ: شوہر، 2 سگی بہنیں -> عول 7): شوہر 3 لاکھ، ہر بہن 2 لاکھ۔",
+        "ar": "مثال ١: زوجة ١/٨ وأب ١/٦ وأم ١/٦ والباقي ١٣/٢٤ للابن والبنت للذكر مثل حظ الأنثيين. مثال ٢: العمريتان. مثال ٣: العول من ٦ إلى ٧.",
+        "hi": "उदाहरण 1 (24 लाख): पत्नी 1/8 (3 लाख), माँ 1/6 (4 लाख), पिता 1/6 (4 लाख), शेष 13 लाख बेटे व बेटी में 2:1 में। उदाहरण 2 (उमरिय्यतैन): पति 1/2, माँ 1/6, पिता 1/3। उदाहरण 3 (औल 7): पति 3/7, 2 बहनें 4/7।"
+      },
+      "practicalWays": {
+        "en": ["Open the Inheritance Calculator right below Department 2 header and input all three scenarios to inspect exact fractions & percentages"],
+        "ur": ["علم الفرائض سیکشن کے اوپر 'وراثت کیلکولیٹر' کھول کر یہ تینوں مثالیں خود ٹیسٹ کریں"],
+        "ar": ["افتح حاسبة المواريث وجرب هذه الأمثلة الثلاثة مباشرة"],
+        "hi": ["ऊपर दिए विरासत कैलकुलेटर को खोलकर ये तीनों उदाहरण स्वयं परखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Verifying funeral + debt deductions BEFORE dividing net shares prevents every arithmetic dispute."],
+        "ur": ["خالص ترکہ نکالنے سے پہلے قرض و کفن منہا کرنا تمام حسابی جھگڑوں کو ختم کر دیتا ہے۔"],
+        "ar": ["حساب الصافي بعد الخصومات يمنع الخلاف الحسابي."],
+        "hi": ["शुद्ध संपत्ति निकालने से पहले कर्ज़ घटाना सभी गणना विवाद मिटा देता है।"]
+      },
+      "commonMistakes": {
+        "en": ["Distributing shares before subtracting unpaid Mahr or estate debts"],
+        "ur": ["مہر یا قرض منہا کیے بغیر کل رقم پر فیصد نکال لینا۔"],
+        "ar": ["توزيع النسب من الإجمالي قبل خصم الديون"],
+        "hi": ["कर्ज़ या महर घटाए बिना कुल राशि पर हिस्से निकालना"]
+      },
+      "actionSteps": {
+        "en": ["Cross-check estate distribution sheets with two independent witnesses and a scholar"],
+        "ur": ["تقسیمِ ترکہ کا حساب دو معتبر افراد اور ایک عالم سے تصدیق کرائیں"],
+        "ar": ["مراجعة جدول القسمة مع عالم معتمد"],
+        "hi": ["वितरण पत्रक को एक विद्वान व विश्वसनीय गवाहों से सत्यापित कराएं"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 12, "contextExplanation": {"en": "Mathematical perfection of Quranic shares.", "ur": "قرآنی کسور کا حسابی توازن۔", "ar": "دقة الحساب القرآني في الفرائض.", "hi": "क़ुरआनी हिस्सों की गणितीय परिपूर्णता।"}}],
+      "hadithIds": ["bukhari_6732"],
+      "sourceLinks": [{"title": "Quran 4:11-12 — Quran.com", "attribution": "Verification", "url": "https://quran.com/4/11-12"}],
+      "mcqs": [{
+        "id": "faraid_25_q1",
+        "question": {"en": "In Wife (1/8) + Mother (1/6) + Father (1/6) + 1 Son + 1 Daughter, what fraction remains for the Son + Daughter?", "ur": "بیوی (1/8)، والدہ (1/6) اور والد (1/6) کے بعد بیٹے اور بیٹی کے لیے کتنا بچے گا؟", "ar": "ما الباقي للابن والبنت بعد الزوجة (١/٨) والأم (١/٦) والأب (١/٦)؟", "hi": "पत्नी (1/8) + माँ (1/6) + पिता (1/6) के बाद बेटे व बेटी के लिए कितना बचेगा?"},
+        "options": {"en": ["13/24", "17/24", "1/2", "1/4"], "ur": ["13/24", "17/24", "1/2", "1/4"], "ar": ["١٣/٢٤", "١٧/٢٤", "١/٢", "١/٤"], "hi": ["13/24", "17/24", "1/2", "1/4"]},
+        "correctIndex": 0,
+        "explanation": {"en": "3/24 + 4/24 + 4/24 = 11/24; 24/24 - 11/24 = 13/24.", "ur": "3/24 + 4/24 + 4/24 = 11/24، پس بقیہ 13/24 بیٹے اور بیٹی میں 2:1 سے تقسیم ہوگا۔", "ar": "مجموع الفروض ١١/٢٤ فيبقى ١٣/٢٤.", "hi": "3/24 + 4/24 + 4/24 = 11/24; शेष 13/24 बेटे व बेटी को 2:1 में मिलेगा।"}
+      }]
+    },
+    {
+      "id": "faraid_26",
+      "departmentId": "dept_faraid",
+      "order": 26,
+      "groupCode": "FARAID",
+      "groupLabel": {"en": "Scholarly Safeguards", "ur": "شرعی احتیاطیں", "ar": "ضوابط الفتوى الخاصة", "hi": "विशेष विद्वान समीक्षा"},
+      "title": {
+        "en": "Common Mistakes & Complex Cases Requiring a Qualified Mufti",
+        "ur": "عام غلطیاں اور پیچیدہ مسائل جن میں مستند مفتی سے رجوع لازم ہے",
+        "ar": "أخطاء شائعة ومسائل معقدة توجب مراجعة المفتي",
+        "hi": "आम ग़लतियां व जटिल मामले जिनमें मुफ़्ती की समीक्षा आवश्यक है"
+      },
+      "introduction": {
+        "en": "An honest Islamic app knows its limits: certain intricate cases cannot be reduced to a one-size-fits-all button and require live Mufti investigation.",
+        "ur": "دیانت دار شرعی رہنمائی کا تقاضا ہے کہ بعض پیچیدہ کیسز کو سادہ بٹنوں پر نہ چھوڑا جائے بلکہ مستند مفتی کی تحقیق کی طرف رجوع کیا جائے۔",
+        "ar": "من الأمانة العلمية إحالة القضايا المعقدة التي تتعدد فيها المذاهب أو الوقائع إلى مفتٍ مختص.",
+        "hi": "जिम्मेदार मार्गदर्शन का तकाज़ा है कि जटिल और विवादास्पद मामलों को सीधे योग्य मुफ़्ती के पास भेजा जाए।"
+      },
+      "explanation": {
+        "en": "Always seek a qualified Mufti / Darul Ifta alongside legal counsel for: (1) Grandfather + Full/Paternal Siblings (Hanafi vs Majority Muqasamah difference); (2) Unborn pregnancy (Haml); (3) Missing person (Mafqood); (4) Simultaneous deaths in accidents (Al-Gharqa wal-Hadma); (5) Khuntha / intersex anatomical determinations; (6) Combined family businesses/joint properties where fathers & sons co-invested without clear equity agreements; (7) Munasakhat (chained multiple deaths over generations before original estate was ever divided).",
+        "ur": "درج ذیل مسائل میں لازماً مستند دارالافتاء سے رجوع کریں: (1) دادا مع الاخوہ (حنفی بمقابلہ جمہور اختلاف)؛ (2) پیٹ میں موجود حمل؛ (3) مفقود الخبر (لاپتہ شخص)؛ (4) حادثات میں بیک وقت اموات؛ (5) خنثیٰ کا مسئلہ؛ (6) مشترکہ خاندانی کاروبار اور مخلوط کمائی کا تصفیہ؛ (7) مناسخات (یعنی کئی نسلوں کی وفاتوں کے بعد پچھلی وراثتوں کا حساب)۔",
+        "ar": "تجب مراجعة المفتي في: الجد مع الإخوة، والحمل، والمفقود، والغرقى والهدمى، والخنثى، وتصفية الشركات العائلية المختلطة، والمناسخات.",
+        "hi": "इन मामलों में मुफ़्ती से समीक्षा लें: दादा+भाई-बहन, गर्भस्थ शिशु, लापता व्यक्ति, एक साथ दुर्घटना में मृत्यु, साझा पारिवारिक व्यापार, और बहु-पीढ़ी लंबित बंटवारा (मुनासख़ात)।"
+      },
+      "practicalWays": {
+        "en": ["Separate personal vs joint business capital while elders are alive to prevent tangled Munasakhat"],
+        "ur": ["بزرگوں کی زندگی ہی میں مشترکہ خاندانی کاروبار میں ہر فرد کا سرمایہ اور ملکیت تحریری طور پر الگ رکھیں"],
+        "ar": ["توثيق حصص الشركاء في الأموال العائلية حال الحياة"],
+        "hi": ["बड़ों के जीवित रहते ही साझा व्यापार के हिस्से लिखित स्पष्ट रखें"]
+      },
+      "realLifeExamples": {
+        "en": ["A grandfather died 15 years ago, then his wife and two sons died before splitting his farm—that chain (Munasakhat) requires staged chronological resolution by a scholar."],
+        "ur": ["دادا کی وفات کے پندرہ سال بعد بیوی اور دو بیٹے بھی وفات پا گئے—اب 'مناسخات' کے اصول سے مرحلہ وار ہر وفات کے وقت کے زندہ ورثاء کا حساب مفتی نکالیں گے۔"],
+        "ar": ["تأخير القسمة حتى وفاة ورثة جدد يستدعي حساب المناسخات مرحلياً."],
+        "hi": ["15 वर्ष तक बंटवारा न होने पर नए मृतकों के साथ 'मुनासख़ात' द्वारा क्रमिक गणना मुफ़्ती करते हैं।"]
+      },
+      "commonMistakes": {
+        "en": ["Dividing a multi-generation farm as if everyone died today instead of tracing each person's death date chronologically"],
+        "ur": ["کئی پرانی وفاتوں کے بعد زمین کو آج کے حساب سے بانٹ لینا، بجائے اس کے کہ ہر وفات کے وقت زندہ ورثاء کا حصہ نکالا جائے۔"],
+        "ar": ["قسمة التركة المتأخرة على الأحياء اليوم دون اعتبار من مات لاحقاً"],
+        "hi": ["कई पुरानी मृत्यु के बाद आज के जीवित लोगों के हिसाब से बांट लेना"]
+      },
+      "actionSteps": {
+        "en": ["Record exact dates of death of every family member in delayed estates before meeting a Mufti"],
+        "ur": ["تاخیر شدہ وراثتوں میں دارالافتاء جانے سے پہلے ہر وفات کی درست تاریخ اور اس وقت کے زندہ ورثاء کی فہرست لکھ کر لے جائیں"],
+        "ar": ["تدوين تواريخ الوفيات المتتابعة قبل استفتاء المفتي"],
+        "hi": ["विलंबित बंटवारों में प्रत्येक मृत्यु की तारीख लिखकर मुफ़्ती के पास ले जाएं"]
+      },
+      "evidenceBadge": "mufti_review",
+      "isDisputedOrComplex": true,
+      "quranRefSpecs": [{"surahNumber": 16, "startAyah": 43, "endAyah": 43, "contextExplanation": {"en": "Commands asking people of authentic knowledge whenever unsure.", "ur": "علم والوں (اہلِ ذکر) سے پوچھنے کا قرآنی حکم۔", "ar": "فاسألوا أهل الذكر إن كنتم لا تعلمون.", "hi": "जानकार विद्वानों से पूछने का क़ुरआनी आदेश।"}}],
+      "hadithIds": ["muslim_55a", "bukhari_6732"],
+      "sourceLinks": [{"title": "Council of Islamic Ideology (Pakistan)", "attribution": "Scholarly & Statutory Consultation", "url": "https://cii.gov.pk/"}],
+      "mcqs": [{
+        "id": "faraid_26_q1",
+        "question": {"en": "When a grandfather's property wasn't divided for 20 years and two of his children also died meanwhile, how must it be solved?", "ur": "اگر دادا کی جائیداد 20 سال تقسیم نہ ہوئی اور اس دوران ان کے دو بچے بھی وفات پا گئے تو حل کیسے ہوگا؟", "ar": "إذا لم تُقسم تركة الجد ٢٠ سنة وتوفي خلالها ابنان له، كيف تُحل؟", "hi": "यदि दादा की संपत्ति 20 वर्ष न बंटे और बीच में दो संतान भी मर जाएं तो हल कैसे होगा?"},
+        "options": {"en": ["Through chronological Munasakhat (staged division per death date) guided by a qualified Mufti", "Just split among surviving grandchildren equally", "Give to oldest uncle", "Void the estate"], "ur": ["ہر وفات کی تاریخ کے مطابق مرحلہ وار مناسخات کے ذریعے مستند مفتی کی رہنمائی میں", "صرف موجودہ پوتوں میں برابر بانٹ دیں", "سب سے بڑے چچا کو دے دیں", "ترکہ ختم ہو گیا"], "ar": ["بحساب المناسخات مرحلياً لكل وفاة مع مفتٍ مختص", "بالتساوي على الأحفاد", "للعم الأكبر", "تسقط التركة"], "hi": ["प्रत्येक मृत्यु तिथि के अनुसार मुफ़्ती से 'मुनासख़ात' गणना द्वारा", "वर्तमान पोतों में बराबर बांटकर", "बड़े चाचा को देकर", "संपत्ति रद्द करके"]},
+        "correctIndex": 0,
+        "explanation": {"en": "Each heir who was alive when the grandfather died acquired an exact vested share before their own death.", "ur": "دادا کی وفات کے وقت جو ورثاء زندہ تھے ان کا حق اسی وقت ثابت ہو چکا تھا، جو اب ان کے ورثاء کی طرف منتقل ہوگا۔", "ar": "كل من كان حياً عند وفاة الجد ثبت نصيبه ثم انتقل إلى ورثته بعد وفاته.", "hi": "दादा की मृत्यु के समय जो वारिस जीवित थे, उनका हिस्सा तब ही तय हो गया था।"}
+      }]
+    }
+  ]
+}

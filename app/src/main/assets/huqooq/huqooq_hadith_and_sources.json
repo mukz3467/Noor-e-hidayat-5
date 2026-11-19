@@ -1,0 +1,573 @@
+{
+  "hadiths": [
+    {
+      "id": "bukhari_5971",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "5971",
+      "bookChapter": "Kitab al-Adab (Book of Good Manners)",
+      "arabicText": "جَاءَ رَجُلٌ إِلَى رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ فَقَالَ: يَا رَسُولَ اللَّهِ، مَنْ أَحَقُّ النَّاسِ بِحُسْنِ صَحَابَتِي؟ قَالَ: «أُمُّكَ» قَالَ: ثُمَّ مَنْ؟ قَالَ: «ثُمَّ أُمُّكَ» قَالَ: ثُمَّ مَنْ؟ قَالَ: «ثُمَّ أُمُّكَ» قَالَ: ثُمَّ مَنْ؟ قَالَ: «ثُمَّ أَبُوكَ».",
+      "englishTranslation": "A man came to the Messenger of Allah ﷺ and asked: 'Who among people is most deserving of my good companionship?' He said: 'Your mother.' He asked: 'Then who?' He said: 'Your mother.' He asked: 'Then who?' He said: 'Your mother.' He asked: 'Then who?' He said: 'Then your father.'",
+      "urduTranslation": "ایک شخص نے رسول اللہ ﷺ سے پوچھا: یا رسول اللہ! لوگوں میں سے میرے حسنِ سلوک کا سب سے زیادہ حقدار کون ہے؟ آپ ﷺ نے فرمایا: تمہاری ماں۔ پوچھا: پھر کون؟ فرمایا: تمہاری ماں۔ پوچھا: پھر کون؟ فرمایا: تمہاری ماں۔ پوچھا: پھر کون؟ فرمایا: تمہارے والد۔",
+      "hindiTranslation": "एक व्यक्ति ने रसूलुल्लाह ﷺ से पूछा: लोगों में मेरे अच्छे व्यवहार का सबसे अधिक हक़दार कौन है? आपने फ़रमाया: तुम्हारी माँ (तीन बार), फिर तुम्हारे पिता।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 5971; Sahih Muslim 2548a (sunnah.com/bukhari:5971).",
+        "ur": "صحیح البخاری 5971؛ صحیح مسلم 2548a۔",
+        "ar": "صحيح البخاري ٥٩٧١؛ صحيح مسلم ٢٥٤٨.",
+        "hi": "सहीह अल-बुख़ारी 5971; सहीह मुस्लिम 2548a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:5971"
+    },
+    {
+      "id": "muslim_2586a",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "2586a",
+      "bookChapter": "Kitab al-Birr was-Silah",
+      "arabicText": "مَثَلُ الْمُؤْمِنِينَ فِي تَوَادِّهِمْ وَتَرَاحُمِهِمْ وَتَعَاطُفِهِمْ مَثَلُ الْجَسَدِ إِذَا اشْتَكَى مِنْهُ عُضْوٌ تَدَاعَى لَهُ سَائِرُ الْجَسَدِ بِالسَّهَرِ وَالْحُمَّى.",
+      "englishTranslation": "The parable of the believers in their affection, mercy, and compassion for each other is that of a single body: when any limb aches, the whole body responds with sleeplessness and fever.",
+      "urduTranslation": "مومنوں کی مثال باہمی محبت، رحم دلی اور ہمدردی میں ایک جسم کی طرح ہے؛ جب جسم کے ایک عضو کو تکلیف ہوتی ہے تو پورا جسم بے خوابی اور بخار میں مبتلا ہو جاتا ہے۔",
+      "hindiTranslation": "आपसी प्रेम, दया और सहानुभूति में मोमिनों की मिसाल एक शरीर जैसी है; जब एक अंग को दर्द होता है तो पूरा शरीर बुख़ार व बेचैनी महसूस करता है।",
+      "narrator": "An-Nu'man ibn Bashir (RA)",
+      "grading": "Sahih (Agreed Upon — Muslim & Bukhari 6011)",
+      "sourceNote": {
+        "en": "Sahih Muslim 2586a; Sahih al-Bukhari 6011.",
+        "ur": "صحیح مسلم 2586a؛ صحیح البخاری 6011۔",
+        "ar": "صحيح مسلم ٢٥٨٦؛ صحيح البخاري ٦٠١١.",
+        "hi": "सहीह मुस्लिम 2586a; सहीह अल-बुख़ारी 6011।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:2586a"
+    },
+    {
+      "id": "bukhari_6014",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6014",
+      "bookChapter": "Kitab al-Adab",
+      "arabicText": "مَا زَالَ يُوصِينِي جِبْرِيلُ بِالْجَارِ حَتَّى ظَنَنْتُ أَنَّهُ سَيُوَرِّثُهُ.",
+      "englishTranslation": "Jibril kept advising me regarding the neighbor until I thought he would make him an heir.",
+      "urduTranslation": "جبریل علیہ السلام مجھے پڑوسی کے بارے میں اتنی تاکیدی وصیت کرتے رہے کہ مجھے گمان ہوا کہ عنقریب اسے وراثت میں شریک کر دیا جائے گا۔",
+      "hindiTranslation": "जिब्रील (अ.) मुझे पड़ोसी के हक़ के बारे में इतनी नसीहत करते रहे कि मुझे लगा कि शायद उसे वारिस बना दिया जाएगा।",
+      "narrator": "Aishah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2624a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6014; Sahih Muslim 2624a.",
+        "ur": "صحیح البخاری 6014؛ صحیح مسلم 2624a۔",
+        "ar": "صحيح البخاري ٦٠١٤؛ صحيح مسلم ٢٦٢٤.",
+        "hi": "सहीह अल-बुख़ारी 6014; सहीह मुस्लिम 2624a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6014"
+    },
+    {
+      "id": "bukhari_6018",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6018",
+      "bookChapter": "Kitab al-Adab",
+      "arabicText": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ.",
+      "englishTranslation": "Whoever believes in Allah and the Last Day should speak what is good or remain silent; whoever believes in Allah and the Last Day should honor his neighbor; and whoever believes in Allah and the Last Day should honor his guest.",
+      "urduTranslation": "جو شخص اللہ اور آخرت کے دن پر ایمان رکھتا ہے وہ بھلی بات کہے یا خاموش رہے؛ اپنے پڑوسی کا اکرام کرے اور اپنے مہمان کی عزت و اکرام کرے۔",
+      "hindiTranslation": "जो अल्लाह और आख़िरत पर ईमान रखता है वह अच्छी बात कहे या चुप रहे, पड़ोसी का सम्मान करे और मेहमान का सत्कार करे।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 47a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6018; Sahih Muslim 47a.",
+        "ur": "صحیح البخاری 6018؛ صحیح مسلم 47a۔",
+        "ar": "صحيح البخاري ٦٠١٨؛ صحيح مسلم ٤٧.",
+        "hi": "सहीह अल-बुख़ारी 6018; सहीह मुस्लिम 47a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6018"
+    },
+    {
+      "id": "bukhari_5304",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "5304",
+      "bookChapter": "Kitab an-Nafaqat",
+      "arabicText": "أَنَا وَكَافِلُ الْيَتِيمِ فِي الْجَنَّةِ هَكَذَا، وَأَشَارَ بِالسَّبَّابَةِ وَالْوُسْطَى وَفَرَّجَ بَيْنَهُمَا شَيْئًا.",
+      "englishTranslation": "I and the caretaker of an orphan will be in Paradise like this — and he gestured with his index and middle fingers, slightly separating them.",
+      "urduTranslation": "میں اور یتیم کی کفالت کرنے والا جنت میں اس طرح (قریب) ہوں گے؛ آپ ﷺ نے شہادت اور درمیانی انگلی سے اشارہ فرمایا۔",
+      "hindiTranslation": "मैं और अनाथ की देखभाल करने वाला जन्नत में इस तरह पास होंगे — आपने अपनी दो उँगलियों से इशारा फ़रमाया।",
+      "narrator": "Sahl ibn Sa'd (RA)",
+      "grading": "Sahih (Sahih al-Bukhari)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 5304 / 6005.",
+        "ur": "صحیح البخاری 5304 / 6005۔",
+        "ar": "صحيح البخاري ٥٣٠٤ / ٦٠٠٥.",
+        "hi": "सहीह अल-बुख़ारी 5304 / 6005।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:5304"
+    },
+    {
+      "id": "bukhari_5353",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "5353",
+      "bookChapter": "Kitab an-Nafaqat",
+      "arabicText": "السَّاعِي عَلَى الأَرْمَلَةِ وَالْمِسْكِينِ كَالْمُجَاهِدِ فِي سَبِيلِ اللَّهِ، أَوِ الْقَائِمِ اللَّيْلَ الصَّائِمِ النَّهَارَ.",
+      "englishTranslation": "The one who strives to support a widow or a poor person is like the one who strives in the cause of Allah, or like one who prays through the night and fasts through the day.",
+      "urduTranslation": "بیوہ اور مسکین کی مدد کے لیے بھاگ دوڑ کرنے والا اللہ کی راہ میں مجاہد یا رات کو قیام اور دن کو روزہ رکھنے والے کی طرح ہے۔",
+      "hindiTranslation": "विधवा और ग़रीब की मदद के लिए प्रयास करने वाला अल्लाह की राह में संघर्ष करने वाले के समान है।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2982)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 5353; Sahih Muslim 2982.",
+        "ur": "صحیح البخاری 5353؛ صحیح مسلم 2982۔",
+        "ar": "صحيح البخاري ٥٣٥٣؛ صحيح مسلم ٢٩٨٢.",
+        "hi": "सहीह अल-बुख़ारी 5353; सहीह मुस्लिम 2982।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:5353"
+    },
+    {
+      "id": "muslim_1218a",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "1218a",
+      "bookChapter": "Kitab al-Hajj (Farewell Sermon)",
+      "arabicText": "فَاتَّقُوا اللَّهَ فِي النِّسَاءِ، فَإِنَّكُمْ أَخَذْتُمُوهُنَّ بِأَمَانِ اللَّهِ، وَاسْتَحْلَلْتُمْ فُرُوجَهُنَّ بِكَلِمَةِ اللَّهِ... وَلَهُنَّ عَلَيْكُمْ رِزْقُهُنَّ وَكِسْوَتُهُنَّ بِالْمَعْرُوفِ.",
+      "englishTranslation": "Fear Allah concerning women! Verily you have taken them on the trust of Allah... And their rights upon you are their provision and clothing in a reasonable, kind manner.",
+      "urduTranslation": "عورتوں کے معاملے میں اللہ سے ڈرو! تم نے انہیں اللہ کی امانت کے ساتھ لیا ہے اور دستور کے مطابق ان کا نفقہ و لباس تمہارے ذمے ہے۔",
+      "hindiTranslation": "स्त्रियों के मामले में अल्लाह से डरो! तुमने उन्हें अल्लाह की अमानत के साथ अपनाया है; उचित भरण-पोषण और वस्त्र उनका अधिकार है।",
+      "narrator": "Jabir ibn Abdullah (RA)",
+      "grading": "Sahih (Sahih Muslim)",
+      "sourceNote": {
+        "en": "Sahih Muslim 1218a — Hajjat al-Wada' discourse.",
+        "ur": "صحیح مسلم 1218a — خطبۂ حجۃ الوداع۔",
+        "ar": "صحيح مسلم ١٢١٨ — خطبة حجة الوداع.",
+        "hi": "सहीह मुस्लिम 1218a — हज्जतुल-वदा उपदेश।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:1218a"
+    },
+    {
+      "id": "bukhari_893",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "893",
+      "bookChapter": "Kitab al-Jumu'ah",
+      "arabicText": "كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ: الإِمَامُ رَاعٍ وَمَسْئُولٌ عَنْ رَعِيَّتِهِ، وَالرَّجُلُ رَاعٍ فِي أَهْلِهِ وَهُوَ مَسْئُولٌ عَنْ رَعِيَّتِهِ، وَالْمَرْأَةُ رَاعِيَةٌ فِي بَيْتِ زَوْجِهَا وَمَسْئُولَةٌ عَنْ رَعِيَّتِهَا.",
+      "englishTranslation": "Each of you is a shepherd and each of you is responsible for his flock: the leader is responsible for his subjects, a man is a guardian in his household and responsible for his family, and a woman is a guardian in her husband's home and responsible for her charge.",
+      "urduTranslation": "تم میں سے ہر شخص نگہبان ہے اور ہر شخص سے اس کے ماتحتوں کے بارے میں سوال ہوگا: حکمران، شوہر، بیوی اور خادم سب اپنی اپنی ذمہ داری کے جواب دہ ہیں۔",
+      "hindiTranslation": "तुममें से हर कोई रखवाला है और अपने अधीन लोगों के प्रति जवाबदेह है — शासक, पति, पत्नी सभी अपने दायित्व हेतु उत्तरदायी हैं।",
+      "narrator": "Abdullah ibn Umar (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 1829)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 893 / 7138; Sahih Muslim 1829.",
+        "ur": "صحیح البخاری 893؛ صحیح مسلم 1829۔",
+        "ar": "صحيح البخاري ٨٩٣؛ صحيح مسلم ١٨٢٩.",
+        "hi": "सहीह अल-बुख़ारी 893; सहीह मुस्लिम 1829।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:893"
+    },
+    {
+      "id": "bukhari_2227",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2227",
+      "bookChapter": "Kitab al-Ijarah (Hiring)",
+      "arabicText": "قَالَ اللَّهُ تَعَالَى: ثَلاَثَةٌ أَنَا خَصْمُهُمْ يَوْمَ الْقِيَامَةِ... وَرَجُلٌ اسْتَأْجَرَ أَجِيرًا فَاسْتَوْفَى مِنْهُ وَلَمْ يُعْطِهِ أَجْرَهُ.",
+      "englishTranslation": "Allah the Exalted says: There are three whose adversary I will be on the Day of Resurrection... including a man who hired a laborer, received full work from him, and did not pay his wages.",
+      "urduTranslation": "اللہ تعالیٰ فرماتا ہے: قیامت کے دن تین لوگوں کا میں خود مدعی (فریقِ مخالف) ہوں گا... جن میں ایک وہ شخص ہے جس نے مزدور سے پورا کام لیا مگر اس کی مزدوری نہ دی۔",
+      "hindiTranslation": "अल्लाह तआला फ़रमाता है: क़यामत के दिन तीन लोगों का मैं स्वयं विरोधी होऊँगा... जिनमें वह व्यक्ति शामिल है जिसने मज़दूर से पूरा काम लेकर उसकी मज़दूरी न दी।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Sahih al-Bukhari Hadith Qudsi)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 2227.",
+        "ur": "صحیح البخاری 2227۔",
+        "ar": "صحيح البخاري ٢٢٢٧.",
+        "hi": "सहीह अल-बुख़ारी 2227।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2227"
+    },
+    {
+      "id": "bukhari_6732",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6732",
+      "bookChapter": "Kitab al-Faraid (Laws of Inheritance)",
+      "arabicText": "أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا، فَمَا بَقِيَ فَهُوَ لأَوْلَى رَجُلٍ ذَكَرٍ.",
+      "englishTranslation": "Give the fixed shares (Faraid) to those who are entitled to them, and whatever remains is for the closest male agnatic relative (Asabah).",
+      "urduTranslation": "مقررہ حصے (فرائض) ان کے حقداروں کو دے دو، پھر جو باقی بچے وہ سب سے قریبی مذکر عصبہ کو دیا جائے گا۔",
+      "hindiTranslation": "निश्चित हिस्से (फ़राइज़) उनके हक़दारों को दो, फिर जो बचे वह सबसे निकटतम पुरुष वारिस (असबा) का है।",
+      "narrator": "Abdullah ibn Abbas (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 1615a)",
+      "sourceNote": {
+        "en": "Foundational Hadith of Asabah in Ilm-ul-Faraid (Bukhari 6732; Muslim 1615a).",
+        "ur": "علم الفرائض میں عصبات کی بنیادی حدیث (بخاری 6732؛ مسلم 1615a)۔",
+        "ar": "حديث أساسي في باب العصبات (البخاري ٦٧٣٢؛ مسلم ١٦١٥).",
+        "hi": "इल्म-उल-फ़राइज़ में असबा की मूल हदीस (बुख़ारी 6732; मुस्लिम 1615a)।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6732"
+    },
+    {
+      "id": "bukhari_2742",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2742",
+      "bookChapter": "Kitab al-Wasaya (Wills & Testaments)",
+      "arabicText": "الثُّلُثُ وَالثُّلُثُ كَثِيرٌ، إِنَّكَ أَنْ تَذَرَ وَرَثَتَكَ أَغْنِيَاءَ خَيْرٌ مِنْ أَنْ تَذَرَهُمْ عَالَةً يَتَكَفَّفُونَ النَّاسَ.",
+      "englishTranslation": "One-third, and even one-third is much! To leave your heirs well-off is better than leaving them destitute begging from people.",
+      "urduTranslation": "ایک تہائی (وصیت جائز ہے)، اور ایک تہائی بھی بہت ہے! تمہارا اپنے ورثاء کو خوشحال چھوڑ جانا اس سے بہتر ہے کہ تم انہیں محتاج چھوڑو۔",
+      "hindiTranslation": "एक-तिहाई (वसीयत वैध है), और एक-तिहाई भी बहुत है! अपने वारिसों को संपन्न छोड़ना उन्हें मोहताज छोड़ने से बेहतर है।",
+      "narrator": "Sa'd ibn Abi Waqqas (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 1628a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 2742 / 1295; Sahih Muslim 1628a.",
+        "ur": "صحیح البخاری 2742؛ صحیح مسلم 1628a۔",
+        "ar": "صحيح البخاري ٢٧٤٢؛ صحيح مسلم ١٦٢٨.",
+        "hi": "सहीह अल-बुख़ारी 2742; सहीह मुस्लिम 1628a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2742"
+    },
+    {
+      "id": "bukhari_6736",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6736",
+      "bookChapter": "Kitab al-Faraid",
+      "arabicText": "لِلِابْنَةِ النِّصْفُ، وَلِابْنَةِ الِابْنِ السُّدُسُ، وَمَا بَقِيَ فَلِلْأُخْتِ.",
+      "englishTranslation": "Ibn Mas'ud (RA) reported the Prophet ﷺ ruled: For the daughter 1/2, for the son's daughter 1/6 (completing 2/3), and whatever remains is for the sister.",
+      "urduTranslation": "سیدنا ابن مسعودؓ نے نبی کریم ﷺ کا فیصلہ بیان فرمایا: بیٹی کو 1/2، پوتی کو 1/6 (تکمیلِ ثلثین) اور بقیہ بہن کو دیا جائے۔",
+      "hindiTranslation": "इब्न मसूद (रज़ि.) ने फ़रमाया कि नबी ﷺ ने निर्णय दिया: बेटी को 1/2, पोती को 1/6 और शेष सगी बहन को।",
+      "narrator": "Abdullah ibn Mas'ud (RA)",
+      "grading": "Sahih (Sahih al-Bukhari)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6736 — governs daughter + granddaughter + sister.",
+        "ur": "صحیح البخاری 6736 — بیٹی، پوتی اور بہن کا فیصلہ۔",
+        "ar": "صحيح البخاري ٦٧٣٦ — ميراث البنت وبنت الابن والأخت.",
+        "hi": "सहीह अल-बुख़ारी 6736।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6736"
+    },
+    {
+      "id": "bukhari_6094",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6094",
+      "bookChapter": "Kitab al-Adab",
+      "arabicText": "عَلَيْكُمْ بِالصِّدْقِ، فَإِنَّ الصِّدْقَ يَهْدِي إِلَى الْبِرِّ، وَإِنَّ الْبِرَّ يَهْدِي إِلَى الْجَنَّةِ... وَإِيَّاكُمْ وَالْكَذِبَ، فَإِنَّ الْكَذِبَ يَهْدِي إِلَى الْفُجُورِ، وَإِنَّ الْفُجُورَ يَهْدِي إِلَى النَّارِ.",
+      "englishTranslation": "Adhere to truthfulness, for truthfulness leads to righteousness, and righteousness leads to Paradise... and beware of lying, for lying leads to wickedness, and wickedness leads to Hellfire.",
+      "urduTranslation": "سچائی کو لازم پکڑو، بے شک سچ نیکی کی طرف لے جاتا ہے اور نیکی جنت تک پہنچاتی ہے؛ اور جھوٹ سے بچو کیونکہ جھوٹ گناہ کی طرف لے جاتا ہے اور گناہ جہنم تک۔",
+      "hindiTranslation": "सच्चाई को अपनाओ क्योंकि सच नेकी की ओर ले जाता है और नेकी जन्नत की ओर; झूठ से बचो क्योंकि झूठ बुराई की ओर ले जाता है।",
+      "narrator": "Abdullah ibn Mas'ud (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2607a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6094; Sahih Muslim 2607a.",
+        "ur": "صحیح البخاری 6094؛ صحیح مسلم 2607a۔",
+        "ar": "صحيح البخاري ٦٠٩٤؛ صحيح مسلم ٢٦٠٧.",
+        "hi": "सहीह अल-बुख़ारी 6094; सहीह मुस्लिम 2607a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6094"
+    },
+    {
+      "id": "bukhari_33",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "33",
+      "bookChapter": "Kitab al-Iman",
+      "arabicText": "آيَةُ الْمُنَافِقِ ثَلاَثٌ: إِذَا حَدَّثَ كَذَبَ، وَإِذَا وَعَدَ أَخْلَفَ، وَإِذَا اؤْتُمِنَ خَانَ.",
+      "englishTranslation": "The signs of a hypocrite are three: whenever he speaks he tells a lie, whenever he makes a promise he breaks it, and whenever he is entrusted he betrays his trust.",
+      "urduTranslation": "منافق کی تین نشانیاں ہیں: جب بات کرے تو جھوٹ بولے، جب وعدہ کرے تو وعدہ خلافی کرے اور جب اس کے پاس امانت رکھی جائے تو خیانت کرے۔",
+      "hindiTranslation": "मुनाफ़िक़ (कपटी) के तीन लक्षण हैं: बात करे तो झूठ बोले, वादा करे तो तोड़े और अमानत में खयानत करे।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 59a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 33; Sahih Muslim 59a.",
+        "ur": "صحیح البخاری 33؛ صحیح مسلم 59a۔",
+        "ar": "صحيح البخاري ٣٣؛ صحيح مسلم ٥٩.",
+        "hi": "सहीह अल-बुख़ारी 33; सहीह मुस्लिम 59a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:33"
+    },
+    {
+      "id": "bukhari_6114",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6114",
+      "bookChapter": "Kitab al-Adab",
+      "arabicText": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ.",
+      "englishTranslation": "The strong person is not the one who overcomes people in wrestling; rather the truly strong is the one who controls himself when angry.",
+      "urduTranslation": "طاقتور وہ نہیں جو کسی کو پچھاڑ دے، بلکہ اصل طاقتور وہ ہے جو غصے کے وقت اپنے آپ پر قابو رکھے۔",
+      "hindiTranslation": "शक्तिशाली वह नहीं जो कुश्ती में दूसरों को पछाड़ दे, बल्कि असली बलवान वह है जो क्रोध के समय स्वयं को वश में रखे।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2609a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6114; Sahih Muslim 2609a.",
+        "ur": "صحیح البخاری 6114؛ صحیح مسلم 2609a۔",
+        "ar": "صحيح البخاري ٦١١٤؛ صحيح مسلم ٢٦٠٩.",
+        "hi": "सहीह अल-बुख़ारी 6114; सहीह मुस्लिम 2609a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6114"
+    },
+    {
+      "id": "muslim_2564a",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "2564a",
+      "bookChapter": "Kitab al-Birr was-Silah",
+      "arabicText": "كُلُّ الْمُسْلِمِ عَلَى الْمُسْلِمِ حَرَامٌ: دَمُهُ وَمَالُهُ وَعِرْضُهُ.",
+      "englishTranslation": "All of a Muslim's blood, property, and honor are sacred and inviolable to another Muslim.",
+      "urduTranslation": "ہر مسلمان پر دوسرے مسلمان کا خون، اس کا مال اور اس کی عزت و آبرو حرام (قابلِ احترام و محفوظ) ہے۔",
+      "hindiTranslation": "प्रत्येक मुसलमान के लिए दूसरे मुसलमान का रक्त, संपत्ति और सम्मान पवित्र एवं अनुल्लंघनीय है।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Sahih Muslim)",
+      "sourceNote": {
+        "en": "Sahih Muslim 2564a.",
+        "ur": "صحیح مسلم 2564a۔",
+        "ar": "صحيح مسلم ٢٥٦٤.",
+        "hi": "सहीह मुस्लिम 2564a।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:2564a"
+    },
+    {
+      "id": "muslim_2318a",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "2318a",
+      "bookChapter": "Kitab al-Fada'il",
+      "arabicText": "مَنْ لاَ يَرْحَمُ لاَ يُرْحَمُ.",
+      "englishTranslation": "Whoever does not show mercy will not be shown mercy.",
+      "urduTranslation": "جو شخص دوسروں پر رحم نہیں کرتا، اس پر رحم نہیں کیا جاتا۔",
+      "hindiTranslation": "जो दूसरों पर दया नहीं करता, उस पर दया नहीं की जाती।",
+      "narrator": "Abu Hurayrah (RA) / Jarir (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari 5997 & Muslim 2318a)",
+      "sourceNote": {
+        "en": "Sahih Muslim 2318a; Sahih al-Bukhari 5997.",
+        "ur": "صحیح مسلم 2318a؛ صحیح البخاری 5997۔",
+        "ar": "صحيح مسلم ٢٣١٨؛ صحيح البخاري ٥٩٩٧.",
+        "hi": "सहीह मुस्लिम 2318a; सहीह अल-बुख़ारी 5997।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:2318a"
+    },
+    {
+      "id": "bukhari_6117",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6117",
+      "bookChapter": "Kitab al-Adab",
+      "arabicText": "الْحَيَاءُ لاَ يَأْتِي إِلَّا بِخَيْرٍ.",
+      "englishTranslation": "Modesty (Haya) brings nothing except goodness.",
+      "urduTranslation": "حیا ہمیشہ بھلائی ہی لاتی ہے۔",
+      "hindiTranslation": "शालीनता (हया) केवल भलाई ही लाती है।",
+      "narrator": "Imran ibn Husayn (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 37a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6117; Sahih Muslim 37a.",
+        "ur": "صحیح البخاری 6117؛ صحیح مسلم 37a۔",
+        "ar": "صحيح البخاري ٦١١٧؛ صحيح مسلم ٣٧.",
+        "hi": "सहीह अल-बुख़ारी 6117; सहीह मुस्लिम 37a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6117"
+    },
+    {
+      "id": "bukhari_2442",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2442",
+      "bookChapter": "Kitab al-Mazalim (Injustices)",
+      "arabicText": "الْمُسْلِمُ أَخُو الْمُسْلِمِ لاَ يَظْلِمُهُ وَلاَ يُسْلِمُهُ، وَمَنْ كَانَ فِي حَاجَةِ أَخِيهِ كَانَ اللَّهُ فِي حَاجَتِهِ.",
+      "englishTranslation": "A Muslim is the brother of another Muslim: he does not oppress him, nor does he hand him over to an oppressor. Whoever fulfills the need of his brother, Allah will fulfill his need.",
+      "urduTranslation": "مسلمان، مسلمان کا بھائی ہے؛ وہ نہ اس پر ظلم کرتا ہے اور نہ اسے بے یار و مددگار چھوڑتا ہے۔ جو اپنے بھائی کی حاجت پوری کرے، اللہ اس کی حاجت پوری فرماتا ہے۔",
+      "hindiTranslation": "मुसलमान, मुसलमान का भाई है; वह न उस पर अत्याचार करता है और न उसे बेसहारा छोड़ता है।",
+      "narrator": "Abdullah ibn Umar (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2580)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 2442; Sahih Muslim 2580.",
+        "ur": "صحیح البخاری 2442؛ صحیح مسلم 2580۔",
+        "ar": "صحيح البخاري ٢٤٤٢؛ صحيح مسلم ٢٥٨٠.",
+        "hi": "सहीह अल-बुख़ारी 2442; सहीह मुस्लिम 2580।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2442"
+    },
+    {
+      "id": "bukhari_2363",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2363",
+      "bookChapter": "Kitab al-Musaqat (Watering)",
+      "arabicText": "فِي كُلِّ كَبِدٍ رَطْبَةٍ أَجْرٌ.",
+      "englishTranslation": "In serving every living creature (with compassion and water/care), there is reward.",
+      "urduTranslation": "ہر ذی روح (جاندار) کے ساتھ حسنِ سلوک اور رحم کرنے میں اجر و ثواب ہے۔",
+      "hindiTranslation": "हर जीवित प्राणी के प्रति दया और सेवा में पुण्य (सवाब) है।",
+      "narrator": "Abu Hurayrah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2244a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 2363; Sahih Muslim 2244a.",
+        "ur": "صحیح البخاری 2363؛ صحیح مسلم 2244a۔",
+        "ar": "صحيح البخاري ٢٣٦٣؛ صحيح مسلم ٢٢٤٤.",
+        "hi": "सहीह अल-बुख़ारी 2363; सहीह मुस्लिम 2244a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2363"
+    },
+    {
+      "id": "bukhari_5984",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "5984",
+      "bookChapter": "Kitab al-Adab",
+      "arabicText": "لاَ يَدْخُلُ الْجَنَّةَ قَاطِعٌ.",
+      "englishTranslation": "The one who severs ties of kinship (Qati' ar-Rahim) will not enter Paradise.",
+      "urduTranslation": "رشتے داری توڑنے والا جنت میں داخل نہیں ہوگا۔",
+      "hindiTranslation": "रिश्ते तोड़ने वाला जन्नत में प्रवेश नहीं करेगा।",
+      "narrator": "Jubayr ibn Mut'im (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2556a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 5984; Sahih Muslim 2556a.",
+        "ur": "صحیح البخاری 5984؛ صحیح مسلم 2556a۔",
+        "ar": "صحيح البخاري ٥٩٨٤؛ صحيح مسلم ٢٥٥٦.",
+        "hi": "सहीह अल-बुख़ारी 5984; सहीह मुस्लिम 2556a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:5984"
+    },
+    {
+      "id": "bukhari_6245",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "6245",
+      "bookChapter": "Kitab al-Isti'dhan (Asking Permission)",
+      "arabicText": "الِاسْتِئْذَانُ ثَلاَثٌ، فَإِنْ أُذِنَ لَكَ وَإِلاَّ فَارْجِعْ.",
+      "englishTranslation": "Seeking permission to enter is three times; if permission is granted, enter; otherwise go back.",
+      "urduTranslation": "گھر میں داخل ہونے کی اجازت تین بار طلب کرنی چاہیے؛ اگر اجازت ملے تو اندر جائیں ورنہ واپس لوٹ آئیں۔",
+      "hindiTranslation": "प्रवेश की अनुमति तीन बार मांगनी चाहिए; यदि अनुमति मिले तो प्रवेश करें वरना लौट जाएं।",
+      "narrator": "Abu Musa al-Ash'ari (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2153b)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 6245; Sahih Muslim 2153b.",
+        "ur": "صحیح البخاری 6245؛ صحیح مسلم 2153b۔",
+        "ar": "صحيح البخاري ٦٢٤٥؛ صحيح مسلم ٢١٥٣.",
+        "hi": "सहीह अल-बुख़ारी 6245; सहीह मुस्लिम 2153b।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:6245"
+    },
+    {
+      "id": "bukhari_5376",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "5376",
+      "bookChapter": "Kitab al-At'imah (Food)",
+      "arabicText": "يَا غُلاَمُ سَمِّ اللَّهَ، وَكُلْ بِيَمِينِكَ، وَكُلْ مِمَّا يَلِيكَ.",
+      "englishTranslation": "O young boy, mention the name of Allah (say Bismillah), eat with your right hand, and eat from what is directly in front of you.",
+      "urduTranslation": "اے لڑکے! بسم اللہ پڑھ، اپنے دائیں ہاتھ سے کھا اور اپنے سامنے سے کھا۔",
+      "hindiTranslation": "बच्चे! बिस्मिल्लाह कहो, दाएं हाथ से खाओ और अपने सामने से खाओ।",
+      "narrator": "Umar ibn Abi Salamah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 2022a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 5376; Sahih Muslim 2022a.",
+        "ur": "صحیح البخاری 5376؛ صحیح مسلم 2022a۔",
+        "ar": "صحيح البخاري ٥٣٧٦؛ صحيح مسلم ٢٠٢٢.",
+        "hi": "सहीह अल-बुख़ारी 5376; सहीह मुस्लिम 2022a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:5376"
+    },
+    {
+      "id": "muslim_223",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "223",
+      "bookChapter": "Kitab at-Taharah",
+      "arabicText": "الطُّهُورُ شَطْرُ الإِيمَانِ.",
+      "englishTranslation": "Cleanliness and purification are half of faith.",
+      "urduTranslation": "پاکیزگی اور صفائی نصف ایمان ہے۔",
+      "hindiTranslation": "स्वच्छता और पवित्रता ईमान का आधा हिस्सा है।",
+      "narrator": "Abu Malik al-Ash'ari (RA)",
+      "grading": "Sahih (Sahih Muslim)",
+      "sourceNote": {
+        "en": "Sahih Muslim 223.",
+        "ur": "صحیح مسلم 223۔",
+        "ar": "صحيح مسلم ٢٢٣.",
+        "hi": "सहीह मुस्लिम 223।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:223"
+    },
+    {
+      "id": "bukhari_13",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "13",
+      "bookChapter": "Kitab al-Iman",
+      "arabicText": "لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ.",
+      "englishTranslation": "None of you truly believes until he loves for his brother what he loves for himself.",
+      "urduTranslation": "تم میں سے کوئی اس وقت تک کامل مومن نہیں ہو سکتا جب تک اپنے بھائی کے لیے وہی پسند نہ کرے جو اپنے لیے پسند کرتا ہے۔",
+      "hindiTranslation": "तुममें से कोई पूर्ण मोमिन नहीं हो सकता जब तक वह अपने भाई के लिए वही न चाहे जो अपने लिए चाहता है।",
+      "narrator": "Anas ibn Malik (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari & Muslim 45a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 13; Sahih Muslim 45a.",
+        "ur": "صحیح البخاری 13؛ صحیح مسلم 45a۔",
+        "ar": "صحيح البخاري ١٣؛ صحيح مسلم ٤٥.",
+        "hi": "सहीह अल-बुख़ारी 13; सहीह मुस्लिम 45a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:13"
+    },
+    {
+      "id": "muslim_55a",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "55a",
+      "bookChapter": "Kitab al-Iman",
+      "arabicText": "الدِّينُ النَّصِيحَةُ قُلْنَا: لِمَنْ؟ قَالَ: لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ.",
+      "englishTranslation": "The religion is sincere well-wishing and honest counsel (Nasihah) — to Allah, His Book, His Messenger, the leaders of the Muslims, and their general community.",
+      "urduTranslation": "دین سراسر خیر خواہی کا نام ہے: اللہ، اس کی کتاب، اس کے رسول ﷺ، مسلمانوں کے رہنماؤں اور عام مسلمانوں کے لیے خیر خواہی۔",
+      "hindiTranslation": "दीन सच्ची हितैषी भावना (नसीहत) है — अल्लाह, उसकी किताब, उसके रसूल ﷺ, नेताओं और आम लोगों के प्रति।",
+      "narrator": "Tamim ad-Dari (RA)",
+      "grading": "Sahih (Sahih Muslim)",
+      "sourceNote": {
+        "en": "Sahih Muslim 55a.",
+        "ur": "صحیح مسلم 55a۔",
+        "ar": "صحيح مسلم ٥٥.",
+        "hi": "सहीह मुस्लिम 55a।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:55a"
+    },
+    {
+      "id": "bukhari_2076",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2076",
+      "bookChapter": "Kitab al-Buyu' (Book of Sales)",
+      "arabicText": "رَحِمَ اللَّهُ رَجُلاً سَمْحًا إِذَا بَاعَ، وَإِذَا اشْتَرَى، وَإِذَا اقْتَضَى.",
+      "englishTranslation": "May Allah have mercy on a person who is generous and courteous when he sells, when he buys, and when he demands repayment of his right.",
+      "urduTranslation": "اللہ تعالیٰ اس شخص پر رحم فرمائے جو بیچتے وقت، خریدتے وقت اور اپنا حق وصول کرتے وقت نرمی اور کشادہ دلی سے کام لے۔",
+      "hindiTranslation": "अल्लाह उस व्यक्ति पर दया करे जो बेचते, खरीदते और अपना हक़ मांगते समय उदार व विनम्र रहे।",
+      "narrator": "Jabir ibn Abdullah (RA)",
+      "grading": "Sahih (Sahih al-Bukhari)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 2076.",
+        "ur": "صحیح البخاری 2076۔",
+        "ar": "صحيح البخاري ٢٠٧٦.",
+        "hi": "सहीह अल-बुख़ारी 2076।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2076"
+    },
+    {
+      "id": "bukhari_2452",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2452",
+      "bookChapter": "Kitab al-Mazalim",
+      "arabicText": "مَنِ اقْتَطَعَ شِبْرًا مِنَ الأَرْضِ ظُلْمًا طُوِّقَهُ مِنْ سَبْعِ أَرَضِينَ يَوْمَ الْقِيَامَةِ.",
+      "englishTranslation": "Whoever unlawfully seizes even a handspan of land will have seven earths hung around his neck on the Day of Resurrection.",
+      "urduTranslation": "جو شخص کسی کی ایک بالشت زمین بھی ناحق دبا لے گا، قیامت کے دن ساتوں زمینوں کا طوق اس کے گلے میں ڈالا جائے گا۔",
+      "hindiTranslation": "जो अन्यायपूर्वक किसी की एक बालिश्त ज़मीन भी हड़प लेगा, क़यामत के दिन सातों ज़मीनों का तौक़ उसके गले में डाला जाएगा।",
+      "narrator": "Sa'id ibn Zayd / Aishah (RA)",
+      "grading": "Sahih (Agreed Upon — Bukhari 2452 / Muslim 1610a)",
+      "sourceNote": {
+        "en": "Sahih al-Bukhari 2452 / 3196; Sahih Muslim 1610a.",
+        "ur": "صحیح البخاری 2452؛ صحیح مسلم 1610a۔",
+        "ar": "صحيح البخاري ٢٤٥٢؛ صحيح مسلم ١٦١٠.",
+        "hi": "सहीह अल-बुख़ारी 2452; सहीह मुस्लिम 1610a।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2452"
+    }
+  ],
+  "officialSources": [
+    {
+      "title": "Quran.com — Verified Uthmani Arabic & Translations",
+      "attribution": "Primary Scripture Reference",
+      "url": "https://quran.com/"
+    },
+    {
+      "title": "Sunnah.com — Authentic Hadith Collections",
+      "attribution": "Sahih al-Bukhari, Sahih Muslim, Sunan Verification",
+      "url": "https://sunnah.com/"
+    },
+    {
+      "title": "International Islamic Fiqh Academy (OIC)",
+      "attribution": "Contemporary Jurisprudence Resolutions (IIFA)",
+      "url": "https://iifa-aifi.org/"
+    },
+    {
+      "title": "Council of Islamic Ideology (Pakistan)",
+      "attribution": "Constitutional Advisory on Family, Inheritance & Rights",
+      "url": "https://cii.gov.pk/"
+    },
+    {
+      "title": "Pakistan Code — Federal Statutory Laws",
+      "attribution": "Muslim Family Laws, Harassment & Protection Statutes",
+      "url": "https://pakistancode.gov.pk/"
+    },
+    {
+      "title": "Ministry of Human Rights (Pakistan) — Helpline 1099",
+      "attribution": "Human Rights, Child & Domestic Protection Guidance",
+      "url": "https://mohr.gov.pk/"
+    },
+    {
+      "title": "Dorar.net — Hadith Verification Encyclopedia",
+      "attribution": "Classical Takhrij & Chain Verification",
+      "url": "https://dorar.net/"
+    }
+  ]
+}

@@ -1,0 +1,1409 @@
+{
+  "lessons": [
+    {
+      "id": "lesson_l2_m7",
+      "level": 2,
+      "moduleNumber": 7,
+      "moduleTitle": {
+        "en": "Module 7: Buying & Selling Rules (Fiqh al-Buyu')",
+        "ur": "ماڈیول 7: خرید و فروخت کے بنیادی شرعی احکام",
+        "ar": "الوحدة ٧: أحكام البيع والشراء والقبض والغرر",
+        "hi": "मॉड्यूल 7: ख़रीद और बिक्री के शरीअत नियम"
+      },
+      "title": {
+        "en": "Offer & Acceptance, Ownership, Qabd (Possession) & Avoiding Gharar",
+        "ur": "ایجاب و قبول، ملکیت و قبضہ اور بیعِ غرر سے بچاؤ",
+        "ar": "الإيجاب والقبول والملك والقبض وتجنب الغرر",
+        "hi": "प्रस्ताव-स्वीकृति, स्वामित्व, क़ब्ज़ और ग़रर से बचाव"
+      },
+      "primaryEvidenceCategory": "classical_fiqh",
+      "learningObjectives": {
+        "en": [
+          "Identify the pillars of a valid Bay': contracting parties, subject matter, price, and Ijab-wa-Qabul.",
+          "Distinguish physical possession (Qabd Haqiqi) from constructive possession (Qabd Hukmi).",
+          "Avoid selling unowned goods and major Gharar (excessive contractual uncertainty)."
+        ],
+        "ur": [
+          "بیع کے ارکان (بائع و مشتری، مبیع، ثمن، ایجاب و قبول) کو سمجھیں۔",
+          "قبضہ حقیقی (ہاتھ میں لینا) اور قبضہ حکمی (رسک و تصرف منتقل ہونا) کا فرق جانیں۔",
+          "غیر مملوک شے کی بیع اور غررِ کثیر (مبہم سودے) سے بچنا سیکھیں۔"
+        ],
+        "ar": [
+          "فهم أركان البيع والفرق بين القبض الحقيقي والحكمي وتجنب بيع ما لا يملك والغرر الفاحش."
+        ],
+        "hi": [
+          "वैध बिक्री के स्तंभ, वास्तविक बनाम रचनात्मक क़ब्ज़, और ग़रर (अनिश्चितता) से बचाव समझें।"
+        ]
+      },
+      "introduction": {
+        "en": "Before issuing a sale invoice or clicking 'Confirm Order', Islamic law asks two decisive checks: Do you own and bear risk over the item (Qabd), and are price, specs, and delivery free of major ambiguity (Gharar)?",
+        "ur": "بل کاٹنے یا آن لائن آرڈر کنفرم کرنے سے پہلے شریعت دو بنیادی سوالات پوچھتی ہے: کیا مال آپ کی ملکیت و قبضہ (مع رسک) میں آ چکا ہے؟ اور کیا قیمت، شے اور حوالگی مبہم غرر سے پاک ہیں؟",
+        "ar": "قبل إتمام أي بيع يشترط الشرع تحقق الملكية والقبض وتحمل المخاطر، وخلو العقد من الغرر الفاحش.",
+        "hi": "बिक्री पूरी करने से पहले शरीअत दो जांच करती है: क्या विक्रेता का वास्तविक स्वामित्व व क़ब्ज़ है, और क्या कीमत व विवरण अनिश्चितता (ग़रर) से मुक्त हैं?"
+      },
+      "explanationUr": "خرید و فروخت کے 4 بنیادی ارکان ہیں: (1) فریقین (عاقل و بالغ)، (2) صیغہ یعنی ایجاب و قبول (زبانی، تحریری یا آن لائن بٹن و عمل سے بیعِ تعاطی)، (3) مبیع (جائز، موجود، معلوم اور بائع کی ملکیت میں ہو)، (4) ثمن (قیمت واضح اور متعین ہو)۔ صحیح مسلم و سنن کی معروف روایت کے مطابق جو چیز آپ کے پاس نہ ہو اسے مت بیچیں (البتہ سلم و استصناع مخصوص شرائط کے ساتھ مستثنیٰ ہیں)۔ قبضہ دو طرح کا ہے: حقیقی (اشیاء کو اپنے گودام میں لینا) اور حکمی (بینک لیجر، گودام کی رسید یا مکمل رسک و تصرف کا منتقل ہو جانا)۔ نیز غررِ کثیر یعنی چیز کی جنس، معیار یا قیمت مجہول رکھنا بیع کو فاسد کر دیتا ہے۔",
+      "explanationEn": "Every Islamic sale rests on four essentials: capable parties, clear Offer & Acceptance (verbal, written, or digital click-wrap Mu'atah), a lawful/known/owned item, and a clearly fixed price. A seller generally cannot execute a final binding sale over an item not yet owned and possessed (exception: Salam/Istisna under strict criteria). Constructive possession (Qabd Hukmi)—holding risk of loss, insurance responsibility, warehouse receipt, and legal control—is recognized across AAOIFI standards. Major uncertainty (Gharar Fahish), such as unknown delivery contents or fluctuating unfixed prices, voids the sale.",
+      "explanationAr": "يقوم البيع الصحيح على: العاقدين، والصيغة (الإيجاب والقبول أو المعاطاة)، والمبيع المملوك المعلوم الطاهر، والثمن المعلوم. والقبض نوعان: حقيقي باليد، وحكمي بالتخلية ونقل الضمان والوثائق المعتبرة (معيار أيوفي ١٨). ويبطل البيع بالغرر الفاحش في الثمن أو السلعة.",
+      "explanationHi": "वैध बिक्री के चार आधार हैं: सक्षम पक्ष, प्रस्ताव-स्वीकृति (मौखिक, लिखित या डिजिटल), वैध व स्वामित्व वाली वस्तु, और स्पष्ट कीमत। बिना स्वामित्व व क़ब्ज़ के सामान्य बिक्री वर्जित है। रचनात्मक क़ब्ज़ (क़ब्ज़ हुक्मी) में जोखिम और नियंत्रण हस्तांतरण शामिल है, जबकि बड़ी अनिश्चितता (ग़रर) अनुबंध को अवैध बनाती है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Mutual informed consent eliminates hidden uncertainty.", "ur": "مکمل آگاہی پر مبنی باہمی رضامندی ابہام ختم کرتی ہے۔", "ar": "التراضي المبني على العلم يمنع الجهالة والغرر.", "hi": "स्पष्ट जानकारी के साथ सहमति अनिश्चितता समाप्त करती है।" },
+          "businessRelevance": { "en": "Consent is impossible when quantity, quality, or price is left vague.", "ur": "مبہم قیمت یا نامعلوم شے پر حقیقی رضامندی متحقق نہیں ہوتی۔", "ar": "لا يصح التراضي مع جهالة المبيع أو الثمن.", "hi": "अस्पष्ट कीमत या वस्तु पर सच्ची सहमति नहीं हो सकती।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_1532a"],
+      "classicalFiqh": {
+        "en": "AAOIFI Shariah Standard No. 18 (Possession/Qabd) & Classical Usul differentiate Gharar Yasir (minor unavoidable market variance, forgiven) from Gharar Fahish (major speculative ambiguity, prohibited).",
+        "ur": "فقہا اور AAOIFI معیار 18 غررِ یسیر (معمولی ناقابلِ اجتناب فرق، مثلاً گھر کی بنیاد یا انار کا چھلکا) کو معاف اور غررِ کثیر (بڑا ابہام) کو حرام قرار دیتے ہیں۔",
+        "ar": "يفرّق الفقهاء ومعيار أيوفي ١٨ بين الغرر اليسير المعفو عنه والغرر الفاحش المبطل للعقد.",
+        "hi": "विद्वान और AAOIFI मानक 18 मामूली अनिश्चितता (ग़रर यसीर) की छूट देते हैं और बड़ी अनिश्चितता को वर्जित करते हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "Online 'Confirm Order' buttons qualify as Offer-Acceptance; mystery grab-bags without minimum value or dropshipping without stock risk trigger Gharar/unowned-sale issues.",
+        "ur": "آن لائن آرڈر بٹن ایجاب و قبولِ تعاطی کے قائم مقام ہے؛ البتہ گمنام 'مسٹری باکس' یا بغیر قبضہ ڈراپ شپنگ غرر و عدمِ ملکیت سے مشروط ہیں۔",
+        "ar": "الضغط على زر الشراء الإلكتروني يُعد صيغة تعاقد، بينما الصناديق المجهولة والبيع دون تملك محظورة.",
+        "hi": "ऑनलाइन ऑर्डर बटन स्वीकृति माना जाता है; पर अनदेखे 'मिस्ट्री बॉक्स' या बिना स्टॉक स्वामित्व की बिक्री अवैध होती है।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafis allow selling non-food real estate/movables upon valid ownership before physical removal, whereas Shafi'is require Qabd across all sales; all prohibit reselling unowned stock.",
+        "ur": "کھانے کی اشیاء میں قبضے سے پہلے آگے بیچنے کی حرمت پر اجماع ہے؛ غیر غذائی اشیاء میں احناف و مالکیہ میں تفصیلی فرق ہے مگر بغیر ملکیت بیع سب کے نزدیک ناجائز ہے۔",
+        "ar": "يُجمع الفقهاء على حرمة بيع الطعام قبل قبضه وبيع ما لا يملك، مع تفصيل في قبض غير الطعام.",
+        "hi": "खाद्य वस्तुओं को क़ब्ज़ से पहले बेचने पर सर्वसम्मति से रोक है; बिना स्वामित्व बिक्री सभी में वर्जित है।"
+      },
+      "modernExample": {
+        "en": "An electronics importer clears customs and holds warehouse risk (Qabd Hukmi) before invoicing wholesalers, instead of reselling unpurchased supplier links.",
+        "ur": "درآمد کنندہ پہلے گودام میں مال کا قبضہ و رسک سنبھالتا ہے اور اس کے بعد ہول سیلرز کو حتمی بل جاری کرتا ہے۔",
+        "ar": "مستورد يتحمل مخاطر الشحنة ويستلم بوليصة الشحن والتخليص قبل بيعها للتجار.",
+        "hi": "आयातक पहले माल का स्वामित्व व जोखिम लेता है, तभी थोक विक्रेताओं को अंतिम बिक्री करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Taking supplier inventory risk before executing customer sale, or taking binding order ONLY as promise (Wa'd) then buying & owning", "ur": "گاہک سے محض وعدہ خرید لے کر مال خود خریدنا اور قبضے کے بعد بیع کرنا", "ar": "أخذ وعد بالشراء ثم الشراء والقبض ثم البيع النهائي", "hi": "खरीदार से पहले वादा लेकर, स्वयं माल खरीदकर और क़ब्ज़ के बाद अंतिम बिक्री करना" },
+          "prohibitedPractice": { "en": "Finalizing paid sale for unowned stock or selling random mystery boxes", "ur": "مالک بنے بغیر حتمی بیع کرنا یا نامعلوم چیزوں کا مسٹری باکس بیچنا", "ar": "البيع النهائي لما لا يملكه التاجر أو بيع صناديق الحظ المجهولة", "hi": "स्वामित्व से पहले पक्की बिक्री करना या अनिश्चित मिस्ट्री बॉक्स बेचना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Conflating a non-binding 'quotation/promise' with a finalized sales contract.",
+          "Selling random 'unclaimed mystery parcels' where contents are completely unknown (Gharar + Qimar)."
+        ],
+        "ur": [
+          "وعدۂ بیع (Quotation) اور حتمی بیع میں فرق نہ کرنا۔",
+          "ان دیکھے لاوارث پارسل بطور 'مسٹری باکس' بیچنا جو غرر اور جوئے کے مشابہ ہے۔"
+        ],
+        "ar": [
+          "الخلط بين الوعد الملزم والبيع التام، أو بيع الطرود المجهولة المحتوى."
+        ],
+        "hi": [
+          "कोटेशन/वादे को पक्की बिक्री मान लेना, या अनदेखे पार्सल 'मिस्ट्री बॉक्स' बेचना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Ensure legal ownership & risk transfer (Qabd) before invoicing a final sale.",
+          "State exact SKU specs, dimensions, quantity, and final currency price.",
+          "Use Salam/Istisna or Wakalah/Wa'd structures when pre-funding unbuilt/unacquired items."
+        ],
+        "ur": [
+          "حتمی بیع سے قبل ملکیت و رسک کی منتقلی یقینی بنائیں۔",
+          "شے کی قسم، مقدار، معیار اور قیمت بالکل واضح لکھیں۔",
+          "پیشگی آرڈر کے لیے سلم، استصناع یا وعدہ+خریداری کا درست طریقہ اپنائیں۔"
+        ],
+        "ar": [
+          "تحقق الملك والقبض قبل البيع، ووضوح السعر والمواصفات، واستخدام السلم أو الاستصناع للطلب المسبق."
+        ],
+        "hi": [
+          "बिक्री से पहले स्वामित्व व जोखिम सुनिश्चित करें और स्पष्ट कीमत/विवरण दें।"
+        ]
+      },
+      "summary": {
+        "en": "Sound Islamic trade demands real ownership/Qabd, crystal-clear specs, and elimination of major Gharar.",
+        "ur": "درست اسلامی بیع کے لیے حقیقی ملکیت و قبضہ، واضح قیمت و اوصاف اور غرر سے پاک ہونا ضروری ہے۔",
+        "ar": "البيع الصحيح يقوم على الملك والقبض والعلم التام وانتفاء الغرر.",
+        "hi": "सही इस्लामी बिक्री में वास्तविक स्वामित्व, स्पष्ट शर्तें और ग़रर से मुक्ति आवश्यक है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m7_1",
+          "question": {
+            "en": "Why is selling randomized 'mystery parcels' whose exact contents and value are hidden prohibited in Islamic law?",
+            "ur": "مبہم 'مسٹری باکس/گمنام پارسل' بیچنا شریعت میں کیوں ناجائز ہے؟",
+            "ar": "لماذا يُمنع بيع الصناديق المجهولة المحتوى في الفقه الإسلامي؟",
+            "hi": "अज्ञात सामग्री वाले 'मिस्ट्री बॉक्स' बेचना शरीअत में क्यों वर्जित है?"
+          },
+          "options": {
+            "en": [
+              "Because unknown subject matter introduces prohibited Gharar (uncertainty) and gambling-like speculation",
+              "Because cardboard boxes are expensive",
+              "Because shipping takes 2 days"
+            ],
+            "ur": [
+              "کیونکہ نامعلوم مبیع میں غررِ فاحش اور جوئے جیسی کیفیت پائی جاتی ہے",
+              "ڈبہ مہنگا ہوتا ہے",
+              "شپنگ میں دو دن لگتے ہیں"
+            ],
+            "ar": [
+              "لوجود الغرر الفاحش والجهالة الشبيهة بالقمار",
+              "لغلاء الصندوق"
+            ],
+            "hi": [
+              "क्योंकि अज्ञात वस्तु में वर्जित ग़रर (अनिश्चितता) और जुए जैसा तत्व होता है",
+              "क्योंकि डिब्बा महंगा है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Selling an undisclosed random item violates the condition that the sold asset must be known cleanly to both parties.",
+            "ur": "مبیع کا معلوم و متعین ہونا شرط ہے؛ مجہول اشیاء کی بیع غرر و قمار کی وجہ سے باطل ہے۔",
+            "ar": "يشترط لصحة البيع العلم بالمبيع ونفي الجهالة والغرر.",
+            "hi": "वैध बिक्री के लिए वस्तु का स्पष्ट ज्ञान होना अनिवार्य है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Map your order-to-delivery fulfillment step-by-step and verify at which exact moment ownership and risk belong to your business.",
+        "ur": "اپنے کاروبار کے آرڈر سے حوالگی تک کے مراحل لکھیں اور نشان دہی کریں کہ مال کس مرحلے پر آپ کی ملکیت و رسک میں آتا ہے۔",
+        "ar": "ارسم خطوات تنفيذ الطلب في متجرك وحدد لحظة تحقق الملكية والقبض.",
+        "hi": "अपने ऑर्डर-से-डिलीवरी चरण लिखें और पहचानें कि किस क्षण वस्तु आपके स्वामित्व व जोखिम में आती है।"
+      },
+      "sources": [
+        { "title": "AAOIFI Shariah Standard No. 18 (Possession)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" },
+        { "title": "Quran 4:29", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/4/29" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m8",
+      "level": 2,
+      "moduleNumber": 8,
+      "moduleTitle": {
+        "en": "Module 8: Pricing, Profit Margins & Fair Bargaining",
+        "ur": "ماڈیول 8: قیمت کا تعین، منافع کی حد اور بھاؤ تاؤ",
+        "ar": "الوحدة ٨: التسعير والربح والمفاوضة العادلة",
+        "hi": "मॉड्यूल 8: मूल्य निर्धारण, लाभ मार्जिन और मोलभाव"
+      },
+      "title": {
+        "en": "Why Profit Percentage Alone Does Not Determine Halal or Haram",
+        "ur": "صرف نفع کا فیصد حلال و حرام کا معیار نہیں — اصل شرعی اصول کیا ہیں؟",
+        "ar": "ضوابط الربح والتسعير: لماذا لا تحدد نسبة الربح وحدها الحلّ والحرمة؟",
+        "hi": "केवल लाभ का प्रतिशत हलाल-हराम तय नहीं करता — वास्तविक मानदंड"
+      },
+      "primaryEvidenceCategory": "classical_fiqh",
+      "learningObjectives": {
+        "en": [
+          "Understand that Islam sets NO fixed arbitrary percentage cap (like 10% or 20%) on honest trade profit.",
+          "Explain why a 3% markup on a Haram/deceptive deal is Haram, whereas a 50% markup on a transparent honest value-added item is Halal.",
+          "Recognize exceptions: Ghaban Fahish (gross price exploitation with deceit), hoarding, and Murabaha disclosure duties."
+        ],
+        "ur": [
+          "جانیں کہ اسلام نے جائز تجارت میں منافع کی کوئی مقررہ حد فیصد (مثلاً 10 یا 20 فیصد) مقرر نہیں کی۔",
+          "سمجھیں کہ دھوکے یا حرام چیز پر 3 فیصد نفع بھی حرام ہے، اور سچائی و اضافی قدر کے ساتھ 50 فیصد نفع بھی حلال ہو سکتا ہے۔",
+          "غبنِ فاحش مع تغریر، ذخیرہ اندوزی اور مرابحہ کی سچائی کے استثنائی حدود سمجھیں۔"
+        ],
+        "ar": [
+          "إدراك عدم وجود نسبة ربح محددة شرعاً، والتمييز بين الربح المشروع والغبن الفاحش المصحوب بتدليس."
+        ],
+        "hi": [
+          "समझें कि इस्लाम ईमानदार व्यापार में मुनाफ़े की कोई तय प्रतिशत सीमा नहीं बांधता; वैधता पारदर्शिता और अनुबंध से तय होती है।"
+        ]
+      },
+      "introduction": {
+        "en": "A widespread myth claims 'Islam only allows 10% profit.' Classical Fiqh and IIFA resolutions confirm no fixed percentage cap exists—permissibility depends on product legality, real ownership, full transparency, and absence of coercion or fraud.",
+        "ur": "عوام میں یہ غلط فہمی عام ہے کہ 'اسلام میں صرف 10 یا 20 فیصد منافع جائز ہے'۔ فقہ اسلامی اور مجامعِ فقہ واضح کرتے ہیں کہ شریعت نے منافع کا کوئی متعین فیصد مقرر نہیں کیا؛ اصل مدار حلال شے، حقیقی ملکیت، سچائی اور دھوکے یا اجارہ داری سے پاک ہونے پر ہے۔",
+        "ar": "من الأخطاء الشائعة تحديد سقف ثابت للربح كـ ١٠٪؛ الصواب أنه لا حدّ لنسبة الربح في الشريعة ما دام العقد صحيحاً دون غش أو احتكار أو تغرير.",
+        "hi": "यह आम ग़लतफ़हमी है कि इस्लाम में केवल 10% लाभ की अनुमति है। फ़िक़्ह में लाभ का कोई निश्चित प्रतिशत तय नहीं; वैधता वस्तु, स्वामित्व और ईमानदारी पर निर्भर है।"
+      },
+      "explanationUr": "منافع کی شرح پر شریعت کا موقف نہایت متوازن ہے: (1) صحیح بخاری (3642) میں عروہ بارقیؓ نے ایک دینار کی بکری خرید کر دو دینار میں بیچی یعنی 100 فیصد نفع کمایا اور نبی اکرم ﷺ نے انہیں برکت کی دعا دی، (2) لہٰذا اگر شے حلال ہو، کوئی جھوٹ یا قیمت میں دھوکہ نہ ہو اور مارکیٹ میں جبری اجارہ داری نہ ہو تو زیادہ نفع بھی جائز ہے۔ البتہ دو چیزیں ممنوع ہیں: (الف) غبنِ فاحش مع التغریر یعنی کسی ناواقف، مسافر یا بچے کو مارکیٹ ریٹ کا جھوٹا تاثر دے کر غیر معمولی مہنگا بیچنا، (ب) مرابحہ میں اصل قیمتِ خرید جھوٹ بتانا، یا قرض پر حتیٰ کہ 1 فیصد بھی سود لینا۔ نیز حکومت عوامی تحفظ کے لیے بنیادی اشیاءِ ضرورت پر قانونی نرخ (Price Control) مقرر کرے تو شہری قانون کی پابندی واجب ہے۔",
+      "explanationEn": "Evidence proves profit percentage alone is never the test of Halal vs Haram: (1) In Sahih al-Bukhari 3642, Urwah al-Bariqi (RA) bought a sheep for 1 dinar and resold one for 1 dinar while keeping another (effectively 100% commercial value gain), and the Prophet ﷺ blessed his trade—demonstrating no arbitrary percentage ceiling; (2) A mere 2% interest fee on a loan (Riba) or 5% markup on counterfeit/unowned goods is completely Haram, while a 45% retail margin on high-overhead bespoke handicrafts sold transparently is completely Halal; (3) Ethical boundaries still prohibit Ghaban Fahish with Taghrir (exploiting an uninformed buyer via deceptive market claims), monopoly hoarding, and violating lawful public price caps during emergencies.",
+      "explanationAr": "نسبة الربح وحدها ليست معيار الحل والحرمة: فـ ٢٪ زيادة في القرض ربا محرم، بينما قد يبلغ الربح في السلع الحلال ٥٠٪ أو ١٠٠٪ كما في حديث عروة البارقي (البخاري ٣٦٤٢) ويكون حلالاً مع الصدق والملكية وانتفاء الاحتكار والتغرير. ويُمنع الغبن الفاحش المصحوب بالتدليس ومخالفة التسعير الحكومي العادل عند الضرورة.",
+      "explanationHi": "केवल लाभ का प्रतिशत हलाल या हराम तय नहीं करता: (1) सहीह बुखारी 3642 में उरवा बारीकी (रज़ि.) ने एक दीनार की बकरी से दोगुना व्यापारिक लाभ कमाया और नबी ﷺ ने बरकत की दुआ दी; (2) ऋण पर 2% ब्याज भी हराम है, जबकि पारदर्शी हस्तशिल्प पर 50% मार्जिन भी हलाल हो सकता है; (3) अनजान ग्राहक से धोखे से अत्यधिक कीमत (ग़बन फ़ाहिश) और जमाखोरी वर्जित है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Mutual consent determines market price.", "ur": "باہمی رضامندی سے قیمت طے کرنے کا قرآنی اصول۔", "ar": "التراضي أساس تسعير التجارة.", "hi": "आपसी सहमति से मूल्य तय करने का नियम।" },
+          "businessRelevance": { "en": "Supports negotiated market pricing rather than rigid percentage limits when competition and honesty prevail.", "ur": "دیانت اور آزاد منڈی میں باہمی رضامندی سے قیمت طے ہوتی ہے۔", "ar": "يدعم التسعير التراضي في السوق العادلة.", "hi": "निष्पक्ष बाज़ार में आपसी सहमति से कीमत तय होती है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Ibn Qudamah, Al-Kasani, and Al-Nawawi confirm that Islamic law sets no upper limit on lawful commercial profit; Abu Dawud 3451 records the Prophet ﷺ declining arbitrary price fixing during fair normal scarcity while later jurists permit state price regulation against hoarding cartels.",
+        "ur": "فقہاء کرام متفق ہیں کہ حلال بیع میں منافع کی کوئی شرعی حد مقرر نہیں؛ البتہ جب تاجر ذخیرہ اندوزی اور اجارہ داری سے عوام پر ظلم کریں تو حاکم منصفانہ نرخ مقرر کر سکتا ہے۔",
+        "ar": "اتفق الفقهاء على عدم تحديد نسبة للربح في البيع الصحيح، وأجازوا التسعير العادل عند احتكار التجار وظلمهم.",
+        "hi": "विद्वानों के अनुसार वैध बिक्री में लाभ प्रतिशत की सीमा नहीं है; हालांकि जमाखोरी रोकने हेतु सरकारी मूल्य नियंत्रण वैध है।"
+      },
+      "contemporaryGuidance": {
+        "en": "IIFA Resolution No. 46(5/8) explicitly affirms there is no Shariah percentage limit on trade profit, while condemning fraud, collusion, and monopolistic price gouging.",
+        "ur": "مجمع الفقہ الاسلامی (قرارداد 46) صراحتاً بیان کرتا ہے کہ شریعت نے منافع کا کوئی فیصد مقرر نہیں کیا؛ تاہم دھوکہ اور اجارہ داری حرام ہے۔",
+        "ar": "أكد قرار مجمع الفقه الدولي رقم ٤٦ أنه لا يوجد حد شرعي لنسبة الربح في البيوع، مع تحريم التغرير والاحتكار.",
+        "hi": "IIFA प्रस्ताव 46 स्पष्ट करता है कि लाभ प्रतिशत पर कोई शरीअत सीमा नहीं, परंतु धोखा व एकाधिकार वर्जित है।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafis & Malikis give cancellation rights for severe unfairness (Ghaban Fahish) especially on state/orphan/inexperienced property or with Taghrir deceit; Shafi'is focus primarily on Taghrir (misrepresentation).",
+        "ur": "تغریر (جھوٹے تاثر) کے ساتھ غبنِ فاحش پر سب کے ہاں واپسی کا حق ثابت ہے؛ بغیر تغریر کے محض مہنگے سودے میں مکاتبِ فکر کے ہاں جزئی تفصیل ہے۔",
+        "ar": "يثبت الخيار في الغبن الفاحش مع التغرير باتفاق، ويختلفون في الغبن المجرد دون تغرير.",
+        "hi": "धोखे के साथ अत्यधिक ठगी पर सभी में सौदा रद्द करने का अधिकार है।"
+      },
+      "modernExample": {
+        "en": "A software designer prices a custom app at 65% margin because of deep engineering value and transparent quote (Halal); a lender charging 5% interest on cash loan or a seller lying about wholesale cost in Murabaha (Haram).",
+        "ur": "ماہر کاریگر محنت و قدر کے مطابق 65% مارجن پر شفاف کام کرے تو حلال ہے؛ لیکن نقد قرض پر 5% سود لینا یا مرابحہ میں غلط لاگت بتانا حرام ہے۔",
+        "ar": "مطور برمجيات يربح ٦٥٪ لخبرته بسعر واضح (حلال)، ومقرض يأخذ ٥٪ فائدة (ربا محرم).",
+        "hi": "विशेषज्ञ अपनी मेहनत व मूल्य पर पारदर्शी 65% मार्जिन ले तो हलाल है; जबकि ऋण पर 5% ब्याज या झूठा भाव बताना हराम है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Honest high-value margin with full disclosure and zero deception", "ur": "دیانتداری، اعلیٰ معیار اور سچائی کے ساتھ جائز منافع", "ar": "ربح مرتفع مع الجودة والصدق وعدم التدليس", "hi": "ईमानदारी व उच्च गुणवत्ता के साथ पारदर्शी लाभ" },
+          "prohibitedPractice": { "en": "Low 3% interest on debt or lying to tourists that market price is triple", "ur": "قرض پر صرف 3% سود لینا یا مسافر کو دھوکے سے تگنا نرخ بتانا", "ar": "أخذ ٣٪ فائدة ربوية أو خداع السائح والغبن الفاحش", "hi": "कर्ज़ पर 3% ब्याज लेना या अनजान ग्राहक को तीन गुना झूठा भाव बताना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Inventing fake Hadith claiming 'profit over 33% or 10% is Riba.'",
+          "Charging deceptive 'triple MRP' to rural/elderly/emergency buyers while falsely claiming 'standard market price.'"
+        ],
+        "ur": [
+          "بغیر دلیل یہ مشہور کرنا کہ '10% یا 33% سے زیادہ نفع حرام ہے۔'",
+          "سادہ لوح یا ہنگامی ضرورت مند گاہک کو جھوٹا مارکیٹ ریٹ بتا کر لوٹنا۔"
+        ],
+        "ar": [
+          "القول بلا دليل إن الربح فوق نسبة معينة حرام، أو خداع المشتري غير الخبير بأسعار السوق."
+        ],
+        "hi": [
+          "बिना प्रमाण कहना कि '10% से अधिक लाभ हराम है', या अनजान ग्राहक को झूठा बाज़ार भाव बताकर ठगना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Never fabricate fake 'before/original prices' on discount banners.",
+          "In cost-plus deals (Murabaha), verify cost truthfully.",
+          "Respect statutory government MRP / essential-goods ceilings."
+        ],
+        "ur": [
+          "سیل کے بینرز پر جھوٹی پرانی قیمت ہرگز نہ لکھیں۔",
+          "مرابحہ میں اصل لاگت سچ سچ بتائیں۔",
+          "ضروری اشیاء پر حکومتی نرخ نامے کی پابندی کریں۔"
+        ],
+        "ar": [
+          "منع الأسعار المرجعية الكاذبة، والصدق في المرابحة، واحترام التسعير القانوني للسلع الأساسية."
+        ],
+        "hi": [
+          "छूट पर नकली पुरानी कीमत न दिखाएं, मुराबहा में सही लागत बताएं, और सरकारी दर मानें।"
+        ]
+      },
+      "summary": {
+        "en": "Profit legitimacy depends on contractual truth, ownership, and fairness—not an arbitrary fixed percentage ceiling.",
+        "ur": "منافع کے حلال یا حرام ہونے کا فیصلہ فیصد کی تعداد سے نہیں بلکہ سچائی، ملکیت، سود سے پاک ہونے اور انصاف سے ہوتا ہے۔",
+        "ar": "مشروعية الربح تقاس بصحة العقد والصدق وانتفاء الظلم والغش، لا برقم مئوي جامد.",
+        "hi": "लाभ की वैधता प्रतिशत से नहीं, बल्कि अनुबंध की सच्चाई, स्वामित्व और न्याय से तय होती है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m8_1",
+          "question": {
+            "en": "Why does Islamic jurisprudence clarify that profit percentage alone does not decide whether a transaction is Halal or Haram?",
+            "ur": "فقہ اسلامی میں یہ کیوں کہا جاتا ہے کہ صرف منافع کا فیصد حلال و حرام کا فیصلہ نہیں کرتا؟",
+            "ar": "لماذا لا تحدد نسبة الربح وحدها الحل أو الحرمة في المعاملة؟",
+            "hi": "इस्लामी फ़िक़्ह यह क्यों कहता है कि केवल लाभ प्रतिशत से हलाल-हराम तय नहीं होता?"
+          },
+          "options": {
+            "en": [
+              "Even 2% on a loan is Haram (Riba), while 40% on owned transparent value-added trade can be Halal",
+              "Because 50% is always Haram",
+              "Because counting % is forbidden"
+            ],
+            "ur": [
+              "قرض پر 2% بھی سود اور حرام ہے جبکہ دیانتداری سے مملوک شے پر 40% نفع بھی حلال ہو سکتا ہے",
+              "50% ہمیشہ حرام ہے",
+              "فیصد گننا منع ہے"
+            ],
+            "ar": [
+              "لأن ٢٪ في القرض ربا محرم، بينما قد يحل ٥٠٪ في بيع صحيح صادق خالٍ من الغبن والتغرير",
+              "لأن ٥٠٪ حرام دائماً"
+            ],
+            "hi": [
+              "क्योंकि कर्ज़ पर 2% भी हराम सूद है, जबकि स्वामित्व वाले ईमानदार व्यापार में 40% भी हलाल हो सकता है",
+              "क्योंकि 50% हमेशा हराम है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "IIFA Resolution 46 confirms Islam has no fixed margin cap; validity rests on asset ownership, truth, and freedom from Riba & deception.",
+            "ur": "مجمع الفقہ (قرارداد 46) کے مطابق معیار سود، غرر اور دھوکے سے پاک ہونا ہے نہ کہ محض فیصد کی حد۔",
+            "ar": "قرار مجمع الفقه ٤٦ يقرر أن المعيار سلامة العقد من الربا والتغرير لا تحديد نسبة ثابتة.",
+            "hi": "IIFA प्रस्ताव 46 के अनुसार कोई तय प्रतिशत सीमा नहीं है; अनुबंध की वैधता मुख्य आधार है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Audit your price tags and promotional discounts: verify that every 'Was $X / Now $Y' comparison reflects an actual prior selling price.",
+        "ur": "اپنی دکان یا ویب سائٹ کی ڈسکاؤنٹ قیمتوں کی جانچ کریں کہ پرانی قیمت واقعی حقیقی تھی یا محض گاہک کو متاثر کرنے کے لیے بڑھائی گئی تھی۔",
+        "ar": "راجع لافتات التخفيضات للتأكد من صدق السعر السابق المعلن.",
+        "hi": "अपने मूल्य टैग व छूट बैनर की जांच करें कि दिखाई गई पुरानी कीमत वास्तविक थी।"
+      },
+      "sources": [
+        { "title": "IIFA Resolution No. 46(5/8) on Profit Margins", "category": "contemporary_resolution", "attribution": "IIFA", "url": "https://iifa-aifi.org/en/" },
+        { "title": "Sahih al-Bukhari 3642", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:3642" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m9",
+      "level": 2,
+      "moduleNumber": 9,
+      "moduleTitle": {
+        "en": "Module 9: Riba (Interest/Usury) in All Forms",
+        "ur": "ماڈیول 9: سود (ربا) اور اس کی تمام اقسام کی حرمت",
+        "ar": "الوحدة ٩: الربا بجميع صوره وحرمته القطعية",
+        "hi": "मॉड्यूल 9: सूद (रिबा) के सभी रूप और उनका निषेध"
+      },
+      "title": {
+        "en": "Quranic Warnings (2:275–279), Types of Riba, Banking Interest & Late Penalties",
+        "ur": "قرآنی وعیدیں (2:275-279)، ربا النسیئہ و ربا الفضل، بینک سود اور تاخیری جرمانے",
+        "ar": "آيات تحريم الربا (٢:٢٧٥-٢٧٩)، ربا النسيئة وربا الفضل وغرامات التأخير",
+        "hi": "रिबा पर क़ुरआनी चेतावनी (2:275-279), प्रकार, बैंक ब्याज और विलंब दंड"
+      },
+      "primaryEvidenceCategory": "direct_quran",
+      "learningObjectives": {
+        "en": [
+          "Internalize the uncompromising Quranic prohibition in 2:275, 2:276, and 2:278–279.",
+          "Distinguish Riba al-Nasi'ah (interest on loans/deferred debts) from Riba al-Fadl (unequal/delayed exchange of gold, silver, and staple currencies/foods).",
+          "Understand institutional complicity (Sahih Muslim 1598) and Halal alternatives (Murabaha/Ijarah/Qard/Charity-only deterrence)."
+        ],
+        "ur": [
+          "البقرہ 2:275-279 میں سود کی قطعی حرمت اور اللہ و رسول ﷺ سے اعلانِ جنگ کی وعید سمجھیں۔",
+          "ربا النسیئہ (قرض پر وقت کے بدلے اضافہ) اور ربا الفضل (اجناسِ ربویہ میں کمی بیشی) میں فرق جانیں۔",
+          "صحیح مسلم 1598 اور سودی جرمانے بمقابلہ التزامِ تصدق کا شرعی فرق واضح کریں۔"
+        ],
+        "ar": [
+          "فهم التحريم القطعي للربا في البقرة ٢٧٥-٢٧٩، والتمييز بين ربا النسيئة وربا الفضل وحديث مسلم ١٥٩٨."
+        ],
+        "hi": [
+          "2:275-279 में रिबा के सख्त निषेध, रिबा अन-नसीआ व रिबा अल-फ़ज़्ल, और मुस्लिम 1598 की जिम्मेदारी को समझें।"
+        ]
+      },
+      "introduction": {
+        "en": "No sin in commercial dealings receives stronger condemnation in the Quran than Riba: 'Allah has permitted trade and forbidden Riba' (2:275) and warns persisting violators of 'war from Allah and His Messenger' (2:278–279).",
+        "ur": "قرآنِ کریم میں کاروباری گناہوں میں سب سے سخت وعید سود پر آئی ہے: 'اللہ نے تجارت کو حلال اور سود کو حرام قرار دیا' (2:275) اور سود نہ چھوڑنے والوں کو 'اللہ اور اس کے رسول ﷺ کی طرف سے جنگ کا اعلان' سنایا گیا (2:278-279)۔",
+        "ar": "لم يرد في المعاملات وعيد أشد من وعيد الربا: ﴿وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا﴾، والإنذار بحرب من الله ورسوله لمن لم يذر ما بقي من الربا (٢:٢٧٨-٢٧٩).",
+        "hi": "व्यापारिक पापों में रिबा पर सबसे कठोर चेतावनी है: 'अल्लाह ने व्यापार को हलाल और सूद को हराम किया' (2:275) और न छोड़ने वालों को युद्ध की चेतावनी (2:278-279) दी।"
+      },
+      "explanationUr": "ربا (سود) کی دو بنیادی اقسام ہیں: (1) ربا النسیئہ (ربا القرآن): قرض دے کر مقررہ یا اضافی مدت کے بدلے اصل رقم سے زیادہ وصول کرنا، خواہ 1 فیصد ہو یا 50 فیصد، کاروباری قرض ہو یا ذاتی، بینک کا فکسڈ ڈپازٹ ہو یا کریڈٹ کارڈ کا لیٹ انٹرسٹ؛ (2) ربا الفضل (ربا الحدیث): سونا، چاندی، کرنسیاں اور چھ معروف غذائی اجناس جب ایک ہی جنس میں بدلی جائیں تو کمی بیشی یا ادھار کرنا۔ صحیح مسلم (1598) میں سود لینے، دینے، معاہدہ لکھنے اور گواہ بننے والوں سب کو گناہ میں برابر قرار دیا گیا۔ سودی نظام میں قرض پر وقت گزرنے سے رقم بڑھتی رہتی ہے، جبکہ حلال مرابحہ میں مالِ تجارت کی قیمت ایک بار طے ہو کر فکس رہتی ہے اور تاخیر پر بائع نفع نہیں بڑھا سکتا۔",
+      "explanationEn": "Islamic law identifies two categories of Riba: (1) Riba al-Nasi'ah (Quranic debt-interest): any stipulated excess over principal in a loan or rescheduling of a due debt for extra time—whether bank deposits, commercial credit lines, bonds, or credit-card revolving APR; (2) Riba al-Fadl (Prophetic exchange riba): unequal quantity or delayed spot delivery when exchanging same-genus Ribawi monetary or staple commodities (gold, silver, fiat currencies, wheat, barley, dates, salt — Sahih Muslim 1587). Sahih Muslim 1598 holds lender, borrower, writer, and witnesses equally culpable. In Islamic finance (SBP & AAOIFI), fixed asset-sale price never compounds upon delay; deterrence uses non-profit Charity Undertakings (Iltizam al-Tasadduq).",
+      "explanationAr": "ينقسم الربا إلى: (١) ربا النسيئة: كل زيادة مشروطة في القرض أو عند تأجيل الدين المستحق؛ ويشمل الفوائد البنكية التقليدية والسندات وفوائد البطاقات الائتمانية. (٢) ربا الفضل: التفاضل أو التأجيل في مبادلة الأموال الربوية المتحدة الجنس كالذهب والفضة والعملات والأقوات (مسلم ١٥٨٧). ولعن النبي ﷺ آكل الربا وموكله وكاتبه وشاهديه (مسلم ١٥٩٨).",
+      "explanationHi": "रिबा के दो मुख्य प्रकार हैं: (1) रिबा अन-नसीआ: ऋण या बकाया की अवधि बढ़ाने के बदले कोई भी अतिरिक्त ब्याज—जैसे बैंक ब्याज, क्रेडिट कार्ड APR, या बांड; (2) रिबा अल-फ़ज़्ल: सोना, चांदी, मुद्रा या समान खाद्यान्न की अदला-बदली में कम-ज्यादा या देरी करना (मुस्लिम 1587)। मुस्लिम 1598 के अनुसार सूद लेने, देने, लिखने और गवाह बनने वाले सभी दोषी हैं।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 275,
+          "endAyah": 275,
+          "contextNote": { "en": "Refutes the false claim that 'trade is just like Riba.'", "ur": "اس غلط خیال کی تردید کہ 'تجارت بھی تو سود ہی کی طرح ہے'۔", "ar": "إبطال شبهة مساواة البيع بالربا.", "hi": "इस भ्रम का खंडन कि 'व्यापार भी सूद जैसा है'।" },
+          "businessRelevance": { "en": "Trade exchanges real asset/service risk; Riba extracts risk-free monetary surplus.", "ur": "تجارت میں حقیقی شے و رسک ہے جبکہ سود میں محض رقم سے رقم پیدا کی جاتی ہے۔", "ar": "البيع يقوم على سلعة حقيقية وضمان بخلاف الربا.", "hi": "व्यापार में वास्तविक वस्तु और जोखिम है, सूद में केवल पैसे से पैसा लिया जाता है।" }
+        },
+        {
+          "surahNumber": 2,
+          "startAyah": 276,
+          "endAyah": 276,
+          "contextNote": { "en": "Allah destroys Riba and grows charity.", "ur": "اللہ سود کو مٹاتا ہے اور صدقات کو بڑھاتا ہے۔", "ar": "يمحق الله الربا ويربي الصدقات.", "hi": "अल्लाह सूद को मिटाता है और दान को बढ़ाता है।" },
+          "businessRelevance": { "en": "Statistical illusions of interest yield mask long-term crisis & spiritual depletion.", "ur": "سود بظاہر بڑھتا دکھائی دیتا ہے مگر حقیقت میں برکت و معیشت کو کھوکھلا کرتا ہے۔", "ar": "الربا يمحق البركة والاستقرار الاقتصادي.", "hi": "ब्याज दिखने में लाभदायक लगता है पर बरकत मिटाता है।" }
+        },
+        {
+          "surahNumber": 2,
+          "startAyah": 278,
+          "endAyah": 279,
+          "contextNote": { "en": "Demand to relinquish remaining interest; principal only.", "ur": "باقی ماندہ سود چھوڑنے اور صرف اصل راس المال لینے کا قطعی حکم۔", "ar": "إسقاط الفوائد الربوية والاقتصار على رؤوس الأموال.", "hi": "शेष सूद छोड़ने और केवल मूल पूंजी लेने का आदेश।" },
+          "businessRelevance": { "en": "Establishes zero-tolerance exit protocol from conventional interest contracts.", "ur": "سودی معاہدات سے نکل کر صرف اصل رقم پر تصفیہ کرنے کی ہدایت۔", "ar": "أصل التصفية الشرعية للديون بالاقتصار على أصل الدين.", "hi": "मौजूदा सूदी ऋणों से बाहर निकलते समय केवल मूल राशि का नियम।" }
+        }
+      ],
+      "hadithIds": ["muslim_1598", "bukhari_2400"],
+      "classicalFiqh": {
+        "en": "Ibn Abbas, Al-Jassas, and all four schools confirm Riba covers both pre-Islamic debt doubling and any small upfront contractual interest rate.",
+        "ur": "ائمہ اربعہ اور جمیع فقہا متفق ہیں کہ قرض پر ہر طے شدہ اضافہ خواہ کم ہو یا زیادہ، مرکب ہو یا مفرد، سود اور حرام ہے۔",
+        "ar": "أجمع الفقهاء على أن كل قرض جر نفعاً مشروطاً فهو ربا قليله وكثيره.",
+        "hi": "चारों मज़हब एकमत हैं कि ऋण पर कोई भी शर्तित अतिरिक्त राशि—कम या अधिक—सूद और हराम है।"
+      },
+      "contemporaryGuidance": {
+        "en": "IIFA Resolution No. 10(10/2), AAOIFI, and SBP Islamic Banking Shariah standards confirm conventional bank savings interest, commercial interest loans, and late-fee revenue are Riba.",
+        "ur": "مجمع الفقہ (قرارداد 10)، AAOIFI اور اسٹیٹ بینک کے شرعی بورڈز متفق ہیں کہ روایتی بینکوں کا سود، کمرشل انٹرسٹ لون اور لیٹ پیمنٹ انٹرسٹ سب ربا ہیں۔",
+        "ar": "تتفق قرارات المجمع الفقهي وأيوفي على تحريم الفوائد المصرفية التقليدية بجميع صورها.",
+        "hi": "IIFA, AAOIFI व SBP स्पष्ट करते हैं कि पारंपरिक बैंक ब्याज और विलंब ब्याज पूरी तरह रिबा हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Unanimous consensus across Sunni & classical schools on prohibiting bank interest; minor technical differences exist in exchange-item Illah (cause) in non-currency Riba al-Fadl.",
+        "ur": "بینک سود اور قرض کے اضافے کی حرمت پر امت کا اجماع ہے؛ ربا الفضل کی غیر کرنسی اجناس میں فقہی علت پر علمی اختلاف موجود ہے۔",
+        "ar": "إجماع على حرمة ربا الديون والفوائد البنكية، مع خلاف معروف في علة ربا الفضل لغير النقدين.",
+        "hi": "बैंक ब्याज और ऋण सूद के निषेध पर पूर्ण सहमति है; रिबा अल-फ़ज़्ल की खाद्य वस्तुओं पर सूक्ष्म मतभेद हैं।"
+      },
+      "modernExample": {
+        "en": "Replacing an interest overdraft credit line with Murabaha supplier inventory purchases or Musharakah/Mudarabah equity investment.",
+        "ur": "سودی اوور ڈرافٹ قرض لینے کے بجائے اسلامی بینک کے مرابحہ یا حقیقی مشارکہ سے اسٹاک خریدنا۔",
+        "ar": "استبدال السحب على المكشوف الربوي بتمويل مرابحة حقيقي أو مشاركة.",
+        "hi": "सूदी ओवरड्राफ्ट ऋण के बजाय वास्तविक मुराबहा या मुशारकाह वित्तपोषण अपनाना।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Fixed asset Murabaha or risk-bearing profit sharing", "ur": "مملوک مال پر متعین قیمتِ مرابحہ یا نفع نقصان کی شراکت", "ar": "مرابحة بسلعة مملوكة أو مشاركة حقيقية", "hi": "स्वामित्व वाली वस्तु का मुराबहा या वास्तविक साझेदारी" },
+          "prohibitedPractice": { "en": "Time-compounding late penalty fees kept as lender profit", "ur": "تاخیر ہونے پر قرض کی رقم میں اضافی سود یا لیٹ فیس بطور نفع جوڑنا", "ar": "احتساب غرامات التأخير كربح للممول أو مضاعفة الدين", "hi": "देरी पर ऋण राशि पर ब्याज या लेट-फीस मुनाफे के रूप में जोड़ना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Thinking 'bank interest is fine because it is not compound usury.' (Both simple and compound interest are Riba.)",
+          "Signing Riba corporate loans casually just to scale faster, overlooking Muslim 1598."
+        ],
+        "ur": [
+          "یہ غلط خیال کہ 'صرف چکروتی/کمپاؤنڈ سود حرام ہے، سادہ 5 فیصد انٹرسٹ جائز ہے۔' (دونوں حرام ہیں)",
+          "کاروبار تیزی سے بڑھانے کے لیے سودی قرض لے لینا۔"
+        ],
+        "ar": [
+          "توهم أن الفائدة البسيطة ليست ربا، أو التساهل في القروض الربوية للتوسع السريع."
+        ],
+        "hi": [
+          "यह सोचना कि केवल चक्रवृद्धि ब्याज हराम है (साधारण ब्याज भी हराम है), या तेज़ी के लिए सूदी ऋण लेना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Convert corporate treasury & savings to Shariah-compliant accounts or interest-free current accounts.",
+          "Eliminate interest-bearing auto/credit-card revolving balances.",
+          "Consult an Islamic finance scholar before signing any bank facility agreement."
+        ],
+        "ur": [
+          "کاروباری بچت اور کرنٹ اکاؤنٹس سود سے پاک اسلامی بینکاری میں منتقل کریں۔",
+          "کریڈٹ کارڈ کے سودی بقایاجات سے مکمل بچیں۔",
+          "کسی بھی فنانسنگ معاہدے پر دستخط سے قبل مستند شرعی رہنمائی لیں۔"
+        ],
+        "ar": [
+          "نقل الحسابات لحسابات خالية من الفوائد، واجتناب فوائد البطاقات، واستشارة عالم قبل أي تمويل."
+        ],
+        "hi": [
+          "बचत व व्यापार खाते ब्याज-मुक्त रखें, क्रेडिट कार्ड ब्याज से बचें, और अनुबंध से पहले जांच करें।"
+        ]
+      },
+      "summary": {
+        "en": "Riba undermines justice and spiritual blessing; Islam replaces risk-free debt extraction with asset-backed trade and profit-risk partnerships.",
+        "ur": "سود معاشی ظلم اور برکت کی تباہی ہے؛ اسلام اس کی جگہ حقیقی تجارت اور شراکتِ نفع و نقصان دیتا ہے۔",
+        "ar": "الربا يمحق البركة ويظلم المجتمع، ويستبدله الإسلام بالبيع الحقيقي والمشاركة.",
+        "hi": "रिबा अन्याय है और बरकत मिटाता है; इस्लाम इसकी जगह वास्तविक व्यापार और साझेदारी देता है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m9_1",
+          "question": {
+            "en": "Who does Sahih Muslim 1598 place under equal moral culpability in a Riba transaction?",
+            "ur": "صحیح مسلم 1598 کے مطابق سودی معاہدے میں کون کون گناہ میں برابر ہیں؟",
+            "ar": "من شملهم الوعيد بالسواء في عقد الربا حسب صحيح مسلم ١٥٩٨؟",
+            "hi": "सहीह मुस्लिम 1598 के अनुसार सूदी अनुबंध में कौन लोग समान रूप से दोषी बताए गए हैं?"
+          },
+          "options": {
+            "en": [
+              "The taker, the payer, the writer of the contract, and its two witnesses",
+              "Only the bank manager",
+              "Only the borrower"
+            ],
+            "ur": [
+              "سود کھانے والا، کھلانے والا، لکھنے والا اور دونوں گواہ",
+              "صرف بینک مینیجر",
+              "صرف قرض لینے والا"
+            ],
+            "ar": [
+              "آكل الربا وموكله وكاتبه وشاهداه",
+              "المقترض فقط"
+            ],
+            "hi": [
+              "सूद खाने वाला, खिलाने वाला, लिखने वाला और दोनों गवाह",
+              "केवल ऋण लेने वाला"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Sahih Muslim 1598 states explicitly: 'Allah's Messenger cursed the taker of Riba, the payer, the writer, and the two witnesses—they are equal.'",
+            "ur": "صحیح مسلم 1598 میں ان چاروں طبقات کا صریح ذکر موجود ہے۔",
+            "ar": "حديث جابر في صحيح مسلم ١٥٩٨ ينص على استواء الآكل والموكل والكاتب والشاهدين.",
+            "hi": "सहीह मुस्लिम 1598 में इन सभी के बराबर दोषी होने का स्पष्ट उल्लेख है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "List every loan, supplier late-fee term, and bank account in your business and flag any interest-bearing clause for replacement.",
+        "ur": "اپنے کاروبار کے تمام قرضوں، لیٹ فیس شرائط اور بینک کھاتوں کی فہرست بنا کر سودی شقوں کے متبادل طے کریں۔",
+        "ar": "احصر كل القروض والحسابات وشروط الغرامات في عملك لإزالة أي شرط ربوي.",
+        "hi": "अपने सभी ऋणों, विलंब शुल्क शर्तों और बैंक खातों की सूची बनाकर सूदी शर्तों को बदलने की योजना बनाएं।"
+      },
+      "sources": [
+        { "title": "Quran 2:275-279", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/275" },
+        { "title": "Sahih Muslim 1598", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/muslim:1598" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m10",
+      "level": 2,
+      "moduleNumber": 10,
+      "moduleTitle": {
+        "en": "Module 10: The 14 Core Islamic Financial Contracts (Overview)",
+        "ur": "ماڈیول 10: اسلامی مالیاتی عقود (14 بنیادی معاہدوں کا جامع تعارف)",
+        "ar": "الوحدة ١٠: العقود المالية الإسلامية الأربعة عشر (نظرة شاملة)",
+        "hi": "मॉड्यूल 10: 14 प्रमुख इस्लामी वित्तीय अनुबंध (समीक्षा)"
+      },
+      "title": {
+        "en": "Choosing the Right Halal Structure: Exchange, Partnership, Lease & Guarantee",
+        "ur": "مناسب شرعی عقد کا انتخاب: بیع، شراکت، اجارہ اور ضمانتی عقود",
+        "ar": "اختيار العقد الشرعي المناسب: البيوع، الشركات، الإجارة، والضمانات",
+        "hi": "सही हलाल अनुबंध चुनना: व्यापार, साझेदारी, पट्टा और जमानत"
+      },
+      "primaryEvidenceCategory": "contemporary_resolution",
+      "learningObjectives": {
+        "en": [
+          "Group all 14 Islamic contracts into Trade, Partnership, Usufruct, Agency, and Security families.",
+          "Select the accurate contract for inventory, startup equity, construction, or wages.",
+          "Explore full 13-part AAOIFI/SBP guides in the dedicated Contracts tab."
+        ],
+        "ur": [
+          "تمام 14 شرعی عقود کو بیع، شراکت، اجارہ، وکالت اور کفالت/رہن کے گروپوں میں سمجھیں۔",
+          "کاروباری ضرورت (مال، سرمایہ، تعمیر، اجرت) کے مطابق صحیح عقد منتخب کریں۔",
+          "ان میں سے ہر عقد کی تفصیلات '14 Contracts' ٹیب میں پڑھیں۔"
+        ],
+        "ar": [
+          "تصنيف العقود الأربعة عشر إلى عقود معاوضات ومشاركات وإجارة ووكالات وتوثيقات."
+        ],
+        "hi": [
+          "सभी 14 अनुबंधों को व्यापार, साझेदारी, पट्टा, एजेंसी व सुरक्षा समूहों में समझें और सही चुनाव करें।"
+        ]
+      },
+      "introduction": {
+        "en": "Islamic finance is not one single label—it is a precision toolkit of 14 distinct contracts. Each transaction requires matching the real economic purpose with the genuine Shariah contract.",
+        "ur": "اسلامی مالیات محض ایک نام نہیں بلکہ 14 مخصوص عقود کا مکمل نظام ہے۔ ہر کاروباری ضرورت کے لیے درست شرعی معاہدہ چننا ضروری ہے۔",
+        "ar": "التمويل الإسلامي منظومة متكاملة من ١٤ عقداً شرعياً تتوافق مع حاجات السوق الحقيقية.",
+        "hi": "इस्लामी वित्त 14 विशिष्ट अनुबंधों की एक सुव्यवस्थित प्रणाली है, जहाँ प्रत्येक कार्य के लिए सही अनुबंध चुना जाता है।"
+      },
+      "explanationUr": "14 بنیادی اسلامی عقود کی درجہ بندی: (1) بیوع و مبادلات: مرابحہ (لاگت+نفع)، مساومہ (بھاؤ تاؤ)، سلم (پیشگی نقد+مؤخر مال)، استصناع (تعمیر و تیاری)؛ (2) شراکت و سرمایہ کاری: مضاربت (سرمایہ+محنت)، مشارکہ (مشترکہ سرمایہ)، شرکتِ متناقصہ (بتدریج ملکیت)؛ (3) منفعت و خدمت: اجارہ (کرایہ و ملازمت)، جعالہ (نتیجے پر انعام/فیس)، وکالت (نمائندگی)؛ (4) احسان و توثیق: قرضِ حسن (بلاسود قرض)، رہن (گروی)، کفالت (ضمانت)، حوالہ (قرض کی منتقلی)۔ ہر عقد کے 13 تفصیلی نکات '14 Contracts' سیکشن میں موجود ہیں۔",
+      "explanationEn": "The 14 contracts fall into four functional families (each detailed thoroughly inside the Contracts tab): (1) Trade & Forward Fabrication: Murabaha, Musawamah, Salam, Istisna; (2) Equity & Risk Sharing: Mudarabah, Musharakah, Diminishing Musharakah; (3) Usufruct, Services & Agency: Ijarah, Wakalah, Ju'alah; (4) Benevolent Debt & Security: Qard Hasan, Rahn, Kafalah, Hawalah. State Bank of Pakistan (SBP) and SECP S.R.O. 729(I)/2024 recognize AAOIFI standards across these contracts.",
+      "explanationAr": "تنقسم العقود الـ ١٤ إلى: (١) عقود المعاوضات والتمليك: المرابحة، المساومة، السلم، الاستصناع؛ (٢) عقود المشاركات: المضاربة، المشاركة، المشاركة المتناقصة؛ (٣) المنافع والخدمات: الإجارة، الوكالة، الجعالة؛ (٤) القرض والتوثيقات: القرض الحسن، الرهن، الكفالة، الحوالة.",
+      "explanationHi": "14 अनुबंध चार वर्गों में हैं: (1) व्यापार: मुराबहा, मुसावमह, सलम, इस्तिसना; (2) साझेदारी: मुदारबाह, मुशारकाह, डिमिनिशिंग मुशारकाह; (3) सेवा व एजेंसी: इजाराह, वकालह, जुआलाह; (4) ऋण व सुरक्षा: क़र्ज़-ए-हसन, रहन, कफ़ालह, हवालह। प्रत्येक की विस्तृत गाइड अलग टैब में उपलब्ध है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 5,
+          "startAyah": 1,
+          "endAyah": 1,
+          "contextNote": { "en": "Every named contract carries binding legal obligations.", "ur": "ہر شرعی عقد کی پابندی ایمانی و قانونی ذمہ داری ہے۔", "ar": "وجوب الالتزام بأحكام العقود المشروعة.", "hi": "हर वैध अनुबंध की शर्तों का पालन अनिवार्य है।" },
+          "businessRelevance": { "en": "Prevents relabeling one contract dishonestly to evade rules of another.", "ur": "مختلف عقود کو خلط ملط کر کے دھوکہ دینے سے روکتی ہے۔", "ar": "يمنع التلبيس في تسمية العقود أو إخلال شروطها.", "hi": "एक अनुबंध को गलत नाम देकर नियमों से बचने से रोकती है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "bukhari_2400"],
+      "classicalFiqh": {
+        "en": "Islamic contract law prohibits 'Bay'atan fi Bay'ah' (combining two mutually conditional sales to hide interest) and requires each contract to preserve its true risk profile.",
+        "ur": "فقہ میں دو عقود کو باہم مشروط کرنا ممنوع ہے؛ ہر عقد میں اس کا حقیقی رسک و ملکیتی تقاضا برقرار رہنا ضروری ہے۔",
+        "ar": "يمنع الشرع الربط الشرطي بين عقدين متعارضين، ويشترط تحقيق مقتضى كل عقد.",
+        "hi": "फ़िक़्ह में दो अनुबंधों को शर्तित रूप से मिलाकर ब्याज छिपाना वर्जित है।"
+      },
+      "contemporaryGuidance": {
+        "en": "AAOIFI Shariah Standards & SECP SRO 729(I)/2024 (May 21, 2024) harmonize corporate use of these 14 structures.",
+        "ur": "AAOIFI شریعہ اسٹینڈرڈز اور SECP نوٹیفکیشن SRO 729(I)/2024 کارپوریٹ و مالیاتی اداروں کے لیے ان عقود کا معیار فراہم کرتے ہیں۔",
+        "ar": "معايير أيوفي وتعميم هيئة الأوراق الباكستانية ٧٢٩/٢٠٢٤ تضبط تطبيق هذه العقود مؤسسياً.",
+        "hi": "AAOIFI मानक और SECP अधिसूचना SRO 729(I)/2024 इन अनुबंधों का संस्थागत मार्गदर्शन देते हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Classical schools agree on core rules while differing on binding Wa'd (Maliki permits, others condition carefully) and Istisna independence (Hanafi vs Salam).",
+        "ur": "بنیادی اصولوں پر اتفاق ہے؛ یکطرفہ وعدہ کی پابندی اور استصناع کی تفصیلات میں مذاہب کا علمی تنوع پایا جاتا ہے۔",
+        "ar": "تتفق المذاهب في الأصول وتختلف في مسائل تفصيلية كإلزامية الوعد وتكييف الاستصناع.",
+        "hi": "मूल नियमों पर सहमति है; एकतरफा वादे और इस्तिसना विवरण में सूक्ष्म भेद हैं।"
+      },
+      "modernExample": {
+        "en": "Using Istisna to build a custom factory machine, Murabaha to buy raw wool, Ijarah to rent vans, and Musharakah for silent equity.",
+        "ur": "مشین بنوانے کے لیے استصناع، خام مال کے لیے مرابحہ، گاڑی کے لیے اجارہ اور شراکت کے لیے مشارکہ کا درست انتخاب۔",
+        "ar": "استخدام الاستصناع للآلات والمرابحة للخام والإجارة للشاحنات والمشاركة للشركاء.",
+        "hi": "मशीन निर्माण हेतु इस्तिसना, कच्चे माल हेतु मुराबहा, वैन हेतु इजाराह और इक्विटी हेतु मुशारकाह चुनना।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Matching real asset transfer or genuine equity partnership to the right contract", "ur": "حقیقی ضرورت کے مطابق درست شرعی عقد اور اصل قبضہ و رسک اپنانا", "ar": "اختيار العقد المطابق لحقيقة المعاملة وضمانها", "hi": "वास्तविक आवश्यकता के अनुसार सही अनुबंध और स्वामित्व चुनना" },
+          "prohibitedPractice": { "en": "Pasting 'Murabaha' or 'Mudarabah' labels onto fixed-interest cash lending", "ur": "محض کاغذ پر اسلامی نام لکھ کر حقیقت میں سودی قرض چلانا", "ar": "تسمية القرض الربوي مرابحة أو مضاربة صورية", "hi": "कागज़ पर मुराबहा/मुदारबाह लिखकर ब्याज वाला नक़द ऋण चलाना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Confusing Murabaha (trade) with Qard Hasan (loan).",
+          "Promising fixed guaranteed monthly returns inside a Mudarabah/Musharakah deed."
+        ],
+        "ur": [
+          "مرابحہ (تجارت) اور قرضِ حسن کو ایک سمجھنا۔",
+          "مضاربت یا مشارکہ کے معاہدے میں مقررہ ماہانہ نفع کی ضمانت لکھ دینا۔"
+        ],
+        "ar": [
+          "الخلط بين المرابحة والقرض، أو اشتراط عائد مضمون في المضاربة."
+        ],
+        "hi": [
+          "मुराबहा (व्यापार) को क़र्ज़ समझ लेना, या मुदारबाह में निश्चित मासिक रिटर्न की गारंटी लिखना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Review all 14 contract deep guides inside the Contracts tab.",
+          "Verify sequence of contracts whenever combining purchase + onward sale/lease.",
+          "Submit custom hybrid contracts to a qualified Mufti / Shariah Advisor."
+        ],
+        "ur": [
+          "Contracts ٹیب میں تمام 14 عقود کا تفصیلی مطالعہ کریں۔",
+          "ہر معاہدے کے مراحل کی ترتیب یقینی بنائیں۔",
+          "پیچیدہ معاہدہ مستند مفتی صاحب سے پاس کروائیں۔"
+        ],
+        "ar": [
+          "مراجعة العقود الـ ١٤ بالتفصيل، والتأكد من تسلسل العقود، واستشارة أهل الاختصاص."
+        ],
+        "hi": [
+          "14 Contracts टैब का अध्ययन करें, चरणों का क्रम जांचें, और जटिल अनुबंध पर मुफ़्ती सलाह लें।"
+        ]
+      },
+      "summary": {
+        "en": "Substance over labels governs Islamic finance: choose the authentic contract matching real risk, ownership, and labor.",
+        "ur": "اسلامی مالیات میں الفاظ کے بجائے عقد کی حقیقت و شرائط معتبر ہیں؛ ہر معاملے کے لیے اس کا اصل عقد چنیں۔",
+        "ar": "العبرة في العقود بالمقاصد والمعاني والالتزام بشروط كل عقد لا بمجرد التسمية.",
+        "hi": "इस्लामी वित्त में नाम से अधिक अनुबंध की वास्तविकता, स्वामित्व व शर्तें महत्वपूर्ण हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m10_1",
+          "question": {
+            "en": "Which contract is specifically designed to manufacture or build a custom asset using the maker's materials with milestone payments?",
+            "ur": "کاریگر کے اپنے خام مال سے کوئی چیز تیار یا تعمیر کرانے اور مراحل وار ادائیگی کے لیے کون سا عقد موزوں ہے؟",
+            "ar": "أي عقد صُمم لتصنيع أو بناء أصل بمواصفات محددة ومواد من الصانع مع دفعات مرحلية؟",
+            "hi": "निर्माता की सामग्री से कस्टम संपत्ति बनाने और चरणबद्ध भुगतान करने हेतु कौन सा अनुबंध बना है?"
+          },
+          "options": {
+            "en": [
+              "Istisna",
+              "Qard Hasan",
+              "Hawalah"
+            ],
+            "ur": [
+              "استصناع (Istisna)",
+              "قرضِ حسن",
+              "حوالہ"
+            ],
+            "ar": [
+              "الاستصناع",
+              "القرض الحسن"
+            ],
+            "hi": [
+              "इस्तिसना (Istisna)",
+              "क़र्ज़-ए-हसन"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Istisna applies to custom fabrication/construction by the manufacturer and permits milestone/deferred payments.",
+            "ur": "استصناع تعمیر و مینوفیکچرنگ اور قسط وار ادائیگی کے لیے مخصوص شرعی عقد ہے۔",
+            "ar": "الاستصناع يختص بالتصنيع والإنشاءات مع مرونة السداد.",
+            "hi": "इस्तिसना निर्माण कार्य और किस्तों में भुगतान के लिए निर्धारित अनुबंध है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Open at least 3 contracts in the 14 Contracts tab relevant to your planned business and jot a note on how you will structure one transaction.",
+        "ur": "Contracts ٹیب میں اپنے کاروبار سے متعلق کم از کم 3 عقود پڑھیں اور اپنے کاروبار کے لیے ایک عقد کا خاکہ نوٹس میں محفوظ کریں۔",
+        "ar": "اطلع على ٣ عقود في قسم العقود واكتب ملاحظة حول تطبيق أحدها في مشروعك.",
+        "hi": "14 Contracts टैब से अपने व्यापार से जुड़े 3 अनुबंध पढ़ें और एक अनुप्रयोग नोट में लिखें।"
+      },
+      "sources": [
+        { "title": "AAOIFI Shariah Standards", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" },
+        { "title": "SECP SRO 729(I)/2024", "category": "regulatory_legal", "attribution": "SECP", "url": "https://www.secp.gov.pk/document/aaoifi-shariah-standards-s-r-o-7291-2024-dated-may-21-2024/" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m11",
+      "level": 2,
+      "moduleNumber": 11,
+      "moduleTitle": {
+        "en": "Module 11: Partnership & Equity Investment Rules",
+        "ur": "ماڈیول 11: شراکت داری اور سرمایہ کاری کے اصول",
+        "ar": "الوحدة ١١: ضوابط الشراكة والاستثمار",
+        "hi": "मॉड्यूल 11: साझेदारी और निवेश के नियम"
+      },
+      "title": {
+        "en": "Capital Valuation, Profit Ratio vs Loss Allocation, Exit & Accounting",
+        "ur": "سرمائے کی مالیت، نفع بمقابلہ نقصان کا اصول، شراکت سے اخراج اور شفاف حساب",
+        "ar": "تقويم الحصص، توزيع الربح والخسارة، التخارج والمحاسبة",
+        "hi": "पूंजी मूल्यांकन, लाभ बनाम हानि नियम, निकास और लेखांकन"
+      },
+      "primaryEvidenceCategory": "classical_fiqh",
+      "learningObjectives": {
+        "en": [
+          "Structure Shirkah deeds with clear capital shares, management authority, and profit ratios.",
+          "Enforce the golden loss rule: profit by agreed ratio, loss strictly by capital share.",
+          "Draft clean exit/buyout valuation clauses preventing family and founder disputes."
+        ],
+        "ur": [
+          "شراکت نامے میں سرمایہ، اختیارات اور نفع کے تناسب کو واضح لکھنا سیکھیں۔",
+          "بنیادی اصول لاگو کریں: نفع شرط کے مطابق اور نقصان سرمائے کے تناسب سے۔",
+          "پارٹنر کے نکلنے (تخارج) اور اثاثوں کی مالیت طے کرنے کے شفاف طریقے سمجھیں۔"
+        ],
+        "ar": [
+          "صياغة عقود الشراكة وتطبيق قاعدة الربح حسب الاتفاق والخسارة بقدر رأس المال وضوابط التخارج."
+        ],
+        "hi": [
+          "साझेदारी समझौतों में पूंजी, अधिकार, लाभ-हानि अनुपात और पारदर्शी निकास (Exit) मूल्यांकन तय करना सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "Businesses often fail not from lack of sales, but from informal verbal partnerships where capital contribution, salary vs profit draw, and exit valuation were never documented upfront.",
+        "ur": "بہت سے کاروبار گاہک نہ ہونے سے نہیں بلکہ زبانی اور غیر واضح شراکت داری کے جھگڑوں سے بند ہو جاتے ہیں جہاں سرمایہ، تنخواہ اور اخراج کے قواعد پہلے طے نہیں ہوتے۔",
+        "ar": "تفشل كثير من الشراكات بسبب غياب التوثيق المسبق للحصص ونسب الربح وضوابط الخروج.",
+        "hi": "कई व्यवसाय बिक्री की कमी से नहीं, बल्कि मौखिक व अस्पष्ट साझेदारी के विवादों से टूट जाते हैं।"
+      },
+      "explanationUr": "شراکت و سرمایہ کاری کے بنیادی شرعی ضوابط: (1) اگر کوئی شریک پیسے کے بجائے گاڑی یا مشینری (عروض) بطور سرمایہ لائے تو عقد کے وقت اس کی متفقہ مارکیٹ ویلیو طے کر کے درج کی جائے؛ (2) کام کرنے والے شریک کا اضافی محنتانہ طے کرنا ہو تو نفع کا زائد فیصد تناسب رکھا جائے، یا کمپنی میں مقررہ تنخواہ کے لیے معاصر فتویٰ/AAOIFI معیار 12 کے مطابق الگ اجرت یا منافع سے ایڈجسٹمنٹ کی شق مفتی سے تصدیق کرائی جائے؛ (3) غیر فعال شریک (Sleeping Partner) کا نفع اس کے سرمائے کے فیصد سے زیادہ طے نہیں کیا جا سکتا (حنفی و حنبلی)؛ (4) نقصان ہمیشہ سرمائے کے تناسب سے ہوگا؛ (5) علیحدگی (تخارج) کے وقت اصل لاگت یا مارکیٹ ویلیو کی بنیاد پر حساب ہو، نہ کہ مقررہ سود کی بنیاد پر۔",
+      "explanationEn": "Sound Shariah partnerships prevent disputes via five safeguards (AAOIFI SS 12): (1) Non-cash assets (machines, inventory) must be appraised to agreed monetary value upon entry; (2) Active founders cannot pull unapproved personal draws—rewards reflect equity profit shares (or strictly structured management agreements validated by Shariah counsel); (3) A silent (non-working) partner's profit share may not exceed their capital percentage (Hanafi/Hanbali); (4) Financial loss strictly mirrors capital share; (5) Exit buyouts occur at mutually agreed valuation or independent fair appraisal at exit—never via a pre-promised fixed-return buyback at par + interest.",
+      "explanationAr": "تنجح الشراكة بتقويم المساهمات العينية عند الدخول، وتحديد نسب شائعة من صافي الربح، ومنع زيادة ربح الشريك غير العامل عن نسبة ماله (عند الحنفية والحنابلة)، وتوزيع الخسارة بقدر رأس المال، وتحديد آلية التخارج بالتقييم العادل لا بشراء الحصص بعائد مضمون.",
+      "explanationHi": "सफल साझेदारी के पांच नियम (AAOIFI मानक 12): (1) गैर-नक़द संपत्ति का प्रवेश के समय बाज़ार मूल्यांकन हो; (2) निष्क्रिय साझेदार का लाभ प्रतिशत पूंजी प्रतिशत से अधिक न हो; (3) वित्तीय नुकसान सदैव पूंजी अनुपात में बंटे; (4) निकास पर शेयर खरीद पूर्व-निश्चित ब्याज रिटर्न पर न होकर उचित मूल्यांकन पर हो।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 282,
+          "endAyah": 282,
+          "contextNote": { "en": "Write down financial covenants with precision.", "ur": "مالی معاملات و شرائط کو تحریر اور گواہوں سے محفوظ کرنے کا حکم۔", "ar": "توثيق العقود والحقوق المالية بالكتابة والإشهاد.", "hi": "वित्तीय शर्तों को लिखित और गवाहों सहित दर्ज करने का आदेश।" },
+          "businessRelevance": { "en": "Written shareholder & Musharakah agreements prevent partner mistrust.", "ur": "تحریری شراکت نامہ بدگمانی اور اختلافات سے بچاتا ہے۔", "ar": "عقود الشراكة المكتوبة تحفظ حقوق الشركاء.", "hi": "लिखित साझेदारी अनुबंध विवादों से बचाते हैं।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Sunan Abi Dawud 3383 reports Allah's companionship blessing ('I am the third of two partners so long as neither betrays the other'); betrayal withdraws Barakah immediately.",
+        "ur": "سنن ابی داؤد (3383) کی روایت کے مطابق اللہ تعالیٰ دو شریکوں کے ساتھ تیسرا ہوتا ہے جب تک دونوں میں سے کوئی خیانت نہ کرے۔",
+        "ar": "في الحديث: أنا ثالث الشريكين ما لم يخن أحدهما صاحبه (أبو داود ٣٣٨٣).",
+        "hi": "हदीस (अबू दाऊद 3383) के अनुसार जब तक दोनों साझेदार ईमानदार रहते हैं, अल्लाह की बरकत साथ रहती है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Venture capital & angel rounds avoid interest convertible notes and preference-guaranteed liquidation waterfalls; instead use clean common Musharakah equity, convertible Mudarabah/Musharakah vetted by scholars, or non-guaranteed equity.",
+        "ur": "اسٹارٹ اپ فنڈنگ میں سودی کنورٹیبل نوٹس یا یقینی واپسی والے ترجیحی شیئرز سے بچیں؛ اس کے بجائے شرعی مشارکہ یا مضاربت ایکویٹی استعمال کریں۔",
+        "ar": "تتجنب الشركات الناشئة السندات القابلة للتحويل بفائدة والأسهم الممتازة ذات العائد المضمون وتلجأ للمشاركة.",
+        "hi": "स्टार्टअप निवेश में सूदी कन्वर्टिबल नोट्स व गारंटीड प्रेफरेंस शेयर से बचकर मुशारकाह इक्विटी अपनाएं।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafi & Hanbali permit active partner profit share exceeding capital share; Shafi'i & Maliki tie profit strictly to capital ratio unless separate valid Ijarah/Mudarabah is used.",
+        "ur": "کام کرنے والے شریک کے زائد نفع میں احناف و حنابلہ اجازت دیتے ہیں جبکہ شوافع و مالکیہ سرمائے کے برابر نفع رکھتے ہیں۔",
+        "ar": "يجيز الحنفية والحنابلة تفاوت الربح للعمل بخلاف المالكية والشافعية.",
+        "hi": "सक्रिय साझेदार के अतिरिक्त लाभ अनुपात पर हनफ़ी/हनबली अनुमति देते हैं, जबकि शाफ़िई/मालिकी पूंजी अनुपात रखते हैं।"
+      },
+      "modernExample": {
+        "en": "Three co-founders contribute $10k cash, $10k machinery (valued upfront), and full-time management, drafting an AAOIFI-aligned Musharakah partnership deed with quarterly audits.",
+        "ur": "تین شریک 10 لاکھ نقد، 10 لاکھ کی مشینری (قیمت طے کر کے) اور محنت کے ساتھ تحریری مشارکہ معاہدہ اور سہ ماہی آڈٹ طے کریں۔",
+        "ar": "تأسيس شراكة موثقة بين شريك نقدي وشريك بآلات مقوّمة وشريك عامل مع تدقيق ربع سنوي.",
+        "hi": "तीन संस्थापक नक़द, मूल्यांकित मशीनरी और श्रम मिलाकर तिमाही ऑडिट वाला लिखित मुशारकाह अनुबंध करते हैं।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Written valuation, equity exit at market appraisal, transparent bookkeeping", "ur": "تحریری معاہدہ، شفاف آڈٹ اور مارکیٹ قیمت پر علیحدگی", "ar": "تقييم الأصول عند الخروج بشفافية وموافقة الشركاء", "hi": "लिखित मूल्यांकन, पारदर्शी खाते और बाज़ार मूल्य पर निकास" },
+          "prohibitedPractice": { "en": "Promising an investor 'no matter what happens, take back 100% principal + 15% annual return'", "ur": "سرمایہ کار کو یہ گارنٹی دینا کہ نقصان ہو یا نفع، تمہارا اصل سرمایہ اور 15 فیصد منافع پکا ہے", "ar": "ضمان رأس المال أو عائد سنوي ثابت للمستثمر", "hi": "निवेशक को हर हाल में 100% पूंजी और 15% निश्चित वार्षिक लाभ की गारंटी देना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Taking family/friend money without clarifying whether it is Qard (must be returned 100%, zero profit) or Musharakah/Mudarabah (risks loss, shares profit).",
+          "Using preferred shares with fixed guaranteed annual dividends."
+        ],
+        "ur": [
+          "رشتہ دار یا دوست سے پیسے لیتے وقت واضح نہ کرنا کہ یہ قرض ہے (جس میں نفع نہیں) یا شراکت (جس میں نفع و نقصان دونوں ہیں)۔",
+          "یقینی سالانہ منافع والے پریفرڈ شیئرز جاری کرنا۔"
+        ],
+        "ar": [
+          "عدم تحديد هل المبلغ قرض أم شراكة، أو إصدار أسهم ممتازة بعائد مضمون."
+        ],
+        "hi": [
+          "मित्र/रिश्तेदार से धन लेते समय स्पष्ट न करना कि वह क़र्ज़ है (बिना लाभ) या साझेदारी (लाभ-हानि सहित)।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Explicitly label every incoming dollar: Equity (Musharakah/Mudarabah) OR Interest-Free Debt (Qard).",
+          "Appraise non-cash assets in writing before launch.",
+          "Publish monthly/quarterly P&L statements to every partner."
+        ],
+        "ur": [
+          "ہر رقم کو واضح طے کریں کہ قرض ہے یا شراکت۔",
+          "غیر نقد اثاثوں کی قیمت تحریری طور پر طے کریں۔",
+          "تمام شرکاء کو ماہانہ یا سہ ماہی حسابات پیش کریں۔"
+        ],
+        "ar": [
+          "التمييز بين القرض والشراكة، وتقويم الأصول العينية، وتقديم التقارير المالية الدورية."
+        ],
+        "hi": [
+          "प्रत्येक राशि को स्पष्ट करें (इक्विटी या क़र्ज़), गैर-नक़द संपत्ति का मूल्यांकन करें, और नियमित हिसाब दें।"
+        ]
+      },
+      "summary": {
+        "en": "Clear written deeds, honest accounting, and true profit-and-loss alignment protect partnerships in both world and Akhirah.",
+        "ur": "تحریری معاہدہ، سچا حساب اور نفع و نقصان میں انصاف شراکت کو دنیا اور آخرت میں بابرکت بناتا ہے۔",
+        "ar": "العقود المكتوبة والشفافية والعدل في الغنم والغرم تحفظ الشراكة وتباركها.",
+        "hi": "लिखित अनुबंध, पारदर्शी खाते और न्यायसंगत लाभ-हानि साझेदारी को सुरक्षित व बरकत वाला बनाते हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m11_1",
+          "question": {
+            "en": "Why must capital contributions made by friends or family be explicitly labeled as either Qard Hasan OR Mudarabah/Musharakah upfront?",
+            "ur": "دوستوں یا رشتہ داروں سے لی گئی رقم کا شروع میں قرضِ حسن یا مضاربت/مشارکہ ہونا طے کرنا کیوں ضروری ہے؟",
+            "ar": "لماذا يجب التحديد المسبق هل المبلغ المستلم قرض أم شراكة؟",
+            "hi": "परिवार या मित्रों से लिया धन शुरू में क़र्ज़ या साझेदारी के रूप में स्पष्ट करना क्यों आवश्यक है?"
+          },
+          "options": {
+            "en": [
+              "Because Qard forbids profit and guarantees principal, whereas Equity shares profit and exposes principal to business loss",
+              "Because tax agencies require it only",
+              "Because friends never sign contracts"
+            ],
+            "ur": [
+              "کیونکہ قرض میں اصل رقم کی واپسی لازم اور نفع حرام ہے جبکہ شراکت میں نفع و نقصان دونوں مشترک ہیں",
+              "صرف ٹیکس کے لیے",
+              "کیونکہ دوست معاہدہ نہیں کرتے"
+            ],
+            "ar": [
+              "لأن القرض مضمون دون ربح، والشراكة تتحمل الخسارة وتستحق الربح",
+              "لأغراض ضريبية فقط"
+            ],
+            "hi": [
+              "क्योंकि क़र्ज़ में मूल वापसी अनिवार्य व लाभ वर्जित है, जबकि साझेदारी में लाभ-हानि दोनों साझा होते हैं",
+              "केवल टैक्स के लिए"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Mixing debt guarantee with profit entitlement creates Riba; clarity prevents both Shariah violation and personal conflict.",
+            "ur": "قرض اور شراکت کی شرائط ملانے سے سود جنم لیتا ہے اور خاندانی جھگڑے پیدا ہوتے ہیں۔",
+            "ar": "الجمع بين ضمان رأس المال واستحقاق الربح يوقع في الربا.",
+            "hi": "पूंजी गारंटी और लाभ साझेदारी को मिलाने से सूद उत्पन्न होता है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Draft a 1-page Shariah Partner Term Sheet specifying capital amounts, profit split, loss split (= capital %), reporting cadence, and buyout appraisal method.",
+        "ur": "اپنے موجودہ یا متوقع پارٹنر کے لیے ایک صفحے کا شراکت نامہ تیار کریں جس میں سرمایہ، نفع تناسب، نقصان تناسب، حساب کتاب اور اخراج کا طریقہ درج ہو۔",
+        "ar": "صغ مسودة اتفاقية شراكة من صفحة واحدة توضح رأس المال ونسب الربح والخسارة وآلية التخارج.",
+        "hi": "पूंजी, लाभ-हानि अनुपात, रिपोर्टिंग और निकास नियम दर्शाते हुए 1-पृष्ठ का साझेदारी पत्र तैयार करें।"
+      },
+      "sources": [
+        { "title": "AAOIFI Shariah Standard No. 12 (Musharakah)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" },
+        { "title": "Quran 2:282", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/282" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m12",
+      "level": 2,
+      "moduleNumber": 12,
+      "moduleTitle": {
+        "en": "Module 12: Loans, Debt & Payment Discipline",
+        "ur": "ماڈیول 12: قرض، ادھار اور ادائیگی کے آداب",
+        "ar": "الوحدة ١٢: القروض والديون وآداب السداد",
+        "hi": "मॉड्यूल 12: ऋण, उधार और भुगतान अनुशासन"
+      },
+      "title": {
+        "en": "No-Procrastination Rule (Bukhari 2400), Debtor Relief (2:280) & Charity Deterrence",
+        "ur": "ادائیگی میں ٹال مٹول کی حرمت (بخاری 2400)، تنگدست کو مہلت (2:280) اور غیر منافع بخش جرمانہ صدقہ",
+        "ar": "حرمة المماطلة (البخاري ٢٤٠٠)، إنظار المعسر (٢:٢٨٠)، والالتزام بالتصدق",
+        "hi": "टालमटोल का निषेध (बुखारी 2400), देनदार को मोहलत (2:280) और दान-आधारित दंड"
+      },
+      "primaryEvidenceCategory": "authentic_hadith",
+      "learningObjectives": {
+        "en": [
+          "Enforce timely settlement per Sahih al-Bukhari 2400 ('Procrastination by a solvent person is oppression').",
+          "Extend compassionate respite to genuinely distressed debtors per Quran 2:280.",
+          "Understand why Islamic contracts prohibit compounding late fees as seller income and use Charity Funds instead."
+        ],
+        "ur": [
+          "صحیح بخاری 2400 کے تحت قدرت کے باوجود ادائیگی لٹکانے کو ظلم سمجھ کر وقت پر ادائیگی یقینی بنائیں۔",
+          "البقرہ 2:280 کے مطابق واقعی تنگدست مقروض کو مہلت دینے یا معاف کرنے کا خلق اپنائیں۔",
+          "سمجھیں کہ اسلامی معاہدات میں تاخیری جرمانہ بائع کی آمدنی کیوں نہیں بن سکتا۔"
+        ],
+        "ar": [
+          "الالتزام بالسداد في الموعد (البخاري ٢٤٠٠) وإمهال المعسر (٢:٢٨٠) وتوجيه غرامات المماطل للخير."
+        ],
+        "hi": [
+          "सक्षम देनदार द्वारा देरी के निषेध (बुखारी 2400), कठिनाई में मोहलत (2:280) और दान नियम को समझें।"
+        ]
+      },
+      "introduction": {
+        "en": "Cash flow stalls in Muslim markets when able buyers delay supplier invoices deliberately, or when aggressive creditors squeeze distressed debtors with interest. Islamic ethics strictly disciplines both sides.",
+        "ur": "جب استطاعت رکھنے والا تاجر سپلائر کی ادائیگی لٹکاتا ہے یا قرض خواہ تنگدست پر سود چڑھاتا ہے تو پوری منڈی کا نظام متاثر ہوتا ہے۔ اسلام دونوں طرف انصاف کا حکم دیتا ہے۔",
+        "ar": "يضبط الإسلام طرفي الدين: يُحرّم مماطلة الغني القادر، ويأمر بإنظار المعسر دون زيادة ربوية.",
+        "hi": "जब सक्षम खरीदार भुगतान टालता है या लेनदार कठिनाई में ब्याज बढ़ाता है तो बाज़ार बिगड़ता है। इस्लाम दोनों को अनुशासित करता है।"
+      },
+      "explanationUr": "قرض اور ادھار کے تین سنہری قواعد: (1) مقروض کا فرض (بخاری 2400): جب ادائیگی کی رقم موجود ہو اور تاریخ آ جائے تو ایک دن کی ٹال مٹول بھی ظلم ہے۔ کاروباری لوگ اپنے سپلائرز کے بل روک کر اس سے ذاتی کاروبار چمکاتے ہیں جو گناہ ہے؛ (2) قرض خواہ کا خلق (البقرہ 2:280): اگر مقروض واقعی دیوالیہ یا تنگدست ہو جائے تو سود بڑھانے کے بجائے مہلت دیں یا معاف کریں؛ (3) جان بوجھ کر ٹال مٹول روکنے کے لیے (سود کے بغیر) معاہدے میں 'التزامِ تصدق' یعنی تاخیر پر طے شدہ رقم خیرات میں دینے کی شرط AAOIFI اور اسٹیٹ بینک نے منظور کی ہے، نیز عدالت/ثالث حقیقی نقصانِ براہِ راست کے لیے قانونی تدبیر کر سکتی ہے۔",
+      "explanationEn": "Islamic debt law establishes symmetric justice: (1) Solvent Debtor Accountability (Sahih al-Bukhari 2400): delaying an overdue invoice while holding liquidity to expand one's own inventory is Zulm (oppression); (2) Distressed Debtor Mercy (Quran 2:280): genuine insolvency entitles the debtor to time until ease or partial/full remission, never compounding charges; (3) Deterrence Without Riba: AAOIFI SS 8 & SBP prohibit sellers/banks from booking late-payment fees as revenue; only a self-undertaking to donate to verified charity (Iltizam al-Tasadduq) may deter wealthy defaulters.",
+      "explanationAr": "يحكم الدين في الإسلام عدل متوازن: (١) الغني المماطل ظالم (البخاري ٢٤٠٠)، فلا يجوز تأخير فواتير الموردين مع القدرة، (٢) المعسر الحقيقي يُنظَر إلى ميسرة (البقرة ٢٨٠)، (٣) ردع المماطل يكون بشرط التزام التصدق للجمعيات الخيرية لا كربح للبائع.",
+      "explanationHi": "इस्लामी ऋण नैतिकता दोहरा न्याय करती है: (1) सक्षम देनदार द्वारा भुगतान टालना अन्याय है (बुखारी 2400); (2) वास्तव में असमर्थ देनदार को मोहलत देना क़ुरआनी हुक्म है (2:280); (3) जानबूझकर देरी रोकने हेतु केवल चैरिटी दान शर्त वैध है, सूदी मुनाफा नहीं।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 280,
+          "endAyah": 280,
+          "contextNote": { "en": "Respite or charity for distressed debtors.", "ur": "تنگدست مقروض کو آسانی تک مہلت دینے اور معاف کرنے کا بیان۔", "ar": "إنظار المعسر أو التصدق عليه.", "hi": "कठिनाई वाले देनदार को मोहलत या माफ़ी।" },
+          "businessRelevance": { "en": "Forbids compounding penalty charges during genuine financial distress.", "ur": "مالی تنگی میں مبتلا مقروض پر جرمانے بڑھانا حرام ہے۔", "ar": "يمنع فرض فوائد تأخير على المتعثر.", "hi": "असली संकट में पड़े देनदार पर विलंब ब्याज लगाना वर्जित है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2400"],
+      "classicalFiqh": {
+        "en": "Fuqaha cite Bukhari 2400 to empower judges to freeze or liquidate a stubborn rich defaulter's assets without violating Riba bans.",
+        "ur": "فقہا صحیح بخاری 2400 کی بنیاد پر قاضی کو اختیار دیتے ہیں کہ امیر نادہندہ کی چیزیں بیچ کر قرض خواہ کو دلوا دے۔",
+        "ar": "أجاز الفقهاء حجر القاضي على المماطل الغني وبيع ماله وفاءً للدين.",
+        "hi": "विद्वान बुखारी 2400 से न्यायाधीश को सक्षम चूककर्ता की संपत्ति से बकाया चुकाने का अधिकार देते हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "SBP & AAOIFI supervise Islamic Charity Accounts carefully so 100% of default-deterrent charity passes straight to audited welfare causes, never bank P&L.",
+        "ur": "اسٹیٹ بینک و AAOIFI کی نگرانی میں تاخیری صدقہ کی 100 فیصد رقم رفاہی کاموں میں صرف ہوتی ہے، بینک کے منافع میں نہیں۔",
+        "ar": "تشرف الهيئات الشرعية على حسابات الخيرات للتأكد من عدم دخولها في أرباح الممول.",
+        "hi": "SBP व AAOIFI सुनिश्चित करते हैं कि 100% विलंब दान वास्तविक कल्याण कार्यों में जाए।"
+      },
+      "madhhabDifferences": {
+        "en": "Maliki jurists pioneered binding self-charity commitments (Iltizam al-Tasadduq), adopted by AAOIFI; some classical Hanafis question judicial enforcement unless institutionalized under Shariah governance.",
+        "ur": "التزامِ تصدق کو فقہ مالکی کے اصول پر AAOIFI نے اختیار کیا؛ بعض علما اس پر مشروط یا عدالتی تعزیر کے نفاذ پر زور دیتے ہیں۔",
+        "ar": "اعتمد مجمع الفقه وأيوفي التزام التصدق على أصل المالكية مع رقابة شرعية صارمة.",
+        "hi": "मालिकी सिद्धांत से Iltizam al-Tasadduq को AAOIFI ने अपनाया है।"
+      },
+      "modernExample": {
+        "en": "A wholesaler schedules auto-payments on due invoice dates to honor Bukhari 2400, and when a loyal retailer faces flood loss, restructures the receivable interest-free over 6 months.",
+        "ur": "ہول سیلر وقت پر سپلائر کا بل ادا کرے، اور جب کسی دیانتدار دکاندار کو سیلاب سے نقصان ہو تو بغیر سود 6 ماہ کی آسان اقساط کر دے۔",
+        "ar": "تاجر يسدد للموردين في الموعد، وعند تضرر عميل صادق بكارثة يجدول دينه بلا أي زيادة.",
+        "hi": "थोक व्यापारी समय पर बिल चुकाता है और आपदा से प्रभावित ईमानदार ग्राहक का बकाया बिना ब्याज 6 महीने में पुनर्गठित करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Paying vendor bills promptly & restructuring distressed accounts at zero interest", "ur": "استطاعت کے مطابق بروقت ادائیگی اور پریشان مقروض کو بلاسود مہلت", "ar": "السداد الفوري عند القدرة وإمهال المعسر", "hi": "क्षमता होने पर तुरंत भुगतान और कठिनाई में बिना ब्याज मोहलत" },
+          "prohibitedPractice": { "en": "Withholding supplier cash deliberately to earn interest/float or charging 2%/month penalty profit", "ur": "رقم موجود ہونے کے باوجود ادائیگی لٹکانا یا تاخیر پر 2% ماہانہ منافع کاٹنا", "ar": "حبس أموال الموردين عمداً أو فرض فوائد تأخير ربحية", "hi": "पैसा होते हुए भी भुगतान रोकना या 2% मासिक दंड लाभ के रूप में वसूलना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Treating '30 days net' as an excuse to ignore invoices for 120 days despite healthy bank balances.",
+          "Using credit-sale late penalties as an extra revenue stream in B2B SaaS or supply contracts."
+        ],
+        "ur": [
+          "کھاتے میں رقم ہونے کے باوجود سپلائر کو 4، 6 ماہ چکر لگوانا۔",
+          "تجارتی انوائس پر تاخیر کی صورت میں 2 فیصد اضافی فیس بطور منافع وصول کرنا۔"
+        ],
+        "ar": [
+          "تعمد تأخير مستحقات الموردين رغم السيولة، أو فرض غرامات تأخير ربحية."
+        ],
+        "hi": [
+          "खाते में धन रहते हुए भी आपूर्तिकर्ताओं को महीनों टहलाना, या बिल पर ब्याज रूपी विलंब शुल्क रखना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Track accounts payable due dates strictly and settle whenever solvent.",
+          "Remove compounding late-fee revenue clauses from all customer contracts.",
+          "Establish clear hardship grace procedures under 2:280."
+        ],
+        "ur": [
+          "ادائیگی کی تاریخوں کا کیلنڈر بنائیں اور وقت پر بل ادا کریں۔",
+          "انوائسز سے سودی لیٹ پیمنٹ فیس کی شق حذف کریں۔",
+          "تنگدست گاہکوں کے لیے مہلت و آسان اقساط کی پالیسی رکھیں۔"
+        ],
+        "ar": [
+          "الوفاء بمواعيد الفواتير، وحذف الفوائد الربوية، ووضع سياسة لإمهال المعسر."
+        ],
+        "hi": [
+          "भुगतान तिथि समय पर निभाएं, ब्याज वाली विलंब शर्त हटाएं, और कठिनाई राहत नीति रखें।"
+        ]
+      },
+      "summary": {
+        "en": "Prompt payment honors suppliers; grace relieves the struggling; zero-interest deterrence protects marketplace integrity.",
+        "ur": "بروقت ادائیگی سپلائر کا حق ہے، مہلت تنگدست کا سہارا، اور سود سے پاک نظام بازار کی حفاظت ہے۔",
+        "ar": "السداد السريع أمانة، والإمهال رحمة، ومنع الفوائد الربوية صيانة للعدل.",
+        "hi": "समय पर भुगतान ईमानदारी है, मोहलत दया है, और ब्याज-मुक्त व्यवस्था बाज़ार की रक्षा है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m12_1",
+          "question": {
+            "en": "How does Sahih al-Bukhari 2400 describe a solvent debtor who intentionally delays repayment?",
+            "ur": "صحیح بخاری 2400 میں ادائیگی کی قدرت رکھنے والے شخص کا قرض ٹالنا کیا قرار دیا گیا ہے؟",
+            "ar": "بماذا وصف النبي ﷺ تأخير الغني القادر لسداد دينه في البخاري ٢٤٠٠؟",
+            "hi": "सहीह बुखारी 2400 में सक्षम व्यक्ति द्वारा ऋण चुकाने में टालमटोल को क्या कहा गया है?"
+          },
+          "options": {
+            "en": [
+              "Injustice / oppression (Zulm)",
+              "Smart cash-flow management",
+              "Recommended strategy"
+            ],
+            "ur": [
+              "ظلم (ناانصافی)",
+              "ذہین مالی انتظام",
+              "مستحب عمل"
+            ],
+            "ar": [
+              "ظلم",
+              "إدارة ذكية للسيولة"
+            ],
+            "hi": [
+              "ज़ुल्म (अन्याय)",
+              "चतुर प्रबंधन"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Bukhari 2400 explicitly states: 'Matl al-ghaniyyi zulm' (Procrastination by a wealthy person is injustice).",
+            "ur": "صحیح بخاری 2400 کے الفاظ ہیں: مطل الغنی ظلم۔",
+            "ar": "نص الحديث: مطل الغني ظلم.",
+            "hi": "बुखारी 2400 स्पष्ट कहती है कि सक्षम व्यक्ति की टालमटोल ज़ुल्म है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Review your Accounts Payable aging sheet today and clear or schedule every overdue vendor invoice where funds are available.",
+        "ur": "آج اپنے بقایا بلوں کی فہرست دیکھیں اور دستیاب رقم سے تمام واجب الادا سپلائر ادائیگیاں فوراً مکمل کریں۔",
+        "ar": "افحص قائمة الدائنين اليوم وسدّد الفواتير المستحقة مع توفر السيولة.",
+        "hi": "आज अपने बकाया बिल जांचें और धन उपलब्ध होने पर तुरंत आपूर्तिकर्ताओं का भुगतान करें।"
+      },
+      "sources": [
+        { "title": "Sahih al-Bukhari 2400 & Quran 2:280", "category": "authentic_hadith", "attribution": "Sunnah.com & Quran.com", "url": "https://sunnah.com/bukhari:2400" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m13",
+      "level": 2,
+      "moduleNumber": 13,
+      "moduleTitle": {
+        "en": "Module 13: Prohibited Commercial Practices",
+        "ur": "ماڈیول 13: کاروبار میں ممنوع و حرام طریقے",
+        "ar": "الوحدة ١٣: المعاملات التجارية المحرمة",
+        "hi": "मॉड्यूल 13: वर्जित व्यापारिक प्रथाएं"
+      },
+      "title": {
+        "en": "Gambling (Maysir), Pyramid MLM, Bribery, Speculative Derivatives & Monopolies",
+        "ur": "جوا/لاٹری (میسر)، پیرامڈ اسکیمز (MLM)، رشوت، سٹہ بازی اور ناجائز اجارہ داری",
+        "ar": "الميسر والقمار والتسويق الشبكي الهرمي والرشوة والمشتقات المضاربية",
+        "hi": "जुआ (मैसिर), पिरामिड MLM, रिश्वत, सट्टा और एकाधिकार"
+      },
+      "primaryEvidenceCategory": "contemporary_resolution",
+      "learningObjectives": {
+        "en": [
+          "Spot Maysir/Qimar (gambling mechanics) disguised in prize draws, loot boxes, and binary options.",
+          "Distinguish pyramid/recruitment-driven MLM scams from legitimate salaried or direct sales.",
+          "Eliminate commercial bribery ('kickbacks'), deceptive brokerage, and futures short-selling."
+        ],
+        "ur": [
+          "انعامی اسکیموں، لوٹ باکس اور بائنری آپشنز میں چھپے جوئے (میسر) کو پہچانیں۔",
+          "ممبر سازی پر مبنی پیرامڈ/ملٹی لیول مارکیٹنگ اسکیموں اور جائز سیلز کمیشن میں فرق جانیں۔",
+          "تجارتی رشوت (کمیشن خوری)، سٹہ بازی اور جعلی اجارہ داری سے مکمل پرہیز کریں۔"
+        ],
+        "ar": [
+          "كشف القمار المقنّع والتسويق الهرمي والرشوة التجارية والمشتقات والمقامرة المالية."
+        ],
+        "hi": [
+          "इनामी ड्रॉ, बाइनरी ऑप्शन में छिपे जुए, पिरामिड MLM घोटालों और कमर्शियल रिश्वत की पहचान करना सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "Beyond Riba, modern commerce conceals prohibited practices behind flashy marketing labels: 'luck draws requiring paid entry', 'recruitment-tier network marketing', 'buyer kickbacks', and 'zero-delivery speculative contracts'.",
+        "ur": "سود کے علاوہ جدید بازار میں کئی حرام طریقے دلکش ناموں کے پیچھے چھپے ہیں: فیس لے کر قرعہ اندازی، نیٹ ورک ممبر سازی کی پیرامڈ اسکیمیں، خریداری افسر کو خفیہ کمیشن (رشوت) اور بغیر قبضہ سٹہ بازی۔",
+        "ar": "تتخفى محرمات تجارية حديثة تحت مسميات براقة كالتسويق الشبكي الهرمي والسحوبات المدفوعة والعمولات الخفية.",
+        "hi": "सूद के अलावा आधुनिक बाज़ार में पेड लकी ड्रॉ, पिरामिड नेटवर्क मार्केटिंग, गुप्त रिश्वत और सट्टे जैसे कई वर्जित तरीके प्रचलित हैं।"
+      },
+      "explanationUr": "بڑے ممنوع کاروباری طریقے: (1) میسر و قمار (5:90): جب کوئی شخص پیسہ دے کر ایسے انعام یا نفع کا کھیل کھیلے جس میں دوسرے کے نقصان پر اپنا فائدہ ہو، جیسے پیڈ لکی ڈرا، جوا ایپس، کرکٹ بیٹنگ، بائنری آپشنز اور لوٹ باکسز؛ (2) پیرامڈ و اکثر ملٹی لیول مارکیٹنگ (MLM) اسکیمیں: دارالعلوم/مجمع الفقہ و متعدد شرعی اداروں کے مطابق وہ نیٹ ورک ماڈل جہاں آمدنی کا اصل ذریعہ مصنوعات کی حقیقی فروخت کے بجائے نئے ممبروں کی بھرتی اور فیس/مبالغہ آمیز پیکج ہو، ناجائز و قمار/اکلِ مال بالباطل ہے؛ (3) تجارتی رشوت (2:188): کمپنی کے پرچیز مینیجر کو آرڈر دینے کے بدلے خفیہ کک بیک دینا رشوت ہے؛ (4) سٹہ بازی و شارٹ سیلنگ: بغیر قبضہ و حوالگی کے محض نرخ کے اتار چڑھاؤ پر سٹہ کھیلنا (Futures/CFDs) مجمع الفقہ کی قرارداد 63 کے تحت حرام ہے۔",
+      "explanationEn": "Major prohibited practices include: (1) Maysir/Gambling (Quran 5:90): paying consideration to enter a zero-sum chance prize draw, paid raffle tickets, speculative binary options, sports betting, or loot boxes; (2) Pyramid & Recruitment-Driven MLM Schemes: major contemporary Fatwa councils condemn network marketing models where starter-pack fees, mandatory purchase quotas, or downline recruitment bonuses—rather than independent genuine product demand—generate payouts; (3) Commercial Bribery / Kickbacks (2:188; Sunan Abi Dawud 3580): giving secret gifts/commissions to procurement officers to steer corporate orders; (4) Speculative Derivatives & Short-Selling (IIFA Res. 63): trading indices, CFDs, futures/options settled purely by price difference without real asset delivery.",
+      "explanationAr": "أبرز الممارسات المحرمة: (١) القمار والميسر في السحوبات المدفوعة والخيارات الثنائية، (٢) التسويق الشبكي الهرمي الذي يعتمد على رسوم الانضمام وتجنيد المشتركين (أفتت مجامع الفقه واللجان بتحريمه)، (٣) الرشوة والعمولات السرية لموظفي المشتريات (البقرة ١٨٨)، (٤) العقود الآجلة والمضاربة على الفروق السعرية دون قبض (قرار مجمع الفقه ٦٣).",
+      "explanationHi": "प्रमुख वर्जित प्रथाएं: (1) जुआ (5:90): पेड लकी ड्रॉ, बेटिंग ऐप्स, बाइनरी ऑप्शन और लूट बॉक्स; (2) पिरामिड/भर्ती-आधारित MLM: जहाँ असली उत्पाद मांग के बजाय सदस्य भर्ती और पैकेज शुल्क से कमाई होती है; (3) व्यावसायिक रिश्वत (2:188): खरीद अधिकारी को गुप्त कमीशन देना; (4) फ़्यूचर्स/CFD सट्टा (IIFA 63): बिना वास्तविक सुपुर्दगी के केवल मूल्य अंतर पर सट्टा।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 188,
+          "endAyah": 188,
+          "contextNote": { "en": "Outlaws bribery and corrupting decision-makers.", "ur": "حکام و ذمہ داروں کو رشوت دے کر ناحق مال لینے کی ممانعت۔", "ar": "تحريم الرشوة والتواطؤ لأكل الأموال بالباطل.", "hi": "रिश्वत और अनुचित साधनों से धन लेने का निषेध।" },
+          "businessRelevance": { "en": "Outlaws corporate procurement kickbacks and fake tender collusion.", "ur": "ٹینڈر میں کک بیک اور خفیہ کمیشن خوری کو حرام قرار دیتی ہے۔", "ar": "يُحرّم الرشاوى والعمولات السرية في المناقصات.", "hi": "टेंडर में गुप्त कमीशन व किकबैक को वर्जित करती है।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "muslim_1598"],
+      "classicalFiqh": {
+        "en": "Every school bans Qimar (conditional prize gained at another's risk), Rishwah (bribery), and selling unowned items/pure risk.",
+        "ur": "چاروں فقہی مکاتب قمار (جوا)، رشوت اور غیر مملوک خطرے کی بیع کو بالاتفاق حرام قرار دیتے ہیں۔",
+        "ar": "اتفق الفقهاء على تحريم القمار والرشوة وبيع المعدوم والمخاطر المجردة.",
+        "hi": "चारों मज़हब जुए, रिश्वत और अज्ञात जोखिम की बिक्री को एकमत से हराम मानते हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "IIFA Resolution No. 63(1/7) prohibits conventional financial futures, options, and margin CFDs; numerous Shariah boards and SECP/statutory consumer bodies flag pyramid/ponzi MLMs.",
+        "ur": "مجمع الفقہ (قرارداد 63) سٹہ فیوچرز، آپشنز اور CFDs کو حرام قرار دیتا ہے؛ ملکی قوانین اور شرعی مجالس پونزی/پیرامڈ اسکیموں سے منع کرتی ہیں۔",
+        "ar": "يحرّم قرار مجمع الفقه رقم ٦٣ عقود المستقبليات والاختيارات والمضاربة بالهامش، وتحظر الأنظمة مخططات بونزي والهرمية.",
+        "hi": "IIFA प्रस्ताव 63 फ़्यूचर्स/ऑप्शंस व CFD सट्टे को हराम बताता है और नियामक पोंज़ी/पिरामिड MLM पर रोक लगाते हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Scholars permit genuine promotional giveaways that require ZERO purchase or entry fee (free draw funded by seller's marketing budget), whereas any fee or price hike for draw entry is Qimar.",
+        "ur": "اگر گاہک سے کوئی اضافی فیس یا قیمت بڑھا کر نہ لی جائے اور دکاندار اپنی طرف سے مفت قرعہ اندازی کرے تو متعدد معاصر علما جواز دیتے ہیں؛ لیکن انٹری فیس یا مہنگی قیمت قمار ہے۔",
+        "ar": "يجيز جمع من المعاصرين الهدايا الترويجية المجانية دون زيادة في الثمن أو رسوم اشتراك، بخلاف السحوبات المدفوعة فهي قمار.",
+        "hi": "बिना किसी अतिरिक्त शुल्क के मुफ़्त प्रचार उपहार कुछ विद्वान वैध मानते हैं, जबकि प्रवेश शुल्क या बढ़ी कीमत वाला ड्रॉ जुआ है।"
+      },
+      "modernExample": {
+        "en": "An importer pays a straightforward transparent sales rep via fixed salary + simple single-tier 5% Ju'alah commission on verified direct customer sales—rejecting multi-tier recruitment pyramids.",
+        "ur": "تاجر کثیر سطحی ممبر سازی والی پیرامڈ اسکیم مسترد کر کے اپنے سیلز مین کو تنخواہ اور براہِ راست حقیقی فروخت پر سادہ 5 فیصد کمیشن دے۔",
+        "ar": "اعتماد راتب مع عمولة مبيعات مباشرة واضحة بدلاً من التسويق الهرمي متعدد الطبقات.",
+        "hi": "एक कंपनी बहु-स्तरीय पिरामिड के बजाय सेल्समैन को वेतन और प्रत्यक्ष बिक्री पर सीधा 5% कमीशन देती है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Single-tier direct sales commission + genuine product utility", "ur": "اصل مصنوع کی حقیقی فروخت پر براہِ راست سیلز کمیشن", "ar": "عمولة سمسرة مباشرة على بيع سلعة حقيقية", "hi": "वास्तविक उत्पाद बिक्री पर सीधा एक-स्तरीय कमीशन" },
+          "prohibitedPractice": { "en": "Ponzi/MLM packages paid via recruiting new members or margin Forex/CFD betting", "ur": "نئے ممبران بھرتی کر کے کمانے والی پیرامڈ اسکیم یا فاریکس/CFD مارجن سٹہ", "ar": "التسويق الهرمي وبونزي والمضاربة بالهامش في الفوركس", "hi": "नए सदस्य जोड़कर कमाने वाला पिरामिड/पोंज़ी MLM या मार्जिन फ़ॉरेक्स सट्टा" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Joining 'daily guaranteed 1% passive ROI trading bots' (hallmark Ponzi fraud + Riba/Gharar).",
+          "Giving 'Eid gift envelopes' secretly to a client's purchasing manager to keep winning orders."
+        ],
+        "ur": [
+          "'روزانہ 1 فیصد یقینی منافع دینے والی ٹریڈنگ ایپس' میں سرمایہ لگانا (جو پونزی فراڈ و سود ہیں)۔",
+          "آرڈر لیتے رہنے کے لیے خریداری افسر کو خفیہ لفافے یا تحائف دینا۔"
+        ],
+        "ar": [
+          "الاشتراك في تطبيقات الربح اليومي المضمون، أو تقديم هدايا خفية لموظفي المشتريات."
+        ],
+        "hi": [
+          "रोज़ 1% निश्चित मुनाफ़े वाले पोंज़ी ऐप में पैसा लगाना, या खरीद प्रबंधकों को गुप्त उपहार देना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Zero paid chance draws, margin CFDs, or recruitment-fee MLM compensation.",
+          "Enforce anti-bribery policy barring undisclosed gifts to decision-makers.",
+          "Verify physical/real asset transfer in any commodity or forex spot trade."
+        ],
+        "ur": [
+          "فیس والی قرعہ اندازی، مارجن ٹریڈنگ اور پیرامڈ اسکیموں سے مکمل پرہیز۔",
+          "خرید و فروخت میں کسی بھی قسم کے خفیہ کمیشن یا تحفے کی ممانعت۔",
+          "کرنسی یا مال کی خریداری میں فوری حقیقی قبضہ یقینی بنائیں۔"
+        ],
+        "ar": [
+          "حظر السحوبات المدفوعة والهرمية والمشتقات، وتطبيق سياسة صارمة ضد الرشوة."
+        ],
+        "hi": [
+          "पेड लकी ड्रॉ, मार्जिन सट्टे व पिरामिड MLM से दूर रहें और शून्य-रिश्वत नीति अपनाएं।"
+        ]
+      },
+      "summary": {
+        "en": "Real value creation never depends on gambling luck, hidden bribes, Ponzi recruitment, or synthetic paper bets.",
+        "ur": "حلال کاروبار کبھی جوئے، خفیہ رشوت، پیرامڈ ممبر سازی یا کاغذی سٹے بازی پر نہیں چلتا۔",
+        "ar": "الثروة الحلال تُبنى بالقيمة الحقيقية لا بالقمار والرشوة والاحتيال الهرمي.",
+        "hi": "हलाल व्यवसाय वास्तविक मूल्य से बनता है—जुए, रिश्वत, पिरामिड या सट्टे से नहीं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m13_1",
+          "question": {
+            "en": "Why do major Fiqh councils prohibit speculative CFDs and cash-settled financial futures?",
+            "ur": "مجمع الفقہ اور شرعی مجالس نقد فرق پر طے ہونے والے فیوچرز اور CFDs کو کیوں حرام قرار دیتی ہیں؟",
+            "ar": "لماذا حرّم مجمع الفقه العقود الآجلة والمضاربة على الفروق (CFDs)؟",
+            "hi": "फ़िक़्ह परिषदें नक़द अंतर पर आधारित फ़्यूचर्स व CFD को वर्जित क्यों करती हैं?"
+          },
+          "options": {
+            "en": [
+              "Both payment and delivery are deferred without genuine asset ownership/possession, turning trade into zero-sum gambling",
+              "Because stock exchanges use computers",
+              "Because brokers work weekdays"
+            ],
+            "ur": [
+              "کیونکہ بغیر حقیقی ملکیت و قبضہ کے دونوں عوض مؤخر رہتے ہیں اور سودا محض قیمت کے اتار چڑھاؤ کا جوا بن جاتا ہے",
+              "کیونکہ کمپیوٹر استعمال ہوتے ہیں",
+              "کیونکہ بروکر کام کرتے ہیں"
+            ],
+            "ar": [
+              "لتأجيل البدلين وانعدام التملك والقبض وتحولها لمقامرة على الفروق السعرية",
+              "لاستخدام الحواسيب"
+            ],
+            "hi": [
+              "क्योंकि बिना वास्तविक स्वामित्व व क़ब्ज़ के सौदा केवल मूल्य उतार-चढ़ाव का जुआ बन जाता है",
+              "क्योंकि कंप्यूटर का उपयोग होता है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "IIFA Resolution 63(1/7) explains that deferring both asset and price and settling purely by index differences violates Shariah sale rules and mirrors Qimar.",
+            "ur": "مجمع الفقہ قرارداد 63 کے مطابق مال اور قیمت دونوں مؤخر کر کے صرف فرق پر تصفیہ کرنا شریعت میں ناجائز اور جوا ہے۔",
+            "ar": "يقرر مجمع الفقه (٦٣) أن تأجيل البدلين والتسوية النقدية للفروق قمار وبيع كالئ بكالئ.",
+            "hi": "IIFA प्रस्ताव 63 के अनुसार बिना सुपुर्दगी केवल अंतर निपटाना जुआ और अवैध अनुबंध है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Draft a 1-paragraph zero-kickback Procurement Integrity Policy for anyone purchasing stock or hiring contractors on your behalf.",
+        "ur": "اپنے کاروبار کے لیے خریداری اور ٹھیکوں میں رشوت و خفیہ کمیشن روکنے کا ایک واضح اصول نامہ تحریر کریں۔",
+        "ar": "اكتب بنداً واضحاً لمنع الرشوة والعمولات السرية في سياسة المشتريات.",
+        "hi": "अपने व्यवसाय की खरीद प्रक्रिया के लिए एक स्पष्ट शून्य-रिश्वत एवं पारदर्शिता नीति लिखें।"
+      },
+      "sources": [
+        { "title": "IIFA Resolution No. 63(1/7) on Financial Markets", "category": "contemporary_resolution", "attribution": "IIFA", "url": "https://iifa-aifi.org/en/" },
+        { "title": "Quran 2:188", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/188" }
+      ]
+    },
+    {
+      "id": "lesson_l2_m14",
+      "level": 2,
+      "moduleNumber": 14,
+      "moduleTitle": {
+        "en": "Module 14: Contracts, Documentation & Business Disputes",
+        "ur": "ماڈیول 14: تحریری معاہدات، دستاویزات اور تجارتی تنازعات کا حل",
+        "ar": "الوحدة ١٤: توثيق العقود وحل النزاعات التجارية",
+        "hi": "मॉड्यूल 14: लिखित अनुबंध और व्यापारिक विवाद समाधान"
+      },
+      "title": {
+        "en": "Written Agreements (2:282), Arbitration (Tahkim), Sulh & Regulatory Compliance",
+        "ur": "تحریری دستاویزات (البقرہ 2:282)، ثالثی (تحکیم)، صلح اور قانونی تقاضے",
+        "ar": "توثيق العقود (٢:٢٨٢)، التحكيم، الصلح، والالتزام التنظيمي",
+        "hi": "लिखित अनुबंध (2:282), मध्यस्थता (तहकीम), सुलह और कानूनी नियम"
+      },
+      "primaryEvidenceCategory": "direct_quran",
+      "learningObjectives": {
+        "en": [
+          "Implement Ayat al-Mudayanah (2:282)—the longest verse in the Quran—requiring written debt & credit agreements.",
+          "Resolve commercial disagreements Islamically through negotiation, Sulh (reconciliation), and Tahkim (independent arbitration).",
+          "Integrate Islamic contracts cleanly with local corporate law, tax receipts, and SECP/SBP rules."
+        ],
+        "ur": [
+          "قرآنِ مجید کی سب سے طویل آیتِ مدائنہ (البقرہ 2:282) کے مطابق تحریری معاہدوں اور گواہوں کا اہتمام کریں۔",
+          "تجارتی جھگڑوں کے حل کے لیے صلح، مصالحت اور مستند ثالثی (تحکیم) کا طریقہ اختیار کریں۔",
+          "شرعی معاہدوں کے ساتھ ملکی کارپوریٹ و ٹیکس قوانین (SECP/SBP) کی پابندی یقینی بنائیں۔"
+        ],
+        "ar": [
+          "تطبيق آية المداينة ٢:٢٨٢ في كتابة العقود وحل المنازعات عبر الصلح والتحكيم الشرعي والقانوني."
+        ],
+        "hi": [
+          "आयतुल-मुदायना (2:282) के अनुसार लिखित अनुबंध, सुलह व मध्यस्थता (तहकीम) से विवाद हल करना सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "Significantly, the longest verse in the entire Noble Quran is neither about ritual prayer nor war—it is Surah Al-Baqarah 2:282 commanding Muslims to write down business debts, payment dates, and witnesses accurately.",
+        "ur": "قرآنِ مجید کی سب سے لمبی آیت عبادات یا جنگ کے بجائے کاروباری قرض و ادھار کو تحریر کرنے اور گواہ بنانے کے بارے میں ہے (البقرہ 2:282)۔ یہی تحریری نظم جھگڑوں کی جڑ کاٹتا ہے۔",
+        "ar": "أطول آية في القرآن الكريم هي آية المداينة (البقرة ٢٨٢)، وتأمر بكتابة الديون الآجلة والعدل والإشهاد صيانةً للحقوق.",
+        "hi": "संपूर्ण क़ुरआन की सबसे लंबी आयत (अल-बक़रा 2:282) व्यवसाय में उधार, भुगतान तिथि और गवाहों को लिखने का आदेश देती है।"
+      },
+      "explanationUr": "معاہدوں اور تنازعات کے حل کے 4 ستون: (1) تحریر و شہادت (البقرہ 2:282): ہر ادھار، شراکت، لیز اور بڑی سروس کا تحریری معاہدہ، واضح تاریخِ ادائیگی اور گواہ رکھیں—چاہے سگے بھائی یا گہرے دوست کیوں نہ ہوں؛ (2) صلح و درگزر (النساء 128، والصلح خیر): قانونی عدالتوں میں سالوں ضائع کرنے کے بجائے فریقین باہمی رعایت سے معقول تصفیہ کریں، بشرطیکہ کوئی حرام شرط نہ ہو؛ (3) تحکیم (ثالثی/Arbitration): معاہدے میں پہلے سے طے ہو کہ تنازع کی صورت میں غیر جانبدار ماہرِ تجارت اور عالمِ دین ثالث مقرر ہوں گے؛ (4) قانونی و ضابطہ جاتی مطابقت: رجسٹرڈ کمپنی، صحیح ٹیکس رسیدیں، صارف تحفظ اور AAOIFI/SBP/SECP قواعد کی تعمیل بھی شہری عہد (5:1) کا حصہ ہے۔",
+      "explanationEn": "Surah Al-Baqarah 2:282 warns explicitly: 'Do not become weary of writing it down, whether small or large, until its specified term.' Written records prevent memory drift, accusation, and broken friendships. When disputes occur despite contracts, Islam prescribes: (1) Direct honest reconciliation (Sulh), where both sides verify receipts and may mutually concede; (2) Formal Arbitration (Tahkim) using qualified Shariah + commercial arbitrators agreed in advance in the contract; (3) Formal courts & regulatory compliance (SECP/SBP filings, lawful invoicing) without dishonest litigation (2:188).",
+      "explanationAr": "تنص آية ٢:٢٨٢ على عدم السآمة من كتابة الحقوق صغيرة كانت أم كبيرة. وعند النزاع يُشرع أولاً الصلح العادل (الصلح خير)، ثم التحكيم الشرعي والمهني أمام محكمين ثقات، ثم القضاء المنصف دون خصومة بالباطل (٢:١٨٨)، مع الالتزام بالأنظمة التجارية المحلية.",
+      "explanationHi": "आयत 2:282 सख़्ती से कहती है: 'चाहे छोटा हो या बड़ा, उसकी अवधि तक लिखने से न ऊबो।' विवाद होने पर इस्लाम सिखाता है: (1) प्रत्यक्ष आपसी सुलह, (2) अनुबंध में पहले से तय योग्य मध्यस्थों द्वारा तहकीम (Arbitration), और (3) झूठे मुकदमे के बिना वैध कानूनी अनुपालन।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 282,
+          "endAyah": 282,
+          "contextNote": { "en": "Ayat al-Mudayanah: longest verse in the Quran on written contracts.", "ur": "آیتِ مدائنہ: تحریری معاہدے، تاریخ، گواہی اور عدل کی مکمل تعلیم۔", "ar": "آية المداينة: تشريع الكتابة والعدل والإشهاد.", "hi": "आयतुल-मुदायना: लिखित अनुबंध और गवाहों का विस्तृत आदेश।" },
+          "businessRelevance": { "en": "Every B2B invoice, credit note, employment letter, and partnership must be written clearly.", "ur": "ہر ادھار، ملازمت نامہ اور شراکت واضح تحریر میں ہونی چاہیے۔", "ar": "توثيق الفواتير وعقود العمل والشراكة كتابةً.", "hi": "हर बिल, उधार और साझेदारी स्पष्ट रूप से लिखित होनी चाहिए।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2400", "bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Al-Tirmidhi (1352) records: 'Reconciliation (Sulh) is permissible between Muslims except reconciliation that permits the unlawful or forbids the lawful.' Muslims remain bound by their lawful conditions.",
+        "ur": "جامع ترمذی (1352) کے مطابق مسلمانوں کے درمیان صلح جائز ہے سوائے اس صلح کے جو حرام کو حلال یا حلال کو حرام کرے، اور مسلمان اپنی جائز شرائط کے پابند ہیں۔",
+        "ar": "في الحديث: الصلح جائز بين المسلمين إلا صلحاً حرّم حلالاً أو أحلّ حراماً، والمسلمون على شروطهم.",
+        "hi": "हदीस (तिर्मिज़ी 1352) के अनुसार मुसलमानों के बीच वैध सुलह अनुमत है और वे अपनी शर्तों के पाबंद हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "AAOIFI Shariah Standard No. 32 covers Arbitration (Tahkim); standard commercial agreements pair governing statutory arbitration law with Shariah compliance.",
+        "ur": "AAOIFI معیار 32 ثالثی (تحکیم) کے تفصیلی قواعد بیان کرتا ہے؛ جدید معاہدات میں ملکی قانون و شرعی شرائط دونوں شامل رکھی جاتی ہیں۔",
+        "ar": "يضبط معيار أيوفي ٣٢ أحكام التحكيم الشرعي، وتجمع العقود الحديثة بين التحكيم والأنظمة القانونية.",
+        "hi": "AAOIFI मानक 32 मध्यस्थता नियम बताता है, जो कानूनी अनुपालन के साथ जोड़ा जाता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Majority treat writing in 2:282 as emphatic guidance (Istihbab) while contract validity hinges on proof/consent, yet all jurists strongly discourage undocumented credit due to family & market disputes.",
+        "ur": "جمہور علما آیت 2:282 کی تحریر کو تاکیدی استحباب و تحفظِ حق قرار دیتے ہیں؛ تاہم اس کے ترک سے پیدا ہونے والے جھگڑوں سے بچنے کے لیے تحریر کی شدید تاکید سب کرتے ہیں۔",
+        "ar": "يرى الجمهور الأمر بالكتابة للإرشاد والحفظ مع تشديد جميع الفقهاء على خطورة ترك التوثيق.",
+        "hi": "अधिकांश विद्वान लिखने को मज़बूत सुरक्षा निर्देश मानते हैं और विवाद से बचने हेतु अनिवार्य रूप से अनुशंसित करते हैं।"
+      },
+      "modernExample": {
+        "en": "Two wholesalers include a clause: 'Any dispute shall first undergo 14-day Sulh mediation, failing which binding Tahkim before one Mufti/lawyer and one trade elder.'",
+        "ur": "دو تاجر معاہدے میں لکھیں: 'تنازع کی صورت میں پہلے 14 دن باہمی صلح ہوگی، بصورتِ دیگر ایک مفتی اور ایک تجربہ کار تاجر ثالث ہوں گے۔'",
+        "ar": "إدراج بند في العقد للوساطة الودية ١٤ يوماً ثم التحكيم أمام محكم شرعي وقانوني وتاجر.",
+        "hi": "दो व्यापारी अनुबंध में लिखते हैं: विवाद होने पर पहले 14-दिन सुलह और फिर एक मुफ़्ती व एक विशेषज्ञ द्वारा मध्यस्थता होगी।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Signed written contracts even with relatives + Sulh arbitration", "ur": "رشتہ داروں کے ساتھ بھی تحریری معاہدہ اور مصالحت/ثالثی", "ar": "توثيق العقود حتى مع الأقارب واللجوء للصلح والتحكيم", "hi": "रिश्तेदारों के साथ भी लिखित अनुबंध और सुलह/मध्यस्थता" },
+          "prohibitedPractice": { "en": "Handing cash informally ('trust me') then hiring lawyers for false counterclaims (2:188)", "ur": "بغیر تحریر زبانی رقم دے کر بعد میں جھوٹے دعوے یا عدالتی حیلے کرنا (2:188)", "ar": "ترك التوثيق بحجة الثقة ثم الخصومة الباطلة في المحاكم", "hi": "बिना लिखे धन देना और बाद में झूठे मुकदमे करना (2:188)" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Saying 'writing contracts between family/Muslim brothers shows distrust' (directly contradicts 2:282!).",
+          "Refusing neutral arbitration so the wealthier party stalls in slow courts."
+        ],
+        "ur": [
+          "یہ کہنا کہ 'بھائیوں یا دوستوں میں لکھا پڑھی بے اعتمادی ہے' (یہ قرآن 2:282 کے صریح خلاف ہے)۔",
+          "غریب فریق کو تھکانے کے لیے ثالثی سے انکار کر کے سالہا سال عدالتوں میں لٹکانا۔"
+        ],
+        "ar": [
+          "الاعتقاد بأن توثيق العقود مع الأصدقاء والأقارب سوء ظن، أو إطالة التقاضي لإرهاق الطرف الآخر."
+        ],
+        "hi": [
+          "यह कहना कि परिवार या मित्रों में लिखना अविश्वास है (यह 2:282 के विरुद्ध है), या मुकदमा जानबूझकर लंबा खींचना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Put every credit limit, due date, return policy, and scope change in writing.",
+          "Include a clear Sulh + Shariah/statutory Tahkim dispute clause.",
+          "Archive signed copies & digital timestamps securely."
+        ],
+        "ur": [
+          "ہر ادھار، واپسی اور سروس کی تبدیلی تحریری رکھیں۔",
+          "معاہدے میں صلح اور ثالثی کی واضح شق شامل کریں۔",
+          "دستخط شدہ دستاویزات اور ڈیجیٹل ریکارڈ محفوظ رکھیں۔"
+        ],
+        "ar": [
+          "توثيق كل التزام وتاريخ استحقاق كتابةً، وإدراج بند الصلح والتحكيم، وحفظ الأرشيف."
+        ],
+        "hi": [
+          "हर उधार, समयसीमा व बदलाव लिखित रखें, सुलह/मध्यस्थता शर्त जोड़ें, और दस्तावेज़ सुरक्षित रखें।"
+        ]
+      },
+      "summary": {
+        "en": "Documented contracts prevent disputes before they start; Sulh and fair Tahkim heal disputes without oppression.",
+        "ur": "تحریری معاہدے جھگڑے پیدا ہونے سے روکتے ہیں، اور صلح و ثالثی ظلم کے بغیر انصاف دلاتے ہیں۔",
+        "ar": "الكتابة تقي من النزاع، والصلح والتحكيم يحفظان الأخوة والعدل عند الخلاف.",
+        "hi": "लिखित अनुबंध विवाद होने से रोकते हैं; सुलह व मध्यस्थता अन्याय के बिना न्याय दिलाती हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l2_m14_1",
+          "question": {
+            "en": "Which verse—the longest in the entire Quran—specifically commands writing down future debt/credit obligations and witnesses?",
+            "ur": "قرآنِ مجید کی وہ کون سی سب سے طویل آیت ہے جو ادھار معاملات لکھنے اور گواہ بنانے کا حکم دیتی ہے؟",
+            "ar": "ما أطول آية في القرآن الكريم التي تأمر بتوثيق الديون الآجلة بالكتابة والإشهاد؟",
+            "hi": "संपूर्ण क़ुरआन की सबसे लंबी आयत कौन सी है जो उधार व भविष्य के लेनदेन लिखने का आदेश देती है?"
+          },
+          "options": {
+            "en": [
+              "Surah Al-Baqarah 2:282 (Ayat al-Mudayanah)",
+              "Surah Al-Fatihah 1:5",
+              "Surah Al-Kawthar 108:1"
+            ],
+            "ur": [
+              "سورۃ البقرہ 2:282 (آیتِ مدائنہ)",
+              "سورۃ الفاتحہ 1:5",
+              "سورۃ الکوثر 108:1"
+            ],
+            "ar": [
+              "سورة البقرة ٢:٢٨٢ (آية المداينة)",
+              "الفاتحة ١:٥"
+            ],
+            "hi": [
+              "सूरह अल-बक़रा 2:282 (आयतुल-मुदायना)",
+              "सूरह फ़ातिहा 1:5"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Surah Al-Baqarah 2:282 commands recording term, sum, justice, and witnesses regardless of transaction size.",
+            "ur": "سورۃ البقرہ 2:282 قرآن کی طویل ترین آیت ہے جو ہر چھوٹے بڑے ادھار کو لکھنے کی تاکید فرماتی ہے۔",
+            "ar": "سورة البقرة ٢٨٢ هي آية المداينة وأطول آية في القرآن.",
+            "hi": "सूरह अल-बक़रा 2:282 सबसे लंबी आयत है जो लिखित दस्तावेज़ीकरण का आदेश देती है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Create a standard 1-page written Client/Vendor Agreement template with scope, payment milestones, defect policy, and a Sulh + Tahkim dispute clause.",
+        "ur": "اپنے کاروبار کے لیے ایک صفحے کا تحریری معاہدہ ٹیمپلیٹ بنائیں جس میں کام، ادائیگی کی تاریخیں، عیب واپسی اور صلح و ثالثی کی شق درج ہو۔",
+        "ar": "أعد نموذج عقد من صفحة واحدة يتضمن نطاق العمل ومواعيد الدفع وبند الصلح والتحكيم.",
+        "hi": "कार्यक्षेत्र, भुगतान तिथि और सुलह-मध्यस्थता शर्त के साथ 1-पृष्ठ का मानक अनुबंध टेम्पलेट बनाएं।"
+      },
+      "sources": [
+        { "title": "Quran 2:282", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/282" },
+        { "title": "AAOIFI Shariah Standard No. 32 (Arbitration)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "version": 8,
+  "name": "Noor Hybrid 3D",
+  "sources": {
+    "esri-world-imagery": {
+      "type": "raster",
+      "tiles": [
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ],
+      "tileSize": 256,
+      "maxzoom": 19,
+      "attribution": "Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+    },
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://tiles.openfreemap.org/planet"
+    }
+  },
+  "sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "satellite-imagery-base",
+      "type": "raster",
+      "source": "esri-world-imagery",
+      "minzoom": 0,
+      "maxzoom": 22
+    },
+    {
+      "id": "hybrid-water-tint",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#0e4d7a",
+        "fill-opacity": 0.16
+      }
+    },
+    {
+      "id": "hybrid-road-casing-major",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary", "tertiary"]]],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#1e293b",
+        "line-opacity": 0.55,
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 2.5, 14, 6, 17, 13]
+      }
+    },
+    {
+      "id": "hybrid-road-fill-major",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary", "tertiary"]]],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#f8fafc",
+        "line-opacity": 0.48,
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 1.2, 14, 3.6, 17, 8]
+      }
+    },
+    {
+      "id": "hybrid-road-minor",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["in", ["get", "class"], ["literal", ["minor", "service", "track"]]],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#ffffff",
+        "line-opacity": 0.34,
+        "line-width": ["interpolate", ["linear"], ["zoom"], 13, 1.0, 17, 4.5]
+      }
+    },
+    {
+      "id": "building-3d",
+      "type": "fill-extrusion",
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        ["!=", ["get", "hide_3d"], true],
+        ["any", ["has", "render_height"], ["has", "height"]]
+      ],
+      "paint": {
+        "fill-extrusion-color": "#e8dfd0",
+        "fill-extrusion-opacity": 0.44,
+        "fill-extrusion-height": ["coalesce", ["get", "render_height"], ["get", "height"]],
+        "fill-extrusion-base": ["coalesce", ["get", "render_min_height"], ["get", "min_height"], 0]
+      }
+    },
+    {
+      "id": "hybrid-boundary",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "filter": ["<=", ["get", "admin_level"], 4],
+      "paint": {
+        "line-color": "#facc15",
+        "line-width": 1.2,
+        "line-opacity": 0.55
+      }
+    },
+    {
+      "id": "hybrid-road-labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation_name",
+      "minzoom": 13,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 280,
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 13, 10.5, 17, 13.5]
+      },
+      "paint": {
+        "text-color": "#ffffff",
+        "text-halo-color": "#111827",
+        "text-halo-width": 2.2
+      }
+    },
+    {
+      "id": "hybrid-poi-labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 13.5,
+      "filter": ["in", ["get", "class"], ["literal", ["school", "college", "university", "hospital", "grocery", "shop", "park", "bus", "railway", "place_of_worship"]]],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": 11.5,
+        "text-max-width": 9,
+        "text-anchor": "center"
+      },
+      "paint": {
+        "text-color": "#f8fafc",
+        "text-halo-color": "#0f172a",
+        "text-halo-width": 2.2
+      }
+    },
+    {
+      "id": "hybrid-place-labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 3,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 12, 15, 16, 17]
+      },
+      "paint": {
+        "text-color": "#ffffff",
+        "text-halo-color": "#0f172a",
+        "text-halo-width": 2.0
+      }
+    }
+  ]
+}

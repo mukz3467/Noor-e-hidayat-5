@@ -1,0 +1,1208 @@
+{
+  "contracts": [
+    {
+      "id": "contract_wakalah",
+      "order": 8,
+      "arabicTerm": "الوكالة",
+      "name": {
+        "en": "8. Wakalah (Commercial & Investment Agency)",
+        "ur": "8. وکالت (تجارتی و سرمایہ کاری نمائندگی)",
+        "ar": "٨. الوكالة",
+        "hi": "8. वकालह (व्यापारिक एवं निवेश एजेंसी)"
+      },
+      "definition": {
+        "en": "Authorizing another person or institution (Wakil) to perform a lawful commercial act, purchase, sale, or investment on behalf of the principal (Muwakkil), either gratuitously or for an agreed fee (Wakalah bil-Ujrah).",
+        "ur": "کسی دوسرے شخص یا ادارے (وکیل) کو اپنی طرف سے جائز خرید و فروخت، لین دین یا سرمایہ کاری کا اختیار دینا، خواہ فی سبیل اللہ ہو یا متعین فیس (اجرت) کے عوض۔",
+        "ar": "إقامة الغير مقام النفس في تصرف معلوم جائز، وقد تكون بأجر معلوم أو تبرعاً.",
+        "hi": "किसी व्यक्ति या संस्था (वकील) को अपनी ओर से वैध खरीद, बिक्री या निवेश करने का अधिकार देना, जो निःशुल्क या तय शुल्क पर हो सकता है।"
+      },
+      "purpose": {
+        "en": "Powers import/export procurement agents, Islamic treasury liquidity placements, Takaful fund operators, and Murabaha purchasing agency.",
+        "ur": "برآمدی و درآمدی ایجنسی، ٹریژری مینجمنٹ، تکافل آپریٹر اور مرابحہ میں خریداری کی وکالت۔",
+        "ar": "تنظيم عقود السمسرة والتمثيل التجاري وإدارة محافظ الاستثمار والتكافل.",
+        "hi": "आयात-निर्यात एजेंट, तकाफ़ुल ऑपरेटर और इस्लामी निवेश प्रबंधन का संचालन।"
+      },
+      "shariahPrinciples": {
+        "en": "Wakil is a fiduciary trustee (Amin): cannot guarantee profit or principal unless negligent/violating mandate, and cannot trade with oneself without explicit principal authorization.",
+        "ur": "وکیل امین ہوتا ہے: وہ نفع یا اصل سرمائے کی ضمانت نہیں دے سکتا الا یہ کہ غفلت یا شرط کی خلاف ورزی کرے، اور موکل کی واضح اجازت کے بغیر اپنے آپ سے سودا نہیں کر سکتا۔",
+        "ar": "الوكيل أمين لا يضمن إلا بالتعدي أو التقصير، ولا يصح تضمن الوكالة بالاستثمار ضمان الربح أو رأس المال.",
+        "hi": "वकील अमीन (ट्रस्टी) होता है: बिना लापरवाही के वह पूंजी या मुनाफे की गारंटी नहीं दे सकता और बिना अनुमति स्वयं से सौदा नहीं कर सकता।"
+      },
+      "conditions": {
+        "en": [
+          "Both Muwakkil and Wakil possess legal capacity.",
+          "Scope, investment limits, and duration of agency are clearly specified.",
+          "Agency fee (if paid) is fixed or clearly determined, never an unquantified share disguised as fixed return guarantee."
+        ],
+        "ur": [
+          "موکل اور وکیل دونوں عاقل و بالغ اور قانونی صلاحیت رکھتے ہوں۔",
+          "وکالت کا دائرہ کار، حدود اور مدت واضح طے ہوں۔",
+          "اجرتِ وکالت اگر مقرر ہو تو متعین و معلوم ہو۔"
+        ],
+        "ar": [
+          "أهلية الموكل والوكيل، ومعلومية محل الوكالة وحدودها، ومعلومية الأجر إن وُجد."
+        ],
+        "hi": [
+          "दोनों पक्ष कानूनी रूप से सक्षम हों, कार्यक्षेत्र स्पष्ट हो, और एजेंसी शुल्क (यदि हो) निश्चित हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Principal receives full proceeds and accounts; Wakil receives agreed agency fee and reimbursement of authorized expenses.",
+        "ur": "موکل کو اصل نفع و شفاف حسابات اور وکیل کو طے شدہ فیس و جائز اخراجات کا حق حاصل ہے۔",
+        "ar": "للموكل عائد الصفقة والشفافية، وللوكيل الأجر المتفق عليه واسترداد النفقات المأذون بها.",
+        "hi": "मूल मालिक को पूरा हिसाब व आय और वकील को तय शुल्क पाने का अधिकार है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Ownership and risk of transacted assets pass directly to the principal, not the agent.",
+        "ur": "خریدی یا بیچی جانے والی شے کی ملکیت اور نقصان کا رسک براہِ راست موکل کا ہوتا ہے، وکیل کا نہیں۔",
+        "ar": "تثبت ملكية المبيع ومخاطره للموكل مباشرة.",
+        "hi": "खरीदी गई संपत्ति का स्वामित्व और जोखिम सीधे मालिक का होता है, एजेंट का नहीं।"
+      },
+      "profitAndLossRules": {
+        "en": "Principal takes actual profit and bears natural loss; incentive bonus above benchmark is permitted only under strict non-guaranteed structure.",
+        "ur": "اصل نفع و نقصان موکل کا ہے؛ طے شدہ متوقع ہدف سے زائد کارکردگی پر ترغیبی انعام الگ ضابطے کے تحت جائز ہو سکتا ہے۔",
+        "ar": "الربح والخسارة للموكل؛ ويجوز حافز الأداء الزائد عن العائد المتوقع وفق ضوابط أيوفي.",
+        "hi": "वास्तविक लाभ-हानि मालिक की है; प्रदर्शन बोनस विशेष शरीअत शर्तों के अधीन दिया जा सकता है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Investment Wakalah guaranteeing 'expected 15% return' as an unconditional debt obligation.",
+          "Taking hidden commissions from third-party suppliers without client consent."
+        ],
+        "ur": [
+          "انویسٹمنٹ وکالت میں متوقع نفع کو لازمی اور یقینی ضمانت بنا دینا۔",
+          "موکل کو بتائے بغیر سپلائر سے خفیہ کمیشن لینا۔"
+        ],
+        "ar": [
+          "تحويل العائد المتوقع إلى ضمان التزام على الوكيل، أو أخذ عمولات خفية دون علم الموكل."
+        ],
+        "hi": [
+          "अपेक्षित लाभ को अनिवार्य गारंटी बना देना, या मालिक को बताए बिना गुप्त कमीशन लेना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "A textile buyer appoints a sourcing firm via Wakalah for a fixed 2% procurement fee to inspect and purchase organic cotton.",
+        "ur": "کپڑا خریدنے والی کمپنی سورسنگ ایجنٹ کو 2 فیصد متعین فیس پر معیاری روئی خریدنے کا وکیل مقرر کرے۔",
+        "ar": "توكيل شركة مشتريات لشراء قطن عضوي مقابل أجر معلوم قدره ٢٪.",
+        "hi": "वस्त्र कंपनी 2% तय शुल्क पर सोर्सिंग एजेंट को कपास खरीदने हेतु वकील नियुक्त करती है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 23 (Agency) & No. 46 (Al-Wakalah Bi Al-Istithmar)",
+      "sbpGuidance": {
+        "en": "SBP uses Wakalah in Islamic interbank liquidity and Murabaha customer purchasing only under strict mandate controls.",
+        "ur": "اسٹیٹ بینک انٹربینک لیکویڈیٹی اور مرابحہ کی بعض صورتوں میں سخت شرائط کے ساتھ وکالت کی اجازت دیتا ہے۔",
+        "ar": "يقر بنك الدولة عقد الوكالة بشروط صارمة في السيولة المصرفية.",
+        "hi": "SBP सख्त दिशानिर्देशों के तहत अंतर-बैंक तरलता में वकालह की अनुमति देता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All four schools permit Wakalah; Hanafis allow agent contracting in own name while Majority tie rights directly to principal upon disclosure.",
+        "ur": "چاروں فقہ میں وکالت جائز ہے؛ احناف کے نزدیک حقوق بعض عقود میں عاقد کی طرف راجع ہوتے ہیں جبکہ جمہور موکل کو براہِ راست فریق قرار دیتے ہیں۔",
+        "ar": "اتفق الفقهاء على جواز الوكالة مع فروق في عودة الحقوق عند عدم إضافة العقد للموكل.",
+        "hi": "चारों मज़हब वकालह को वैध मानते हैं; अनुबंध अधिकारों के प्रत्यक्ष हस्तांतरण पर सूक्ष्म भेद हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "When acting as investment Wakil, does any performance-incentive clause avoid guaranteeing capital?"
+        ],
+        "ur": [
+          "کیا کارکردگی بونس کی شق سرمائے کی ضمانت بننے سے محفوظ ہے؟"
+        ],
+        "ar": [
+          "هل صياغة حافز الوكيل تخلو من ضمان رأس المال؟"
+        ],
+        "hi": [
+          "क्या प्रदर्शन बोनस की शर्त पूंजी की गारंटी बनने से बचती है?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": {
+            "en": "Fiduciary duty to fulfill trusts faithfully.",
+            "ur": "امانتوں کی دیانتداری سے ادائیگی کا حکم۔",
+            "ar": "وجوب أداء الأمانات بأمانة وصدق.",
+            "hi": "अमानत को ईमानदारी से निभाने का आदेश।"
+          },
+          "businessRelevance": {
+            "en": "An agent is a trustee over the principal's wealth and authority.",
+            "ur": "وکیل اپنے موکل کے مال اور اختیار کا امین ہے۔",
+            "ar": "الوكيل مؤتمن على مال موكله وتفويضه.",
+            "hi": "वकील अपने मालिक के धन और अधिकार का अमीन है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_wak_1",
+          "question": {
+            "en": "In an Investment Wakalah without agent negligence, who guarantees the invested principal?",
+            "ur": "انویسٹمنٹ وکالت میں اگر وکیل نے غفلت نہ کی ہو تو اصل سرمائے کی ذمہ داری کس کی ہے؟",
+            "ar": "في الوكالة بالاستثمار دون تقصير، من يتحمل مخاطر رأس المال؟",
+            "hi": "बिना लापरवाही वाले निवेश वकालह में पूंजी का जोखिम कौन उठाता है?"
+          },
+          "options": {
+            "en": [
+              "The Principal (investor) bears natural market risk; agent is a trustee",
+              "The Agent must guarantee 100% principal plus fixed profit",
+              "The regulator pays losses"
+            ],
+            "ur": [
+              "موکل (سرمایہ کار)؛ وکیل صرف امین ہے",
+              "وکیل کو 100% اصل رقم اور منافع دینا ہوگا",
+              "حکومت نقصان بھرے گی"
+            ],
+            "ar": [
+              "الموكل (المستثمر) يتحمل المخاطر والوكيل أمين",
+              "الوكيل يضمن رأس المال دائماً"
+            ],
+            "hi": [
+              "निवेशक (मुवक्किल) प्राकृतिक जोखिम उठाता है; एजेंट अमीन है",
+              "एजेंट को 100% पूंजी गारंटी देनी होगी"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "A Wakil acts on trust; guaranteeing capital converts agency into a prohibited interest-bearing loan.",
+            "ur": "وکیل امین ہوتا ہے؛ اصل سرمائے کی ضمانت لینا اسے سودی قرض بنا دیتا ہے۔",
+            "ar": "تضمين الوكيل رأس المال يحوّل العقد إلى قرض ربوي.",
+            "hi": "वकील से पूंजी गारंटी लेना अनुबंध को ब्याज-आधारित ऋण बना देता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_kafalah",
+      "order": 9,
+      "arabicTerm": "الكفالة / الضمان",
+      "name": {
+        "en": "9. Kafalah (Third-Party Guarantee & Suretyship)",
+        "ur": "9. کفالت و ضمانت (ادائیگی یا ذمہ داری کی ضمانت)",
+        "ar": "٩. الكفالة والضمان",
+        "hi": "9. कफ़ालह (तीसरे पक्ष की गारंटी व जमानत)"
+      },
+      "definition": {
+        "en": "Conjoining a guarantor's financial or performance liability to that of the principal debtor, so the creditor may claim from either.",
+        "ur": "کسی مقروض یا ذمہ دار کے ذمے کے ساتھ ضامن کا اپنا ذمہ ملا دینا تاکہ حقدار دونوں میں سے کسی سے بھی حق طلب کر سکے۔",
+        "ar": "ضم ذمة الكفيل إلى ذمة الأصيل في المطالبة بدين أو عين أو نفس.",
+        "hi": "मुख्य देनदार के दायित्व के साथ गारंटर का दायित्व जोड़ना ताकि लेनदार दोनों में से किसी से भी मांग सके।"
+      },
+      "purpose": {
+        "en": "Letters of Guarantee (LG), trade credit assurance, employee/contractor performance bonds.",
+        "ur": "بینک گارنٹی، تجارتی ادھار کا تحفظ اور تعمیراتی کارکردگی کی ضمانت۔",
+        "ar": "خطابات الضمان التجارية وضمان الوفاء بالالتزامات.",
+        "hi": "लेटर ऑफ़ गारंटी, व्यापार ऋण सुरक्षा और प्रदर्शन बॉन्ड।"
+      },
+      "shariahPrinciples": {
+        "en": "Kafalah is a charitable act (Aqd Tabarru'). Charging a percentage fee purely for lending one's credit/guarantee is prohibited (equivalent to charging interest on debt); only actual administrative issuance expenses may be recovered.",
+        "ur": "کفالت ایک تبرعی و احسان کا عقد ہے۔ صرف ضمانت دینے پر فیصد کے حساب سے فیس لینا جائز نہیں کیونکہ یہ قرض پر سود کے مشابہ ہے؛ البتہ اصل کاغذی و انتظامی اخراجات وصول کیے جا سکتے ہیں۔",
+        "ar": "الكفالة عقد تبرع؛ لا يجوز أخذ أجر على مجرد الضمان، ويجوز استيفاء المصاريف الإدارية الفعلية فقط.",
+        "hi": "कफ़ालह परोपकारी अनुबंध है। केवल गारंटी देने पर प्रतिशत शुल्क लेना वर्जित है; केवल वास्तविक प्रशासनिक खर्च लिया जा सकता है।"
+      },
+      "conditions": {
+        "en": [
+          "Guarantor has legal capacity to contract debts and donate.",
+          "Guaranteed debt or obligation exists and is lawful.",
+          "No profit fee charged solely for the guarantee risk itself."
+        ],
+        "ur": [
+          "کفیل عاقل و بالغ اور مالی اہلیت رکھتا ہو۔",
+          "جس حق کی ضمانت دی جائے وہ جائز ہو۔",
+          "ضمانت پر محض خطرے کی وجہ سے نفع یا فیصد کمیشن نہ لیا جائے۔"
+        ],
+        "ar": [
+          "أهلية الكفيل للتبرع، ومشروعية الالتزام المكفول، وعدم أخذ مقابل مالي للضمان."
+        ],
+        "hi": [
+          "गारंटर कानूनी रूप से सक्षम हो, मूल दायित्व वैध हो, और गारंटी पर लाभ शुल्क न हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Creditor gains added security; guarantor who pays the debt has right of recourse against the debtor if granted with permission.",
+        "ur": "قرض خواہ کو تحفظ ملتا ہے؛ ضامن اگر مقروض کی اجازت سے ادا کرے تو اس سے اصل رقم واپس لے سکتا ہے۔",
+        "ar": "للدائن التوثيق، وللكفيل الرجوع على المدين بما أداه عنه بإذنه.",
+        "hi": "लेनदार को सुरक्षा मिलती है; गारंटर भुगतान के बाद अनुमति से देनदार से मूल राशि ले सकता है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Guarantor assumes secondary payment liability without gaining ownership of underlying goods.",
+        "ur": "کفیل پر ادائیگی کی ذمہ داری آتی ہے، مال کی ملکیت منتقل نہیں ہوتی۔",
+        "ar": "تترتب ذمة مالية تبعية دون انتقال ملكية المبيع.",
+        "hi": "गारंटर पर केवल भुगतान दायित्व आता है, वस्तु का स्वामित्व नहीं।"
+      },
+      "profitAndLossRules": {
+        "en": "Zero profit allowed on guarantee; guarantor recovers only exact principal paid plus actual clerical costs.",
+        "ur": "ضمانت پر کوئی نفع جائز نہیں؛ صرف ادا کی گئی اصل رقم اور حقیقی دفتری اخراجات واپس لیے جا سکتے ہیں۔",
+        "ar": "لا ربح في الضمان؛ ولا يطالب الكفيل المدين إلا بما دفعه فعلاً.",
+        "hi": "गारंटी पर कोई लाभ नहीं; केवल चुकाई गई वास्तविक राशि वापस ली जा सकती है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Bank charging 1.5% quarterly fee on an unfunded Letter of Guarantee beyond actual processing expenses.",
+          "Demanding markup from debtor after settling guarantor payout."
+        ],
+        "ur": [
+          "بینک گارنٹی پر حقیقی اخراجات کے بجائے رقم کے تناسب سے فیس لینا۔",
+          "ادائیگی کے بعد مقروض سے اصل رقم سے زیادہ وصول کرنا۔"
+        ],
+        "ar": [
+          "فرض عمولة نسبية على خطاب الضمان تتجاوز التكلفة الفعلية، أو الرجوع بزيادة على المدين."
+        ],
+        "hi": [
+          "वास्तविक प्रशासनिक खर्च से अधिक प्रतिशत गारंटी शुल्क लेना या देनदार से बढ़ी हुई राशि मांगना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "An Islamic bank issues a customs performance guarantee by charging only documented administrative handling cost or taking 100% cash cover via Wakalah.",
+        "ur": "اسلامی بینک کسٹم گارنٹی جاری کرتے وقت صرف حقیقی انتظامی لاگت لے یا 100% نقد کیش کور و وکالت سے خدمت دے۔",
+        "ar": "إصدار خطاب ضمان بالاقتصار على المصاريف الإدارية الفعلية أو بغطاء نقدي ووكالة.",
+        "hi": "इस्लामी बैंक केवल वास्तविक प्रशासनिक खर्च लेकर या 100% नक़द कवर द्वारा गारंटी जारी करता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 5 (Guarantees)",
+      "sbpGuidance": {
+        "en": "SBP Islamic Letters of Guarantee restrict fees strictly to actual verifiable costs, separating ancillary Wakalah services.",
+        "ur": "اسٹیٹ بینک اسلامی بینک گارنٹی میں ضمانت پر کمیشن کے بجائے صرف حقیقی اخراجات یا الگ خدمت کی فیس کی اجازت دیتا ہے۔",
+        "ar": "يقيد بنك الدولة رسوم خطابات الضمان بالتكلفة الفعلية.",
+        "hi": "SBP इस्लामी गारंटी में केवल वास्तविक सत्यापन योग्य लागत वसूलने की अनुमति देता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All four schools forbid fees purely for guarantee; contemporary councils (IIFA Resolution 12) permit actual administrative expense reimbursement.",
+        "ur": "چاروں ائمہ محض ضمانت پر اجرت کو حرام کہتے ہیں؛ مجمع الفقہ (قرارداد 12) نے صرف حقیقی انتظامی لاگت کی اجازت دی ہے۔",
+        "ar": "اتفق المذاهب الأربعة على حرمة أجر الضمان، وأجاز مجمع الفقه (١٢) المصاريف الفعلية.",
+        "hi": "चारों मज़हब गारंटी पर लाभ शुल्क मना करते हैं; IIFA प्रस्ताव 12 केवल वास्तविक खर्च की अनुमति देता है।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "How are our bank's Letter of Guarantee fees audited to ensure they reflect actual processing cost rather than guarantee amount?"
+        ],
+        "ur": [
+          "کیا گارنٹی فیس رقم کے فیصد کے بجائے واقعی حقیقی اخراجات پر مبنی ہے؟"
+        ],
+        "ar": [
+          "هل رسوم خطاب الضمان مقطوعة على قدر التكلفة الفعلية أم مرتبطة بمبلغ الضمان؟"
+        ],
+        "hi": [
+          "क्या गारंटी शुल्क राशि के प्रतिशत के बजाय वास्तविक प्रक्रिया खर्च पर आधारित है?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 282,
+          "endAyah": 282,
+          "contextNote": {
+            "en": "Documentation and securing debt rights cleanly.",
+            "ur": "قرض اور مالی ذمہ داریوں کو تحریری و محفوظ بنانے کا حکم۔",
+            "ar": "توثيق الديون والحقوق بوضوح.",
+            "hi": "ऋण व वित्तीय दायित्वों का स्पष्ट दस्तावेज़ीकरण।"
+          },
+          "businessRelevance": {
+            "en": "Kafalah provides written suretyship without usurious fees.",
+            "ur": "کفالت بغیر سودی فیس کے تجارتی حقوق کو تحفظ فراہم کرتی ہے۔",
+            "ar": "الكفالة توثيق مشروع للحقوق دون استغلال ربوي.",
+            "hi": "कफ़ालह बिना सूद के अधिकारों को सुरक्षा प्रदान करती है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2400"],
+      "mcqs": [
+        {
+          "id": "mcq_kaf_1",
+          "question": {
+            "en": "Under AAOIFI Standard No. 5, may an institution charge a pure profit fee solely for giving a financial guarantee?",
+            "ur": "AAOIFI معیار 5 کے مطابق کیا محض مالی ضمانت دینے پر نفع یا کمیشن لینا جائز ہے؟",
+            "ar": "وفق معيار أيوفي ٥، هل يجوز أخذ أجر ربحي مقابل مجرد تقديم الكفالة؟",
+            "hi": "AAOIFI मानक 5 के अनुसार क्या केवल वित्तीय गारंटी देने पर लाभ शुल्क लेना वैध है?"
+          },
+          "options": {
+            "en": [
+              "No; guarantees are charitable, and only actual administrative costs may be recovered",
+              "Yes, 5% per year",
+              "Yes if written down"
+            ],
+            "ur": [
+              "نہیں؛ کفالت تبرع ہے، صرف حقیقی دفتری اخراجات وصول کیے جا سکتے ہیں",
+              "ہاں 5 فیصد سالانہ",
+              "تحریر کرنے سے جائز ہو جاتا ہے"
+            ],
+            "ar": [
+              "لا؛ الكفالة تبرع وتقتصر الرسوم على التكاليف الإدارية الفعلية",
+              "نعم بنسبة ٥٪ سنوياً"
+            ],
+            "hi": [
+              "नहीं; गारंटी परोपकार है, केवल वास्तविक प्रशासनिक लागत ली जा सकती है",
+              "हाँ, 5% वार्षिक"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Charging for guarantee risks leads to Riba if the guarantor pays and collects extra from the debtor.",
+            "ur": "ضمانت پر اجرت لینا بالآخر سود کا دروازہ کھولتا ہے، اس لیے صرف حقیقی اخراجات جائز ہیں۔",
+            "ar": "أخذ الأجر على الضمان يؤدي إلى الربا في المآل.",
+            "hi": "गारंटी पर शुल्क अंततः सूद का रूप ले लेता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_qard_hasan",
+      "order": 10,
+      "arabicTerm": "القرض الحسن",
+      "name": {
+        "en": "10. Qard Hasan (Interest-Free Benevolent Loan)",
+        "ur": "10. قرضِ حسن (بغیر سود و اضافے کے قرض)",
+        "ar": "١٠. القرض الحسن",
+        "hi": "10. क़र्ज़-ए-हसन (ब्याज-मुक्त परोपकारी ऋण)"
+      },
+      "definition": {
+        "en": "Transferring ownership of fungible cash or goods to a borrower who must return an exact equal amount later, with zero stipulated excess or benefit.",
+        "ur": "نقد رقم یا مثلی چیز قرض دینا تاکہ مقروض اتنی ہی مقدار واپس کرے، بغیر کسی طے شدہ اضافے یا مشروط فائدے کے۔",
+        "ar": "دفع مال إرفاقاً لمن ينتفع به ويرد بدله مثله دون أي زيادة مشروطة.",
+        "hi": "बिना किसी शर्त या अतिरिक्त लाभ के नक़द या मानक वस्तु उधार देना ताकि बराबर मात्रा वापस मिले।"
+      },
+      "purpose": {
+        "en": "Microfinance solidarity, employee welfare loans, Islamic bank current accounts, and family emergency relief.",
+        "ur": "بلاسود مائیکرو فنانس، ملازمین کی فلاحی مدد، کرنٹ اکاؤنٹس اور کاروباری اخوت۔",
+        "ar": "التمويل الاجتماعي، وسلف الموظفين، والحسابات الجارية الإسلامية.",
+        "hi": "ब्याज-मुक्त माइक्रोफ़ाइनेंस, कर्मचारी कल्याण ऋण और इस्लामी चालू खाते।"
+      },
+      "shariahPrinciples": {
+        "en": "Any stipulated increment, gift, discount, or reciprocal commercial benefit attached to a loan is Riba (2:275–280). Voluntary gratitude at repayment without prior condition or custom is praised.",
+        "ur": "قرض پر کوئی بھی مشروط اضافہ، تحفہ یا منفعت سود ہے (البقرہ 275-280)؛ تنگدست کو مہلت دینا عبادت ہے اور بغیر شرط و عرف کے حسنِ ادا مستحسن ہے۔",
+        "ar": "كل قرض جر نفعاً مشروطاً فهو ربا، مع استحباب إنظار المعسر وحسن القضاء دون شرط.",
+        "hi": "ऋण पर कोई भी शर्तित लाभ सूद है; कठिनाई में मोहलत देना नेकी है।"
+      },
+      "conditions": {
+        "en": [
+          "Amount, currency/type, and repayment due terms clearly documented (2:282).",
+          "Zero stipulated interest, late-payment profit, or tied purchase condition.",
+          "Borrower returns exact principal only."
+        ],
+        "ur": [
+          "قرض کی مقدار، کرنسی اور واپسی کی تاریخ تحریر کی جائے (2:282)۔",
+          "کوئی مشروط منافع، تاخیری جرمانہ یا مشروط خریداری نہ ہو۔",
+          "صرف اصل رقم واپس لی جائے۔"
+        ],
+        "ar": [
+          "تحديد القدر والأجل وتوثيقهما، وانتفاء أي منفعة مشروطة للمقرض."
+        ],
+        "hi": [
+          "राशि व वापसी अवधि लिखित हो और कोई शर्तित अतिरिक्त लाभ न हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Creditor has full right to exact principal (with Rahn/Kafalah security); struggling debtor deserves grace respite (2:280).",
+        "ur": "قرض خواہ کو اصل رقم اور رہن/ضمانت کا حق ہے؛ واقعی تنگدست مقروض کو مہلت دینا قرآنی حکم ہے۔",
+        "ar": "للمقرض استرداد رأس ماله وتوثيقه برهن، وللمعسر النظرة إلى ميسرة.",
+        "hi": "ऋणदाता को मूल राशि व जमानत का अधिकार है; कठिनाई वाले देनदार को मोहलत दी जाए।"
+      },
+      "ownershipAndPossession": {
+        "en": "Borrower becomes owner of loaned funds upon receipt and owes an equal liability.",
+        "ur": "قبضہ پانے پر مقروض رقم کا مالک بن جاتا ہے اور اس کے ذمہ اتنی ہی واپسی لازم ہوتی ہے۔",
+        "ar": "يملك المقترض المال بالقبض ويثبت مثله في ذمته.",
+        "hi": "ऋण प्राप्त होते ही देनदार उस धन का स्वामी होता है और बराबर वापसी का देनदार बनता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Zero financial return allowed; bank current accounts structured as Qard preserve 100% principal without profit.",
+        "ur": "قرض میں نفع کی گنجائش نہیں؛ اسی اصول پر کرنٹ اکاؤنٹ میں اصل رقم محفوظ رہتی ہے اور منافع نہیں دیا جاتا۔",
+        "ar": "لا عائد على القرض؛ ومن تطبيقاته الحسابات الجارية المضمونة بلا عائد.",
+        "hi": "ऋण पर कोई लाभ नहीं; इसी नियम से चालू खाते में मूल धन सुरक्षित रहता है और ब्याज नहीं मिलता।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Charging percentage 'service fee' exceeding actual direct loan bookkeeping expense.",
+          "Granting interest-free loan conditioned on buyer purchasing goods at inflated price."
+        ],
+        "ur": [
+          "سروس چارجز کے نام پر رقم کے فیصد سے منافع وصول کرنا۔",
+          "قرض کے ساتھ مہنگے داموں شے بیچنے کی شرط لگانا۔"
+        ],
+        "ar": [
+          "فرض رسوم خدمة نسبية تتجاوز التكلفة الفعلية، أو اشتراط شراء سلعة بسعر أعلى."
+        ],
+        "hi": [
+          "सेवा शुल्क के नाम पर प्रतिशत ब्याज लेना, या ऋण के साथ ऊंची कीमत पर वस्तु बेचने की शर्त लगाना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Akhuwat-style community Qard Hasan microfinance program providing zero-interest startup loans with verifiable minimal clerical cost only.",
+        "ur": "اخوت ماڈل کے تحت بلاسود کاروباری قرضِ حسن تاکہ چھوٹا تاجر سود کے بغیر پاؤں پر کھڑا ہو سکے۔",
+        "ar": "منح قروض حسنة متناهية الصغر لأصحاب المشاريع الناشئة دون أي فوائد.",
+        "hi": "छोटे उद्यमियों के लिए बिना ब्याज वाला क़र्ज़-ए-हसन माइक्रोफ़ाइनेंस प्रोग्राम।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 19 (Loan / Qard)",
+      "sbpGuidance": {
+        "en": "Islamic current deposits operate under Qard; Qard service charges are capped at actual direct expenses only.",
+        "ur": "اسلامی بینکوں کے کرنٹ اکاؤنٹس عقدِ قرض پر چلتے ہیں اور انتظامی فیس صرف حقیقی لاگت تک محدود ہے۔",
+        "ar": "تعتمد الحسابات الجارية على القرض الحسن مع حظر أي رسوم تتجاوز التكلفة الحقيقية.",
+        "hi": "इस्लामी चालू खाते क़र्ज़ के अंतर्गत चलते हैं और शुल्क केवल वास्तविक खर्च तक सीमित है।"
+      },
+      "madhhabDifferences": {
+        "en": "Unanimous prohibition of any stipulated excess; scholars permit passing only exact third-party transfer/stamping costs.",
+        "ur": "قرض پر کسی بھی مشروط اضافے کی حرمت پر اجماع ہے؛ صرف حقیقی دفتری اخراجات کی وصولی کی اجازت ہے۔",
+        "ar": "إجماع على حرمة كل زيادة مشروطة، مع جواز تحميل التكاليف الإدارية الفعلية دون ربح.",
+        "hi": "शर्तित अतिरिक्त लाभ पर सर्वसम्मति से प्रतिबंध है; केवल वास्तविक प्रशासनिक खर्च अनुमत है।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "How are administrative costs audited per loan file so they never become disguised percentage interest?"
+        ],
+        "ur": [
+          "انتظامی اخراجات کو فیصد کے بجائے فی فائل حقیقی لاگت تک کیسے محدود رکھا گیا ہے؟"
+        ],
+        "ar": [
+          "كيف نضمن أن الرسوم الإدارية تعكس التكلفة الفعلية دون ارتباط بمبلغ القرض؟"
+        ],
+        "hi": [
+          "यह कैसे सुनिश्चित किया जाता है कि प्रशासनिक शुल्क राशि के प्रतिशत के बजाय वास्तविक खर्च पर हो?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 280,
+          "endAyah": 280,
+          "contextNote": {
+            "en": "Compassion toward debtors in hardship.",
+            "ur": "تنگدست مقروض کو آسانی تک مہلت دینے یا معاف کرنے کی فضیلت۔",
+            "ar": "الأمر بإنظار المعسر إلى ميسرة.",
+            "hi": "कठिनाई में पड़े देनदार को मोहलत देने का आदेश।"
+          },
+          "businessRelevance": {
+            "en": "Forbids compounding penalties on distressed borrowers.",
+            "ur": "پریشان حال مقروض پر جرمانے بڑھانا قرآنی تعلیم کے خلاف ہے۔",
+            "ar": "تحريم مضاعفة الديون على المتعثرين.",
+            "hi": "कठिनाई वाले देनदार पर जुर्माना बढ़ाना वर्जित है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2400", "muslim_1598"],
+      "mcqs": [
+        {
+          "id": "mcq_qard_1",
+          "question": {
+            "en": "When a lender recovers Qard Hasan, which additional charge is permitted under AAOIFI Standard 19?",
+            "ur": "قرضِ حسن کی واپسی پر AAOIFI معیار 19 کے تحت کیا وصول کرنا جائز ہے؟",
+            "ar": "ما الذي يجوز تحصيله مع أصل القرض الحسن وفق معيار أيوفي ١٩؟",
+            "hi": "क़र्ज़-ए-हसन की वापसी पर AAOIFI मानक 19 के अनुसार क्या लेना वैध है?"
+          },
+          "options": {
+            "en": [
+              "Only exact principal plus verifiable direct actual administrative cost (zero profit)",
+              "A 4% inflation indexation interest",
+              "A compulsory gift"
+            ],
+            "ur": [
+              "صرف اصل رقم اور ثابت شدہ حقیقی دفتری لاگت (بغیر نفع)",
+              "سالانہ 4 فیصد مہنگائی الاؤنس",
+              "لازمی تحفہ"
+            ],
+            "ar": [
+              "أصل القرض والتكاليف الإدارية الفعلية المثبتة فقط",
+              "فائدة ٤٪ للتضخم"
+            ],
+            "hi": [
+              "केवल मूल राशि और प्रमाणित वास्तविक प्रशासनिक खर्च (बिना लाभ)",
+              "4% मुद्रास्फीति ब्याज"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Any percentage profit or forced gift on a loan is Riba; only actual non-profit service expenses may be reimbursed.",
+            "ur": "قرض پر نفع یا مشروط تحفہ سود ہے؛ صرف حقیقی دفتری لاگت لی جا سکتی ہے۔",
+            "ar": "أي زيادة ربحية على القرض ربا محرم.",
+            "hi": "ऋण पर कोई भी लाभ या अनिवार्य उपहार सूद है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_rahn",
+      "order": 11,
+      "arabicTerm": "الرهن",
+      "name": {
+        "en": "11. Rahn (Halal Collateral & Security Pledge)",
+        "ur": "11. رہن (کاروباری ضمانت و گروی کا شرعی نظام)",
+        "ar": "١١. عقد الرهن",
+        "hi": "11. रहन (हलाल जमानत व गिरवी अनुबंध)"
+      },
+      "definition": {
+        "en": "Securing a lawful debt (e.g., Murabaha installments or Qard) by pledging a valuable halal asset so the creditor may recover the debt from its sale proceeds upon default.",
+        "ur": "کسی جائز قرض یا ادھار کی واپسی کی مضبوطی کے لیے کوئی قیمتی حلال اثاثہ بطور ضمانت (رہن) رکھنا تاکہ نادہندگی پر اسے بیچ کر حق وصول کیا جا سکے۔",
+        "ar": "توثيق دين ثابت في الذمة بعين مالية يصح بيعها لاستيفاء الدين من ثمنها عند التعذر.",
+        "hi": "किसी वैध ऋण की सुरक्षा के लिए मूल्यवान हलाल संपत्ति गिरवी रखना ताकि चूक होने पर उसकी बिक्री से बकाया वसूला जा सके।"
+      },
+      "purpose": {
+        "en": "Securing credit sales, Murabaha receivables, Salam performance, and Islamic micro-credit without interest.",
+        "ur": "ادھار تجارت، مرابحہ اقساط اور قرضِ حسن کی ادائیگی کو قانونی تحفظ دینا۔",
+        "ar": "توثيق الديون التجارية ومبيعات الآجل والتمويلات الإسلامية.",
+        "hi": "उधार बिक्री और इस्लामी वित्तपोषण को बिना ब्याज के सुरक्षित बनाना।"
+      },
+      "shariahPrinciples": {
+        "en": "Creditor CANNOT profit from using the pledged asset if the underlying transaction is a loan (Qard); any yield/benefit belongs to the owner (pledgor). Automatic forfeiture upon default without fair valuation is forbidden.",
+        "ur": "قرض کے بدلے رکھی گئی رہن کی چیز سے قرض خواہ کا مفت فائدہ اٹھانا (جیسے گھر میں رہنا یا زمین کی آمدن لینا) سود و حرام ہے؛ آمدن اصل مالک کی ہے اور ڈیفالٹ پر منصفانہ قیمت سے بیچ کر صرف بقایا رقم کاٹی جائے گی۔",
+        "ar": "لا يجوز للمرتهن الانتفاع بالمرهون في دين القرض لأن ذلك قرض جر نفعاً؛ وتُباع العين بالعدل وتُرد الزيادة للراهن.",
+        "hi": "ऋण के बदले गिरवी रखी वस्तु से ऋणदाता का मुफ़्त लाभ उठाना सूद है; चूक पर न्यायसंगत बिक्री के बाद शेष राशि मालिक को लौटाई जाती है।"
+      },
+      "conditions": {
+        "en": [
+          "Underlying debt must be valid and Shariah-compliant.",
+          "Pledged asset must be valuable, halal, and transferable.",
+          "No automatic ownership seizure clause upon late payment."
+        ],
+        "ur": [
+          "اصل قرض یا ادھار جائز و شرعی ہو۔",
+          "رہن رکھی جانے والی چیز حلال، قیمتی اور قابلِ فروخت ہو۔",
+          "تاخیر پر خودکار ضبطی کی شرط نہ ہو بلکہ منصفانہ فروخت کے بعد باقی رقم مالک کو ملے۔"
+        ],
+        "ar": [
+          "ثبوت دين مشروع، وقابلية المرهون للبيع، ومنع شرط الغلق (تملك المرتهن للمرهون تلقائياً)."
+        ],
+        "hi": [
+          "मूल ऋण वैध हो, गिरवी संपत्ति हलाल व बेचने योग्य हो, और स्वतः ज़ब्ती की शर्त न हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Pledgor retains ownership, growth, and surplus sale proceeds; pledgee holds security priority.",
+        "ur": "راہن (مالک) اصل ملکیت اور زائد رقم کی واپسی کا حقدار ہے؛ مرتہن کو حقِ ترجیح حاصل ہے۔",
+        "ar": "للمالك الملك والغلة ورد الفائض عند البيع، وللمرتهن أولوية الاستيفاء.",
+        "hi": "मालिक का स्वामित्व व अतिरिक्त बिक्री राशि पर अधिकार बना रहता है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Ownership never leaves the debtor until judicial/authorized fair sale upon default.",
+        "ur": "ملکیت مقروض ہی کی رہتی ہے جب تک نادہندگی پر باقاعدہ فروخت نہ ہو۔",
+        "ar": "يبقى المرهون مملوكاً للراهن ولا ينتقل إلا ببيع عادل عند العجز.",
+        "hi": "चूक पर न्यायसंगत बिक्री तक स्वामित्व देनदार का ही रहता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Maintenance of pledged property falls on owner; pledgee must safeguard it as trust.",
+        "ur": "گروی مال کی مرمت و خرچ مالک کے ذمے اور حفاظت مرتہن کی امانت ہے۔",
+        "ar": "نفقة المرهون على مالكه وحفظه أمانة عند المرتهن.",
+        "hi": "संपत्ति का रखरखाव मालिक का है और सुरक्षित रखना गारंटीधारक की अमानत है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Taking a farmer's land as mortgage against a loan and keeping its crop harvest ('mortgage with usufruct').",
+          "Seizing a $50,000 car permanently for a $5,000 missed installment."
+        ],
+        "ur": [
+          "قرض دے کر زمین گروی رکھنا اور اس کی فصل/کرایہ خود کھانا (یہ خالص سود ہے)۔",
+          "معمولی قرض کے بدلے قیمتی اثاثہ پورا ضبط کر لینا۔"
+        ],
+        "ar": [
+          "انتفاع الدائن بالدار أو الأرض المرهونة مقابل القرض، أو اشتراط تملك الرهن بأقل من قيمته."
+        ],
+        "hi": [
+          "कर्ज़ के बदले खेत गिरवी रखकर उसकी फसल स्वयं रखना (यह स्पष्ट सूद है), या कम बकाये में पूरी संपत्ति हड़पना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "A wholesaler executes a Murabaha inventory purchase secured by registered pledge (Rahn) over commercial equipment.",
+        "ur": "ہول سیل تاجر مرابحہ کی ادھار ادائیگی کے تحفظ کے لیے اپنی مشینری یا جائیداد کے کاغذات بطور رہن رکھوائے۔",
+        "ar": "تقديم أصل تجاري كرهن مسجل لضمان أقساط مرابحة مشروعة دون استغلال عوائده.",
+        "hi": "थोक व्यापारी मुराबहा किस्तों की सुरक्षा के लिए व्यावसायिक मशीनरी को विधिवत गिरवी (रहन) रखता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 39 (Mortgage and its Contemporary Applications)",
+      "sbpGuidance": {
+        "en": "Islamic banks take registered mortgage/charge strictly to secure Murabaha/Diminishing Musharakah obligations.",
+        "ur": "اسلامی بینک جائز فنانسنگ کی ادائیگی محفوظ بنانے کے لیے رجسٹرڈ رہن لیتے ہیں، اس سے اضافی منافع نہیں کما سکتے۔",
+        "ar": "تستخدم المصارف الإسلامية الرهن المسجل لتوثيق التمويلات الحلال فقط.",
+        "hi": "इस्लामी बैंक केवल हलाल वित्तपोषण की सुरक्षा के लिए पंजीकृत रहन लेते हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Shafi'i, Maliki & Hanbali restrict pledgee use of collateral; modern statutory registered pledge satisfies Maliki constructive possession.",
+        "ur": "جمہور ائمہ قرض میں مرتہن کے استعمال کو حرام قرار دیتے ہیں؛ جدید رجسٹرڈ رہن قبضہ حکمی کے طور پر معتبر ہے۔",
+        "ar": "يُجمع الفقهاء على حرمة استغلال الرهن في القرض، والرهن المسجل يقوم مقام القبض.",
+        "hi": "ऋण में गिरवी के उपयोग पर विद्वान एकमत से रोक लगाते हैं; पंजीकृत रहन मान्य क़ब्ज़ है।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Does the liquidation clause ensure excess sale proceeds return immediately to the debtor?"
+        ],
+        "ur": [
+          "کیا رہن بیچنے پر بقایا قرض منہا کر کے زائد رقم مالک کو لوٹانے کی شق درج ہے؟"
+        ],
+        "ar": [
+          "هل يضمن العقد رد ما زاد عن قيمة الدين للراهن عند تصفية الرهن؟"
+        ],
+        "hi": [
+          "क्या बिक्री के बाद ऋण से अधिक बची राशि मालिक को लौटाने की स्पष्ट शर्त है?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 283,
+          "endAyah": 283,
+          "contextNote": {
+            "en": "Quranic mention of pledges in trust/travel; read alongside 2:282.",
+            "ur": "سفر و عدمِ کاتب کی صورت میں قبضہ میں رہن لینے کا قرآنی ذکر (2:283 متصل 2:282)۔",
+            "ar": "ذكر الرهان المقبوضة لتوثيق الحقوق (البقرة ٢٨٣).",
+            "hi": "क़ब्ज़ में ली गई ज़मानत (रहन) का क़ुरआनी उल्लेख (2:283)।"
+          },
+          "businessRelevance": {
+            "en": "Confirms collateral is a valid non-usurious security mechanism.",
+            "ur": "ثابت کرتا ہے کہ رہن بغیر سود کے حق محفوظ رکھنے کا جائز ذریعہ ہے۔",
+            "ar": "يؤكد مشروعية الرهن كضمان غير ربوي.",
+            "hi": "यह प्रमाणित करता है कि रहन बिना सूद सुरक्षा का वैध माध्यम है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2400"],
+      "mcqs": [
+        {
+          "id": "mcq_rahn_1",
+          "question": {
+            "en": "If a creditor lends money against a pledged house, may the creditor live in it rent-free until repaid?",
+            "ur": "اگر قرض دے کر مکان رہن رکھوایا جائے تو کیا قرض خواہ واپسی تک مفت رہ سکتا ہے؟",
+            "ar": "إذا ارتهن الدائن داراً مقابل قرض، هل يجوز له سكنها مجاناً؟",
+            "hi": "यदि ऋण के बदले मकान गिरवी रखा जाए, तो क्या ऋणदाता उसमें मुफ़्त रह सकता है?"
+          },
+          "options": {
+            "en": [
+              "No; deriving free usufruct from a loan's collateral is Riba",
+              "Yes, always permitted",
+              "Only for 6 months"
+            ],
+            "ur": [
+              "نہیں؛ قرض کے بدلے گروی شے سے مفت فائدہ اٹھانا سود ہے",
+              "ہاں، ہمیشہ جائز ہے",
+              "صرف چھ ماہ کے لیے"
+            ],
+            "ar": [
+              "لا؛ الانتفاع المجاني برهن القرض ربا محرم",
+              "نعم يجوز دائماً"
+            ],
+            "hi": [
+              "नहीं; ऋण के बदले गिरवी वस्तु से मुफ़्त उपयोग सूद है",
+              "हाँ, हमेशा वैध है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Any conditional benefit extracted from a loan pledge constitutes prohibited Riba; the asset yields belong strictly to the debtor/owner.",
+            "ur": "قرض کے عوض گروی شے کا منافع قرض خواہ کے لیے حرام اور اصل مالک کا حق ہے۔",
+            "ar": "كل قرض جر نفعاً من الرهن فهو ربا، والغلة للمالك.",
+            "hi": "गिरवी संपत्ति का लाभ मूल मालिक का है; ऋणदाता द्वारा मुफ्त उपयोग सूद है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_hawalah",
+      "order": 12,
+      "arabicTerm": "الحوالة",
+      "name": {
+        "en": "12. Hawalah (Lawful Debt Transfer & Remittance)",
+        "ur": "12. حوالہ (قرض یا ذمہ داری کی شرعی منتقلی)",
+        "ar": "١٢. الحوالة",
+        "hi": "12. हवालह (ऋण हस्तांतरण एवं प्रेषण अनुबंध)"
+      },
+      "definition": {
+        "en": "Transferring an existing debt claim from the transferor's liability (Muhil) onto a third party (Muhal Alayh) who owes or agrees to pay the creditor (Muhal).",
+        "ur": "کسی مقروض کا اپنا واجب الادا قرض کسی تیسرے شخص کے ذمے منتقل کرنا تاکہ قرض خواہ اس تیسرے شخص سے اپنا حق وصول کرے۔",
+        "ar": "نقل الدين من ذمة المحيل إلى ذمة المحال عليه.",
+        "hi": "मौजूदा ऋण दायित्व को मूल देनदार से किसी तीसरे पक्ष को हस्तांतरित करना ताकि लेनदार उससे बकाया प्राप्त करे।"
+      },
+      "purpose": {
+        "en": "Settlement clearing between merchants, checks, trade bills of exchange, and non-discounted invoice settlement at face value.",
+        "ur": "تاجروں کے درمیان باہمی حسابات کی صفائی، چیک، اور اصل قیمت پر واجبات کی ادائیگی کا آسان نظام۔",
+        "ar": "تسوية الذمم المالية بين التجار والشيكات والتحويلات المصرفية المشروعة.",
+        "hi": "व्यापारियों के बीच खाते निपटाने, चेक और अंकित मूल्य पर बिल क्लियरिंग।"
+      },
+      "shariahPrinciples": {
+        "en": "Explicitly sanctioned in Sahih al-Bukhari 2400. Debt transfers ONLY at 100% face value (never discounted like factoring debt for less cash, which creates Riba). Actual transfer fees for international clearing services are distinct.",
+        "ur": "صحیح بخاری 2400 سے صراحتاً ثابت ہے۔ قرض کی منتقلی صرف اصل پوری رقم (100%) پر ہوگی؛ ادھار کاغذ کو کم نقد پر بیچنا (ڈسکاؤنٹنگ) سود ہے۔ البتہ بینک کی حقیقی سروس فیس الگ معاملہ ہے؛ ملکی قوانین (اینٹی منی لانڈرنگ) کی پابندی بھی لازم ہے۔",
+        "ar": "مشروعة بنص البخاري ٢٤٠٠، ويشترط نقل الدين بقيمته الاسمية دون حسم ربوي مع الالتزام بالأنظمة القانونية للتحويل.",
+        "hi": "सहीह बुखारी 2400 से प्रमाणित। ऋण केवल पूरे अंकित मूल्य पर हस्तांतरित हो सकता है (कम नक़द में बिल भुनाना सूद है) और कानूनी नियमों का पालन अनिवार्य है।"
+      },
+      "conditions": {
+        "en": [
+          "Existing valid debt on transferor and equal matching debt/acceptance by payer.",
+          "100% face-value equivalence — zero interest discounting.",
+          "Compliance with lawful banking and anti-money-laundering statutes."
+        ],
+        "ur": [
+          "منتقل ہونے والا قرض حقیقتاً موجود اور جائز ہو۔",
+          "پوری اصل رقم کے برابر انتقال ہو، کم یا زیادہ پر نہ ہو۔",
+          "ملکی بینکنگ اور قانونی ضوابط کی مکمل پابندی کی جائے۔"
+        ],
+        "ar": [
+          "ثبوت الدين، والتماثل في القيمة والصفة، والالتزام بالأنظمة المصرفية القانونية."
+        ],
+        "hi": [
+          "वैध ऋण मौजूद हो, 100% समान मूल्य हो, और राष्ट्रीय बैंकिंग कानूनों का पालन हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Once accepted validly, transferor is discharged unless payer turns insolvent/denies under specified juristic safeguards.",
+        "ur": "حوالہ مکمل ہونے پر اصل مقروض بری ہو جاتا ہے؛ تاہم بعض شرائط میں دیوالیہ ہونے پر واپسی کا حق محفوظ رہتا ہے۔",
+        "ar": "تبرأ ذمة المحيل بالحوالة الصحيحة مع ضمان التوى عند الحنفية.",
+        "hi": "सही हस्तांतरण पर मूल देनदार मुक्त हो जाता है, बशर्ते सुरक्षा शर्तें लागू रहें।"
+      },
+      "ownershipAndPossession": {
+        "en": "Transfers personal credit claim cleanly without trading debt for cash at a profit.",
+        "ur": "ذمہ داری براہِ راست منتقل ہوتی ہے، قرض کو نفع پر نہیں بیچا جاتا۔",
+        "ar": "انتقال الالتزام دون بيع الدين بنقد متفاضل.",
+        "hi": "बिना सूदी मुनाफे के केवल ऋण दायित्व का स्थानांतरण होता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Zero discount spread allowed on transferred debt; only verified bank clerical remittance fee.",
+        "ur": "قرض کی منتقلی پر کمیشن یا ڈسکاؤنٹ کٹوتی جائز نہیں؛ صرف بینک کی سروس فیس الگ لی جا سکتی ہے۔",
+        "ar": "لا يجوز خصم قيمة الدين؛ وتؤخذ أجرة التحويل الفعلي كخدمة مستقلة.",
+        "hi": "ऋण पर कोई कटौती लाभ वर्जित है; केवल वास्तविक प्रेषण सेवा शुल्क अलग लिया जा सकता है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Selling a $10,000 receivable invoice for $9,200 cash (conventional debt factoring / bill discounting).",
+          "Bypassing legal remittance channels unlawfully."
+        ],
+        "ur": [
+          "دس ہزار کا بل نو ہزار دو سو میں بیچنا (بل ڈسکاؤنٹنگ جو سود ہے)۔",
+          "غیر قانونی ہنڈی/حوالہ نیٹ ورکس کے ذریعے ملکی قانون توڑنا۔"
+        ],
+        "ar": [
+          "خصم الأوراق التجارية (بيع الدين بأقل من قيمته)، أو التحويل عبر قنوات غير قانونية."
+        ],
+        "hi": [
+          "₹10,000 का बिल ₹9,200 में बेचना (बिल डिस्काउंटिंग जो सूद है), या अवैध तरीकों से पैसा भेजना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Company A instructs its solvent customer B (who owes A $5,000) to pay A's supplier C $5,000 directly via bank transfer.",
+        "ur": "تاجر الف اپنے مقروض ب کو ہدایت کرے کہ میرا 5 لاکھ روپیہ براہِ راست سپلائر ج کے بینک کھاتے میں منتقل کر دو۔",
+        "ar": "يحيل التاجر دائنه على عميل مقتدر مدين له ليسدد له كامل المبلغ عبر المصرف.",
+        "hi": "व्यापारी अपने देनदार को निर्देश देता है कि वह उसका बकाया सीधे आपूर्तिकर्ता को बैंक से चुका दे।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 7 (Hawalah)",
+      "sbpGuidance": {
+        "en": "Used in licensed bank clearing/remittance; bill discounting at interest is strictly prohibited.",
+        "ur": "لائسنس یافتہ بینکاری اور ادائیگی کے نظام میں رائج ہے؛ سودی بل ڈسکاؤنٹنگ ممنوع ہے۔",
+        "ar": "معتمد في التحويلات المصرفية المرخصة مع تحريم خصم السندات.",
+        "hi": "लाइसेंस प्राप्त बैंकिंग प्रेषण में उपयोग; सूदी बिल डिस्काउंटिंग वर्जित है।"
+      },
+      "madhhabDifferences": {
+        "en": "Majority obligate creditor acceptance when payer is solvent (Bukhari 2400); Hanafis require creditor consent alongside recourse protection if payer defaults.",
+        "ur": "جمہور صاحبِ حیثیت پر حوالہ قبول کرنے کو لازم کہتے ہیں (بخاری 2400)؛ احناف قرض خواہ کی رضامندی کے ساتھ دیوالیہ کی صورت میں اصل مقروض سے واپسی کا حق رکھتے ہیں۔",
+        "ar": "يوجب الجمهور القبول على المليء ويشترط الحنفية رضا المحال مع ضمان التوى.",
+        "hi": "अधिकांश विद्वान सक्षम व्यक्ति पर हवालह स्वीकारना आवश्यक मानते हैं; हनफ़ी अतिरिक्त सुरक्षा रखते हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Is every receivable transfer executed strictly at par without early-payment discount spread?"
+        ],
+        "ur": [
+          "کیا واجب الادا رقم کی منتقلی بغیر کسی کٹوتی کے پوری اصل رقم پر ہو رہی ہے؟"
+        ],
+        "ar": [
+          "هل يتم نقل الحقوق المالية بقيمتها الاسمية الكاملة دون خصم؟"
+        ],
+        "hi": [
+          "क्या सभी प्राप्य हस्तांतरण बिना किसी कटौती के पूरे अंकित मूल्य पर हो रहे हैं?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 282,
+          "endAyah": 282,
+          "contextNote": {
+            "en": "Clear documentation of debt settlements.",
+            "ur": "مالی ذمہ داریوں اور تصفیہ کی تحریری حفاظت۔",
+            "ar": "كتابة الحقوق وتوثيق تسويتها.",
+            "hi": "ऋण निपटान का स्पष्ट दस्तावेज़ीकरण।"
+          },
+          "businessRelevance": {
+            "en": "Written Hawalah instructions eliminate three-party misunderstandings.",
+            "ur": "تحریری حوالہ تین فریقوں کے حسابات کو شفاف بناتا ہے۔",
+            "ar": "توثيق الحوالة يمنع النزاع بين الأطراف الثلاثة.",
+            "hi": "लिखित हवालह तीनों पक्षों के बीच स्पष्टता लाता है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2400"],
+      "mcqs": [
+        {
+          "id": "mcq_haw_1",
+          "question": {
+            "en": "Why is conventional 'bill discounting' (selling a $10,000 invoice due in 90 days for $9,600 today) invalid under Hawalah?",
+            "ur": "90 دن بعد واجب الادا دس ہزار کے بل کو آج 9600 میں بیچنا شرعی حوالہ کیوں نہیں ہے؟",
+            "ar": "لماذا لا يُعد خصم الكمبيالة (بيع دين ١٠ آلاف بـ٩٦٠٠ نقداً) حوالة شرعية؟",
+            "hi": "90 दिन बाद देय 10,000 के बिल को आज 9,600 में बेचना वैध हवालह क्यों नहीं है?"
+          },
+          "options": {
+            "en": [
+              "Because transferring a cash debt for less spot cash is Riba (Bay' al-Dayn); Hawalah requires 100% parity",
+              "Because banks dislike invoices",
+              "Because 90 days is too long"
+            ],
+            "ur": [
+              "کیونکہ نقد قرض کو کم رقم کے بدلے بیچنا سود ہے جبکہ شرعی حوالہ 100 فیصد برابر رقم پر ہوتا ہے",
+              "کیونکہ انوائس استعمال ہوتی ہے",
+              "کیونکہ 90 دن زیادہ ہیں"
+            ],
+            "ar": [
+              "لأنه بيع دين بأقل من قيمته وهو ربا، بينما الحوالة نقل للدين بنفس قيمته",
+              "لأن المدة طويلة"
+            ],
+            "hi": [
+              "क्योंकि कम नक़द में ऋण बेचना सूद है; हवालह में 100% बराबर मूल्य आवश्यक है",
+              "क्योंकि 90 दिन बहुत अधिक हैं"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Per AAOIFI SS 7 and IIFA resolutions, debt-for-cash at a discount is prohibited Riba; Hawalah transfers debt at par.",
+            "ur": "AAOIFI معیار 7 کے مطابق ادھار رقم کو کم نقد پر بیچنا سود ہے؛ حوالہ ہمیشہ برابر رقم پر ہوتا ہے۔",
+            "ar": "تتطلب الحوالة التماثل الكامل في القدر منعاً للربا.",
+            "hi": "AAOIFI मानक 7 के अनुसार कम नक़द पर ऋण बेचना सूद है; हवालह सदैव समान मूल्य पर होता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_musawamah",
+      "order": 13,
+      "arabicTerm": "المساومة",
+      "name": {
+        "en": "13. Musawamah (Bargained / Negotiated Price Sale)",
+        "ur": "13. مساومہ (لاگت بتائے بغیر باہمی بھاؤ تاؤ کی بیع)",
+        "ar": "١٣. بيع المساومة",
+        "hi": "13. मुसावमह (आपसी मोलभाव से बिक्री)"
+      },
+      "definition": {
+        "en": "An ordinary negotiated sale where the seller and buyer agree upon a total price without the seller being obligated to disclose original acquisition cost.",
+        "ur": "عام خرید و فروخت جس میں بائع اپنی اصل قیمتِ خرید بتانے کا پابند نہیں ہوتا بلکہ دونوں فریق باہمی رضامندی و بھاؤ تاؤ سے کل قیمت طے کرتے ہیں۔",
+        "ar": "بيع عادي يتفق فيه البائع والمشتري على الثمن بالتفاوض دون اشتراط بيان التكلفة الأولى.",
+        "hi": "सामान्य व्यापार जिसमें विक्रेता अपनी खरीद लागत बताने को बाध्य नहीं होता, बल्कि दोनों मोलभाव कर कुल कीमत तय करते हैं।"
+      },
+      "purpose": {
+        "en": "Standard retail, wholesale, e-commerce, and commercial spot/credit sales where cost breakdown is private or mixed.",
+        "ur": "دکانداروں، ہول سیلرز، ای کامرس اور اسلامی بینکوں کی وہ خرید و فروخت جہاں اصل لاگت کا اعلان ضروری یا ممکن نہ ہو۔",
+        "ar": "المبيعات التجارية المعتادة بالتجزئة والجملة والتمويل عندما يصعب أو لا يُشترط كشف التكلفة.",
+        "hi": "सामान्य खुदरा, थोक, ई-कॉमर्स और व्यापार जहां लागत बताना आवश्यक न हो।"
+      },
+      "shariahPrinciples": {
+        "en": "Default Sunnah form of trade: seller owns and possesses the goods first, states an honest total price (cash or deferred fixed), and discloses any material defects.",
+        "ur": "یہ تجارت کی عام و بنیادی صورت ہے۔ شے کی ملکیت و قبضہ بائع کے پاس ہو، کل قیمت (نقد یا متعین ادھار) واضح ہو اور عیب چھپایا نہ جائے۔",
+        "ar": "هو الأصل في البيوع: يشترط التملك والقبض والعلم بالثمن الإجمالي وخلو البيع من الغش والجهالة.",
+        "hi": "व्यापार का सामान्य रूप: विक्रेता पहले वस्तु का मालिक हो, कुल कीमत तय हो, और कोई दोष न छिपाया जाए।"
+      },
+      "conditions": {
+        "en": [
+          "Seller genuinely owns and bears risk of the asset before sale.",
+          "Final total price (spot or deferred) is clearly fixed at contract.",
+          "No deception regarding quality, origin, or hidden defects."
+        ],
+        "ur": [
+          "بائع پہلے سے مال کا حقیقی مالک اور ذمہ دار ہو۔",
+          "حتمی کل قیمت نقد یا متعین ادھار میں واضح ہو۔",
+          "معیار، اصل یا عیوب میں کوئی دھوکہ نہ ہو۔"
+        ],
+        "ar": [
+          "تملك البائع المسبق، وتحديد الثمن الكلي، والصدق في بيان العيوب."
+        ],
+        "hi": [
+          "विक्रेता का पूर्व स्वामित्व हो, अंतिम कीमत स्पष्ट हो, और धोखा न हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Buyer freely negotiates or walks away; seller keeps trade-margin confidentiality while guaranteeing honesty on item specs.",
+        "ur": "خریدار کو بھاؤ تاؤ اور انکار کا مکمل اختیار ہے؛ بائع اپنے منافع کی رازداری رکھ سکتا ہے مگر مال کا معیار سچ بتانا لازم ہے۔",
+        "ar": "للمشتري التفاوض أو الترك، وللبائع عدم كشف هامش ربحه مع وجوب الصدق في المبيع.",
+        "hi": "खरीदार मोलभाव कर सकता है; विक्रेता लाभ गोपनीय रख सकता है पर वस्तु के दोष नहीं छिपा सकता।"
+      },
+      "ownershipAndPossession": {
+        "en": "Title and risk transfer to buyer upon concluded valid sale and delivery terms.",
+        "ur": "عقد مکمل ہونے اور حوالگی کے ضابطے کے مطابق ملکیت خریدار کو منتقل ہو جاتی ہے۔",
+        "ar": "تنتقل الملكية والضمان للمشتري وفق شروط التسليم والقبض.",
+        "hi": "वैध अनुबंध और सुपुर्दगी नियमों के अनुसार स्वामित्व खरीदार को जाता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Market-determined mutual consent (4:29). Islam places no rigid arbitrary cap on profit percentage, though fraud, coercion, hoarding, and Ghaban Fahish (gross price deception on an uninformed buyer) are prohibited.",
+        "ur": "نفع کی کوئی مقررہ شرعی حد فیصد میں نہیں (4:29) بلکہ باہمی رضامندی معتبر ہے، تاہم ذخیرہ اندوزی، دھوکہ اور ناواقف گاہک کو شدید دھوکے سے مہنگا بیچنا (غبنِ فاحش) ناجائز ہے۔",
+        "ar": "الربح متروك لتراضي السوق (النساء ٢٩) ولا حد له، مع حرمة الاحتكار والغبن الفاحش المصحوب بتغرير.",
+        "hi": "लाभ प्रतिशत पर कोई कठोर सीमा नहीं है; हालांकि जमाखोरी, धोखा और अनजान खरीदार से अत्यधिक ठगी (ग़बन फ़ाहिश) वर्जित है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Selling goods before owning/possessing them (fake dropshipping arbitrage).",
+          "Quoting false 'cost price' while claiming cost-based discount (that would violate truthfulness if asserted)."
+        ],
+        "ur": [
+          "قبضہ و ملکیت سے پہلے مال بیچ دینا۔",
+          "جھوٹی پرانی قیمت یا فرضی لاگت لکھ کر 'نقصان پر سیل' کا دعویٰ کرنا۔"
+        ],
+        "ar": [
+          "بيع ما لا يملك، أو الكذب في الأسعار المرجعية والتخفيضات الوهمية."
+        ],
+        "hi": [
+          "स्वामित्व से पहले बेचना, या नकली पुरानी कीमत दिखाकर झूठी छूट का प्रचार करना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "An Islamic bank purchases blended factory steel coils where item-by-item cost allocation is impractical, takes stock risk, and sells to buyers via Musawamah at an agreed total price.",
+        "ur": "دکاندار یا بینک مخلوط سامان خرید کر قبضے میں لے اور اصل خرید بتائے بغیر باہمی رضامندی سے مقررہ کل قیمت پر مساومہ میں فروخت کرے۔",
+        "ar": "بيع سلع مملوكة بثمن إجمالي متفق عليه بالتفاوض دون إلزام ببيان تكلفة الشراء.",
+        "hi": "जब वस्तु-वार लागत अलग करना कठिन हो, तो दुकानदार या बैंक वास्तविक स्वामित्व के बाद आपसी तय कीमत पर मुसावमह से बेचते हैं।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 8 (Musawamah contrast) & SBP Islamic Trade Guidelines",
+      "sbpGuidance": {
+        "en": "SBP approves Musawamah when seller genuinely purchases and owns inventory first where cost disclosure is impractical.",
+        "ur": "اسٹیٹ بینک ان مصنوعات میں مساومہ کی اجازت دیتا ہے جہاں حقیقی ملکیت و قبضے کے بعد لاگت کی تفصیل ممکن نہ ہو۔",
+        "ar": "يقر بنك الدولة المساومة عند تحقق التملك والقبض وصعوبة فصل التكلفة.",
+        "hi": "SBP वास्तविक स्वामित्व के बाद जहां लागत बताना व्यावहारिक न हो, वहां मुसावमह को मान्य करता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All four Madhahib agree Musawamah is the foundational default trade contract; debate surrounds extreme unfairness (Ghaban Fahish) without deception.",
+        "ur": "چاروں ائمہ مساومہ کو تجارت کی اصل و جائز صورت مانتے ہیں؛ بغیر دھوکے کے محض زیادہ نفع پر فقہا کے جزئی اختلافات موجود ہیں۔",
+        "ar": "أجمعت المذاهب على أن المساومة هي الأصل في البيوع، واختلفوا في خيار الغبن المجرد دون تغرير.",
+        "hi": "चारों मज़हब इसे मूल व्यापार मानते हैं; बिना धोखे के अत्यधिक लाभ के विकल्प पर सूक्ष्म विचार-भेद हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Did our business assume actual physical/constructive possession and damage risk before quoting final binding sale?"
+        ],
+        "ur": [
+          "کیا فروخت سے پہلے مال واقعی ہمارے قبضے اور رسک میں آ چکا تھا؟"
+        ],
+        "ar": [
+          "هل دخل المبيع في ملك البائع وضمانه الفعلي قبل إتمام المساومة؟"
+        ],
+        "hi": [
+          "क्या बिक्री से पहले माल वास्तविक रूप से हमारे स्वामित्व और जोखिम में था?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": {
+            "en": "Mutual consent is the foundation of price agreement.",
+            "ur": "باہمی رضامندی سے قیمت طے کرنا حلال تجارت کی بنیاد ہے۔",
+            "ar": "التراضي أساس تحديد الثمن في التجارة.",
+            "hi": "आपसी सहमति कीमत तय करने का आधार है।"
+          },
+          "businessRelevance": {
+            "en": "Supports transparent negotiated pricing without deceit.",
+            "ur": "بغیر دھوکے کے آزادانہ قیمت طے کرنے کی قرآنی اجازت۔",
+            "ar": "يدعم التفاوض الشفاف الخالي من الخداع.",
+            "hi": "बिना धोखे के पारदर्शी मोलभाव को प्रमाणित करता है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_mus_1",
+          "question": {
+            "en": "How does Musawamah differ from Murabaha?",
+            "ur": "مساومہ اور مرابحہ میں بنیادی فرق کیا ہے؟",
+            "ar": "بماذا تختلف المساومة عن المرابحة؟",
+            "hi": "मुसावमह और मुराबहा में मुख्य अंतर क्या है?"
+          },
+          "options": {
+            "en": [
+              "In Musawamah, the seller is NOT obligated to disclose original cost price; price is negotiated",
+              "In Musawamah, seller does not own the item",
+              "Musawamah charges compound interest"
+            ],
+            "ur": [
+              "مساومہ میں اصل لاگت بتانا ضروری نہیں بلکہ باہمی رضامندی سے کل قیمت طے ہوتی ہے",
+              "مساومہ میں ملکیت ضروری نہیں",
+              "مساومہ میں سود ہوتا ہے"
+            ],
+            "ar": [
+              "في المساومة لا يلتزم البائع بالإفصاح عن تكلفته الأولى",
+              "لا يشترط التملك في المساومة"
+            ],
+            "hi": [
+              "मुसावमह में विक्रेता को अपनी खरीद लागत बताना आवश्यक नहीं; कुल कीमत तय होती है",
+              "मुसावमह में स्वामित्व ज़रूरी नहीं"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Unlike Murabaha (cost-plus disclosure), Musawamah settles an agreed total price directly by negotiation.",
+            "ur": "مرابحہ میں لاگت بتانا فرض ہے جبکہ مساومہ میں براہِ راست کل قیمت طے کی جاتی ہے۔",
+            "ar": "المساومة بيع بالتفاوض دون كشف الثمن الأول، بخلاف المرابحة.",
+            "hi": "मुराबहा में लागत बतानी पड़ती है जबकि मुसावमह में सीधे कुल कीमत पर सहमति होती है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_jualah",
+      "order": 14,
+      "arabicTerm": "الجعالة",
+      "name": {
+        "en": "14. Ju'alah (Result-Based Reward / Bounty Contract)",
+        "ur": "14. جعالہ (نتیجہ یا ہدف پورا کرنے پر مقررہ انعام/فیس)",
+        "ar": "١٤. الجعالة",
+        "hi": "14. जुआलाह (परिणाम-आधारित पुरस्कार/कमीशन अनुबंध)"
+      },
+      "definition": {
+        "en": "Promising a known reward or commission (Ju'l) to anyone (or a specific contractor) who achieves a specified lawful result or deliverable, where reward is earned ONLY upon result completion.",
+        "ur": "کسی متعین جائز کام یا ہدف کو پورا کرنے والے کے لیے مقررہ انعام یا کمیشن کا وعدہ کرنا، جس کا حق صرف کام مکمل ہونے پر ثابت ہوتا ہے۔",
+        "ar": "التزام عوض معلوم على عمل معين معلوم أو مجهول يعسر ضبطه ولا يُستحق الجعل إلا بتحقيق النتيجة.",
+        "hi": "किसी निश्चित वैध परिणाम को पूरा करने पर तय पुरस्कार या कमीशन का वादा, जो केवल लक्ष्य पूरा होने पर ही देय होता है।"
+      },
+      "purpose": {
+        "en": "Sales brokerage, real estate finding fees, bug-bounty programs, debt-recovery incentives, R&D breakthroughs, and performance freelancing.",
+        "ur": "پراپرٹی بروکری، سیلز کمیشن، بَگ باؤنٹی، تحقیقی ایجادات اور نتیجہ خیز فری لانسنگ کے معاہدے۔",
+        "ar": "عقود السمسرة والوساطة العقارية ومكافآت الإنجاز والبحث والتطوير.",
+        "hi": "प्रॉपर्टी ब्रोकरेज, सेल्स कमीशन, बग-बाउंटी और परिणाम-आधारित फ्रीलांसिंग।"
+      },
+      "shariahPrinciples": {
+        "en": "Unlike Ijarah (where worker is paid for time/effort regardless of final outcome), Ju'alah ties compensation strictly to achieving the defined result. Permissible for lawful tasks where outcome is clear even if effort duration varies.",
+        "ur": "اجارہ کے برعکس (جہاں وقت و محنت کی اجرت طے ہوتی ہے)، جعالہ میں فیس صرف مطلوبہ نتیجہ حاصل ہونے پر ملتی ہے، بشرطیکہ کام حلال ہو اور انعام واضح ہو۔",
+        "ar": "تختلف عن الإجارة في ربط استحقاق العوض بتحقق النتيجة المطلوبة لا بمجرد الوقت.",
+        "hi": "इजाराह के विपरीत इसमें भुगतान समय के बजाय तय परिणाम प्राप्त होने पर ही होता है।"
+      },
+      "conditions": {
+        "en": [
+          "Desired outcome/task is lawful and clearly defined.",
+          "Reward/commission (fixed amount or clear %) is unambiguously specified.",
+          "No reward is due if the deliverable is incomplete (unless unilaterally revoked mid-way by promisor)."
+        ],
+        "ur": [
+          "مطلوبہ کام اور ہدف شرعاً جائز اور واضح ہو۔",
+          "انعام یا کمیشن کی رقم یا شرح بالکل واضح ہو۔",
+          "کام ادھورا رہنے پر معاوضہ نہیں ملتا، البتہ کام شروع ہونے کے بعد وعدہ کرنے والا منسوخ کرے تو واجب محنت کا معاوضہ دے گا۔"
+        ],
+        "ar": [
+          "مشروعية العمل ووضوح النتيجة، ومعلومية الجعل، واستحقاقه بالإنجاز الكامل."
+        ],
+        "hi": [
+          "कार्य वैध व स्पष्ट हो, पुरस्कार निश्चित हो, और पूर्ण परिणाम पर ही देय हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Worker has no compulsion to finish unless agreed, and promisor pays full reward immediately upon verification of the goal.",
+        "ur": "عامل پر تکمیل کی ذمہ داری نہیں جب تک معاہدہ لازم نہ کیا گیا ہو؛ ہدف پورا ہوتے ہی انعام کی فوری ادائیگی لازم ہے۔",
+        "ar": "لا يلزم العامل بالإتمام قبل الشروع، ويجب الجعل فور تحقيق النتيجة.",
+        "hi": "कार्य पूरा होने पर तुरंत तय पुरस्कार प्राप्त करने का अधिकार है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Deliverables (e.g., returned property or IP milestone) transfer as defined when reward is earned.",
+        "ur": "کام کے نتائج معاہدے کے مطابق طے شدہ فریق کے حق میں منتقل ہوتے ہیں۔",
+        "ar": "يُسلَّم العمل المنجز لصاحب الجعل عند استحقاق المكافأة.",
+        "hi": "परिणाम अनुबंध के अनुसार मालिक को हस्तांतरित होता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Promisor avoids paying for unsuccessful attempts; worker only invests time at own risk for potentially higher result-based payout.",
+        "ur": "ادارہ ناکام کوشش پر ادائیگی سے محفوظ رہتا ہے اور ماہر شخص کو کامیاب ہدف پر اچھا معاوضہ ملتا ہے۔",
+        "ar": "لا يُدفع العوض إلا عند الإنجاز، مما يوازن المخاطر في مهام التطوير والوساطة.",
+        "hi": "केवल सफलता पर भुगतान होने से व्यवसाय और विशेषज्ञ दोनों के हित संतुलित रहते हैं।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Promising Ju'alah commission for deceptive lobbying, bribery, fake positive reviews, or marketing Haram products.",
+          "Disguising fixed full-time employment wages as 'uncertain Ju'alah' to evade worker protections."
+        ],
+        "ur": [
+          "رشوت، جھوٹے ریویو لکھنے یا حرام مصنوعات کی تشہیر پر کمیشن کا معاہدہ۔",
+          "باقاعدہ کل وقتی مزدور کو اجرت سے محروم کرنے کے لیے جعالہ کا غلط استعمال۔"
+        ],
+        "ar": [
+          "جعل مكافأة على ترويج الحرام أو التقييمات المزيفة، أو التحايل لحرمان الأجير من أجره الثابت."
+        ],
+        "hi": [
+          "रिश्वत, नकली रिव्यू या हराम प्रचार के लिए कमीशन, या नियमित वेतन से बचने हेतु गलत उपयोग।"
+        ]
+      },
+      "modernExamples": {
+        "en": "A software startup offers $1,500 verified Ju'alah bounty for finding and patching a critical payment security vulnerability, or a lawful 2% real-estate brokerage fee upon successful closing.",
+        "ur": "سافٹ ویئر کمپنی سیکیورٹی خامی ڈھونڈ کر درست کرنے پر 1500 ڈالر باؤنٹی انعام رکھے، یا جائیداد کی کامیاب خرید و فروخت پر 2 فیصد جائز بروکری طے کرے۔",
+        "ar": "مكافأة اكتشاف ثغرة أمنية ١٥٠٠ دولار، أو عمولة سمسرة مشروعة عند إتمام البيع.",
+        "hi": "सॉफ़्टवेयर सुरक्षा बग खोजने पर $1,500 बाउंटी, या सफल संपत्ति सौदे पर 2% वैध ब्रोकरेज।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 15 (Ju'alah)",
+      "sbpGuidance": {
+        "en": "Permitted for genuine fee-based brokerage, discovery services, and project outcomes separate from debt interest.",
+        "ur": "حقیقی بروکری اور متعین نتائج پر مبنی خدمات کے لیے جائز ہے، بشرطیکہ سود سے پاک ہو۔",
+        "ar": "جائز في السمسرة المشروعة ومكافآت الإنجاز المنفصلة عن القروض.",
+        "hi": "वैध ब्रोकरेज व परिणाम-आधारित सेवाओं हेतु अनुमत, बशर्ते सूद से मुक्त हो।"
+      },
+      "madhhabDifferences": {
+        "en": "Maliki, Shafi'i, and Hanbali explicitly endorse Ju'alah (citing Surah Yusuf 12:72); Hanafis restrict unspecified-effort Ju'alah except by Istihsan in lost-property return and brokerage.",
+        "ur": "مالکی، شافعی و حنبلی صراحت سے جعالہ کے قائل ہیں؛ احناف عام معاملات میں متعین اجارہ کو ترجیح دیتے ہیں مگر بروکری اور گمشدہ چیز پر استحساناً گنجائش دیتے ہیں۔",
+        "ar": "أجازه المالكية والشافعية والحنابلة (استدلالاً بآية سورة يوسف ٧٢)، وضيّقه الحنفية مع استثناء السمسرة استحساناً.",
+        "hi": "मालिकी, शाफ़िई व हनबली जुआलाह मानते हैं; हनफ़ी ब्रोकरेज में इसकी अनुमति देते हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Should this work be structured as fixed-time Ijarah or result-contingent Ju'alah to remain fair to the worker?"
+        ],
+        "ur": [
+          "مزدور کے حقوق کے تحفظ کے لیے یہ کام اجارہ کے تحت ہونا چاہیے یا جعالہ کے تحت؟"
+        ],
+        "ar": [
+          "هل الأنسب لعدالة العامل هيكلة المهمة كإجارة أم جعالة؟"
+        ],
+        "hi": [
+          "श्रमिक के न्याय हेतु इस कार्य को इजाराह या जुआलाह किस रूप में रखा जाए?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": {
+            "en": "Fair consensual commercial exchange; Surah Yusuf 12:72 also exemplifies announcing a known reward for return.",
+            "ur": "باہمی رضامندی سے جائز معاوضہ (4:29)؛ نیز سورۃ یوسف (12:72) میں گمشدہ پیالے پر انعام کے اعلان سے استدلال کیا گیا۔",
+            "ar": "التراضي المشروع، مع استدلال الفقهاء بقصة صواع الملك في سورة يوسف (٧٢).",
+            "hi": "आपसी सहमति से पारिश्रमिक; विद्वानों ने सूरह यूसुफ 12:72 से भी जुआलाह का प्रमाण लिया।"
+          },
+          "businessRelevance": {
+            "en": "Result-based commissions are lawful when honest and mutually agreed.",
+            "ur": "نتیجے پر مبنی کمیشن دیانتداری اور واضح شرط کے ساتھ جائز ہے۔",
+            "ar": "العمولات المبنية على الإنجاز مشروعة عند الوضوح والصدق.",
+            "hi": "स्पष्ट शर्तों के साथ परिणाम-आधारित कमीशन वैध है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_jua_1",
+          "question": {
+            "en": "When is the promised reward earned by the contractor in a Ju'alah contract?",
+            "ur": "جعالہ کے معاہدے میں طے شدہ انعام یا کمیشن کب واجب ہوتا ہے؟",
+            "ar": "متى يستحق العامل المكافأة في عقد الجعالة؟",
+            "hi": "जुआलाह अनुबंध में तय पुरस्कार कब देय होता है?"
+          },
+          "options": {
+            "en": [
+              "Only upon successfully completing the specified lawful task/result",
+              "Hourly regardless of result",
+              "Before starting work"
+            ],
+            "ur": [
+              "صرف مطلوبہ جائز ہدف یا نتیجہ مکمل حاصل ہونے پر",
+              "ہر گھنٹے کے حساب سے خواہ نتیجہ نہ ملے",
+              "کام شروع کرنے سے پہلے"
+            ],
+            "ar": [
+              "عند تحقيق النتيجة المطلوبة كاملة فقط",
+              "بالساعة دون النظر للنتيجة"
+            ],
+            "hi": [
+              "केवल तय वैध परिणाम या लक्ष्य पूरा होने पर",
+              "परिणाम के बिना प्रति घंटे"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Per AAOIFI SS 15, Ju'alah compensation is earned strictly upon achieving the specified lawful objective.",
+            "ur": "AAOIFI معیار 15 کے مطابق جعالہ میں عوض صرف نتیجہ پورا ہونے پر واجب ہوتا ہے۔",
+            "ar": "يستحق الجعل في الجعالة بتحقق النتيجة لا بمجرد الشروع.",
+            "hi": "AAOIFI मानक 15 के अनुसार जुआलाह में भुगतान तय लक्ष्य पूर्ण होने पर ही देय है।"
+          }
+        }
+      ]
+    }
+  ]
+}

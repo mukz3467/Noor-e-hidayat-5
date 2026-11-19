@@ -1,0 +1,298 @@
+{
+  "sectors": [
+    {
+      "id": "sector_13_import_export",
+      "sectorNumber": 13,
+      "name": {
+        "en": "13. Import & Export Business",
+        "ur": "13. درآمد اور برآمد کا کاروبار (امپورٹ و ایکسپورٹ)",
+        "ar": "١٣. تجارة الاستيراد والتصدير",
+        "hi": "13. आयात और निर्यात व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Permissible and vital when goods are Halal, bills of lading establish genuine Qabd before resale, spot Sarf governs currency exchange, and customs declarations remain truthful.",
+        "ur": "حلال اشیاء، بل آف لیڈنگ پر قبضہ حکمی، فوری کرنسی تبادلہ اور سچی کسٹمز رسیدوں کے ساتھ یہ نہایت اہم و جائز کاروبار ہے۔",
+        "ar": "نشاط مشروع ومهم مع حلّ السلع، وتحقق القبض الحكمي، والصرف الفوري، وصدق الجمارك.",
+        "hi": "यह वैध और महत्वपूर्ण व्यापार है जब माल हलाल हो, बिल ऑफ़ लेडिंग से क़ब्ज़ हो, मुद्रा विनिमय तत्काल हो और कस्टम बिल सत्य हों।"
+      },
+      "introductionA": { "en": "Cross-border sourcing and exporting of agricultural, industrial, and consumer goods via sea, air, and land corridors.", "ur": "بحری، فضائی اور زمینی راستوں سے حلال اشیاء کی بین الاقوامی خرید و فروخت۔", "ar": "نقل وبيع السلع دولياً عبر الموانئ والشحن الجوي والبري.", "hi": "समुद्री, हवाई और ज़मीनी मार्गों से अंतर्राष्ट्रीय वस्तु खरीद और बिक्री।" },
+      "howItOperatesB": { "en": "Verifies foreign suppliers, arranges Islamic LCs, clears port customs honestly, takes warehouse/port Qabd, and distributes.", "ur": "بیرونی سپلائرز کی جانچ، اسلامی L/C، سچی کسٹمز کلیئرنس، بندرگاہ پر قبضہ اور ترسیل۔", "ar": "التحقق من الموردين، الاعتمادات الإسلامية، التخليص الصادق، والقبض قبل البيع.", "hi": "विदेशी आपूर्तिकर्ता जांच, इस्लामी LC, ईमानदार कस्टम क्लियरेंस और वितरण।" },
+      "startupRequirementsC": { "en": "Import/Export license, chamber membership, Islamic FX bank account, and customs broker (Wakalah).", "ur": "ایکسپورٹ امپورٹ لائسنس، چیمبر رجسٹریشن، اسلامی بینک کھاتہ اور کلیئرنگ ایجنٹ۔", "ar": "رخصة استيراد وتصدير، حساب بنكي إسلامي، ومخلص جمركي موثوق.", "hi": "आयात-निर्यात लाइसेंस, इस्लामी बैंक खाता और कस्टम एजेंट।" },
+      "capitalAndInvestmentD": { "en": "Musharakah trade funds, Islamic bank Murabaha import lines, and spot-settled client advances.", "ur": "مشارکہ فنڈز، اسلامی بینک مرابحہ یا اسپاٹ ادائیگی۔", "ar": "صناديق مشاركة أو مرابحة استيراد إسلامية.", "hi": "मुशारकाह निवेश या इस्लामी बैंक मुराबहा आयात लाइन।" },
+      "supplierSelectionE": { "en": "Verify overseas factories via independent pre-shipment inspection to prevent container fraud.", "ur": "کنٹینر شپنگ سے پہلے غیر جانبدار انسپیکشن ایجنسی سے مال چیک کرائیں۔", "ar": "فحص البضاعة قبل الشحن عبر جهة مستقلة منعاً للاحتيال.", "hi": "कंटेनर शिपिंग से पहले स्वतंत्र गुणवत्ता निरीक्षण कराएं।" },
+      "purchasingProcurementF": { "en": "Use Wakalah/Murabaha LCs; never sign conventional interest discounting or usurious refinancing.", "ur": "وکالت یا مرابحہ L/C استعمال کریں؛ سودی بل ڈسکاؤنٹنگ سے پرہیز کریں۔", "ar": "استخدام اعتمادات الوكالة أو المرابحة واجتناب خصم السندات الربوي.", "hi": "वकालह/मुराबहा LC का उपयोग करें और सूदी बिल डिस्काउंटिंग से बचें।" },
+      "ownershipPossessionG": { "en": "Endorsed negotiable Bill of Lading granting exclusive risk & legal control (AAOIFI SS 18) can establish Qabd Hukmi.", "ur": "بل آف لیڈنگ کے ذریعے مکمل ملکیت، تصرف اور رسک منتقل ہونے سے قبضہ حکمی حاصل ہو سکتا ہے (AAOIFI معیار 18)۔", "ar": "بوليصة الشحن النافذة مع انتقال الضمان والتصرف تحقق القبض الحكمي (معيار أيوفي ١٨).", "hi": "AAOIFI मानक 18 के अनुसार संपूर्ण जोखिम और नियंत्रण हस्तांतरित होने पर क़ब्ज़ हुक्मी माना जाता है।" },
+      "productsServicesH": { "en": "Permissible textiles, machinery, grains, halal foods; strictly bar narcotics, counterfeit luxury goods, and banned alcohol.", "ur": "کپڑا، مشینری، اجناس، حلال غذا؛ منشیات، جعلی مصنوعات اور شراب کی درآمد ہرگز نہیں۔", "ar": "سلع مباحة نافعة ومنع المسكرات والمقلدات والمحرمات.", "hi": "वैध वस्त्र, मशीनें व खाद्य; नशीले पदार्थ या नकली सामान वर्जित।" },
+      "pricingProfitI": { "en": "Spot Sarf conversion for multi-currency invoices; avoid speculative interest FX hedging derivatives.", "ur": "مختلف کرنسیوں میں فوری اسپاٹ ریٹ استعمال کریں؛ سٹہ فارورڈ معاہدوں سے بچیں۔", "ar": "الصرف الفوري للعملات واجتناب المشتقات المضاربية.", "hi": "तत्काल मुद्रा दर अपनाएं और सट्टे वाले फ़ॉरेक्स से बचें।" },
+      "customerRightsJ": { "en": "Honest country-of-origin labels, INCOTERMS clarity (FOB/CIF responsibility), and container moisture protection.", "ur": "اصل ملک کی درست مہر، واضح شپنگ شرائط اور مال کی حفاظت۔", "ar": "صدق بلد المنشأ، ووضوح شروط الشحن، وحفظ البضاعة.", "hi": "सही मूल-देश लेबल और स्पष्ट शिपिंग नियम।" },
+      "employeeRightsK": { "en": "Pay documentation clerks, dock handlers, and clearing agents fairly without pressuring them to falsify customs paperwork.", "ur": "عملے پر جعلی کسٹم کاغذات بنانے کا دباؤ نہ ڈالیں اور پوری تنخواہ وقت پر دیں۔", "ar": "منع إجبار الموظفين على تزوير الأوراق وسداد أجورهم كاملةً.", "hi": "कर्मचारियों पर नकली दस्तावेज़ बनाने का दबाव न डालें और समय पर वेतन दें।" },
+      "relevantContractsL": { "en": ["Murabaha (Import LC)", "Wakalah", "Musawamah", "Spot Sarf", "Takaful (Marine Cargo)"], "ur": ["مرابحہ", "وکالت", "مساومہ", "فوری صرف", "بحری تکافل"], "ar": ["المرابحة", "الوكالة", "المساومة", "الصرف الفوري", "التكافل البحري"], "hi": ["मुराबहा", "वकालह", "मुसावमह", "तत्काल सर्फ़", "समुद्री तकाफ़ुल"] },
+      "potentialProhibitedM": { "en": ["Under-invoicing customs to evade tariffs", "Bribing port officials", "Shipping expired bulk ingredients"], "ur": ["کسٹمز ڈیوٹی بچانے کو جعلی کم انوائس", "بندرگاہ پر رشوت", "تاریخ گزیدہ مال بھیجنا"], "ar": ["تزوير الفواتير الجمركية", "رشوة الموظفين", "تصدير سلع منتهية"], "hi": ["कस्टम चोरी हेतु कम चालान", "रिश्वत", "एक्सपायर्ड माल भेजना"] },
+      "halalChecklistN": { "en": ["100% honest HS codes & value", "Islamic LC structure", "Marine Takaful over conventional insurance"], "ur": ["سچی کسٹم انوائس", "اسلامی بینک L/C", "بحری تکافل"], "ar": ["فواتير جمركية صادقة", "اعتماد إسلامي", "تكافل بحري"], "hi": ["सत्य कस्टम बिल", "इस्लामी LC", "समुद्री तकाफ़ुल"] },
+      "realisticCaseStudyO": { "en": "A spice exporter refuses a client's demand to falsify weight/invoice values by 30%, keeps clean bank documentation, and expands smoothly into Gulf supermarkets.", "ur": "مصالحہ برآمد کنندہ نے گاہک کے کہنے پر 30 فیصد جعلی کم انوائس بنانے سے انکار کیا اور صاف ریکارڈ کی بدولت خلیجی سپر مارکیٹوں میں مستقل جگہ بنا لی۔", "ar": "رفض مصدّر التوابل تخفيض قيمة الفاتورة صورياً بنسبة ٣٠٪ فكسب عقوداً طويلة الأمد في الخليج.", "hi": "मसाला निर्यातक ने ग्राहक के कहने पर 30% कम झूठा चालान बनाने से मना कर विश्वसनीय खाड़ी बाज़ार जीता।" },
+      "commonMistakesP": { "en": ["Repackaging imported bulk dates/spices under false 'Made in Madinah/Local' stickers."], "ur": ["کسی دوسرے ملک کے مال پر دھوکے سے مشہور شہر یا ملک کا جعلی اسٹیکر لگانا۔"], "ar": ["تغيير بلد المنشأ على العبوات لخداع المستهلكين."], "hi": ["किसी अन्य देश के माल पर नकली उत्पत्ति लेबल चिपकाना।"] },
+      "practicalAssignmentQ": { "en": "Draft a pre-shipment verification list verifying Halal SKU status, INCOTERMS risk boundary, and true HS-code value.", "ur": "شپمنٹ سے پہلے 3 نکاتی جانچ تیار کریں: حلال مصنوعات، رسک کی حد اور سچی کسٹم قیمت۔", "ar": "أعد قائمة فحص ما قبل الشحن للحلّ والمخاطر والقيمة الجمركية الحقيقية.", "hi": "शिपमेंट से पहले हलाल उत्पाद, जोखिम सीमा और सत्य कस्टम मूल्य की जांच सूची बनाएं।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 1 (Sarf) & SS 14 (Documentary Credit)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 17, "startAyah": 35, "endAyah": 35, "contextNote": { "en": "Honest trade weights & declarations.", "ur": "تجارتی وزن و اعلانات میں دیانت۔", "ar": "الصدق في الأوزان والتصاريح.", "hi": "व्यापार वज़न व घोषणाओं में ईमानदारी।" }, "businessRelevance": { "en": "Bans weight and customs tampering.", "ur": "وزن اور کسٹمز بل میں ہیرا پھیری منع ہے۔", "ar": "منع التلاعب في الأوزان والفواتير.", "hi": "वज़न और कस्टम चालान में हेराफेरी वर्जित।" } }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_13",
+          "question": { "en": "Under AAOIFI Standard 18, how can an importer obtain constructive possession (Qabd Hukmi) of goods shipped by sea before local unloading?", "ur": "AAOIFI معیار 18 کے مطابق سمندری جہاز میں آنے والے مال پر بندرگاہ پہنچنے سے پہلے قبضہ حکمی کیسے حاصل ہو سکتا ہے؟", "ar": "كيف يتحقق القبض الحكمي لبضاعة مشحونة بحراً وفق معيار أيوفي ١٨؟", "hi": "AAOIFI मानक 18 के अनुसार समुद्री माल पर अनलोडिंग से पहले रचनात्मक क़ब्ज़ कैसे प्राप्त होता है?" },
+          "options": { "en": ["Receiving valid negotiable Bill of Lading giving legal control AND assuming full ownership risk of loss", "Merely bookmarking a supplier webpage", "Paying zero deposit"], "ur": ["قابلِ انتقال بل آف لیڈنگ ملنے کے ساتھ قانونی تصرف اور نقصان کا مکمل رسک سنبھالنے سے", "محض ویب سائٹ دیکھنے سے", "بغیر ادائیگی کے"], "ar": ["باستلام بوليصة الشحن القابلة للتداول مع انتقال الضمان والتصرف القانوني", "بمجرد تصفح الموقع"], "hi": ["वैध बिल ऑफ़ लेडिंग मिलने के साथ कानूनी नियंत्रण और नुकसान का पूरा जोखिम लेने से", "केवल वेबसाइट देखने से"] },
+          "correctIndex": 0,
+          "explanation": { "en": "When legal control (negotiable B/L) transfers full risk of destruction/loss to the importer, Qabd Hukmi holds.", "ur": "جب قانونی کنٹرول کے ساتھ مال کے نقصان کا ذمہ بھی خریدار پر آ جائے تو قبضہ حکمی متحقق ہو جاتا ہے۔", "ar": "انتقال التصرف والضمان مع البوليصة يحقق القبض الحكمي.", "hi": "जब कानूनी नियंत्रण के साथ नुकसान का पूरा जोखिम खरीदार पर हो तो क़ब्ज़ हुक्मी मान्य होता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_14_transport",
+      "sectorNumber": 14,
+      "name": {
+        "en": "14. Transport & Logistics Business",
+        "ur": "14. ٹرانسپورٹ اور مال برداری (لاجسٹکس)",
+        "ar": "١٤. النقل والخدمات اللوجستية",
+        "hi": "14. परिवहन और लॉजिस्टिक्स व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Freight and passenger transport are noble Halal services when trucks are safe/unoverloaded, drivers rest properly, and prohibited intoxicants are knowingly refused.",
+        "ur": "سامان و مسافروں کی نقل و حمل حلال خدمت ہے بشرطیکہ گاڑی محفوظ اور اوور لوڈ نہ ہو، ڈرائیور کو آرام ملے اور حرام مال کی باربرداری سے پرہیز ہو۔",
+        "ar": "خدمات النقل مباحة ونافعة عند صيانة المركبات، وتجنب الحمولة المحرمة والغش في المواعيد.",
+        "hi": "परिवहन एक वैध सेवा है बशर्ते वाहन सुरक्षित हों, ओवरलोड न हो, ड्राइवरों को आराम मिले और हराम माल न ढोया जाए।"
+      },
+      "introductionA": { "en": "Trucking, cold-chain cargo fleets, passenger coaches, and freight forwarding services.", "ur": "ٹرکنگ، کولڈ چین کارگو، مسافر بسیں اور مال برداری کی خدمات۔", "ar": "شاحنات البضائع، النقل المبرد، نقل الركاب، والوساطة اللوجستية.", "hi": "ट्रकिंग, कोल्ड-चेन कार्गो, यात्री बसें और माल ढुलाई।" },
+      "howItOperatesB": { "en": "Maintains licensed fleet via Ijarah/Diminishing Musharakah, executes freight transport contracts, tracks GPS ETA, and bills transparently.", "ur": "اجارہ پر گاڑیاں رکھنا، کرایہ نامہ طے کرنا، محفوظ ترسیل اور شفاف بلنگ۔", "ar": "تشغيل أسطول عبر الإجارة، وعقود نقل واضحة، وتتبع الشحنات بأمان.", "hi": "इज़ाराह से वाहन चलाना, स्पष्ट माल-भाड़ा अनुबंध और सुरक्षित सुपुर्दगी।" },
+      "startupRequirementsC": { "en": "Commercial route permits, mechanical roadworthiness certification, Takaful motor cover, and GPS logs.", "ur": "کمرشل روٹ پرمٹ، مکینیکل فٹنس، گاڑی تکافل اور جی پی ایس لاگ۔", "ar": "تصاريح النقل، الفحص الفني، التكافل، وسجلات التتبع.", "hi": "वाणिज्यिक परमिट, वाहन फिटनेस, मोटर तकाफ़ुल और GPS ट्रैकिंग।" },
+      "capitalAndInvestmentD": { "en": "Vehicle Diminishing Musharakah / Islamic Ijarah financing instead of high-APR truck loans.", "ur": "گاڑیوں کے لیے شرکتِ متناقصہ یا اسلامی بینک اجارہ؛ سودی ٹرک لون سے بچاؤ۔", "ar": "إجارة أو مشاركة متناقصة للشاحنات بعيداً عن القروض الربوية.", "hi": "वाहनों हेतु डिमिनिशिंग मुशारकाह या इस्लामी इज़ाराह।" },
+      "supplierSelectionE": { "en": "Genuine tires, brake pads, and clean diesel—avoiding stolen used spare parts.", "ur": "اصلی ٹائر و بریک پارٹس؛ چوری کے پرانے اسپیئر پارٹس ہرگز نہ خریدیں۔", "ar": "قطع غيار أصلية ومنع شراء القطع المسروقة.", "hi": "असली टायर व ब्रेक पार्ट्स लें; चोरी के पुर्जे न खरीदें।" },
+      "purchasingProcurementF": { "en": "Verify vehicle chassis/lien status before acquiring trucks via Murabaha/Musawamah.", "ur": "ٹرک خریدنے سے پہلے کاغذات اور چیسز کی مکمل تصدیق کریں۔", "ar": "فحص أوراق الشاحنات وخلوها من الرهون قبل الشراء.", "hi": "ट्रक खरीदने से पहले कागज़ात और चेसिस की जांच करें।" },
+      "ownershipPossessionG": { "en": "Cargo carried under transport Ijarah rests in carrier's trust (Amanah)—carrier is liable for negligence/theft carelessness, not unpreventable Acts of God.", "ur": "مسافر کا سامان یا کارگو ٹرانسپورٹر کے پاس امانت ہے؛ غفلت سے نقصان پر ذمہ داری ہوگی، ناقابلِ کنٹرول آفت پر نہیں۔", "ar": "يد الناقل على البضاعة يد أمانة ويضمن بالتعدي والتفريط.", "hi": "माल वाहक के पास माल अमानत है; लापरवाही पर देनदारी होगी।" },
+      "productsServicesH": { "en": "Haul halal goods, food, textiles, parcels; strictly decline dedicated contracts hauling liquor, narcotics, or smuggled items.", "ur": "حلال غلہ، کپڑا اور پارسل منتقل کریں؛ شراب، منشیات یا اسمگلنگ کا مال اٹھانے سے انکار کریں۔", "ar": "نقل السلع المباحة والامتناع عن نقل الخمور والمخدرات والمهربات.", "hi": "हलाल सामान ढोएं; शराब, नशीले पदार्थ या तस्करी का माल न ले जाएं।" },
+      "pricingProfitI": { "en": "Upfront fixed per-trip or per-km freight rates inclusive of toll clarity; never tamper with odometer or fuel receipts.", "ur": "فی ٹرپ یا فی کلومیٹر واضح کرایہ؛ ٹول یا ڈیزل رسیدوں میں جعلسازی نہ ہو۔", "ar": "تسعير واضح لكل رحلة مع الصدق في فواتير الوقود والرسوم.", "hi": "स्पष्ट भाड़ा तय करें और डीजल व टोल बिलों में हेराफेरी न करें।" },
+      "customerRightsJ": { "en": "Maintain cold-chain temperatures honestly (don't switch off freezer units at night to save diesel!) and meet delivery SLAs.", "ur": "کولڈ چین گاڑی کا فریزر ڈیزل بچانے کو رات میں بند نہ کریں، اور وقت پر مال پہنچائیں۔", "ar": "الحفاظ على التبريد طوال الرحلة وعدم إطفاء البراد لتوفير الوقود.", "hi": "डीजल बचाने हेतु रात में कोल्ड-चेन फ्रिजर बंद न करें और समय पर डिलीवरी दें।" },
+      "employeeRightsK": { "en": "Mandate highway sleep rest preventing lethal fatigue accidents, timely driver salaries + fair trip allowances.", "ur": "ڈرائیورز کو لازمی نیند و آرام کا وقفہ دیں تاکہ جان لیوا حادثات نہ ہوں، اور وقت پر تنخواہ و بھتہ دیں۔", "ar": "إلزام السائقين براحة النوم للسلامة وسداد رواتبهم وبدلاتهم في موعدها.", "hi": "दुर्घटनाओं से बचने हेतु ड्राइवरों को अनिवार्य आराम समय और समय पर वेतन/भत्ता दें।" },
+      "relevantContractsL": { "en": ["Ijarah (Freight / Vehicle Lease)", "Diminishing Musharakah", "Wakalah (Freight Broker)", "Takaful"], "ur": ["اجارہ (نقل و حمل)", "شرکتِ متناقصہ", "وکالت", "تکافل"], "ar": ["الإجارة", "المشاركة المتناقصة", "الوكالة", "التكافل"], "hi": ["इजाराह", "डिमिनिशिंग मुशारकाह", "वकालह", "तकाफ़ुल"] },
+      "potentialProhibitedM": { "en": ["Hauling liquor/contraband knowingly", "Overloading trucks ruining roads & risking lives", "Turning off reefer refrigeration secretly"], "ur": ["شراب یا اسمگل شدہ مال اٹھانا", "خطرناک اوور لوڈنگ", "ڈیزل بچانے کو کولڈ چین بند کرنا"], "ar": ["نقل المحرمات", "الحمولة الزائدة الخطرة", "إطفاء التبريد خلسة"], "hi": ["हराम माल ढोना", "खतरनाक ओवरलोडिंग", "चुपके से कूलिंग बंद करना"] },
+      "halalChecklistN": { "en": ["Waybills inspect lawful cargo", "Fatigue-safe shift logs", "Reefer temp logs intact"], "ur": ["قانونی و حلال کارگو بلٹی", "ڈرائیور آرام ریکارڈ", "کولڈ چین درجہ حرارت ریکارڈ"], "ar": ["توثيق مشروعية الحمولة", "سجل راحة السائقين", "مراقبة التبريد"], "hi": ["वैध कार्गो बिल्टी", "ड्राइवर आराम लॉग", "कोल्ड तापमान लॉग"] },
+      "realisticCaseStudyO": { "en": "A logistics company turns down a high-paying brewery beer freight contract, invests in solar-assisted cold-chain produce vans via Ijarah, and wins national pharmacy distribution.", "ur": "ٹرانسپورٹ کمپنی نے شراب کی کمپنی کا بڑا ٹھیکہ ٹھکرا کر حلال فارما اور پھلوں کی کولڈ چین میں سرمایہ کاری کی اور ملک گیر معاہدہ حاصل کیا۔", "ar": "رفضت شركة نقل عقد شحن خمور وتخصصت في نقل الأدوية والأغذية المبردة فحققت نجاحاً كبيراً.", "hi": "लॉजिस्टिक्स कंपनी ने शराब ढुलाई ठुकराकर दवा व खाद्य कोल्ड-चेन में निवेश किया और बड़ा अनुबंध जीता।" },
+      "commonMistakesP": { "en": ["Bribing highway weighbridge officers to waive dangerous axle overloads."], "ur": ["وزن کانٹے پر رشوت دے کر خطرناک اوور لوڈ ٹرک گزارنا۔"], "ar": ["رشوة موظفي الموازين لتمرير الحمولة الزائدة."], "hi": "कांटे पर रिश्वत देकर ओवरलोड ट्रक निकालना।" },
+      "practicalAssignmentQ": { "en": "Draft a Fleet Safety & Ethical Freight Clause covering cargo legality, axle load limits, and mandatory driver sleep hours.", "ur": "اپنی گاڑیوں کے لیے 3 نکاتی سیفٹی و حلال کارگو قواعد تحریر کریں۔", "ar": "اكتب لائحة سلامة الأسطول للمشروعية والأوزان وساعات راحة السائق.", "hi": "वैध माल, भार सीमा और ड्राइवर नींद घंटों का 3-सूत्रीय फ्लीट नियम लिखें।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 9 (Ijarah) & Ibn Majah 2340", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextNote": { "en": "Cargo entrusted in transit.", "ur": "سفر میں گاہک کا سامان امانت ہے۔", "ar": "البضاعة المنقولة أمانة.", "hi": "ढुलाई में ग्राहक का माल अमानत है।" }, "businessRelevance": { "en": "Protects goods from theft, heat spoilage, or negligence.", "ur": "مال کو چوری، گرمی اور غفلت سے بچانا لازم ہے۔", "ar": "حفظ البضاعة من التلف والتفريط.", "hi": "माल को चोरी और लापरवाही से बचाना अनिवार्य है।" } }
+      ],
+      "hadithIds": ["ibnmajah_2443", "muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_14",
+          "question": { "en": "If a refrigerated truck driver secretly turns off cooling overnight to steal/save diesel, spoiling dairy cargo, who bears moral and financial responsibility?", "ur": "اگر کولڈ چین ٹرک کا عملہ ڈیزل بچانے کو رات میں فریزر بند کر دے اور دودھ خراب ہو جائے تو کون ذمہ دار ہوگا؟", "ar": "إذا أطفأ الناقل جهاز التبريد ليلاً لتوفير الوقود فتلف الحليب، من يتحمل الضمان؟", "hi": "यदि ट्रक चालक डीजल बचाने हेतु रात में कूलिंग बंद कर दे और दूध खराब हो जाए, तो कौन जिम्मेदार होगा?" },
+          "options": { "en": ["The carrier is fully liable due to deliberate breach/negligence (Ta'addi/Tafrit) of trust", "Nobody", "Only the milk buyer"], "ur": ["ٹرانسپورٹر امانت میں خیانت و غفلت کا مکمل ذمہ دار و تاوان کا پابند ہوگا", "کوئی نہیں", "صرف خریدار"], "ar": ["يتحمل الناقل الضمان كاملاً لتعديه وتفريطه في الأمانة", "لا أحد"], "hi": ["लापरवाही व अमानत में खयानत के कारण वाहक पूर्णतः देनदार होगा", "कोई नहीं"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Although a carrier is Amin, deliberate breach or negligence converts trust into full financial liability.", "ur": "امین اگر خود غفلت یا شرط کی خلاف ورزی کرے تو نقصان کا ذمہ دار ہو جاتا ہے۔", "ar": "الأمين يضمن عند التعدي أو الإهمال.", "hi": "अमीन द्वारा जानबूझकर उल्लंघन या लापरवाही करने पर हर्जाना देना अनिवार्य होता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_15_automobiles",
+      "sectorNumber": 15,
+      "name": {
+        "en": "15. Automobile Buying & Selling",
+        "ur": "15. گاڑیوں کی خرید و فروخت اور ڈیلرشپ",
+        "ar": "١٥. تجارة السيارات والمعارض",
+        "hi": "15. ऑटोमोबाइल खरीद और बिक्री व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Auto trading is completely Halal when showroom dealers own cars before selling, state true mileage/accident history, and finance via Diminishing Musharakah or Ijarah instead of interest car loans.",
+        "ur": "گاڑیوں کا کاروبار حلال ہے بشرطیکہ میٹر پیچھے نہ کیا جائے، ایکسیڈنٹ اور پینٹ سچ بتائے جائیں، اور فنانسنگ اجارہ/شرکتِ متناقصہ سے ہو نہ کہ سودی کار لون سے۔",
+        "ar": "تجارة السيارات مباحة بشرط الصدق في العداد والحوادث وتجنب التمويل الربوي.",
+        "hi": "ऑटो व्यापार हलाल है जब ओडोमीटर से छेड़छाड़ न हो, दुर्घटना इतिहास सच बताया जाए और वित्तपोषण सूद-मुक्त इज़ाराह हो।"
+      },
+      "introductionA": { "en": "New and pre-owned car showrooms, dealership brokerage, and Shariah vehicle leasing.", "ur": "نئی و استعمال شدہ گاڑیوں کا شوروم، کار بروکری اور اسلامی کار فنانسنگ۔", "ar": "معارض السيارات الجديدة والمستعملة والوساطة والتأجير.", "hi": "नई व पुरानी कारों का शोरूम, डीलरशिप ब्रोकरेज और इस्लामी वाहन लीज़िंग।" },
+      "howItOperatesB": { "en": "Inspects chassis/paint/mechanical health, clears registration/token checks, discloses defects, executes direct transfer or Wakalah brokerage.", "ur": "گاڑی کا مکینیکل و پینٹ معائنہ، کاغذات کی تصدیق، عیوب کا اظہار اور شفاف انتقال۔", "ar": "فحص السيارة والعداد والوثائق، والإفصاح عن العيوب، ونقل الملكية.", "hi": "वाहन व कागज़ात जांच, दोष प्रकटीकरण और पारदर्शी हस्तांतरण।" },
+      "startupRequirementsC": { "en": "Showroom Ijarah, diagnostic OBD scanner/paint thickness gauge, excise transfer desk, and clean receipts.", "ur": "شوروم کا اجارہ، پینٹ و انجن ٹیسٹنگ آلات، ایکسائز تصدیق اور تحریری رسیدیں۔", "ar": "معرض مرخص، أجهزة فحص الطلاء والمحرك، وتوثيق النقل.", "hi": "शोरूम, पेंट/इंजन जांच उपकरण, पंजीकरण डेस्क और स्पष्ट रसीदें।" },
+      "capitalAndInvestmentD": { "en": "Partner Musharakah showroom pool, Islamic Bank Auto Ijarah/Diminishing Musharakah—zero interest floor-plan financing.", "ur": "شراکتِ مشارکہ یا اسلامی بینک کار اجارہ/متناقصہ؛ سودی آٹو لون سے پرہیز۔", "ar": "تمويل بالمشاركة أو الإجارة المنتهية بالتمليك دون قروض ربوية.", "hi": "मुशारकाह साझेदारी या इस्लामी ऑटो इज़ाराह; ब्याज वाले ऋण नहीं।" },
+      "supplierSelectionE": { "en": "Verify auction sheets honestly (never forge fake Grade-4/5 Japanese auction reports) and check police stolen registries.", "ur": "جعلی آکشن شیٹ ہرگز نہ بنوائیں اور چوری شدہ گاڑیوں کے ریکارڈ کی جانچ کریں۔", "ar": "التأكد من صحة تقارير الفحص وخلو السيارات من السرقة.", "hi": "नकली ऑक्शन रिपोर्ट न बनाएं और चोरी के रिकॉर्ड की जांच करें।" },
+      "purchasingProcurementF": { "en": "Purchase vehicles outright before reselling OR operate purely on transparent fixed/agreed % commission.", "ur": "خود گاڑی خرید کر بیچیں یا واضح کمیشن ایجنٹ کے طور پر کام کریں۔", "ar": "شراء السيارة وتملكها قبل البيع أو التوسط بأجر معلوم.", "hi": "बेचने से पहले वाहन स्वयं खरीदें या स्पष्ट कमीशन पर दलाली करें।" },
+      "ownershipPossessionG": { "en": "Dealer buying for inventory holds full ownership risk on the showroom floor before selling to buyer.", "ur": "شوروم کا اپنا خریدا ہوا اسٹاک فروخت سے پہلے شوروم کے رسک اور قبضے میں ہو۔", "ar": "دخول السيارة في ملك وضمان المعرض قبل بيعها.", "hi": "शोरूम का अपना स्टॉक बिक्री से पहले शोरूम के स्वामित्व व जोखिम में हो।" },
+      "productsServicesH": { "en": "Safe roadworthy cars, bikes, commercial vans; disclose salvaged/flooded/chassis-welded history plainly.", "ur": "محفوظ و درست گاڑیاں؛ سیلاب زدہ، چیسز جڑی یا ایکسیڈنٹ گاڑی کی اصلیت صاف بتائیں۔", "ar": "مركبات سليمة مع الإفصاح التام عن الحوادث والغرق.", "hi": "सुरक्षित वाहन; बाढ़ या बड़ी दुर्घटना का इतिहास स्पष्ट बताएं।" },
+      "pricingProfitI": { "en": "Clear net showroom price; commission brokers must never secretly double-dip both parties without telling.", "ur": "واضح قیمت؛ کمیشن ایجنٹ دونوں طرف سے چھپ کر الگ منافع (ٹوپ) نہ کھائے۔", "ar": "سعر واضح وعمولة سمسرة معلنة دون خداع.", "hi": "स्पष्ट कीमत; ब्रोकर बिना बताए दोनों पक्षों से गुप्त कट न ले।" },
+      "customerRightsJ": { "en": "Right to independent mechanic inspection before closing and honest disclosure of engine/transmission faults.", "ur": "سودے سے پہلے گاہک کو اپنے مکینک سے چیک کرانے کی کھلی اجازت اور انجن/گیئر کے نقائص کی سچائی۔", "ar": "تمكين المشتري من الفحص المستقل وبيان أعطال المحرك والقير.", "hi": "खरीदार को स्वतंत्र मैकेनिक से जांच कराने का अवसर और इंजन दोष स्पष्ट बताना।" },
+      "employeeRightsK": { "en": "Technicians, detailers, and sales reps paid agreed salary + transparent per-car commission promptly.", "ur": "مکینک، واشنگ اسٹاف اور سیلز مین کو طے شدہ تنخواہ و کمیشن وقت پر۔", "ar": "أجور الفنيين والمندوبين دون تأخير.", "hi": "मैकेनिक, सफाई व बिक्री टीम को समय पर वेतन व कमीशन।" },
+      "relevantContractsL": { "en": ["Musawamah", "Auto Ijarah", "Diminishing Musharakah", "Ju'alah (Brokerage)", "Wakalah"], "ur": ["مساومہ", "آٹو اجارہ", "شرکتِ متناقصہ", "جعالہ (بروکری)", "وکالت"], "ar": ["المساومة", "إجارة السيارات", "المشاركة المتناقصة", "الجعالة", "الوكالة"], "hi": ["मुसावमह", "ऑटो इजाराह", "डिमिनिशिंग मुशारकाह", "जुआलाह", "वकालह"] },
+      "potentialProhibitedM": { "en": ["Odometer meter tampering/rollback", "Faking Grade-5 auction sheets", "Conventional interest auto loans & interest-bearing installments"], "ur": ["میٹر پیچھے کرنا", "جعلی آکشن شیٹ بنانا", "سودی کار لون یا سودی قسطیں"], "ar": ["تلاعب العداد", "تزوير تقارير الفحص", "التمويل الربوي"], "hi": ["ओडोमीटर पीछे करना", "नकली ऑक्शन शीट", "सूदी कार ऋण"] },
+      "halalChecklistN": { "en": ["Original odometer certified", "True accident/paint report", "Islamic Ijarah/Diminishing Musharakah options"], "ur": ["اصل میٹر ریڈنگ", "سچی ایکسیڈنٹ و پینٹ رپورٹ", "اسلامی فنانسنگ آپشنز"], "ar": ["عداد حقيقي", "تقرير حوادث صادق", "تمويل إسلامي"], "hi": ["असली ओडोमीटर", "सही दुर्घटना रिपोर्ट", "इस्लामी वित्त विकल्प"] },
+      "realisticCaseStudyO": { "en": "A used-car dealer builds an app-verified paint & OBD inspection sheet on every windshield—disclosing two repainted doors honestly—and sells 2x faster than suspicious competitors.", "ur": "استعمال شدہ گاڑیوں کے ڈیلر نے ہر گاڑی پر پینٹ و انجن کی سچی رپورٹ لگائی، دو ری پینٹ دروازے صاف بتائے اور حریفوں سے دگنی تیز فروخت حاصل کی۔", "ar": "تاجر سيارات مستعملة يرفق تقريراً فنياً صادقاً يكشف الأبواب المصبوغة، فحقق مبيعات مضاعفة بثقة العملاء.", "hi": "यूज़्ड-कार डीलर ने हर गाड़ी पर पेंट व इंजन की सच्ची रिपोर्ट लगाई और दोगुनी तेज़ी से भरोसेमंद बिक्री की।" },
+      "commonMistakesP": { "en": ["Using thick sawdust/heavy oil temporarily to quiet a dying engine until buyer drives off the lot."], "ur": ["آواز دبانے کو انجن میں گاڑھا تیل ڈال کر عارضی طور پر خرابی چھپانا۔"], "ar": ["وضع زيوت ثقيلة لإخفاء صوت تلف المحرك مؤقتاً عند البيع."], "hi": "इंजन का शोर दबाने हेतु गाढ़ा तेल डालकर बिक्री के समय खराबी छिपाना।" },
+      "practicalAssignmentQ": { "en": "Prepare a 10-point Pre-Sale Vehicle Truthfulness Certificate covering odometer, chassis weld, repaint panels, engine compression, and lien check.", "ur": "گاڑی فروخت کرنے سے پہلے 10 نکاتی سچائی سرٹیفکیٹ (میٹر، چیسز، پینٹ، انجن، کاغذات) تیار کریں۔", "ar": "أعد شهادة فحص وصدق للسيارة من ١٠ بنود تشمل العداد والهيكل والمحرك.", "hi": "ओडोमीटर, चेसिस, पेंट, इंजन व कागज़ात पर आधारित 10-सूत्री वाहन सत्यता प्रमाणपत्र बनाएं।" },
+      "referencesR": [
+        { "title": "Bukhari 2079 & AAOIFI SS 9 (Ijarah)", "category": "authentic_hadith", "attribution": "Sunnah.com & AAOIFI", "url": "https://sunnah.com/bukhari:2079" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 29, "endAyah": 29, "contextNote": { "en": "No hidden vehicle fraud.", "ur": "گاڑیوں میں خفیہ عیب پوشی کی ممانعت۔", "ar": "منع التدليس في بيع المركبات.", "hi": "वाहन बिक्री में छिपे धोखे का निषेध।" }, "businessRelevance": { "en": "Genuine mechanical consent protects both parties.", "ur": "مکمل سچائی پر مبنی رضامندی برکت کا باعث ہے۔", "ar": "الصدق يحقق التراضي والبركة.", "hi": "पूर्ण सच्चाई और सहमति दोनों पक्षों की रक्षा करती है।" } }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_15",
+          "question": { "en": "What is the Shariah ruling on rolling back a used vehicle's odometer by 60,000 km before listing it?", "ur": "پرانی گاڑی کا میٹر 60 ہزار کلومیٹر پیچھے کر کے بیچنے کا شرعی حکم کیا ہے؟", "ar": "ما حكم إنقاص عداد الكيلومترات في السيارة المستعملة قبل بيعها؟", "hi": "पुरानी कार बेचने से पहले ओडोमीटर 60,000 किमी कम करने का शरीअत नियम क्या है?" },
+          "options": { "en": ["Haram deception (Ghish) that erases Barakah and entitles the buyer to cancel/claim", "Acceptable market custom", "Allowed if cleaned nicely"], "ur": ["حرام و دھوکہ (غِش) جو برکت مٹاتا اور خریدار کو واپسی کا حق دیتا ہے", "عام مارکیٹ رواج ہے", "صرف صفائی پر جائز ہے"], "ar": ["غش محرم يمحق البركة ويثبت للمشتري خيار التدليس", "عرف مقبول"], "hi": ["हराम धोखा (ग़िश), जो बरकत मिटाता है और खरीदार को रद्द करने का अधिकार देता है", "सामान्य बाज़ार प्रथा"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Odometer tampering falsifies engine wear intentionally, violating Sahih Muslim 102 and Bukhari 2079.", "ur": "میٹر پیچھے کرنا کھلا دھوکہ اور صحیح مسلم 102 کی صریح خلاف ورزی ہے۔", "ar": "تلاعب العداد تدليس صريح مخالف لحديث مسلم ١٠٢.", "hi": "ओडोमीटर छेड़छाड़ सीधा धोखा और मुस्लिम 102 का उल्लंघन है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_16_tech_software",
+      "sectorNumber": 16,
+      "name": {
+        "en": "16. Technology & Software Business",
+        "ur": "16. ٹیکنالوجی، سافٹ ویئر اور آئی ٹی کمپنی",
+        "ar": "١٦. شركات التكنولوجيا والبرمجيات",
+        "hi": "16. प्रौद्योगिकी और सॉफ्टवेयर व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Software & SaaS engineering is highly rewarding Halal commerce when apps solve real needs, client data stays confidential (Amanah), and projects avoid Riba, gambling, adult content, and piracy.",
+        "ur": "سافٹ ویئر و آئی ٹی بہترین حلال شعبہ ہے بشرطیکہ مفید ایپس بنائی جائیں، صارف کا ڈیٹا امانت رہے اور جوا، سودی یا فحاشی والے پروجیکٹس نہ لیے جائیں۔",
+        "ar": "البرمجيات قطاع حلال متى خلت من برمجة الربا والقمار والإباحية وحُفظت بيانات العملاء.",
+        "hi": "सॉफ्टवेयर व्यवसाय अत्यंत उपयोगी हलाल क्षेत्र है बशर्ते उपयोगी ऐप बनें, डेटा सुरक्षित रहे और जुआ/सूद/अश्लील प्रोजेक्ट न हों।"
+      },
+      "introductionA": { "en": "Developing mobile apps, web SaaS platforms, enterprise ERPs, cybersecurity, and Islamic/educational tools.", "ur": "موبائل ایپس، ساس (SaaS) پلیٹ فارمز، ای آر پی، سائبر سیکیورٹی اور تعلیمی سافٹ ویئر بنانا۔", "ar": "تطوير التطبيقات، ومنصات SaaS، وأنظمة الشركات، والأمن السيبراني.", "hi": "मोबाइल ऐप, SaaS प्लेटफ़ॉर्म, एंटरप्राइज़ सॉफ्टवेयर और साइबर सुरक्षा विकास।" },
+      "howItOperatesB": { "en": "Scopes user needs, executes custom builds (Istisna) or SaaS subscriptions (Ijarah), hosts cleanly, and maintains SLA updates.", "ur": "سافٹ ویئر تقاضے طے کرنا، کسٹم تیاری (استصناع) یا سبسکرپشن (اجارہ) ماڈل اور اپ ڈیٹس دینا۔", "ar": "تحديد المتطلبات، البناء بعقد الاستصناع أو الاشتراك بالإجارة، والصيانة.", "hi": "आवश्यकता तय करना, इस्तिसना कस्टम निर्माण या इज़ाराह सब्सक्रिप्शन और रखरखाव।" },
+      "startupRequirementsC": { "en": "Licensed SDKs/cloud accounts, Git version security, clear Terms of Service, and data privacy encryption.", "ur": "قانونی سافٹ ویئر لائسنس، محفوظ کلاؤڈ، واضح سروس شرائط اور ڈیٹا پرائیویسی۔", "ar": "تراخيص نظامية، حماية بيانات المستخدمين، وعقود خدمة واضحة.", "hi": "लाइसेंस प्राप्त उपकरण, सुरक्षित क्लाउड, स्पष्ट सेवा शर्तें व डेटा गोपनीयता।" },
+      "capitalAndInvestmentD": { "en": "Bootstrapped service cash, angel Musharakah common equity—avoid conventional SAFE/interest convertible debt notes.", "ur": "سروس ریونیو یا مشارکہ ایکویٹی؛ سودی کنورٹیبل قرض نوٹس سے بچیں۔", "ar": "تمويل ذاتي أو شراكة أسهم عادية دون سندات قروض ربوية.", "hi": "स्व-वित्तपोषण या मुशारकाह इक्विटी; सूदी कन्वर्टिबल ऋण नोट्स से बचें।" },
+      "supplierSelectionE": { "en": "Use legitimate paid/open-source licensed libraries respecting GPL/MIT/proprietary software terms cleanly.", "ur": "لائسنس یافتہ یا اوپن سورس لائبریریاں شرائط کے مطابق استعمال کریں؛ کریک شدہ سافٹ ویئر سے بچیں۔", "ar": "الالتزام بتراخيص البرمجيات ومنع البرامج المقرصنة.", "hi": "वैध लाइसेंस/ओपन-सोर्स लाइब्रेरी उपयोग करें; क्रैक्ड सॉफ्टवेयर से बचें।" },
+      "purchasingProcurementF": { "en": "Cloud server Ijarah, hardware asset Murabaha, transparent SaaS tool licensing.", "ur": "کلاؤڈ سرور کا اجارہ، کمپیوٹرز کا مرابحہ اور قانونی سافٹ ویئر سبسکرپشن۔", "ar": "إجارة الخوادم السحابية وشراء الأجهزة بأدوات حلال.", "hi": "क्लाउड सर्वर इज़ाराह व हार्डवेयर मुराबहा।" },
+      "ownershipPossessionG": { "en": "Spell out source-code IP ownership in client contracts clearly (transferring exclusively on custom Istisna or licensing via SaaS).", "ur": "معاہدے میں سورس کوڈ کی ملکیت واضح لکھیں کہ آیا کلائنٹ کی ملکیت ہوگی یا صرف استعمال کا لائسنس۔", "ar": "توضيح ملكية الشفرة المصدرية وحقوق الملكية الفكرية في العقد.", "hi": "अनुबंध में सोर्स कोड स्वामित्व स्पष्ट लिखें (ग्राहक को हस्तांतरण या SaaS लाइसेंस)।" },
+      "productsServicesH": { "en": "Productivity, health, commerce, education, fintech tools; refuse building casino slot mechanics, interest engines, adult sites, or spyware.", "ur": "تجارت، صحت، تعلیم و حلال فن ٹیک سافٹ ویئر؛ جوا، سودی کیلکولیشن انجن، فحاشی یا اسپائی ویئر ہرگز نہ بنائیں۔", "ar": "برمجيات نافعة للتعليم والتجارة والصحة، والامتناع عن تطبيقات القمار والربا والتجسس.", "hi": "उपयोगी उत्पादकता, स्वास्थ्य व शिक्षा ऐप; जुआ, ब्याज इंजन या स्पाइवेयर न बनाएं।" },
+      "pricingProfitI": { "en": "Clear SaaS tiers without dark-pattern hidden auto-renewals or traps making cancellation nearly impossible.", "ur": "واضح قیمتیں؛ خفیہ آٹو رینیول اور کینسل نہ ہونے والے جال سے مکمل پرہیز۔", "ar": "وضوح خطط الاشتراك وسهولة الإلغاء دون خداع.", "hi": "स्पष्ट SaaS प्लान, बिना छिपे ऑटो-नवीनीकरण या कठिन रद्दीकरण जाल के।" },
+      "customerRightsJ": { "en": "Protect user personal data strictly as Amanah (never sell user phone/emails secretly), uphold uptime & honest release notes.", "ur": "صارفین کا ڈیٹا امانت سمجھ کر محفوظ رکھیں، اسے خفیہ طور پر نہ بیچیں، اور سافٹ ویئر بگز صاف ٹھیک کریں۔", "ar": "حفظ بيانات العملاء كأمانة ومنع بيعها خفية والوفاء بالدعم الفني.", "hi": "उपयोगकर्ता डेटा को अमानत मानकर सुरक्षित रखें, बेचें नहीं, और समय पर सपोर्ट दें।" },
+      "employeeRightsK": { "en": "Respect developer work-life health (avoid chronic unpaid crunch), clear salary/equity vesting, prompt payroll.", "ur": "ڈویلپرز سے غیر انسانی اوور ٹائم نہ لیں، واضح شیئرز/تنخواہ معاہدہ کریں اور وقت پر ادائیگی کریں۔", "ar": "احترام ساعات راحة المبرمجين وتوثيق الحصص والرواتب بانتظام.", "hi": "डेवलपर्स से बिना वेतन क्रंच काम न लें और समय पर वेतन दें।" },
+      "relevantContractsL": { "en": ["Istisna (Custom Software)", "Ijarah (SaaS Subscription & Dev Staff)", "Musharakah (Tech Co-founders)", "Ju'alah (Bug Bounty)"], "ur": ["استصناع (کسٹم سافٹ ویئر)", "اجارہ (ساس/عملہ)", "مشارکہ", "جعالہ (باؤنٹی)"], "ar": ["الاستصناع", "الإجارة", "المشاركة", "الجعالة"], "hi": ["इस्तिसना", "इजाराह", "मुशारकाह", "जुआलाह"] },
+      "potentialProhibitedM": { "en": ["Writing backend code for interest loans/betting apps", "Using cracked piracy licenses commercially", "Harvesting/selling user data silently"], "ur": ["سودی یا جوئے کی ایپ بنانا", "کریک شدہ سافٹ ویئر استعمال کرنا", "یوزر ڈیٹا چوری بیچنا"], "ar": ["برمجة الربا والميسر", "استخدام برامج مقرصنة", "بيع بيانات المستخدمين"], "hi": ["सूद/जुआ ऐप कोडिंग", "पायरेटेड सॉफ्टवेयर उपयोग", "उपयोगकर्ता डेटा बेचना"] },
+      "halalChecklistN": { "en": ["All client verticals screened Halal", "100% legitimate tool licenses", "Clear IP & user data privacy terms"], "ur": ["کلائنٹ کا شعبہ حلال", "قانونی سافٹ ویئر لائسنس", "ڈیٹا پرائیویسی و IP وضاحت"], "hi": ["क्लाइंट क्षेत्र हलाल जांच", "वैध लाइसेंस", "IP व डेटा सुरक्षा स्पष्ट"] },
+      "realisticCaseStudyO": { "en": "A Lahore SaaS team declines a lucrative sports-betting app contract, launches a Shariah-friendly pharmacy & clinic inventory platform, and builds recurring MRR sustainably.", "ur": "لاہور کی سافٹ ویئر ٹیم نے اسپورٹس بیٹنگ ایپ کا بڑا آرڈر ٹھکرا کر حلال کلینک و فارمیسی سافٹ ویئر لانچ کیا اور پائیدار آمدنی بنائی۔", "ar": "رفض فريق برمجة مشروع مراهنات رياضية وأطلق نظاماً سحابياً للعيادات والصيدليات بنجاح باهر.", "hi": "सॉफ्टवेयर टीम ने स्पोर्ट्स-बेटिंग प्रोजेक्ट ठुकराकर क्लिनिक व फार्मेसी इन्वेंटरी SaaS लॉन्च कर स्थायी आय बनाई।" },
+      "commonMistakesP": { "en": ["Using pirated Adobe/Windows/IDE cracks while selling expensive apps to clients."], "ur": ["پائریٹڈ یا کریک سافٹ ویئر استعمال کر کے کلائنٹس کو کمرشل کام بیچنا۔"], "ar": ["العمل بأدوات برمجة وتصميم مقرصنة لبيع مشاريع تجارية."], "hi": "व्यावसायिक प्रोजेक्ट बनाते समय पायरेटेड/क्रैक्ड टूल्स उपयोग करना।" },
+      "practicalAssignmentQ": { "en": "Write an Ethical Client Screening Gate (3 automatic 'No' verticals) and Data Amanah Clause for your tech agency.", "ur": "اپنی آئی ٹی کمپنی کے لیے 'تین قطعی ممنوع کلائنٹ شعبے' اور ڈیٹا امانت کا اصول لکھیں۔", "ar": "حدد ٣ أنشطة مرفوضة تلقائياً وبند أمانة البيانات لوكالتك التقنية.", "hi": "अपनी टेक कंपनी हेतु 3 अस्वीकार्य ग्राहक श्रेणियां और डेटा अमानत शर्त लिखें।" },
+      "referencesR": [
+        { "title": "IIFA Res. 43 (IP) & Quran 4:58", "category": "contemporary_resolution", "attribution": "IIFA & Quran.com", "url": "https://iifa-aifi.org/en/" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextNote": { "en": "User privacy & IP as trust.", "ur": "یوزر ڈیٹا اور سافٹ ویئر حق امانت ہے۔", "ar": "حفظ البيانات وحقوق الملكية أمانة.", "hi": "डेटा गोपनीयता व IP अमानत है।" }, "businessRelevance": { "en": "Securing databases prevents digital betrayal.", "ur": "ڈیٹا بیس کی حفاظت صارف کے اعتماد کی ضمانت ہے۔", "ar": "أمن البيانات التزام أخلاقي وشرعي.", "hi": "डेटाबेस सुरक्षा नैतिक व शरीअत दायित्व है।" } }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_16",
+          "question": { "en": "May a Muslim developer accept a freelance contract solely to code the interest-calculation & late-fee module for a conventional payday-loan app?", "ur": "کیا مسلمان ڈویلپر سودی لون ایپ کے لیے سود و جرمانہ کیلکولیٹ کرنے والا ماڈیول بنانے کا پروجیکٹ لے سکتا ہے؟", "ar": "هل يجوز للمبرمج تطوير وحدة حساب الفوائد الربوية لتطبيق قروض تقليدي؟", "hi": "क्या मुस्लिम डेवलपर पारंपरिक ऋण ऐप के लिए ब्याज-गणना मॉड्यूल कोड करने का काम ले सकता है?" },
+          "options": { "en": ["No; directly engineering Riba mechanics constitutes impermissible assistance in Riba (Quran 5:2 & Muslim 1598)", "Yes, code is neutral", "Only if paid hourly"], "ur": ["نہیں؛ سودی نظام لکھنے میں براہِ راست معاونت قرآن 5:2 اور مسلم 1598 کے تحت حرام ہے", "ہاں کوڈ غیر جانبدار ہے", "فی گھنٹہ پر جائز ہے"], "ar": ["لا؛ لأنه تعاون مباشر على الربا (المائدة ٢ ومسلم ١٥٩٨)", "نعم البرمجة محايدة"], "hi": ["नहीं; सूद प्रणाली बनाना रिबा में सीधा सहयोग है (5:2 व मुस्लिम 1598)", "हाँ, कोड तटस्थ है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Sahih Muslim 1598 warns even the scribe/contract writer of Riba; coding the core Riba calculation engine directly enables the prohibited act.", "ur": "جب سود لکھنے والا بھی برابر کا گناہگار ہے (مسلم 1598) تو سودی سافٹ ویئر لکھنا بھی ناجائز معاونت ہے۔", "ar": "قياساً على كاتب الربا في مسلم ١٥٩٨ وتحريم التعاون على الإثم.", "hi": "मुस्लिम 1598 में लिखने वाला भी बराबर का भागी है; अतः ब्याज कोड बनाना वर्जित है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_17_freelancing",
+      "sectorNumber": 17,
+      "name": {
+        "en": "17. Freelancing & Digital Agency",
+        "ur": "17. فری لانسنگ اور ڈیجیٹل سروس ایجنسی",
+        "ar": "١٧. العمل الحر والوكالات الرقمية",
+        "hi": "17. फ़्रीलांसिंग और डिजिटल एजेंसी व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "High-barakah independent livelihood (Bukhari 2072) when clients and industries are screened cleanly, deliverables match deadlines honestly, and portfolio samples aren't stolen.",
+        "ur": "اپنے ہنر سے بہترین حلال کمائی ہے بشرطیکہ کلائنٹ کا کام حلال ہو، ڈیڈ لائن پوری کی جائے اور پورٹ فولیو میں دوسروں کا کام چوری نہ دکھایا جائے۔",
+        "ar": "من أطيب الكسب باليد متى نُزِّه عن خدمة المحرمات والغش وسرقة الأعمال.",
+        "hi": "यह कौशल-आधारित उत्तम हलाल कमाई है बशर्ते ग्राहक कार्य वैध हो, समय पर डिलीवरी हो और नकली पोर्टफोलियो न हो।"
+      },
+      "introductionA": { "en": "Independent or agency-delivered design, SEO, copywriting, translation, video editing, bookkeeping, and consulting.", "ur": "گرافک ڈیزائن، تحریر، ترجمہ، ویڈیو ایڈیٹنگ، ایس ای او اور مشاورتی خدمات۔", "ar": "تقديم خدمات التصميم والكتابة والترجمة والتسويق والاستشارات مستقلاً أو بوكالة.", "hi": "डिज़ाइन, लेखन, अनुवाद, वीडियो एडिटिंग, SEO और डिजिटल परामर्श सेवाएं।" },
+      "howItOperatesB": { "en": "Pitches real portfolio samples, scopes SOW milestones, uses lawful platform/bank escrow, and delivers revisions cleanly.", "ur": "اصلی پورٹ فولیو دکھانا، واضح شرائط طے کرنا، حلال پیمنٹ سے ادائیگی لینا اور کام پورا کرنا۔", "ar": "عرض أعمال حقيقية، توثيق نطاق العمل، استلام الأجر حلالاً، والتسليم المتقن.", "hi": "असली पोर्टफोलियो दिखाना, स्पष्ट कार्यक्षेत्र तय करना व समय पर डिलीवरी देना।" },
+      "startupRequirementsC": { "en": "Reliable computer & internet, authentic work portfolio, milestone SOW contract, and non-interest payment accounts.", "ur": "مناسب کمپیوٹر، اپنا اصلی کام، تحریری شرائط نامہ اور حلال ادائیگی اکاؤنٹ۔", "ar": "حاسوب موثوق، معرض أعمال أصلي، عقد واضح، وحساب خالٍ من الربا.", "hi": "असली पोर्टफोलियो, स्पष्ट अनुबंध और ब्याज-मुक्त भुगतान खाता।" },
+      "capitalAndInvestmentD": { "en": "Skill-driven minimal capital; build reserves before expanding agency payroll.", "ur": "بہت کم سرمائے سے مہارت کی بنیاد پر آغاز؛ عملہ رکھنے سے پہلے محفوظ کیش ریزرو بنائیں۔", "ar": "تكلفة تأسيس منخفضة تعتمد على المهارة.", "hi": "कम पूंजी व कौशल से शुरुआत; स्टाफ से पहले रिज़र्व बनाएं।" },
+      "supplierSelectionE": { "en": "When subcontracting junior freelancers, state agency margin transparently if client specifies an identified person; treat junior workers fairly.", "ur": "اگر کام آگے کسی اور فری لانسر سے کروائیں تو کلائنٹ سے معاہدے کی پابندی اور جونیئر کو پورا معاوضہ یقینی بنائیں۔", "ar": "عند الاستعانة بمتعاونين، التزم بشروط العميل وأنصف المتعاون في أجره.", "hi": "सब-कॉन्ट्रैक्ट करते समय अनुबंध नियमों व जूनियर फ्रीलांसर के उचित वेतन का पालन करें।" },
+      "purchasingProcurementF": { "en": "Buy legitimate stock photos, fonts, and SaaS seats instead of nulled/pirated themes.", "ur": "کلائنٹ کی ویب سائٹ میں چوری شدہ/نلڈ تھیمز یا پلگ انز ہرگز نہ لگائیں۔", "ar": "شراء القوالب والخطوط والصور المرخصة بدلاً من المقرصنة.", "hi": "ग्राहकों के लिए कभी भी क्रैक्ड या पायरेटेड थीम उपयोग न करें।" },
+      "ownershipPossessionG": { "en": "Freelancer acts as Ajir Mushtarak (independent contractor/Istisna): paid per deliverable milestone cleanly.", "ur": "فری لانسر فقہی اعتبار سے اجیرِ مشترک ہوتا ہے؛ معاہدے کے مطابق کام مکمل کرنے پر اجرت واجب ہو جاتی ہے۔", "ar": "المستقل في الفقه أجير مشترك يستحق أجره بإنجاز العمل المتفق عليه.", "hi": "फ़्रीलांसर 'अजीर मुशतरक' होता है; तय कार्य पूर्ण करने पर पारिश्रमिक देय होता है।" },
+      "productsServicesH": { "en": "Clean marketing, medical/educational content, B2B apps; decline tobacco/alcohol/dating/interest/adult ads and ghostwriting academic essays/degrees (cheating).", "ur": "حلال مارکیٹنگ، تعلیم، کاروباری ویب سائٹس؛ شراب/جوا/ڈیٹنگ/سود کے اشتہارات اور طلبہ کے جعلی تھیسس لکھنے (علمی خیانت) سے پرہیز۔", "ar": "الامتناع عن إعلانات القمار والربا والتدليس وعن كتابة الأبحاث والرسائل الأكاديمية للغش.", "hi": "वैध कंटेंट व डिज़ाइन; शराब/जुआ प्रचार और छात्रों के लिए नकली होमवर्क/थीसिस लिखने (धोखा) से बचें।" },
+      "pricingProfitI": { "en": "Clear hourly/milestone fee; never pad billable time trackers dishonestly.", "ur": "فی گھنٹہ یا فی پروجیکٹ واضح فیس؛ ٹائم ٹریکر میں جعلی گھنٹے یا غیر ضروری تاخیر نہ بڑھائیں۔", "ar": "أجر واضح وعدم التلاعب بساعات العمل المحسوبة.", "hi": "स्पष्ट दर और टाइम-ट्रैकर में झूठे घंटे न जोड़ना।" },
+      "customerRightsJ": { "en": "Honest realistic timelines (don't promise 48h knowing it takes 10 days), full handover of editable deliverables as agreed.", "ur": "حقیقی وقت بتائیں اور معاہدے کے مطابق اصل ایڈیٹیبل فائلیں فراہم کریں۔", "ar": "صدق مواعيد التسليم وتسليم الملفات المصدرية المتفق عليها.", "hi": "यथार्थ समयसीमा बताएं और तय स्रोत फ़ाइलें सौंपें।" },
+      "employeeRightsK": { "en": "Pay agency junior designers/editors right when milestone checks clear (Ibn Majah 2443), never vanish without settling subcontractors.", "ur": "جونیئر فری لانسرز کو کام ملتے ہی اجرت ادا کریں؛ ادائیگی لے کر غائب نہ ہوں۔", "ar": "دفع أجور المتعاونين فور الإنجاز دون مماطلة.", "hi": "सब-कॉन्ट्रैक्टर और जूनियर कर्मियों को कार्य पूर्ण होते ही भुगतान दें।" },
+      "relevantContractsL": { "en": ["Ijarah (Independent Contractor / Agency)", "Istisna (Deliverable build)", "Ju'alah (Performance bonus)"], "ur": ["اجارہ (آزاد خدمت)", "استصناع", "جعالہ"], "ar": ["الإجارة", "الاستصناع", "الجعالة"], "hi": ["इजाराह", "इस्तिसना", "जुआलाह"] },
+      "potentialProhibitedM": { "en": ["Ghostwriting college essays/theses for students", "Claiming agency templates/others' Behance designs as own work", "Handling gambling/interest bank SEO"], "ur": ["طلبہ کے جعلی اسائنمنٹس/تھیسس لکھنا", "دوسروں کا ڈیزائن اپنا دکھانا", "جوا/سودی سائٹس کی مارکیٹنگ"], "ar": ["كتابة أبحاث الغش الجامعي", "انتحال تصاميم الغير", "التسويق للربا والميسر"], "hi": ["छात्रों के नकली असाइनमेंट लिखना", "दूसरों का काम अपना दिखाना", "जुए/सूद का SEO करना"] },
+      "halalChecklistN": { "en": ["100% original portfolio", "Academic ghostwriting banned", "Halal client filter active"], "ur": ["اصلی ذاتی پورٹ فولیو", "امتحانی دھوکے بازی سے پاک", "حلال کلائنٹ فلٹر"], "hi": ["असली पोर्टफोलियो", "अकादमिक नकल से दूर", "हलाल ग्राहक जांच"] },
+      "realisticCaseStudyO": { "en": "Copywriter Sana drops high-paying university essay ghostwriting and credit-card affiliate blogs, specializing in medical/SaaS documentation and earning 3x cleanly.", "ur": "رائٹر ثناء نے طلبہ کے جعلی اسائنمنٹس اور کریڈٹ کارڈ بلاگز چھوڑ کر میڈیکل و سافٹ ویئر دستاویزات میں مہارت حاصل کی اور باعزت تین گنا کمایا۔", "ar": "تركت سناء كتابة الأبحاث الطلابية وتخصصت في التوثيق التقني والطبي الحلال فتضاعف دخلها.", "hi": "लेखिका सना ने छात्र निबंध घोटाले छोड़कर मेडिकल व SaaS लेखन अपनाया और 3 गुना हलाल कमाई की।" },
+      "commonMistakesP": { "en": ["Outsourcing a personal Upwork job forbidden by client contract while pretending to do every stroke personally."], "ur": ["کلائنٹ سے ذاتی کام کا معاہدہ کر کے چھپ کر آگے کسی غیر معیاری بندے سے کروا دینا۔"], "ar": ["تفويض العمل سراً دون علم العميل مع اشتراط التنفيذ الشخصي."], "hi": "अनुबंध में व्यक्तिगत कार्य तय होने पर छिपकर किसी और से काम करवाना।" },
+      "practicalAssignmentQ": { "en": "Write a 3-sentence Freelance Scope & Ethics Notice rejecting academic cheating, unpermitted copyrighted assets, and Haram ad clients.", "ur": "اپنی فری لانس پروفائل کے لیے 3 سطری اخلاقی اصول لکھیں جس میں علمی دھوکہ، پائریسی اور حرام اشتہارات سے معذرت شامل ہو۔", "ar": "اكتب إقراراً مهنياً لملفك يرفض الغش الأكاديمي والقرصنة والأنشطة المحرمة.", "hi": "अपनी फ़्रीलांस प्रोफ़ाइल हेतु 3-वाक्य की नैतिक नीति लिखें।" },
+      "referencesR": [
+        { "title": "Bukhari 2072 & Ibn Majah 2443", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:2072" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 5, "startAyah": 1, "endAyah": 1, "contextNote": { "en": "Honor client scope & deadlines.", "ur": "کلائنٹ سے طے شدہ کام اور ڈیڈ لائن پورا کرنا۔", "ar": "الوفاء بمواصفات العمل وموعد التسليم.", "hi": "ग्राहक के कार्य व समयसीमा का पालन।" }, "businessRelevance": { "en": "Builds global client trust & ratings.", "ur": "سچائی عالمی کلائنٹس میں مضبوط ساکھ بناتی ہے۔", "ar": "الصدق يبني سمعة عالمية موثوقة.", "hi": "सच्चाई वैश्विक साख बनाती है।" } }
+      ],
+      "hadithIds": ["bukhari_2072", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_17",
+          "question": { "en": "Is accepting paid freelance orders to write university assignments or graduate theses that students submit as their own work Halal?", "ur": "کیا پیسے لے کر یونیورسٹی طلبہ کے اسائنمنٹس یا تھیسس لکھ کر دینا حلال ہے جنہیں وہ اپنا کام ظاہر کر کے جمع کرائیں؟", "ar": "هل يجوز تقاضي أجر لكتابة أبحاث أو رسائل جامعية يقدمها الطالب باسمه؟", "hi": "क्या पैसे लेकर छात्रों के असाइनमेंट या थीसिस लिखना हलाल है जिन्हें वे अपने नाम से जमा करें?" },
+          "options": { "en": ["No; aiding academic fraud violates the ban on deception (Muslim 102) and cooperation in sin (5:2)", "Yes, purely research help", "Only in final year"], "ur": ["نہیں؛ علمی دھوکہ دہی اور غلط تعاون صحیح مسلم 102 اور 5:2 کے خلاف ہے (البتہ صرف پروف ریڈنگ/رہنمائی جائز ہے)", "ہاں صرف تحقیقی مدد ہے", "آخری سال میں جائز ہے"], "ar": ["لا؛ لأنه إعانة على الغش والتدليس (مسلم ١٠٢ والمائدة ٢)، بخلاف التوجيه والتدقيق اللغوي الصادق", "نعم يجوز"], "hi": ["नहीं; यह शैक्षणिक धोखे में सहयोग है जो मुस्लिम 102 व 5:2 के विरुद्ध है", "हाँ, केवल शोध मदद है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Proofreading/tutoring is Halal, whereas ghostwriting graded coursework for student impersonation is fraudulent.", "ur": "پروف ریڈنگ اور رہنمائی حلال ہے؛ پورا پرچہ یا تھیسس کسی کے نام پر لکھنا دھوکہ ہے۔", "ar": "التدقيق والتعليم مباح، أما انتحال البحث للغش فمحرم.", "hi": "टूटोरिंग हलाल है, पर छात्र के नाम पर पूरा पेपर लिखना धोखाधड़ी है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_18_education",
+      "sectorNumber": 18,
+      "name": {
+        "en": "18. Education & Online Courses",
+        "ur": "18. تعلیم، کوچنگ اور آن لائن کورسز",
+        "ar": "١٨. التعليم والدورات التدريبية",
+        "hi": "18. शिक्षा और ऑनलाइन पाठ्यक्रम व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Teaching beneficial skills is rewarded in both worlds when course claims are realistic (never false 'get rich in 7 days' hype), certificates aren't fake, and instruction delivers real value.",
+        "ur": "مفید علم و ہنر سکھانا عظیم نیکی و حلال روزگار ہے بشرطیکہ 'سات دن میں کروڑ پتی' جیسے جھوٹے دعوے نہ ہوں اور واقعی معیاری تعلیم دی جائے۔",
+        "ar": "التعليم والتدريب من أفضل المهن متى خلا من الدعاوى الكاذبة والشهادات الوهمية والغش.",
+        "hi": "शिक्षण पुण्य व हलाल रोज़गार है बशर्ते झूठे '7 दिन में अमीर' दावे न हों और वास्तविक कौशल सिखाया जाए।"
+      },
+      "introductionA": { "en": "Schools, vocational institutes, coding/language tutoring, and structured recorded or live online courses.", "ur": "اسکول، ٹیکنیکل ادارے، آن لائن ٹیوشن اور اسکلز کورسز کی تعلیم۔", "ar": "المدارس والمعاهد المهنية والدروس الخصوصية والدورات الرقمية.", "hi": "स्कूल, कौशल संस्थान, ट्यूशन और लाइव/रिकॉर्डेड ऑनलाइन कोर्स।" },
+      "howItOperatesB": { "en": "Designs clear curriculum syllabi, enrolls students via tuition Ijarah, teaches live/recorded cohorts, and assesses actual competency.", "ur": "واضح نصاب بنانا، فیس کا معاہدہ، باقاعدہ تدریس و رہنمائی اور حقیقی جانچ۔", "ar": "إعداد المناهج، عقود التعليم، التدريس والمتابعة، والتقييم الصادق.", "hi": "स्पष्ट पाठ्यक्रम, ट्यूशन अनुबंध, शिक्षण और वास्तविक मूल्यांकन।" },
+      "startupRequirementsC": { "en": "Qualified instructors, honest course outline, safe classroom/LMS platform, and transparent refund window.", "ur": "اہل اساتذہ، واضح نصاب، محفوظ کلاس یا ایل ایم ایس اور فیس واپسی کے قواعد۔", "ar": "معلمون أكفاء، منهج واضح، منصة آمنة، وسياسة استرداد واضحة.", "hi": "योग्य शिक्षक, स्पष्ट पाठ्यक्रम, सुरक्षित मंच और फीस रिफंड नीति।" },
+      "capitalAndInvestmentD": { "en": "Low-overhead digital launch, community Musharakah academy, or classroom lease.", "ur": "کم لاگت آن لائن ابتدا، تعلیمی مشارکہ یا کمرے کا اجارہ۔", "ar": "تأسيس رقمي ميسر أو شراكة تعليمية.", "hi": "कम लागत वाला डिजिटल लॉन्च या शैक्षिक साझेदारी।" },
+      "supplierSelectionE": { "en": "Hire verified subject practitioners—not fake 'gurus' teaching skills they never earned legitimately.", "ur": "تجربہ کار عملی ماہر اساتذہ رکھیں نہ کہ محض باتوں کے جادوگر۔", "ar": "توظيف ممارسين حقيقيين وأكفاء في التخصص.", "hi": "असली अनुभवी शिक्षकों को चुनें, न कि दिखावटी प्रचारकों को।" },
+      "purchasingProcurementF": { "en": "License textbooks, LMS software, and exam proctoring tools lawfully without piracy.", "ur": "کتب اور تعلیمی سافٹ ویئر قانونی لائسنس کے ساتھ حاصل کریں۔", "ar": "استخدام كتب وبرمجيات تعليمية مرخصة.", "hi": "वैध पाठ्यपुस्तकें व LMS सॉफ्टवेयर लाइसेंस लें।" },
+      "ownershipPossessionG": { "en": "Pre-recorded courses constitute digital Ijarah/license to access owned educational IP; restrict unauthorized account piracy.", "ur": "ریکارڈ شدہ کورس تک رسائی اجارہ/لائسنس ہے؛ طلبہ پر بھی لازم ہے کہ بغیر اجازت کورس لیک یا پائریٹ نہ کریں۔", "ar": "الالتحاق بالدورة ترخيص انتفاع بحقوق ملكية محمية ويحرم تسريبها.", "hi": "रिकॉर्डेड कोर्स एक्सेस लाइसेंस है; बिना अनुमति लीक/पायरेसी वर्जित है।" },
+      "productsServicesH": { "en": "STEM, languages, Quran/Arabic, accounting, trades; prohibit courses teaching black-hat fraud, fake carding, or interest arbitrage.", "ur": "سائنس، زبانیں، قرآن، اکاؤنٹنگ، ہنر؛ ہیکنگ فراڈ، کارڈنگ یا سودی ٹریڈنگ سکھانے والے کورسز ممنوع۔", "ar": "تعليم العلوم واللغات والمهن؛ ومنع دورات الاحتيال والمراهنات.", "hi": "विज्ञान, भाषा, लेखा व कौशल सिखाएं; धोखाधड़ी या सट्टा कोर्स न पढ़ाएं।" },
+      "pricingProfitI": { "en": "Publish transparent tuition & exam fees upfront; forbid bait 'free workshop' funnels disguising pressure upsells.", "ur": "مکمل فیس پہلے بتائیں؛ 'مفت سیمینار' کے نام پر ذہنی دباؤ سے مہنگے کورس بیچنے کے ہتھکنڈوں سے بچیں۔", "ar": "وضوح الرسوم الدراسية كاملة ومنع التسويق بالضغط والخداع.", "hi": "पूरी फीस पहले बताएं; मुफ्त वर्कशॉप के नाम पर दबाव वाली अपसेल से बचें।" },
+      "customerRightsJ": { "en": "Honest realistic earning expectations, published syllabus depth, and fair 7-day satisfaction refund if syllabus mismatches.", "ur": "کمائی کے حقیقی اعداد و شمار، مکمل نصاب اور توقع سے مختلف ہونے پر منصفانہ واپسی پالیسی۔", "ar": "بيان التوقعات الواقعية والمنهج الحقيقي وحق الاسترجاع عند المخالفة.", "hi": "यथार्थ कमाई अपेक्षाएं, पूरा पाठ्यक्रम और अंतर होने पर रिफंड अधिकार।" },
+      "employeeRightsK": { "en": "Treat teachers with utmost honor, clear hourly/monthly salaries, and paid prep hours.", "ur": "اساتذہ کی بے پناہ عزت، مناسب تنخواہ اور تیاری کے وقت کا لحاظ۔", "ar": "تكريم المعلمين وسداد رواتبهم كاملة في مواعيدها.", "hi": "शिक्षकों को सम्मान, समय पर वेतन व तैयारी समय का भुगतान।" },
+      "relevantContractsL": { "en": ["Ijarah (Tuition / Teaching)", "Musawamah (Textbooks)", "Musharakah (Institute Equity)", "Wakalah (LMS affiliate)"], "ur": ["اجارہ (تدریس)", "مساومہ (کتب)", "مشارکہ", "وکالت"], "ar": ["الإجارة التعليمية", "المساومة", "المشاركة", "الوكالة"], "hi": ["इजाराह (शिक्षण)", "मुसावमह", "मुशारकाह", "वकालह"] },
+      "potentialProhibitedM": { "en": ["Fabricated 'student earned $50,000 in week 1' screenshots", "Selling fake accredited diplomas", "Paywalling hidden mandatory exams"], "ur": ["جعلی کمائی اسکرین شاٹس دکھانا", "جعلی ڈگریاں بیچنا", "پوشیدہ لازمی امتحان فیس"], "ar": ["تزوير قصص النجاح والأرباح", "بيع شهادات وهمية", "رسوم خفية"], "hi": ["नकली कमाई स्क्रीनशॉट", "फर्जी डिग्रियाँ बेचना", "छिपा परीक्षा शुल्क"] },
+      "halalChecklistN": { "en": ["Realistic claims without hype", "Published syllabus upfront", "Fair cancellation/refund"], "ur": ["حقیقت پسندانہ دعوے", "پورا نصاب پہلے واضح", "فیس واپسی کی سہولت"], "hi": ["यथार्थ दावे", "स्पष्ट पाठ्यक्रम", "रिफंड नीति"] },
+      "realisticCaseStudyO": { "en": "An Excel/accounting instructor stops using fake lifestyle sports-car ads, shows exact real syllabus modules + practice sheets, and keeps 94% completion & referrals.", "ur": "اکاؤنٹنگ ٹیچر نے لگژری گاڑیوں والے جھوٹے اشتہارات بند کر کے اصل نصاب اور پریکٹس شیٹس دکھائیں، جس سے 94 فیصد طلبہ مطمئن ہوئے۔", "ar": "أوقف مدرب محاسبة إعلانات الثراء السريع وعرض المنهج والتطبيقات الحقيقية فنال رضا ٩٤٪ من المتدربين.", "hi": "अकाउंटिंग शिक्षक ने झूठे लक्ज़री विज्ञापन बंद कर वास्तविक सिलेबस दिखाया और 94% छात्र संतुष्टि पाई।" },
+      "commonMistakesP": { "en": ["Selling outdated 2018 generic YouTube scraps repackaged inside a costly $400 wrapper."], "ur": ["پرانی مفت یوٹیوب ویڈیوز جوڑ کر مہنگا پیڈ کورس بنا کر بیچنا۔"], "ar": ["إعادة تغليف محتوى مجاني قديم وبيعه بسعر باهظ دون قيمة مضافة حقيقية."], "hi": "पुराने मुफ्त यूट्यूब वीडियो पैक करके महंगे कोर्स के रूप में बेचना।" },
+      "practicalAssignmentQ": { "en": "Write an Honest Course Outcome Disclaimer replacing vague wealth promises with exact skills students actually master.", "ur": "اپنے کورس کے لیے جھوٹے منافع کے بجائے حاصل ہونے والی اصل مہارتوں کا واضح اعلان نامہ لکھیں۔", "ar": "صغ بيان مخرجات تعليمية صادقاً يركز على المهارات الفعلية لا الأرباح الوهمية.", "hi": "अवास्तविक कमाई वादों के बजाय वास्तविक सीखे जाने वाले कौशलों का ईमानदार विवरण लिखें।" },
+      "referencesR": [
+        { "title": "Quran 58:11 & Sahih Muslim 102", "category": "direct_quran", "attribution": "Quran.com & Sunnah.com", "url": "https://sunnah.com/muslim:102" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 29, "endAyah": 29, "contextNote": { "en": "Honest educational value.", "ur": "تعلیم میں حقیقی افادیت اور سچائی۔", "ar": "الصدق في القيمة التعليمية والتراضي.", "hi": "शिक्षा में वास्तविक मूल्य व सत्यता।" }, "businessRelevance": { "en": "Protects students from fraudulent coaching hype.", "ur": "طلبہ کو فرضی کوچنگ فراڈ سے بچاتی ہے۔", "ar": "حماية الطلاب من التسويق الخادع.", "hi": "छात्रों को भ्रामक कोचिंग प्रचार से बचाती है।" } }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_18",
+          "question": { "en": "Why does displaying edited/fake income screenshots to sell an online business course violate Islamic business ethics?", "ur": "آن لائن کورس بیچنے کے لیے جعلی یا ایڈیٹ شدہ کمائی کے اسکرین شاٹس دکھانا اسلامی اخلاقیات کے خلاف کیوں ہے؟", "ar": "لماذا يُحرّم عرض لقطات أرباح مزيفة أو منتقاة بشكل مضلل للترويج للدورات؟", "hi": "ऑनलाइन कोर्स बेचने के लिए नकली कमाई स्क्रीनशॉट दिखाना इस्लामी नैतिकता के विरुद्ध क्यों है?" },
+          "options": { "en": ["It creates false expectations and deceives students (Ghish, Muslim 102), invalidating fair informed consent", "Because screenshots use PNG format", "Only for tax reasons"], "ur": ["یہ طلبہ کو دھوکے میں ڈال کر باہمی رضامندی کو متاثر کرتا ہے (مسلم 102)", "کیونکہ تصویر پی این جی ہوتی ہے", "صرف ٹیکس کی وجہ سے"], "ar": ["لأنه غش وتضليل يفسد التراضي الصحيح (مسلم ١٠٢)", "بسبب صيغة الصورة"], "hi": ["यह छात्रों को भ्रमित कर सच्ची सहमति नष्ट करता है (मुस्लिम 102)", "केवल फ़ाइल फ़ॉर्मेट के कारण"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Manipulative marketing outcomes are deceptive Ghish.", "ur": "دھوکے پر مبنی جعلی نتائج دکھانا حرام غِش ہے۔", "ar": "التسويق بنتائج مزيفة غش محرم.", "hi": "नकली परिणामों से प्रचार करना वर्जित धोखा है।" }
+        }
+      ]
+    }
+  ]
+}

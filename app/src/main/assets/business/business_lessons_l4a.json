@@ -1,0 +1,871 @@
+{
+  "lessons": [
+    {
+      "id": "lesson_l4_m15",
+      "level": 4,
+      "moduleNumber": 15,
+      "moduleTitle": {
+        "en": "Module 15: Workers, Employees & Fair Labor",
+        "ur": "ماڈیول 15: ملازمین کے حقوق، اجرت اور اسلامی کام کا ماحول",
+        "ar": "الوحدة ١٥: حقوق العمال والأجور وبيئة العمل",
+        "hi": "मॉड्यूल 15: कर्मचारी अधिकार, वेतन और कार्यस्थल नैतिकता"
+      },
+      "title": {
+        "en": "Prompt Fair Wages (Ibn Majah 2443), Clear Job Terms & Worker Dignity",
+        "ur": "بروقت منصفانہ اجرت (ابن ماجہ 2443)، واضح معاہدہ اور کارکن کا وقار",
+        "ar": "الوفاء بالأجر فوراً (ابن ماجه ٢٤٤٣) وضوابط التوظيف والعدالة",
+        "hi": "समय पर उचित वेतन (इब्न माजा 2443), स्पष्ट अनुबंध व श्रमिक सम्मान"
+      },
+      "primaryEvidenceCategory": "authentic_hadith",
+      "learningObjectives": {
+        "en": [
+          "Set wage, working hours, overtime, and rest breaks explicitly before work begins.",
+          "Pay wages promptly without delay (Ibn Majah 2443 + Bukhari 2270 warning).",
+          "Uphold safe working conditions, dignity, and prayer accommodation."
+        ],
+        "ur": [
+          "کام شروع کرنے سے قبل تنخواہ، اوقاتِ کار، اوور ٹائم اور چھٹی واضح طے کریں۔",
+          "پسینہ خشک ہونے سے پہلے بروقت اجرت ادا کریں (ابن ماجہ 2443 اور بخاری 2270)۔",
+          "محفوظ ماحول، عزتِ نفس اور نماز کے اوقات کا احترام یقینی بنائیں۔"
+        ],
+        "ar": [
+          "تحديد الأجر وساعات العمل مسبقاً وسداد الأجور دون تأخير وصون كرامة العامل."
+        ],
+        "hi": [
+          "कार्य से पहले वेतन, कार्य समय व छुट्टी स्पष्ट तय करें, समय पर वेतन दें और सम्मान बनाए रखें।"
+        ]
+      },
+      "introduction": {
+        "en": "In Sahih al-Bukhari 2270, Allah warns He will personally contend on Judgment Day against an employer who hires a laborer, takes full work from him, and withholds his wage. Alongside Sunan Ibn Majah 2443, fair, timely pay is a sacred obligation.",
+        "ur": "صحیح بخاری 2270 کے مطابق اللہ تعالیٰ قیامت کے دن اس آجر کا خود مدعی ہوگا جو مزدور سے پورا کام لے اور اس کی مزدوری نہ دے۔ ابن ماجہ 2443 میں پسینہ خشک ہونے سے پہلے اجرت دینے کی تاکید آئی ہے۔",
+        "ar": "في صحيح البخاري (٢٢٧٠) أن الله خصم يوم القيامة لمن استأجر أجيراً فاستوفى منه ولم يعطه أجره، وفي ابن ماجه (٢٤٤٣): أعطوا الأجير أجره قبل أن يجف عرقه.",
+        "hi": "सहीह बुखारी 2270 के अनुसार क़ियामत के दिन अल्लाह स्वयं उस नियोक्ता के विरुद्ध होगा जो पूरा काम लेकर मज़दूरी रोकता है। इब्न माजा 2443 समय पर वेतन का आदेश देती है।"
+      },
+      "explanationUr": "اسلامی ملازمت (اجارہِ اشخاص) کے 5 بنیادی تقاضے: (1) ملازمت شروع کرنے سے پہلے تنخواہ کی رقم، تاریخِ ادائیگی اور کام کے اوقات تحریری طے ہوں (احمد/نسائی کی مستند تعلیم: کام لینے سے پہلے مزدور کو اس کی اجرت بتا دو)؛ (2) بغیر کسی ٹال مٹول کے مقررہ تاریخ پر مکمل تنخواہ ادا کی جائے (ابن ماجہ 2443 کی اسنادی حیثیت مع شواہد و بخاری 2270 کی مضبوط تائید)؛ (3) استطاعت سے زیادہ کام کا بوجھ نہ ڈالا جائے، یا زائد کام پر معقول اوور ٹائم دیا جائے؛ (4) مزدور و ملازم کو ذلت و گالی گلوچ سے محفوظ عزت دار ماحول، تحفظِ جان و صحت اور پنجگانہ و جمعہ کی نماز کی سہولت دی جائے؛ (5) اسی طرح ملازم پر بھی فرض ہے کہ امانت داری اور وقت کی پابندی سے اپنا کام پورا کرے (القصص 28:26: القوی الامین)۔",
+      "explanationEn": "Islamic employment law rests on Ijarah al-Ashkhas (hiring of human service): (1) Specify wage, payday, duties, and working hours in writing before onboarding; (2) Pay full earned wages promptly on schedule—noting both Bukhari 2270 and Ibn Majah 2443 (with honest Hadith grading notes: corroborated Hasan/Sahih li-ghayrihi); (3) Never overload staff beyond safe capacity or force unpaid off-clock overtime; (4) Ensure workplace safety, dignity (Bukhari 30), and Salah/Jumu'ah breaks; (5) Employees owe faithful stewardship, honesty, and competence (Quran 28:26: strong & trustworthy).",
+      "explanationAr": "ضوابط التوظيف (إجارة الأشخاص): (١) تسمية الأجر والساعات مسبقاً قبل العمل، (٢) الوفاء الفوري بالأجر دون مماطلة (البخاري ٢٢٧٠، ابن ماجه ٢٤٤٣)، (٣) عدم تكليف العامل فوق طاقته وصون كرامته (البخاري ٣٠)، (٤) توفير السلامة المهنية وأوقات الصلاة، (٥) أمانة العامل وإتقانه (القصص ٢٦).",
+      "explanationHi": "इस्लामी रोज़गार (इजारातुल-अश्ख़ास) के नियम: (1) कार्य से पहले वेतन, कार्य समय व छुट्टी लिखित तय हों; (2) बिना देरी वेतन दें (बुखारी 2270, इब्न माजा 2443); (3) क्षमता से अधिक या बिना वेतन अतिरिक्त काम न लें; (4) सुरक्षित माहौल, सम्मान और नमाज़ का अवसर दें; (5) कर्मचारी भी पूरी ईमानदारी व दक्षता से कार्य करे (28:26)।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": { "en": "Justice and trust apply symmetrically between employer and employee.", "ur": "آجر اور اجیر دونوں کے درمیان عدل و امانت کا حکم۔", "ar": "الأمانة والعدل بين صاحب العمل والموظف.", "hi": "नियोक्ता और कर्मचारी के बीच न्याय और अमानत का आदेश।" },
+          "businessRelevance": { "en": "Payroll commitments, fair performance reviews, and honest work hours are mutual Amanah.", "ur": "وقت پر تنخواہ، منصفانہ ترقی اور دیانتدارانہ کام باہمی امانت ہیں۔", "ar": "الأجور وإتقان العمل أمانة متبادلة.", "hi": "वेतन अदायगी, न्यायसंगत मूल्यांकन और ईमानदार कार्य आपसी अमानत हैं।" }
+        }
+      ],
+      "hadithIds": ["ibnmajah_2443", "bukhari_2072"],
+      "classicalFiqh": {
+        "en": "All four Madhahib divide workers into Ajir Khass (exclusive employee paid for available time) and Ajir Mushtarak (freelancer/artisan paid per deliverable), requiring explicit upfront wage specification.",
+        "ur": "فقہا نے اجیرِ خاص (ملازم) اور اجیرِ مشترک (کاریگر/فری لانسر) کے الگ دقیق احکام بیان کیے ہیں اور دونوں میں ابتدا میں اجرت طے کرنا لازم قرار دیا ہے۔",
+        "ar": "فرّق الفقهاء بين الأجير الخاص والأجير المشترك مع وجوب تسمية الأجر مسبقاً.",
+        "hi": "विद्वानों ने नियमित कर्मचारी और फ्रीलांसर कारीगर के स्पष्ट नियम तय किए हैं और वेतन पहले निश्चित करना अनिवार्य माना है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Minimum statutory labor standards, occupational safety, prompt payroll transfers, and ethical severance protections align directly with Maqasid al-Shariah.",
+        "ur": "مزدور کے کم از کم قانونی تحفظات، حفاظتی انتظامات اور بروقت پے رول شرعی مقاصد سے مکمل ہم آہنگ ہیں۔",
+        "ar": "أنظمة العمل الآمنة وصرف الرواتب المنتظم والتأمين المهني متوافقة مع مقاصد الشريعة.",
+        "hi": "न्यूनतम वेतन कानून, कार्यस्थल सुरक्षा और समय पर पेरोल शरीअत के उद्देश्यों के अनुरूप हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "For an exclusive employee (Ajir Khass), all schools confirm salary is due if the employee shows up ready for work even when customer footfall is slow.",
+        "ur": "اجیرِ خاص (تنخواہ دار ملازم) اگر ڈیوٹی پر حاضر رہے اور کام کم ہو تو چاروں مذاہب میں اس کی پوری تنخواہ واجب ہے۔",
+        "ar": "يستحق الأجير الخاص أجره بتسليم نفسه للعمل وإن قلّ الزبائن.",
+        "hi": "नियमित कर्मचारी यदि कार्य हेतु उपस्थित रहे और ग्राहक कम हों, तो भी पूरा वेतन देय है।"
+      },
+      "modernExample": {
+        "en": "A warehouse automates bi-weekly/monthly payroll so salaries clear on the 1st unconditionally, equips staff with safety boots/masks, and posts Jumu'ah prayer shifts.",
+        "ur": "گودام مالک یکم تاریخ کو خودکار طریقے سے تنخواہ منتقل کرے، مزدوروں کو حفاظتی سامان مہیا کرے اور جمعہ و دیگر نمازوں کی باقاعدہ بریک دے۔",
+        "ar": "صرف الرواتب تلقائياً في الموعد، وتوفير معدات السلامة، وإتاحة وقت الصلاة.",
+        "hi": "गोदाम मालिक हर महीने की 1 तारीख को वेतन ट्रांसफ़र सुनिश्चित करे, सुरक्षा उपकरण दे और नमाज़ ब्रेक रखे।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Written offer letter + 1st-of-month payroll + paid overtime", "ur": "تحریری ملازمت نامہ، یکم کو تنخواہ اور اوور ٹائم کا پورا معاوضہ", "ar": "عقد موثق وصرف منتظم للرواتب وأجر إضافي عادل", "hi": "लिखित नियुक्ति पत्र, समय पर वेतन और उचित ओवरटाइम" },
+          "prohibitedPractice": { "en": "Delaying salaries 2–3 months deliberately or levying unlawful salary fines on innocent cashiers", "ur": "جان بوجھ کر دو دو ماہ تنخواہ روکنا یا بلا قصور ملازم کی تنخواہ سے کٹوتی کرنا", "ar": "تأخير الرواتب دون عذر أو الخصم الجائر من أجور العمال", "hi": "बिना कारण महीनों वेतन रोकना या निर्दोष कर्मी के वेतन से मनमानी कटौती करना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Holding back the first month's salary indefinitely as unlawful leverage.",
+          "Assuming 'commission-only zero-base' contracts excuse leaving full-time staff unpaid after long hours."
+        ],
+        "ur": [
+          "ملازم کو باندھے رکھنے کے لیے پہلی تنخواہ روک رکھنا۔",
+          "کل وقتی ملازم سے 10 گھنٹے کام لے کر سیل نہ ہونے پر صفر تنخواہ دینا۔"
+        ],
+        "ar": [
+          "حبس راتب الشهر الأول تعسفاً، أو حرمان المتفرغ من الأجر الثابت."
+        ],
+        "hi": [
+          "कर्मचारी को रोकने के लिए पहला वेतन दबा लेना, या पूरे दिन काम लेकर शून्य वेतन देना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Issue signed job descriptions stating fixed wage, payday, hours, and leave.",
+          "Never delay payroll when cash exists (Bukhari 2270 & 2400).",
+          "Provide clean restrooms, prayer space, and physical safety gear."
+        ],
+        "ur": [
+          "تنخواہ، اوقات اور چھٹیوں کا تحریری معاہدہ دیں۔",
+          "رقم موجود ہونے پر تنخواہ ایک دن بھی لیٹ نہ کریں۔",
+          "پینے کا صاف پانی، نماز کی جگہ اور حفاظتی سہولیات مہیا کریں۔"
+        ],
+        "ar": [
+          "عقود عمل مكتوبة، وصرف الرواتب في موعدها، وتوفير بيئة آمنة ومصلّى."
+        ],
+        "hi": [
+          "लिखित नौकरी पत्र दें, वेतन समय पर चुकाएं, और सुरक्षित माहौल व नमाज़ स्थान दें।"
+        ]
+      },
+      "summary": {
+        "en": "Honoring workers with clear terms, prompt fair wages, safety, and kindness brings Barakah to the entire enterprise.",
+        "ur": "ملازمین کو واضح شرائط، بروقت اجرت، حفاظت اور حسنِ سلوک دینے سے کاروبار میں برکت نازل ہوتی ہے۔",
+        "ar": "إنصاف العاملين بوضوح العقد وسرعة الأجر وحفظ الكرامة يجلب البركة للمنشأة.",
+        "hi": "स्पष्ट शर्तों, समय पर वेतन, सुरक्षा और सम्मान से कर्मचारियों का हक निभाने से व्यापार में बरकत आती है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m15_1",
+          "question": {
+            "en": "If an employer hires an exclusive salaried cashier for a fixed daily shift and few customers enter that week, is full salary owed?",
+            "ur": "اگر باقاعدہ تنخواہ دار سیلز مین پورا وقت دکان پر حاضر رہے لیکن گاہک کم آئیں تو کیا پوری تنخواہ واجب ہے؟",
+            "ar": "إذا التزم الموظف بالدوام الكامل وقلّ عدد الزبائن، هل يستحق كامل راتبه؟",
+            "hi": "यदि नियमित वेतनभोगी कर्मचारी पूरी शिफ्ट मौजूद रहे और ग्राहक कम आएं, तो क्या पूरा वेतन देय है?"
+          },
+          "options": {
+            "en": [
+              "Yes; an exclusive employee (Ajir Khass) earns full salary by making their contracted time faithfully available",
+              "No; deduct slow days automatically",
+              "Pay only half"
+            ],
+            "ur": [
+              "جی ہاں؛ اجیرِ خاص کی تنخواہ وقت پر حاضری اور دستیابی سے واجب ہو جاتی ہے",
+              "نہیں، کم گاہکوں پر کاٹ لیں",
+              "آدھی تنخواہ دیں"
+            ],
+            "ar": [
+              "نعم؛ يستحق الأجير الخاص أجره الكامل بتمكين صاحب العمل من وقته",
+              "يُخصم منه تلقائياً"
+            ],
+            "hi": [
+              "हाँ; नियमित कर्मचारी का पूरा वेतन समय उपलब्ध कराने से देय हो जाता है",
+              "नहीं, मंदी के दिन काट लें"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Under all four schools of Fiqh, Ajir Khass receives full agreed salary regardless of store sales fluctuations.",
+            "ur": "چاروں ائمہ کے نزدیک اجیرِ خاص کی تنخواہ فروخت کے اتار چڑھاؤ سے منقطع نہیں کی جا سکتی۔",
+            "ar": "يستحق الأجير الخاص أجره دون ربط بتقلبات المبيعات.",
+            "hi": "चारों मज़हबों के अनुसार नियमित कर्मचारी का वेतन बिक्री के उतार-चढ़ाव पर निर्भर नहीं होता।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Create a 1-page Halal Employment Checklist verifying written wage, fixed payday, safety equipment, and daily Salah accommodation.",
+        "ur": "اپنے ملازمین یا مستقبل کی ٹیم کے لیے ایک صفحے کا چیک لسٹ بنائیں: تحریری معاہدہ، ادائیگی کی تاریخ، حفاظتی انتظام اور نماز کی سہولت۔",
+        "ar": "أعد قائمة فحص من صفحة واحدة لعقود الموظفين وموعد الرواتب والسلامة المهنية.",
+        "hi": "कर्मचारियों के लिए लिखित वेतन, निश्चित भुगतान तिथि, सुरक्षा और नमाज़ ब्रेक की 1-पृष्ठ जांच सूची बनाएं।"
+      },
+      "sources": [
+        { "title": "Sahih al-Bukhari 2270 & Sunan Ibn Majah 2443", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/ibnmajah:2443" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m16",
+      "level": 4,
+      "moduleNumber": 16,
+      "moduleTitle": {
+        "en": "Module 16: Zakat on Business Wealth (Zakat al-Tijarah)",
+        "ur": "ماڈیول 16: تجارتی مال اور کاروبار پر زکوٰۃ کے مسائل",
+        "ar": "الوحدة ١٦: زكاة عروض التجارة وأصول الشركات",
+        "hi": "मॉड्यूल 16: व्यावसायिक संपत्ति पर ज़कात (ज़कातुल-तिजारह)"
+      },
+      "title": {
+        "en": "Zakatable Assets, Trade Inventory Valuation, Receivables & Liabilities",
+        "ur": "قابلِ زکوٰۃ تجارتی اثاثے، اسٹاک کی قیمت کا حساب، وصولیاں اور واجب الادا قرض",
+        "ar": "تقييم عروض التجارة، النقد، الذمم المدينة، وحسم الالتزامات الحالة",
+        "hi": "ज़कात योग्य व्यापारिक स्टॉक, नक़द, प्राप्य और देनदारियों की गणना"
+      },
+      "primaryEvidenceCategory": "classical_fiqh",
+      "learningObjectives": {
+        "en": [
+          "Calculate 2.5% Zakat on (Cash + Trade Inventory at current selling/market valuation + Reliable Receivables − Short-Term Due Liabilities).",
+          "Exclude fixed business assets (buildings, machines, delivery trucks) not held for resale.",
+          "Understand why government taxes do NOT substitute for Zakat (9:60)."
+        ],
+        "ur": [
+          "تجارتی زکوٰۃ کا صحیح فارمولا لاگو کریں: (نقدی + فروخت کے لیے رکھا مالِ تجارت بازاری قیمت پر + قابلِ وصول قرض − فوری واجب الادا قرضے) × 2.5%۔",
+          "ذاتی یا کاروباری مستقل اثاثوں (دکان، مشینری، گاڑی جو بیچنے کے لیے نہیں) کو مستثنیٰ سمجھیں۔",
+          "جانیں کہ انکم یا سیلز ٹیکس زکوٰۃ کا متبادل نہیں ہے (التوبہ 9:60)۔"
+        ],
+        "ar": [
+          "حساب زكاة التجارة ٢.٥٪ (النقد + البضاعة بسعر السوق + الديون المرجوة - الالتزامات الحالة)، واستثناء الأصول الثابتة."
+        ],
+        "hi": [
+          "व्यापार ज़कात (2.5%) का सही सूत्र लागू करें, अचल संपत्तियों को अलग रखें, और समझें कि टैक्स ज़कात का विकल्प नहीं।"
+        ]
+      },
+      "introduction": {
+        "en": "Every lunar year (Hawl), businesses holding net Zakatable trade assets at or above Nisab pay 2.5% Zakat to purify wealth (2:267) and uplift the eight Quranic categories (9:60). Accurate valuation protects both the poor's share and your Barakah.",
+        "ur": "ہر قمری سال پورا ہونے پر نصاب کی مالک تجارت پر ڈھائی فیصد زکوٰۃ فرض ہے جو مال کو پاک کرتی ہے (2:267) اور قرآن کے آٹھ مصارف (9:60) تک پہنچتی ہے۔",
+        "ar": "تجب الزكاة بنسبة ٢.٥٪ على صافي عروض التجارة عند بلوغ النصاب وحولان الحول تطهيراً للمال وإقامةً للتكافل (٢:٢٦٧، ٩:٦٠).",
+        "hi": "प्रत्येक हिजरी वर्ष पूरा होने पर निसाब धारक व्यवसाय पर 2.5% ज़कात अनिवार्य है, जो धन को शुद्ध कर आठ मदों (9:60) में वितरित होती है।"
+      },
+      "explanationUr": "کاروباری زکوٰۃ کے بنیادی مسائل (AAOIFI معیار 35 اور کلاسیکی فقہ کے مطابق): (1) قابلِ زکوٰۃ اشیاء: بینک/کیش بیلنس، فروخت کے لیے موجود خام مال و تیار مال (تجارتی اسٹاک)، اور وہ ادھار رقوم جن کی واپسی کی قوی امید ہو؛ (2) غیر قابلِ زکوٰۃ مستقل اثاثے: دکان/فیکٹری کی عمارت، فرنیچر، کمپیوٹرز، مشینیں اور ڈلیوری گاڑیاں جو استعمال کے لیے ہوں (تاہم ان سے آنے والا کرایہ یا نفع اگر کیش میں جمع رہے تو قابلِ زکوٰۃ ہوگا)؛ (3) تشخیصِ مالیت: سال کے مقررہ دن تجارتی اسٹاک کی موجودہ مارکیٹ/فروخت کی قیمت لگائی جائے، نہ کہ پرانی لاگت؛ (4) منہا کیے جانے والے قرض: صرف فوری واجب الادا یا قریبی تجارتی بل اور سپلائر ادائیگیاں منہا ہوں گی (طویل مدتی قرضوں کی پوری رقم منہا کرنے پر فقہا میں تفصیل ہے)؛ (5) شرح: قمری سال پر 2.5% (شمسی سال مجبوراً اپنایا جائے تو AAOIFI کے مطابق تقریباً 2.577%)؛ (6) انکم ٹیکس یا GST زکوٰۃ میں شمار نہیں ہوتے۔",
+      "explanationEn": "Business Zakat follows four straightforward steps (AAOIFI SS 35 & Classical Fiqh): (1) Include Trade Assets: cash in bank/register, short-term halal investments, raw materials/work-in-progress/finished inventory held for sale valued at current market wholesale/selling rate on Zakat anniversary, plus collectible trade receivables; (2) Exclude Fixed Operating Assets: factory buildings, shop fixtures, tools, delivery vehicles, and machinery used in operations (not for resale); (3) Deduct Immediate Current Liabilities: due supplier invoices, accrued payroll, due utility/tax bills (contemporary scholars limit long-term multi-year debt deductions carefully—consult a Mufti on corporate loans); (4) Apply Rate: 2.5% per Hijri lunar year (~2.577% if using solar fiscal year per AAOIFI) and distribute strictly to the 8 Quranic recipients (9:60)—never treat government corporate tax as Zakat.",
+      "explanationAr": "خطوات زكاة عروض التجارة (معيار أيوفي ٣٥): (١) حصر الموجودات الزكوية: النقد، وبضاعة البيع والمواد الخام بسعر السوق يوم الوجوب، والديون المرجوة؛ (٢) استثناء الأصول الثابتة كالمباني والآلات؛ (٣) خصم الديون الحالية المستحقة؛ (٤) إخراج ٢.٥٪ للحول الهجري (أو ٢.٥٧٧٪ للسنة الميلادية). ولا تُغني الضرائب الحكومية عن الزكاة.",
+      "explanationHi": "व्यापार ज़कात के चार नियम (AAOIFI मानक 35): (1) नक़द, बिक्री हेतु तैयार व कच्चे स्टॉक का वर्तमान बाज़ार मूल्य, तथा विश्वसनीय प्राप्य जोड़ें; (2) उपयोग होने वाले अचल भवन, मशीन और वाहन न जोड़ें; (3) तुरंत देय बिल व वेतन घटाएं; (4) हिजरी वर्ष पर 2.5% (अंग्रेज़ी वर्ष पर 2.577%) निकालकर क़ुरआनी 8 मदों (9:60) में दें। टैक्स ज़कात का विकल्प नहीं है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 9,
+          "startAyah": 60,
+          "endAyah": 60,
+          "contextNote": { "en": "The eight mandatory channels for Zakat distribution.", "ur": "زکوٰۃ کے متعین آٹھ قرآنی مصارف۔", "ar": "مصارف الزكاة الثمانية المنصوصة.", "hi": "ज़कात के आठ निर्धारित क़ुरआनी मद।" },
+          "businessRelevance": { "en": "Business Zakat must reach eligible individuals—not corporate CSR ads, buildings, or tax offsets.", "ur": "کاروباری زکوٰۃ مستحق افراد (فقراء، مساکین، مقروض) کی ملکیت میں دی جائے، اشتہارات یا ٹیکس میں نہیں۔", "ar": "تُصرف لمستحقيها الثمانية بالتمليك لا في الدعاية أو الضرائب.", "hi": "ज़कात पात्र ज़रूरतमंदों तक पहुँचनी चाहिए, न कि विज्ञापन या टैक्स छूट के रूप में।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Samurah ibn Jundub's report (Abu Dawud 1562) and classical consensus establish annual Zakat on commercial merchandise (Urud al-Tijarah) held for sale.",
+        "ur": "حضرت سمرہ بن جندبؓ کی روایت (ابوداؤد 1562) اور جمہور فقہا کے اجماع سے فروخت کے لیے رکھے مالِ تجارت پر زکوٰۃ فرض ہے۔",
+        "ar": "أجمع الجمهور على وجوب الزكاة في عروض التجارة المعدة للبيع.",
+        "hi": "विद्वानों के सर्वसम्मति से बिक्री हेतु रखे गए व्यापारिक माल पर ज़कात अनिवार्य है।"
+      },
+      "contemporaryGuidance": {
+        "en": "AAOIFI Shariah Standard No. 35 (Zakah) details corporate net-current-asset method vs net-invested-funds method and explains lunar vs solar 2.577% adjustment.",
+        "ur": "AAOIFI معیار 35 کارپوریٹ زکوٰۃ کے حساب کتاب اور قمری بمقابلہ شمسی سال کے تناسب کی تفصیل بیان کرتا ہے۔",
+        "ar": "يفصل معيار أيوفي ٣٥ طرق احتساب زكاة الشركات وتعديل النسبة للسنة الشمسية.",
+        "hi": "AAOIFI मानक 35 कंपनी ज़कात गणना व हिजरी-सौर वर्ष समायोजन विस्तार से बताता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Majority deduct immediate short-term liabilities from gross trade assets; Shafi'i restricts debt deduction further; gold vs silver Nisab valuation affects low-asset thresholds (Hanafis often recommend silver Nisab as more protective of the poor—ask local scholars).",
+        "ur": "نصاب میں سونا یا چاندی کسے معیار بنایا جائے اور قرض منہا کرنے کی تفصیلات میں فقہاء کے ہاں اختلاف ہے؛ فقہ حنفی میں غریبوں کے فائدے کے پیشِ نظر چاندی کے نصاب کو ترجیح دی جاتی ہے۔",
+        "ar": "اختلف العلماء في خصم الديون المؤجلة وفي اعتبار نصاب الذهب أو الفضة؛ والراجح عند الحنفية نصاب الفضة نفعاً للفقراء.",
+        "hi": "दीर्घकालिक ऋण कटौती व सोने-चांदी के निसाब पर मज़हबों में सूक्ष्म अंतर है; गरीबों के हित हेतु चांदी निसाब कई विद्वान चुनते हैं।"
+      },
+      "modernExample": {
+        "en": "On 1 Ramadan: Shop cash $8,000 + Stock market value $22,000 + Collectibles $5,000 − Due Supplier Bills $5,000 = $30,000 Net × 2.5% = $750 Zakat due. Delivery van ($15,000) excluded.",
+        "ur": "یکم رمضان کو: نقدی 8 لاکھ + اسٹاک بازاری قیمت 22 لاکھ + وصولیاں 5 لاکھ − فوری واجب الادا بل 5 لاکھ = 30 لاکھ کا 2.5% یعنی 75 ہزار زکوٰۃ۔ ڈلیوری وین مستثنیٰ ہے۔",
+        "ar": "نقد ٨ آلاف + بضاعة ٢٢ ألف + ديون مرجوة ٥ آلاف - ديون حالة ٥ آلاف = ٣٠ ألف × ٢.٥٪ = ٧٥٠ زكاة، مع استثناء الشاحنة.",
+        "hi": "नक़द 8 लाख + स्टॉक मूल्य 22 लाख + प्राप्य 5 लाख − देय बिल 5 लाख = 30 लाख × 2.5% = 75,000 ज़कात; डिलीवरी वैन अलग रहेगी।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Valuing salable inventory at Zakat anniversary and paying 2.5% to eligible needy", "ur": "مقررہ تاریخ پر تجارتی مال کی بازاری قیمت لگا کر 2.5% مستحقین کو دینا", "ar": "تقويم البضاعة يوم الوجوب وإخراج ٢.٥٪ للمستحقين", "hi": "वार्षिक तिथि पर स्टॉक का बाज़ार मूल्य लगाकर 2.5% पात्रों को देना" },
+          "prohibitedPractice": { "en": "Claiming 'my business income tax paid all my Zakat' or deliberately gifting stock right before Zakat date to dodge Nisab", "ur": "یہ کہنا کہ 'ٹیکس دے دیا تو زکوٰۃ معاف ہو گئی' یا زکوٰۃ سے بچنے کے لیے حیلہ کرنا", "ar": "احتساب الضرائب بديلاً عن الزكاة أو التحايل لإسقاط النصاب", "hi": "टैक्स को ज़कात का विकल्प मान लेना या ज़कात से बचने हेतु हेरफेर करना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Paying Zakat on shop fixtures/machinery unnecessarily OR conversely forgetting inventory raw materials.",
+          "Using historical outdated purchase price instead of current replacement/market price on Zakat day."
+        ],
+        "ur": [
+          "دکان کے فرنیچر اور مشینوں کو تجارتی مال میں شامل کر لینا یا خام مال بھول جانا۔",
+          "تجارتی مال کی قیمتِ خرید کے بجائے سالِ زکوٰۃ کی موجودہ قیمت نہ لگانا۔"
+        ],
+        "ar": [
+          "إدخال الأصول الثابتة في الوعاء الزكوي، أو تجاهل المواد الخام، أو عدم التقويم بسعر يوم الوجوب."
+        ],
+        "hi": [
+          "मशीनरी पर ज़कात जोड़ लेना या कच्चे माल को छोड़ देना, तथा वर्तमान बाज़ार मूल्य न लगाना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Pick one fixed Hijri date annually (e.g., 1 Ramadan) for company Zakat audit.",
+          "Separate salable inventory from non-salable fixed machinery & real estate.",
+          "Use the built-in Business Zakat Estimator in Tools tab and record distributions."
+        ],
+        "ur": [
+          "کاروباری زکوٰۃ کے لیے ایک مستقل ہجری تاریخ (مثلاً یکم رمضان) مقرر کریں۔",
+          "فروخت ہونے والا مال اور مستقل اثاثے الگ الگ فہرست کریں۔",
+          "ایپ کے زکوٰۃ کیلکولیٹر سے سالانہ حساب لگائیں۔"
+        ],
+        "ar": [
+          "تحديد يوم هجري سنوي لجرد البضائع، وعزل الأصول الثابتة، واستخدام حاسبة الزكاة."
+        ],
+        "hi": [
+          "प्रतिवर्ष एक निश्चित हिजरी तिथि चुनें, अचल व बिक्री स्टॉक अलग करें, और ज़कात कैलकुलेटर उपयोग करें।"
+        ]
+      },
+      "summary": {
+        "en": "Business Zakat calculates 2.5% on net working trade capital and cash, purifying growth and supporting society.",
+        "ur": "کاروباری زکوٰۃ خالص تجارتی مال اور نقدی پر 2.5% ہے جو مال کو پاک اور معاشرے کو مضبوط کرتی ہے۔",
+        "ar": "زكاة التجارة ٢.٥٪ على صافي المال التجاري النامي تطهيراً وتكافلاً.",
+        "hi": "व्यापारिक ज़कात शुद्ध कार्यशील पूंजी व स्टॉक पर 2.5% है जो धन पवित्र व समाज को सशक्त बनाती है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m16_1",
+          "question": {
+            "en": "Which asset in a garment workshop is EXCLUDED from Business Zakat inventory calculation?",
+            "ur": "گارمنٹس ورکشاپ کا کون سا اثاثہ تجارتی زکوٰۃ کے حساب سے مستثنیٰ ہے؟",
+            "ar": "أي أصل في مصنع ملابس يُستثنى من زكاة عروض التجارة؟",
+            "hi": "कपड़ा वर्कशॉप की कौन सी संपत्ति व्यापारिक ज़कात गणना से बाहर रखी जाती है?"
+          },
+          "options": {
+            "en": [
+              "Sewing machines and factory building kept for production (not for resale)",
+              "Finished shirts ready for sale",
+              "Cash sitting in the business current account"
+            ],
+            "ur": [
+              "سلائی مشینیں اور فیکٹری کی عمارت جو پیداوار کے لیے ہیں (بیچنے کے لیے نہیں)",
+              "فروخت کے لیے تیار شرٹس",
+              "کاروباری کرنٹ اکاؤنٹ کی نقدی"
+            ],
+            "ar": [
+              "ماكينات الخياطة ومبنى المصنع المعد للتشغيل",
+              "القمصان الجاهزة للبيع"
+            ],
+            "hi": [
+              "उत्पादन के लिए रखी सिलाई मशीनें और फैक्ट्री भवन (बिक्री हेतु नहीं)",
+              "बिक्री के लिए तैयार शर्ट्स"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Fixed assets used to operate the business (machines, tools, owned shop premises) are not subject to Zakat on their capital value.",
+            "ur": "کاروبار میں استعمال ہونے والے مستقل اثاثے (مشینری، عمارت) مالِ تجارت نہیں اس لیے ان پر زکوٰۃ نہیں۔",
+            "ar": "الأصول الثابتة المخصصة للتشغيل لا زكاة في قيمتها الرأسمالية.",
+            "hi": "संचालन हेतु प्रयुक्त अचल संपत्तियों पर पूंजीगत ज़कात नहीं लगती।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Run a practice Business Zakat calculation using the Tools tab Estimator for a real or sample micro-business.",
+        "ur": "ٹولز ٹیب میں موجود بزنس زکوٰۃ کیلکولیٹر سے اپنے یا کسی مثالی کاروبار کی زکوٰۃ کا عملی حساب لگائیں۔",
+        "ar": "جرّب حساب زكاة منشأتك عبر حاسبة زكاة الأعمال في قسم الأدوات.",
+        "hi": "Tools टैब के बिज़नेस ज़कात कैलकुलेटर में वास्तविक या नमूना आंकड़ों से ज़कात गणना करें।"
+      },
+      "sources": [
+        { "title": "AAOIFI Shariah Standard No. 35 (Zakah)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" },
+        { "title": "Quran 9:60 & 2:267", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/9/60" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m17",
+      "level": 4,
+      "moduleNumber": 17,
+      "moduleTitle": {
+        "en": "Module 17: Islamic Wealth & Financial Management",
+        "ur": "ماڈیول 17: اسلامی مالی انتظام اور دولت کی حفاظت",
+        "ar": "الوحدة ١٧: الإدارة المالية الإسلامية وتنمية الثروة",
+        "hi": "मॉड्यूल 17: इस्लामी धन और वित्तीय प्रबंधन"
+      },
+      "title": {
+        "en": "Cash-Flow Reserves, Debt Restraint, Profit Allocation & Halal Reinvestment",
+        "ur": "کیش فلو محفوظ رکھنا، غیر ضروری قرض سے پرہیز، بجٹنگ اور حلال سرمایہ کاری",
+        "ar": "إدارة السيولة، ضبط الديون، الميزانية، وإعادة الاستثمار الحلال",
+        "hi": "नक़दी भंडार, ऋण संयम, बजट और हलाल पुनर्निवेश"
+      },
+      "primaryEvidenceCategory": "educational_business",
+      "learningObjectives": {
+        "en": [
+          "Eliminate Israf (wasteful vanity spending) in startup budgets (7:31; 17:27).",
+          "Build 3–6 month interest-free operating cash reserves before risky expansion.",
+          "Separate owner draws, Zakat reserves, tax obligations, and growth reinvestment cleanly."
+        ],
+        "ur": [
+          "کاروباری بجٹ میں اسراف و فضول خرچی (الاعراف 7:31، الاسراء 17:27) ختم کریں۔",
+          "غیر ضروری توسیع سے پہلے 3 سے 6 ماہ کا بلاسود ایمرجنسی ریزرو قائم کریں۔",
+          "ذاتی خرچ، زکوٰۃ، ٹیکس اور کاروباری ری انویسٹمنٹ کے کھاتے الگ منظم کریں۔"
+        ],
+        "ar": [
+          "ترشيد النفقات ومنع الإسراف، وبناء احتياطي سيولة لـ ٣-٦ أشهر، وفصل ميزانية المالك عن المنشأة."
+        ],
+        "hi": [
+          "व्यावसायिक बजट से फ़िज़ूलख़र्ची हटाएं, 3-6 माह का ब्याज-मुक्त रिज़र्व बनाएं और खाते स्पष्ट रखें।"
+        ]
+      },
+      "introduction": {
+        "en": "Islam encourages profitable enterprise while strictly forbidding Israf (extravagance) and reckless debt accumulation. Sound Islamic financial management keeps cash healthy without ever needing interest-bearing overdrafts.",
+        "ur": "اسلام حلال ترقی کی حوصلہ افزائی کرتا ہے مگر فضول خرچی (اسراف) اور بلا ضرورت قرض لینے سے روکتا ہے۔ بہتر کیش مینجمنٹ سودی اوور ڈرافٹ سے بچاتی ہے۔",
+        "ar": "يشجع الإسلام على تنمية المال مع النهي عن الإسراف والتوسع بالدين الربوي، وتساعد إدارة السيولة على الاستغناء عن السحب على المكشوف.",
+        "hi": "इस्लाम व्यवसाय वृद्धि को प्रोत्साहित करता है पर फ़िज़ूलख़र्ची और अनावश्यक ऋण से रोकता है। मजबूत नक़दी प्रबंधन सूदी ओवरड्राफ्ट से बचाता है।"
+      },
+      "explanationUr": "اسلامی فنانشل مینجمنٹ کے 4 عملی ستون: (1) اسراف سے پاک بجٹ: دفتری نمود و نمائش پر قرض لے کر خرچ کرنے کے بجائے لین اور مؤثر اخراجات رکھیں؛ (2) ذاتی اور کاروباری اکاؤنٹ کی علیحدگی: مالک اپنی مقررہ معقول ذاتی برداشت/حصہ طے کرے اور گاہکوں کے ایڈوانس کو ذاتی خرچ میں نہ ملائے؛ (3) ہنگامی ریزرو فنڈ: 3 سے 6 ماہ کے تنخواہ و کرایہ کے اخراجات اسلامی بینک یا محفوظ نقد میں رکھیں تاکہ مندی میں سودی قرض نہ لینا پڑے؛ (4) بلاسود ترقی: منافع کا ایک حصہ دوبارہ کاروبار میں لگانا، حلال سپلائر کریڈٹ یا مشارکہ/مرابحہ سے متوازن توسیع۔",
+      "explanationEn": "Four disciplines safeguard a business from falling into Riba traps: (1) Zero-Israf Budgeting (Quran 17:26–27): avoid ego-driven luxury offices before sustainable cash flow; (2) Strict Owner/Business Ledger Separation: owners draw defined compensation rather than dipping arbitrarily into working cash; (3) Halal Liquidity Cushion: retain 3–6 months of fixed payroll/rent in interest-free accounts or Islamic money-market funds so slow quarters never force interest loans; (4) Balanced Reinvestment: scale primarily from retained earnings, Shariah equity (Musharakah), or genuine asset Murabaha—never leveraged speculation.",
+      "explanationAr": "أربعة ضوابط تحمي الشركة من فخ الربا: (١) ضبط النفقات ومنع التبذير (الإسراء ٢٦-٢٧)، (٢) فصل حساب المالك عن صندوق المنشأة، (٣) بناء احتياطي نقدي لتشغيل ٣-٦ أشهر في حسابات إسلامية، (٤) التوسع من الأرباح المحتجزة أو المشاركة لا بالاقتراض الربوي.",
+      "explanationHi": "चार नियम व्यापार को सूदी जाल से बचाते हैं: (1) फ़िज़ूलख़र्ची-रहित बजट; (2) मालिक और कंपनी के खाते पूरी तरह अलग रखना; (3) 3-6 माह का संचालन रिज़र्व ब्याज-मुक्त खाते में रखना; (4) प्रतिधारित लाभ या मुशारकाह से विस्तार करना।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Do not squander or wrongfully consume wealth—steward it in lawful circulation.", "ur": "مال کو باطل و ضائع طریقوں سے کھانے کے بجائے جائز تجارت میں محفوظ بڑھانے کی ہدایت۔", "ar": "حفظ الأموال وتنميتها بالتجارة المشروعة دون تضييع.", "hi": "धन को बर्बाद करने के बजाय वैध व्यापार में सुरक्षित बढ़ाने का निर्देश।" },
+          "businessRelevance": { "en": "Prudent capital stewardship protects investor and family security.", "ur": "محتاط مالی نظم سرمایہ کار اور خاندان کے تحفظ کا ضامن ہے۔", "ar": "الضبط المالي يحمي حقوق الشركاء والأسرة.", "hi": "विवेकपूर्ण पूंजी प्रबंधन साझेदारों व परिवार की रक्षा करता है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2072", "bukhari_2400"],
+      "classicalFiqh": {
+        "en": "Al-Shaybani & Ibn Khaldun emphasize preserving capital reserves ('Mal Namy'), matching expenses to cash velocity, and avoiding heavy debt burdens that compromise honesty.",
+        "ur": "امام شیبانیؒ اور ابن خلدونؒ نے سرمائے کی حفاظت، آمدنی و خرچ کے توازن اور بے جا قرض سے بچنے کو کاروباری استحکام کی بنیادی شرط بتایا ہے۔",
+        "ar": "أكد الشيباني وابن خلدون أهمية حفظ رأس المال وتجنب الاستدانة المفرطة.",
+        "hi": "विद्वानों ने पूंजी संरक्षण, आय-व्यय संतुलन और अत्यधिक ऋण से बचाव पर ज़ोर दिया है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Modern Islamic treasury allocates idle reserves to vetted Sukuk/Islamic income accounts while monitoring cash conversion cycles weekly.",
+        "ur": "جدید اسلامی مالیاتی انتظام میں فالتو نقدی کو جائز صکوک یا اسلامی کھاتوں میں رکھا جاتا ہے اور ہفتہ وار کیش فلو مانیٹر کیا جاتا ہے۔",
+        "ar": "توجيه السيولة الفائضة لصناديق وصكوك إسلامية معتمدة مع مراقبة التدفق النقدي أسبوعياً.",
+        "hi": "आधुनिक इस्लामी वित्तीय प्रबंधन अतिरिक्त नक़दी को सत्यापित इस्लामी निधियों व सुकूक में रखता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All scholars urge moderation in lifestyle/business overhead and caution against unserviceable debt (Sahih al-Bukhari 2397 highlights the Prophet's ﷺ refuge from overwhelming debt).",
+        "ur": "تمام ائمہ اعتدال، کفایت شعاری اور قرض کے بوجھ سے پناہ مانگنے کی نبوی سنت (بخاری 2397) پر متفق ہیں۔",
+        "ar": "اتفق العلماء على الاعتدال واستحباب التعوذ من غلبة الدين (البخاري ٢٣٩٧).",
+        "hi": "सभी विद्वान मितव्ययिता और भारी कर्ज़ से बचने की सुन्नत पर एकमत हैं।"
+      },
+      "modernExample": {
+        "en": "An online store automates three sub-buckets from every sale: 60% Cost & Operations, 25% Tax/Zakat/Reserve, 15% Owner Draw & Growth.",
+        "ur": "ایک آن لائن اسٹور ہر فروخت کو واضح حصوں میں تقسیم کرے: 60% لاگت و اخراجات، 25% ریزرو/زکوٰۃ/ٹیکس، 15% مالک کی آمدن و ترقی۔",
+        "ar": "تخصيص نسب تلقائية من المبيعات: للتشغيل، والاحتياطي والزكاة، والتوسع والأرباح.",
+        "hi": "एक ऑनलाइन स्टोर हर बिक्री को संचालन, ज़कात/रिज़र्व व विकास हिस्सों में व्यवस्थित रूप से विभाजित करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Retained-profit emergency buffer + halal supplier negotiation", "ur": "منافع سے ایمرجنسی فنڈ بنانا اور سپلائر سے جائز شرائط طے کرنا", "ar": "بناء احتياطي من الأرباح والتفاوض التجاري المشروع", "hi": "मुनाफ़े से आपात रिज़र्व बनाना और वैध शर्तें तय करना" },
+          "prohibitedPractice": { "en": "Maxing out interest-bearing credit cards to fund showroom luxury or payroll", "ur": "دکھاوے کے لیے یا تنخواہوں کے لیے سودی کریڈٹ کارڈ یا لون استعمال کرنا", "ar": "تمويل الكماليات والرواتب ببطاقات الائتمان الربوية", "hi": "दिखावे के लिए सूदी क्रेडिट कार्ड या ब्याज वाले ऋण पर निर्भर रहना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Confusing gross bank deposits (revenue) with spendable net profit.",
+          "Failing to reserve cash for annual Zakat and tax liabilities until the due week."
+        ],
+        "ur": [
+          "کل سیلز (آمدنی) کو خالص منافع سمجھ کر خرچ کر ڈالنا۔",
+          "زکوٰۃ اور ٹیکس کے لیے ماہانہ بنیاد پر رقم الگ نہ رکھنا۔"
+        ],
+        "ar": [
+          "الخلط بين إجمالي المبيعات وصافي الربح، وإهمال تجنيب مخصص الزكاة."
+        ],
+        "hi": [
+          "कुल बिक्री को शुद्ध लाभ समझकर खर्च करना और ज़कात/टैक्स हेतु अलग राशि न रखना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Maintain separate personal vs corporate bank accounts.",
+          "Track weekly cash runway and 12-month payables calendar.",
+          "Route idle reserves exclusively into vetted Shariah-compliant vehicles."
+        ],
+        "ur": [
+          "ذاتی اور کاروباری بینک کھاتے بالکل الگ رکھیں۔",
+          "ہفتہ وار کیش فلو اور واجبات کا ریکارڈ چیک کریں۔",
+          "بچت رقم صرف شرعی و محفوظ ذرائع میں رکھیں۔"
+        ],
+        "ar": [
+          "فصل الحساب الشخصي عن التجاري، ومراقبة التدفق النقدي، وتجنب الحسابات الربوية."
+        ],
+        "hi": [
+          "निजी और कंपनी बैंक खाते अलग रखें और साप्ताहिक नक़दी की समीक्षा करें।"
+        ]
+      },
+      "summary": {
+        "en": "Disciplined reserves, zero-Israf budgeting, and clear cash separation keep growth resilient and debt-free.",
+        "ur": "محتاط ریزرو، اسراف سے پاک بجٹ اور واضح کھاتہ داری کاروبار کو سود اور بحران سے محفوظ رکھتی ہے۔",
+        "ar": "الاحتياط المالي وضبط الإنفاق وفصل الحسابات تصون الشركة من الأزمات والديون الربوية.",
+        "hi": "अनुशासित रिज़र्व, मितव्ययिता और अलग खातों से व्यवसाय संकट व ब्याज से सुरक्षित रहता है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m17_1",
+          "question": {
+            "en": "What is the primary Shariah benefit of holding a 3–6 month operating cash buffer in an interest-free/Islamic account?",
+            "ur": "اسلامی/بلاسود کھاتے میں 3 سے 6 ماہ کا ہنگامی کاروباری فنڈ رکھنے کا بنیادی فائدہ کیا ہے؟",
+            "ar": "ما الفائدة الشرعية والعملية لوجود احتياطي سيولة لـ ٣-٦ أشهر في حساب إسلامي؟",
+            "hi": "ब्याज-मुक्त खाते में 3-6 माह का संचालन रिज़र्व रखने का मुख्य लाभ क्या है?"
+          },
+          "options": {
+            "en": [
+              "Protects payroll & suppliers during slow seasons without resorting to interest-bearing overdrafts or loans",
+              "Eliminates the need for bookkeeping",
+              "Exempts the business from Zakat"
+            ],
+            "ur": [
+              "مندی کے دنوں میں سودی قرض لیے بغیر تنخواہیں اور بل ادا ہو جاتے ہیں",
+              "حساب کتاب کی ضرورت ختم ہو جاتی ہے",
+              "زکوٰۃ معاف ہو جاتی ہے"
+            ],
+            "ar": [
+              "حماية الرواتب والموردين وقت الركود دون اللجوء لقروض ربوية",
+              "إسقاط الزكاة"
+            ],
+            "hi": [
+              "मंदी के समय ब्याज वाले ऋण के बिना वेतन व बिल समय पर चुकाए जा सकते हैं",
+              "ज़कात माफ़ हो जाती है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Liquidity buffers absorb market dips cleanly so the founder isn't pressured into Riba debt lines.",
+            "ur": "ایمرجنسی فنڈ مشکل وقت میں سودی قرض کی مجبوری سے بچاتا ہے۔",
+            "ar": "الاحتياطي يحمي المنشأة من الاضطرار للتمويل الربوي.",
+            "hi": "नक़दी भंडार संकट के समय सूदी ऋण लेने की मजबूरी से बचाता है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Calculate your monthly fixed burn rate (rent + payroll + utilities) and set a target 3-month Halal liquidity reserve milestone.",
+        "ur": "اپنے ماہانہ مستقل اخراجات (کرایہ، تنخواہیں، بل) جمع کر کے 3 ماہ کے بلاسود حفاظتی فنڈ کا ہدف مقرر کریں۔",
+        "ar": "احسب مصروفاتك الشهرية الثابتة وحدد هدف بناء احتياطي حلال لـ ٣ أشهر.",
+        "hi": "अपने मासिक निश्चित खर्च जोड़कर 3-माह के हलाल नक़दी रिज़र्व का लक्ष्य तय करें।"
+      },
+      "sources": [
+        { "title": "Quran 4:29 & Sahih al-Bukhari 2397", "category": "educational_business", "attribution": "Quran.com & Sunnah.com", "url": "https://sunnah.com/bukhari:2397" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m18",
+      "level": 4,
+      "moduleNumber": 18,
+      "moduleTitle": {
+        "en": "Module 18: Islamic Business Leadership & Governance",
+        "ur": "ماڈیول 18: اسلامی کاروباری قیادت اور گورننس",
+        "ar": "الوحدة ١٨: القيادة التجارية الإسلامية والحوكمة",
+        "hi": "मॉड्यूल 18: इस्लामी व्यावसायिक नेतृत्व और शासन"
+      },
+      "title": {
+        "en": "Shura Consultation, Servant Accountability (Sahih Muslim 1829) & Itqan (Excellence)",
+        "ur": "مشاورت (شوریٰ)، ذمہ داری کا احساس (صحیح مسلم 1829) اور کام میں مہارت و اتقان",
+        "ar": "الشورى، والأمانة القيادية (مسلم ١٨٢٩)، والإتقان في العمل",
+        "hi": "शुरा परामर्श, नेतृत्व जवाबदेही (मुस्लिम 1829) और कार्य दक्षता"
+      },
+      "primaryEvidenceCategory": "authentic_hadith",
+      "learningObjectives": {
+        "en": [
+          "Lead with Shura (participatory team consultation) and humble accountability.",
+          "Apply Sahih al-Bukhari 893 / Muslim 1829 ('Each of you is a shepherd and responsible for his flock').",
+          "Build zero-nepotism merit hiring and continuous quality excellence (Itqan)."
+        ],
+        "ur": [
+          "فیصلوں میں شوریٰ (ٹیم سے مشاورت) اور عاجزی کے ساتھ جوابدہی کا نظام اپنائیں۔",
+          "صحیح بخاری 893 / مسلم 1829 ('تم میں سے ہر شخص نگہبان اور اپنے ماتحتوں کا ذمہ دار ہے') کو لیڈرشپ پر لاگو کریں۔",
+          "میرٹ پر بھرتی، اقربا پروری سے پرہیز اور کام میں اتقان (اعلیٰ معیار) پیدا کریں۔"
+        ],
+        "ar": [
+          "تطبيق مبدأ الشورى ومسؤولية الراعي (مسلم ١٨٢٩) والعدالة في التوظيف والإتقان."
+        ],
+        "hi": [
+          "नेतृत्व में शुरा परामर्श, बुखारी 893 / मुस्लिम 1829 की जवाबदेही और योग्यता-आधारित चयन अपनाएं।"
+        ]
+      },
+      "introduction": {
+        "en": "Islamic leadership treats authority not as ego privilege, but as heavy stewardship (Amanah): 'Each of you is a shepherd, and each is accountable for those under his care' (Sahih al-Bukhari 893 / Sahih Muslim 1829).",
+        "ur": "اسلام میں قیادت تکبر کا منصب نہیں بلکہ بھاری ذمہ داری ہے: 'تم میں سے ہر ایک نگہبان ہے اور اس سے اس کے ماتحتوں کے بارے میں سوال ہوگا' (بخاری 893 / مسلم 1829)۔",
+        "ar": "القيادة في الإسلام تكليف وأمانة: ﴿كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْؤُولٌ عَنْ رَعِيَّتِهِ﴾ (البخاري ٨٩٣ ومسلم ١٨٢٩).",
+        "hi": "इस्लामी नेतृत्व अधिकार नहीं बल्कि अमानत है: 'तुममें से प्रत्येक रखवाला है और अपने अधीनस्थों के प्रति उत्तरदायी है' (बुखारी 893)।"
+      },
+      "explanationUr": "اسلامی لیڈرشپ کے 4 بنیادی ستون: (1) شوریٰ (مشاورت): اہم فیصلوں میں ماہر ملازمین اور شرکاء سے مشورہ لینا، نہ کہ آمرانہ ضد؛ (2) میرٹ اور امانت (النساء 4:58): ذمہ داری اہل اور دیانتدار شخص کو دینا، نہ کہ نااہل رشتہ دار کو؛ (3) عدل و جوابدہی (مسلم 1829): غلطی ہونے پر باس خود ذمہ داری قبول کرے، غصے میں تذلیل نہ کرے اور گاہک و عملے دونوں سے انصاف کرے؛ (4) اتقان و پائیداری: کام خوبصورتی، دیانت اور مستقل معیار کے ساتھ مکمل کرنا۔",
+      "explanationEn": "Ethical leadership transforms teams and brand trust: (1) Shura (Consultation, Quran 42:38): invite honest team dissent before locking product or financial pivots; (2) Merit & Trust (Quran 4:58): hire and promote by capability and integrity rather than nepotism; (3) Servant Accountability (Bukhari 893 / Muslim 1829): owners protect junior staff from unsafe workloads and answer transparently to partners & regulators; (4) Itqan (Excellence): strive for durable craftsmanship, clean support, and reliable promises.",
+      "explanationAr": "ركائز القيادة: (١) الشورى وتبادل الرأي، (٢) الكفاءة والأمانة في التعيين بعيداً عن المحسوبية (النساء ٥٨)، (٣) تحمل القائد للمسؤولية وحماية فريقه (مسلم ١٨٢٩)، (٤) الإتقان وجودة المنتج والخدمة.",
+      "explanationHi": "इस्लामी नेतृत्व के 4 स्तंभ: (1) टीम के साथ शुरा परामर्श; (2) भाई-भतीजावाद के बिना योग्यता व ईमानदारी पर नियुक्ति (4:58); (3) सेवक जवाबदेही (मुस्लिम 1829); (4) गुणवत्ता और विश्वसनीयता (इत्क़ान)।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": { "en": "Entrusting authority & roles to deserving trustworthy people.", "ur": "امانتیں و عہدے اہل افراد کے سپرد کرنے اور عدل سے فیصلہ کرنے کا حکم۔", "ar": "إسناد المسؤوليات لأهل الكفاءة والأمانة والحكم بالعدل.", "hi": "पद और जिम्मेदारियां योग्य व्यक्तियों को सौंपने और न्याय का आदेश।" },
+          "businessRelevance": { "en": "Mandates merit-based hiring, fair promotions, and impartial dispute resolution.", "ur": "میرٹ پر بھرتی، منصفانہ ترقی اور غیر جانبدارانہ فیصلوں کی بنیاد۔", "ar": "يوجب التوظيف على الكفاءة والعدالة بين الموظفين.", "hi": "योग्यता आधारित भर्ती और निष्पक्ष प्रबंधन की नींव।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Al-Mawardi and Ibn Taymiyyah highlight 'Al-Quwwah wal-Amanah' (competence + integrity) from Quran 28:26 as twin prerequisites for every leadership office.",
+        "ur": "امام ماوردیؒ اور ابن تیمیہؒ نے قرآن 28:26 کی روشنی میں قیادت کے لیے دو لازمی شرائط بتائیں: 'قوت' (صلاحیت و مہارت) اور 'امانت' (دیانتداری)۔",
+        "ar": "اشترط الفقهاء في الولاية والإدارة ركنين: القوة (الكفاءة المهنية) والأمانة.",
+        "hi": "विद्वानों ने किसी भी नेतृत्व पद के लिए दो शर्तें बताईं: 'क़ुव्वत' (दक्षता) और 'अमानत' (ईमानदारी)।"
+      },
+      "contemporaryGuidance": {
+        "en": "Corporate governance charters, conflict-of-interest disclosures, whistleblower protection, and Shariah audits institutionalize Islamic leadership.",
+        "ur": "کارپوریٹ گورننس، مفادات کے ٹکراؤ کا اعلان اور سالانہ شریعہ آڈٹ اسی قیادت کو ادارہ جاتی شکل دیتے ہیں۔",
+        "ar": "تطبيق الحوكمة والإفصاح عن تعارض المصالح والتدقيق الشرعي يعزز القيادة الرشيدة.",
+        "hi": "कॉर्पोरेट प्रशासन, हित-टकराव प्रकटीकरण और शरीअत ऑडिट इसी नेतृत्व का आधुनिक रूप हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Unanimous moral endorsement of consultation, non-nepotistic appointment, and kindness toward subordinates.",
+        "ur": "مشاورت، میرٹ اور ماتحتوں سے شفقت و عدل تمام مکاتبِ فکر میں متفق علیہ اصول ہیں۔",
+        "ar": "اتفاق كامل على الشورى والكفاءة والرفق بالعاملين.",
+        "hi": "परामर्श, योग्यता और अधीनस्थों के प्रति न्याय पर सभी में पूर्ण सहमति है।"
+      },
+      "modernExample": {
+        "en": "Before launching a price overhaul, a store manager conducts an open Shura meeting with warehouse packers, drivers, and support staff to catch blind spots.",
+        "ur": "بڑی کاروباری تبدیلی سے پہلے مینیجر گودام کے عملے، ڈرائیورز اور سیلز ٹیم سے کھلی مشاورت کر کے مسائل پہلے معلوم کر لے۔",
+        "ar": "عقد اجتماع شورى مع فريق المستودع والمبيعات قبل تغيير الأسعار أو الخطط.",
+        "hi": "बड़े बदलाव से पहले प्रबंधक गोदाम, डिलीवरी व बिक्री टीम से खुलकर सलाह लेकर कमियां सुधारता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Competence-based hiring + consultative management", "ur": "اہلیت و دیانت پر تقرری اور مشاورتی انتظام", "ar": "التعيين بالكفاءة والإدارة بالشورى", "hi": "योग्यता आधारित भर्ती और परामर्श नेतृत्व" },
+          "prohibitedPractice": { "en": "Promoting incompetent relatives over deserving workers or humiliating junior staff", "ur": "اہل ملازم کی حق تلفی کر کے نااہل رشتہ دار کو نوازنا یا ماتحت کی تذلیل کرنا", "ar": "تقديم القريب غير الكفء بالمحاباة أو إهانة الموظفين", "hi": "योग्य कर्मी को छोड़कर अयोग्य रिश्तेदार को पद देना या अपमान करना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Confusing autocratic micromanagement with strong Islamic leadership.",
+          "Blaming frontline staff publicly when leadership failed to train or equip them."
+        ],
+        "ur": [
+          "سختی اور آمرانہ رویے کو مضبوط قیادت سمجھ لینا۔",
+          "اپنی انتظامی کمی کا الزام سرعام نچلے عملے پر ڈال دینا۔"
+        ],
+        "ar": [
+          "الخلط بين التسلط والقيادة، وإلقاء اللوم على المرؤوسين عند تقصير الإدارة."
+        ],
+        "hi": [
+          "तानाशाही को मजबूत नेतृत्व मान लेना, या अपनी प्रशासनिक गलती का दोष छोटे कर्मियों पर मढ़ना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Hold structured team Shura before major product or pricing shifts.",
+          "Publish clear objective KPIs for hiring and bonuses without favoritism.",
+          "Conduct periodic anonymous staff safety & fairness check-ins."
+        ],
+        "ur": [
+          "اہم فیصلوں سے پہلے ٹیم سے باقاعدہ مشورہ کریں۔",
+          "بھرتی اور بونس کے لیے واضح شفاف معیار طے کریں۔",
+          "عملے کی فلاح اور شکایات کے حل کا محفوظ نظام رکھیں۔"
+        ],
+        "ar": [
+          "تطبيق الشورى الدورية، ومعايير التقييم العادلة، وقنوات التظلم الآمنة."
+        ],
+        "hi": [
+          "प्रमुख निर्णयों से पहले शुरा बैठक करें, निष्पक्ष KPI बनाएं और कर्मियों की सुरक्षा जांचें।"
+        ]
+      },
+      "summary": {
+        "en": "Great Muslim leaders blend consultative humility, merit-based justice, and conscientious accountability.",
+        "ur": "کامیاب مسلمان قائد مشاورت، میرٹ، انصاف اور اللہ کے سامنے جوابدہی کے احساس کو یکجا کرتا ہے۔",
+        "ar": "القيادة الإسلامية الناجحة تجمع الشورى والعدل والكفاءة واستشعار المسؤولية.",
+        "hi": "सफल मुस्लिम नेता परामर्श, योग्यता, न्याय और जवाबदेही की भावना को एक साथ अपनाते हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m18_1",
+          "question": {
+            "en": "Under Quran 4:58 & 28:26, which two qualities govern hiring and promotion in Islamic governance?",
+            "ur": "قرآن (4:58 اور 28:26) کے مطابق اسلامی نظم و نسق میں تقرری کی دو بنیادی شرائط کیا ہیں؟",
+            "ar": "وفق القرآن الكريم (٤:٥٨، ٢٨:٢٦)، ما الشرطان الأساسيان في إسناد الوظائف؟",
+            "hi": "क़ुरआन (4:58 और 28:26) के अनुसार इस्लामी प्रबंधन में नियुक्ति के दो मुख्य गुण क्या हैं?"
+          },
+          "options": {
+            "en": [
+              "Competence/Strength (Quwwah) and Trustworthiness/Integrity (Amanah)",
+              "Family relation and flattery",
+              "Lowest salary demand regardless of honesty"
+            ],
+            "ur": [
+              "اہلیت/مہارت (قوت) اور دیانتداری (امانت)",
+              "رشتہ داری اور خوشامد",
+              "دیانت دیکھے بغیر صرف کم تنخواہ"
+            ],
+            "ar": [
+              "القوة (الكفاءة) والأمانة",
+              "القرابة والمحاباة"
+            ],
+            "hi": [
+              "दक्षता/क्षमता (क़ुव्वत) और ईमानदारी (अमानत)",
+              "रिश्तेदारी और चापलूसी"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Quran 28:26 highlights 'the strong and trustworthy' while 4:58 commands rendering trusts to those qualified.",
+            "ur": "قرآنِ مجید نے 'القوی الامین' اور 'تؤدوا الامانات الی اہلھا' کے ذریعے قابلیت و امانت کو معیار بنایا۔",
+            "ar": "جمع القرآن الكريم بين القوة والأمانة (٢٨:٢٦) وأداء الأمانات إلى أهلها (٤:٥٨).",
+            "hi": "क़ुरआन 28:26 'सक्षम व अमानतदार' और 4:58 योग्य व्यक्ति को दायित्व सौंपने का आदेश देता है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Design an objective 4-criteria Hiring Rubric combining skill competence, truthfulness, punctuality, and teamwork.",
+        "ur": "ملازم رکھنے کے لیے 4 نکاتی شفاف معیار (مہارت، سچائی، پابندیِ وقت، ٹیم ورک) تحریر کریں۔",
+        "ar": "صمم مصفوفة توظيف من ٤ معايير: الكفاءة، والصدق، والانضباط، والعمل الجماعي.",
+        "hi": "दक्षता, सच्चाई, समयबद्धता और टीमवर्क पर आधारित 4-सूत्री भर्ती मानदंड तैयार करें।"
+      },
+      "sources": [
+        { "title": "Quran 4:58 & Sahih Muslim 1829", "category": "authentic_hadith", "attribution": "Quran.com & Sunnah.com", "url": "https://sunnah.com/muslim:1829" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m19",
+      "level": 4,
+      "moduleNumber": 19,
+      "moduleTitle": {
+        "en": "Module 19: Social Responsibility, Waqf & Sustainability",
+        "ur": "ماڈیول 19: سماجی ذمہ داری، صدقہ جاریہ، وقف اور ماحولیاتی حفاظت",
+        "ar": "الوحدة ١٩: المسؤولية الاجتماعية والوقف والاستدامة",
+        "hi": "मॉड्यूल 19: सामाजिक उत्तरदायित्व, वक़्फ़ और स्थिरता"
+      },
+      "title": {
+        "en": "Beyond Profit: Community Relief, Environmental Stewardship & Corporate Waqf",
+        "ur": "منافع سے آگے: سماجی فلاح، آلودگی سے بچاؤ اور کارپوریٹ وقف",
+        "ar": "البركة المجتمعية، حماية البيئة، والوقف التجاري",
+        "hi": "लाभ से आगे: सामुदायिक सेवा, पर्यावरण संरक्षण और कॉर्पोरेट वक़्फ़"
+      },
+      "primaryEvidenceCategory": "educational_business",
+      "learningObjectives": {
+        "en": [
+          "Integrate Sadaqah, Qard Hasan microloans, and community apprenticeships into business budgets.",
+          "Eliminate harmful pollution, adulterated waste dumping, and wasteful packaging (La Darar wa la Dirar).",
+          "Explore Waqf (perpetual endowment) shares for lasting Sadaqah Jariyah."
+        ],
+        "ur": [
+          "کاروباری بجٹ میں صدقہ، بلاسود قرضِ حسن اور ہنر سکھانے کی ذمہ داری شامل کریں۔",
+          "'لا ضرر ولا ضرار' کے تحت آلودگی، زہریلے فضلے اور ماحول دشمن اسراف سے بچیں۔",
+          "صدقہ جاریہ کے لیے کارپوریٹ وقف کے تصور کو سمجھیں۔"
+        ],
+        "ar": [
+          "دمج الصدقة والوقف في خطة الشركة ومنع الضرر البيئي استناداً لقاعدة لا ضرر ولا ضرار."
+        ],
+        "hi": [
+          "व्यवसाय बजट में दान, प्रशिक्षण व पर्यावरण सुरक्षा ('ला ज़रर वला ज़िरार') तथा वक़्फ़ को शामिल करें।"
+        ]
+      },
+      "introduction": {
+        "en": "A Muslim enterprise enriches its neighborhood—paying Zakat (9:60), avoiding ecological harm ('There should be neither harming nor reciprocating harm'—Ibn Majah 2340), and planting endowments that outlive the founder.",
+        "ur": "مسلمان کا کاروبار اپنے ماحول کے لیے رحمت ہوتا ہے: زکوٰۃ کی ادائیگی (9:60)، آلودگی و نقصان سے پرہیز ('لا ضرر ولا ضرار'—ابن ماجہ 2340) اور فلاحی وقف اس کی پہچان ہیں۔",
+        "ar": "المشروع الإسلامي رحمة لمجتمعه: يؤدي الزكاة، ويمتنع عن الإضرار بالبيئة والناس (لا ضرر ولا ضرار)، ويسهم بالوقف الخيري.",
+        "hi": "मुस्लिम व्यवसाय समाज के लिए बरकत होता है: ज़कात देना, पर्यावरण हानि से बचना ('ला ज़रर वला ज़िरार'), और स्थायी वक़्फ़ बनाना।"
+      },
+      "explanationUr": "سماجی ذمہ داری (Islamic CSR) محض اشتہاری دکھاوا نہیں بلکہ تین شرعی اصولوں پر قائم ہے: (1) لا ضرر ولا ضرار (نقصان نہ دو): فیکٹری کا کیمیائی فضلہ نالوں میں نہ بہانا، پلاسٹک اور شور کی آلودگی کم کرنا، اور صحت کے لیے مضر ملاوٹ سے پاک رہنا؛ (2) صدقہ و قرضِ حسن: ضرورت مند ہمسایوں، ملازمین اور مقروضوں کے لیے آسان بلاسود مدد یا مہلت (2:280)؛ (3) وقف: کاروبار کی عمارت یا نفع کا کچھ فیصد مستقل رفاہی کام مثلاً تعلیم، صاف پانی یا کلینک کے لیے وقف کر دینا جیسا کہ حضرت عثمانؓ نے بیرِ رومہ میں کیا۔",
+      "explanationEn": "True Islamic CSR rests on concrete duties rather than PR stunts: (1) 'La Darar wa la Dirar' (No Harm Principle): factories and workshops may never dump toxic effluents into public water, adulterate food, or pollute neighbors' air; (2) Removing Economic Hardship: hiring apprentices, paying fair vendor bills, and supporting Qard Hasan relief; (3) Corporate Waqf & Sadaqah Jariyah (Sahih Muslim 1631): dedicating a permanent percentage of equity shares or real estate rental toward clean water, scholarships, or clinics—continuing benefit after death.",
+      "explanationAr": "المسؤولية الاجتماعية الشرعية قائمة على: (١) قاعدة لا ضرر ولا ضرار بمنع التلوث والمخلفات السامة والغش الغذائي، (٢) التفريج عن المتعثرين وتدريب الشباب، (٣) الوقف المؤسسي والصدقة الجارية (مسلم ١٦٣١) كاستمرار لبئر رومة.",
+      "explanationHi": "इस्लामी सामाजिक उत्तरदायित्व तीन स्तंभों पर टिका है: (1) 'ला ज़रर वला ज़िरार'—हानिकारक प्रदूषण व मिलावट रोकना; (2) युवाओं को कौशल प्रशिक्षण व कठिनाई में राहत देना; (3) कॉर्पोरेट वक़्फ़ व सदक़ा-ए-जारिया (मुस्लिम 1631)—शिक्षा, स्वच्छ जल या क्लिनिक के लिए स्थायी योगदान।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 267,
+          "endAyah": 267,
+          "contextNote": { "en": "Spending from wholesome earnings to uplift society.", "ur": "اپنی پاکیزہ کمائی سے خیر کے کاموں میں خرچ کرنے کا حکم۔", "ar": "الإنفاق من طيبات الكسب في وجوه الخير.", "hi": "अपनी पवित्र कमाई से भलाई में खर्च करने का आदेश।" },
+          "businessRelevance": { "en": "Corporate philanthropy must flow from ethically earned surplus, never defective leftovers or Haram gains.", "ur": "رفاہی کام حلال و عمدہ منافع سے کیے جائیں، ردی یا حرام مال سے نہیں۔", "ar": "تُبنى المبادرات المجتمعية من المال الحلال الطيب لا من الخبيث.", "hi": "कॉर्पोरेट दान हलाल व अच्छी कमाई से होना चाहिए, बची-खुची या अवैध कमाई से नहीं।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2072"],
+      "classicalFiqh": {
+        "en": "The legal maxim 'Al-Dararu Yuzal' (Harm must be eliminated) and 'La Darar wa la Dirar' authorize local municipalities to shut down polluting workshops and unsafe food producers.",
+        "ur": "فقہی قاعدہ 'الضرر یزال' اور 'لا ضرر ولا ضرار' کے تحت عوام کو نقصان پہنچانے والے کارخانے یا ملاوٹ زدہ کاروبار کو روکنا شرعاً واجب ہے۔",
+        "ar": "بناءً على قاعدة الضرر يزال، يُمنع التلوث والمصانع الضارة بصحة الجيران والبيئة.",
+        "hi": "फ़िक़्ह नियम 'अज़-ज़ररु युज़ाल' पर्यावरण और पड़ोसियों को नुकसान पहुंचाने वाले उद्योगों को रोकता है।"
+      },
+      "contemporaryGuidance": {
+        "en": "IIFA resolutions recognize Cash Waqf & Corporate Share Waqf where dividends fund continuous charitable education and healthcare while principal equity remains preserved.",
+        "ur": "مجمع الفقہ کی قراردادوں نے کیش وقف اور شیئرز وقف کی اجازت دی ہے جس میں اصل سرمایہ محفوظ رہ کر منافع مستقل فلاح میں خرچ ہوتا ہے۔",
+        "ar": "أقرت المجامع الفقهية وقف النقود وأسهم الشركات لتمويل التعليم والصحة من عوائدها مع بقاء الأصل.",
+        "hi": "IIFA ने नक़द वक़्फ़ और शेयर वक़्फ़ को मान्यता दी है जहाँ मूल पूंजी सुरक्षित रहकर लाभांश कल्याण में लगता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Malikis broadly recognized Cash/Movable Waqf classically; contemporary consensus (IIFA Res. 140) adopted Cash & Corporate Share Waqf to facilitate institutional Sadaqah Jariyah.",
+        "ur": "قدیم مالکیہ منقول و نقدی وقف کے قائل تھے اور اب مجمع الفقہ (قرارداد 140) کے تحت کیش و شیئر وقف عام طور پر معتبر مانا جاتا ہے۔",
+        "ar": "تبنى مجمع الفقه (١٤٠) مذهب المالكية في جواز وقف النقود والأسهم.",
+        "hi": "मालिकी दृष्टिकोण के आधार पर IIFA प्रस्ताव 140 ने नक़द व शेयर वक़्फ़ को संस्थागत रूप से मान्य किया है।"
+      },
+      "modernExample": {
+        "en": "A dye workshop installs proper water filtration before drain discharge and allocates 2% of audited annual net profit into a technical-training Cash Waqf.",
+        "ur": "رنگائی کا کارخانہ گندے پانی کے لیے فلٹر پلانٹ لگائے اور سالانہ خالص نفع کا 2 فیصد غریب طلبہ کے ہنر سکھانے کے وقف میں دے۔",
+        "ar": "مصنع يركّب محطة تنقية لمخلفاته ويخصص ٢٪ من صافي الربح لوقف تدريب مهني.",
+        "hi": "रंगाई कारखाना जल शोधन प्लांट लगाता है और शुद्ध लाभ का 2% कौशल-प्रशिक्षण वक़्फ़ में देता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Treating waste responsibly + discreet Sadaqah & training apprenticeships", "ur": "فضلے کی محفوظ صفائی، خاموش صدقہ اور نوجوانوں کو ہنر سکھانا", "ar": "معالجة النفايات بأمان والصدقة والتدريب الخيري", "hi": "सुरक्षित अपशिष्ट प्रबंधन, गुप्त दान और युवाओं को प्रशिक्षण" },
+          "prohibitedPractice": { "en": "Dumping chemical waste in canals while filming publicized charity baskets", "ur": "نالوں میں زہریلا کیمیکل بہانا اور غریبوں کی ویڈیو بنا کر راشن بانٹنا", "ar": "إلقاء المخلفات السامة في المياه والتشهير بتصوير الفقراء", "hi": "नदियों में जहरीला कचरा बहाना और गरीबों की तस्वीर दिखाकर प्रचार करना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Greenwashing: sponsoring charity events while ignoring factory hazards or river pollution.",
+          "Humiliating recipients of corporate charity on social media (Quran 2:264 warns against boastful harm)."
+        ],
+        "ur": [
+          "کمپنی کی فضول تشہیر کے لیے غریبوں کی عزتِ نفس مجروح کرتے ہوئے تصاویر کھینچنا (2:264)۔",
+          "ماحولیاتی آلودگی جاری رکھ کر محض دکھاوے کی سماجی خدمت کرنا۔"
+        ],
+        "ar": [
+          "إيذاء الفقراء بالتصوير والمنّ (البقرة ٢٦٤)، أو التغطية على التلوث بحملات دعائية."
+        ],
+        "hi": [
+          "दान देते समय गरीबों की फोटो खींचकर अपमानित करना (2:264) या प्रदूषण छिपाने हेतु दिखावा करना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Verify zero hazardous waste, adulteration, or harmful neighbor disruption.",
+          "Protect beneficiary dignity in all company Sadaqah distributions (no humiliating photos).",
+          "Consider establishing a dedicated charity/apprenticeship sub-ledger."
+        ],
+        "ur": [
+          "فضلات اور آلودگی سے ہمسایوں و ماحول کے تحفظ کی تصدیق کریں۔",
+          "صدقہ و امداد میں مستحق کی تصویر یا تذلیل سے بچیں۔",
+          "تعلیم یا ہنر مندی کے لیے مستقل رفاہی حصہ مختص کریں۔"
+        ],
+        "ar": [
+          "حماية البيئة والجيران، وصون كرامة المستفيدين دون تصوير، وتخصيص مخصص للخير."
+        ],
+        "hi": [
+          "प्रदूषण मुक्त निपटान सुनिश्चित करें, दान प्राप्तकर्ताओं का सम्मान बचाएं और एक कल्याण फंड रखें।"
+        ]
+      },
+      "summary": {
+        "en": "Social responsibility means doing zero harm to creation while turning lawful surplus into lasting community empowerment.",
+        "ur": "سماجی ذمہ داری مخلوق کو نقصان سے بچانے اور حلال نفع کو معاشرے کی پائیدار بھلائی میں لگانے کا نام ہے۔",
+        "ar": "المسؤولية الاجتماعية هي كفّ الأذى عن الخلق وتوجيه الفائض الحلال لنفع مستدام.",
+        "hi": "सामाजिक उत्तरदायित्व सृष्टि को हानि से बचाने और हलाल लाभ को स्थायी समाज-कल्याण में लगाने का नाम है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m19_1",
+          "question": {
+            "en": "Which Islamic legal maxim directly prohibits a workshop from discharging toxic dye waste into neighborhood water channels?",
+            "ur": "کون سا شرعی و فقہی اصول کارخانے کو گندے زہریلے پانی کو آبادی کے نالوں میں بہانے سے روکتا ہے؟",
+            "ar": "ما القاعدة الفقهية التي تمنع المصنع من تصريف مخلفاته السامة في مجاري المياه؟",
+            "hi": "कौन सा इस्लामी फ़िक़्ह सिद्धांत कारखाने द्वारा जहरीला कचरा जल स्रोतों में बहाने से रोकता है?"
+          },
+          "options": {
+            "en": [
+              "La Darar wa la Dirar (Neither harming nor reciprocating harm)",
+              "Khiyar al-Majlis",
+              "Ju'alah bounty"
+            ],
+            "ur": [
+              "لا ضرر ولا ضرار (نہ کسی کو نقصان پہنچایا جائے نہ بدلے میں ضرر دیا جائے)",
+              "خیارِ مجلس",
+              "جعالہ"
+            ],
+            "ar": [
+              "لا ضرر ولا ضرار",
+              "خيار المجلس"
+            ],
+            "hi": [
+              "ला ज़रर वला ज़िरार (किसी को हानि न पहुंचाना)",
+              "ख़ियारुल-मजलिस"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "The prophetic maxim 'La Darar wa la Dirar' prohibits commercial operations that poison air, water, or community health.",
+            "ur": "'لا ضرر ولا ضرار' ماحول، پانی اور عوام کی صحت کو نقصان پہنچانے والے ہر کاروباری عمل کو حرام قرار دیتا ہے۔",
+            "ar": "القاعدة النبوية (لا ضرر ولا ضرار) تحرم الإضرار بصحة الناس والبيئة.",
+            "hi": "'ला ज़रर वला ज़िरार' जन-स्वास्थ्य व पर्यावरण को नुकसान पहुँचाने वाले किसी भी कार्य को वर्जित करता है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Identify the top packaging waste or ecological footprint in your trade idea and replace it with a practical, affordable reduction plan.",
+        "ur": "اپنے کاروبار میں فضلے یا پلاسٹک کے سب سے بڑے مسئلے کی نشاندہی کر کے اس میں کمی کا عملی منصوبہ لکھیں۔",
+        "ar": "حدد أكبر مصدر للهدر أو النفايات في مشروعك وضع خطة عملية لتقليله.",
+        "hi": "अपने व्यवसाय में सबसे बड़े कचरे या पैकेजिंग अपव्यय को पहचानें और उसे कम करने की व्यावहारिक योजना बनाएं।"
+      },
+      "sources": [
+        { "title": "IIFA Resolution No. 140 (Cash & Share Waqf)", "category": "contemporary_resolution", "attribution": "IIFA", "url": "https://iifa-aifi.org/en/" },
+        { "title": "Quran 2:264 & 2:267", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/267" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "sectors": [
+    {
+      "id": "sector_7_dropship_affiliate",
+      "sectorNumber": 7,
+      "name": {
+        "en": "7. Dropshipping & Affiliate Business",
+        "ur": "7. ڈراپ شپنگ اور ایفلی ایٹ مارکیٹنگ",
+        "ar": "٧. الدروبشيبينغ والتسويق بالعمولة",
+        "hi": "7. ड्रॉपशीपिंग और एफ़िलिएट व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Never blanket-labeled Halal or Haram: Affiliate on Halal items is Halal Ju'alah, whereas unowned dropship resale must be fixed via stock holding or transparent Wakalah agency.",
+        "ur": "پورے شعبے پر ایک حکم نہیں: حلال مصنوعات کا ایفلی ایٹ جائز جعالہ ہے، جبکہ بغیر ملکیت ڈراپ شپنگ کو اپنا اسٹاک رکھ کر یا صریح وکالت سے درست کرنا لازم ہے۔",
+        "ar": "يُفصّل الحكم: التسويق بالعمولة للحلال مباح، أما الدروبشيبينغ فيلزم تصحيحه بالتملك أو الوكالة الصريحة.",
+        "hi": "पूरे क्षेत्र पर एक लेबल नहीं: हलाल उत्पादों पर एफ़िलिएट वैध है, जबकि बिना-स्वामित्व ड्रॉपशीपिंग को स्टॉक रखकर या वकालह से सही करना होगा।"
+      },
+      "introductionA": { "en": "Operating lean online stores fulfilling via third-party suppliers or earning commissions referring verified buyers.", "ur": "تھرڈ پارٹی سپلائر کے ذریعے آن لائن فروخت یا ریفرل لنک سے کمیشن کمانا۔", "ar": "البيع عبر موردين مباشرين أو تحصيل عمولة إحالة المبيعات.", "hi": "तीसरे पक्ष से पूर्ति करने वाले स्टोर या रेफरल कमीशन से कमाई।" },
+      "howItOperatesB": { "en": "Valid model 1: Commissioned Wakalah sourcing; Valid model 2: Pre-purchased 3PL batch; Valid model 3: Affiliate link referral.", "ur": "درست طریقے: (1) واضح وکالت کمیشن، (2) ویئرہاؤس میں اپنا خریدا اسٹاک، (3) حلال ایفلی ایٹ لنکس۔", "ar": "النماذج الصحيحة: وكالة شراء صريحة، أو مخزون مملوك لدى ٣PL، أو عمولة إحالة حلال.", "hi": "वैध तरीके: स्पष्ट वकालह खरीद, 3PL में अपना स्टॉक, या हलाल एफ़िलिएट लिंक।" },
+      "startupRequirementsC": { "en": "Written supplier/affiliate contracts, clear agency disclosures, and product sample testing.", "ur": "سپلائر/ایفلی ایٹ معاہدے، ایجنسی کی وضاحت اور مصنوع کا خود معائنہ۔", "ar": "اتفاقيات الموردين، إفصاح الوكالة، وفحص العينات.", "hi": "आपूर्तिकर्ता/एफ़िलिएट समझौते, एजेंसी प्रकटीकरण और नमूना जांच।" },
+      "capitalAndInvestmentD": { "en": "Low initial savings for content/testing; avoid interest credit-card ad debt.", "ur": "کم ذاتی بچت سے ابتدا؛ اشتہارات کے لیے سودی قرض نہیں۔", "ar": "رأس مال صغير ذاتي بعيداً عن تمويل البطاقات الربوي.", "hi": "कम निजी पूंजी से शुरुआत; सूदी क्रेडिट कार्ड ऋण नहीं।" },
+      "supplierSelectionE": { "en": "Vet fulfillment speed, honest product quality, and authentic Halal inventory.", "ur": "بروقت ڈلیوری، اصل کوالٹی اور حلال مصنوع کی تصدیق۔", "ar": "جودة المنتج وسرعة الشحن ومصداقية المورد.", "hi": "समय पर डिलीवरी, गुणवत्ता और हलाल उत्पादों की पुष्टि।" },
+      "purchasingProcurementF": { "en": "Avoid binding sale before owning inventory; either pre-purchase 10–50 units or act explicitly as buyer's purchasing Wakil.", "ur": "مالک بننے سے پہلے حتمی بیع نہ کریں؛ تھوڑا مال خود خریدیں یا بطور وکیل فیس لیں۔", "ar": "تجنب البيع قبل التملك إما بشراء دفعة مسبقة أو بالتوكيل.", "hi": "स्वामित्व से पहले पक्की बिक्री न करें; स्टॉक खरीदें या स्पष्ट वकील बनें।" },
+      "ownershipPossessionG": { "en": "In 3PL/supplier storage, constructive Qabd requires segregation/allocated ownership & risk resting on you.", "ur": "سپلائر یا 3PL کے پاس آپ کے مختص یونٹس اور ان کے تلف ہونے کا رسک آپ پر ہونا قبضہ حکمی ہے۔", "ar": "يشترط في مخزون ٣PL التعيين وانتقال الضمان إليك قبل البيع.", "hi": "3PL गोदाम में अलग निर्धारित माल और उसका जोखिम आप पर होना क़ब्ज़ है।" },
+      "productsServicesH": { "en": "Halal electronics, home tools, books, apparel—never gambling, alcohol, adult gadgets, or scams.", "ur": "حلال گھریلو اشیاء، کتب، آلات؛ جوا، فحاشی یا فراڈ مصنوعات ہرگز نہیں۔", "ar": "أدوات نافعة وكتب وملابس؛ ومنع ترويج المحرمات والمحتالين.", "hi": "उपयोगी हलाल वस्तुएं—जुआ, शराब या अश्लील उत्पाद नहीं।" },
+      "pricingProfitI": { "en": "In Wakalah model, disclose product supplier cost + flat/percentage agent fee; in affiliate, platform pays commission without inflating buyer harm.", "ur": "وکالت میں اصل قیمت اور ایجنسی فیس واضح رکھیں؛ ایفلی ایٹ میں پلیٹ فارم جائز کمیشن دے۔", "ar": "في الوكالة تُبيَّن الأجرة بوضوح، وفي التسويق بالعمولة تُدفع العمولة وفق الجعالة.", "hi": "वकालह में शुल्क स्पष्ट रखें; एफ़िलिएट में वैध जुआलाह कमीशन लें।" },
+      "customerRightsJ": { "en": "Clear tracking, truthful shipping times (not hiding 25-day overseas delays), and smooth refunds.", "ur": "سچا ڈلیوری وقت بتائیں (25 دن کی شپنگ نہ چھپائیں) اور آسان ریفنڈ دیں۔", "ar": "صدق مدة الشحن والتتبع وسرعة استرداد الثمن.", "hi": "सही डिलीवरी समय बताएं और आसान रिफंड दें।" },
+      "employeeRightsK": { "en": "Virtual assistants & ad freelancers paid agreed milestones promptly.", "ur": "ورچوئل اسسٹنٹس اور ایڈ اسپیشلسٹس کو طے شدہ معاوضہ وقت پر دیں۔", "ar": "سداد أجور المساعدين الافتراضيين والمصممين دون تأخير.", "hi": "वर्चुअल सहायकों को तय भुगतान समय पर दें।" },
+      "relevantContractsL": { "en": ["Wakalah (Sourcing Agent)", "Ju'alah (Affiliate Commission)", "Musawamah (Pre-stocked 3PL)", "Salam"], "ur": ["وکالت", "جعالہ (ایفلی ایٹ)", "مساومہ", "سلم"], "ar": ["الوكالة", "الجعالة", "المساومة", "السلم"], "hi": ["वकालह", "जुआलाह", "मुसावमह", "सलम"] },
+      "potentialProhibitedM": { "en": ["Selling AliExpress goods unowned at checkout", "Affiliate links to interest loans/casinos", "Fake miraculous gadget videos"], "ur": ["قبضے کے بغیر بیع", "سودی قرض/جوا سائٹس کا ایفلی ایٹ", "جعلی کمرشل ویڈیوز"], "ar": ["بيع ما لا تملك", "عمولات القمار والربا", "الإعلانات الكاذبة"], "hi": ["बिना स्वामित्व बिक्री", "ब्याज/जुए के लिंक", "झूठे उत्पाद वीडियो"] },
+      "halalChecklistN": { "en": ["Stock owned or transparent Wakalah active", "Verified sample on hand", "100% Halal affiliate offers"], "ur": ["اسٹاک ملکیت یا صریح وکالت", "سیمپل کی ذاتی جانچ", "حلال ایفلی ایٹ آفرز"], "hi": ["स्वामित्व या वकालह", "स्वयं जांचा नमूना", "हलाल एफ़िलिएट"] },
+      "realisticCaseStudyO": { "en": "Hamza wants zero-warehouse startup income: he begins with pure Halal book/software Affiliate reviews (Ju'alah) and later buys 40 units of top sellers for local 3PL.", "ur": "حمزہ نے بغیر گودام ابتدا کے لیے پہلے حلال کتب و سافٹ ویئر کا ایفلی ایٹ (جعالہ) چلایا اور منافع سے 40 یونٹس خرید کر اپنا اسٹاک شروع کیا۔", "ar": "بدأ حمزة بالتسويق بالعمولة للكتب والبرامج الحلال، ثم اشترى مخزوناً خاصاً به من الأرباح.", "hi": "हमज़ा ने पहले हलाल पुस्तकों का एफ़िलिएट किया और मुनाफ़े से 40 यूनिट खरीदकर अपना स्टॉक शुरू किया।" },
+      "commonMistakesP": { "en": ["Calling classic blind arbitrage dropshipping 'simply Wakalah' when checkout tricks the buyer into thinking you hold stock."], "ur": ["گاہک کو خود مالک ظاہر کر کے دھوکے سے بغیر قبضے ڈراپ شپنگ کو 'وکالت' کا جھوٹا نام دینا۔"], "ar": ["الادعاء بأن الدروبشيبينغ وكالة مع إخفاء ذلك عن المشتري وإيهامه التملك."], "hi": ["ग्राहक से छिपाकर बिना-स्टॉक बिक्री को झूठा वकालह नाम देना।"] },
+      "practicalAssignmentQ": { "en": "Pick either Affiliate (Ju'alah) or 3PL micro-stocking and draft your transparent Checkout Disclosure sentence.", "ur": "ایفلی ایٹ یا 3PL مائیکرو اسٹاک میں سے ایک چن کر گاہک کے لیے شفاف ڈسکلوزر جملہ لکھیں۔", "ar": "اكتب صيغة إفصاح واضحة لمتجرك عند التوكيل أو التسويق بالعمولة.", "hi": "एफ़िलिएट या 3PL मॉडल चुनकर ग्राहक हेतु स्पष्ट प्रकटीकरण वाक्य लिखें।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 15 (Ju'alah) & SS 23 (Wakalah)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 29, "endAyah": 29, "contextNote": { "en": "Transparent agency & referrals.", "ur": "شفاف نمائندگی اور جائز کمیشن۔", "ar": "شفافية الوكالة والسمسرة.", "hi": "पारदर्शी एजेंसी व कमीशन।" }, "businessRelevance": { "en": "Buyer must know clearly whether buying from you directly or via agent.", "ur": "گاہک کو معلوم ہو کہ آپ مالک ہیں یا محض خریداری کے وکیل۔", "ar": "علم المشتري بصفة البائع أو الوكيل.", "hi": "खरीदार को स्पष्ट पता हो कि आप विक्रेता हैं या एजेंट।" } }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_7",
+          "question": { "en": "Under what condition is Affiliate Marketing permissible in Islam?", "ur": "اسلام میں ایفلی ایٹ مارکیٹنگ کن شرائط پر جائز ہے؟", "ar": "متى يجوز التسويق بالعمولة في الإسلام؟", "hi": "इस्लाम में एफ़िलिएट मार्केटिंग किस शर्त पर वैध है?" },
+          "options": { "en": ["When promoted goods/services are completely Halal, descriptions honest, and commission structure transparent (Ju'alah/brokerage)", "Even for casino referrals", "Only on luxury watches"], "ur": ["جب مصنوعات و خدمات مکمل حلال ہوں، سچائی ہو اور کمیشن طے شدہ (جعالہ/سمسرہ) ہو", "جوا سائٹس پر بھی", "صرف گھڑیوں پر"], "ar": ["إذا كانت السلع والخدمات مباحةً مع الصدق ووضوح العمولة", "حتى لمواقع القمار"], "hi": ["जब उत्पाद हलाल हों, विवरण सत्य हो और कमीशन तय हो", "जुए के लिए भी"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Halal affiliate referrals operate as legitimate Ju'alah/brokerage when free of prohibited industries and deceit.", "ur": "حلال اشیاء کا ایفلی ایٹ جائز جعالہ و سمسرہ ہے۔", "ar": "التسويق بالعمولة للسلع المباحة سمسرة وجعالة جائزة.", "hi": "हलाल उत्पादों का एफ़िलिएट वैध जुआलाह ब्रोकरेज है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_8_realestate",
+      "sectorNumber": 8,
+      "name": {
+        "en": "8. Real Estate & Property Business",
+        "ur": "8. رئیل اسٹیٹ اور پراپرٹی کا کاروبار",
+        "ar": "٨. العقارات والوساطة العقارية",
+        "hi": "8. रियल एस्टेट और प्रॉपर्टी व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Real estate development, brokerage, and rentals are lawful when titles are authentic, off-plan builds follow Istisna, and concealed interest mortgages or double-selling frauds are absent.",
+        "ur": "پراپرٹی و بروکری جائز ہے بشرطیکہ کاغذات اصلی ہوں، تعمیراتی فروخت استصناع سے ہو، اور سودی مارگیج یا ڈبل فائل فراڈ نہ ہو۔",
+        "ar": "التجارة العقارية مباحة عند سلامة الصكوك وتطبيق الاستصناع والمشاركة المتناقصة وتجنب الربا والغش.",
+        "hi": "रियल एस्टेट वैध है जब दस्तावेज़ असली हों, ऑफ़-प्लान निर्माण इस्तिसना हो, तथा सूदी मॉर्गेज व डबल-बिक्री धोखा न हो।"
+      },
+      "introductionA": { "en": "Land/home buying and selling, property management, residential/commercial leasing (Ijarah), and real estate brokerage.", "ur": "پلاٹ/مکان کی خرید و فروخت، کرایہ داری، پراپرٹی مینجمنٹ اور جائز بروکری۔", "ar": "بيع وشراء العقارات وإدارتها وتأجيرها والوساطة العقارية.", "hi": "ज़मीन/मकान खरीद-बिक्री, किराया प्रबंधन और प्रॉपर्टी ब्रोकरेज।" },
+      "howItOperatesB": { "en": "Verifies deeds at land registry, connects buyers & sellers via fixed/% brokerage, develops builds cleanly, and manages leases.", "ur": "رجسٹری کی تصدیق، باہمی رضامندی سے کمیشن طے کرنا، معیاری تعمیر اور کرایہ داری معاہدے۔", "ar": "التحقق من السجلات العقارية، الوساطة المعلومة، التطوير المنضبط، وعقود الإيجار.", "hi": "भूमि अभिलेख जांच, पारदर्शी ब्रोकरेज, निर्माण और पट्टा प्रबंधन।" },
+      "startupRequirementsC": { "en": "Agency license, land-registry verification access, transparent lease/sale templates, and escrow/client account.", "ur": "پراپرٹی ایجنسی لائسنس، انتقال و رجسٹری تصدیق، تحریری معاہدے اور امانت اکاؤنٹ۔", "ar": "ترخيص وساطة، فحص الصكوك، عقود موثقة، وحساب أمانات.", "hi": "एजेंसी लाइसेंस, स्वामित्व सत्यापन, लिखित अनुबंध और सुरक्षित खाता।" },
+      "capitalAndInvestmentD": { "en": "Joint Musharakah syndicates, Diminishing Musharakah Islamic home finance, or client construction Istisna.", "ur": "مشارکہ، شرکتِ متناقصہ یا استصناع؛ سودی بینک مارگیج نہیں۔", "ar": "مشاركة متناقصة أو استصناع أو تمويل بالمشاركة.", "hi": "मुशारकाह, डिमिनिशिंग मुशारकाह या इस्तिसना; सूदी मॉर्गेज नहीं।" },
+      "supplierSelectionE": { "en": "Check developer municipal NOC, land ownership clear of family inheritance disputes, and contractor structural record.", "ur": "ہوسنگ سوسائٹی کی سرکاری منظوری، وراثتی تنازع سے پاک ملکیت اور بلڈر کے ماضی کا معائنہ۔", "ar": "التأكد من التراخيص الحكومية وخلو الأرض من نزاعات الإرث.", "hi": "सरकारी NOC, विरासत विवाद-मुक्त स्वामित्व और बिल्डर की साख जांचें।" },
+      "purchasingProcurementF": { "en": "Execute registered sale deeds; avoid buying disputed agricultural plots for illegal encroachment.", "ur": "باقاعدہ رجسٹرڈ بیع نامہ یا انتقال کرائیں؛ قبضہ مافیا یا متنازع زمین سے بچیں۔", "ar": "توثيق الصكوك رسمياً وتجنب الأراضي المتنازع عليها.", "hi": "पंजीकृत बैनामा कराएं और विवादित या अवैध कब्ज़े वाली भूमि से बचें।" },
+      "ownershipPossessionG": { "en": "Plot files/allotments cannot be flipped blindly if the underlying asset doesn't exist cleanly or carries severe uncertainty—consult Mufti on file trading!", "ur": "غیر موجود یا غیر مختص فائلوں کی سٹہ بازی سے بچیں؛ تعمیراتی یونٹ کی خرید و فروخت استصناع یا واضح قبضہ حکمی کے بعد ہو (پیچیدہ سوسائٹی فائلوں پر مفتی سے پوچھیں)۔", "ar": "تجنب المضاربة بملفات عقارية وهمية غير معينة؛ بيع الوحدات على الخارطة يكون بعقد استصناع مضبوط المواصفات.", "hi": "अस्तित्वहीन प्लॉट फ़ाइलों के सट्टे से बचें; निर्माणाधीन इकाई हेतु स्पष्ट इस्तिसना उपयोग करें।" },
+      "productsServicesH": { "en": "Lawful residences, offices, halal shops; never knowingly lease property specifically to casinos, bars, or Riba centers.", "ur": "رہائشی مکانات، دکانیں، دفاتر؛ جان بوجھ کر شراب خانہ، جوا گھر یا سودی دفتر کے لیے کرایہ پر نہ دیں۔", "ar": "عقارات سكنية وتجارية مباحة، ومنع تأجيرها لمحرم كالخمارات والبنوك الربوية.", "hi": "आवास व वैध दुकानें; जानबूझकर जुए, शराब या सूदी दफ़्तर को किराए पर न दें।" },
+      "pricingProfitI": { "en": "Clear total property price; brokers take upfront agreed % or flat Ju'alah commission—never secret 'cut/margin' hidden above owner's ask.", "ur": "بروکر طے شدہ 1 یا 2 فیصد کمیشن لے؛ مالک سے چھپ کر اوپر کی خفیہ رقم (ٹوپ) رکھنا خیانت ہے۔", "ar": "عمولة سمسرة واضحة؛ ويحرم إخفاء الثمن الحقيقي وأخذ فرق سري دون إذن المالك.", "hi": "ब्रोकर तय शुल्क ले; मालिक से छिपाकर ऊपर का गुप्त मार्जिन रखना अमानत में खयानत है।" },
+      "customerRightsJ": { "en": "Disclose structural dampness, zoning limits, litigation, and utility arrears honestly before deposit.", "ur": "سیم، قانونی رکاوٹ، بجلی/گیس کے بقایاجات اور نقشے کے مسائل بیعانے سے پہلے صاف بتائیں۔", "ar": "الإفصاح عن عيوب البناء والديون والقيود التنظيمية قبل العربون.", "hi": "सीलन, कानूनी बाधा और बकाया बिल बयाने से पहले स्पष्ट बताएं।" },
+      "employeeRightsK": { "en": "Field agents, caretakers, and security guards receive agreed salary & prompt commissions.", "ur": "پراپرٹی ایجنٹس، چوکیدار اور مینٹیننس عملے کو وقت پر تنخواہ و طے شدہ کمیشن۔", "ar": "سداد رواتب الحراس والوسطاء في مواعيدهم.", "hi": "एजेंटों व चौकीदारों को समय पर वेतन व तय कमीशन दें।" },
+      "relevantContractsL": { "en": ["Musawamah", "Diminishing Musharakah", "Ijarah (Rental)", "Istisna (Off-plan)", "Ju'alah (Brokerage)"], "ur": ["مساومہ", "شرکتِ متناقصہ", "اجارہ", "استصناع", "جعالہ (بروکری)"], "ar": ["المساومة", "المشاركة المتناقصة", "الإجارة", "الاستصناع", "الجعالة"], "hi": ["मुसावमह", "डिमिनिशिंग मुशारकाह", "इजाराह", "इस्तिसना", "जुआलाह"] },
+      "potentialProhibitedM": { "en": ["Secret broker price padding", "Selling one plot to multiple buyers", "Conventional interest mortgages"], "ur": ["بروکر کا خفیہ منافع کھانا", "ایک پلاٹ دو بندوں کو بیچنا", "سودی ہوم لون"], "ar": ["عمولة السمسار السرية", "بيع العقار مرتين", "الرهن العقاري الربوي"], "hi": ["गुप्त ब्रोकर कट", "एक प्लॉट दो को बेचना", "सूदी होम लोन"] },
+      "halalChecklistN": { "en": ["Deed verified original", "Disclosed commission only", "Structural defects stated"], "ur": ["اصل رجسٹری تصدیق", "صرف واضح طے شدہ کمیشن", "عیوب کی وضاحت"], "ar": ["توثيق الصك", "عمولة معلنة", "بيان العيوب"], "hi": ["मूल रजिस्ट्री जांच", "पारदर्शी कमीशन", "दोष प्रकटीकरण"] },
+      "realisticCaseStudyO": { "en": "Broker Tariq tells a buyer transparently when an owner agrees to sell for PKR 20M instead of padding 20.5M secretly, earning repeat institutional trust.", "ur": "بروکر طارق نے مالک کا ریٹ 2 کروڑ صاف بتا کر صرف طے شدہ 1% کمیشن لیا اور خفیہ 5 لاکھ کھانے سے انکار کر کے سالوں کا کاروبار جما لیا۔", "ar": "سمسار يصرح بالسعر الحقيقي للمالك ويكتفي بعمولته المتفق عليها فكسب ثقة المستثمرين.", "hi": "ब्रोकर तारिक ने छिपाकर कीमत बढ़ाने के बजाय मालिक का असली भाव बताया और केवल तय 1% कमीशन लेकर स्थायी साख बनाई।" },
+      "commonMistakesP": { "en": ["Keeping client token/Bayana money indefinitely if a deal collapses due to seller's missing NOC."], "ur": ["مالک کے کاغذات نامکمل ہونے پر سودا ٹوٹے تب بھی خریدار کا بیعانہ ضبط کر لینا۔"], "ar": ["أكل العربون بغير حق إذا كان الفسخ بسبب نقص أوراق البائع."], "hi": ["विक्रेता के अधूरे कागज़ात से सौदा टूटने पर भी खरीदार का बयाना हड़प लेना।"] },
+      "practicalAssignmentQ": { "en": "Draft a Property Disclosure Sheet covering title deed #, unpaid utility balances, seepage/structural notes, and commission %.", "ur": "پراپرٹی سودے کے لیے شفاف ڈسکلوزر فارم بنائیں: رجسٹری نمبر، بل بقایاجات، تعمیراتی حالت اور کمیشن کی شرح۔", "ar": "أعد استمارة إفصاح عقاري تشمل رقم الصك، الفواتير، الحالة الإنشائية، والعمولة.", "hi": "प्रॉपर्टी डील हेतु रजिस्ट्री नंबर, बकाया बिल, निर्माण स्थिति व कमीशन दर्शाता प्रकटीकरण फॉर्म बनाएं।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 12 (Diminishing Musharakah) & IIFA Res. 72 (Arbun)", "category": "contemporary_resolution", "attribution": "AAOIFI & IIFA", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextNote": { "en": "Brokerage trust & deed honesty.", "ur": "بروکری کی امانت اور کاغذات کی سچائی۔", "ar": "أمانة الوساطة وصدق الصكوك.", "hi": "ब्रोकरेज की अमानत और दस्तावेज़ सच्चाई।" }, "businessRelevance": { "en": "Forbids secret price spreads by trusted agents.", "ur": "امین ایجنٹ کے لیے خفیہ اضافی رقم رکھنا منع ہے۔", "ar": "يمنع السمسار من أخذ زيادة خفية على السعر.", "hi": "एजेंट के लिए गुप्त कीमत जोड़ना वर्जित है।" } }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_8",
+          "question": { "en": "If a seller asks a broker to sell a house for PKR 10M (agreeing to a 2% fee), may the broker silently tell the buyer the price is 10.5M and pocket 500,000 extra without permission?", "ur": "اگر مالک بروکر کو 1 کروڑ میں مکان بیچنے کا کہے تو کیا بروکر خریدار کو 1 کروڑ 5 لاکھ بتا کر 5 لاکھ خفیہ طور پر خود رکھ سکتا ہے؟", "ar": "إذا قال المالك للسمسار بع البيت بعشرة، فهل يجوز للسمسار بيعه بـ ١٠.٥ وأخذ الزيادة سراً دون إذن؟", "hi": "यदि मालिक ब्रोकर को 1 करोड़ में घर बेचने को कहे, तो क्या ब्रोकर बिना अनुमति 1.05 करोड़ बताकर 5 लाख गुप्त रख सकता है?" },
+          "options": { "en": ["No; as a fiduciary Wakil, concealing the true agreed price and pocketing secret profit breaches trust (Amanah)", "Yes, normal hustle", "Only if buyer is rich"], "ur": ["نہیں؛ وکیل امین ہوتا ہے، مالک کی اجازت کے بغیر خفیہ رقم رکھنا خیانت ہے", "ہاں عام رواج ہے", "صرف امیر گاہک سے"], "ar": ["لا؛ الوكيل أمين ويحرم عليه أخذ فرق سري دون رضا الموكل", "نعم يجوز"], "hi": ["नहीं; एजेंट अमीन होता है, बिना सहमति गुप्त अंतर रखना विश्वासघात है", "हाँ, यह सामान्य है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "An agent works on behalf of the principal; hidden markups violate Wakalah trust unless explicitly structured and consented upfront.", "ur": "وکیل موکل کا نمائندہ ہے؛ واضح اجازت کے بغیر خفیہ رقم لینا حرام ہے۔", "ar": "الزيادة السرية في الوكالة خيانة للأمانة.", "hi": "एजेंसी में बिना स्पष्ट सहमति के गुप्त लाभ लेना अवैध है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_9_construction",
+      "sectorNumber": 9,
+      "name": {
+        "en": "9. Construction & Contracting Business",
+        "ur": "9. تعمیرات اور ٹھیکیداری کا کاروبار",
+        "ar": "٩. المقاولات والإنشاءات",
+        "hi": "9. निर्माण और ठेकेदारी व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Construction is Halal and foundational when blueprints/BOQ match Istisna/Ijarah rules, structural steel/cement meet exact specs, and sub-contractors & laborers are paid cleanly.",
+        "ur": "تعمیرات حلال ہیں جب نقشہ و مواد استصناع کے مطابق ہوں، سریا سیمنٹ کم نہ ڈالا جائے اور مزدوروں کی اجرت وقت پر ادا ہو۔",
+        "ar": "المقاولات مشروعة عند الالتزام بالمواصفات والمواد المتفق عليها وسداد أجور العمال.",
+        "hi": "निर्माण हलाल है जब सामग्री मानकों के अनुसार हो, मिलावट न हो और मजदूरों को समय पर भुगतान मिले।"
+      },
+      "introductionA": { "en": "Residential, commercial, and infrastructure civil building under turn-key Istisna or labor-only Ijarah contracting.", "ur": "مکانات، عمارتوں اور سڑکوں کی تعمیر، خواہ مکمل مٹیریل سمیت ہو یا محض لیبر ٹھیکہ۔", "ar": "تنفيذ المباني والبنية التحتية بعقود الاستصناع الكاملة أو مقاولة العمل بالإجارة.", "hi": "टर्न-की इस्तिसना या केवल-श्रम इज़ाराह के तहत भवन व ढांचा निर्माण।" },
+      "howItOperatesB": { "en": "Prepares engineering BOQ, locks Istisna milestone schedule, procures steel/cement, supervises site safety, and hands over inspected project.", "ur": "مکمل تخمینہ (BOQ)، مراحل وار ادائیگی، میٹریل خریداری، حفاظتی نگرانی اور تکمیل حوالگی۔", "ar": "إعداد جدول الكميات، جدولة دفعات الاستصناع، شراء المواد، الإشراف، والتسليم.", "hi": "BOQ बनाना, इस्तिसना चरण तय करना, सामग्री खरीदना, सुरक्षा निगरानी व सुपुर्दगी।" },
+      "startupRequirementsC": { "en": "Civil engineering oversight, contractor license, written Istisna/BOQ contract, and safety helmets/harnesses.", "ur": "انجینئرنگ معیار، کنٹریکٹر لائسنس، تفصیلی معاہدہ اور حفاظتی سامان۔", "ar": "إشراف هندسي، ترخيص مقاولات، عقد مواصفات، ومعدات سلامة.", "hi": "इंजीनियरिंग देखरेख, ठेकेदार लाइसेंस, लिखित अनुबंध और सुरक्षा उपकरण।" },
+      "capitalAndInvestmentD": { "en": "Milestone client advances (permitted in Istisna), partner Musharakah, or supplier asset Murabaha.", "ur": "گاہک سے مراحل وار اقساط (استصناع میں جائز)، مشارکہ یا میٹریل مرابحہ۔", "ar": "دفعات مرحلية جائزة في الاستصناع أو مشاركة أو مرابحة مواد.", "hi": "ग्राहक से चरणबद्ध भुगतान (इस्तिसना में वैध) या मुशारकाह।" },
+      "supplierSelectionE": { "en": "Verify steel gauge/grade certificates and brick kiln labor ethics without bonded child labor.", "ur": "سریا سیمنٹ کی اصلی سند چیک کریں اور جبری مشقت والے ذرائع سے بچیں۔", "ar": "التأكد من شهادات جودة الحديد والإسمنت وسلامة مصادر التوريد.", "hi": "स्टील-सीमेंट प्रमाणपत्र और नैतिक श्रम मानकों की जांच करें।" },
+      "purchasingProcurementF": { "en": "Measure delivered gravel, sand, and rebar weight at gate; prevent site-engineer vendor kickbacks.", "ur": "ریت، بجری اور سریا سائٹ پر تول کر لیں اور سائٹ سپروائزر کے خفیہ کمیشن روکیں۔", "ar": "وزن المواد الموردة عند البوابة ومنع عمولات المهندسين السرية.", "hi": "गेट पर सामग्री तौलकर लें और इंजीनियरों द्वारा गुप्त रिश्वत रोकें।" },
+      "ownershipPossessionG": { "en": "In turn-key Istisna, builder bears work-in-progress risk until client inspection & handover.", "ur": "مکمل مٹیریل کے استصناع میں حوالگی تک تعمیراتی ڈھانچے کا رسک ٹھیکیدار کا ہوتا ہے۔", "ar": "ضمان البناء في الاستصناع الكامل على المقاول حتى التسليم.", "hi": "टर्न-की इस्तिसना में सुपुर्दगी तक निर्माण जोखिम ठेकेदार का रहता है।" },
+      "productsServicesH": { "en": "Halal homes, schools, clinics, offices, warehouses; refrain from contracting gambling casinos or interest-only vaults.", "ur": "گھر، اسکول، ہسپتال، گودام؛ جوا خانوں یا خالص سودی اداروں کے ٹھیکوں سے پرہیز۔", "ar": "بناء المساكن والمدارس والمستودعات وتجنب بناء دور القمار والربا.", "hi": "घर, स्कूल, क्लिनिक व गोदाम बनाएं; जुआ या सूद केंद्रों से बचें।" },
+      "pricingProfitI": { "en": "Itemize material grade vs finishing allowances explicitly; handle client change-orders with written cost addenda.", "ur": "سفید/گرے ڈھانچہ اور فنشنگ کے درجے واضح لکھیں؛ نقشہ بدلنے پر تحریری ضمنی معاہدہ کریں۔", "ar": "توضيح مواصفات التشطيب وتوثيق أوامر التغيير كتابةً.", "hi": "सामग्री स्तर स्पष्ट लिखें और बदलाव होने पर लिखित अतिरिक्त समझौता करें।" },
+      "customerRightsJ": { "en": "Structural integrity without cheating foundation steel or cement mix, timely completion, and defect-liability period.", "ur": "بنیادوں میں سریا و سیمنٹ پورا ڈالیں، وقت پر مکمل کریں اور نقائص کی مرمت کی مدت دیں۔", "ar": "الأمانة في الخلطة والحديد، والالتزام بالموعد، وضمان العيوب.", "hi": "नींव में पूरा स्टील-सीमेंट लगाएं, समय पर पूरा करें और दोष गारंटी दें।" },
+      "employeeRightsK": { "en": "Mandatory scaffolding nets, helmets, clean drinking water, shaded rest, and weekly/biweekly cash masons' pay.", "ur": "سیفٹی جال و ہیلمٹ، پینے کا ٹھنڈا پانی، اور مزدوروں کی ہفتہ وار دیہاڑی بلا تاخیر ادائیگی۔", "ar": "الالتزام بتجهيزات السلامة، والماء، وصرف أجور البنائين بانتظام.", "hi": "सुरक्षा हेलमेट-जाल, स्वच्छ पानी और राजमिस्त्रियों को समय पर मज़दूरी दें।" },
+      "relevantContractsL": { "en": ["Istisna (Turnkey Construction)", "Ijarah (Labor-only / Equipment rental)", "Murabaha (Materials)", "Kafalah (Performance Guarantee)"], "ur": ["استصناع (مکمل تعمیر)", "اجارہ (لیبر/مشین)", "مرابحہ (میٹریل)", "کفالت"], "ar": ["الاستصناع", "الإجارة", "المرابحة", "الكفالة"], "hi": ["इस्तिसना", "इजाराह", "मुराबहा", "कफ़ालह"] },
+      "potentialProhibitedM": { "en": ["Using undersized rebar or weak mortar secretly", "Paying bribes to pass failed structural inspections", "Delaying masons' wages for months"], "ur": ["بنیادوں میں کم سریا/سیمنٹ ڈالنا", "ناقابلِ قبول کام پاس کرانے کو رشوت دینا", "مزدوروں کی دیہاڑی روکنا"], "ar": ["الغش في الحديد والإسمنت", "الرشوة لتمرير المخالفات", "تأخير أجور العمال"], "hi": ["कम सरिया/सीमेंट लगाना", "निरीक्षण पास कराने हेतु रिश्वत", "मज़दूरी रोकना"] },
+      "halalChecklistN": { "en": ["Exact rebar/cement BOQ signed", "Safety harnesses worn", "Weekly labor ledger cleared"], "ur": ["تحریری BOQ اور معیار", "سیفٹی آلات کا استعمال", "مزدوروں کی بروقت ادائیگی"], "ar": ["جدول مواصفات موقع", "سلامة الموقع", "رواتب العمال منتظمة"], "hi": ["हस्ताक्षरित BOQ", "सुरक्षा उपकरण उपयोग", "नियमित श्रम भुगतान"] },
+      "realisticCaseStudyO": { "en": "Contractor Bilal refuses an owner's illegal request to skip municipal setback rules via bribe, builds to exact engineer specs, and wins 4 referrals.", "ur": "ٹھیکیدار بلال نے رشوت دے کر غیر قانونی نقشہ بنانے سے انکار کیا، انجینئرنگ معیار پر عمارت بنائی اور چار نئے پروجیکٹ حاصل کیے۔", "ar": "رفض المقاول بلال الرشوة لتجاوز التنظيم وبنى بأمانة هندسية فنال ثقة السوق.", "hi": "ठेकेदार बिलाल ने रिश्वत से नियम तोड़ने से इनकार कर मानक निर्माण किया और 4 नए प्रोजेक्ट पाए।" },
+      "commonMistakesP": { "en": ["Quoting unrealistically low bids planning to recover profit by secretly downgrading cement/wires later."], "ur": ["ٹھیکہ لینے کو انتہائی کم ریٹ دے کر بعد میں ہلکی تار اور کم سیمنٹ سے نفع نکالنے کی نیت رکھنا۔"], "ar": ["تقديم عرض رخيص بنية الغش لاحقاً في المواد لتعويض الربح."], "hi": "शुरू में कम बोली लगाकर बाद में घटिया तार/सीमेंट लगाकर मुनाफ़ा निकालने की सोचना।" },
+      "practicalAssignmentQ": { "en": "List 5 critical hidden structural specs (rebar gauge, concrete ratio, copper wiring, waterproofing) and put them explicitly in your Istisna schedule.", "ur": "اپنے تعمیراتی معاہدے کے لیے 5 بنیادی پوشیدہ معیارات (سریا گیج، کنکریٹ تناسب، کاپر وائرنگ وغیرہ) کی تفصیل تحریر کریں۔", "ar": "حدّد ٥ مواصفات إنشائية دقيقة في ملحق عقد الاستصناع.", "hi": "सरिया गेज, कंक्रीट अनुपात, तांबे की वायरिंग जैसे 5 मुख्य मानक अपने इस्तिसना अनुबंध में लिखें।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 11 (Istisna'a) & Quran 5:1", "category": "contemporary_resolution", "attribution": "AAOIFI & Quran.com", "url": "https://quran.com/5/1" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 5, "startAyah": 1, "endAyah": 1, "contextNote": { "en": "Honoring architectural & safety covenants.", "ur": "تعمیراتی معاہدے اور نقشے کی شرائط کی پابندی۔", "ar": "الوفاء بمواصفات البناء والعقود.", "hi": "निर्माण अनुबंध की शर्तों का पालन।" }, "businessRelevance": { "en": "Hidden structural specs are binding promises.", "ur": "بنیاد و ڈھانچے کے پوشیدہ معیار بھی واجب الادا عہد ہیں۔", "ar": "الالتزام بجودة الأساسات الخفية واجب.", "hi": "नींव की छिपी गुणवत्ता भी अनिवार्य वादा है।" } }
+      ],
+      "hadithIds": ["muslim_102", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_9",
+          "question": { "en": "Which Islamic contract allows a builder to construct a building with the builder's own materials while receiving progressive milestone payments?", "ur": "کون سا شرعی عقد ٹھیکیدار کو اپنے مٹیریل سے تعمیر کرنے اور مراحل وار اقساط لینے کی اجازت دیتا ہے؟", "ar": "أي عقد يتيح للمقاول البناء بمواده وتقاضي دفعات مرحلية حسب الإنجاز؟", "hi": "कौन सा इस्लामी अनुबंध बिल्डर को अपनी सामग्री से निर्माण करने और चरणबद्ध भुगतान लेने की अनुमति देता है?" },
+          "options": { "en": ["Istisna", "Qard Hasan", "Rahn"], "ur": ["استصناع (Istisna)", "قرضِ حسن", "رہن"], "ar": ["الاستصناع", "القرض الحسن"], "hi": ["इस्तिसना (Istisna)", "क़र्ज़-ए-हसन"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Istisna covers construction/manufacturing using the contractor's materials and expressly allows milestone/deferred payments.", "ur": "استصناع تعمیر و تیاری کا مخصوص عقد ہے جس میں مراحل وار ادائیگی جائز ہے۔", "ar": "الاستصناع عقد تصنيع وإنشاء بمواد الصانع وبثمن مقسط.", "hi": "इस्तिसना निर्माण अनुबंध है जो चरणबद्ध भुगतान की अनुमति देता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_10_agriculture",
+      "sectorNumber": 10,
+      "name": {
+        "en": "10. Agriculture & Farming Business",
+        "ur": "10. زراعت اور کھیتی باڑی کا کاروبار",
+        "ar": "١٠. الزراعة والإنتاج النباتي",
+        "hi": "10. कृषि और खेती व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Agriculture is among the most blessed professions in Sunnah when cultivated with safe fertilizers, Muzara'ah/Musaqah or Salam finance instead of middleman usury, and Ushr/Zakat on produce.",
+        "ur": "زراعت سنت سے ثابت نہایت بابرکت پیشہ ہے جب سودی آڑھت قرض کے بجائے سلم/مزارعت، محفوظ کھاد و پانی اور عشر کی ادائیگی کے ساتھ ہو۔",
+        "ar": "الزراعة من أطيب المكاسب متى نُظمت بالمزارعة والسلم وأُدّي حقها من العشر والزكاة بعيداً عن الربا.",
+        "hi": "कृषि सुन्नत से अत्यंत बरकत वाला कार्य है जब सूदी ऋण के बजाय सलम/मुज़ारआह, सुरक्षित खेती और उश्र अदा किया जाए।"
+      },
+      "introductionA": { "en": "Cultivating grains, orchards, vegetables, and specialty herbs via owned land, fixed-rent leases, or crop-sharing.", "ur": "اناج، باغات، سبزیوں اور جڑی بوٹیوں کی کاشت—اپنی زمین، ٹھیکے یا بٹائی پر۔", "ar": "زراعة المحاصيل والبساتين إما بملكية الأرض أو إجارتها أو المزارعة والمساقاة.", "hi": "अपनी भूमि, पट्टे या साझेदारी से अनाज, बागवानी और सब्जियों की खेती।" },
+      "howItOperatesB": { "en": "Prepares soil, obtains halal Salam working capital for seeds, irrigates responsibly, harvests, grades cleanly, and pays Ushr.", "ur": "زمین کی تیاری، بیعِ سلم سے بیج و کھاد کا انتظام، کٹائی، درجہ بندی اور عشر کی ادائیگی۔", "ar": "تجهيز التربة، تمويل البذور بالسلم، الري العادل، الحصاد، وإخراج العشر.", "hi": "खेत तैयारी, सलम से बीज/खाद पूंजी, सिंचाई, कटाई, ग्रेडिंग और उश्र अदायगी।" },
+      "startupRequirementsC": { "en": "Cultivable land deed/Ijarah, clean water access, certified seeds, and cold/dry storage.", "ur": "زرعی زمین یا ٹھیکہ، پانی کی دستیابی، معیاری بیج اور محفوظ گودام۔", "ar": "أرض زراعية أو إيجار، ومصدر ري، وبذور جيدة، ومخزن.", "hi": "भूमि पट्टा, सिंचाई स्रोत, प्रमाणित बीज व गोदाम।" },
+      "capitalAndInvestmentD": { "en": "100% upfront Salam crop contracts, Muzara'ah (land + farmer profit split), or equipment Murabaha—reject high-interest middleman debt.", "ur": "بیعِ سلم، مزارعت/مساقات یا زرعی مشینری پر مرابحہ؛ آڑھتی کے سودی قرضوں سے نجات۔", "ar": "عقد السلم أو المزارعة والمساقاة بعيداً عن القروض الربوية للوسطاء.", "hi": "सलम फसल अनुबंध या मुज़ारआह साझेदारी; साहूकारी सूदी कर्ज़ से बचें।" },
+      "supplierSelectionE": { "en": "Choose safe non-toxic pesticides respecting pre-harvest safety waiting intervals.", "ur": "محفوظ ادویات و کھاد اور فصل توڑنے سے قبل محفوظ وقفہ کی پابندی۔", "ar": "استخدام مبيدات آمنة والالتزام بفترات الأمان قبل الحصاد.", "hi": "सुरक्षित उर्वरक चुनें और कटाई से पहले सुरक्षा अवधि मानें।" },
+      "purchasingProcurementF": { "en": "Clear written Salam specs (crop grade, tons, harvest delivery window) or agricultural machinery Murabaha.", "ur": "بیعِ سلم میں فصل کی قسم، مقدار اور کٹائی کا وقت واضح تحریر کریں۔", "ar": "ضبط مواصفات السلم بدقة أو شراء الجرارات بالمرابحة.", "hi": "सलम में फसल की श्रेणी, वजन व समय स्पष्ट लिखें।" },
+      "ownershipPossessionG": { "en": "Farmers may not sell unripe fruit on trees before signs of ripeness appear (Sahih al-Bukhari 2194) unless harvested/processed appropriately or via Salam.", "ur": "صحیح بخاری 2194 کے مطابق پھلوں کے پکنے کی علامت ظاہر ہونے سے پہلے درختوں پر بیچنا منع ہے (پیشگی رقم کے لیے سلم اپنائیں)۔", "ar": "النهي عن بيع الثمار قبل بدو صلاحها (البخاري ٢١٩٤)، والبديل هو عقد السلم المضبوط.", "hi": "बुखारी 2194 के अनुसार फल पकने के लक्षण से पहले पेड़ पर बेचना वर्जित है (अग्रिम हेतु सलम अपनाएं)।" },
+      "productsServicesH": { "en": "Halal grains, fruits, honey, olives, medicinal botanicals; never cultivate narcotics/opium/intoxicant tobacco abuses.", "ur": "غلہ، پھل، شہد اور حلال جڑی بوٹیاں؛ منشیات یا افیون کی کاشت ہرگز نہیں۔", "ar": "المحاصيل الحلال الطيبة؛ ويُحرّم زراعة المخدرات.", "hi": "हलाल अनाज, फल व शहद उगाएं; नशीली फसलें कभी न उगाएं।" },
+      "pricingProfitI": { "en": "Fair grading without topping crates with giant fruits over rotten small fruit at the bottom (Muslim 102).", "ur": "پھل کی پیٹی میں اوپر بڑے اور نیچے گلے سڑے پھل نہ چھپائیں (مسلم 102)۔", "ar": "عدم وضع الثمار الرديئة أسفل الصندوق والجيدة أعلاه.", "hi": "पेटी में ऊपर बड़े और नीचे सड़े फल छिपाकर न बेचें (मुस्लिम 102)।" },
+      "customerRightsJ": { "en": "Zero toxic chemical ripening (calcium carbide hazards), honest organic claims, full weight bags.", "ur": "زہریلے کیمیکل سے جبراً پکانے اور جھوٹے آرگینک لیبل سے مکمل پرہیز۔", "ar": "منع الإنضاج الكيميائي الضار والادعاء الكاذب بالزراعة العضوية.", "hi": "हानिकारक रसायनों से पकाने और झूठे ऑर्गेनिक दावे से बचें।" },
+      "employeeRightsK": { "en": "Farmhands & seasonal pickers receive timely fair pay, shade/water breaks, and written sharecropper percentages.", "ur": "کھیت مزدوروں اور ہاریوں کو بروقت مزدوری اور بٹائی کا طے شدہ حصہ۔", "ar": "أجور عادلة لعمال الحصاد وتوضيح حصص المزارعة.", "hi": "खेत मजदूरों को समय पर मज़दूरी व स्पष्ट बटाई हिस्सा दें।" },
+      "relevantContractsL": { "en": ["Salam (Forward crop finance)", "Muzara'ah (Crop sharing)", "Musaqah (Orchard tending)", "Ijarah (Land lease)"], "ur": ["بیعِ سلم", "مزارعت", "مساقات", "اجارہ زمین"], "ar": ["السلم", "المزارعة", "المساقاة", "الإجارة"], "hi": ["सलम", "मुज़ारआह", "मुसाक़ाह", "भूमि इजाराह"] },
+      "potentialProhibitedM": { "en": ["Selling unripe fruit on trees prematurely", "Chemical hazardous fruit ripening", "Withholding Ushr (10% rain-fed / 5% irrigated) at harvest"], "ur": ["کچا پھل درخت پر بیچنا", "زہریلے کیمیکل سے پھل پکانا", "عشر (10% بارانی / 5% آبپاشی) ادا نہ کرنا"], "ar": ["بيع الثمر قبل الصلاح", "الإنضاج السام", "منع العشر"], "hi": ["कच्चे फल पेड़ पर बेचना", "जहरीले रसायन से पकाना", "फसल पर उश्र न देना"] },
+      "halalChecklistN": { "en": ["Pay Ushr at harvest (6:141)", "Uniform crate grading", "Salam replaces Riba debt"], "ur": ["کٹائی پر عشر (6:141)", "یکساں گریڈنگ", "سودی قرض کے بجائے سلم"], "hi": ["कटाई पर उश्र दें (6:141)", "एकसमान ग्रेडिंग", "सलम वित्तपोषण"] },
+      "realisticCaseStudyO": { "en": "Orchard growers form an Islamic Salam co-op receiving upfront seed/solar-pump money from an Islamic bank, repaying in graded mangoes at harvest and donating 5% Ushr cleanly.", "ur": "باغبانوں نے آڑھتی کے سودی قرض کے بجائے اسلامی بینک سے سلم کے تحت پیشگی رقم لی، فصل پر معیاری آم فراہم کیے اور عشر ادا کیا۔", "ar": "مزارعون استبدلوا ديون الوسطاء الربوية بعقد السلم وأدوا نصف العشر (٥٪) عند الحصاد.", "hi": "बागवानों ने साहूकारी ब्याज छोड़कर इस्लामी बैंक से सलम अनुबंध किया और कटाई पर 5% उश्र अदा किया।" },
+      "commonMistakesP": { "en": ["Treating farmer crop-sharing leases vaguely without recording who funds fertilizer and seed."], "ur": ["مزارعت میں بیج، کھاد اور ڈیزل کا خرچ کس پر ہوگا یہ شروع میں طے نہ کرنا۔"], "ar": ["ترك مصروفات البذور والسماد مجهولة في عقد المزارعة."], "hi": ["मुज़ारआह में बीज व खाद का खर्च किसका होगा, यह शुरू में स्पष्ट न करना।"] },
+      "practicalAssignmentQ": { "en": "Calculate Ushr on a sample 10-ton harvest (10% rain-fed vs 5% tubewell/canal irrigated).", "ur": "10 ٹن فصل پر بارانی (10%) بمقابلہ ٹیوب ویل/نہری آبپاشی (5%) کے حساب سے عشر نکالنے کی مشق کریں۔", "ar": "احسب العشر لمحصول ١٠ أطنان بالري الطبيعي (١٠٪) مقابل الري الصناعي (٥٪).", "hi": "10 टन फसल पर वर्षा सिंचित (10%) बनाम ट्यूबवेल सिंचित (5%) के लिए उश्र गणना करें।" },
+      "referencesR": [
+        { "title": "Sahih al-Bukhari 2194 & 1483 (Ushr); AAOIFI SS 10", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:1483" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 6, "startAyah": 141, "endAyah": 141, "contextNote": { "en": "Harvest duty alongside non-waste.", "ur": "کٹائی کے دن حق (عشر) ادا کرنے اور اسراف سے بچنے کا حکم۔", "ar": "أداء حق الحصاد والنهي عن الإسراف.", "hi": "कटाई के दिन हक (उश्र) देने और बर्बादी से बचने का आदेश।" }, "businessRelevance": { "en": "Establishes agricultural Zakat/Ushr obligation.", "ur": "زرعی پیداوار پر عشر کا فرض ہونا ثابت ہے۔", "ar": "يؤسس لوجوب زكاة الزروع (العشر).", "hi": "कृषि उपज पर उश्र की अनिवार्यता सिद्ध करता है।" } }
+      ],
+      "hadithIds": ["muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_10",
+          "question": { "en": "What is the Ushr rate on crops irrigated artificially via paid pumps, tubewells, or canals (Sahih al-Bukhari 1483)?", "ur": "صحیح بخاری 1483 کے مطابق ٹیوب ویل یا خرچ والے پانی سے سیراب ہونے والی فصل پر عشر کی شرح کیا ہے؟", "ar": "ما مقدار الزكاة فيما سُقي بالنضح والآلات والمضخات في صحيح البخاري ١٤٨٣؟", "hi": "सहीह बुखारी 1483 के अनुसार ट्यूबवेल या खर्चीली सिंचाई वाली फसल पर उश्र दर क्या है?" },
+          "options": { "en": ["Half of one-tenth (5%) for irrigated vs 10% for purely rain/river-fed", "Always 25%", "0%"], "ur": ["نصف العشر یعنی 5 فیصد (جبکہ بارانی پر 10 فیصد)", "ہمیشہ 25 فیصد", "صفر فیصد"], "ar": ["نصف العشر (٥٪)، بينما المروي بالمطر والعيون ففيه العشر (١٠٪)", "٢٥٪ دائماً"], "hi": ["5% (निस्फुल-उश्र), जबकि वर्षा-सिंचित पर 10%", "हमेशा 25%"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Sahih al-Bukhari 1483 explicitly assigns 10% (Ushr) to natural rain/spring crops and 5% (Nisf al-Ushr) where costly artificial irrigation is used.", "ur": "صحیح بخاری 1483 میں بارانی پر 10% اور محنت/لاگت والی آبپاشی پر 5% مقرر ہے۔", "ar": "في صحيح البخاري ١٤٨٣: فيما سقت السماء العشر، وفيما سقي بالنضح نصف العشر.", "hi": "बुखारी 1483 में प्राकृतिक सिंचाई पर 10% व कृत्रिम सिंचाई पर 5% निर्धारित है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_11_livestock",
+      "sectorNumber": 11,
+      "name": {
+        "en": "11. Livestock & Dairy Business",
+        "ur": "11. مویشی پالنا اور ڈیری فارمنگ",
+        "ar": "١١. الثروة الحيوانية ومزارع الألبان",
+        "hi": "11. पशुपालन और डेयरी व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Livestock & dairy follow Prophetic precedent when animals are treated mercifully, milk is undiluted and hormone-safe, and grazing/partnership shares are honest.",
+        "ur": "مویشی و ڈیری سنتِ نبوی ﷺ کے مطابق نہایت بابرکت ہیں جب جانوروں پر رحم ہو، دودھ میں پانی یا کیمیکل نہ ہو اور شراکت و ادائیگی صاف ہو۔",
+        "ar": "مشروعة ومباركة مع الرفق بالحيوان ونقاء الحليب وعدم التصريه والغش.",
+        "hi": "पशुपालन व डेयरी सुन्नत-सम्मत है जब पशुओं पर दया हो, दूध में पानी/रसायन न मिले और सौदे ईमानदार हों।"
+      },
+      "introductionA": { "en": "Dairy cattle/goat farms, fresh milk distribution, meat-animal fattening, and Qurbani livestock rearing.", "ur": "گائے بھینس و بکری فارمنگ، خالص دودھ کی سپلائی اور قربانی/گوشت کے جانور پالنا۔", "ar": "تربية المواشي والأبقار وإنتاج الألبان وتسمين الأنعام.", "hi": "गाय-भैंस व बकरी पालन, शुद्ध दूध वितरण और मांस/क़ुर्बानी पशु पालन।" },
+      "howItOperatesB": { "en": "Purchases healthy stock, provides clean feed & veterinary care, milks hygienically, and sells verified livestock or dairy.", "ur": "صحت مند جانور خریدنا، صاف چارہ و علاج، صفائی سے دودھ دوہنا اور خالص فروخت۔", "ar": "شراء مواشٍ سليمة، وتوفير العلف والرعاية البيطرية، والحلب النظيف، والبيع.", "hi": "स्वस्थ पशु खरीदना, पौष्टिक चारा व चिकित्सा, स्वच्छ दोहन और शुद्ध बिक्री।" },
+      "startupRequirementsC": { "en": "Ventilated clean barns, clean water troughs, chiller tanks, and veterinary inspection.", "ur": "ہوادار صاف باڑہ، پینے کا صاف پانی، ملک چلر اور ڈاکٹر کا معائنہ۔", "ar": "حظائر نظيفة جيدة التهوية، وخزانات تبريد الحليب، ومتابعة بيطرية.", "hi": "हवादार स्वच्छ बाड़ा, दूध कूलर टैंक और पशु चिकित्सा जांच।" },
+      "capitalAndInvestmentD": { "en": "Musharakah farm equity or documented Mudarabah/hired caretaker contracts (avoid exploitative 'Adhia' cattle contracts violating classic rules—consult a Mufti!).", "ur": "مشارکہ یا باقاعدہ اجرتی/شرعی شراکت؛ عوامی غلط 'ادھیا/بٹائی' جس میں غرر یا ناانصافی ہو اس پر مفتی سے تصدیق کرائیں۔", "ar": "مشاركة حقيقية موثقة وتجنب عقود المشاركة العرفية الفاسدة في المواشي دون استشارة مفتٍ.", "hi": "मुशारकाह साझेदारी या निश्चित वेतन अनुबंध (लोक-प्रचलित अस्पष्ट पशु-बटाई पर मुफ़्ती सलाह लें)।" },
+      "supplierSelectionE": { "en": "Avoid stolen livestock markets; verify veterinary tag/health records and clean fodder.", "ur": "چوری کے مویشی منڈیوں سے بچیں؛ جانور کی صحت اور صاف خوراک کی تصدیق کریں۔", "ar": "تجنب المواشي المسروقة والتحقق من العلف الطاهر.", "hi": "चोरी के पशुओं से बचें और स्वच्छ चारे व स्वास्थ्य की जांच करें।" },
+      "purchasingProcurementF": { "en": "Inspect teeth/udders/lameness transparently before purchase; disclose any chronic illness.", "ur": "خرید و فروخت میں جانور کی عمر، دانت اور کوئی پرانی بیماری صاف بتائیں۔", "ar": "الفحص الظاهر وبيان أي مرض أو عيب مزمن.", "hi": "खरीद-बिक्री में पशु की उम्र, स्वास्थ्य और कोई भी दोष स्पष्ट बताएं।" },
+      "ownershipPossessionG": { "en": "Take direct possession & barn responsibility of animals before onward resale or dairy partnership valuation.", "ur": "آگے فروخت سے پہلے جانوروں کا قبضہ اور نگہداشت سنبھالیں۔", "ar": "قبض المواشي وتحمل ضمانها قبل البيع.", "hi": "आगे बेचने से पहले पशुओं का वास्तविक क़ब्ज़ और देखभाल लें।" },
+      "productsServicesH": { "en": "Pure undiluted milk, ghee, yogurt, healthy cattle; strictly avoid banned oxytocin milk injections or unlawful carcasses.", "ur": "خالص دودھ، گھی، دہی اور تندرست مویشی؛ دودھ اتارنے کے مضر انجیکشن یا مردار سے مکمل پرہیز۔", "ar": "ألبان نقية ومواشٍ سليمة دون هرمونات ضارة.", "hi": "शुद्ध दूध, घी, दही और स्वस्थ पशु; हानिकारक हार्मोन इंजेक्शन न लगाएं।" },
+      "pricingProfitI": { "en": "Honest price per liter matching genuine fat %, never blending skim powder/detergents/ice water.", "ur": "فیٹ کی اصل مقدار کے مطابق قیمت؛ پانی، برف یا کیمیکل ملاوٹ سے مکمل بچاؤ۔", "ar": "التسعير حسب الدسم الحقيقي ومنع الغش بالماء أو المواد الحافظة الضارة.", "hi": "वास्तविक फैट अनुसार मूल्य रखें; पानी, बर्फ या रसायन न मिलाएं।" },
+      "customerRightsJ": { "en": "Strict ban on Tasriyah (leaving a cow/goat unmilked for days before sale to falsely inflate udder size—Bukhari 2148).", "ur": "تصرِیہ کی سخت حرمت: فروخت سے پہلے گائے/بکری کا دودھ کئی دن روک کر تھن بھرے دکھانا حرام ہے (صحیح بخاری 2148)۔", "ar": "تحريم التصرية (حبس اللبن في الضرع قبل البيع لخداع المشتري - البخاري ٢١٤٨).", "hi": "तसरीया पर रोक: बिक्री से पहले झूठा दूध दिखाने हेतु जानबूझकर पशु न दुहना हराम है (बुखारी 2148)।" },
+      "employeeRightsK": { "en": "Herdsmen & milkers receive decent quarters, boots, prompt pay, and medical care.", "ur": "گوالوں اور چرواہوں کو مناسب رہائش، حفاظتی جوتے اور وقت پر تنخواہ۔", "ar": "سكن لائق وأحذية واقية ورواتب منتظمة للرعاة.", "hi": "ग्वालों को उचित आवास, सुरक्षा बूट और समय पर वेतन दें।" },
+      "relevantContractsL": { "en": ["Musawamah", "Musharakah (Farm Partnership)", "Ijarah (Caretaker)", "Istisna/Salam (Feed)"], "ur": ["مساومہ", "مشارکہ", "اجارہ", "سلم چارہ"], "ar": ["المساومة", "المشاركة", "الإجارة", "السلم"], "hi": ["मुसावमह", "मुशारकाह", "इजाराह", "सलम"] },
+      "potentialProhibitedM": { "en": ["Tasriyah (holding back milk before animal sale)", "Diluting milk with pond water/chemicals", "Starving/beating animals"], "ur": ["دودھ روک کر جانور مہنگا بیچنا (تصریہ)", "دودھ میں پانی/کیمیکل ملانا", "جانوروں پر تشدد یا بھوکا رکھنا"], "ar": ["التصرية", "غش الحليب بالماء أو الكيماويات", "تعذيب البهائم"], "hi": ["तसरीया धोखा", "दूध में पानी/रसायन मिलाना", "पशु क्रूरता"] },
+      "halalChecklistN": { "en": ["Zero milk adulteration", "Merciful feeding & shade", "Zakat paid on free-grazing Sa'imah herds"], "ur": ["خالص دودھ", "جانوروں سے رحم", "سائمہ مویشیوں پر زکوٰۃ"], "ar": ["حليب نقي", "رفق بالحيوان", "إخراج زكاة السائمة"], "hi": ["शुद्ध दूध", "पशु दया", "पात्र पशुओं पर ज़कात"] },
+      "realisticCaseStudyO": { "en": "A dairy seals tamper-evident glass bottles straight from chilled tanks, publishes weekly lab lactometer checks, and charges fair premium for pure milk.", "ur": "ڈیری فارم نے چلر سے براہِ راست سیل بند بوتلیں اور لیبارٹری ٹیسٹ رپورٹ جاری کر کے خالص دودھ کا کامیاب برانڈ بنایا۔", "ar": "مزرعة ألبان تعتمد العبوات المختومة وفحص المختبر الأسبوعي فبنت سمعة ممتازة.", "hi": "डेयरी ने सीलबंद बोतलें व साप्ताहिक लैब रिपोर्ट जारी कर शुद्ध दूध का विश्वसनीय ब्रांड बनाया।" },
+      "commonMistakesP": { "en": ["Injecting oxytocin before milking or selling sick cattle disguised with painkillers."], "ur": ["بیمار جانور کو عارضی درد کی دوا دے کر صحت مند ظاہر کر کے بیچنا۔"], "ar": ["حقن الحيوان المريض بمسكنات لإخفاء مرضه عند البيع."], "hi": "बीमार पशु को दर्द की दवा देकर स्वस्थ दिखाकर बेचना।" },
+      "practicalAssignmentQ": { "en": "Write a 4-point Animal Welfare & Pure Milk Charter grounded in Sahih al-Bukhari 2148 & Muslim 102.", "ur": "صحیح بخاری 2148 اور مسلم 102 کی روشنی میں جانوروں کی فلاح و خالص دودھ کا 4 نکاتی منشور لکھیں۔", "ar": "اكتب ميثاقاً من ٤ بنود للرفق بالحيوان ونقاء الحليب.", "hi": "बुखारी 2148 व मुस्लिम 102 के आधार पर पशु कल्याण व शुद्ध दूध का 4-सूत्रीय चार्टर लिखें।" },
+      "referencesR": [
+        { "title": "Sahih al-Bukhari 2148 (Tasriyah) & Sahih Muslim 1955", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:2148" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 2, "startAyah": 267, "endAyah": 267, "contextNote": { "en": "Pure wholesome provision.", "ur": "پاکیزہ اور خالص رزق کی فراہمی۔", "ar": "تقديم الطيبات الخالية من الغش.", "hi": "शुद्ध व पवित्र उपज।" }, "businessRelevance": { "en": "Pure unadulterated dairy earns consumer trust & Zakat fitness.", "ur": "خالص دودھ صارف کا اعتماد اور زکوٰۃ کی برکت لاتا ہے۔", "ar": "نقاء اللبن يجلب الثقة والبركة.", "hi": "शुद्ध दूध ग्राहक विश्वास और बरकत लाता है।" } }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_11",
+          "question": { "en": "What deceptive cattle practice is explicitly forbidden in Sahih al-Bukhari 2148?", "ur": "صحیح بخاری 2148 میں مویشی بیچنے کے کس دھوکے سے خاص طور پر منع کیا گیا ہے؟", "ar": "ما الممارسة الخادعة في بيع الأنعام التي نهى عنها البخاري ٢١٤٨؟", "hi": "सहीह बुखारी 2148 में पशु बिक्री की किस धोखाधड़ी पर रोक लगाई गई है?" },
+          "options": { "en": ["Tasriyah: tying/leaving milk unmilked for days before sale so udders look unnaturally high-yielding", "Washing the cow", "Feeding fresh clover"], "ur": ["تصریہ: زیادہ دودھ والی ظاہر کرنے کو فروخت سے قبل کئی دن دودھ نہ دوہنا", "گائے کو نہلانا", "تازہ چارہ ڈالنا"], "ar": ["التصرية: حبس الحليب في الضرع أياماً لإيهام كثرة إدرارها", "تنظيف البقرة"], "hi": ["तसरीया: बिक्री से पहले झूठी दूध क्षमता दिखाने हेतु कई दिन न दुहना", "गाय को नहलाना"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Tasriyah artificially inflates apparent milk output and gives the deceived buyer an immediate right to return with dates/compensation.", "ur": "تصریہ دھوکہ ہے جس پر خریدار کو واپس کرنے کا حق ملتا ہے۔", "ar": "التصرية تدليس يثبت للمشتري حق الرد.", "hi": "तसरीया धोखा है जिससे खरीदार को वापसी का अधिकार मिलता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_12_textile",
+      "sectorNumber": 12,
+      "name": {
+        "en": "12. Textile & Garments Manufacturing",
+        "ur": "12. ٹیکسٹائل اور گارمنٹس مینوفیکچرنگ",
+        "ar": "١٢. صناعة النسيج والملبوسات",
+        "hi": "12. टेक्सटाइल और गारमेंट्स उद्योग"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Major job-creating Halal sector when factory effluent is treated responsibly, export orders meet true specs, and factory workers have fair pay & fire safety.",
+        "ur": "عظیم روزگار بخش حلال شعبہ ہے، بشرطیکہ رنگائی کا گندا پانی صاف ہو، برآمدی آرڈر میں معیار پورا رہے اور فیکٹری مزدوروں کی حفاظت و تنخواہ یقینی ہو۔",
+        "ar": "قطاع إنتاجي حلال وكبير متى عولجت مخلفات الصباغة وتوفرت السلامة المهنية والوفاء بالمواصفات.",
+        "hi": "यह बड़ा रोजगार-सर्जक हलाल क्षेत्र है बशर्ते रंगाई कचरे का शोधन हो, निर्यात मानक पूरे रहें और श्रमिक सुरक्षा/वेतन पक्का हो।"
+      },
+      "introductionA": { "en": "Spinning, weaving, dyeing, and CMT (cut-make-trim) garment export and domestic factories.", "ur": "دھاگہ، کپڑا بنائی، رنگائی اور گارمنٹس کی تیاری و برآمد۔", "ar": "غزل ونسج وصباغة وتفصيل الملابس محلياً وللتصدير.", "hi": "कताई, बुनाई, रंगाई और घरेलू व निर्यात गारमेंट निर्माण।" },
+      "howItOperatesB": { "en": "Receives buyer Istisna/CMT purchase orders, imports/sources yarn via Murabaha, manages floor stitching, passes AQL audit, and ships.", "ur": "خریدار سے استصناع/تیاری آرڈر لینا، یارن خریدنا، سلائی و کوالٹی آڈٹ کے بعد شپمنٹ۔", "ar": "استلام طلبيات الاستصناع، توفير الخيوط، الخياطة، فحص الجودة، والتصدير.", "hi": "ऑर्डर लेना, धागा खरीदना, सिलाई, गुणवत्ता जांच और शिपिंग।" },
+      "startupRequirementsC": { "en": "Industrial loom/sewing floor, boiler/effluent treatment plan, fire exits, and export certification.", "ur": "صنعتی سلائی یونٹ، پانی فلٹریشن، فائر سیفٹی اور ایکسپورٹ رجسٹریشن۔", "ar": "مشغل صناعي، محطة معالجة المياه، مخارج طوارئ، ورخص تصدير.", "hi": "सिलाई मशीन इकाई, जल शोधन, अग्नि निकास और निर्यात लाइसेंस।" },
+      "capitalAndInvestmentD": { "en": "Islamic Diminishing Musharakah / Ijarah for looms & generators; Shariah Murabaha working capital.", "ur": "مشینری کے لیے شرکتِ متناقصہ یا اجارہ، اور خام مال کے لیے مرابحہ۔", "ar": "مشاركة متناقصة أو إجارة للآلات ومرابحة للخامات.", "hi": "मशीनों हेतु डिमिनिशिंग मुशारकाह/इज़ाराह और कच्चे माल हेतु मुराबहा।" },
+      "supplierSelectionE": { "en": "Check certified yarn count and non-toxic OEKO-TEX/safe textile dyes.", "ur": "مستند یارن کاؤنٹ اور غیر زہریلے محفوظ رنگوں کا انتخاب۔", "ar": "التحقق من جودة الخيوط وسلامة الأصباغ.", "hi": "सही धागा काउंट और सुरक्षित रंजकों का चयन।" },
+      "purchasingProcurementF": { "en": "Raw cotton/yarn Salam or Murabaha procurement with strict lab weight checks.", "ur": "روئی و دھاگے کی سلم یا مرابحہ خریداری اور لیب وزن جانچ۔", "ar": "توريد القطن والخيوط بالسلم أو المرابحة مع الفحص.", "hi": "कपास/धागे की सलम या मुराबहा खरीद और लैब जांच।" },
+      "ownershipPossessionG": { "en": "Own raw yardage before shipping finished CMT lots; clearly separate buyer-supplied fabric (CMT labor Ijarah) from full-package Istisna.", "ur": "اگر کپڑا خریدار کا ہو تو یہ محض سلائی کا اجارہ ہے؛ اگر کپڑا بھی آپ کا ہو تو مکمل استصناع ہے۔", "ar": "التمييز بين إجارة التفصيل (عندما يكون القماش من المشتري) والاستصناع (بمواد المصنع).", "hi": "ग्राहक के कपड़े पर सिलाई 'इजाराह' है, और अपने कपड़े से निर्माण 'इस्तिसना'।" },
+      "productsServicesH": { "en": "Export cottons, towels, modest apparel, workwear; avoid producing immodest or offensive branded garments.", "ur": "سوتی کپڑا، تولیے، باحیا ملبوسات، یونیفارم؛ بے حیا یا حرام علامات والے کپڑوں سے بچیں۔", "ar": "الأقمشة القطنية والمناشف والملابس الساترة دون شعارات مخالفة.", "hi": "सूती वस्त्र, तौलिया, शालीन परिधान और वर्दी; अनुचित ब्रांडिंग से बचें।" },
+      "pricingProfitI": { "en": "Transparent FOB/CIF unit costing without bribing export inspectors or under-invoicing customs.", "ur": "اصل FOB/CIF لاگت اور بغیر کسٹم چوری یا رشوت کے شفاف بلنگ۔", "ar": "تسعير تصديري صادق دون تزوير فواتير أو رشاوى.", "hi": "बिना कस्टम चोरी या रिश्वत के पारदर्शी निर्यात मूल्य निर्धारण।" },
+      "customerRightsJ": { "en": "Meet AQL defect limits honestly without concealing flawed units deep in master cartons.", "ur": "ماسٹر کارٹن کے اندر عیب دار پیس نہ چھپائیں بلکہ طے شدہ معیار پورا کریں۔", "ar": "الالتزام بمعايير الجودة وعدم دسّ القطع المعيبة داخل الكراتين.", "hi": "कार्टन के अंदर दोषपूर्ण कपड़े न छिपाएं और तय गुणवत्ता पूरी करें।" },
+      "employeeRightsK": { "en": "Minimum/living wage compliance, paid rest, no locked factory exits (vital safety duty), prompt payroll.", "ur": "مناسب تنخواہ، فیکٹری دروازے کھلے و محفوظ رکھنا، آگ سے تحفظ اور وقت پر اجرت۔", "ar": "أجور عادلة، وأبواب طوارئ مفتوحة، وسلامة تامة للعمال.", "hi": "उचित वेतन, खुले आपातकालीन द्वार, अग्नि सुरक्षा और समय पर भुगतान।" },
+      "relevantContractsL": { "en": ["Istisna (Full-package CMT)", "Ijarah (Stitching-only / Factory machines)", "Murabaha (Yarn)", "Wakalah (LC)"], "ur": ["استصناع", "اجارہ", "مرابحہ", "وکالت (L/C)"], "ar": ["الاستصناع", "الإجارة", "المرابحة", "الوكالة"], "hi": ["इस्तिसना", "इजाराह", "मुराबहा", "वकालह"] },
+      "potentialProhibitedM": { "en": ["Dumping untreated dye sludge in rivers", "Forcing unpaid 14-hour shifts", "Overbilling overtime / export rebate fraud"], "ur": ["کیمیکل والا گندا پانی نہروں میں چھوڑنا", "بغیر اوور ٹائم جبری طویل شفٹیں", "جعلی ایکسپورٹ ریبیٹ"], "ar": ["تصريف الأصباغ السامة", "ساعات عمل قسرية بلا أجر", "الاحتيال الجمركي"], "hi": ["जहरीला रंगाई जल बहाना", "बिना वेतन लंबी शिफ्ट", "निर्यात छूट धोखाधड़ी"] },
+      "halalChecklistN": { "en": ["Effluent water treated", "Fire exits unlocked & inspected", "Islamic bank export financing"], "ur": ["پانی ٹریٹمنٹ پلانٹ", "محفوظ ہنگامی راستے", "اسلامی ایکسپورٹ فنانسنگ"], "hi": ["जल शोधन संयंत्र", "सुरक्षित अग्नि निकास", "इस्लामी निर्यात वित्तपोषण"] },
+      "realisticCaseStudyO": { "en": "A Faisalabad knitwear unit replaces a high-interest export overdraft with Islamic Export Refinance (Musharakah), installs wastewater filtration, and pays on the 1st.", "ur": "فیصل آباد کے نِٹ ویئر یونٹ نے سودی ایکسپورٹ لون چھوڑ کر اسلامی ایکسپورٹ فنانسنگ اور واٹر فلٹر پلانٹ اپنایا اور یکم کو تنخواہیں یقینی بنائیں۔", "ar": "مصنع نسيج استبدل السحب الربوي بمشاركة إسلامية للتصدير وركّب وحدة معالجة مياه والتزم بدفع الرواتب في الموعد.", "hi": "कपड़ा मिल ने सूदी निर्यात ऋण छोड़कर इस्लामी वित्तपोषण व जल शोधन लगाया और 1 तारीख को वेतन पक्का किया।" },
+      "commonMistakesP": { "en": ["Bribing labor/fire inspectors instead of genuinely fixing blocked exits and wiring."], "ur": ["حفاظتی انتظامات درست کرنے کے بجائے انسپکٹر کو رشوت دے کر کام چلانا۔"], "ar": ["رشوة مفتشي السلامة بدلاً من إصلاح مخاطر الحريق."], "hi": "अग्नि सुरक्षा ठीक करने के बजाय निरीक्षक को रिश्वत देना।" },
+      "practicalAssignmentQ": { "en": "Inspect a workshop's fire-safety exits, effluent disposal, and piece-rate wage clarity against 'La Darar wa la Dirar'.", "ur": "کارخانے کے حفاظتی راستوں، گندے پانی اور اجرت کے نظام کا 'لا ضرر ولا ضرار' کی روشنی میں آڈٹ کریں۔", "ar": "افحص مخارج الطوارئ ومعالجة المياه وأجور العمال وفق قاعدة لا ضرر ولا ضرار.", "hi": "'ला ज़रर वला ज़िरार' के आधार पर सुरक्षा निकास, कचरा निपटान और वेतन स्पष्टता की जांच करें।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 11 (Istisna'a) & Ibn Majah 2340", "category": "contemporary_resolution", "attribution": "AAOIFI & Sunnah.com", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 17, "startAyah": 35, "endAyah": 35, "contextNote": { "en": "Exact yardage, thread weight & quality.", "ur": "کپڑے کا پورا ناپ، وزن اور معیار۔", "ar": "دقة الأطوال والأوزان النسيجية.", "hi": "सटीक माप, वज़न और गुणवत्ता।" }, "businessRelevance": { "en": "Avoid cutting corners on GSM or carton counts.", "ur": "وزن، دھاگے اور گنتی میں کمی سے بچاؤ۔", "hi": "धागे के वज़न और गिनती में कटौती से बचें।" } }
+      ],
+      "hadithIds": ["muslim_102", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_12",
+          "question": { "en": "If a foreign buyer supplies their own fabric rolls and hires a factory solely to cut and stitch, which contract governs the factory's service?", "ur": "اگر خریدار اپنا کپڑا خود دے اور فیکٹری صرف کٹائی اور سلائی کرے تو یہ کون سا شرعی عقد ہے؟", "ar": "إذا قدّم المشتري القماش واقتصر المصنع على التفصيل والخياطة، فما تكييف العقد؟", "hi": "यदि खरीदार अपना कपड़ा दे और कारखाना केवल कटाई-सिलाई करे, तो यह कौन सा अनुबंध है?" },
+          "options": { "en": ["Ijarah (Service/Labor Contract)", "Istisna", "Qard Hasan"], "ur": ["اجارہ (خدمت و محنت کا عقد)", "استصناع", "قرضِ حسن"], "ar": ["الإجارة على العمل", "الاستصناع"], "hi": ["इजाराह (सेवा/श्रम अनुबंध)", "इस्तिसना"] },
+          "correctIndex": 0,
+          "explanation": { "en": "When the client provides the main material, the maker is providing labor/service (Ijarah); Istisna requires materials + fabrication both from maker.", "ur": "جب خام مال گاہک کا ہو تو صرف کام کرنا اجارہ ہے؛ استصناع میں مال اور محنت دونوں صانع کی ہوتی ہیں۔", "ar": "إذا كانت المادة من العميل فالعقد إجارة عمل، أما الاستصناع فيكون العمل والمادة من الصانع.", "hi": "जब सामग्री ग्राहक की हो तो केवल सिलाई करना इजाराह है; इस्तिसना में सामग्री व श्रम दोनों निर्माता के होते हैं।" }
+        }
+      ]
+    }
+  ]
+}

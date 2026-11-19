@@ -1,0 +1,653 @@
+{
+  "lessons": [
+    {
+      "id": "rights_16_workers",
+      "departmentId": "dept_rights",
+      "order": 16,
+      "groupCode": "FINANCIAL",
+      "groupLabel": {"en": "Financial & Workplace Rights", "ur": "مالی اور روزگار کے حقوق", "ar": "الحقوق المالية وحقوق العمل", "hi": "आर्थिक और कार्यस्थल अधिकार"},
+      "title": {"en": "16. Workers', Laborers' & Employees' Rights", "ur": "16. مزدوروں اور ملازمین کے حقوق", "ar": "١٦. حقوق العمال والموظفين", "hi": "16. मज़दूरों और कर्मचारियों के अधिकार"},
+      "introduction": {"en": "Islam elevates honest labor and demands agreed written terms, humane workloads, physical safety, dignified speech, and zero delay in paying earned wages.", "ur": "اسلام محنت کش کے پسینے کا احترام کرتا ہے اور طے شدہ تحریری اجرت، محفوظ ماحول، انسانی اوقاتِ کار اور بروقت ادائیگی کو فرض قرار دیتا ہے۔", "ar": "يكرم الإسلام العامل ويوجب الوفاء بأجره دون تأخير وحفظ كرامته وسلامته.", "hi": "इस्लाम श्रमिकों की मेहनत का सम्मान करता है और उचित वेतन, सुरक्षा तथा समय पर भुगतान अनिवार्य करता है।"},
+      "explanation": {"en": "In Sahih al-Bukhari 2227 (Hadith Qudsi), Allah declares He will be the adversary on Judgment Day of an employer who took full work and withheld wages. Quran 28:26 and 5:1 anchor work contracts in trustworthiness and strength without exploitation. Workplace safety, weekly rest, and clear wage agreements apply equally to domestic helpers, daily laborers, and corporate staff.", "ur": "صحیح بخاری (2227) میں حدیثِ قدسی ہے کہ اللہ خود اس شخص کا مدعی ہوگا جو مزدور سے پورا کام لے اور اس کی اجرت نہ دے۔ گھریلو ملازمین، یومیہ مزدور اور دفتری عملے سب کے لیے باوقار سلوک، محفوظ ماحول اور وقت پر تنخواہ لازم ہے۔", "ar": "الأجير له الحق في أجر معلوم يُدفع في وقته ومعاملة إنسانية وساعات عمل عادلة.", "hi": "सहीह बुख़ारी 2227 के अनुसार काम लेकर मज़दूरी रोकना गंभीर पाप है; घरेलू व व्यावसायिक सभी कर्मियों का वेतन समय पर मिलना अनिवार्य है।"},
+      "dutyBearer": {"en": "Employers, factory owners, households employing domestic help, and HR managers.", "ur": "آجر، کاروباری مالکان، گھریلو ملازمین رکھنے والے گھرانے اور مینیجرز۔", "ar": "أصحاب العمل والبيوت والمديرون.", "hi": "नियोक्ता, व्यापार मालिक और घरेलू कर्मियों को रखने वाले परिवार।"},
+      "mutualBoundaries": {"en": "Clear working hours and job descriptions protect both sides: no unpaid forced overtime, no child labor, and no abusive shouting or passport/document confiscation.", "ur": "بغیر معاوضہ اوورٹائم، بچوں سے جبری مشقت اور دستاویزات ضبط کرنا ہرگز جائز نہیں۔", "ar": "يحرم العمل القسري وعمالة الأطفال وتأخير الرواتب.", "hi": "अवैतनिक ओवरटाइम, बाल श्रम व दस्तावेज़ ज़ब्त करना वर्जित है।"},
+      "rightsViolatedAction": {"en": "Document work hours/contracts and seek labor-department mediation, Ministry of Human Rights (1099), or small-claims courts for unpaid wages.", "ur": "تنخواہ روکے جانے پر تحریری ریکارڈ کے ساتھ لیبر کورٹ یا وزارتِ انسانی حقوق (1099) سے قانونی چارہ جوئی کریں۔", "ar": "التوثيق والتوجه لمكاتب العمل لاسترداد الأجور.", "hi": "वेतन रोके जाने पर श्रम विभाग या मानवाधिकार हेल्पलाइन (1099) से सहायता लें।"},
+      "practicalWays": {
+        "en": ["Fix clear salary and holidays in writing before work starts", "Pay daily wagers the same day and staff strictly on agreed date", "Share decent food and rest breaks with domestic helpers"],
+        "ur": ["کام شروع کرنے سے پہلے تنخواہ، اوقات اور چھٹیاں تحریری طور پر طے کریں", "دیہاڑی دار کی مزدوری اسی دن اور عملے کی تنخواہ مقررہ تاریخ پر ادا کریں", "گھریلو ملازمین کو باوقار کھانا اور آرام کا وقت دیں"],
+        "ar": ["كتابة العقود وأداء الأجر فور استحقاقه وتوفير السلامة."],
+        "hi": ["कार्य से पहले वेतन व अवकाश लिखित तय करें", "तय तिथि पर वेतन दें", "घरेलू सहायकों को सम्मान व विश्राम दें"]
+      },
+      "realLifeExamples": {
+        "en": ["A construction contractor paying masons every Friday evening without deductions and providing helmets/gloves."],
+        "ur": ["ایک ٹھیکیدار کا ہر مزدور کو بروقت پوری اجرت ادا کرنا اور کام کے دوران حفاظتی سامان مہیا کرنا۔"],
+        "ar": ["صرف المقاول للأجور في وقتها وتوفير أدوات السلامة."],
+        "hi": ["ठेकेदार द्वारा हर मज़दूर को समय पर पूरी मज़दूरी व सुरक्षा उपकरण देना।"]
+      },
+      "commonMistakes": {
+        "en": ["Delaying staff salaries for months while owner lives luxuriously", "Forcing domestic workers into 16-hour days with no days off", "Making arbitrary salary cuts"],
+        "ur": ["مالکان کی عیاشی مگر ملازمین کی تنخواہیں مہینوں روکے رکھنا", "گھریلو ملازمین سے دن رات بے آرام کام لینا", "بلاجواز تنخواہ سے کٹوتیاں کرنا"],
+        "ar": ["تأخير الرواتب وإرهاق الخدم والخصومات التعسفية."],
+        "hi": ["महीनों वेतन लटकाना, बिना छुट्टी 16 घंटे काम कराना या मनमानी कटौती करना।"]
+      },
+      "actionSteps": {
+        "en": ["Pay every pending worker bill or bonus promptly", "Review safety and rest breaks in your workplace/home"],
+        "ur": ["اگر کسی مزدور یا ملازم کا حق باقی ہے تو فوراً ادا کریں", "کام کی جگہ پر آرام اور حفاظتی سہولیات چیک کریں"],
+        "ar": ["بادر بصرف أي أجر متأخر وتأكد من سلامة العمال."],
+        "hi": ["हर बकाया वेतन तुरंत चुकाएं और कार्यस्थल की सुरक्षा जांचें।"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 5, "startAyah": 1, "endAyah": 1, "contextExplanation": {"en": "Commands believers to honor all lawful agreements and employment contracts.", "ur": "تمام جائز معاہدوں کو پورا کرنے کا صریح قرآنی حکم۔", "ar": "وجوب الوفاء بالعقود والعهود.", "hi": "सभी वैध अनुबंधों को पूरा करने का क़ुरआनी आदेश।"}}],
+      "hadithIds": ["bukhari_2227"],
+      "sourceLinks": [{"title": "Sahih al-Bukhari 2227 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:2227"}],
+      "mcqs": [{"id": "mcq_r16", "question": {"en": "In Hadith Qudsi (Sahih al-Bukhari 2227), Allah will oppose which employer on the Day of Judgment?", "ur": "صحیح بخاری 2227 کی حدیثِ قدسی کے مطابق قیامت کے دن اللہ کس آجر کے خلاف خود مدعی ہوگا؟", "ar": "من يخاصمه الله يوم القيامة في البخاري ٢٢٢٧؟", "hi": "सहीह बुखारी 2227 की हदीस-ए-कुदसी में क़यामत के दिन अल्लाह किस नियोक्ता का विरोधी होगा?"}, "options": {"en": ["One who gives extra bonus", "One who hires a worker, takes full work, then fails to pay his wage", "One who writes a contract", "One who offers rest breaks"], "ur": ["جو بونس دے", "جو مزدور سے پورا کام لے کر اس کی مزدوری ادا نہ کرے", "جو تحریری معاہدہ کرے", "جو چھٹی دے"], "ar": ["من يزيد الأجر", "من استأجر أجيراً فاستوفى منه ولم يعطه أجره", "من يكتب العقد", "من يريح العمال"], "hi": ["बोनस देने वाला", "जो पूरा काम लेकर मज़दूरी न दे", "अनुबंध लिखने वाला", "छुट्टी देने वाला"]}, "correctIndex": 1, "explanation": {"en": "Withholding earned wages after labor is completed draws Divine opposition on Judgment Day.", "ur": "مزدور سے پورا کام لینے کے بعد اجرت روک لینا عظیم ظلم ہے۔", "ar": "منع الأجر بعد استيفاء العمل من كبائر الظلم.", "hi": "पूरा काम लेने के बाद मज़दूरी रोकना घोर अन्याय है।"}}]
+    },
+    {
+      "id": "rights_17_employers",
+      "departmentId": "dept_rights",
+      "order": 17,
+      "groupCode": "FINANCIAL",
+      "groupLabel": {"en": "Financial & Workplace Rights", "ur": "مالی اور روزگار کے حقوق", "ar": "الحقوق المالية وحقوق العمل", "hi": "आर्थिक और कार्यस्थल अधिकार"},
+      "title": {"en": "17. Employers' & Business Owners' Rights", "ur": "17. آجر اور کاروباری مالکان کے حقوق", "ar": "١٧. حقوق أرباب العمل والمؤسسات", "hi": "17. नियोक्ता और व्यापार मालिकों के अधिकार"},
+      "introduction": {"en": "Rights in Islam are bilateral: just as workers deserve fair wages, employees owe full honesty (Amanah), punctuality, trade-secret protection, and conscientious workmanship (Itqan) during paid hours.", "ur": "اسلامی عدل دوطرفہ ہے: جس طرح مزدور کا حق بروقت اجرت ہے، اسی طرح ملازم پر فرض ہے کہ وہ تنخواہ کے اوقات میں امانت داری، وقت کی پابندی اور بہترین محنت (اتقان) سے کام کرے۔", "ar": "الأمانة والإتقان وحفظ أسرار العمل والتزام الوقت حقوق مشروعة لصاحب العمل.", "hi": "इस्लामी न्याय दोतरफ़ा है: जैसे कर्मचारी को समय पर वेतन का हक़ है, वैसे ही मालिक को ईमानदारी, समयपालन व उत्तम कार्य (इतक़ान) का अधिकार है।"},
+      "explanation": {"en": "Quran 4:58 commands delivering trusts (Amanat) to their rightful owners. During contracted hours, an employee is an Amin (trustee) over company time, equipment, client lists, and cash. Taking kickbacks/commissions secretly from suppliers, wasting work hours on personal tasks, or leaking business secrets betrays Amanah.", "ur": "سورۃ النساء (4:58) میں امانتیں حقداروں کو لوٹانے کا حکم ہے۔ دفتر کے اوقات میں کمپنی کا وقت، سامان، کلائنٹ ڈیٹا اور رقم ملازم کے پاس امانت ہے۔ سپلائرز سے خفیہ کمیشن لینا یا وقت ضائع کرنا خیانت ہے۔", "ar": "يحرم على الموظف أخذ الرشوة أو العمولات الخفية أو تضييع وقت العمل المأجور.", "hi": "क़ुरआन 4:58 अमानतें लौटाने का आदेश देता है; कार्य समय बर्बाद करना या गुप्त कमीशन लेना खयानत है।"},
+      "dutyBearer": {"en": "Employees, contractors, managers, and public servants.", "ur": "ملازمین، کنٹریکٹرز، مینیجرز اور سرکاری اہلکار۔", "ar": "الموظفون والوكلاء والمديرون.", "hi": "कर्मचारी, प्रबंधक और लोक सेवक।"},
+      "mutualBoundaries": {"en": "Loyalty to an employer NEVER extends to falsifying invoices, bribing officials, hiding product defects, or breaking safety laws.", "ur": "مالک کی وفاداری کا مطلب جعلی بل بنانا، رشوت دینا یا گاہک کو عیب دار مال بیچنا ہرگز نہیں۔", "ar": "لا طاعة لصاحب العمل في الغش أو الرشوة أو الإضرار بالناس.", "hi": "मालिक की वफ़ादारी में नकली बिल बनाना, रिश्वत या ग्राहक से धोखा शामिल नहीं है।"},
+      "rightsViolatedAction": {"en": "When an employee steals, takes bribes, or damages trust, apply fair internal due process and transparent investigation rather than collective punishment.", "ur": "اگر کسی ملازم کی طرف سے خیانت ثابت ہو تو اجتماعی سزا کے بجائے منصفانہ تحقیق اور قانونی طریقہ کار اختیار کریں۔", "ar": "التحقيق العادل عند الإخلال بالأمانة دون ظلم الأبرياء.", "hi": "किसी की खयानत पर निष्पक्ष जांच व कानूनी प्रक्रिया अपनाएं।"},
+      "practicalWays": {
+        "en": ["Arrive on time and give full focused effort during paid shifts", "Refuse supplier gifts/kickbacks openly", "Protect company laptops, tools, and confidential customer data"],
+        "ur": ["وقت پر حاضر ہوں اور تنخواہ کے اوقات دیانتداری سے کام میں لگائیں", "سپلائرز یا کلائنٹس سے خفیہ تحائف اور کمیشن لینے سے صاف انکار کریں", "دفتر کے آلات اور کلائنٹ ڈیٹا کی حفاظت کریں"],
+        "ar": ["الانضباط في الدوام ورفض العمولات الخفية وحفظ الأسرار."],
+        "hi": ["समय पर उपस्थित होकर पूरी ईमानदारी से काम करें", "आपूर्तिकर्ताओं से गुप्त कमीशन अस्वीकार करें"]
+      },
+      "realLifeExamples": {
+        "en": ["A procurement officer reporting a vendor's offer of a personal cash rebate directly to management and awarding the contract strictly on quality & price."],
+        "ur": ["ایک پرچیز آفیسر کا سپلائر کی خفیہ کمیشن کی پیشکش مسترد کر کے خالص معیار اور مناسب قیمت پر سودا طے کرنا۔"],
+        "ar": ["رفض مسؤول المشتريات للعمولة السرية واعتماد الجودة والسعر."],
+        "hi": ["खरीद अधिकारी द्वारा गुप्त कमीशन ठुकराकर गुणवत्ता और उचित मूल्य के आधार पर ठेका देना।"]
+      },
+      "commonMistakes": {
+        "en": ["Using office printers, fuel, or hours for private business", "Clandestine 'side commissions' from suppliers", "Faking sick leave regularly"],
+        "ur": ["دفتر کے اوقات اور وسائل ذاتی کاروبار میں استعمال کرنا", "سپلائرز سے خفیہ کمیشن کھانا", "بیماری کا جھوٹا بہانہ بنا کر چھٹیاں کرنا"],
+        "ar": ["استخدام موارد العمل للمصلحة الخاصة أو التمارض."],
+        "hi": ["कार्यालय का समय/संसाधन निजी व्यापार में लगाना या बीमारी का झूठा बहाना बनाना।"]
+      },
+      "actionSteps": {
+        "en": ["Audit your own work-time honesty this week", "Return or log any company equipment respectfully"],
+        "ur": ["اس ہفتے اپنے دفتری اوقات کی دیانتداری کا خود احتساب کریں"],
+        "ar": ["حاسب نفسك على أمانة وقت العمل والوفاء بالعقد."],
+        "hi": ["इस सप्ताह अपने कार्य-समय की ईमानदारी का आत्म-मूल्यांकन करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextExplanation": {"en": "Establishes returning trusts (Amanat) faithfully as a foundational religious command.", "ur": "امانتوں کو ان کے اہل لوگوں تک پہنچانے کا صریح قرآنی حکم۔", "ar": "الأمر بأداء الأمانات إلى أهلها.", "hi": "अमानतों को उनके हक़दारों तक ईमानदारी से पहुँचाने का आदेश।"}}],
+      "hadithIds": ["bukhari_33"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:58 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/58"}],
+      "mcqs": [{"id": "mcq_r17", "question": {"en": "Is it permissible for a purchasing employee to keep a secret cash 'commission' from a supplier without the employer's explicit knowledge?", "ur": "کیا کمپنی کے ملازم کے لیے مالک کی اجازت کے بغیر سپلائر سے خفیہ کمیشن رکھنا جائز ہے؟", "ar": "هل يجوز للموظف أخذ عمولة خفية من مورد دون علم صاحب العمل؟", "hi": "क्या किसी कर्मचारी का मालिक की अनुमति के बिना सप्लायर से गुप्त कमीशन रखना जायज़ है?"}, "options": {"en": ["Yes, always", "No — it violates Amanah (Quran 4:58) and Prophetic rules against employee gifts", "Only on Fridays", "Only for large amounts"], "ur": ["جی ہاں", "نہیں — یہ امانت میں خیانت اور رشوت/ہدایا العمال کے زمرے میں حرام ہے", "صرف جمعہ کو", "صرف بڑی رقم پر"], "ar": ["نعم", "لا، هذا من الخيانة وهدايا العمال المحرمة", "يوم الجمعة فقط", "للمبالغ الكبيرة فقط"], "hi": ["हाँ", "नहीं — यह अमानत में खयानत व रिश्वत के अंतर्गत हराम है", "केवल शुक्रवार को", "बड़ी राशि पर ही"]}, "correctIndex": 1, "explanation": {"en": "Unapproved secret commissions constitute Khayanah and workplace bribery/ghulul.", "ur": "مالک کے علم اور اجازت کے بغیر خفیہ کمیشن لینا خیانت اور ناجائز کمائی ہے۔", "ar": "عمولات الموظفين دون إذن صاحب العمل غلول وخيانة.", "hi": "बिना अनुमति गुप्त कमीशन लेना खयानत और अवैध कमाई है।"}}]
+    },
+    {
+      "id": "rights_18_inheritance_debts",
+      "departmentId": "dept_rights",
+      "order": 18,
+      "groupCode": "FINANCIAL",
+      "groupLabel": {"en": "Financial & Workplace Rights", "ur": "مالی اور روزگار کے حقوق", "ar": "الحقوق المالية وحقوق العمل", "hi": "आर्थिक और कार्यस्थल अधिकार"},
+      "title": {"en": "18. Inheritance, Debts & Contracts Rights", "ur": "18. وراثت، قرض اور معاہدوں کے حقوق", "ar": "١٨. حقوق الميراث والديون والعقود", "hi": "18. विरासत, कर्ज़ और अनुबंधों के अधिकार"},
+      "introduction": {"en": "The longest single verse in the entire Quran (2:282) protects financial agreements and debts in writing, while Surah An-Nisa (4:7-14) fixes inheritance shares as Allah's explicit limits.", "ur": "قرآنِ کریم کی سب سے طویل آیت (البقرہ 2:282) قرضوں اور معاہدوں کو تحریری و گواہوں کے ساتھ محفوظ کرنے کا حکم دیتی ہے، اور سورۃ النساء (4:7-14) میں وراثت کو اللہ کی حدود قرار دیا گیا ہے۔", "ar": "أطول آية في القرآن لتوثيق الديون والعقود، وآيات المواريث من حدود الله.", "hi": "क़ुरआन की सबसे लंबी आयत (2:282) कर्ज़ व अनुबंध लिखकर रखने को कहती है और 4:7-14 विरासत को ईश्वर की सीमा बताती है।"},
+      "explanation": {"en": "Before dividing any inheritance, valid funeral costs and all proven debts MUST be settled first. Unpaid Haqq-ul-Mahr owed to a widow is a first-class debt against the estate! Every contract requires clear price, object, delivery terms, and witnesses to eliminate disputes.", "ur": "وراثت تقسیم کرنے سے پہلے تجہیز و تکفین اور مرحوم کے تمام قرضے (بشمول بیوی کا غیر ادا شدہ حقِ مہر) ادا کرنا لازم ہے۔ تمام تجارتی و مالی معاہدے تحریری اور واضح شرائط پر مبنی ہونے چاہئیں۔", "ar": "يُقدم سداد الديون — ومنها المؤجل من المهر — على قسمة التركة، وتُكتب العقود منعاً للنزاع.", "hi": "बंटवारे से पहले अंतिम संस्कार व सभी कर्ज़ (पत्नी के बकाया महर सहित) चुकाए जाने अनिवार्य हैं।"},
+      "dutyBearer": {"en": "Contracting parties, borrowers, lenders, and all estate heirs.", "ur": "معاہدہ کرنے والے فریقین، قرض لینے و دینے والے اور تمام ورثاء۔", "ar": "أطراف العقود والمدينون والدائنون والورثة.", "hi": "अनुबंध करने वाले पक्ष, ऋणदाता, देनदार व सभी वारिस।"},
+      "mutualBoundaries": {"en": "Never add interest penalties, alter wills privately, pressure female heirs into waiving shares, or seize mortgaged/collateral property beyond actual unpaid principal.", "ur": "قرض پر سود، وصیت میں ردوبدل یا خواتین سے دباؤ کے ذریعے وراثت معاف کروانا حرام ہے۔", "ar": "يحرم الربا وتبديل الوصية وإكراه الورثة على التنازل.", "hi": "सूद जोड़ना, वसीयत बदलना या महिलाओं पर विरासत छोड़ने का दबाव डालना हराम है।"},
+      "rightsViolatedAction": {"en": "Use the Ilm-ul-Faraid calculator inside Department 2 for initial clarity, consult a qualified Mufti on complex assets, and register written succession deeds legally.", "ur": "ابتدائی فہم کے لیے شعبہ 2 کا علم الفرائض کیلکولیٹر استعمال کریں اور عملی تقسیم کے لیے مستند مفتی و رجسٹرڈ دستاویزات سے مدد لیں۔", "ar": "استخدام حاسبة المواريث للتعلم مع التوثيق القضائي والشرعي.", "hi": "आरंभिक समझ हेतु विभाग 2 का विरासत कैलकुलेटर देखें और मुफ़्ती व कानूनी पंजीकरण करवाएं।"},
+      "practicalWays": {
+        "en": ["Write down every loan, business partnership, and investment share with witnesses (2:282)", "Maintain an updated list of assets, receivables, and debts owed by you", "Distribute estates promptly after death so grudges never fester"],
+        "ur": ["ہر قرض، شراکت داری اور لین دین گواہوں کے ساتھ تحریر کریں (البقرہ 2:282)", "اپنے قرضوں اور واجبات کی تحریری فہرست گھر والوں کی پہنچ میں رکھیں", "وفات کے بعد وراثت کی تقسیم میں بلاوجہ تاخیر نہ کریں"],
+        "ar": ["كتابة الديون والإشهاد وتوثيق الممتلكات والمبادرة بقسمة التركات."],
+        "hi": ["हर कर्ज़ व साझेदारी गवाहों के सामने लिखें", "अपने कर्ज़ व संपत्ति का विवरण परिवार को ज्ञात रखें", "मृत्यु के बाद बंटवारे में देरी न करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Keeping a signed, witnessed ledger of a family Qard Hasan loan showing exact repayment dates without any markup."],
+        "ur": ["خاندانی قرضِ حسنہ کی واپسی کی تاریخوں کے ساتھ دستخط شدہ اور گواہوں والی تحریر محفوظ رکھنا۔"],
+        "ar": ["توثيق القرض الحسن كتابياً بالشهود دون أي زيادة ربوية."],
+        "hi": ["गवाहों व हस्ताक्षर के साथ बिना ब्याज के क़र्ज़-ए-हसन का लिखित दस्तावेज़ रखना।"]
+      },
+      "commonMistakes": {
+        "en": ["Relying on 'family trust' verbal loans then denying them years later", "Keeping parental property undivided for decades after death"],
+        "ur": ["زبانی قرض لے کر برسوں بعد انکار کر دینا", "والدین کی وفات کے بعد دہائیوں تک وراثت تقسیم نہ کرنا"],
+        "ar": ["ترك التوثيق بين الأقارب أو تعطيل قسمة الميراث لسنوات."],
+        "hi": ["मौखिक लेन-देन पर भरोसा कर बाद में मुकर जाना या दशकों तक विरासत न बांटना।"]
+      },
+      "actionSteps": {
+        "en": ["Document any unwritten loan or partnership agreement this week", "Review Department 2 for complete Faraid lessons"],
+        "ur": ["اسی ہفتے اپنے تمام زبانی قرضے اور شراکت داریاں تحریری شکل میں لے آئیں"],
+        "ar": ["وثّق ديونك وعقودك هذا الأسبوع وفق الآية ٢:٢٨٢."],
+        "hi": ["इस सप्ताह अपने अलिखित कर्ज़ और साझेदारियाँ लिखित करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 2, "startAyah": 282, "endAyah": 282, "contextExplanation": {"en": "Mandates written documentation and witnesses for deferred obligations and loans.", "ur": "ادھار لین دین اور قرضوں کو لکھ لینے اور گواہ بنانے کا قرآنی قانون۔", "ar": "أمر القرآن بكتابة الديون والإشهاد عليها.", "hi": "कर्ज़ व उधार लेन-देन को लिखने और गवाह बनाने का क़ुरआनी नियम।"}},
+        {"surahNumber": 4, "startAyah": 11, "endAyah": 12, "contextExplanation": {"en": "Establishes exact inheritance shares and debt-first priority.", "ur": "قرض اور وصیت کے بعد وراثت کے متعین قرآنی حصے۔", "ar": "تحديد الفروض وتقديم الدين على التركة.", "hi": "कर्ज़ के बाद निश्चित विरासत हिस्से।"}}
+      ],
+      "hadithIds": ["bukhari_6732", "bukhari_2742"],
+      "sourceLinks": [{"title": "Surah Al-Baqarah 2:282 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/2/282"}],
+      "mcqs": [{"id": "mcq_r18", "question": {"en": "What MUST be settled before inheritance shares are distributed among heirs?", "ur": "ورثاء میں وراثت کے حصے تقسیم کرنے سے پہلے کن چیزوں کی ادائیگی مقدم ہے؟", "ar": "ما الذي يُقدَّم على توزيع أنصبة الورثة؟", "hi": "वारिसों में विरासत बांटने से पहले क्या अदा करना अनिवार्य है?"}, "options": {"en": ["Only wedding gifts", "Funeral expenses, proven debts, and valid Wasiyyat (<= 1/3)", "Nothing", "House renovation"], "ur": ["صرف تحائف", "تجہیز و تکفین، تمام قرضے اور جائز وصیت (زیادہ سے زیادہ 1/3)", "کچھ نہیں", "گھر کی سجاوٹ"], "ar": ["الهدايا", "التجهيز والديون والوصية الصحيحة (في حدود الثلث)", "لا شيء", "الزينة"], "hi": ["केवल उपहार", "अंतिम संस्कार खर्च, सभी कर्ज़ और वैध वसीयत (1/3 तक)", "कुछ नहीं", "सजावट"]}, "correctIndex": 1, "explanation": {"en": "Quran 4:11-12 repeatedly places inheritance distribution 'min ba'di wasiyyatin aw dayn' (after will and debt).", "ur": "قرآن بار بار فرماتا ہے کہ وراثت کی تقسیم وصیت اور قرض کی ادائیگی کے بعد ہوگی۔", "ar": "من بعد وصية يوصي بها أو دين.", "hi": "क़ुरआन 4:11-12 के अनुसार बंटवारा वसीयत और कर्ज़ के बाद होता है।"}}]
+    },
+    {
+      "id": "rights_19_teachers",
+      "departmentId": "dept_rights",
+      "order": 19,
+      "groupCode": "EDUCATION",
+      "groupLabel": {"en": "Additional Social & Civic Responsibilities", "ur": "معاشرتی و تعلیمی ذمہ داریاں", "ar": "المسؤوليات التعليمية والمدنية", "hi": "शैक्षिक व सामाजिक दायित्व"},
+      "title": {"en": "19. Teachers' & Scholars' Rights", "ur": "19. اساتذہ اور علماء کے حقوق", "ar": "١٩. حقوق المعلمين والعلماء", "hi": "19. शिक्षकों और विद्वानों के अधिकार"},
+      "introduction": {"en": "Islam honors knowledge-bearers with deep gratitude, respectful speech, fair compensation, and protection against slander.", "ur": "اسلام علم سکھانے والے اساتذہ اور مستند علماء کے لیے ادب، شکر گزاری، منصفانہ مشاہرہ اور عزت کے تحفظ کی تعلیم دیتا ہے۔", "ar": "توقير المعلم وحفظ قدره ومكافأته بالعدل من ركائز الحضارة الإسلامية.", "hi": "इस्लाम शिक्षकों व विद्वानों के सम्मान, उचित पारिश्रमिक और कृतज्ञता की शिक्षा देता है।"},
+      "explanation": {"en": "Quran 58:11 affirms how Allah elevates those given knowledge. Teachers deserve attentive classrooms, punctual fee/salary payment, privacy outside school hours, and respectful dialogue when asking critical questions.", "ur": "سورۃ المجادلہ (58:11) میں اہلِ علم کے درجات کی بلندی بیان ہوئی ہے۔ اساتذہ کا حق ہے کہ طلبہ توجہ اور ادب سے پڑھیں، ان کی تنخواہ وقت پر ملے اور سوالات شائستگی سے کیے جائیں۔", "ar": "يرفع الله أهل العلم درجات؛ ولهم حق الاحترام والأجر العادل.", "hi": "क़ुरआन 58:11 में ज्ञानियों का उच्च स्थान बताया गया है; शिक्षकों का सम्मान व समय पर वेतन आवश्यक है।"},
+      "dutyBearer": {"en": "Students, parents, school/madrasa administrators, and society.", "ur": "طلبہ، والدین، اسکول/مدرسہ انتظامیہ اور معاشرہ۔", "ar": "الطلاب وأولياء الأمور والإدارات التعليمية.", "hi": "छात्र, अभिभावक और शिक्षण संस्थान प्रबंधन।"},
+      "mutualBoundaries": {"en": "Revering teachers/scholars does NOT mean blind hero-worship or tolerating abuse, financial exploitation, or unverified religious claims. Verify sources respectfully without insolence.", "ur": "اساتذہ یا علماء کے احترام کا مطلب شخصیت پرستی، اندھی تقلید یا کسی بدسلوکی کو برداشت کرنا نہیں؛ دلیل و ادب سے بات پوچھنا جائز ہے۔", "ar": "التوقير لا يعني الغلو أو الصمت عن الأذى أو قبول أقوال دون دليل.", "hi": "शिक्षकों के सम्मान का अर्थ अंधभक्ति या किसी दुर्व्यवहार को सहना नहीं है।"},
+      "rightsViolatedAction": {"en": "Support fair salaries for teachers and protect schools from both teacher disrespect and institutional exploitation.", "ur": "اساتذہ کے معاشی استحصال (کم تنخواہ و تاخیر) کے خلاف آواز اٹھائیں اور طلبہ میں ادبِ استاد پیدا کریں۔", "ar": "حماية المعلمين من الاستغلال المالي والإهانة.", "hi": "शिक्षकों के कम वेतन व अपमान दोनों का विरोध करें।"},
+      "practicalWays": {
+        "en": ["Listen attentively and avoid mocking teachers in chat groups", "Pay private tutors and school fees reliably", "Pray for teachers who shaped your learning"],
+        "ur": ["کلاس میں توجہ سے سنیں اور واٹس ایپ گروپس میں اساتذہ کا مذاق نہ اڑائیں", "اسکول اور ٹیوشن فیس وقت پر ادا کریں", "اپنے اساتذہ کے لیے خیر کی دعا کریں"],
+        "ar": ["حسن الإنصات ومنع الاستهزاء بالمعلمين وسداد مستحقاتهم."],
+        "hi": ["कक्षा में ध्यान से सुनें, ग्रुपों में मज़ाक न बनाएं और फीस समय पर दें"]
+      },
+      "realLifeExamples": {
+        "en": ["A school administration adjusting teacher salaries honestly for inflation and honoring veteran educators."],
+        "ur": ["ایک اسکول انتظامیہ کا مہنگائی کے تناسب سے اساتذہ کی تنخواہوں میں اضافہ اور عزت افزائی کرنا۔"],
+        "ar": ["تعديل إدارة المدرسة رواتب المعلمين بما يحفظ كرامتهم."],
+        "hi": ["स्कूल प्रबंधन द्वारा शिक्षकों का सम्मानजनक वेतन सुनिश्चित करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Making disrespectful memes about teachers", "Underpaying private academy teachers while charging high tuition"],
+        "ur": ["اساتذہ کی توہین آمیز میمز بنانا", "طلبہ سے بھاری فیس لے کر اساتذہ کو معمولی تنخواہ دینا"],
+        "ar": ["السخرية الرقمية من المعلمين أو بخس رواتبهم."],
+        "hi": ["शिक्षकों के अपमानजनक मीम्स बनाना या भारी फीस लेकर उन्हें कम वेतन देना।"]
+      },
+      "actionSteps": {
+        "en": ["Thank a teacher who helped you learn something valuable", "Ensure respectful speech toward educators"],
+        "ur": ["آج کسی استاد کا شکریہ ادا کریں جن سے آپ نے علم حاصل کیا"],
+        "ar": ["اشكر معلماً أسهم في تعليمك وادع له."],
+        "hi": ["आज किसी शिक्षक को धन्यवाद दें और उनके प्रति सम्मान दिखाएं।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 58, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Affirms the elevated rank of believers endowed with sound knowledge.", "ur": "اہلِ ایمان اور اہلِ علم کے درجات کی بلندی کا قرآنی اعلان۔", "ar": "يرفع الله الذين آمنوا والذين أوتوا العلم درجات.", "hi": "ईमान और ज्ञान वालों के उच्च दर्जे का क़ुरआनी उल्लेख।"}}],
+      "hadithIds": ["muslim_55a"],
+      "sourceLinks": [{"title": "Surah Al-Mujadila 58:11 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/58/11"}],
+      "mcqs": [{"id": "mcq_r19", "question": {"en": "How should students balance deep respect for scholars/teachers with critical understanding?", "ur": "طلبہ اساتذہ کے ادب اور علمی تحقیق کے درمیان توازن کیسے رکھیں؟", "ar": "كيف يوازن الطالب بين احترام المعلم والتمسك بالدليل؟", "hi": "छात्रों को शिक्षकों के सम्मान और ज्ञान की जांच के बीच संतुलन कैसे रखना चाहिए?"}, "options": {"en": ["Mock teachers loudly", "Maintain polite manners and gratitude while asking evidence-based questions respectfully", "Accept errors blindly without verifying Quran & Sunnah", "Quit studying"], "ur": ["اساتذہ کا مذاق اڑائیں", "مکمل ادب و شکر گزاری کے ساتھ شائستگی سے دلیل اور علم کی تحقیق کریں", "بغیر دلیل ہر غلطی مان لیں", "پڑھائی چھوڑ دیں"], "ar": ["الإهانة", "الجمع بين الأدب والتوقير وطلب الدليل بلطف", "التقليد الأعمى للأخطاء", "ترك العلم"], "hi": ["मज़ाक उड़ाना", "पूर्ण सम्मान व विनम्रता के साथ प्रमाण आधारित प्रश्न पूछना", "आँख मूँदकर गलती स्वीकारना", "पढ़ाई छोड़ना"]}, "correctIndex": 1, "explanation": {"en": "Islamic adab combines deep gratitude and courtesy toward educators with grounded adherence to authentic evidence.", "ur": "اسلامی ادب احترامِ استاد اور مستند دلیل کی طلب دونوں کو خوبصورتی سے یکجا کرتا ہے۔", "ar": "الأدب مع العلم يجمع التوقير واتباع البرهان.", "hi": "इस्लामी शिष्टाचार सम्मान और प्रामाणिक प्रमाण दोनों को जोड़ता है।"}}]
+    },
+    {
+      "id": "rights_20_students",
+      "departmentId": "dept_rights",
+      "order": 20,
+      "groupCode": "EDUCATION",
+      "groupLabel": {"en": "Additional Social & Civic Responsibilities", "ur": "معاشرتی و تعلیمی ذمہ داریاں", "ar": "المسؤوليات التعليمية والمدنية", "hi": "शैक्षिक व सामाजिक दायित्व"},
+      "title": {"en": "20. Students' Rights", "ur": "20. طلبہ کے حقوق", "ar": "٢٠. حقوق الطلاب والطالبات", "hi": "20. छात्रों के अधिकार"},
+      "introduction": {"en": "Students — children, youth, and adult learners — hold firm rights to safe classrooms free from physical beating or humiliation, accurate instruction, fair grading, and encouragement.", "ur": "طلبہ و طالبات کا حق ہے کہ انہیں جسمانی تشدد اور تذلیل سے پاک محفوظ تعلیمی ماحول، معیاری تعلیم، منصفانہ جانچ اور حوصلہ افزائی ملے۔", "ar": "للطلاب حق التعليم الجيد والبيئة الآمنة الخالية من العنف والإذلال والعدل في التقييم.", "hi": "छात्रों को हिंसा व अपमान-मुक्त सुरक्षित वातावरण, गुणवत्तापूर्ण शिक्षा और निष्पक्ष मूल्यांकन का अधिकार है।"},
+      "explanation": {"en": "The Prophet ﷺ taught with immense gentleness ('I was sent as a teacher' — Muslim 1478 / Mu'awiyah ibn al-Hakam's account of zero scolding in prayer!). Corporal punishment, shaming slow learners, grading bias, and harassment in schools/seminaries betray the Prophetic trust of education.", "ur": "نبی کریم ﷺ کی تعلیم کا انداز انتہائی شفیق اور حوصلہ افزا تھا۔ طلبہ کو مار پیٹ، کلاس میں بے عزتی، نمبروں میں جانبداری اور کسی بھی قسم کی ہراسانی سے تحفظ فراہم کرنا اساتذہ اور اداروں کی امانت ہے۔", "ar": "الرفق في التعليم واجب؛ والعنف والتنمر والتحيز في الدرجات خيانة للأمانة التربوية.", "hi": "नबी ﷺ ने अत्यंत विनम्रता से सिखाया; स्कूलों/मदरसों में मारपीट, अपमान व पक्षपात अमानत में खयानत है।"},
+      "dutyBearer": {"en": "Teachers, principals, parents, and educational boards.", "ur": "اساتذہ، پرنسپلز، والدین اور تعلیمی ادارے۔", "ar": "المعلمون والمديرون وأولياء الأمور.", "hi": "शिक्षक, प्रधानाचार्य, अभिभावक और शैक्षिक बोर्ड।"},
+      "mutualBoundaries": {"en": "Protecting student dignity goes alongside academic integrity: cheating on exams violates Amanah and deceives society.", "ur": "طلبہ کے تحفظ کے ساتھ امتحانات میں نقل سے بچنا اور محنت سے سیکھنا طلبہ کی ذمہ داری ہے۔", "ar": "حفظ كرامة الطالب يلازمه منع الغش في الاختبارات.", "hi": "छात्र सम्मान के साथ परीक्षा में नकल से बचना और मेहनत करना छात्र का कर्तव्य है।"},
+      "rightsViolatedAction": {"en": "Zero tolerance for corporal beating or abuse in schools/seminaries; report institutional abuse to parents, governing boards, and child-protection authorities.", "ur": "اسکول یا مدرسے میں کسی بھی قسم کے جسمانی تشدد یا ہراسانی پر فوری والدین اور قانونی حفاظتی اداروں کو مطلع کیا جائے۔", "ar": "منع العنف المدرسي والإبلاغ الفوري عن أي أذى للجهات الحامية.", "hi": "किसी भी शारीरिक हिंसा या उत्पीड़न की सूचना तुरंत अभिभावकों और बाल सुरक्षा अधिकारियों को दें।"},
+      "practicalWays": {
+        "en": ["Welcome curious questions without shaming any student", "Use constructive feedback instead of harsh insults", "Grade exams impartially regardless of family wealth or connections"],
+        "ur": ["طلبہ کے سوالات کا خندہ پیشانی سے خیرمقدم کریں", "تذلیل کے بجائے تعمیری رہنمائی کریں", "امتحانی پرچوں کی جانچ بلا امتیاز اور شفاف رکھیں"],
+        "ar": ["تشجيع الأسئلة والتوجيه الإيجابي والعدالة في التصحيح."],
+        "hi": ["जिज्ञासु प्रश्नों का स्वागत करें", "निष्पक्ष अंक दें", "किसी छात्र का उपहास न करें"]
+      },
+      "realLifeExamples": {
+        "en": ["A teacher staying 15 minutes after class to explain a math concept patiently to a struggling learner."],
+        "ur": ["ایک استاد کا کلاس کے بعد کمزور طالب علم کو صبر اور محبت سے مشکل سبق دوبارہ سمجھانا۔"],
+        "ar": ["تخصيص المعلم وقتاً إضافياً لمساعدة طالب متعثر برفق."],
+        "hi": ["कमज़ोर छात्र को कक्षा के बाद धैर्य से कठिन विषय समझाना।"]
+      },
+      "commonMistakes": {
+        "en": ["Physical beating or verbal abuse", "Leaking exam papers to favored students", "Discouraging girls from higher education"],
+        "ur": ["مار پیٹ یا گالم گلوچ", "سفارشی طلبہ کو پرچے یا اضافی نمبر دینا", "بچیوں کو اعلیٰ تعلیم سے روکنا"],
+        "ar": ["العنف التربوي والمحاباة وحرمان الفتيات من التعليم."],
+        "hi": ["मारपीट, पक्षपातपूर्ण अंक या लड़कियों को उच्च शिक्षा से रोकना।"]
+      },
+      "actionSteps": {
+        "en": ["Encourage a young learner's curiosity today", "Oppose corporal violence in every school setting"],
+        "ur": ["آج کسی طالب علم کی حوصلہ افزائی کریں", "تعلیمی اداروں میں تشدد کی حوصلہ شکنی کریں"],
+        "ar": ["شجع طالباً اليوم وساهم في بيئة تعليمية آمنة."],
+        "hi": ["आज किसी विद्यार्थी को प्रोत्साहित करें और हिंसा-मुक्त शिक्षा का समर्थन करें।"]
+      },
+      "evidenceBadge": "scholarly_consensus",
+      "quranRefSpecs": [{"surahNumber": 16, "startAyah": 125, "endAyah": 125, "contextExplanation": {"en": "Commands inviting and teaching with wisdom (Hikmah) and kind instruction.", "ur": "حکمت اور عمدہ نصیحت کے ساتھ سکھانے کا قرآنی منہج۔", "ar": "الدعوة والتعليم بالحكمة والموعظة الحسنة.", "hi": "बुद्धिमत्ता और मधुर उपदेश के साथ सिखाने का क़ुरआनी सिद्धांत।"}}],
+      "hadithIds": ["muslim_2318a"],
+      "sourceLinks": [{"title": "Surah An-Nahl 16:125 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/16/125"}],
+      "mcqs": [{"id": "mcq_r20", "question": {"en": "How should teachers handle students who learn slowly or make mistakes?", "ur": "آہستہ سیکھنے یا غلطی کرنے والے طلبہ کے ساتھ استاد کا رویہ کیسا ہونا چاہیے؟", "ar": "كيف يعامل المعلم الطالب الذي يبطئ في الفهم؟", "hi": "धीरे सीखने या गलती करने वाले छात्रों के प्रति शिक्षक का व्यवहार कैसा होना चाहिए?"}, "options": {"en": ["Publicly mock them", "Teach patiently with wisdom, gentleness, and private correction (16:125)", "Expel immediately", "Use physical punishment"], "ur": ["سب کے سامنے مذاق اڑائے", "حکمت، صبر اور نرمی سے بار بار سمجھائے (النحل 16:125)", "فوراً نکال دے", "مار پیٹ کرے"], "ar": ["التشهير به", "التعليم بالحكمة والرفق والصبر", "الطرد", "الضرب"], "hi": ["सबके सामने मज़ाक उड़ाना", "बुद्धिमत्ता, धैर्य व विनम्रता से सिखाना", "तुरंत निकाल देना", "शारीरिक दंड देना"]}, "correctIndex": 1, "explanation": {"en": "Wisdom, gentleness, and mercy lie at the heart of Prophetic pedagogy.", "ur": "حکمت، نرمی اور شفقت نبوی طرزِ تعلیم کی روح ہے۔", "ar": "الرحمة والحكمة أساس التعليم النبوي.", "hi": "धैर्य और करुणा नबवी शिक्षण पद्धति की आत्मा हैं।"}}]
+    },
+    {
+      "id": "rights_21_friends",
+      "departmentId": "dept_rights",
+      "order": 21,
+      "groupCode": "EDUCATION",
+      "groupLabel": {"en": "Additional Social & Civic Responsibilities", "ur": "معاشرتی و تعلیمی ذمہ داریاں", "ar": "المسؤوليات الاجتماعية والمدنية", "hi": "सामाजिक व नागरिक दायित्व"},
+      "title": {"en": "21. Friends' & Companions' Rights", "ur": "21. دوستوں اور ساتھیوں کے حقوق", "ar": "٢١. حقوق الأصدقاء والصحبة", "hi": "21. मित्रों और साथियों के अधिकार"},
+      "introduction": {"en": "Sincere friendship in Islam rests on wanting good for your friend as for yourself (Bukhari 13), guarding their honor behind their back, and giving honest advice gently.", "ur": "اسلام میں سچی دوستی کا معیار یہ ہے کہ دوست کے لیے وہی خیر چاہے جو اپنے لیے چاہتا ہے (بخاری 13)، غیبت سے اس کی عزت بچائے اور مخلصانہ خیر خواہی کرے۔", "ar": "الصداقة الصالحة تقوم على النصيحة والوفاء وحفظ الغيب ومحبة الخير للغير.", "hi": "इस्लाम में सच्ची मित्रता दूसरे के लिए भलाई चाहने (बुख़ारी 13), सम्मान रक्षा व नेक सलाह पर आधारित है।"},
+      "explanation": {"en": "Prophet Muhammad ﷺ and Abu Bakr (RA) exemplified loyalty through hardship. Real friends guide each other away from self-destruction (drugs, gambling, deceit), stand beside friends in grief or poverty, and keep confidences safe.", "ur": "نبی کریم ﷺ اور حضرت ابوبکر صدیقؓ کی رفاقت وفا کی اعلیٰ مثال ہے۔ سچا دوست غلط عادتوں سے روکتا ہے، دکھ اور تنگدستی میں ساتھ دیتا ہے اور رازوں کا امین ہوتا ہے۔", "ar": "الصديق الحق يناصح صديقه برفق ويثبت معه في الشدائد ويكتم سره.", "hi": "सच्चा मित्र गलत आदतों से बचाता है, संकट में साथ खड़ा रहता है और गोपनीयता बचाता है।"},
+      "dutyBearer": {"en": "Friends, roommates, classmates, and colleagues.", "ur": "دوست، ہاسٹل یا کلاس کے ساتھی اور ہم منصب افراد۔", "ar": "الأصدقاء والزملاء.", "hi": "मित्र, सहपाठी और सहकर्मी।"},
+      "mutualBoundaries": {"en": "Never stay silent when a friend is drifting toward substance abuse, fraud, or harassment, and never pressure friends into financial show-off or sin under 'peer loyalty'.", "ur": "دوستی کے نام پر کسی غلط کام، نشے یا دھوکہ دہی میں ساتھ دینا ہرگز جائز نہیں؛ اصل دوستی نرمی سے روک دینے کا نام ہے۔", "ar": "لا يجوز مجاملة الصديق في الإثم أو الإدمان بل نصحه ورده عن الضرر.", "hi": "मित्रता के नाम पर नशे, धोखे या गलत काम में साथ देना जायज़ नहीं।"},
+      "rightsViolatedAction": {"en": "Forgive minor human slips (49:10); step back respectfully from persistently toxic companionship that harms your deen or safety.", "ur": "معمولی بشری غلطیوں سے درگزر کریں؛ البتہ نقصان دہ صحبت سے وقار کے ساتھ کنارہ کشی اختیار کریں۔", "ar": "التغافل عن الزلات الصغيرة وترك الصحبة المؤذية برفق.", "hi": "छोटी भूलें माफ़ करें पर हानिकारक संगति से शालीनता से दूर हटें।"},
+      "practicalWays": {
+        "en": ["Defend a friend when others gossip about them in their absence", "Remember friends on hard days, not just during parties", "Keep personal secrets private even if friendship cools"],
+        "ur": ["جب لوگ دوست کی غیر موجودگی میں غیبت کریں تو اس کی عزت کا دفاع کریں", "مشکل دنوں میں دوست کا سہارا بنیں", "اختلاف ہو جانے کے بعد بھی پرانے راز افشا نہ کریں"],
+        "ar": ["الدفاع عن عرض الصديق في غيابه وحفظ أسراره حتى عند الخلاف."],
+        "hi": ["अनुपस्थिति में मित्र की निंदा रोकें", "कठिन समय में साथ दें", "मतभेद पर पुराने राज़ न खोलें"]
+      },
+      "realLifeExamples": {
+        "en": ["Friends quietly pooling small amounts to cover a classmate's overdue semester fee so he doesn't drop out."],
+        "ur": ["دوستوں کا مل کر خاموشی سے ایک ساتھی کی یونیورسٹی فیس جمع کر دینا تاکہ اس کی تعلیم نہ رکے۔"],
+        "ar": ["تعاون أصدقاء الجامعة في سداد رسوم زميل معسر دون إحراجه."],
+        "hi": ["मित्रों द्वारा मिलकर सहपाठी की सेमेस्टर फ़ीस चुपचाप जमा करना ताकि पढ़ाई न छूटे।"]
+      },
+      "commonMistakes": {
+        "en": ["Mocking a friend in group chats for laughs", "Disclosing past secrets during an argument", "Borrowing money from friends and disappearing"],
+        "ur": ["گروپ چیٹ میں مزاح کے نام پر دوست کا تمسخر اڑانا", "ناراضگی میں دوست کے راز فاش کر دینا", "دوستی میں قرض لے کر واپس نہ کرنا"],
+        "ar": ["إفشاء الأسرار عند الخصومة والمماطلة في رد ديون الأصدقاء."],
+        "hi": ["ग्रुप चैट में मज़ाक उड़ाना, गुस्से में राज़ खोलना या मित्र से क़र्ज़ लेकर न लौटाना।"]
+      },
+      "actionSteps": {
+        "en": ["Check on a quiet friend who may be struggling silently", "Make dua for your companions by name"],
+        "ur": ["آج کسی خاموش دوست کی خیریت دریافت کریں", "اپنے دوستوں کے لیے نام لے کر دعا کریں"],
+        "ar": ["تفقد صديقاً يمر بظرف صعب وادع له."],
+        "hi": ["आज किसी शांत मित्र का हाल पूछें और उनके लिए दुआ करें।"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 49, "startAyah": 10, "endAyah": 10, "contextExplanation": {"en": "Establishes brotherhood and reconciling disputes fairly.", "ur": "مومنوں کے باہمی اخوت اور اختلافات میں صلح کرانے کا حکم۔", "ar": "إنما المؤمنون إخوة فأصلحوا بين أخويكم.", "hi": "विश्वासियों के भाईचारे और सुलह का आदेश।"}}],
+      "hadithIds": ["bukhari_13", "muslim_2564a"],
+      "sourceLinks": [{"title": "Sahih al-Bukhari 13 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:13"}],
+      "mcqs": [{"id": "mcq_r21", "question": {"en": "When a dispute occurs between two friends, what duty falls on mutual companions (Quran 49:10)?", "ur": "دو دوستوں یا بھائیوں کے درمیان جھگڑا ہو جائے تو دیگر ساتھیوں کی شرعی ذمہ داری کیا ہے؟", "ar": "ما واجب الإخوة عند تنازع صديقين؟", "hi": "दो मित्रों में विवाद होने पर अन्य साथियों का कर्तव्य क्या है?"}, "options": {"en": ["Take sides and fuel gossip", "Actively help reconcile them with fairness", "Post screenshots online", "Ignore forever"], "ur": ["غیبت کر کے آگ بھڑکائیں", "انصاف کے ساتھ دونوں کے درمیان صلح کروائیں", "اسکرین شاٹ وائرل کریں", "مذاق اڑائیں"], "ar": ["تأجيج الفتنة", "الإصلاح بينهما بالعدل", "نشر الخلاف", "السخرية"], "hi": ["भड़काना", "निष्पक्ष रूप से सुलह कराना", "स्क्रीनशॉट फैलाना", "मज़ाक उड़ाना"]}, "correctIndex": 1, "explanation": {"en": "Quran 49:10 commands believers to make peace fairly between conflicting brothers.", "ur": "الحجرات 49:10 کا واضح حکم ہے کہ بھائیوں کے درمیان صلح کروائی جائے۔", "ar": "فأصلحوا بين أخويكم.", "hi": "क़ुरआन 49:10 में निष्पक्ष सुलह कराने का स्पष्ट आदेश है।"}}]
+    },
+    {
+      "id": "rights_22_leaders_judges",
+      "departmentId": "dept_rights",
+      "order": 22,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Governance, Justice & Human Dignity", "ur": "حکومت، عدل اور شہری حقوق", "ar": "العدل والحكم وحقوق الإنسان", "hi": "न्याय, शासन और मानवाधिकार"},
+      "title": {"en": "22. Leaders', Judges' & Public Officials' Duties", "ur": "22. حکمرانوں، قاضیوں اور سرکاری عہدیداروں کے حقوق و فرائض", "ar": "٢٢. واجبات القضاة والحكام والموظفين العموميين", "hi": "22. शासकों, न्यायाधीशों व लोक अधिकारियों के कर्तव्य"},
+      "introduction": {"en": "Public office in Islam is NOT personal privilege — it is a heavy Amanah (trust) demanding strict impartiality, zero bribery, transparent public spending, and accountability before Allah and citizens.", "ur": "اسلام میں عہدہ و اقتدار ذاتی امتیاز نہیں بلکہ ایک بھاری امانت ہے جو بلا امتیاز عدل، رشوت سے پاک خدمت اور عوامی جوابدہی کا تقاضا کرتی ہے۔", "ar": "الولاية والقضاء والوظيفة العامة أمانة ثقيلة توجب العدل المطلق ومنع الرشوة والمحاباة.", "hi": "इस्लाम में पद व अधिकार विशेषाधिकार नहीं बल्कि अमानत हैं जो निष्पक्ष न्याय व भ्रष्टाचार-मुक्ति मांगते हैं।"},
+      "explanation": {"en": "Quran 4:58 instructs leaders and judges: 'When you judge between people, judge with justice.' Quran 4:135 and 5:8 forbid letting wealth, kinship, or hatred of a community sway a ruling away from truth. Public citizens owe lawful order and peaceful advice/accountability, while leaders owe justice and protection of rights.", "ur": "سورۃ النساء (4:58، 4:135) اور المائدہ (5:8) میں حکم ہے کہ فیصلہ ہمیشہ عدل سے کرو، خواہ اپنے یا قریبی رشتہ داروں کے خلاف ہی کیوں نہ ہو، اور کسی قوم کی دشمنی تمہیں ناانصافی پر نہ ابھارے۔", "ar": "أوجب الله القسط على القضاة والحكام ولو على أنفسهم أو ذوي القربى.", "hi": "क़ुरआन 4:58, 4:135 और 5:8 रिश्तेदारी या शत्रुता से ऊपर उठकर पूर्ण न्याय का आदेश देते हैं।"},
+      "dutyBearer": {"en": "Judges, ministers, police, clerks, teachers in public posts, and citizens participating lawfully.", "ur": "ججز، حکمران، پولیس، سرکاری افسران و کلرکس، اور قانون کے پابند شہری۔", "ar": "الحكام والقضاة والموظفون والرعية.", "hi": "न्यायाधीश, अधिकारी, पुलिस, क्लर्क और नागरिक।"},
+      "mutualBoundaries": {"en": "Citizens do not engage in violent vigilantism or chaos, nor do officials demand 'chai-pani' (bribes) or treat public tax funds as private property.", "ur": "شہری قانون ہاتھ میں لے کر توڑ پھوڑ نہ کریں، اور عہدیدار 'چائے پانی' کے نام پر رشوت یا سرکاری فنڈ میں خیانت نہ کریں۔", "ar": "يُحظر الفساد والرشوة من المسؤول، وتُحظر الفوضى من المواطن.", "hi": "अधिकारी रिश्वत न लें और नागरिक हिंसा या अराजकता न करें।"},
+      "rightsViolatedAction": {"en": "Use formal ombudsman portals, anti-corruption commissions, right-to-information requests, and independent courts to challenge official abuse peacefully.", "ur": "سرکاری ناانصافی یا رشوت کے خلاف محتسب، اینٹی کرپشن، قانونی شکایت پورٹلز اور آزاد عدالتوں سے پرامن رجوع کریں۔", "ar": "استخدام هيئات الرقابة والمحاكم والشكاوى النظامية.", "hi": "अन्याय या रिश्वत के खिलाफ लोकपाल, भ्रष्टाचार-निरोधक व न्यायालय में वैध शिकायत करें।"},
+      "practicalWays": {
+        "en": ["Process ordinary citizens' files promptly without requiring bribes or VIP favors", "Hear both sides equally before forming any judicial/administrative ruling", "Refuse nepotism in hiring and scholarships"],
+        "ur": ["بغیر رشوت یا سفارش کے عام شہریوں کے جائز کام وقت پر کریں", "فیصلہ کرنے سے پہلے دونوں فریقوں کی بات برابر توجہ سے سنیں", "بھرتیوں اور وظائف میں اقربا پروری کے بجائے میرٹ کو ترجیح دیں"],
+        "ar": ["إنجاز معاملات الناس دون رشوة وسماع الطرفين والالتزام بالكفاءة."],
+        "hi": ["बिना रिश्वत आम नागरिकों के काम समय पर करें", "दोनों पक्षों की सुनवाई निष्पक्ष करें", "भर्ती में योग्यता (मेरिट) अपनाएं"]
+      },
+      "realLifeExamples": {
+        "en": ["A municipal clerk processing a widow's pension file first in queue purely on merit without asking for a fee."],
+        "ur": ["ایک سرکاری کلرک کا کسی بیوہ کی پنشن فائل بغیر رشوت اور سفارش کے میرٹ پر فوری مکمل کر دینا۔"],
+        "ar": ["إنجاز موظف حكومي لمعاملة أرملة دون رشوة أو وساطة."],
+        "hi": ["एक क्लर्क द्वारा बिना किसी घूस के किसी विधवा की पेंशन फ़ाइल निष्पक्षता से पूरी करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Demanding 'speed money' for routine paperwork", "Bending traffic or criminal laws for wealthy relatives"],
+        "ur": ["جائز سرکاری کاغذات پر 'تیزی فیس' یا رشوت طلب کرنا", "طاقتور یا امیر رشتہ داروں کے لیے قانون موڑ دینا"],
+        "ar": ["طلب الرشوة والمحاباة لأصحاب النفوذ."],
+        "hi": ["सामान्य काम के लिए 'खर्चा-पानी' मांगना या रसूखदारों के लिए नियम तोड़ना।"]
+      },
+      "actionSteps": {
+        "en": ["Perform your civic or workplace authority with complete merit today", "Never normalize offering or demanding bribes"],
+        "ur": ["اپنے اختیار اور منصب میں آج مکمل دیانت اور میرٹ کا مظاہرہ کریں"],
+        "ar": ["التزم الأمانة والنزاهة في كل مسؤولية تتولاها."],
+        "hi": ["अपने कार्य व अधिकार क्षेत्र में पूर्ण ईमानदारी व योग्यता का पालन करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 4, "startAyah": 135, "endAyah": 135, "contextExplanation": {"en": "Commands standing firmly for justice as witnesses to Allah, even against oneself or parents/relatives.", "ur": "اپنے یا والدین و رشتہ داروں کے خلاف بھی سچ اور عدل پر قائم رہنے کا قرآنی حکم۔", "ar": "القيام بالقسط شهداء لله ولو على الأنفس والوالدين.", "hi": "स्वयं या रिश्तेदारों के विरुद्ध भी सत्य व न्याय पर अटल रहने का आदेश।"}},
+        {"surahNumber": 5, "startAyah": 8, "endAyah": 8, "contextExplanation": {"en": "Forbids letting hatred of any group prevent people from acting justly.", "ur": "کسی قوم کی دشمنی کی وجہ سے ناانصافی کرنے کی قطعی ممانعت۔", "ar": "ولا يجرمنكم شنآن قوم على ألا تعدلوا.", "hi": "किसी समूह से द्वेष के कारण अन्याय करने की सख्त मनाही।"}}
+      ],
+      "hadithIds": ["bukhari_893"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:135 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/135"}],
+      "mcqs": [{"id": "mcq_r22", "question": {"en": "According to Quran 5:8, if you dislike a group or had conflict with them, what standard governs your treatment of them?", "ur": "سورۃ المائدہ 5:8 کے مطابق اگر آپ کو کسی گروہ سے ناپسندیدگی یا دشمنی ہو تب بھی ان کے ساتھ کس اصول کے تحت سلوک کرنا لازم ہے؟", "ar": "بماذا تأمر الآية المائدة ٨ تجاه من بينك وبينهم عداوة؟", "hi": "क़ुरआन 5:8 के अनुसार किसी समूह से मतभेद या द्वेष होने पर भी कैसा व्यवहार अनिवार्य है?"}, "options": {"en": ["Retaliate unfairly", "Be strictly just — justice is closest to righteousness (Taqwa)", "Invent false charges", "Deny basic legal rights"], "ur": ["ناانصافی سے بدلہ لیں", "ہر حال میں عدل و انصاف کریں کیونکہ انصاف تقویٰ کے قریب تر ہے", "جھوٹے الزامات لگائیں", "حقوق سلب کر لیں"], "ar": ["الظلم", "العدل التام لأن العدل أقرب للتقوى", "الافتراء", "منع الحقوق"], "hi": ["अन्यायपूर्ण बदला", "सदैव न्याय करें क्योंकि न्याय तक़वा के सबसे क़रीब है", "झूठे आरोप", "अधिकार छीनना"]}, "correctIndex": 1, "explanation": {"en": "Quran 5:8: 'I'dilu huwa aqrabu lit-taqwa' — act justly regardless of personal feelings.", "ur": "المائدہ 5:8: عدل کرو یہی تقویٰ کے زیادہ قریب ہے۔", "ar": "اعدلوا هو أقرب للتقوى.", "hi": "क़ुरआन 5:8: न्याय करो, यही परहेज़गारी के सबसे निकट है।"}}]
+    },
+    {
+      "id": "rights_23_citizens",
+      "departmentId": "dept_rights",
+      "order": 23,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Governance, Justice & Human Dignity", "ur": "حکومت، عدل اور شہری حقوق", "ar": "العدل والحكم وحقوق الإنسان", "hi": "न्याय, शासन और मानवाधिकार"},
+      "title": {"en": "23. Citizens' & Community Members' Rights", "ur": "23. شہریوں اور اہلِ محلہ کے حقوق", "ar": "٢٣. حقوق المواطنين والمجتمع المدني", "hi": "23. नागरिकों और समुदाय के अधिकार"},
+      "introduction": {"en": "Safe streets, honest public trusts, unobstructed roads, clean air, truthful civic reporting, and cooperative community welfare belong to every resident.", "ur": "محفوظ گلیاں، کھلے راستے، صاف ماحول، دیانتدار شہری نظام اور باہمی فلاح تمام شہریوں کا مشترکہ حق ہے۔", "ar": "للمواطنين حقوق مشتركة في الأمن والطرق والنظافة والخدمات العامة والمال العام.", "hi": "सुरक्षित सड़कें, स्वच्छ हवा, सार्वजनिक संसाधनों की ईमानदारी और परस्पर सुरक्षा हर नागरिक का हक़ है।"},
+      "explanation": {"en": "Removing harmful obstacles from the road is itself a branch of faith (Muslim 35b concept). Encroaching onto public streets with shop stalls, stealing electricity/gas/water, vandalizing parks, or driving recklessly endangers citizens' lives and public wealth (Mal-ul-'Amm).", "ur": "راستے سے تکلیف دہ چیز ہٹانا ایمان کا شعبہ ہے۔ سڑک اور فٹ پاتھ پر تجاوزات، بجلی یا گیس چوری، سرکاری املاک کو نقصان اور بے احتیاط ڈرائیونگ پورے معاشرے کے حقوق کی پامالی ہے۔", "ar": "حماية المال العام والمرافق والطرق واجب ديني ومدني على كل مواطن.", "hi": "सार्वजनिक सड़कों पर अतिक्रमण, बिजली-पानी चोरी और लापरवाह ड्राइविंग पूरे समाज के अधिकारों का हनन है।"},
+      "dutyBearer": {"en": "Every citizen, shopkeeper, commuter, and community association.", "ur": "ہر شہری، دکاندار، مسافر اور محلہ کمیٹی۔", "ar": "كل مواطن وتاجر ومقيم.", "hi": "प्रत्येक नागरिक, दुकानदार और स्थानीय समिति।"},
+      "mutualBoundaries": {"en": "Citizens have peaceful rights to organize civic improvement and accountability while respecting public safety laws and avoiding harm to innocent neighbors' property.", "ur": "شہری اصلاح اور حق کی آواز پرامن قانونی حدود میں اٹھائیں؛ بے گناہ لوگوں کی املاک یا جان کو نقصان نہ پہنچائیں۔", "ar": "المطالبة السلمية بالإصلاح مع حفظ الأمن والممتلكات.", "hi": "सुधार की मांग शांतिपूर्ण और कानूनी सीमाओं में रहकर करें।"},
+      "rightsViolatedAction": {"en": "Participate in neighborhood cleanliness, traffic safety, and peaceful municipal reporting of damaged roads or utility hazards.", "ur": "محلے کی صفائی، ٹریفک نظم اور سرکاری مرمت کی شکایات کے ذریعے مثبت شہری کردار ادا کریں۔", "ar": "التعاون الأهلي في النظافة والإبلاغ النظامي عن الأعطال والمخاطر.", "hi": "मोहल्ले की सफ़ाई, यातायात नियम व नागरिक शिकायत तंत्र में सक्रिय भागीदारी करें।"},
+      "practicalWays": {
+        "en": ["Never double-park or extend shop displays onto pedestrian walkways", "Pay utility bills and lawful public dues honestly", "Obey traffic signals and speed limits as protection of human life (5:32)"],
+        "ur": ["فٹ پاتھ اور سڑک پر دکان کا سامان نہ پھیلائیں اور غلط پارکنگ نہ کریں", "بجلی، پانی اور گیس کے بل دیانتداری سے ادا کریں", "انسانی جان کے تحفظ کے لیے ٹریفک قوانین کی پابندی کریں"],
+        "ar": ["عدم التعدي على الأرصفة واحترام قوانين المرور وسداد الفواتير."],
+        "hi": ["फुटपाथ पर अतिक्रमण न करें", "बिल ईमानदारी से चुकाएं", "मानव जीवन सुरक्षा हेतु यातायात नियमों का पालन करें"]
+      },
+      "realLifeExamples": {
+        "en": ["A market association clearing encroached footpaths voluntarily so schoolchildren, elderly citizens, and ambulances pass smoothly."],
+        "ur": ["ایک مارکیٹ یونین کا رضاکارانہ طور پر تجاوزات ختم کرنا تاکہ پیدل چلنے والوں اور ایمبولینس کا راستہ کھل سکے۔"],
+        "ar": ["إزالة تجار السوق لتعديات الأرصفة تطوعاً لتسهيل مرور المشاة والإسعاف."],
+        "hi": ["बाज़ार संघ द्वारा स्वेच्छा से अतिक्रमण हटाकर पैदल चलने वालों व एंबुलेंस का मार्ग खोलना।"]
+      },
+      "commonMistakes": {
+        "en": ["Thinking stealing public electricity/water is harmless because it belongs to the state", "Driving wrong-way to save two minutes"],
+        "ur": ["سرکاری بجلی یا پانی چوری کو معمولی سمجھنا جبکہ یہ کروڑوں شہریوں کا مشترکہ حق ہے", "دو منٹ بچانے کے لیے ون وے کی خلاف ورزی کرنا"],
+        "ar": ["الاستهانة بالمال العام أو السير عكس السير."],
+        "hi": ["सरकारी बिजली/पानी चोरी को छोटा समझना या समय बचाने हेतु गलत दिशा में गाड़ी चलाना।"]
+      },
+      "actionSteps": {
+        "en": ["Follow every traffic rule strictly today as an act of Huqooq-ul-Ibad", "Keep public streets litter-free"],
+        "ur": ["آج حقوق العباد کی نیت سے ٹریفک کے تمام قوانین پر سختی سے عمل کریں"],
+        "ar": ["التزم أنظمة المرور والنظافة العامة كعبادة وحفظ لحقوق الناس."],
+        "hi": ["आज हुक़ूक़-उल-इबाद की नीयत से सभी यातायात व स्वच्छता नियमों का पालन करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 5, "startAyah": 32, "endAyah": 32, "contextExplanation": {"en": "Underscores the sanctity of every human life — saving one life is like saving all humanity.", "ur": "ایک انسانی جان بچانے کو پوری انسانیت کے بچانے کے مترادف قرار دینے کا قرآنی اصول۔", "ar": "عِظم حرمة النفس البشرية وفضل إحيائها.", "hi": "मानव जीवन की पवित्रता और उसे बचाने के महत्व का क़ुरआनी सिद्धांत।"}}],
+      "hadithIds": ["muslim_2564a"],
+      "sourceLinks": [{"title": "Surah Al-Ma'idah 5:32 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/5/32"}],
+      "mcqs": [{"id": "mcq_r23", "question": {"en": "Why does tampering with public electricity, gas, or water meters violate Huqooq-ul-Ibad?", "ur": "سرکاری بجلی، گیس یا پانی چوری کرنا حقوق العباد کی پامالی کیوں ہے؟", "ar": "لماذا يُعد سرقة المرافق العامة اعتداءً على حقوق العباد؟", "hi": "सार्वजनिक बिजली, गैस या पानी की चोरी हुक़ूक़-उल-इबाद का उल्लंघन क्यों है?"}, "options": {"en": ["It does not harm anyone", "Public utilities belong jointly to all citizens, shifting unfair debt/shortages onto honest neighbors", "Only private homes count", "It is rewarded"], "ur": ["کسی کو نقصان نہیں ہوتا", "سرکاری وسائل تمام شہریوں کی مشترکہ امانت ہیں؛ چوری کا بوجھ دیانتدار لوگوں پر پڑتا ہے", "صرف ذاتی گھر شمار ہوتے ہیں", "یہ جائز ہے"], "ar": ["لا ضرر", "لأن المال العام ملك لجميع المواطنين ويتحمل الصادقون كلفته", "البيوت الخاصة فقط", "جائز"], "hi": ["किसी को नुकसान नहीं", "सार्वजनिक संसाधन सभी नागरिकों की साझा अमानत हैं; चोरी का बोझ ईमानदारों पर पड़ता है", "केवल निजी घर", "वैध है"]}, "correctIndex": 1, "explanation": {"en": "Misappropriating public assets (Ghulul / Mal al-'Amm) harms the entire community simultaneously.", "ur": "امانتِ عامہ میں خیانت کا وبال اور معاشی بوجھ پورے معاشرے کو بھگتنا پڑتا ہے۔", "ar": "الاعتداء على المال العام ظلم لجميع أفراد المجتمع.", "hi": "सार्वजनिक संपत्ति की चोरी का बोझ पूरे समाज पर पड़ता है।"}}]
+    },
+    {
+      "id": "rights_24_minorities",
+      "departmentId": "dept_rights",
+      "order": 24,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Governance, Justice & Human Dignity", "ur": "حکومت، عدل اور شہری حقوق", "ar": "العدل والحكم وحقوق الإنسان", "hi": "न्याय, शासन और मानवाधिकार"},
+      "title": {"en": "24. Non-Muslim Citizens' & Minorities' Rights", "ur": "24. غیر مسلم شہریوں اور اقلیتوں کے حقوق", "ar": "٢٤. حقوق المواطنين غير المسلمين والأقليات", "hi": "24. ग़ैर-मुस्लिम नागरिकों और अल्पसंख्यकों के अधिकार"},
+      "introduction": {"en": "Islam strictly protects the life, property, worship places, freedom of belief, and civic dignity of peaceful non-Muslim citizens and neighbors.", "ur": "اسلام پُرامن غیر مسلم شہریوں اور اقلیتوں کی جان، مال، عبادت گاہوں، مذہبی آزادی اور شہری وقار کے مکمل تحفظ کی ضمانت دیتا ہے۔", "ar": "ضمن الإسلام لغير المسلمين المسالمين عصمة الدم والمال ودور العبادة والبر والقسط.", "hi": "इस्लाम शांतिप्रिय ग़ैर-मुस्लिम नागरिकों और अल्पसंख्यकों के जीवन, संपत्ति, पूजा स्थलों और सम्मान की रक्षा करता है।"},
+      "explanation": {"en": "Quran 2:256 proclaims 'There is no compulsion in religion.' Quran 60:8 explicitly commands righteousness (Birr) and justice (Qist) toward all peaceful non-Muslims who do not fight you over religion or expel you. The Charter of Madinah guaranteed mutual defense and freedom of faith for Jewish and other communities. Harming peaceful minorities, mocking their faith, or vandalizing their places of worship contradicts both Quranic justice and Prophetic treaties.", "ur": "سورۃ البقرہ (2:256) میں 'دین میں کوئی زبردستی نہیں' کا اعلان ہے اور الممتحنہ (60:8) میں پرامن غیر مسلموں کے ساتھ بھلائی اور انصاف کا واضح حکم ہے۔ میثاقِ مدینہ اور صحیح احادیث میں معاہد (شہری) پر ظلم کرنے کی سخت وعید آئی ہے۔ اقلیتوں کی عبادت گاہوں کو نقصان پہنچانا، جھوٹے الزام لگانا یا امتیازی سلوک کرنا حرام ہے۔", "ar": "لا إكراه في الدين، وأمر القرآن بالبر والقسط مع المسالمين، وحرمت السنة ظلم المعاهد.", "hi": "क़ुरआन 2:256 धार्मिक ज़ोर-ज़बरदस्ती को रोकता है और 60:8 शांतिप्रिय ग़ैर-मुस्लिमों के साथ भलाई व न्याय का आदेश देता है।"},
+      "dutyBearer": {"en": "Majority citizens, scholars, community leaders, courts, and law enforcement.", "ur": "اکثریتی شہری، علماء، معاشرتی رہنما، عدالتیں اور قانون نافذ کرنے والے ادارے۔", "ar": "الأغلبية المسلمة والعلماء والقضاء.", "hi": "बहुसंख्यक नागरिक, विद्वान, नेता और प्रशासन।"},
+      "mutualBoundaries": {"en": "Islamic protection does not require compromising one's own Islamic worship or beliefs; respect and justice flourish alongside clear, dignified identity.", "ur": "احترام و عدل کا مطلب اپنے عقیدے پر سمجھوتہ نہیں؛ اپنے دین پر مضبوط رہتے ہوئے سب کے ساتھ انصاف کیا جاتا ہے۔", "ar": "البر والقسط يجتمعان مع ثبات المسلم على عقيدته.", "hi": "न्याय और सम्मान अपने विश्वास पर अटल रहते हुए भी पूरी तरह निभाए जाते हैं।"},
+      "rightsViolatedAction": {"en": "Condemn mob threats, forced conversions, workplace discrimination, or vandalism firmly and assist minorities in accessing equal police and constitutional protection.", "ur": "اقلیتوں کے خلاف ہجومی تشدد، جبری تبدیلیٔ مذہب یا امتیازی سلوک کی کھل کر مذمت کریں اور برابر قانونی تحفظ دلوائیں۔", "ar": "رفض التمييز والتحريض وحماية دور العبادة والمواطنين بالقانون.", "hi": "अल्पसंख्यकों के विरुद्ध हिंसा, भेदभाव या पूजा स्थल क्षति का सख्ती से विरोध व कानूनी बचाव करें।"},
+      "practicalWays": {
+        "en": ["Treat non-Muslim neighbors, coworkers, and sanitation workers with full dignity", "Pay minority employees equal wages and protect their festivals safely", "Speak against false rumors or hate speech immediately"],
+        "ur": ["غیر مسلم ہمسایوں، ساتھیوں اور صفائی عملے کے ساتھ مکمل عزت سے پیش آئیں", "مساوی تنخواہ، تحفظ اور شہری مواقع یقینی بنائیں", "نفرت انگیز افواہوں اور جھوٹے الزامات کی فوراً روک تھام کریں"],
+        "ar": ["حسن الجوار والعدل في الوظائف والأجور ومنع خطاب الكراهية."],
+        "hi": ["ग़ैर-मुस्लिम पड़ोसियों व सहकर्मियों को पूरा सम्मान दें", "समान वेतन व सुरक्षा दें", "नफ़रत व अफ़वाहों का विरोध करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Muslim neighbors forming a protective human shield and community solidarity team around a minority neighborhood facing threats."],
+        "ur": ["خطرے کے وقت مسلمان ہمسایوں کا اقلیتی عبادت گاہ اور محلے کے تحفظ کے لیے اکٹھا کھڑا ہو جانا۔"],
+        "ar": ["تضامن الجيران المسلمين لحماية حي ومصلّى إخوانهم في الوطن."],
+        "hi": ["ख़तरे के समय मुस्लिम पड़ोसियों द्वारा अल्पसंख्यक समुदाय की सुरक्षा में साथ खड़ा होना।"]
+      },
+      "commonMistakes": {
+        "en": ["Using derogatory labels for minority sanitation workers", "Assuming equal civic rights don't apply to non-Muslims"],
+        "ur": ["اقلیتی صفائی عملے کے لیے تضحیک آمیز الفاظ استعمال کرنا", "شہری و قانونی تحفظ میں تفریق روا رکھنا"],
+        "ar": ["الانتقاص من العمال أو التمييز في المعاملة والقضاء."],
+        "hi": ["अल्पसंख्यक कर्मियों के लिए अपमानजनक शब्द बोलना या नागरिक अधिकारों में भेदभाव करना।"]
+      },
+      "actionSteps": {
+        "en": ["Show genuine kindness to a non-Muslim neighbor or colleague today", "Stand against prejudice whenever it surfaces"],
+        "ur": ["آج کسی غیر مسلم ہمسائے یا ساتھی کے ساتھ حسنِ سلوک کریں اور تعصب کی مخالفت کریں"],
+        "ar": ["عامل جيرانك غير المسلمين بالبر والقسط ودافع عن كرامتهم."],
+        "hi": ["आज किसी ग़ैर-मुस्लिम पड़ोसी या सहकर्मी के प्रति सद्भाव दिखाएं और भेदभाव का विरोध करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 60, "startAyah": 8, "endAyah": 8, "contextExplanation": {"en": "Commands active goodness (Birr) and justice (Qist) toward peaceful people of other faiths.", "ur": "پرامن غیر مسلموں کے ساتھ نیکی، احسان اور انصاف کرنے کا صریح قرآنی حکم۔", "ar": "أن تبروهم وتقسطوا إليهم.", "hi": "शांतिप्रिय ग़ैर-मुस्लिमों के प्रति भलाई और न्याय का क़ुरआनी आदेश।"}},
+        {"surahNumber": 2, "startAyah": 256, "endAyah": 256, "contextExplanation": {"en": "Proclaims complete absence of religious compulsion.", "ur": "دین میں جبر و اکراہ کی ممانعت کا عالمگیر اصول۔", "ar": "لا إكراه في الدين.", "hi": "धर्म में किसी प्रकार की ज़बरदस्ती पर प्रतिबंध।"}}
+      ],
+      "hadithIds": ["bukhari_6014", "muslim_2564a"],
+      "sourceLinks": [{"title": "Surah Al-Mumtahanah 60:8 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/60/8"}],
+      "mcqs": [{"id": "mcq_r24", "question": {"en": "Which Surah and verse explicitly commands believers to show kindness (Birr) and justice (Qist) to peaceful non-Muslims?", "ur": "قرآنِ کریم کی کس آیت میں پرامن غیر مسلموں کے ساتھ بھلائی (بر) اور انصاف (قسط) کا حکم دیا گیا ہے؟", "ar": "في أي آية أُمر المسلمون ببر غير المسلمين المسالمين والقسط إليهم؟", "hi": "क़ुरआन की किस आयत में शांतिप्रिय ग़ैर-मुस्लिमों से भलाई (बिर्र) और न्याय (क़िस्त) का आदेश है?"}, "options": {"en": ["Quran 60:8 (Al-Mumtahanah)", "Only modern treaties", "Nowhere", "Quran 114:1"], "ur": ["سورۃ الممتحنہ 60:8", "صرف جدید معاہدے", "کہیں نہیں", "الناس"], "ar": ["سورة الممتحنة ٦٠:٨", "مواثيق حديثة فقط", "لا يوجد", "الناس"], "hi": ["सूरह अल-मुम्तहना 60:8", "केवल आधुनिक संधियाँ", "कहीं नहीं", "अन-नास"]}, "correctIndex": 0, "explanation": {"en": "Surah Al-Mumtahanah 60:8 explicitly commands 'an tabarruhum wa tuqsitu ilayhim' — Allah loves the just.", "ur": "سورۃ الممتحنہ 60:8 میں واضح الفاظ میں بھلائی اور انصاف کا حکم دیا گیا ہے۔", "ar": "إن الله يحب المقسطين.", "hi": "सूरह अल-मुम्तहना 60:8 में स्पष्ट रूप से भलाई व न्याय का आदेश है।"}}]
+    },
+    {
+      "id": "rights_25_refugees",
+      "departmentId": "dept_rights",
+      "order": 25,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Governance, Justice & Human Dignity", "ur": "حکومت، عدل اور شہری حقوق", "ar": "العدل والحكم وحقوق الإنسان", "hi": "न्याय, शासन और मानवाधिकार"},
+      "title": {"en": "25. Refugees' & Displaced Persons' Rights", "ur": "25. مہاجرین اور بے گھر افراد کے حقوق", "ar": "٢٥. حقوق اللاجئين والنازحين", "hi": "25. शरणार्थियों और विस्थापित व्यक्तियों के अधिकार"},
+      "introduction": {"en": "Early Islam was forged through Hijrah (migration) and Ansar hospitality. Quran 59:9 honors hosts who welcome displaced families into their homes and hearts without resentment.", "ur": "اسلام کی تاریخ خود ہجرت اور انصار کی مہمان نوازی سے عبارت ہے۔ قرآن (الحشر 59:9) بے گھر مہاجرین کو دل و جان سے جگہ دینے اور ایثار کرنے کی عظیم مدح فرماتا ہے۔", "ar": "أرسى الإسلام أخوّة الأنصار والمهاجرين نموذجاً خالداً لإيواء النازحين ومواساتهم.", "hi": "इस्लाम में मुहाजिर व अंसार का भाईचारा विस्थापितों को शरण, सम्मान और आजीविका देने की अमर मिसाल है।"},
+      "explanation": {"en": "Whether displaced by flood, earthquake, poverty, or conflict, refugees hold rights to safe shelter, non-exploitation in rent/wages, children's schooling, and protection from xenophobic blame. Exploiting flood or war victims through price-gouging or bonded labor violates core Islamic mercy.", "ur": "سیلاب، زلزلے یا جنگ سے بے گھر ہونے والے افراد کا حق ہے کہ انہیں محفوظ پناہ، مناسب کرایوں، بچوں کی تعلیم اور مقامی تعصب سے تحفظ ملے۔ مصیبت زدگان کی مجبوری سے فائدہ اٹھا کر کرایہ یا اجناس مہنگی کرنا سخت گناہ ہے۔", "ar": "للنازح واللاجئ حق المأوى الآمن والتعليم ومنع الاستغلال في الإيجار أو العمل.", "hi": "बाढ़, भूकंप या संघर्ष से विस्थापित लोगों को सुरक्षित आश्रय, बच्चों की शिक्षा और किराये/मज़दूरी में शोषण से सुरक्षा का अधिकार है।"},
+      "dutyBearer": {"en": "Host communities, landlords, humanitarian donors, and authorities.", "ur": "میزبان معاشرہ، مکان مالکان، فلاحی ادارے اور حکام۔", "ar": "المجتمع المضيف والملاك والهيئات الإغاثية.", "hi": "मेज़बान समाज, मकान मालिक, राहत संस्थाएं और प्रशासन।"},
+      "mutualBoundaries": {"en": "Guests/refugees equally respect local peace and laws while hosts uphold dignity without exploiting vulnerability.", "ur": "مہاجرین مقامی امن و قوانین کا احترام کریں اور میزبان ان کی مجبوری کا ناجائز فائدہ نہ اٹھائیں۔", "ar": "التوازن بين احترام القوانين المحلية وعدم استغلال حاجة اللاجئين.", "hi": "शरणार्थी स्थानीय शांति का सम्मान करें और मेज़बान उनकी मजबूरी का फायदा न उठाएं।"},
+      "rightsViolatedAction": {"en": "Channel aid through transparent verified relief groups and protect displaced women/children from trafficking and unsafe housing.", "ur": "امداد مستند فلاحی اداروں تک پہنچائیں اور بے گھر خواتین و بچوں کو استحصال سے بچائیں۔", "ar": "توجيه الإغاثة عبر قنوات موثوقة وحماية النساء والأطفال.", "hi": "सहायता प्रमाणित संस्थाओं से दें व महिलाओं-बच्चों को शोषण से बचाएं।"},
+      "practicalWays": {
+        "en": ["Donate clean usable clothes, medicine, and Zakat funds during floods/disasters", "Charge displaced families fair rents without panic markup", "Include displaced children kindly in neighborhood schools"],
+        "ur": ["سیلاب یا ہجرت کے وقت صاف کپڑے، دوائیاں اور مالی مدد پیش کریں", "بے گھر خاندانوں سے کرایہ ناجائز نہ بڑھائیں", "بے گھر بچوں کو اسکولوں میں عزت کے ساتھ شامل کریں"],
+        "ar": ["الإيجار العادل وإدماج أبناء النازحين في التعليم."],
+        "hi": ["आपदा में स्वच्छ कपड़े, दवा व धन दें", "उचित किराया रखें", "बच्चों को स्कूलों में शामिल करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Host families opening spare rooms after seasonal floods and coordinating schooling for displaced students."],
+        "ur": ["سیلاب کے بعد میزبان خاندانوں کا اپنے اضافی کمرے متاثرین کو دینا اور بچوں کی پڑھائی جاری رکھوانا۔"],
+        "ar": ["استضافة أسر لمنازل متضررة من الفيضانات وتيسير دراستهم."],
+        "hi": ["बाढ़ पीड़ित परिवारों को कमरे उपलब्ध कराना और बच्चों की पढ़ाई जारी रखना।"]
+      },
+      "commonMistakes": {
+        "en": ["Raising rents threefold during emergency displacement", "Scapegoating migrants for every local problem"],
+        "ur": ["ہنگامی صورتحال میں مکانوں کے کرائے تین گنا بڑھا دینا", "ہر مقامی مسئلے کا الزام مہاجرین پر تھوپ دینا"],
+        "ar": ["استغلال الأزمات برفع الإيجارات أو التحريض ضد النازحين."],
+        "hi": ["आपात स्थिति में किराया तिगुना कर देना या विस्थापितों को दोष देना।"]
+      },
+      "actionSteps": {
+        "en": ["Support verified disaster-relief work cleanly", "Welcome displaced neighbors warmly"],
+        "ur": ["مستند فلاحی ریلیف کاموں میں حصہ لیں اور بے گھر افراد سے ہمدردی برتیں"],
+        "ar": ["ساهم في الإغاثة الموثوقة وأكرم الضيف النازح."],
+        "hi": ["विश्वसनीय राहत कार्य में योगदान दें और विस्थापितों के प्रति करुणा दिखाएं।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 59, "startAyah": 9, "endAyah": 9, "contextExplanation": {"en": "Praises the Ansar for loving those who migrated to them and prioritizing them despite personal need.", "ur": "انصارِ مدینہ کی مہاجرین سے محبت اور ایثار کی قرآنی تحسین۔", "ar": "ثناء الله على الأنصار في محبتهم للمهاجرين وإيثارهم.", "hi": "अंसार द्वारा मुहाजिरों के स्वागत और त्याग की क़ुरआनी प्रशंसा।"}}],
+      "hadithIds": ["muslim_2586a"],
+      "sourceLinks": [{"title": "Surah Al-Hashr 59:9 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/59/9"}],
+      "mcqs": [{"id": "mcq_r25", "question": {"en": "How did Quran 59:9 describe the Ansar hosts' attitude toward arriving Muhajirun refugees?", "ur": "سورۃ الحشر 59:9 نے مدینہ کے میزبان انصار کے مہاجرین کے ساتھ برتاؤ کو کیسے بیان کیا؟", "ar": "كيف وصفت الآية الحشر ٩ استقبال الأنصار للمهاجرين؟", "hi": "क़ुरआन 59:9 ने अंसार मेज़बानों के शरणार्थियों के प्रति व्यवहार का वर्णन कैसे किया?"}, "options": {"en": ["Charged double rent", "Loved them, felt no envy in their hearts, and prioritized their needs", "Locked city gates", "Deported them"], "ur": ["دوگنا کرایہ لیا", "ان سے محبت کی، دلوں میں کوئی تنگی نہ رکھی اور اپنی ضرورت پر انہیں ترجیح دی", "دروازے بند کر لیے", "نکال دیا"], "ar": ["ضاعفوا الإيجار", "يحبون من هاجر إليهم ويؤثرونهم على أنفسهم", "أغلقوا الأبواب", "طردوهم"], "hi": ["दोगुना किराया लिया", "उनसे प्रेम किया, ईर्ष्या नहीं रखी और उन्हें प्राथमिकता दी", "दरवाज़े बंद किए", "निकाल दिया"]}, "correctIndex": 1, "explanation": {"en": "Quran 59:9 immortalizes Ansar altruism ('yu'thiruna ala anfusihim') as an enduring model.", "ur": "الحشر 59:9 انصار کے ایثار و محبت کو قیامت تک کے لیے مثال بناتی ہے۔", "ar": "ويؤثرون على أنفسهم ولو كان بهم خصاصة.", "hi": "क़ुरआन 59:9 निस्वार्थ आतिथ्य का शाश्वत आदर्श प्रस्तुत करता है।"}}]
+    },
+    {
+      "id": "rights_26_prisoners",
+      "departmentId": "dept_rights",
+      "order": 26,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Governance, Justice & Human Dignity", "ur": "حکومت، عدل اور شہری حقوق", "ar": "العدل والحكم وحقوق الإنسان", "hi": "न्याय, शासन और मानवाधिकार"},
+      "title": {"en": "26. Prisoners' & Accused Persons' Rights", "ur": "26. قیدیوں اور ملزمان کے حقوق", "ar": "٢٦. حقوق السجناء والمتهمين", "hi": "26. क़ैदियों और अभियुक्तों के अधिकार"},
+      "introduction": {"en": "In Islam, an accused person is innocent until proven guilty by credible evidence, torture is prohibited, and prisoners hold explicit rights to humane food, medical care, family visits, and dignity.", "ur": "اسلام میں ملزم معتبر ثبوت تک بے گناہ ہے، تشدد حرام ہے اور قیدی کو مناسب خوراک، علاج، اہلِ خانہ سے ملاقات اور انسانی وقار کا پورا حق حاصل ہے۔", "ar": "المتهم بريء حتى تثبت إدانته ببينة عادلة، ويحرم التعذيب، وللسجين حق الطعام والعلاج.", "hi": "इस्लाम में दोष सिद्ध होने तक अभियुक्त निर्दोष है; यातना वर्जित है और क़ैदी को भोजन, इलाज व मानवीय गरिमा का अधिकार है।"},
+      "explanation": {"en": "Surah Al-Insan (76:8) commands feeding the captive alongside the poor and orphan. Classical Islamic jurisprudence prohibits extracting confessions by torture and rejects collective punishment of an accused person's family ('No bearer of burdens bears the burden of another' — 6:164, 35:18). Following Badr, prisoners were fed well and honored.", "ur": "سورۃ الدہر (76:8) میں مسکین اور یتیم کے ساتھ قیدی کو کھانا کھلانے کی تعریف ہے۔ فقہ اسلامی میں تشدد سے اقرارِ جرم کروانا اور ملزم کے بے گناہ خاندان کو سزا دینا حرام ہے (وَلا تَزِرُ وَازِرَةٌ وِزْرَ أُخْرَى)۔", "ar": "حرّم الفقهاء التعذيب لانتزاع الاعتراف وضمنوا للسجين الطعام والكسوة والزيارة.", "hi": "क़ुरआन 76:8 क़ैदी को भोजन कराने की प्रशंसा करता है और 6:164 किसी के अपराध की सज़ा उसके परिवार को देने से रोकता है।"},
+      "dutyBearer": {"en": "Police, prison officials, judges, defense lawyers, and welfare visitors.", "ur": "پولیس، جیل انتظامیہ، ججز، وکلاء اور فلاحی ادارے۔", "ar": "أجهزة التحقيق والسجون والقضاء والمحامون.", "hi": "पुलिस, जेल प्रशासन, न्यायाधीश व विधिक सहायता समूह।"},
+      "mutualBoundaries": {"en": "Humane treatment preserves society's security alongside fair punishment ONLY after impartial judicial proof — never mob brutality.", "ur": "انسانی احترام کے ساتھ ثابت شدہ جرم پر صرف آزاد عدالتی سزا نافذ کی جائے، نہ کہ تشدد یا ہجومی بربریت۔", "ar": "المحاكمة العادلة تمنع التعدي وتحفظ أمن المجتمع.", "hi": "निष्पक्ष न्यायिक सुनवाई के बाद ही वैध दंड हो; अवैध यातना या भीड़ हिंसा नहीं।"},
+      "rightsViolatedAction": {"en": "Provide legal aid to poor detainees, monitor humane jail conditions, and seek habeas corpus / judicial oversight against unlawful detention or torture.", "ur": "غریب قیدیوں کو مفت قانونی امداد فراہم کریں اور غیر قانونی حراست یا تشدد کے خلاف عدالتی نگرانی حاصل کریں۔", "ar": "توفير العون القانوني للمعسرين ومنع الاحتجاز التعسفي.", "hi": "निर्धन बंदी को मुफ्त कानूनी सहायता दें और अवैध हिरासत या यातना के विरुद्ध न्यायालय में अपील करें।"},
+      "practicalWays": {
+        "en": ["Oppose custodial torture and coerced confessions unambiguously", "Support legal-aid clinics helping innocent or poor prisoners stuck awaiting trial", "Care respectfully for prisoners' innocent spouses and children"],
+        "ur": ["حراستی تشدد کی دوٹوک مخالفت کریں", "زیرِ سماعت غریب قیدیوں کی قانونی ضمانت و وکیل میں مدد کریں", "قیدی کے بے گناہ بیوی بچوں کے ساتھ باعزت ہمدردی برتیں"],
+        "ar": ["رفض التعذيب ودعم العون القانوني ورعاية أسر السجناء."],
+        "hi": ["हिरासत में यातना का विरोध करें", "गरीब बंदियों को कानूनी सहायता दें", "उनके निर्दोष परिवार की मदद करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Legal-aid volunteers clearing fines for indigent minor offenders so families reunite cleanly."],
+        "ur": ["قانونی رضاکاروں کا معمولی جرمانے ادا نہ کر سکنے والے غریب قیدیوں کے جرمانے ادا کر کے رہائی دلوانا۔"],
+        "ar": ["مساعدة متطوعين في سداد غرامات سجناء معسرين لإطلاق سراحهم."],
+        "hi": ["स्वयंसेवकों द्वारा जुर्माना न भर पाने वाले निर्धन कैदियों का जुर्माना भरकर रिहाई कराना।"]
+      },
+      "commonMistakes": {
+        "en": ["Treating accused detainees as proven criminals before trial", "Shunning an accused person's innocent family"],
+        "ur": ["فیصلے سے پہلے ہی ملزم کو مجرم مان کر تذلیل کرنا", "ملزم کے بے گناہ اہلِ خانہ کا معاشرتی بائیکاٹ کرنا"],
+        "ar": ["إدانة المتهم قبل القضاء أو معاقبة أسرته البريئة."],
+        "hi": ["मुकदमे से पहले ही अभियुक्त को दोषी मानना या उसके निर्दोष परिवार का बहिष्कार करना।"]
+      },
+      "actionSteps": {
+        "en": ["Never spread unverified arrest rumors online", "Support ethical legal aid when possible"],
+        "ur": ["بغیر عدالتی ثبوت کسی کی گرفتاری پر تبصرہ و تشہیر نہ کریں"],
+        "ar": ["لا تنشر أخبار الاتهام دون تثبت وادعم العون القانوني."],
+        "hi": ["बिना प्रमाण किसी पर आरोप न फैलाएं और न्यायिक सहायता का समर्थन करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 76, "startAyah": 8, "endAyah": 8, "contextExplanation": {"en": "Explicitly includes the captive (Asir) alongside the needy and orphan in compassionate feeding.", "ur": "مسکین اور یتیم کے ساتھ قیدی کو بھی عزت سے کھلانے کا قرآنی ذکر۔", "ar": "ويطعمون الطعام على حبه مسكيناً ويتيماً وأسيراً.", "hi": "ग़रीब, अनाथ के साथ क़ैदी को भी करुणापूर्वक भोजन कराने का उल्लेख।"}},
+        {"surahNumber": 6, "startAyah": 164, "endAyah": 164, "contextExplanation": {"en": "Establishes individual criminal responsibility — forbidding collective punishment of families.", "ur": "کسی کے جرم کا بوجھ کسی دوسرے یا اس کے خاندان پر نہ ڈالنے کا قرآنی اصول۔", "ar": "ولا تزر وازرة وزر أخرى.", "hi": "व्यक्तिगत उत्तरदायित्व का सिद्धांत — किसी के अपराध का बोझ दूसरों पर नहीं।"}}
+      ],
+      "hadithIds": ["bukhari_2442"],
+      "sourceLinks": [{"title": "Surah Al-Insan 76:8 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/76/8"}],
+      "mcqs": [{"id": "mcq_r26", "question": {"en": "Under Quran 6:164, is it permissible to arrest or punish a suspect's innocent brother or parents when the suspect is unavailable?", "ur": "سورۃ الانعام 6:164 کے مطابق کیا کسی ملزم کی جگہ اس کے بے گناہ بھائی یا والدین کو پکڑنا جائز ہے؟", "ar": "هل يجوز القبض على أخ المتهم أو أبيه البريء بدلاً عنه؟", "hi": "क़ुरआन 6:164 के अनुसार क्या किसी संदिग्ध के बदले उसके निर्दोष भाई या माता-पिता को दंडित करना जायज़ है?"}, "options": {"en": ["Yes, always", "No — 'No bearer of burdens shall bear the burden of another'", "Only for debts", "Only on weekends"], "ur": ["جی ہاں", "ہرگز نہیں — کوئی شخص دوسرے کے گناہ یا جرم کا بوجھ نہیں اٹھائے گا", "صرف قرض میں", "کبھی کبھار"], "ar": ["نعم", "لا مطلقاً؛ ولا تزر وازرة وزر أخرى", "في الديون", "أحياناً"], "hi": ["हाँ", "बिल्कुल नहीं — कोई दूसरे के कर्म का बोझ नहीं उठाएगा", "केवल कर्ज़ में", "कभी-कभी"]}, "correctIndex": 1, "explanation": {"en": "Individual accountability prohibits collective family arrests or collective retaliation.", "ur": "انفرادی ذمہ داری کا اصول بے گناہ رشتہ داروں کو پکڑنے کی قطعی ممانعت کرتا ہے۔", "ar": "الشخصية الفردية للعقوبة مبدأ قرآني قطعي.", "hi": "व्यक्तिगत जवाबदेही का सिद्धांत निर्दोष परिवारजन को सज़ा देने से सख्त रोकता है।"}}]
+    },
+    {
+      "id": "rights_27_consumers",
+      "departmentId": "dept_rights",
+      "order": 27,
+      "groupCode": "FINANCIAL",
+      "groupLabel": {"en": "Financial & Workplace Rights", "ur": "مالی اور روزگار کے حقوق", "ar": "الحقوق المالية والتجارية", "hi": "व्यापार व उपभोक्ता अधिकार"},
+      "title": {"en": "27. Consumers' & Buyers' Rights", "ur": "27. صارفین اور خریداروں کے حقوق", "ar": "٢٧. حقوق المستهلكين والمشترين", "hi": "27. उपभोक्ताओं और खरीदारों के अधिकार"},
+      "introduction": {"en": "Surah Al-Mutaffifin (83:1-3) opens with 'Woe to those who give less in measure and weight!' Every buyer holds strict rights to exact weights, unadulterated safe goods, full defect disclosure, and honest return policies.", "ur": "سورۃ المطففین (83:1-3) ناپ تول میں کمی کرنے والوں پر سخت وعید سے شروع ہوتی ہے۔ ہر خریدار کا حق ہے کہ اسے پورا وزن، خالص محفوظ سامان، عیب کی مکمل خبر اور شفاف واپسی کی سہولت ملے۔", "ar": "للمشتري حق الوزن التام والبضاعة السليمة والبيان الصادق للعيوب.", "hi": "क़ुरआन 83:1-3 नाप-तौल में कमी पर कठोर चेतावनी देता है; हर खरीदार को पूरा माप, शुद्ध सामान और दोषों की सच्ची जानकारी का हक़ है।"},
+      "explanation": {"en": "Hiding defects in a phone, car, food batch, or medicine; altering expiry dates; fake online reviews; and deceptive hidden charges violate Islamic commercial law. Sellers must disclose known defects cleanly and grant Khiyar al-Ayb (option to return defective items).", "ur": "اشیاء کے عیب چھپانا، ایکسپائری تاریخ بدلنا، ملاوٹ کرنا، جعلی آن لائن ریویوز بنوانا اور خفیہ چارجز لگانا حرام ہے۔ عیب نکلنے پر خریدار کو واپسی (خیارِ عیب) کا حق حاصل ہے۔", "ar": "يحرم الغش والتدليس وتغيير التواريخ؛ وللمشتري خيار العيب.", "hi": "दोष छिपाना, एक्सपायरी बदलना, मिलावट या नकली समीक्षाएं हराम हैं; दोष होने पर वापसी (ख़ियार-उल-ऐब) खरीदार का अधिकार है।"},
+      "dutyBearer": {"en": "Merchants, manufacturers, e-commerce sellers, pharmacies, and food vendors.", "ur": "تاجر، کارخانہ دار، آن لائن فروخت کنندگان، فارمیسیاں اور دکاندار۔", "ar": "التجار والمصنعون والمتاجر الإلكترونية.", "hi": "व्यापारी, निर्माता, ई-कॉमर्स विक्रेता और दवा/खाद्य विक्रेता।"},
+      "mutualBoundaries": {"en": "Buyers equally may not abuse generous return policies by wearing/damaging items then claiming defects falsely.", "ur": "خریدار بھی واپسی پالیسی کا ناجائز فائدہ اٹھا کر چیز استعمال یا خراب کرنے کے بعد جھوٹا دعویٰ نہ کرے۔", "ar": "يحرم على المشتري إساءة استخدام حق الاسترجاع أو إتلاف السلعة عمداً.", "hi": "खरीदार भी सामान उपयोग या ख़राब करके झूठी वापसी का दावा न करे।"},
+      "rightsViolatedAction": {"en": "Keep purchase receipts and escalate food/medicine adulteration or online fraud to consumer courts and food/drug authorities.", "ur": "رسید محفوظ رکھیں اور ملاوٹ یا دھوکہ دہی کی شکایت فوڈ اتھارٹی یا کنزیومر کورٹ میں کریں۔", "ar": "حفظ الفواتير والتوجه لمحاكم حماية المستهلك وهيئات الرقابة.", "hi": "रसीद सहेजें और मिलावट/धोखाधड़ी की शिकायत उपभोक्ता अदालत या खाद्य/औषधि विभाग में करें।"},
+      "practicalWays": {
+        "en": ["Calibrate weighing scales regularly and tare out box weights", "List real product photos, dimensions, ingredients, and warranty online", "Accept returns gracefully when defects appear (Bukhari 2076)"],
+        "ur": ["ترازو باقاعدہ چیک کروائیں اور ڈبے کا وزن الگ منہا کریں", "آن لائن فروخت میں اصل تصاویر، اجزاء اور گارنٹی صاف لکھیں", "عیب نکلنے پر خوش دلی سے واپسی یا تبدیلی قبول کریں (بخاری 2076)"],
+        "ar": ["معايرة الموازين وخصم وزن العلبة وإعلان المواصفات بدقة."],
+        "hi": ["तराज़ू जांचते रहें और डिब्बे का वज़न घटाएं", "असली फ़ोटो व सही विवरण दें", "दोष पर उदारता से वापसी स्वीकार करें"]
+      },
+      "realLifeExamples": {
+        "en": ["A fruit vendor separating bruised items clearly at lower price rather than burying them beneath fresh fruit."],
+        "ur": ["ایک پھل فروش کا خراب یا نرم پھل الگ کر کے کم قیمت پر رکھنا بجائے اس کے کہ انہیں اچھے پھلوں کے نیچے چھپائے۔"],
+        "ar": ["عزل البائع للفاكهة المعيبة بوضوح وعدم خلطها بالسليمة."],
+        "hi": ["फल विक्रेता द्वारा दागी फलों को नीचे छिपाने के बजाय अलग कम दाम पर रखना।"]
+      },
+      "commonMistakes": {
+        "en": ["Weighing heavy cardboard sweet-boxes together with sweets", "Printing deceptive 'halal/organic' logos without testing"],
+        "ur": ["مٹھائی کے ساتھ بھاری گتے کا ڈبہ تول دینا", "بغیر تصدیق جعلی 'حلال' یا 'آرگینک' لیبل لگانا"],
+        "ar": ["وزن الصندوق الثقيل مع الحلويات أو وضع ملصقات مضللة."],
+        "hi": ["मिठाई के साथ भारी डिब्बा तौलना या झूठे 'ऑर्गेनिक/हलाल' लेबल लगाना।"]
+      },
+      "actionSteps": {
+        "en": ["Check your shop/business packaging weights and return clarity", "Always inspect expiry and authenticity"],
+        "ur": ["اپنے کاروبار میں وزن کی درستی، ڈبے کا وزن نکالنا اور واپسی پالیسی واضح کریں"],
+        "ar": ["تحقق من دقة موازينك ووضوح سياسة الاسترجاع."],
+        "hi": ["अपने व्यापार में तौल की शुद्धता और स्पष्ट वापसी नीति सुनिश्चित करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 83, "startAyah": 1, "endAyah": 3, "contextExplanation": {"en": "Severe warning against giving short measure or weight while demanding full value.", "ur": "لیتے وقت پورا لینے اور دیتے وقت ناپ تول میں کمی کرنے پر سخت قرآنی وعید۔", "ar": "ويل للمطففين الذين يبخسون المكيال والميزان.", "hi": "माप-तौल में कमी करने वालों के लिए कठोर चेतावनी।"}}],
+      "hadithIds": ["bukhari_2076"],
+      "sourceLinks": [{"title": "Surah Al-Mutaffifin 83:1-3 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/83/1-3"}],
+      "mcqs": [{"id": "mcq_r27", "question": {"en": "If a seller hides a known engine flaw in a used vehicle, what Islamic consumer right applies when discovered?", "ur": "اگر کوئی دکاندار گاڑی یا موبائل کا معلوم عیب چھپا کر بیچ دے تو خریدار کو کون سا شرعی حق حاصل ہے؟", "ar": "ماذا يثبت للمشتري إذا كتم البائع عيباً معلوماً في السلعة؟", "hi": "यदि विक्रेता वाहन या फोन का ज्ञात दोष छिपाकर बेचे तो खरीदार को कौन सा अधिकार प्राप्त होता है?"}, "options": {"en": ["No right once cash leaves hand", "Khiyar al-Ayb (right to return or seek fair redress due to hidden defect)", "Only 1% discount", "Blame the buyer"], "ur": ["نقد دینے کے بعد کوئی حق نہیں", "خیارِ عیب (خریدار کو چیز واپس کرنے یا انصاف طلب کرنے کا شرعی حق)", "صرف 1% رعایت", "خریدار کی غلطی"], "ar": ["لا حق له", "خيار العيب والرد بالإنصاف", "خصم ١٪", "اللوم على المشتري"], "hi": ["कोई अधिकार नहीं", "ख़ियार-उल-ऐब (दोष के कारण वापसी या न्यायसंगत समाधान का अधिकार)", "केवल 1% छूट", "खरीदार की गलती"]}, "correctIndex": 1, "explanation": {"en": "Islam rejects 'buyer beware' fraud; defect concealment grants the buyer Khiyar al-Ayb.", "ur": "عیب چھپانا حرام ہے اور خریدار کو واپسی کا پورا حق (خیارِ عیب) حاصل ہوتا ہے۔", "ar": "الغش حرام ويثبت به خيار العيب للمشتري.", "hi": "दोष छिपाना हराम है और खरीदार को वापसी का पूर्ण अधिकार मिलता है।"}}]
+    },
+    {
+      "id": "rights_28_dignity_privacy",
+      "departmentId": "dept_rights",
+      "order": 28,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Governance, Justice & Human Dignity", "ur": "حکومت، عدل اور شہری حقوق", "ar": "العدل والحكم وحقوق الإنسان", "hi": "न्याय, शासन और मानवाधिकार"},
+      "title": {"en": "28. Human Dignity & Digital/Home Privacy", "ur": "28. انسانی وقار اور نجی زندگی کا تحفظ", "ar": "٢٨. كرامة الإنسان وحماية الخصوصية", "hi": "28. मानव गरिमा और निजता (प्राइवेसी) के अधिकार"},
+      "introduction": {"en": "Allah honored ALL children of Adam (17:70) and expressly forbade spying (Tajassus), suspicion, and exposing private lives in Quran 49:12 and 24:27.", "ur": "اللہ تعالیٰ نے تمام بنی آدم کو تکریم عطا فرمائی (الاسراء 17:70) اور الحجرات (49:12) میں تجسس (جاسوسی)، بدگمانی اور نجی زندگی میں دخل اندازی کو حرام قرار دیا۔", "ar": "كرم الله بني آدم وحرم التجسس وسوء الظن وكشف عورات الناس وأسرارهم.", "hi": "अल्लाह ने सभी मनुष्यों को सम्मान दिया (17:70) और 49:12 में जासूसी, शक व निजी जीवन में हस्तक्षेप को हराम बताया है।"},
+      "explanation": {"en": "In today's digital era, privacy covers phones, private chats, screenshots, hidden cameras, home interiors, medical records, and past sins. Forwarding private photos, reading someone's unlocked phone, or mocking strangers on TikTok/Reels violates both human dignity (Karamah) and explicit Quranic prohibitions.", "ur": "آج کے ڈیجیٹل دور میں پرائیویسی میں کسی کا موبائل، ذاتی چیٹس، اسکرین شاٹس، خفیہ کیمرے، میڈیکل ریکارڈ اور گھر کی چہار دیواری سب شامل ہیں۔ اجازت کے بغیر کسی کی ویڈیو بنانا یا چیٹس وائرل کرنا صریح گناہ ہے۔", "ar": "تشمل الخصوصية اليوم الهواتف والمحادثات والصور والمعلومات الطبية وحرمة البيوت.", "hi": "डिजिटल युग में फोन, चैट, स्क्रीनशॉट, मेडिकल डेटा और घर की चारदीवारी की निजता की रक्षा अनिवार्य है।"},
+      "dutyBearer": {"en": "Every individual, parent, spouse, journalist, and social media user.", "ur": "ہر فرد، والدین، میاں بیوی، صحافی اور سوشل میڈیا صارف۔", "ar": "كل فرد وإعلامي ومستخدم للتقنية.", "hi": "प्रत्येक व्यक्ति, पत्रकार और सोशल मीडिया उपयोगकर्ता।"},
+      "mutualBoundaries": {"en": "Age-appropriate parental safety guidance for young minors differs from invasive public shaming or snooping on adults' private affairs.", "ur": "نابالغ بچوں کی آن لائن حفاظت کے ذمہ دارانہ اقدامات اور بالغ افراد کی جاسوسی و تذلیل کے درمیان واضح فرق ہے۔", "ar": "رعاية الصغار الوقائية تختلف عن التجسس المحرم وكشف الأسرار.", "hi": "नाबालिग बच्चों की ऑनलाइन सुरक्षा वयस्कों की जासूसी या अपमान से अलग है।"},
+      "rightsViolatedAction": {"en": "Report non-consensual photo leaks, blackmail, or cyber-stalking to national cybercrime agencies immediately (e.g., NR3C / FIA Cyber Crime / local police).", "ur": "بلیک میلنگ، ذاتی تصاویر یا ویڈیوز لیک کرنے پر فوراً سائبر کرائم اداروں اور قانونی مدد سے رجوع کریں۔", "ar": "التبليغ الفوري لجهات مكافحة الجرائم الإلكترونية عن الابتزاز وتسريب الصور.", "hi": "ब्लैकमेलिंग या बिना अनुमति फ़ोटो/वीडियो लीक होने पर तुरंत साइबर अपराध एजेंसी में रिपोर्ट करें।"},
+      "practicalWays": {
+        "en": ["Ask explicit permission before recording or posting anyone (especially children and women)", "Never forward leaked screenshots, gossip, or private audio clips", "Respect closed doors and locked phones"],
+        "ur": ["اجازت کے بغیر کسی کی تصویر یا ویڈیو ہرگز نہ بنائیں اور نہ پوسٹ کریں", "کسی کی لیک ہونے والی چیٹ یا نجی کلپ آگے نہ پھیلائیں", "بند دروازوں اور دوسروں کے فون کا احترام کریں"],
+        "ar": ["الاستئذان قبل التصوير ومنع تداول التسريبات وحفظ ستر الناس."],
+        "hi": ["बिना अनुमति फ़ोटो/वीडियो न लें न पोस्ट करें", "लीक चैट या क्लिप आगे न भेजें", "दूसरों के फोन व बंद दरवाज़ों का सम्मान करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Deleting a viral embarrassing street clip instead of forwarding it and blurring bystanders in community videos."],
+        "ur": ["کسی کی تضحیک پر مبنی وائرل کلپ آگے بھیجنے کے بجائے ڈیلیٹ کر دینا۔"],
+        "ar": ["حذف مقطع مسيء لخصوصية شخص بدلاً من إعادة نشره."],
+        "hi": ["किसी की निजता भंग करने वाला वायरल क्लिप आगे भेजने के बजाय डिलीट करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Recording accident victims or grieving families instead of helping", "Checking colleagues' screens or phones secretly"],
+        "ur": ["حادثے کے زخمیوں کی مدد کرنے کے بجائے موبائل سے ویڈیوز بنانا", "ساتھیوں کے موبائل یا لیپ ٹاپ میں جھانکنا"],
+        "ar": ["تصوير المصابين بدلاً من إسعافهم أو التلصص على الشاشات."],
+        "hi": ["दुर्घटना पीड़ितों की मदद के बजाय वीडियो बनाना या दूसरों की स्क्रीन में ताक-झांक करना।"]
+      },
+      "actionSteps": {
+        "en": ["Audit your social feeds for any non-consensual media and remove it", "Practice husn az-zann (assuming good unless clear proof exists)"],
+        "ur": ["اگر آپ کے اکاؤنٹ پر کسی کی اجازت کے بغیر کوئی ویڈیو یا تصویر ہو تو فوراً ہٹائیں"],
+        "ar": ["احذف أي محتوى ينتهك الخصوصية والتزم حسن الظن."],
+        "hi": ["बिना सहमति साझा कोई भी सामग्री हटाएं और नेक गुमान रखें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 17, "startAyah": 70, "endAyah": 70, "contextExplanation": {"en": "Proclaims universal human dignity bestowed upon all descendants of Adam.", "ur": "تمام بنی نوع انسان کی تکریم و عزت کا قرآنی اعلان۔", "ar": "ولقد كرمنا بني آدم.", "hi": "समस्त मानव जाति के सम्मान की क़ुरआनी घोषणा।"}},
+        {"surahNumber": 49, "startAyah": 12, "endAyah": 12, "contextExplanation": {"en": "Forbids negative suspicion, spying (Tajassus), and backbiting.", "ur": "بدگمانی، تجسس (جاسوسی) اور غیبت کی قطعی ممانعت۔", "ar": "اجتنبوا كثيراً من الظن ولا تجسسوا ولا يغتب بعضكم بعضاً.", "hi": "संदेह, जासूसी और चुगली पर कठोर प्रतिबंध।"}}
+      ],
+      "hadithIds": ["muslim_2564a", "bukhari_6245"],
+      "sourceLinks": [{"title": "Surah Al-Hujurat 49:12 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/49/12"}],
+      "mcqs": [{"id": "mcq_r28", "question": {"en": "Which actions are explicitly grouped together and forbidden in Quran 49:12?", "ur": "سورۃ الحجرات 49:12 میں کن تین کاموں سے ایک ساتھ منع فرمایا گیا ہے؟", "ar": "ما الثلاث أمور المنهي عنها معاً في الحجرات ١٢؟", "hi": "क़ुरआन 49:12 में किन तीन कार्यों को एक साथ वर्जित किया गया है?"}, "options": {"en": ["Charity, prayer, fasting", "Excessive negative suspicion, spying (Tajassus), and backbiting", "Reading, writing, trade", "Travel, marriage, gifts"], "ur": ["صدقہ، نماز، روزہ", "کثرتِ بدگمانی، تجسس (جاسوسی) اور غیبت", "پڑھنا، لکھنا، تجارت", "سفر، نکاح، تحفہ"], "ar": ["الصلاة والزكاة", "كثرة الظن والتجسس والغيبة", "التجارة", "السفر"], "hi": ["दान, नमाज़, रोज़ा", "अत्यधिक संदेह, जासूसी (तजस्सुस) और पीठ पीछे बुराई", "पढ़ना, लिखना, व्यापार", "यात्रा, विवाह"]}, "correctIndex": 1, "explanation": {"en": "Quran 49:12 strictly prohibits baseless suspicion, spying into privacy, and backbiting.", "ur": "الحجرات 49:12 میں بدگمانی، ٹوہ لگانا اور غیبت سختی سے حرام قرار دی گئی ہیں۔", "ar": "تلك هي الأسس الثلاثة لصون الكرامة والخصوصية.", "hi": "क़ुरआन 49:12 में शक, जासूसी और चुगली सख्त मना हैं।"}}]
+    },
+    {
+      "id": "rights_29_deceased",
+      "departmentId": "dept_rights",
+      "order": 29,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Additional Civic & Sacred Duties", "ur": "میت، ماحول اور مقدس ذمہ داریاں", "ar": "الحقوق العامة والوفاة والبيئة", "hi": "दिवंगत व पर्यावरण दायित्व"},
+      "title": {"en": "29. Rights of the Deceased (Janazah, Debts & Honor)", "ur": "29. میت کے حقوق: تجہیز و تکفین، قرض، وصیت اور احترام", "ar": "٢٩. حقوق الميت: التجهيز والديون والوصية والستر", "hi": "29. दिवंगत (मय्यित) के अधिकार"},
+      "introduction": {"en": "Even after death, a person's rights continue: dignified washing, shrouding, Janazah prayer, swift payment of debts (before inheritance!), fulfilling valid Wasiyyat, and guarding their reputation.", "ur": "وفات کے بعد بھی انسان کے حقوق باقی رہتے ہیں: غسل و کفن، نمازِ جنازہ، وراثت سے قبل قرضوں کی ادائیگی، جائز وصیت کی تکمیل اور میت کے عیوب پر پردہ پوشی۔", "ar": "تستمر حقوق المسلم بعد وفاته في التجهيز وسداد الديون وتنفيذ الوصية والدعاء وحفظ الذكر.", "hi": "मृत्यु के बाद भी सम्मानजनक अंतिम संस्कार, कर्ज़ अदायगी, वसीयत पूर्ति, दुआ व मान-सम्मान की रक्षा अनिवार्य है।"},
+      "explanation": {"en": "In Sunnah, a believer's soul remains suspended over unpaid debt until settled (Tirmidhi/Ahmad concept; Bukhari 2747 debt care). Funeral feasts should NEVER become a burdensome debt on a grieving widow/orphans — neighbors bring food to the bereaved family (as the Prophet ﷺ instructed for Ja'far's household)! Do not gossip about past faults of the deceased.", "ur": "میت پر قرض کی ادائیگی سب سے پہلا حق ہے (بخاری 2747)۔ سوگوار خاندان پر کھانوں اور رسومات کا بوجھ ڈالنے کے بجائے ہمسائے ان کے لیے کھانا بھیجیں (جیسا کہ حضرت جعفرؓ کے گھر کے لیے حکم ہوا)۔ میت کی برائیوں کا تذکرہ نہ کریں بلکہ دعائے مغفرت کریں۔", "ar": "سداد الدين مقدم، وتكليف أهل الميت بولائم العزاء مخالفة للسنة، ويُنهى عن سب الأموات.", "hi": "कर्ज़ अदायगी प्राथमिकता है; शोक संतप्त परिवार पर दावत का बोझ न डालें बल्कि पड़ोसी भोजन भेजें और दिवंगत की निंदा न करें।"},
+      "dutyBearer": {"en": "Heirs, community members, Imams, and neighbors.", "ur": "ورثاء، اہلِ محلہ، امام مسجد اور ہمسائے۔", "ar": "الورثة والجيران وأهل المسجد.", "hi": "वारिस, पड़ोसी व समाज।"},
+      "mutualBoundaries": {"en": "Lawful Wasiyyat never exceeds 1/3 nor disinherits rightful Quranic heirs; extravagant tombs, paid wailing, or borrowing on Riba for Qul/Chehlum feasts contradict Sunnah.", "ur": "جائز وصیت 1/3 سے زائد نہیں ہو سکتی اور نہ کسی وارث کو محروم کر سکتی ہے؛ رسموں کے لیے سودی قرض لینا ناجائز ہے۔", "ar": "الوصية في حدود الثلث لغير وارث مع تجنب البدع والإسراف.", "hi": "वैध वसीयत 1/3 से अधिक नहीं हो सकती और शोक में दिखावा या सूद लेकर खर्च करना गलत है।"},
+      "rightsViolatedAction": {"en": "Family elders should promptly convene after burial to document and settle all debts and unpaid Mahr transparently.", "ur": "تدفین کے بعد بزرگ جلد تمام قرضوں اور حقِ مہر کی ادائیگی کا شفاف بندوبست کریں۔", "ar": "المبادرة بتوثيق وسداد ديون الميت فور الدفن.", "hi": "दफ़्न के बाद परिवारजन मिलकर सभी कर्ज़ व महर तुरंत अदा करें।"},
+      "practicalWays": {
+        "en": ["Send warm cooked meals to the bereaved household for the first 3 days", "Announce publicly at Janazah for any unsettled debts owed by the deceased", "Make regular dua and ongoing charity (Sadaqah Jariyah) for departed loved ones"],
+        "ur": ["سوگوار گھرانے کو ابتدائی ایام میں خود کھانا پکا کر بھیجیں", "جنازے پر قرض کے واجبات کی ادائیگی کے لیے رابطے کا اعلان کریں", "مرحومین کے لیے دعا، استغفار اور صدقہ جاریہ کرتے رہیں"],
+        "ar": ["إعداد الطعام لأهل الميت وسداد ديونه والدعاء والصدقة الجارية له."],
+        "hi": ["शोक संतप्त परिवार को भोजन भेजें", "जनाज़े पर किसी बकाया कर्ज़ की सूचना हेतु घोषणा करें", "मग़फ़िरत की दुआ और सदक़ा-ए-जारिया करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Children paying off their late father's business debts first from his bank savings before claiming a single rupee of inheritance."],
+        "ur": ["اولاد کا وراثت سے ایک روپیہ لینے سے پہلے اپنے مرحوم والد کے کاروباری و ذاتی قرضے مکمل چکا دینا۔"],
+        "ar": ["سداد الأبناء لديون والدهم المتوفى كاملة قبل قسمة التركة."],
+        "hi": ["संतान द्वारा विरासत लेने से पहले दिवंगत पिता के सभी कर्ज़ पूरी तरह चुकाना।"]
+      },
+      "commonMistakes": {
+        "en": ["Forcing a grieving family to host huge expensive feasts", "Delaying debt settlement while arguing over inheritance shares", "Making cruel remarks during Ghusl/burial"],
+        "ur": ["غمزدہ گھرانے سے بھاری دعوتوں کا تقاضا کرنا", "قرض چکائے بغیر وراثت پر جھگڑنا", "غسل یا تدفین کے وقت ناپسندیدہ تبصرے کرنا"],
+        "ar": ["إلزام أهل الميت بإطعام المعزين أو إهمال ديون الميت."],
+        "hi": ["शोकाकुल परिवार से बड़ी दावत की उम्मीद रखना या कर्ज़ चुकाए बिना बंटवारे पर झगड़ना।"]
+      },
+      "actionSteps": {
+        "en": ["Record your own debts/assets cleanly so loved ones aren't burdened", "Pray for deceased family and community members today"],
+        "ur": ["اپنے ذاتی قرضوں اور امانتوں کا تحریری ریکارڈ واضح رکھیں", "آج اپنے مرحومین کے لیے مغفرت کی دعا کریں"],
+        "ar": ["دوّن وصيتك وديونك وأكثر من الدعاء للأموات."],
+        "hi": ["अपने कर्ज़ व अमानतों का लिखित रिकॉर्ड रखें और दिवंगतों के लिए दुआ करें।"]
+      },
+      "evidenceBadge": "scholarly_consensus",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Places the deceased's valid will and debts prior to estate inheritance.", "ur": "میت کی وصیت اور قرض کو وراثت سے مقدم رکھنے کا قرآنی حکم۔", "ar": "تقديم الوصية والدين قبل توزيع الميراث.", "hi": "वसीयत व कर्ज़ को विरासत से पहले पूरा करने का निर्देश।"}}],
+      "hadithIds": ["bukhari_2742"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:11 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/11"}],
+      "mcqs": [{"id": "mcq_r29", "question": {"en": "According to the Sunnah, who should prepare meals during the first days of mourning?", "ur": "سنتِ نبوی ﷺ کے مطابق تعزیت کے ابتدائی ایام میں کھانے کا انتظام کسے کرنا چاہیے؟", "ar": "من يُسنّ له إعداد الطعام في أيام العزاء الأولى؟", "hi": "सुन्नत के अनुसार शोक के शुरुआती दिनों में भोजन का प्रबंध किसे करना चाहिए?"}, "options": {"en": ["The bereaved family must throw huge banquets", "Relatives and neighbors should send food to comfort the bereaved family", "Charge visitors admission", "Skip eating"], "ur": ["غمزدہ خاندان بڑی دعوت کرے", "ہمسائے اور رشتہ دار سوگوار خاندان کی دلجوئی کے لیے ان کے گھر کھانا بھیجیں", "فیس لیں", "کھانا بند کریں"], "ar": ["إرهاق أهل الميت بالولائم", "الجيران والأقارب يصنعون الطعام لأهل الميت", "دفع رسوم", "ترك الأكل"], "hi": ["शोक संतप्त परिवार दावत दे", "पड़ोसी और रिश्तेदार शोक संतप्त परिवार के लिए भोजन भेजें", "शुल्क लें", "भोजन न करें"]}, "correctIndex": 1, "explanation": {"en": "The Prophet ﷺ told his companions to prepare food for Ja'far's grieving household, relieving them of hosting pressure.", "ur": "نبی کریم ﷺ نے حضرت جعفرؓ کے گھر والوں کے لیے کھانا تیار کر کے بھیجنے کا حکم فرمایا تاکہ غمزدہ خاندان پر بوجھ نہ پڑے۔", "ar": "اصنعوا لآل جعفر طعاماً فقد أتاهم ما يشغلهم.", "hi": "नबी ﷺ ने जाफ़र (रज़ि.) के शोक संतप्त परिवार के लिए भोजन भेजने का आदेश दिया था।"}}]
+    },
+    {
+      "id": "rights_30_environment",
+      "departmentId": "dept_rights",
+      "order": 30,
+      "groupCode": "CIVIC",
+      "groupLabel": {"en": "Additional Civic & Sacred Duties", "ur": "میت، ماحول اور مقدس ذمہ داریاں", "ar": "الحقوق العامة والوفاة والبيئة", "hi": "दिवंगत व पर्यावरण दायित्व"},
+      "title": {"en": "30. Animals, Plants, Water & Environmental Rights", "ur": "30. جانوروں، پودوں، پانی اور ماحول کے حقوق", "ar": "٣٠. حقوق الحيوان والنبات والماء والبيئة", "hi": "30. पशुओं, वृक्षों, जल और पर्यावरण के अधिकार"},
+      "introduction": {"en": "Humanity is Allah's Khaleefah (steward) on Earth — not its destroyer. Islam protects living creatures as communities (6:38), forbids waste even in Wudu (7:31), and promises reward for planting trees and watering animals (Bukhari 2363).", "ur": "انسان زمین پر اللہ کا خلیفہ (امین) ہے، فسادی نہیں۔ اسلام جانوروں کو اللہ کی مخلوق و امت قرار دیتا ہے (الانعام 6:38)، پانی و رزق کے اسراف سے روکتا ہے (الاعراف 7:31) اور شجرکاری و جانوروں پر رحم کو صدقہ قرار دیتا ہے۔", "ar": "الإنسان مستخلف في الأرض؛ فرفقُه بالحيوان وصون الماء والغرس من أصول الإيمان.", "hi": "मनुष्य पृथ्वी का संरक्षक (ख़लीफ़ा) है; पशु-करुणा, जल संरक्षण व वृक्षारोपण इस्लाम में पुण्य कार्य हैं।"},
+      "explanation": {"en": "Quran 7:56 warns: 'Do not cause corruption on the earth after it has been set right,' and 30:41 notes that environmental/land corruption reflects human misdeeds. In Sahih al-Bukhari 2363, giving water to a thirsty dog brought Divine forgiveness, while starving a confined cat drew severe punishment (Bukhari 3318). Overloading donkeys/horses, dogfighting, cutting green trees needlessly, wasting water, and polluting rivers violate explicit Islamic stewardship.", "ur": "سورۃ الاعراف (7:56) میں زمین میں اصلاح کے بعد فساد پھیلانے سے منع فرمایا گیا اور الروم (30:41) میں خشکی و تری کی خرابی کو انسانی اعمال کا نتیجہ بتایا گیا۔ پیاسے کتے کو پانی پلانے پر بخشش ملی (بخاری 2363) اور بلی کو بھوکا باندھنے پر عذاب کا ذکر آیا۔ پانی کا ضیاع، جانوروں پر بے جا بوجھ، پرندوں کا بلاوجہ شکار اور دریاؤں میں گندگی پھینکنا اسلامی تعلیمات کے خلاف ہے۔", "ar": "حذّر القرآن من الإفساد في الأرض والإسراف، وأوجبت السنة الرفق بكل كبد رطبة.", "hi": "क़ुरआन 7:56 धरती को दूषित करने से रोकता है और बुखारी 2363 प्यासे कुत्ते को पानी पिलाने पर क्षमा का प्रमाण देता है।"},
+      "dutyBearer": {"en": "Farmers, pet/livestock owners, factory operators, households, and all citizens.", "ur": "کسان، مویشی و پالتو جانور رکھنے والے، فیکٹری مالکان، گھریلو افراد اور تمام شہری۔", "ar": "المزارعون وأصحاب المصانع والأسر وكل مستخلف.", "hi": "किसान, पशुपालक, उद्योगपति, परिवार व सभी नागरिक।"},
+      "mutualBoundaries": {"en": "Lawful food use, Qurbani/slaughter (requiring sharp blades, calm handling, zero slaughter in front of another animal), or protecting life from dangerous pests still demands minimizing suffering strictly.", "ur": "ذبح یا قربانی کے وقت بھی تیز چھری، آرام، پانی اور دوسرے جانور کے سامنے ذبح نہ کرنے کی سخت ہدایت ہے تاکہ کم سے کم تکلیف ہو۔", "ar": "حتى عند الذبح المشروع تجب الإحسان وحدُّ الشفرة وإراحة الذبيحة.", "hi": "क़ुर्बानी या वैध उपयोग में भी तेज़ छुरी, पानी व दूसरे पशु के सामने न काटने का करुणा-नियम लागू है।"},
+      "rightsViolatedAction": {"en": "Report illegal factory toxic dumping, deforestation, and severe animal cruelty to environmental & municipal protection agencies.", "ur": "فیکٹریوں کے زہریلے فضلے، درختوں کی ناجائز کٹائی اور جانوروں پر ظلم کی ماحولیاتی اداروں میں شکایت کریں۔", "ar": "حماية البيئة والإبلاغ عن التلوث الصناعي وقسوة الحيوان.", "hi": "औद्योगिक प्रदूषण, अवैध कटाई व पशु क्रूरता की सूचना पर्यावरण विभाग को दें।"},
+      "practicalWays": {
+        "en": ["Use minimal running water during Wudu, dishes, and car washes (turn off taps cleanly)", "Leave fresh water bowls on rooftops/verandas for birds and stray animals in heat", "Plant shade or fruit trees (Sadaqah Jariyah) and dispose of plastics responsibly"],
+        "ur": ["وضو، برتن اور صفائی میں نل کھلا نہ چھوڑیں اور پانی کی بچت کریں", "گرمیوں میں چھتوں یا باہر پرندوں اور جانوروں کے لیے تازہ پانی رکھیں", "سایہ دار و پھل دار درخت لگائیں اور پلاسٹک کچرا کوڑے دان میں ڈالیں"],
+        "ar": ["الاقتصاد في ماء الوضوء وسقي الطيور والغرس ومنع التلوث البلاستيكي."],
+        "hi": ["वुज़ू व सफाई में पानी की बचत करें", "गर्मी में पक्षियों/पशुओं के लिए पानी रखें", "पेड़ लगाएं और प्लास्टिक कचरा कम करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Installing water-saving aerators on mosque Wudu taps and planting native shade trees in the courtyard."],
+        "ur": ["مسجد کے وضو خانے کی ٹوٹیوں پر پانی بچانے والے ایریٹرز لگانا اور صحن میں سایہ دار درخت لگانا۔"],
+        "ar": ["تركيب مرشدات المياه في مواضئ المسجد وغرس الأشجار في باحته."],
+        "hi": ["मस्जिद के वुज़ू नलों पर जल-बचत नोज़ल लगाना और आंगन में छायादार वृक्ष लगाना।"]
+      },
+      "commonMistakes": {
+        "en": ["Wasting gallons of water while keeping Wudu tap wide open", "Overloading work donkeys/horses or neglecting pet vet care", "Burning plastic trash near neighborhoods"],
+        "ur": ["وضو کے دوران ٹوٹی پوری کھول کر گیلنوں پانی ضائع کرنا", "باربرداری کے جانوروں پر طاقت سے زیادہ بوجھ لادنا", "آبادی میں پلاسٹک کا کچرا جلانا"],
+        "ar": ["الإسراف في ماء الوضوء وإرهاق الدواب وحرق النفايات."],
+        "hi": ["वुज़ू में नल खुला छोड़कर पानी बहाना, पशुओं पर अत्यधिक बोझ डालना या प्लास्टिक जलाना।"]
+      },
+      "actionSteps": {
+        "en": ["Reduce your tap flow during today's Wudu consciously", "Place a water bowl outside or plant a sapling this week"],
+        "ur": ["آج وضو کرتے وقت نل ہلکا رکھ کر پانی کی حفاظت کریں اور پرندوں کے لیے پانی رکھیں"],
+        "ar": ["خفف تدفق الماء عند وضوئك اليوم واغرس شجرة أو اسقِ طيراً."],
+        "hi": ["आज वुज़ू में जल बचाएं और पक्षियों के लिए पानी रखें या पौधा लगाएं।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 6, "startAyah": 38, "endAyah": 38, "contextExplanation": {"en": "Describes creatures of the earth and birds as communities (Umam) worthy of respect.", "ur": "زمین کے جانوروں اور پرندوں کو انسانوں جیسی امتیں قرار دینے کا قرآنی بیان۔", "ar": "وما من دابة في الأرض ولا طائر يطير بجناحيه إلا أمم أمثالكم.", "hi": "धरती के जीवों और पक्षियों को समुदायों (उमम) के रूप में सम्मान देने वाली आयत।"}},
+        {"surahNumber": 7, "startAyah": 31, "endAyah": 31, "contextExplanation": {"en": "Prohibits wastefulness (Israf) in food, drink, and resources.", "ur": "کھانے پینے اور وسائل میں اسراف و ضیاع سے ممانعت۔", "ar": "كلوا واشربوا ولا تسرفوا.", "hi": "भोजन, जल और संसाधनों की बर्बादी (इसराफ़) पर रोक।"}},
+        {"surahNumber": 30, "startAyah": 41, "endAyah": 41, "contextExplanation": {"en": "Links ecological corruption on land and sea to human negligence.", "ur": "خشکی اور سمندر میں بگاڑ کو انسانی ہاتھوں کے اعمال سے جوڑنے کا قرآنی انتباہ۔", "ar": "ظهر الفساد في البر والبحر بما كسبت أيدي الناس.", "hi": "भूमि व समुद्र के प्रदूषण को मानवीय कर्मों का परिणाम बताने वाली आयत।"}}
+      ],
+      "hadithIds": ["bukhari_2363"],
+      "sourceLinks": [{"title": "Surah Al-An'am 6:38 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/6/38"}, {"title": "Sahih al-Bukhari 2363 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:2363"}],
+      "mcqs": [{"id": "mcq_r30", "question": {"en": "What lesson does Sahih al-Bukhari 2363 ('In every living creature there is reward') establish?", "ur": "صحیح بخاری 2363 کی حدیث 'ہر ذی روح (جاندار) کے ساتھ بھلائی میں اجر ہے' کیا اصول سکھاتی ہے؟", "ar": "ماذا ترشدنا القاعدة النبوية: في كل كبد رطبة أجر؟", "hi": "सहीह बुखारी 2363 की हदीस 'हर जीवित प्राणी की सेवा में सवाब है' क्या सिखाती है?"}, "options": {"en": ["Animals have no rights", "Showing mercy, water, and care to any living creature earns Divine reward", "Only humans count", "Water can be wasted freely"], "ur": ["جانوروں کا کوئی حق نہیں", "ہر جاندار پر رحم، پانی پلانا اور بھلائی کرنا اللہ کے ہاں اجر کا باعث ہے", "صرف انسان شمار ہوتے ہیں", "پانی بے تحاشا بہایا جا سکتا ہے"], "ar": ["لا حقوق للحيوان", "الرحمة وسقي كل كائن حي سبب للأجر والمغفرة", "الإنسان فقط", "جواز الإسراف"], "hi": ["पशुओं के कोई अधिकार नहीं", "हर जीवित प्राणी पर दया व सेवा ईश्वरीय पुण्य का कारण है", "केवल मनुष्य", "पानी बर्बाद करना वैध है"]}, "correctIndex": 1, "explanation": {"en": "Compassion toward any living creature ('fi kulli kabidin ratbatin ajr') is a sacred Islamic principle.", "ur": "ہر جاندار پر رحم اور مخلوقِ خدا کی خدمت اسلام میں اجر و مغفرت کا ذریعہ ہے۔", "ar": "الرفق بكل كائن حي أصل عظيم في الإسلام.", "hi": "हर जीव पर दया व करुणा इस्लाम में पुण्य और क्षमा का माध्यम है।"}}]
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "lessons": [
+    {
+      "id": "lesson_l4_m20",
+      "level": 4,
+      "moduleNumber": 20,
+      "moduleTitle": {
+        "en": "Module 20: Women & Halal Business in Islam",
+        "ur": "ماڈیول 20: اسلام میں خواتین اور حلال کاروبار",
+        "ar": "الوحدة ٢٠: المرأة والتجارة الحلال في الإسلام",
+        "hi": "मॉड्यूल 20: इस्लाम में महिलाएं और हलाल व्यापार"
+      },
+      "title": {
+        "en": "Independent Financial Rights (4:32), Khadijah (RA) & Ethical Women Entrepreneurship",
+        "ur": "خواتین کی آزاد مالی ملکیت (النساء 4:32)، حضرت خدیجہؓ کا ماڈل اور باحیا کاروباری اصول",
+        "ar": "الذمة المالية المستقلة للمرأة (النساء ٣٢)، نموذج خديجة رضي الله عنها وضوابط العمل",
+        "hi": "महिलाओं के स्वतंत्र वित्तीय अधिकार (4:32), हज़रत ख़दीजा (रज़ि.) मॉडल और शालीन उद्यमिता"
+      },
+      "primaryEvidenceCategory": "direct_quran",
+      "learningObjectives": {
+        "en": [
+          "Affirm women's full independent financial ownership & right to earn, contract, and invest (Quran 4:32).",
+          "Learn from Khadijah bint Khuwaylid (RA), Qaylah al-Anmariyyah (RA), and market supervision reports.",
+          "Practice dignified, modest, safe remote/home/institutional business models respecting Islamic boundaries."
+        ],
+        "ur": [
+          "قرآن (النساء 4:32) کے تحت خواتین کے آزاد مالی حقوق، ملکیت اور کاروبار کا شرعی حق جانیں۔",
+          "حضرت خدیجہؓ اور صحابیات کے مستند تجارتی و ہنر مندانہ کردار کا مطالعہ کریں۔",
+          "شرم و حیا، حفاظت اور خاندانی توازن کے ساتھ خواتین کے لیے باوقار کاروباری ماڈلز سمجھیں۔"
+        ],
+        "ar": [
+          "إثبات الذمة المالية المستقلة للمرأة (النساء ٣٢) ودراسة النماذج التاريخية الموثقة مع الضوابط الشرعية."
+        ],
+        "hi": [
+          "क़ुरआन 4:32 के तहत महिलाओं के स्वतंत्र वित्तीय अधिकार, ऐतिहासिक उदाहरण और शालीन व्यापार मॉडल समझें।"
+        ]
+      },
+      "introduction": {
+        "en": "Surah An-Nisa (4:32) declares unequivocally: 'For men is a share of what they have earned, and for women is a share of what they have earned.' Women hold complete, independent legal capacity over their wealth, wages, inheritance, and business equity.",
+        "ur": "قرآنِ کریم (النساء 4:32) صراحتاً فرماتا ہے: 'مردوں کے لیے اس کا حصہ ہے جو انہوں نے کمایا، اور عورتوں کے لیے اس کا حصہ ہے جو انہوں نے کمایا۔' اسلام عورت کو مکمل آزاد مالی ملکیت و کاروباری اختیار دیتا ہے۔",
+        "ar": "يقرر القرآن الكريم ﴿لِلرِّجَالِ نَصِيبٌ مِمَّا اكْتَسَبُوا وَلِلنِّسَاءِ نَصِيبٌ مِمَّا اكْتَسَبْنَ﴾ (النساء ٣٢)، فللمرأة ذمة مالية مستقلة كاملة.",
+        "hi": "सूरह अन-निसा (4:32) स्पष्ट करती है: 'पुरुषों के लिए उनकी कमाई का हिस्सा है और स्त्रियों के लिए उनकी कमाई का हिस्सा है।' महिलाओं को पूर्ण स्वतंत्र संपत्ति व व्यापारिक अधिकार प्राप्त हैं।"
+      },
+      "explanationUr": "خواتین کی تجارت اور کمائی کے شرعی اصول: (1) مستقل ذمہ داریِ مالی: شوہر، باپ یا بھائی کو عورت کی اجازت کے بغیر اس کی کمائی، مہر یا وراثت لینے کا کوئی شرعی حق نہیں؛ (2) تاریخی ماڈل: ام المؤمنین حضرت خدیجہؓ مکہ کی نامور تاجرہ تھیں جو قابلِ اعتماد مردوں (جیسے نبی اکرم ﷺ نبوت سے قبل) کو شراکت/مضاربت پر تجارتی قافلوں میں بھجوایا کرتی تھیں؛ صحابیہ قیلہ الانماریہؓ (سنن ابی داؤد/ابن ماجہ) نے رسول اللہ ﷺ سے خرید و فروخت کے احکام دریافت فرمائے اور آپ ﷺ نے ان کی رہنمائی فرمائی، اور حضرت زینب بنت جحشؓ (مسلم 2452) دستکاری و چمڑے کی تیاری سے کما کر صدقہ فرمایا کرتی تھیں؛ (3) عملی شرائط: تجارت میں حلال شے، باحیا و محفوظ ماحول، غیر محرم سے تنہائی (خلوت) سے بچاؤ، اور شوہر و بچوں کی باہمی ذمہ داریوں میں توازن و مشاورت شامل ہیں۔",
+      "explanationEn": "Islamic law guarantees women independent legal & financial personhood: (1) Autonomous Ownership (4:32): a woman's savings, Mahr, inheritance, and business profits remain 100% hers—no husband or relative may seize them without consent; (2) Verified Historical Precedents: Khadijah bint Khuwaylid (RA) financed caravan trade via trustworthy partners while managing capital prudently; Zaynab bint Jahsh (RA) crafted leatherwork with her own hands and gave generously (Sahih Muslim 2452); Qaylah al-Anmariyyah (RA) sought market bargaining ethics directly from the Prophet ﷺ (Ibn Majah 2204); (3) Dignified Parameters: trade Halal goods, observe modesty (Hijab) & avoid unsafe seclusion (Khalwah), use digital commerce/agents/female teams wisely, and coordinate family balance harmoniously.",
+      "explanationAr": "يضمن الإسلام للمرأة: (١) استقلالية الذمة المالية كاملةً في الربح والمهر والإرث، (٢) قدوات موثقة مثل خديجة رضي الله عنها في التمويل التجاري، وزينب بنت جحش في الحِرف اليدوية (مسلم ٢٤٥٢)، وقيلة الأنمارية في فقه البيع (ابن ماجه ٢٢٠٤)، (٣) الالتزام بالضوابط الشرعية من الحشمة ومنع الخلوة والتوازن الأسري.",
+      "explanationHi": "इस्लामी कानून महिलाओं को पूर्ण आर्थिक स्वतंत्रता देता है: (1) उनकी कमाई, मेहर व विरासत 100% उन्हीं की है (4:32); (2) हज़रत ख़दीजा (रज़ि.) ने साझेदारी से व्यापार चलाया, हज़रत ज़ैनब बिन्त जहश (मुस्लिम 2452) ने हस्तशिल्प से कमाकर दान किया, और क़ैला अल-अन्मारिया (रज़ि.) ने बाज़ार के नियम पूछे; (3) हलाल उत्पाद, शालीनता, सुरक्षा और पारिवारिक संतुलन के साथ व्यापार पूरी तरह वैध है।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Consent-based lawful commerce applies equally to male & female entrepreneurs (alongside 4:32).", "ur": "النساء 4:29 اور 4:32 مرد و زن دونوں کے لیے باہمی رضامندی سے آزاد تجارت کا حق ثابت کرتی ہیں۔", "ar": "شمول أحكام التجارة والتراضي والاستقلال المالي للرجال والنساء (النساء ٢٩، ٣٢).", "hi": "महिला व पुरुष दोनों को आपसी सहमति से व्यापार का समान वैध अधिकार (4:29 व 4:32)।" },
+          "businessRelevance": { "en": "Protects women's property, Mahr, and earnings from unilateral family appropriation.", "ur": "خواتین کی کمائی، مہر اور کاروباری ملکیت کو ہر قسم کی زبردستی سے محفوظ رکھتی ہے۔", "ar": "حماية أموال المرأة ومهرها وأرباحها من الاستيلاء.", "hi": "महिलाओं की कमाई, मेहर व संपत्ति को जबरन हड़पने से बचाती है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2072", "bukhari_2079"],
+      "classicalFiqh": {
+        "en": "All four Madhahib accord an adult woman full contractual agency to buy, sell, partner (Mudarabah/Musharakah), employ agents (Wakalah), and give Waqf without requiring a male co-signer on her property.",
+        "ur": "چاروں فقہی مذاہب بالغ عورت کو اپنے مال میں خرید و فروخت، شراکت، وکالت اور وقف کا مکمل قانونی اختیار دیتے ہیں۔",
+        "ar": "تجمع المذاهب الأربعة على أهلية المرأة الكاملة للتعاقد والبيع والشراكة والوكالة في مالها.",
+        "hi": "चारों मज़हब बालिग महिला को अपनी संपत्ति बेचने, खरीदने, साझेदारी करने और वक़्फ़ करने का पूर्ण कानूनी अधिकार देते हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "Modest e-commerce, artisanal foods/apparel, graphic/educational tutoring, female clinics, and angel equity via Mudarabah allow women safe high-growth participation.",
+        "ur": "گھریلو و آن لائن ای کامرس، ڈیزائننگ، تدریس، خواتین کلینک اور مضاربت میں سرمایہ کاری باوقار و کامیاب جدید راہیں ہیں۔",
+        "ar": "التجارة الإلكترونية، التصاميم، التعليم، ومشروعات النساء الآمنة أو الاستثمار بالمضاربة.",
+        "hi": "मॉडेस्ट ई-कॉमर्स, हस्तशिल्प, ऑनलाइन शिक्षण, महिला क्लिनिक और मुदारबाह निवेश सुरक्षित आधुनिक अवसर हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Consensus on independent property ownership; Hanafis emphasize full contractual freedom even over marriage/property, while all schools require safe modest workplace conditions and respectful marital consultation on outside schedules.",
+        "ur": "خواتین کی مالی خودمختاری پر اجماع ہے؛ باہر کام کرنے کی صورت میں باحیا محفوظ ماحول اور گھریلو ذمہ داریوں کے توازن پر سب کا اتفاق ہے۔",
+        "ar": "إجماع على استقلالها المالي، مع توافق على مراعاة الضوابط الأخلاقية والأسرية في بيئة العمل.",
+        "hi": "आर्थिक स्वतंत्रता पर सर्वसम्मति है; बाहर कार्य करने पर शालीन माहौल और पारिवारिक संतुलन पर सभी सहमत हैं।"
+      },
+      "modernExample": {
+        "en": "A seamstress launches an online modest-wear brand from home, hires a trusted courier/logistics partner via Wakalah, registers accounts in her own name, and invests profits independently.",
+        "ur": "ایک باہنر خاتون گھر سے آن لائن باحیا ملبوسات کا برانڈ شروع کرے، ڈیلیوری کے لیے محفوظ کوریئر سروس استعمال کرے اور اپنے ذاتی بینک کھاتے میں منافع سنبھالے۔",
+        "ar": "سيدة تدير علامة أزياء محتشمة من منزلها عبر التجارة الإلكترونية مع شركة شحن موثوقة وحساب مستقل.",
+        "hi": "एक महिला घर से मॉडेस्ट कपड़ों का ऑनलाइन ब्रांड चलाती है, विश्वसनीय कूरियर उपयोग करती है और अपने स्वतंत्र खाते में लाभ संभालती है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Independent female bank/business account + modest ethical branding", "ur": "خاتون کا اپنا مستقل بینک کھاتہ اور باوقار شائستہ مارکیٹنگ", "ar": "ذمة وحساب مستقل للمرأة وتسويق منضبط محتشم", "hi": "महिला का स्वतंत्र व्यापार खाता और शालीन नैतिक मार्केटिंग" },
+          "prohibitedPractice": { "en": "Husband seizing wife's wages/Mahr forcibly or forcing immodest exploitation in ads", "ur": "شوہر کا بیوی کی کمائی یا مہر زبردستی چھین لینا یا اشتہارات میں بے حیائی پھیلانا", "ar": "أخذ مال الزوجة دون رضاها أو استغلال المرأة في إعلانات غير محتشمة", "hi": "पति द्वारा पत्नी की कमाई या मेहर जबरन लेना, या विज्ञापनों में अशोभनीय प्रदर्शन करना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Culturally denying women's Islamic right to trade, inherit, or manage their own capital.",
+          "Launching unverified 'women-only work-from-home' pyramid schemes or immodest influencer promotions."
+        ],
+        "ur": [
+          "معاشرتی رسموں کی آڑ میں خواتین کا وراثت یا کاروبار کا شرعی حق دبا دینا۔",
+          "گھر بیٹھے کمائی کے نام پر پیرامڈ/MLM فراڈ ایپس میں پھنس جانا۔"
+        ],
+        "ar": [
+          "حرمان المرأة من إرثها أو حقها في التجارة بعادات غير شرعية، أو الوقوع في احتيال التسويق الهرمي."
+        ],
+        "hi": [
+          "सामाजिक रूढ़ियों के नाम पर महिलाओं का विरासत या व्यापार अधिकार दबाना, या घर-बैठे कमाई वाले MLM घोटालों में फंसना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Ensure clear legal title/bank ownership in the female founder's own name.",
+          "Structure logistics & supplier pickups safely without Khalwah risks.",
+          "Keep products, modeling/visuals, and customer service aligned with Islamic modesty."
+        ],
+        "ur": [
+          "کاروبار و بینک کھاتہ خاتون کے اپنے نام اور اختیار میں رکھیں۔",
+          "ڈلیوری و سپلائی کا محفوظ اور باحیا نظام قائم کریں۔",
+          "مصنوعات اور تشہیر کو اسلامی حیا و وقار کے مطابق رکھیں۔"
+        ],
+        "ar": [
+          "تسجيل الحسابات باسمها، وتأمين الشحن الآمن، والالتزام بالضوابط الأخلاقية في العرض."
+        ],
+        "hi": [
+          "खाते महिला संस्थापक के नाम पर रखें, सुरक्षित लॉजिस्टिक्स चुनें और शालीन विज्ञापन रखें।"
+        ]
+      },
+      "summary": {
+        "en": "Islam honors women's independent economic agency, safeguarded by modest conduct, mutual family respect, and authentic Fiqh.",
+        "ur": "اسلام خواتین کے آزاد معاشی کردار کا محافظ ہے، جو حیا، حفاظت اور باہمی خاندانی احترام کے ساتھ پھلتا پھولتا ہے۔",
+        "ar": "يصون الإسلام حق المرأة في الكسب الحلال والاستقلال المالي ضمن إطار الحشمة والأمان.",
+        "hi": "इस्लाम महिलाओं के स्वतंत्र आर्थिक अधिकार का सम्मान करता है जो शालीनता और पारिवारिक सम्मान के साथ फलता-फूलता है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m20_1",
+          "question": {
+            "en": "If a Muslim wife runs a profitable halal online tailoring business, who holds legal Islamic ownership over her earned profits?",
+            "ur": "اگر مسلمان بیوی اپنا حلال آن لائن سلائی کا کاروبار چلائے تو اس کے منافع کی شرعی مالک کون ہے؟",
+            "ar": "إذا ربحت الزوجة من مشروع خياطة حلال خاص بها، لمن تكون ملكية الأرباح شرعاً؟",
+            "hi": "यदि मुस्लिम पत्नी अपना हलाल सिलाई व्यवसाय चलाए, तो उसके लाभ की कानूनी इस्लामी मालकिन कौन है?"
+          },
+          "options": {
+            "en": [
+              "The wife herself holds 100% independent ownership unless she voluntarily gifts or shares",
+              "Her husband owns 100% automatically",
+              "Her in-laws take half by right"
+            ],
+            "ur": [
+              "بیوی خود 100 فیصد آزاد مالک ہے، الا یہ کہ وہ اپنی خوشی سے ہدیہ یا تعاون کرے",
+              "شوہر خودکار مالک ہے",
+              "سسرال کا آدھا حق ہے"
+            ],
+            "ar": [
+              "الزوجة نفسها تملك أرباحها كاملةً باستقلال إلا ما تتبرع به برضاها",
+              "الزوج يملكها تلقائياً"
+            ],
+            "hi": [
+              "पत्नी स्वयं 100% स्वतंत्र मालकिन है, जब तक वह स्वेच्छा से उपहार न दे",
+              "पति स्वतः मालिक है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Under Quran 4:32 and unanimous consensus, women's property and earnings belong strictly to them unless gifted willingly.",
+            "ur": "النساء 4:32 اور اجماع کے مطابق عورت کی کمائی اس کی اپنی ذاتی ملکیت ہے۔",
+            "ar": "للنساء ذمة مالية مستقلة بنص الآية ٣٢ من سورة النساء.",
+            "hi": "क़ुरआन 4:32 के अनुसार महिलाओं की कमाई और संपत्ति पर उनका पूर्ण स्वतंत्र स्वामित्व होता है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Outline one home-based or digital service venture (e.g., modest fashion, tutoring, artisanal food) with safe delivery Wakalah logistics.",
+        "ur": "گھر سے شروع ہونے والے ایک باوقار کاروبار (مثلاً تدریس، دستکاری یا خالص غذا) کا محفوظ ڈلیوری نظام کے ساتھ خاکہ بنائیں۔",
+        "ar": "صمم خطة لمشروع منزلي أو رقمي مع آلية شحن وتواصل آمنة.",
+        "hi": "सुरक्षित डिलीवरी प्रणाली के साथ घर-आधारित या डिजिटल व्यवसाय की एक रूपरेखा तैयार करें।"
+      },
+      "sources": [
+        { "title": "Quran 4:32 & Sahih Muslim 2452", "category": "direct_quran", "attribution": "Quran.com & Sunnah.com", "url": "https://quran.com/4/32" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m21",
+      "level": 4,
+      "moduleNumber": 21,
+      "moduleTitle": {
+        "en": "Module 21: International Trade, Currency Exchange & Export/Import",
+        "ur": "ماڈیول 21: بین الاقوامی تجارت، کرنسی تبادلہ اور درآمد و برآمد",
+        "ar": "الوحدة ٢١: التجارة الدولية والصرف (العملات) والاستيراد والتصدير",
+        "hi": "मॉड्यूल 21: अंतर्राष्ट्रीय व्यापार, मुद्रा विनिमय और आयात-निर्यात"
+      },
+      "title": {
+        "en": "Spot Currency Rules (Sarf), Islamic Letters of Credit & Customs Integrity",
+        "ur": "کرنسی کا فوری تبادلہ (بیعِ صرف)، اسلامی لیٹر آف کریڈٹ (L/C) اور کسٹمز کی دیانت",
+        "ar": "أحكام الصرف الفوري، والاعتمادات المستندية الإسلامية، والأمانة الجمركية",
+        "hi": "तत्काल मुद्रा विनिमय (सर्फ़), इस्लामी लेटर ऑफ़ क्रेडिट और कस्टम ईमानदारी"
+      },
+      "primaryEvidenceCategory": "contemporary_resolution",
+      "learningObjectives": {
+        "en": [
+          "Apply Sarf (Currency Exchange) rules: cross-currencies may trade at market rate ONLY via spot exchange (Taqabud).",
+          "Use Islamic Murabaha/Wakalah/Musharakah Letters of Credit (LCs) instead of conventional interest LCs.",
+          "Maintain strict honesty in customs declarations, HS codes, and origin certificates."
+        ],
+        "ur": [
+          "بیعِ صرف (کرنسی تبادلہ) کا قانون سمجھیں: مختلف کرنسیاں مارکیٹ ریٹ پر مگر فوری تقابض (نقد بنقد) کے ساتھ تبدیل ہوں۔",
+          "درآمدات میں سودی لیٹر آف کریڈٹ (L/C) کے بجائے اسلامی بینک کی وکالت یا مرابحہ L/C استعمال کریں۔",
+          "کسٹمز بل، اصل قیمت اور سرٹیفکیٹ آف اوریجن میں جھوٹ یا ٹیکس چوری سے مکمل پرہیز کریں۔"
+        ],
+        "ar": [
+          "ضوابط الصرف (التقابض الفوري)، والاعتماد المستندي الإسلامي بالوكالة والمرابحة، والصدق في البيانات الجمركية."
+        ],
+        "hi": [
+          "सर्फ़ नियम (विभिन्न मुद्राओं का तुरंत विनिमय), इस्लामी LC और कस्टम घोषणाओं में ईमानदारी सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "Cross-border commerce turns risky when firms enter speculative forward FX swaps or forge customs invoices. AAOIFI Standard No. 1 (Trading in Currencies) and Islamic Letters of Credit offer seamless global compliance.",
+        "ur": "بین الاقوامی تجارت میں فارورڈ کرنسی سٹہ بازی اور جعلی کسٹمز انوائسز بڑے فتنے ہیں۔ AAOIFI معیار 1 اور اسلامی لیٹر آف کریڈٹ حلال عالمی تجارت کی راہ ہموار کرتے ہیں۔",
+        "ar": "تتجنب التجارة الدولية المشروعة عقود الصرف الآجلة والغش الجمركي، وتعتمد التقابض الفوري والاعتمادات المستندية الإسلامية.",
+        "hi": "अंतर्राष्ट्रीय व्यापार में फॉरवर्ड फ़ॉरेक्स सट्टे व नकली कस्टम बिल बड़े जोखिम हैं। AAOIFI मानक 1 और इस्लामी LC वैश्विक हलाल व्यापार संभव बनाते हैं।"
+      },
+      "explanationUr": "عالمی تجارت و کرنسی کے بنیادی شرعی اصول: (1) بیعِ صرف (کرنسی تبادلہ): صحیح مسلم (1587) کے مطابق مختلف کرنسیاں (مثلاً ڈالر اور روپیہ) مارکیٹ نرخ پر بدلی جا سکتی ہیں، مگر ضروری ہے کہ دونوں طرف سے قبضہ فوراً (یا بینک کلیئرنگ کے عرفی قبضہ حکمی کے اندر، AAOIFI معیار 1) ہو؛ ادھار کرنسی سٹہ یا روایتی فارورڈ FX سوآپ حرام ہیں؛ (2) اسلامی لیٹر آف کریڈٹ (LC): روایتی سودی L/C کے بجائے اسلامی بینک کی فیس پر مبنی وکالت L/C، یا بینک خود مال درآمد کر کے مرابحہ پر بیچے؛ (3) کسٹم اور دستاویزات: کم مالیت کی جعلی انوائس (Under-invoicing) یا جعلی 'میڈ اِن' لیبل لگانا جھوٹ و دھوکہ ہے (صحیح مسلم 102)؛ (4) شپنگ انشورنس میں تکافل یا اگر قانونی مجبوری ہو تو کم از کم ضروری کور اپنایا جائے۔",
+      "explanationEn": "Global trade compliance covers four areas: (1) Currencies (Sarf — Sahih Muslim 1587 & AAOIFI SS 1): different fiat currencies (USD ↔ PKR/EUR) may exchange at any agreed market rate ONLY if settled spot (actual or immediate electronic account credit / constructive Qabd); deferred speculative FX forwards/swaps are prohibited; (2) Islamic LCs (AAOIFI SS 14): import via Wakalah fee LC (100% client cash/line), or Islamic Bank imports asset itself via Murabaha/Musharakah LC without charging interest upon negotiation; (3) Hedging Alternatives: use non-binding unilateral Wa'd FX frameworks vetted by scholars rather than interest swaps; (4) Customs & Origin Integrity: prohibit invoice under-valuation, smuggling, and fake country-of-origin labels.",
+      "explanationAr": "أحكام التجارة الخارجية: (١) الصرف بين عملتين مختلفتين يشترط التقابض الحقيقي أو الحكمي الفوري عبر القيد المصرفي (مسلم ١٥٨٧ ومعيار أيوفي ١)، وتحرم العقود الآجلة والمبادلات الربوية؛ (٢) الاعتماد المستندي الإسلامي بالوكالة بأجر معلوم أو المرابحة (معيار ١٤)؛ (٣) حظر التهرب الجمركي وتزوير الفواتير وشهادات المنشأ.",
+      "explanationHi": "वैश्विक व्यापार के नियम: (1) अलग मुद्राओं का विनिमय बाज़ार दर पर हो सकता है पर तुरंत सुपुर्दगी (क़ब्ज़/तुरंत बैंक क्रेडिट, AAOIFI मानक 1) अनिवार्य है; फॉरवर्ड FX स्वैप वर्जित हैं; (2) वकालह या मुराबहा आधारित इस्लामी LC उपयोग करें (AAOIFI मानक 14); (3) अंडर-इनवॉइसिंग व नकली उत्पत्ति लेबल वर्जित हैं।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 5,
+          "startAyah": 1,
+          "endAyah": 1,
+          "contextNote": { "en": "Faithful adherence to trade treaties, bills of lading, and customs commitments.", "ur": "تجارتی معاہدات، بل آف لیڈنگ اور ملکی کسٹمز قوانین کی دیانتدارانہ پاسداری۔", "ar": "الوفاء بالعقود والالتزامات الدولية والجمركية.", "hi": "व्यापारिक समझौतों और कस्टम घोषणाओं के पालन का आदेश।" },
+          "businessRelevance": { "en": "International shipping invoices and INCOTERMS must reflect truth.", "ur": "برآمدی رسیدیں اور شپنگ معاہدے سچائی پر مبنی ہونے چاہئیں۔", "ar": "صدق فواتير الشحن وشروط التسليم الدولية.", "hi": "अंतर्राष्ट्रीय शिपिंग चालान व नियम सत्य होने चाहिए।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Ubadah ibn as-Samit's Hadith (Sahih Muslim 1587) commands: 'When these kinds differ (e.g., gold vs silver / currency A vs currency B), sell as you wish provided it is hand-to-hand (spot).'",
+        "ur": "صحیح مسلم (1587) میں حضرت عبادہ بن صامتؓ کی روایت ہے: 'جب جنسیں مختلف ہوں تو جیسے چاہو بیچو بشرطیکہ دست بدست (فوری) ہو۔'",
+        "ar": "حديث عبادة بن الصامت (مسلم ١٥٨٧): فإذا اختلفت هذه الأصناف فبيعوا كيف شئتم إذا كان يداً بيد.",
+        "hi": "सहीह मुस्लिम (1587): जब प्रकार अलग हों (जैसे दो मुद्राएं) तो जैसे चाहो बेचो, बशर्ते हाथ-के-हाथ (तत्काल) हो।"
+      },
+      "contemporaryGuidance": {
+        "en": "AAOIFI SS 1 treats T+2 standard international SWIFT settlement delays strictly under banking clearing necessity safeguards when irrevocable—while rejecting margin leverage speculation.",
+        "ur": "AAOIFI معیار 1 بین الاقوامی بینک کلیئرنگ (SWIFT) کی دو دن کی ناگزیر تکنیکی مدت کو عرفی قبضہ حکمی کی گنجائش دیتا ہے، مگر مارجن و سٹہ فاریکس کو حرام قرار دیتا ہے۔",
+        "ar": "يعتبر معيار أيوفي ١ القيد المصرفي الفوري والمهل الفنية المعتادة في التحويلات الدولية قبضاً حكمياً بشروط صارمة، ويحرم المتاجرة بالهامش.",
+        "hi": "AAOIFI मानक 1 तकनीकी अंतरराष्ट्रीय बैंक क्लियरिंग को कुछ शर्तों पर स्वीकार करता है, पर मार्जिन सट्टे को हराम मानता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All schools require spot exchange; Maliki & contemporary councils recognize immediate irrevocable bank transfer confirmation as constructive Qabd.",
+        "ur": "تمام ائمہ فوری قبضے کی شرط لگاتے ہیں؛ معاصر فقہا بینک کھاتے میں ناقابلِ واپسی کریڈٹ کو قبضہ حکمی قرار دیتے ہیں۔",
+        "ar": "تشترط المذاهب التقابض، ويعتبر المعاصرون القيد المصرفي الناجز قبضاً حكمياً.",
+        "hi": "सभी मज़हब तत्काल विनिमय चाहते हैं; समकालीन विद्वान पक्के बैंक क्रेडिट को क़ब्ज़ मानते हैं।"
+      },
+      "modernExample": {
+        "en": "An exporter receives buyer USD via SWIFT directly into an Islamic bank FX account at spot market rate, avoiding speculative forward contracts.",
+        "ur": "برآمد کنندہ فوری اسپاٹ ریٹ پر اسلامی بینک میں ادائیگی وصول کرے اور سودی فارورڈ کرنسی معاہدے سے بچے۔",
+        "ar": "مُصدِّر يتسلم قيمة الشحنة بالعملة الأجنبية عبر تحويل بنكي فوري بسعر الصرف الحاضر.",
+        "hi": "निर्यातक सट्टे वाले फॉरवर्ड कॉन्ट्रैक्ट से बचते हुए इस्लामी बैंक से स्पॉट दर पर तुरंत विदेशी भुगतान प्राप्त करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Spot SWIFT conversion + Islamic Wakalah/Murabaha LC", "ur": "فوری اسپاٹ بینک تبادلہ اور اسلامی لیٹر آف کریڈٹ", "ar": "صرف فوري واعتماد مستندي إسلامي بالمرابحة أو الوكالة", "hi": "तत्काल बैंक विनिमय और इस्लामी लेटर ऑफ़ क्रेडिट" },
+          "prohibitedPractice": { "en": "Under-invoicing customs bills or trading leveraged Forex futures", "ur": "کسٹم چوری کے لیے کم قیمت کا جعلی بل بنانا یا لیوریجڈ فاریکس کھیلنا", "ar": "تزوير الفواتير الجمركية أو مضاربة الفوركس بالرافعة المالية", "hi": "कस्टम चोरी हेतु कम मूल्य का नकली बिल बनाना या लीवरेज फ़ॉरेक्स सट्टा" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Signing conventional bank LC agreements containing automatic interest penalty clauses upon document arrival.",
+          "Engaging retail '1:100 leverage Forex apps' thinking it is normal international currency trade."
+        ],
+        "ur": [
+          "بغیر پڑھے روایتی سودی L/C معاہدے پر دستخط کر دینا۔",
+          "ریٹیل فاریکس لیوریج ایپس کو حلال کرنسی تجارت سمجھ لینا۔"
+        ],
+        "ar": [
+          "توقيع اعتمادات تقليدية تتضمن فوائد تأخير، أو الخلط بين الصرف المشروع وتداول الفوركس بالهامش."
+        ],
+        "hi": [
+          "बिना पढ़े ब्याज वाले पारंपरिक LC पर हस्ताक्षर करना, या 1:100 लीवरेज फ़ॉरेक्स को सामान्य व्यापार समझ लेना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Verify spot settlement in all cross-currency payments.",
+          "Route import/export letters of credit via Islamic Banking desks.",
+          "Audit every commercial invoice & packing list for 100% customs truthfulness."
+        ],
+        "ur": [
+          "کرنسی تبادلے میں فوری ادائیگی یقینی بنائیں۔",
+          "درآمد و برآمد کے لیے اسلامی بینک کا L/C ڈیسک استعمال کریں۔",
+          "کسٹمز بل اور پیکنگ لسٹ میں 100 فیصد سچائی رکھیں۔"
+        ],
+        "ar": [
+          "التحقق من التقابض الفوري، واستخدام الاعتمادات الإسلامية، وصدق البيانات الجمركية."
+        ],
+        "hi": [
+          "तत्काल मुद्रा निपटान सुनिश्चित करें, इस्लामी LC उपयोग करें और कस्टम चालान सत्य रखें।"
+        ]
+      },
+      "summary": {
+        "en": "International trade flourishes Islamically via spot Sarf exchange, Islamic LCs, and uncompromising customs honesty.",
+        "ur": "بین الاقوامی تجارت فوری کرنسی تبادلے، اسلامی L/C اور کسٹمز کی دیانت سے حلال و بابرکت بنتی ہے۔",
+        "ar": "تزدهر التجارة الدولية بالصرف الفوري والاعتمادات الإسلامية وصدق الفواتير الجمركية.",
+        "hi": "अंतर्राष्ट्रीय व्यापार तत्काल विनिमय, इस्लामी LC और कस्टम ईमानदारी से हलाल बनता है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m21_1",
+          "question": {
+            "en": "When exchanging USD for PKR (two different currencies), what condition from Sahih Muslim 1587 MUST be met?",
+            "ur": "ڈالر کو پاکستانی روپے میں تبدیل کرتے وقت صحیح مسلم 1587 کی کون سی شرط لازمی ہے؟",
+            "ar": "عند مبادلة عملة بأخرى مختلفة الجنس، ما الشرط اللازم في صحيح مسلم ١٥٨٧؟",
+            "hi": "दो अलग मुद्राओं (जैसे USD और INR/PKR) को बदलते समय सहीह मुस्लिम 1587 की कौन सी शर्त अनिवार्य है?"
+          },
+          "options": {
+            "en": [
+              "Spot exchange / immediate constructive settlement (hand-to-hand)",
+              "Exactly 1:1 equal numerical rate",
+              "Deferred settlement after 6 months"
+            ],
+            "ur": [
+              "فوری قبضہ و تبادلہ (یداً بید / تقابض)",
+              "دونوں کرنسیاں 1:1 برابر ہوں",
+              "چھ ماہ بعد ادائیگی"
+            ],
+            "ar": [
+              "التقابض الفوري (يداً بيد)",
+              "التماثل الرقمي ١:١"
+            ],
+            "hi": [
+              "तत्काल विनिमय / सुपुर्दगी (यदन बियद)",
+              "1:1 समान संख्या"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Different currencies may trade at market exchange rates, provided immediate spot delivery (Qabd) happens on both sides.",
+            "ur": "مختلف کرنسیاں مارکیٹ ریٹ پر مگر فوری تقابض کے ساتھ تبدیل کرنا شرط ہے۔",
+            "ar": "يجوز التفاضل في السعر عند اختلاف الجنس بشرط التقابض الفوري.",
+            "hi": "अलग मुद्राएं बाज़ार दर पर बदल सकती हैं, बशर्ते दोनों तरफ़ तत्काल सुपुर्दगी हो।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Compare your bank's conventional import LC fee/interest schedule against a local Islamic bank's Wakalah/Murabaha LC structure.",
+        "ur": "اپنے علاقے کے کسی اسلامی بینک کے وکالت/مرابحہ L/C کا روایتی L/C سے موازنہ نوٹ کریں۔",
+        "ar": "قارن بين شروط الاعتماد المستندي التقليدي والاعتماد الإسلامي بالوكالة أو المرابحة.",
+        "hi": "स्थानीय इस्लामी बैंक के वकालह/मुराबहा LC की तुलना पारंपरिक ब्याज वाले LC से करें।"
+      },
+      "sources": [
+        { "title": "AAOIFI SS No. 1 (Currencies) & No. 14 (Documentary Credit)", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" },
+        { "title": "Sahih Muslim 1587", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/muslim:1587" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m22",
+      "level": 4,
+      "moduleNumber": 22,
+      "moduleTitle": {
+        "en": "Module 22: Modern Online Business & E-Commerce Models",
+        "ur": "ماڈیول 22: جدید آن لائن کاروبار اور ڈیجیٹل کمائی کے 10 ماڈلز",
+        "ar": "الوحدة ٢٢: التجارة الإلكترونية الحديثة ونماذج العمل الرقمي",
+        "hi": "मॉड्यूल 22: आधुनिक ऑनलाइन व्यवसाय और डिजिटल मॉडल"
+      },
+      "title": {
+        "en": "Amazon, Daraz, Dropshipping, Affiliate, Freelancing, SaaS, Ads & Digital Wallets",
+        "ur": "ایمازون، دراز، ڈراپ شپنگ، ایفلی ایٹ، فری لانسنگ، سافٹ ویئر، یوٹیوب اشتہارات، سپانسرشپ اور ڈیجیٹل والٹس",
+        "ar": "أمازون، دراز، الدروبشيبينغ، التسويق بالعمولة، العمل الحر، الإعلانات والمحافظ الرقمية",
+        "hi": "अमेज़न, दराज़, ड्रॉपशीपिंग, एफ़िलिएट, फ़्रीलांसिंग, डिजिटल सेवाएं, विज्ञापन व डिजिटल वॉलेट"
+      },
+      "primaryEvidenceCategory": "contemporary_resolution",
+      "learningObjectives": {
+        "en": [
+          "Structure Amazon FBA/FBM & Daraz stores cleanly with real inventory ownership, defect transparency, and non-fake reviews.",
+          "Fix invalid unowned dropshipping using Wakalah agency fees, own stock holding, or structured purchase-order promises.",
+          "Filter Affiliate offers, SaaS/Freelance clients, YouTube/Social ad networks, sponsorships, and digital wallets free of Haram niches & interest."
+        ],
+        "ur": [
+          "ایمازون (FBA/FBM) اور دراز اسٹور کو حقیقی ملکیت، سچی تصاویر اور بغیر جعلی ریویوز کے حلال چلانا۔",
+          "ڈراپ شپنگ کی خرابی (بغیر قبضہ بیع) کو خود اسٹاک خریدنے، وکالت کمیشن یا درست وعدے سے حلال بنانا۔",
+          "ایفلی ایٹ، فری لانسنگ، ڈیجیٹل سروسز، سوشل میڈیا اشتہارات/سپانسرشپ اور ڈیجیٹل ادائیگیوں کے شرعی حدود سمجھنا۔"
+        ],
+        "ar": [
+          "تكييف التجارة الإلكترونية (أمازون/دراز)، وحل إشكال الدروبشيبينغ بالوكالة أو التملك، وضبط التسويق بالعمولة والإعلانات الرقمية."
+        ],
+        "hi": [
+          "अमेज़न/दराज़ पर वास्तविक स्वामित्व, ड्रॉपशीपिंग का वैध समाधान, एफ़िलिएट, फ़्रीलांसिंग, विज्ञापन व डिजिटल वॉलेट के नियम समझें।"
+        ]
+      },
+      "introduction": {
+        "en": "Digital platforms open global markets to Muslim youth—yet each online model has a distinct Fiqh lens. A small structural tweak (e.g., Wakalah vs selling unowned dropship stock, or blocking Haram ad categories) flips a venture from questionable to 100% Halal.",
+        "ur": "آن لائن کاروبار نوجوانوں کے لیے عالمی مواقع کھولتا ہے، مگر ہر ڈیجیٹل ماڈل کا اپنا شرعی ضابطہ ہے۔ ایک معمولی عملی تبدیلی (جیسے بغیر قبضہ ڈراپ شپنگ کے بجائے وکالت یا اپنا اسٹاک، اور حرام اشتہارات بلاک کرنا) کمائی کو مکمل حلال بنا دیتی ہے۔",
+        "ar": "تتيح المنصات الرقمية فرصاً عالمية، لكن كل نموذج يحتاج تكييفاً فقهياً دقيقاً لتجنب بيع ما لا يُملك أو ترويج المحرمات.",
+        "hi": "ऑनलाइन प्लेटफ़ॉर्म वैश्विक बाज़ार खोलते हैं, परंतु हर डिजिटल मॉडल को सही शरीअत संरचना चाहिए ताकि बिना स्वामित्व बिक्री या हराम प्रचार न हो।"
+      },
+      "explanationUr": "تمام 10 آن لائن کاروباری ماڈلز کا شرعی تجزیہ: (1) Amazon FBA/FBM: اپنا حلال مال خرید کر ویئرہاؤس میں رکھنا اور بیچنا بالکل جائز ہے؛ بس جعلی ریویوز، کاپی رائٹ خلاف ورزی یا فیک ڈسکاؤنٹ سے بچیں؛ (2) Daraz و مقامی ای کامرس: اپنا مال بیچنا حلال؛ کیش آن ڈلیوری جائز، واپسی و عیب کی پالیسی واضح رکھیں؛ (3) Affiliate Marketing: اگر مصنوعات و سروسز حلال ہوں اور لنک کے ذریعے فروخت پر مقررہ کمیشن (سمسرہ/جعالہ) ملے تو جائز ہے؛ حرام چیزوں یا سودی قرضوں کا ایفلی ایٹ حرام؛ (4) Dropshipping: کسی دوسرے کے مال کو اپنی ملکیت و قبضہ سے پہلے حتمی بیچ دینا ناجائز ہے۔ حلال متبادل: (الف) تھوڑا مال خود خرید کر گودام/ایجنٹ کے پاس رکھیں، (ب) یا خریدار سے صاف بتا کر بطور ایجنٹ (وکیل) مقررہ سورسنگ فیس لیں، (ج) یا پہلے وعدہ خرید لے کر سپلائر سے خرید و قبضہ کر کے آگے بیچیں؛ (5) Freelancing: سافٹ ویئر، ڈیزائن، تحریر، ترجمہ سب حلال جب تک کام حرام صنعت (جوا، شراب، سودی بینک سافٹ ویئر، فحاشی) کے لیے نہ ہو؛ (6) Digital Services / SaaS / کورسز: حلال افادیت پر مبنی سبسکرپشن اجارہ/سروس عقد ہے؛ (7) Social Media Monetization و (8) Ads / AdSense: یوٹیوب یا ویب سائٹ سے آمدنی تب جائز ہے جب مواد خود حلال ہو اور اشتہارات کی کیٹیگری سے شراب، جوا، فحاشی، سودی قرض اور ڈیٹنگ بلاک ہوں (جہاں غیر اختیاری مشتبہ اشتہار آ جائیں تو اہلِ علم کے مطابق اندازے سے تطہیر کی جائے، اور مکمل حلال اسپانسرشپ و ممبرشپ ترجیحی ہے)؛ (9) Paid Sponsorships: شے خود چیک کیے بغیر یا حرام چیز کی جھوٹی تعریف ممنوع؛ (10) Digital Payments / Wallets (JazzCash, Easypaisa, Stripe, PayPal): پیسے منتقل کرنے اور سروس فیس لینے کی حد تک جائز ہیں، البتہ ڈیجیٹل والٹ پر ملنے والا سودی کیش بیک/بونس مشروط قرضِ ربوی ہونے کی صورت میں چھوڑ دیا جائے (صرف اصل ٹرانسفر استعمال ہو)۔",
+      "explanationEn": "Complete breakdown of all 10 Online Business Models: (1) Amazon FBA/FBM: Halal when selling legitimately owned wholesale/private-label halal stock; avoid fake 5-star reviews, hijackers, and trademark fakes. (2) Daraz & Local E-Commerce: Halal with real stock ownership, transparent photos, COD honesty, and fair return policy. (3) Affiliate Marketing: Halal Ju'alah/brokerage when promoting purely Halal goods/SaaS transparently—never promote gambling, Riba lenders, or adult/alcohol brands. (4) Dropshipping: Selling third-party stock you neither own nor possess directly violates 'Do not sell what you do not have.' Three Halal restructures: (a) Pre-purchase inventory held by 3PL/fulfillment under your risk, (b) Act transparently as Buyer's Wakalah purchasing agent for a disclosed fee, or (c) Take non-binding order promise (Wa'd), buy & assume constructive supplier risk first, then execute final sale. (5) Freelancing: Halal Ijarah/Istisna/Ju'alah unless building gambling apps, interest-lending engines, adult sites, or fake reviews. (6) Digital Services / SaaS: Valid subscription usufruct/service when pricing & SLA are transparent. (7–8) Social Monetization & AdSense: Halal only if content is upright AND Ad Manager filters block alcohol, gambling, Riba finance, dating, and immodest ads (purify any unavoidable slipped non-compliant share or shift toward direct Halal sponsorships). (9) Sponsorships: Test product honestly (Muslim 102) and refuse Haram promos. (10) Digital Wallets & Gateways (Stripe/Wise/JazzCash/Easypaisa): Valid clearing tools (Wakalah/Hawalah fees); avoid wallet savings plans offering conditional Riba interest on balance.",
+      "explanationAr": "تفصيل ١٠ نماذج رقمية: (١) أمازون FBA/FBM: حلال عند تملك البضاعة وصدق الصور ومنع التقييمات المزيفة؛ (٢) التجارة المحلية (دراز وغيرها): حلال مع التملك والقبض ووضوح الاسترجاع؛ (٣) التسويق بالعمولة: حلال في السلع المباحة كسمسرة؛ (٤) الدروبشيبينغ: يحرم بيع ما لا تملك ولا تضمن، ويُصحح إما بشراء مخزون لدى ٣PL، أو التوكيل الصريح بأجر، أو الوعد ثم الشراء والقبض قبل البيع؛ (٥) العمل الحر: مباح ما خلا البرمجة لمواقع الربا والقمار والفواحش؛ (٦) البرمجيات والخدمات الرقمية (SaaS): إجارة منفعة مشروعة؛ (٧-٨) الربح من المنصات والإعلانات: يشترط صلاح المحتوى وحجب فئات الإعلانات المحرمة؛ (٩) الرعايات: يشترط التجربة الصادقة وحل المنتج؛ (١٠) المحافظ الرقمية وبوابات الدفع: مباحة كخدمات تحويل مع اجتناب عوائد الفوائد الربوية على الأرصدة.",
+      "explanationHi": "सभी 10 ऑनलाइन मॉडल का शरीअत मार्गदर्शन: (1) Amazon FBA/FBM: वास्तविक स्टॉक स्वामित्व व ईमानदारी से हलाल; नकली रिव्यू न लें; (2) Daraz/लोकल ई-कॉमर्स: वास्तविक माल और सही रिटर्न नीति से हलाल; (3) Affiliate Marketing: हलाल उत्पादों के लिए वैध जुआलाह कमीशन; (4) Dropshipping: बिना स्वामित्व व क़ब्ज़ के सीधे बेचना अवैध है—समाधान: पहले स्टॉक खरीदें या स्पष्ट एजेंसी शुल्क (वकालह) पर खरीदें या वादा लेकर स्वामित्व के बाद बेचें; (5) Freelancing: वैध सॉफ्टवेयर/डिज़ाइन हलाल, पर जुए, सूद या अश्लीलता के प्रोजेक्ट हराम; (6) SaaS/डिजिटल सेवाएं: स्पष्ट सदस्यता नियम से हलाल; (7-8) सोशल मीडिया व विज्ञापन: कंटेंट सही हो और जुआ, शराब, सूद, डेटिंग जैसे हराम विज्ञापन ब्लॉक रहें; (9) Sponsorship: सच्चे अनुभव से केवल हलाल उत्पाद प्रमोट करें; (10) Digital Wallets: भुगतान सेवा के रूप में हलाल, पर शेष राशि पर शर्तित ब्याज न लें।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Online clicks carry full legal & ethical weight.", "ur": "آن لائن کاروبار میں بھی باطل سے بچنا اور باہمی رضامندی شرط ہے۔", "ar": "شمول ضوابط التراضي وأكل المال بالباطل للتجارة الرقمية.", "hi": "डिजिटल व्यापार में भी आपसी सहमति और अवैध कमाई से बचाव लागू है।" },
+          "businessRelevance": { "en": "Subscription renewals, SaaS cancellations, and digital ownership need transparent consent.", "ur": "سبسکرپشن کی تجدید، ریفنڈ اور ڈلیوری شرائط بالکل واضح ہونی چاہئیں۔", "ar": "وضوح الاشتراكات الرقمية وسياسات الإلغاء.", "hi": "सब्सक्रिप्शन नवीनीकरण व डिजिटल शर्तें पूरी तरह पारदर्शी होनी चाहिए।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Digital goods/software usufruct are recognized as Mal Mutaqawwam (legally valuable property) by contemporary Fiqh academies, governed by ownership, Qabd, and absence of Gharar.",
+        "ur": "معاصر مجامعِ فقہ نے ڈیجیٹل سافٹ ویئر اور حقوق کو باقاعدہ مالِ متقوم تسلیم کیا ہے جن پر بیع، اجارہ اور غرر سے بچنے کے احکام لاگو ہوتے ہیں۔",
+        "ar": "أقرت المجامع الفقهية اعتبار البرمجيات والحقوق الرقمية مالاً متقوماً تسري عليه أحكام البيع والإجارة.",
+        "hi": "समकालीन फ़िक़्ह परिषदों ने सॉफ्टवेयर व डिजिटल उत्पादों को वैध संपत्ति माना है जिन पर बिक्री व इजाराह नियम लागू होते हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "IIFA Resolution No. 43(5/5) protects intellectual property & digital rights; AAOIFI guidelines restrict digital wallets from yielding conditional loan interest.",
+        "ur": "مجمع الفقہ (قرارداد 43) فکری و ڈیجیٹل ملکیت کا تحفظ کرتا ہے؛ AAOIFI ڈیجیٹل والٹس میں بیلنس پر سودی منافع سے منع کرتا ہے۔",
+        "ar": "يحمي قرار مجمع الفقه ٤٣ الملكية الفكرية، وتحرم معايير أيوفي الفوائد الربوية على أرصدة المحافظ.",
+        "hi": "IIFA प्रस्ताव 43 बौद्धिक/डिजिटल संपदा की रक्षा करता है और AAOIFI वॉलेट बैलेंस पर ब्याज से रोकता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All scholars prohibit dropshipping unowned stock outright; contemporary Muftis approve either 3PL pre-stocking, Wakalah sourcing agency, or constructive possession before customer invoice. On YouTube/AdSense where user can filter most Haram categories, scholars differ between cautious avoidance vs strict category-blocking + purifying stray slips.",
+        "ur": "بغیر ملکیت ڈراپ شپنگ پر منع متفق ہے اور ایجنسی یا اپنا اسٹاک حل ہے؛ یوٹیوب/ایڈسینس میں حرام کیٹیگری بلاک کرنے کے باوجود غیر اختیاری اشتہار پر احتیاط بمقابلہ تطہیر میں معاصر اہلِ علم میں علمی اختلاف موجود ہے۔",
+        "ar": "اتفاق على منع بيع ما لا يُملك في الدروبشيبينغ، وتنوع اجتهادي معاصر في ضوابط إعلانات المنصات بعد حجب المحرم.",
+        "hi": "बिना स्वामित्व ड्रॉपशीपिंग पर रोक सर्वसम्मत है; विज्ञापन प्लेटफ़ॉर्म पर अवरोध के बाद बचे विज्ञापनों पर शुद्धिकरण बनाम परहेज़ में विद्वानों का मतभेद है।"
+      },
+      "modernExample": {
+        "en": "An entrepreneur converts a dropshipping store into a 3PL-stocked micro-brand (Amazon FBA/Daraz Warehouse) OR transparently charges a flat $5 Wakalah sourcing fee before supplier checkout.",
+        "ur": "تاجر ڈراپ شپنگ کے بجائے 50 پیس پہلے خرید کر اپنے پاس یا دراز/ایمازون گودام میں رکھوائے یا صاف بتا کر بطور ایجنٹ متعین فیس لے۔",
+        "ar": "تحويل متجر الدروبشيبينغ إلى تخزين حقيقي في مستودعات FBA/3PL أو توكيل صريح بأجر معلوم.",
+        "hi": "उद्यमी बिना-स्टॉक ड्रॉपशीपिंग के बजाय 3PL गोदाम में अपना स्टॉक रखता है या स्पष्ट वकालह खरीद शुल्क लेता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "3PL-owned inventory, SaaS utility, transparent Wakalah, Haram-filtered sponsors", "ur": "اپنا اسٹاک، مفید سافٹ ویئر، واضح وکالت اور حلال اسپانسرشپ", "ar": "تملك المخزون، برامج نافعة، وكالة صريحة، ورعايات حلال", "hi": "स्वयं स्वामित्व स्टॉक, उपयोगी SaaS, स्पष्ट एजेंसी व हलाल प्रायोजन" },
+          "prohibitedPractice": { "en": "Unowned dropshipping resale, building gambling/loan apps, or promoting betting/alcohol affiliates", "ur": "بغیر قبضہ ڈراپ شپنگ، جوا/سودی ایپس بنانا یا شراب/بیٹنگ کے ایفلی ایٹ لنکس لگانا", "ar": "بيع غير المملوك، برمجة مواقع الربا والقمار، أو الترويج للمراهنات", "hi": "बिना स्वामित्व रीसेल, जुआ/सूद ऐप बनाना या सट्टेबाजी के एफ़िलिएट लिंक लगाना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Freelancing on any Upwork/Fiverr gig regardless of whether the client runs a casino, Riba mortgage bank, or adult site.",
+          "Turning on auto-monetization ads without disabling sensitive Haram categories."
+        ],
+        "ur": [
+          "فری لانسنگ میں بغیر دیکھے سودی بینک، جوا یا فحاشی والی ویب سائٹس کا کام پکڑ لینا۔",
+          "بلا فلٹر یوٹیوب/بلاگ اشتہارات آن کر دینا جن میں حرام اشتہارات چلتے رہیں۔"
+        ],
+        "ar": [
+          "قبول مشاريع برمجية أو إعلانية لجهات ربوية أو إباحية دون تحرٍّ."
+        ],
+        "hi": [
+          "फ़्रीलांसिंग में ग्राहक का क्षेत्र जांचे बिना जुए या सूदी बैंक का प्रोजेक्ट लेना, या बिना फ़िल्टर विज्ञापन चालू करना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Verify inventory ownership/3PL possession OR pure Wakalah fee before online listing checkout.",
+          "Screen all freelance/agency clients against gambling, Riba, adult, and scam industries.",
+          "Block sensitive Haram ad categories & avoid conditional interest bonuses in e-wallets."
+        ],
+        "ur": [
+          "ای کامرس میں مال کی ملکیت/قبضہ یا وکالت فیس یقینی بنائیں۔",
+          "فری لانسنگ کلائنٹ کا کاروبار حلال ہونے کی تصدیق کریں۔",
+          "اشتہارات سے حرام کیٹیگریز بلاک اور والٹ سود سے پاک رکھیں۔"
+        ],
+        "ar": [
+          "تحقق التملك في المتاجر، وفحص نشاط عملاء العمل الحر، وحجب الإعلانات المحرمة."
+        ],
+        "hi": [
+          "ई-कॉमर्स में स्वामित्व या वकालह सुनिश्चित करें, फ़्रीलांस ग्राहक जांचें और हराम विज्ञापन ब्लॉक रखें।"
+        ]
+      },
+      "summary": {
+        "en": "Every digital income stream—Amazon, Daraz, Freelance, SaaS, Affiliates, Ads, Wallets—becomes sustainable Halal wealth when ownership, honesty, and niche screening are honored.",
+        "ur": "آن لائن کمائی کے تمام جدید ذرائع ملکیت، سچائی اور حلال انتخاب سے 100 فیصد بابرکت حلال کاروبار بن سکتے ہیں۔",
+        "ar": "تصبح التجارة الرقمية كسباً حلالاً مباركاً متى تحققت الملكية والصدق واجتناب المحرمات.",
+        "hi": "ऑनलाइन व्यवसाय के सभी रूप वास्तविक स्वामित्व, ईमानदारी और शुद्ध चयन से पूर्णतः हलाल बन सकते हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m22_1",
+          "question": {
+            "en": "How can a dropshipper fix the Shariah flaw of selling goods they neither own nor possess before checkout?",
+            "ur": "ڈراپ شپنگ میں 'بغیر ملکیت و قبضہ مال بیچنے' کی شرعی خرابی کو کیسے درست کیا جا سکتا ہے؟",
+            "ar": "كيف تُصحَّح مخالفة بيع ما لا يملك في الدروبشيبينغ؟",
+            "hi": "ड्रॉपशीपिंग में 'बिना स्वामित्व बिक्री' की शरीअत त्रुटि को कैसे ठीक किया जा सकता है?"
+          },
+          "options": {
+            "en": [
+              "Either hold pre-purchased stock in a 3PL warehouse, act transparently as a fee-based Wakalah agent, or buy & possess before executing final customer sale",
+              "Just write 'no refunds' in footer",
+              "Keep higher markup"
+            ],
+            "ur": [
+              "یا خود مال خرید کر ویئرہاؤس میں رکھے، یا صاف بتا کر بطور ایجنٹ (وکالت) فیس لے، یا پہلے خود خرید و قبضہ کر کے آگے بیچے",
+              "فوٹر میں 'واپسی نہیں' لکھ دے",
+              "منافع بڑھا دے"
+            ],
+            "ar": [
+              "شراء مخزون فعلي لدى شركة شحن أو العمل كوكيل شراء صريح بأجر أو التملك والقبض قبل البيع النهائي",
+              "كتابة عبارة لا استرجاع"
+            ],
+            "hi": [
+              "या तो 3PL गोदाम में स्वयं स्टॉक खरीदे, या स्पष्ट एजेंसी शुल्क (वकालह) ले, या ग्राहक को अंतिम बिक्री से पहले स्वयं स्वामित्व व क़ब्ज़ ले",
+              "फुटर में नो रिफंड लिख दे"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Selling an item before owning/possessing it violates prophetic sales law; pre-stocking, Wakalah sourcing, or sequential purchase-after-promise solves it cleanly.",
+            "ur": "بغیر ملکیت بیع ناجائز ہے؛ اپنا اسٹاک رکھنا، صریح وکالت، یا پہلے خرید کر قبضہ لینا اس کا مستند شرعی حل ہے۔",
+            "ar": "الحل الشرعي هو التملك المسبق أو الوكالة الصريحة بأجر.",
+            "hi": "स्वामित्व से पहले बेचना वर्जित है; पूर्व-स्टॉक या स्पष्ट वकालह इसका वैध समाधान है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Pick one online revenue stream (Daraz/Amazon, Freelancing, SaaS, or Affiliate) and write its 3-step Halal Compliance Rulebook.",
+        "ur": "اپنی پسند کا ایک آن لائن کاروباری ماڈل چن کر اس کے 3 لازمی شرعی اصول تحریر کریں۔",
+        "ar": "اختر نموذجاً رقمياً واكتب له ٣ ضوابط شرعية عملية للتطبيق.",
+        "hi": "एक ऑनलाइन मॉडल चुनकर उसके लिए 3 अनिवार्य हलाल अनुपालन नियम लिखें।"
+      },
+      "sources": [
+        { "title": "IIFA Resolution No. 43(5/5) & AAOIFI SS 18", "category": "contemporary_resolution", "attribution": "IIFA & AAOIFI", "url": "https://iifa-aifi.org/en/" },
+        { "title": "Sahih Muslim 102", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/muslim:102" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m23",
+      "level": 4,
+      "moduleNumber": 23,
+      "moduleTitle": {
+        "en": "Module 23: Halal Business Growth, Barakah & Crisis Resilience",
+        "ur": "ماڈیول 23: کاروباری ترقی، برکت اور بحرانوں کا مقابلہ",
+        "ar": "الوحدة ٢٣: نمو الأعمال المبارك والصمود أمام الأزمات",
+        "hi": "मॉड्यूल 23: व्यापार वृद्धि, बरकत और संकट प्रबंधन"
+      },
+      "title": {
+        "en": "Scaling Without Debt Traps, Quality Reputation, Sabr & Tawakkul",
+        "ur": "بغیر سودی قرض کے توسیع، معیاری ساکھ، صبر و استقامت اور توکل علی اللہ",
+        "ar": "التوسع دون ديون ربوية، السمعة الحسنة، الصبر والتوكل",
+        "hi": "ऋण जाल के बिना विस्तार, गुणवत्ता साख, सब्र और तवक्कुल"
+      },
+      "primaryEvidenceCategory": "educational_business",
+      "learningObjectives": {
+        "en": [
+          "Scale sustainably via retained earnings, equity Musharakah, and supplier partnerships instead of brittle interest debt.",
+          "Protect brand reputation through consistent quality, rapid defect fixes, and truthful guarantees.",
+          "Navigate market downturns with Sabr, expense agility, debt restraint, and continuous skill upskilling."
+        ],
+        "ur": [
+          "سودی بینک قرضوں کے بجائے خالص منافع، شراکت اور مضبوط سپلائر تعلقات سے کاروبار بڑھائیں۔",
+          "مستقل معیار، فوری شکایت حل اور سچے وعدوں سے برانڈ کی پائیدار ساکھ بنائیں۔",
+          "مندی اور بحران میں صبر، متوازن اخراجات، دعا اور نئی مہارتیں سیکھ کر مضبوط رہیں۔"
+        ],
+        "ar": [
+          "التوسع بالأرباح المحتجزة والشراكات الحلال، وبناء السمعة الصادقة، والتعامل الحكيم مع الأزمات."
+        ],
+        "hi": [
+          "ब्याज वाले कर्ज़ के बजाय प्रतिधारित लाभ और मुशारकाह से विस्तार करें, गुणवत्ता बनाए रखें और संकट में धैर्य रखें।"
+        ]
+      },
+      "introduction": {
+        "en": "True Barakah manifests as steady endurance, customer word-of-mouth, peace of heart, and survival through recessions—built not on overnight leveraged debt, but daily honesty and disciplined growth.",
+        "ur": "حقیقی برکت پائیدار ترقی، گاہکوں کے اعتماد، دل کے اطمینان اور مشکل وقت میں ثابت قدمی کی شکل میں ظاہر ہوتی ہے—جو راتوں رات سودی قرض سے نہیں بلکہ روزانہ کی دیانت اور محنت سے بنتی ہے۔",
+        "ar": "البركة الحقيقية تظهر في ثبات المنشأة وثقة العملاء وراحة القلب، وتُبنى بالتدرج السليم لا بالمقامرة والديون الربوية.",
+        "hi": "सच्ची बरकत स्थिर वृद्धि, ग्राहकों के भरोसे और मन की शांति में दिखती है—जो ऋण-सट्टे से नहीं बल्कि ईमानदारी और अनुशासित प्रगति से आती है।"
+      },
+      "explanationUr": "پائیدار ترقی و بحران سے بچاؤ کے 4 اصول: (1) غیر سودی توسیع: کمپنیوں کے دیوالیہ ہونے کی سب سے بڑی وجہ سود پر مبنی بے لگام توسیع ہے۔ ری انویسٹمنٹ، شراکت، استصناع یا اجارہ سے قدم بہ قدم بڑھیں؛ (2) اعتماد و ساکھ: عیب نکلنے پر فوراً معذرت اور تبدیلی گاہک کو زندگی بھر کا سفیر بنا دیتی ہے؛ (3) بحران کا مقابلہ: مندی میں غیر ضروری اسراف روکیں، فوری نیا ہنر و ڈیجیٹل چینل اپنائیں، اور ملازمین و سپلائرز سے کھلی مشاورت (شوریٰ) کریں؛ (4) توکل و دعا: بھرپور اسباب اختیار کر کے نتیجہ اللہ کے سپرد کریں اور حرام شارٹ کٹ سے دور رہیں۔",
+      "explanationEn": "Durable Halal growth avoids boom-and-bust fragility: (1) Debt-Disciplined Scaling: excessive fixed interest leverage destroys cash-strapped companies during recessions; reinvest retained profit or bring equity Musharakah partners who share risk; (2) Trust Compounding: replacing a defective unit gladly earns lifelong referrals; (3) Recession Agility: trim non-essential vanity costs early, diversify suppliers/products, upskill digitally, and consult employees honestly; (4) Tying the Camel + Tawakkul (Jami' at-Tirmidhi 2517): combine rigorous market analytics, QA checks, and legal safeguards with calm reliance on Allah—never cutting Shariah corners under pressure.",
+      "explanationAr": "استدامة النمو: (١) التوسع المتزن بالأرباح المحتجزة والشراكات وتجنب المديونية المهلكة، (٢) بناء الثقة بسرعة معالجة الشكاوى وضمان الجودة، (٣) الرشاقة وقت الأزمات بخفض الهدر وتطوير المهارات، (٤) الأخذ بالأسباب كاملةً مع التوكل على الله (اعقلها وتوكل).",
+      "explanationHi": "स्थायी वृद्धि के चार सूत्र: (1) भारी ऋण के बजाय लाभ पुनर्निवेश व साझेदारी से क्रमिक विस्तार; (2) दोष सुधार कर ग्राहकों का आजीवन विश्वास बनाना; (3) मंदी में फ़िज़ूलख़र्ची रोककर नए कौशल व डिजिटल चैनल अपनाना; (4) पूरी तैयारी ('ऊंट बांधो और अल्लाह पर भरोसा रखो') के साथ कभी शॉर्टकट न लेना।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 276,
+          "endAyah": 276,
+          "contextNote": { "en": "Allah erases usury and nurtures honest charity-aligned enterprise.", "ur": "اللہ سود کو مٹاتا ہے اور سچائی و صدقے سے جڑے رزق کو بڑھاتا ہے۔", "ar": "محق الربا وإرباء الكسب الطيب المقترن بالصدقة.", "hi": "अल्लाह सूद को मिटाता है और दान व ईमानदारी वाले व्यवसाय को बढ़ाता है।" },
+          "businessRelevance": { "en": "Explains why debt-leveraged bubbles collapse while honest generous businesses endure.", "ur": "ثابت کرتی ہے کہ سودی بلبلے پھٹ جاتے ہیں اور دیانت و سخاوت والا کاروبار پائیدار رہتا ہے۔", "ar": "بيان هشاشة النمو الربوي وبقاء الكسب الطيب.", "hi": "यह दर्शाती है कि सूदी बुलबुले टूटते हैं जबकि ईमानदार व परोपकारी व्यापार टिकता है।" }
+        }
+      ],
+      "hadithIds": ["tirmidhi_1209", "bukhari_2079"],
+      "classicalFiqh": {
+        "en": "Ibn Khaldun noted moderate profit margins, steady turnover, property-rights security, and fair taxation drive long-run commercial prosperity.",
+        "ur": "علامہ ابن خلدونؒ کے مطابق معتدل نفع، مسلسل گردشِ مال، حقوقِ ملکیت کا تحفظ اور انصاف طویل مدتی معاشی خوشحالی کے ستون ہیں۔",
+        "ar": "بيّن ابن خلدون أن الاعتدال في الربح وسرعة الدوران والعدل هي أسباب العمران التجاري.",
+        "hi": "इब्न खल्दून के अनुसार संतुलित मुनाफ़ा, तेज़ टर्नओवर व न्याय दीर्घकालिक समृद्धि के आधार हैं।"
+      },
+      "contemporaryGuidance": {
+        "en": "Stress-test business forecasts for 25% demand drops, maintain diversified vendors, and forbid Shariah compromises during cash squeezes.",
+        "ur": "کاروباری منصوبہ بندی میں 25 فیصد مندی کا بیک اپ رکھیں، ایک سپلائر پر انحصار نہ کریں اور مشکل وقت میں حرام شارٹ کٹ سے بچیں۔",
+        "ar": "إجراء اختبارات تحمل لتراجع المبيعات ٢٥٪ وتنويع الموردين ومنع التنازل الشرعي وقت الضيق.",
+        "hi": "25% मांग गिरावट की योजना तैयार रखें, अनेक आपूर्तिकर्ता रखें और संकट में शरीअत से समझौता न करें।"
+      },
+      "madhhabDifferences": {
+        "en": "All scholars reject claiming 'Darurah (necessity)' for routine business growth loans when non-Riba scaling, downsizing, or partnership paths exist.",
+        "ur": "تمام محقق علماء متفق ہیں کہ محض کاروبار بڑھانے کے لیے 'ضرورت' کا بہانہ بنا کر سودی قرض لینا جائز نہیں، جب تک جان یا بنیادی بقا کا شرعی اضطرار نہ ہو۔",
+        "ar": "يُجمع الفقهاء المعاصرون على أن التوسع التجاري ليس ضرورة تبيح الاقتراض الربوي.",
+        "hi": "समकालीन विद्वान एकमत हैं कि केवल व्यापार बढ़ाने हेतु 'मजबूरी' कहकर सूदी ऋण लेना वैध नहीं है।"
+      },
+      "modernExample": {
+        "en": "During supply inflation, a cafe trims slow menu SKUs, renegotiates packaging bulk tiers, trains baristas on zero-waste dosing, and passes transparent honest updates to regulars instead of shrinking cup ounces secretly.",
+        "ur": "مہنگائی میں کیفے مالک چوری چھپے کپ چھوٹا کرنے کے بجائے فالتو آئٹمز کم کرے، ضیاع روکے اور گاہکوں کو صاف بتا کر معقول قیمت طے کرے۔",
+        "ar": "تاجر يواجه التضخم بضبط الهدر وتبسيط القائمة والشفافية في الأسعار بدلاً من إنقاص الكمية سراً.",
+        "hi": "महंगाई में कैफे चुपचाप कप छोटा करने के बजाय बर्बादी रोकता है और पारदर्शी रूप से कीमत समायोजित करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Transparent downsizing/pricing adjustments + equity partnership growth", "ur": "شفاف قیمت ایڈجسٹمنٹ، ضیاع میں کمی اور شراکت سے ترقی", "ar": "ضبط الهدر والتسعير الصادق والنمو بالشراكة", "hi": "पारदर्शी कीमत समायोजन, बर्बादी रोकना और साझेदारी से विस्तार" },
+          "prohibitedPractice": { "en": "Secret shrinkflation/adulteration or high-interest survival loans to cover bad unit economics", "ur": "چوری چھپے وزن یا معیار گھٹانا یا نقصان دہ ماڈل کو سودی قرضوں سے چلانا", "ar": "التلاعب الخفي بالوزن والجودة أو الاستدانة الربوية لتغطية الخسائر", "hi": "चुपके से वज़न/गुणवत्ता घटाना या घाटे को सूदी ऋण से ढकना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Cutting ingredient quality secretly during inflation without telling loyal buyers.",
+          "Confusing 'busy vanity metrics' (store branches on debt) with genuine debt-free cash profit."
+        ],
+        "ur": [
+          "مہنگائی میں گاہک کو بتائے بغیر خام مال کا معیار ہلکا کر دینا۔",
+          "قرض لے کر شاخیں کھولنے کو اصل کاروباری کامیابی سمجھ بیٹھنا۔"
+        ],
+        "ar": [
+          "خفض الجودة سراً عند ارتفاع التكاليف، أو التوسع المتسرع بالديون."
+        ],
+        "hi": [
+          "महंगाई में ग्राहक को बताए बिना सामग्री की गुणवत्ता गिराना, या कर्ज़ पर दिखावटी शाखाएं खोलना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Never compromise product purity or net measure under cost pressure.",
+          "Diversify revenue & supplier dependencies.",
+          "Review quarterly Shariah + financial health metrics calmly."
+        ],
+        "ur": [
+          "مالی دباؤ میں بھی معیار اور پورا وزن ہرگز نہ گھٹائیں۔",
+          "سپلائرز اور آمدنی کے ذرائع متنوع رکھیں۔",
+          "ہر سہ ماہی میں مالی و شرعی کارکردگی کا جائزہ لیں۔"
+        ],
+        "ar": [
+          "الحفاظ على الجودة والوزن وقت الأزمات، وتنويع الموردين، والمراجعة الربعية."
+        ],
+        "hi": [
+          "दबाव में भी गुणवत्ता व माप न घटाएं, आपूर्तिकर्ता विविध रखें और तिमाही समीक्षा करें।"
+        ]
+      },
+      "summary": {
+        "en": "Quiet consistency, debt discipline, quality integrity, and reliance on Allah build businesses that stand the test of decades.",
+        "ur": "ثابت قدمی، قرض سے احتیاط، معیاری دیانت اور اللہ پر توکل ایسے کاروبار بناتے ہیں جو دہائیوں تک قائم رہتے ہیں۔",
+        "ar": "الثبات والانضباط المالي وجودة الصنعة والتوكل على الله تصنع شركات راسخة ومباركة.",
+        "hi": "निरंतरता, ऋण संयम, गुणवत्ता ईमानदारी और अल्लाह पर भरोसा दशकों तक टिकने वाले व्यवसाय बनाते हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m23_1",
+          "question": {
+            "en": "When raw material prices surge during inflation, which response upholds Quran 17:35 & Muslim 102?",
+            "ur": "مہنگائی میں خام مال مہنگا ہونے پر کون سا عمل قرآن 17:35 اور مسلم 102 کے مطابق درست ہے؟",
+            "ar": "عند ارتفاع تكلفة المواد الخام، أي تصرف يوافق الآية ١٧:٣٥ وحديث مسلم ١٠٢؟",
+            "hi": "कच्चा माल महंगा होने पर कौन सा कदम क़ुरआन 17:35 व मुस्लिम 102 के अनुरूप है?"
+          },
+          "options": {
+            "en": [
+              "Keep promised weight/quality intact (or openly label revised size/price) and optimize waste",
+              "Secretly cut weight from 500g to 420g in identical packaging",
+              "Mix cheaper hidden filler"
+            ],
+            "ur": [
+              "مکمل وزن و معیار برقرار رکھیں یا نیا وزن/قیمت صاف ظاہر کر کے ضیاع کم کریں",
+              "اسی پرانے ڈبے میں چوری سے 500 گرام کے بجائے 420 گرام ڈال دیں",
+              "سستی ملاوٹ کر دیں"
+            ],
+            "ar": [
+              "الالتزام بالوزن والجودة أو الإعلان الصريح عن السعر/الحجم الجديد وتقليل الهدر",
+              "إنقاص الوزن سراً في العبوة نفسها"
+            ],
+            "hi": [
+              "तय वज़न व गुणवत्ता रखें या स्पष्ट नई कीमत/मात्रा बताएं और बर्बादी घटाएं",
+              "उसी पैकेट में चुपके से वज़न कम कर दें"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Honest disclosure and efficiency respect buyer consent; secret shrinkflation or adulteration deceives the buyer.",
+            "ur": "وزن اور قیمت میں شفاف تبدیلی دیانت ہے جبکہ خفیہ کمی یا ملاوٹ دھوکہ ہے۔",
+            "ar": "الشفافية تحفظ التراضي، أما الإنقاص الخفي والغش فمحرمان.",
+            "hi": "पारदर्शी जानकारी सहमति की रक्षा करती है जबकि गुप्त कटौती धोखा है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Write a 3-point Crisis Playbook detailing what costs you cut first, how you communicate transparently with buyers, and zero-interest funding pivots.",
+        "ur": "مندی کے لیے 3 نکاتی پلان لکھیں: کن اخراجات میں فوری کمی ہوگی، گاہکوں سے شفاف رابطہ کیسے رہے گا، اور سودی قرض کے بغیر کیش کیسے سنبھالیں گے۔",
+        "ar": "اكتب خطة أزمات من ٣ بنود: ترشيد النفقات، والشفافية مع العملاء، وبدائل السيولة الحلال.",
+        "hi": "संकट के लिए 3-सूत्रीय योजना लिखें: लागत कटौती, ग्राहक पारदर्शिता और ब्याज-मुक्त नक़दी विकल्प।"
+      },
+      "sources": [
+        { "title": "Quran 2:276 & 17:35", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/276" },
+        { "title": "Jami' at-Tirmidhi 1209", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/tirmidhi:1209" }
+      ]
+    },
+    {
+      "id": "lesson_l4_m24",
+      "level": 4,
+      "moduleNumber": 24,
+      "moduleTitle": {
+        "en": "Module 24: Complete 13-Step Halal Business Startup Project",
+        "ur": "ماڈیول 24: حلال کاروبار شروع کرنے کا مکمل 13 مرحلہ پراجیکٹ",
+        "ar": "الوحدة ٢٤: مشروع تأسيس عمل تجاري حلال متكامل (١٣ خطوة)",
+        "hi": "मॉड्यूल 24: 13-चरणीय पूर्ण हलाल बिज़नेस स्टार्टअप प्रोजेक्ट"
+      },
+      "title": {
+        "en": "Capstone Blueprint: From Ethical Niyyah & Fiqh Screening to Launch & Zakat Plan",
+        "ur": "عملی منصوبہ: نیت، شرعی جانچ، معاہدے، مارکیٹنگ اور زکوٰۃ کے نظام تک 13 مراحل",
+        "ar": "خطة التأسيس الشاملة: من النية والفحص الشرعي إلى العقود والتسويق والزكاة",
+        "hi": "कैपस्टोन ब्लूप्रिंट: नीयत व शरीअत जांच से लेकर अनुबंध, लॉन्च और ज़कात योजना तक"
+      },
+      "primaryEvidenceCategory": "educational_business",
+      "learningObjectives": {
+        "en": [
+          "Synthesize every level of the Academy into an actionable, Shariah-screened 13-step business plan.",
+          "Complete all 13 interactive project steps inside the 'Project & Tools' tab (saved locally offline).",
+          "Identify exactly which complex contracts or tax/legal structures require final sign-off by a Mufti & corporate lawyer."
+        ],
+        "ur": [
+          "اکیڈمی کے تمام اسباق کو یکجا کر کے 13 مراحل پر مشتمل عملی حلال بزنس پلان تیار کریں۔",
+          "'Project & Tools' ٹیب میں اپنے 13 مراحل مکمل کر کے موبائل میں آف لائن محفوظ کریں۔",
+          "ان پیچیدہ نکات کی نشاندہی کریں جن پر عملدرآمد سے قبل مستند مفتی صاحب اور قانونی مشیر سے تصدیق لازمی ہے۔"
+        ],
+        "ar": [
+          "دمج جميع وحدات الأكاديمية في خطة مشروع من ١٣ خطوة وحفظها محلياً، وتحديد مواضع استشارة المفتي."
+        ],
+        "hi": [
+          "अकादमी की सभी शिक्षाओं को 13-चरणीय व्यवसाय योजना में बदलें और 'Project & Tools' टैब में ऑफ़लाइन सहेजें।"
+        ]
+      },
+      "introduction": {
+        "en": "Knowledge bears fruit when practiced. Module 24 guides you through 13 concrete startup blueprint steps—from defining Halal value proposition, capital source, and Islamic contract selection to employee rights, ethical marketing, Zakat, and Mufti verification.",
+        "ur": "علم کا ثمر عمل ہے۔ ماڈیول 24 آپ کو حلال کاروبار شروع کرنے کے 13 عملی مراحل سے گزارتا ہے—صحیح نیت و حلال مصنوعات سے لے کر سرمایہ، شرعی عقود، ملازمین کے حقوق، سچی مارکیٹنگ، زکوٰۃ اور مفتی سے تصدیق تک۔",
+        "ar": "ثمرة العلم العمل؛ تقودك الوحدة ٢٤ عبر ١٣ خطوة تطبيقية متكاملة لبناء مشروعك الحلال وحفظه في دفتر المشروع بالأكاديمية.",
+        "hi": "ज्ञान का फल आचरण है। मॉड्यूल 24 आपको 13 व्यावहारिक चरणों—नीयत, पूंजी, अनुबंध, कर्मचारी अधिकार, नैतिक विपणन, ज़कात और मुफ़्ती सत्यापन—से ले जाता है।"
+      },
+      "explanationUr": "مکمل 13 مرحلہ حلال اسٹارٹ اپ پراجیکٹ (جو 'Project & Tools' ٹیب میں محفوظ ہوتا ہے): (1) کاروباری تصور اور خالص نیت؛ (2) حلال شے، خدمت اور مارکیٹ کی ضرورت؛ (3) سرمائے کا بلاسود ماخذ (ذاتی بچت، قرضِ حسن، مضاربت یا مشارکہ)؛ (4) قانونی و کارپوریٹ رجسٹریشن (ملکی قانون، SECP/ٹیکس)؛ (5) بنیادی شرعی عقود کا انتخاب (14 عقود میں سے: مساومہ، مرابحہ، استصناع، اجارہ وغیرہ)؛ (6) سپلائر کی حلال جانچ اور قبضہ/حوالگی کا طریقہ؛ (7) منصفانہ و شفاف قیمت اور مارجن پالیسی؛ (8) سچی اور بااخلاق مارکیٹنگ پالیسی؛ (9) گاہک کے حقوق، عیب کی وضاحت اور واپسی/ریفنڈ پالیسی؛ (10) ملازمین کی تنخواہ، اوقات اور وقار کا چارٹر؛ (11) تحریری معاہدات اور صلح و تحکیم (2:282)؛ (12) سالانہ کاروباری زکوٰۃ اور رفاہی صدقہ پلان؛ (13) حتمی شرعی آڈٹ اور مستند مفتی صاحب سے مشاورت کی فہرست۔",
+      "explanationEn": "The 13-Step Startup Project Workbook (persisted offline in the Project & Tools tab) walks every founder through: (1) Mission, Niyyah & Value Proposition; (2) Halal Product/Service Screening; (3) Interest-Free Capital Structure (Bootstrapped / Qard Hasan / Mudarabah / Musharakah); (4) Legal Registration & Regulatory Compliance; (5) Selection of Primary Islamic Contracts (from the 14 structures); (6) Ethical Supplier Vetting & Qabd Ownership Flow; (7) Transparent Costing & Fair Pricing Strategy; (8) Honest Non-Deceptive Marketing Rules; (9) Customer Defect Disclosure & Refund SLA; (10) Fair Employee Wage & Safety Charter; (11) Written Contract & Sulh/Tahkim Dispute Protocol (2:282); (12) Annual Business Zakat & Social Impact Ledger; (13) Final Mufti & Legal Sign-Off Checklist.",
+      "explanationAr": "الخطوات الـ ١٣ المتاحة للتنفيذ والحفظ في قسم المشروع والأدوات: (١) الفكرة والنية، (٢) فحص حلّ النشاط، (٣) مصدر التمويل الخالي من الربا، (٤) الترخيص القانوني، (٥) اختيار العقود الشرعية، (٦) اختيار الموردين وتحقق القبض، (٧) سياسة التسعير العادل، (٨) التسويق الصادق، (٩) حقوق العميل والاسترجاع، (١٠) ميثاق حقوق الموظفين، (١١) توثيق العقود والتحكيم (٢:٢٨٢)، (١٢) خطة الزكاة والصدقة، (١٣) مراجعة المفتي والمستشار القانوني.",
+      "explanationHi": "13-चरणीय स्टार्टअप प्रोजेक्ट कार्यपुस्तिका ('Project & Tools' टैब में ऑफ़लाइन सहेजी जाती है): (1) नीयत व विचार; (2) हलाल उत्पाद जांच; (3) ब्याज-मुक्त पूंजी स्रोत; (4) कानूनी पंजीकरण; (5) 14 अनुबंधों में से चयन; (6) आपूर्तिकर्ता व क़ब्ज़ प्रक्रिया; (7) पारदर्शी मूल्य नीति; (8) सत्य विपणन; (9) दोष व रिटर्न नीति; (10) कर्मचारी वेतन व सुरक्षा चार्टर; (11) लिखित अनुबंध व सुलह/मध्यस्थता; (12) वार्षिक व्यापार ज़कात व दान योजना; (13) मुफ़्ती व कानूनी सलाह सूची।" ,
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": { "en": "Every project launches on trust and ends on accountability.", "ur": "کاروبار کی ابتدا امانت اور انجام دیانت و انصاف پر ہو۔", "ar": "تأسيس المشروع على الأمانة والعدل.", "hi": "व्यवसाय की शुरुआत अमानत और समापन न्याय पर हो।" },
+          "businessRelevance": { "en": "Unites investors, staff, customers, and regulators under transparent trust.", "ur": "سرمایہ کار، ملازم، گاہک اور قانون سب کو امانت کے رشتے میں جوڑتی ہے۔", "ar": "يربط الشركاء والعمال والعملاء بعهد الأمانة.", "hi": "निवेशक, कर्मी, ग्राहक और नियम सभी को ईमानदारी के सूत्र में बांधती है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "tirmidhi_1209"],
+      "classicalFiqh": {
+        "en": "Umar ibn al-Khattab (RA) famously instructed (Jami' at-Tirmidhi 487 / reported athar): 'None should trade in our market except one who has learned the jurisprudence of religion (so they do not fall unwittingly into Riba).'",
+        "ur": "حضرت عمر فاروقؓ کا معروف قول ہے: 'ہمارے بازار میں صرف وہی تجارت کرے جو دین و تجارت کے شرعی مسائل جانتا ہو۔'",
+        "ar": "أثر عمر رضي الله عنه: لا يبع في سوقنا إلا من قد تفقّه في الدين.",
+        "hi": "हज़रत उमर (रज़ि.) का प्रसिद्ध कथन है: हमारे बाज़ार में केवल वही व्यापार करे जिसने धर्म और व्यापार के नियम सीखे हों।"
+      },
+      "contemporaryGuidance": {
+        "en": "Before incorporating, review sector permits (SECP/Tax/Food/Medical), open dedicated Islamic business bank accounts, and secure written Mufti review for custom contracts.",
+        "ur": "شروع کرنے سے پہلے سرکاری اجازت نامے (SECP/ٹیکس/فوڈ لائسنس)، اسلامی بینک کھاتہ اور پیچیدہ معاہدات پر مفتی صاحب کی توثیق حاصل کریں۔",
+        "ar": "استكمال التراخيص الحكومية، وفتح حساب إسلامي مستقل، ومراجعة العقود الخاصة لدى مفتٍ مختص.",
+        "hi": "लॉन्च से पहले कानूनी लाइसेंस, इस्लामी बैंक खाता और विशेष अनुबंधों पर मुफ़्ती समीक्षा कराएं।"
+      },
+      "madhhabDifferences": {
+        "en": "Scholars across all schools welcome proactive Shariah-audit checklists at startup inception rather than trying to unwind invalid Riba contracts years later.",
+        "ur": "تمام مکاتبِ فکر کے علما کا اتفاق ہے کہ بعد میں فاسد عقود توڑنے سے بہتر ہے کہ کاروبار کی ابتدا ہی میں شرعی جانچ مکمل کر لی جائے۔",
+        "ar": "اتفاق العلماء على أن الوقاية الشرعية قبل التأسيس خير من معالجة العقود الفاسدة لاحقاً.",
+        "hi": "सभी विद्वान मानते हैं कि बाद में अवैध अनुबंध सुधारने से बेहतर है शुरुआत में ही शरीअत जांच पूरी करना।"
+      },
+      "modernExample": {
+        "en": "A graduate finishes this Academy's 13-Step Workbook for a Halal spice brand, verifies Musawamah & Wakalah courier docs with a scholar, passes the completion assessment, and generates a local completion certificate.",
+        "ur": "ایک طالب علم حلال مصالحہ برانڈ کا مکمل 13 مرحلہ پراجیکٹ اس ایپ میں مکمل کر کے مفتی صاحب سے معاہدہ چیک کرائے اور تکمیل کا سرٹیفکیٹ حاصل کرے۔",
+        "ar": "متدرب يكمل مشروع الـ ١٣ خطوة لعلامة توابل حلال ويراجع عقوده ويُصدر شهادة الإتمام المحلية.",
+        "hi": "एक शिक्षार्थी इस ऐप में 13-चरणीय प्रोजेक्ट पूरा करता है, अनुबंध की जांच कराता है और पूर्णता प्रमाणपत्र प्राप्त करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Pre-launch Shariah + legal + financial checklist completed cleanly", "ur": "لانچ سے پہلے مکمل شرعی، قانونی اور مالی چیک لسٹ تیار کرنا", "ar": "إتمام الفحص الشرعي والقانوني والمالي قبل الإطلاق", "hi": "लॉन्च से पहले पूर्ण शरीअत, कानूनी व वित्तीय जांच पूरी करना" },
+          "prohibitedPractice": { "en": "Launching blindly with copied internet templates hiding Riba/Gharar and fake legal claims", "ur": "بغیر پڑھے انٹرنیٹ سے سودی/مبہم معاہدہ کاپی کر کے کاروبار شروع کر دینا", "ar": "نسخ عقود تقليدية جاهزة تتضمن الربا والغرر دون مراجعة", "hi": "बिना जांचे इंटरनेट से सूदी/अस्पष्ट अनुबंध कॉपी करके व्यापार शुरू करना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Delaying legal/Shariah structuring until a dispute erupts or investors exit.",
+          "Treating self-study certification as a substitute for qualified local Mufti approval on novel financial engineering."
+        ],
+        "ur": [
+          "جھگڑا ہونے تک معاہدوں اور شرعی جانچ کو ٹالتے رہنا۔",
+          "تعلیمی سرٹیفکیٹ کو پیچیدہ جدید مالی معاملات میں مستند مفتی کے فتویٰ کا متبادل سمجھ لینا۔"
+        ],
+        "ar": [
+          "تأجيل التوثيق حتى يقع النزاع، أو الاكتفاء بالدراسة التعليمية عن استفتاء العلماء في الهياكل المعقدة."
+        ],
+        "hi": [
+          "विवाद होने तक दस्तावेज़ीकरण टालना, या जटिल संरचनाओं में प्रमाणित मुफ़्ती सलाह के बिना आगे बढ़ना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Complete all 13 Startup Project steps in the 'Project & Tools' tab.",
+          "Complete module quizzes to unlock your local Academy Completion Certificate.",
+          "Schedule a real review with a qualified Shariah scholar and corporate counsel before launch."
+        ],
+        "ur": [
+          "'Project & Tools' ٹیب میں 13 مراحل مکمل محفوظ کریں۔",
+          "اکیڈمی سرٹیفکیٹ کے لیے کوئز مکمل کریں۔",
+          "آغاز سے قبل مقامی مفتی صاحب اور قانونی ماہر سے حتمی مشورہ لیں۔"
+        ],
+        "ar": [
+          "إكمال الخطوات الـ ١٣ في قسم المشروع، واجتياز الاختبارات لإصدار الشهادة، واستشارة أهل الاختصاص."
+        ],
+        "hi": [
+          "'Project & Tools' टैब में सभी 13 चरण पूरे करें, क्विज़ पास करें और लॉन्च से पहले विशेषज्ञ से सत्यापित कराएं।"
+        ]
+      },
+      "summary": {
+        "en": "Complete the 13-Step Blueprint to turn revealed commercial wisdom into an ethical, resilient, Shariah-grounded enterprise.",
+        "ur": "13 مراحل کا پراجیکٹ مکمل کر کے اسلامی تجارتی علم کو ایک مضبوط، بااخلاق اور حلال کاروبار میں تبدیل کریں۔",
+        "ar": "أكمل خطة الخطوات الـ ١٣ لتحويل العلم الشرعي التجاري إلى مشروع واقعي راسخ ومبارك.",
+        "hi": "13-चरणीय योजना पूरी करके इस्लामी व्यापारिक ज्ञान को एक सशक्त, नैतिक और हलाल उद्यम में बदलें।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l4_m24_1",
+          "question": {
+            "en": "When launching an innovative hybrid business contract not covered identically by standard textbook cases, what is the Academy's mandatory rule?",
+            "ur": "جب کوئی نیا یا پیچیدہ کاروباری معاہدہ پیش آئے جو عام کتابی مثالوں سے مختلف ہو، تو اکیڈمی کا لازمی اصول کیا ہے؟",
+            "ar": "عند وجود هيكلة تعاقدية مستجدة أو مركبة، ما الضابط الإلزامي في الأكاديمية؟",
+            "hi": "जब कोई नया या जटिल संकर व्यापारिक अनुबंध हो, तो अकादमी का अनिवार्य नियम क्या है?"
+          },
+          "options": {
+            "en": [
+              "Flag it as Category 7 and consult a qualified Mufti & legal counsel rather than guessing",
+              "Copy any bank contract and change the word 'interest' to 'profit'",
+              "Proceed without documentation"
+            ],
+            "ur": [
+              "اسے کیٹیگری 7 کے تحت مستند مفتی صاحب اور قانونی مشیر کے سامنے رکھ کر فتویٰ/رہنمائی حاصل کریں",
+              "صرف لفظ 'سود' بدل کر 'منافع' لکھ دیں",
+              "بغیر تحریر شروع کر دیں"
+            ],
+            "ar": [
+              "إحالتها للتصنيف السابع واستشارة مفتٍ مؤهل ومستشار قانوني وعدم التخمين",
+              "استبدال كلمة فائدة بربح فقط"
+            ],
+            "hi": [
+              "इसे श्रेणी 7 मानकर योग्य मुफ़्ती व कानूनी सलाहकार से परामर्श लें, अनुमान न लगाएं",
+              "केवल 'ब्याज' शब्द बदलकर 'लाभ' लिख दें"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Category 7 preserves scholarly honesty: never guess or invent Fatwas; seek qualified Shariah and statutory legal verification.",
+            "ur": "کیٹیگری 7 کا مقصد علمی دیانت ہے: خود سے فتویٰ تراشنے کے بجائے مستند مفتی سے رجوع کیا جائے۔",
+            "ar": "التصنيف السابع يحفظ الأمانة العلمية بإحالة النوازل لأهل الفتوى.",
+            "hi": "श्रेणी 7 विद्वत्तापूर्ण ईमानदारी सुनिश्चित करती है—अनुमान लगाने के बजाय प्रमाणित मुफ़्ती से पूछें।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Open the 'Project & Tools' tab right now and fill out Steps 1–13 for your chosen Halal Business Sector.",
+        "ur": "ابھی 'Project & Tools' ٹیب کھولیں اور اپنے منتخب کاروباری شعبے کے لیے 1 سے 13 تمام مراحل مکمل کریں۔",
+        "ar": "افتح تبويب المشروع والأدوات الآن ودوّن الخطوات ١ إلى ١٣ لمشروعك المختار.",
+        "hi": "अभी 'Project & Tools' टैब खोलें और अपने चुने हुए व्यवसाय के लिए चरण 1–13 भरें।"
+      },
+      "sources": [
+        { "title": "AAOIFI, SBP & SECP SRO 729(I)/2024 Frameworks", "category": "regulatory_legal", "attribution": "SBP & SECP", "url": "https://www.secp.gov.pk/document/aaoifi-shariah-standards-s-r-o-7291-2024-dated-may-21-2024/" }
+      ]
+    }
+  ]
+}

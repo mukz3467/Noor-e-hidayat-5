@@ -1,0 +1,646 @@
+{
+  "lessons": [
+    {
+      "id": "rights_01_parents",
+      "departmentId": "dept_rights",
+      "order": 1,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة وصلة الرحم", "hi": "परिवार और रिश्ते"},
+      "title": {"en": "1. Parents' Rights (Huqooq-ul-Walidayn)", "ur": "1. والدین کے حقوق (حقوق الوالدین)", "ar": "١. حقوق الوالدين", "hi": "1. माता-पिता के अधिकार"},
+      "introduction": {"en": "Islam places kindness to parents immediately after the worship of Allah alone. Caring for mothers and fathers in youth and frailty is a lifelong duty of gratitude, dignity, and service.", "ur": "اسلام نے توحید کے فوراً بعد والدین کے ساتھ حسنِ سلوک کو فرض قرار دیا ہے۔ بڑھاپے اور کمزوری میں ان کی خدمت شکر گزاری اور وقار کا بنیادی تقاضا ہے۔", "ar": "قرن الله بر الوالدين بتوحيده، وجعل الإحسان إليهما عند الكبر من أعظم القربات.", "hi": "इस्लाम ने एकेश्वरवाद के तुरंत बाद माता-पिता के साथ सद्व्यवहार को अनिवार्य किया है।"},
+      "explanation": {"en": "In Surah Al-Isra (17:23-24), Allah forbids even uttering a word of irritation ('Uff') or speaking harshly to either parent, and commands speaking with honor and lowering the wing of humility out of mercy. Mothers hold special honor due to pregnancy, childbirth, and nursing (31:14, 46:15), reinforced by Bukhari 5971.", "ur": "سورۃ الاسراء (17:23-24) میں اللہ تعالیٰ نے والدین کو 'اف' تک کہنے اور جھڑکنے سے منع فرمایا اور عزت و رحمت کے ساتھ عاجزی اختیار کرنے کا حکم دیا۔ حمل، ولادت اور رضاعت کی مشقت کی بنا پر ماں کا حق مقدم ہے (لقمان 31:14؛ بخاری 5971)۔", "ar": "نهى القرآن عن قول أفٍّ للوالدين وأمر بخفض جناح الذل من الرحمة.", "hi": "सूरह अल-इसरा (17:23-24) में माता-पिता को उफ़ तक कहने से रोका गया है।"},
+      "dutyBearer": {"en": "Adult and able children (sons and daughters equally), coordinated fairly among siblings.", "ur": "بالغ اور صاحبِ استطاعت اولاد (بیٹے اور بیٹیاں دونوں حسبِ استطاعت باہمی تعاون سے ذمہ دار ہیں)۔", "ar": "الأبناء والبنات بالعدل والتعاون.", "hi": "वयस्क संतान (बेटे और बेटियाँ अपनी क्षमता के अनुसार)।"},
+      "mutualBoundaries": {"en": "Obedience to parents applies only in lawful good (Ma'ruf). If parents command shirk, sin, injustice toward a spouse/others, or unlawful harm, children must respectfully decline without mistreatment (Quran 31:15). Parents must also respect their adult children's lawful rights.", "ur": "والدین کی اطاعت صرف جائز اور معروف امور میں ہے۔ اگر وہ گناہ، ظلم یا کسی کی حق تلفی کا حکم دیں تو بدتمیزی کیے بغیر نرمی سے معذرت کرنا لازم ہے (لقمان 31:15)۔", "ar": "لا طاعة لمخلوق في معصية الخالق، مع وجوب صحبتهما بالمعروف.", "hi": "माता-पिता की आज्ञा केवल वैध (मारूफ़) कार्यों में है; अन्याय या पाप में नहीं।"},
+      "rightsViolatedAction": {"en": "If a child is experiencing severe emotional or physical abuse from parents, maintain respectful distance, seek family mediation or counseling, uphold basic financial support if needy, and protect dependents from harm without severing basic courtesy.", "ur": "اگر والدین کی طرف سے شدید تکلیف یا زیادتی کا سامنا ہو تو اپنے اہلِ خانہ کو ظلم سے محفوظ رکھتے ہوئے مناسب فاصلہ، خاندانی ثالثی اور عدل پر مبنی شائستگی برقرار رکھیں۔", "ar": "الجمع بين دفع الضرر والرفق والبر في الحدود الشرعية.", "hi": "यदि गंभीर दुर्व्यवहार हो तो परिवार की सुरक्षा करते हुए सम्मानजनक दूरी और सहायता बनाए रखें।"},
+      "practicalWays": {
+        "en": ["Listen patiently without interrupting", "Arrange regular medical checkups and financial support when needed", "Share caregiving fairly between brothers and sisters instead of burdening one daughter-in-law or child", "Make daily dua: 'Rabbi irhamhuma kama rabbayani saghira'"],
+        "ur": ["والدین کی بات صبر اور توجہ سے سنیں", "بیماری اور بڑھاپے میں باقاعدہ علاج اور نفقہ کا انتظام کریں", "خدمت کی ذمہ داری تمام بھائی بہنوں میں منصفانہ تقسیم کریں", "ان کے لیے دعا کرتے رہیں: رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا"],
+        "ar": ["الإنصات بلطف وتوفير الرعاية الصحية والمالية وتوزيع البر بين الإخوة بالعدل."],
+        "hi": ["धैर्य से उनकी बात सुनें", "चिकित्सा व आर्थिक सहायता सुनिश्चित करें", "सेवा की ज़िम्मेदारी सभी भाई-बहन मिलजुल कर निभाएं"]
+      },
+      "realLifeExamples": {
+        "en": ["Three siblings creating a weekly schedule to accompany their aging mother to doctor visits and split expenses transparently."],
+        "ur": ["تین بہن بھائیوں کا ہفتہ وار ترتیب بنا کر والدہ کو ہسپتال لے جانا اور علاج کے اخراجات باہم بانٹنا۔"],
+        "ar": ["تنظيم جدول أسبوعي بين الإخوة لخدمة الأم المسنة."],
+        "hi": ["तीन भाई-बहनों का मिलकर बुज़ुर्ग माँ की देखभाल और इलाज का खर्च बांटना।"]
+      },
+      "commonMistakes": {
+        "en": ["Ignoring elderly parents due to busy work or digital distraction", "Assuming only daughters-in-law must serve aging parents", "Using parents' displeasure as an excuse to mistreat one's spouse"],
+        "ur": ["کاروبار یا موبائل میں مصروف ہو کر والدین کو نظرانداز کرنا", "بزرگوں کی تمام خدمت صرف بہو کے ذمے ڈال دینا", "والدین کی خوشنودی کے نام پر بیوی یا شوہر پر ظلم کرنا"],
+        "ar": ["إهمال الوالدين أو التقصير في حقهما أو الخلط بين البر وظلم الزوجة."],
+        "hi": ["व्यस्तता के कारण माता-पिता की अनदेखी करना या सिर्फ बहू पर सारा बोझ डालना।"]
+      },
+      "actionSteps": {
+        "en": ["Call or visit your parents today", "Check whether any medication, bill, or household repair is overdue", "Speak gently even when tired"],
+        "ur": ["آج ہی والدین کو فون کریں یا ملاقات کریں", "ان کی دوائی، ضروریات یا گھر کی مرمت کا حال معلوم کریں", "تھکن کے باوجود نرم لہجے میں بات کریں"],
+        "ar": ["اتصل بوالديك اليوم وتفقد احتياجاتهما."],
+        "hi": ["आज माता-पिता से बात करें या मिलें और उनकी ज़रूरतें पूछें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 17, "startAyah": 23, "endAyah": 24, "contextExplanation": {"en": "Explicit Quranic command prohibiting harsh speech and commanding mercy toward aging parents.", "ur": "بڑھاپے میں والدین کے سامنے اُف تک کہنے سے ممانعت اور عاجزی و دعا کا حکم۔", "ar": "الأمر بالإحسان والنهي عن التأفف.", "hi": "माता-पिता के प्रति सम्मान और विनम्रता का क़ुरआनी आदेश।"}},
+        {"surahNumber": 31, "startAyah": 14, "endAyah": 15, "contextExplanation": {"en": "Acknowledges mother's hardship while clarifying limits of obedience when commanded to sin.", "ur": "ماں کی مشقت کا اعتراف اور غیر شرعی حکم میں حدود کی وضاحت۔", "ar": "التوازن بين البر وعدم الطاعة في المعصية.", "hi": "माँ के कष्टों का सम्मान और अन्याय में आज्ञा न मानने की सीमा।"}}
+      ],
+      "hadithIds": ["bukhari_5971"],
+      "sourceLinks": [{"title": "Surah Al-Isra 17:23-24 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/17/23-24"}, {"title": "Sahih al-Bukhari 5971 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:5971"}],
+      "mcqs": [{"id": "mcq_r01", "question": {"en": "What does Quran 31:15 teach if parents pressure a believer into wrongdoing?", "ur": "اگر والدین کسی گناہ یا شرک پر مجبور کریں تو لقمان 31:15 کیا حکم دیتی ہے؟", "ar": "ماذا ترشدنا الآية إذا أمر الوالدان بمعصية؟", "hi": "यदि माता-पिता ग़लत कार्य को कहें तो क़ुरआन 31:15 क्या सिखाता है?"}, "options": {"en": ["Obey the sin anyway", "Decline the sin respectfully while maintaining kind worldly companionship", "Cut off all communication forever", "Insult them"], "ur": ["گناہ میں اطاعت کریں", "گناہ سے انکار کریں مگر دنیا میں ان کے ساتھ بھلائی اور ادب کا برتاؤ رکھیں", "مکمل قطع تعلق کر لیں", "سخت کلامی کریں"], "ar": ["طاعتهم في المعصية", "عدم طاعتهم في المعصية مع صحبتهما بالمعروف", "القطيعة التامة", "الإساءة إليهما"], "hi": ["पाप में भी मानें", "पाप से इनकार करें पर सम्मान व सेवा जारी रखें", "रिश्ता हमेशा के लिए तोड़ दें", "कठोर शब्द बोलें"]}, "correctIndex": 1, "explanation": {"en": "Quran 31:15 forbids obeying sin while commanding 'wa sahibhuma fid-dunya ma'rufa' (treat them kindly in worldly life).", "ur": "گناہ میں اطاعت نہیں، لیکن دنیا میں معروف طریقے سے حسنِ سلوک برقرار رکھنے کا حکم ہے۔", "ar": "وصاحبهما في الدنيا معروفاً.", "hi": "क़ुरआन 31:15 में अस्वीकृति के साथ सम्मानजनक व्यवहार का निर्देश है।"}}]
+    },
+    {
+      "id": "rights_02_children",
+      "departmentId": "dept_rights",
+      "order": 2,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة وصلة الرحم", "hi": "परिवार और रिश्ते"},
+      "title": {"en": "2. Children's Rights (Huqooq-ul-Awlad)", "ur": "2. اولاد کے حقوق (حقوقِ اولاد)", "ar": "٢. حقوق الأبناء والبنات", "hi": "2. संतान के अधिकार"},
+      "introduction": {"en": "Children are an Amanah (sacred trust) from Allah before they ever owe duties to parents. They hold firm rights to life, lineage, joyful welcome regardless of gender, sustenance, education, and equal love.", "ur": "اولاد والدین کے پاس اللہ کی امانت ہے۔ بیٹا ہو یا بیٹی، پیدائش سے ہی زندگی، اچھی تربیت، نفقہ، تعلیم اور انصاف پر مبنی محبت ان کا شرعی حق ہے۔", "ar": "الأبناء أمانة عظيمة؛ لهم حق الحياة والنفقة والتربية والعدل بين الذكور والإناث.", "hi": "संतान अल्लाह की अमानत है; उन्हें जीवन, भरण-पोषण, शिक्षा और समान न्याय का अधिकार है।"},
+      "explanation": {"en": "Islam abolished burying or demeaning daughters and emphasized fatherly provision (2:233) alongside gentle mercy. Favoring sons over daughters in gifts, schooling, or affection violates Prophetic justice (Bukhari 2587 concept on equality in gifting; 893 responsibility of guardianship).", "ur": "اسلام نے بیٹیوں کے قتل اور تذلیل کو حرام قرار دیا، باپ پر نفقہ اور ماں کے لیے دودھ پلانے کی مدت کا تحفظ مقرر کیا (البقرہ 2:233) اور تمام بچوں میں عدل کا حکم دیا۔", "ar": "أوجب الإسلام النفقة والعدل بين الأولاد في العطية والرحمة.", "hi": "इस्लाम ने बेटों व बेटियों में समान न्याय और भरण-पोषण अनिवार्य किया है।"},
+      "dutyBearer": {"en": "Both parents (financial provision primarily on father per capacity, shared emotional care and moral upbringing by mother and father).", "ur": "دونوں والدین (نفقہ کی بنیادی ذمہ داری باپ پر حسبِ استطاعت، اور شفقت و تربیت ماں باپ دونوں کی مشترکہ ذمہ داری ہے)۔", "ar": "الأب والأم معاً كل حسب مسؤوليته.", "hi": "माता-पिता दोनों (आर्थिक ज़िम्मेदारी मुख्यतः पिता पर और परवरिश दोनों की)।"},
+      "mutualBoundaries": {"en": "Parental authority exists to nurture and protect, never to abuse physically/emotionally, force marriage, or deny education and inheritance.", "ur": "والدین کی ولایت تحفظ اور تربیت کے لیے ہے؛ مار پیٹ، جبری شادی یا تعلیم و وراثت سے محرومی ہرگز جائز نہیں۔", "ar": "الولاية للتأديب والرحمة لا للظلم أو الإكراه.", "hi": "अभिभावकता सुरक्षा के लिए है, मारपीट या जबरन विवाह के लिए नहीं।"},
+      "rightsViolatedAction": {"en": "Trusted elders, teachers, and child protection bodies should intervene safely when children face severe neglect, child labor, or abuse.", "ur": "بچوں کے ساتھ شدید تشدد، جبری مشقت یا غفلت کی صورت میں معتبر بزرگوں اور بچوں کے تحفظ کے قانونی اداروں سے مدد لینا ضروری ہے۔", "ar": "الاستعانة بالجهات المختصة لحماية الطفل من الإيذاء.", "hi": "बाल शोषण या हिंसा होने पर विश्वसनीय बड़ों और बाल सुरक्षा संस्थानों की मदद लें।"},
+      "practicalWays": {
+        "en": ["Choose good, dignified names", "Educate daughters and sons equally", "Spend quality screen-free time listening to your children", "Save fairly without gifting everything only to one favored child"],
+        "ur": ["اچھے اور بامعنی نام رکھیں", "بیٹوں اور بیٹیوں دونوں کو یکساں تعلیم و تربیت دیں", "موبائل رکھ کر بچوں کی بات توجہ سے سنیں", "تحائف اور سہولیات میں تمام بچوں کے درمیان عدل رکھیں"],
+        "ar": ["حسن التسمية والعدل في العطية والتعليم المتكافئ."],
+        "hi": ["अच्छे नाम रखें", "बेटों व बेटियों को समान शिक्षा दें", "उपहारों व प्रेम में बराबरी रखें"]
+      },
+      "realLifeExamples": {
+        "en": ["A father ensuring his daughters complete university and professional skills with the same support given to his sons."],
+        "ur": ["ایک والد کا اپنی بیٹیوں کو بھی بیٹوں کے برابر اعلیٰ تعلیم اور ہنر دلوانا۔"],
+        "ar": ["مساواة الأب بين أبنائه وبناته في التعليم."],
+        "hi": ["एक पिता द्वारा बेटियों को भी बेटों के समान उच्च शिक्षा दिलाना।"]
+      },
+      "commonMistakes": {
+        "en": ["Comparing siblings harshly", "Withholding financial maintenance after divorce/separation", "Humiliating children in public"],
+        "ur": ["بچوں کا آپس میں تکلیف دہ موازنہ کرنا", "طلاق کے بعد بچوں کا خرچہ روک لینا", "سب کے سامنے بچوں کی تذلیل کرنا"],
+        "ar": ["المقارنة القاسية وحرمان النفقة بعد الطلاق."],
+        "hi": ["बच्चों की कठोर तुलना करना या तलाक़ के बाद बच्चों का खर्च रोकना।"]
+      },
+      "actionSteps": {
+        "en": ["Praise one positive effort of each child today", "Review fairness in allowances and attention"],
+        "ur": ["آج ہر بچے کی کسی اچھی کوشش کی حوصلہ افزائی کریں", "بچوں کو دیے جانے والے وقت اور تحائف میں عدل کا جائزہ لیں"],
+        "ar": ["شجع أبناءك اليوم وراجع العدل بينهم."],
+        "hi": ["आज हर बच्चे के अच्छे प्रयास की सराहना करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 2, "startAyah": 233, "endAyah": 233, "contextExplanation": {"en": "Establishes mothers' nursing care and fathers' obligation of food and clothing equitably.", "ur": "ماں کی رضاعت اور باپ پر دستور کے مطابق نفقہ و لباس کی فرضیت۔", "ar": "ضمان نفقة الوالدة والرضيع بالمعروف.", "hi": "माँ की देखभाल और पिता पर भरण-पोषण का कर्तव्य।"}}],
+      "hadithIds": ["bukhari_893", "muslim_2318a"],
+      "sourceLinks": [{"title": "Surah Al-Baqarah 2:233 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/2/233"}],
+      "mcqs": [{"id": "mcq_r02", "question": {"en": "Who carries the primary legal obligation to provide food, clothing, and shelter for young children?", "ur": "چھوٹے بچوں کے کھانے، کپڑے اور رہائش (نفقہ) کی بنیادی شرعی ذمہ داری کس پر ہے؟", "ar": "على من تجب نفقة الأولاد الصغار شرعاً؟", "hi": "छोटे बच्चों के भरण-पोषण की प्राथमिक ज़िम्मेदारी किस पर है?"}, "options": {"en": ["The eldest daughter", "The father according to his lawful means (Quran 2:233)", "Only the school", "No one"], "ur": ["بڑی بیٹی", "والد (باپ) اپنی استطاعت کے مطابق (البقرہ 2:233)", "صرف اسکول", "کسی پر نہیں"], "ar": ["الأخت الكبرى", "الأب بالمعروف (البقرة ٢٣٣)", "المدرسة", "لا أحد"], "hi": ["बड़ी बेटी", "पिता अपनी क्षमता अनुसार (क़ुरआन 2:233)", "केवल स्कूल", "कोई नहीं"]}, "correctIndex": 1, "explanation": {"en": "Quran 2:233 explicitly assigns 'rizquhunna wa kiswatuhunna bil-ma'ruf' (reasonable maintenance) upon the father.", "ur": "البقرہ 2:233 میں باپ پر دستور کے مطابق نفقہ لازم قرار دیا گیا ہے۔", "ar": "وعلى المولود له رزقهن وكسوتهن بالمعروف.", "hi": "क़ुरआन 2:233 पिता पर न्यायसंगत भरण-पोषण अनिवार्य करता है।"}}]
+    },
+    {
+      "id": "rights_03_husband",
+      "departmentId": "dept_rights",
+      "order": 3,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة وصلة الرحم", "hi": "परिवार और रिश्ते"},
+      "title": {"en": "3. Husband's Rights & Mutual Partnership", "ur": "3. شوہر کے حقوق اور باہمی رفاقت", "ar": "٣. حقوق الزوج وضوابطها", "hi": "3. पति के अधिकार और सीमाएं"},
+      "introduction": {"en": "Marriage in Islam is built on tranquility (Sakinah), affection (Mawaddah), and mercy (Rahmah — 30:21). A husband has rights of respect, trust, household loyalty, and cooperation within Ma'ruf.", "ur": "اسلام میں نکاح کی بنیاد سکون، محبت اور رحمت (الروم 30:21) پر ہے۔ شوہر کے حقوق میں عزت، امانت داری، باہمی اعتماد اور جائز امور میں تعاون شامل ہے۔", "ar": "بُني الزواج على السكن والمودة والرحمة مع حفظ الأمانة والتعاون بالمعروف.", "hi": "इस्लाम में विवाह की नींव शांति, प्रेम और दया (30:21) पर है।"},
+      "explanation": {"en": "Quran 4:34 describes Qiwamah as protective responsibility and financial spending — never tyranny. Mutual consultation (Shura) and honoring family privacy protect marital peace.", "ur": "سورۃ النساء (4:34) میں قوامیت کا مفہوم حفاظت، مالی ذمہ داری اور سرپرستی ہے، ہرگز ظلم یا جبر نہیں۔ باہمی مشورہ اور رازداری ازدواجی سکون کا ضامن ہے۔", "ar": "القوامة مسؤولية رعاية وإنفاق لا تسلط ولا ظلم.", "hi": "क़ुरआन 4:34 में क़िवामह का अर्थ सुरक्षा और आर्थिक ज़िम्मेदारी है, अत्याचार नहीं।"},
+      "dutyBearer": {"en": "The wife, balanced cleanly with reciprocal duties upon the husband toward her.", "ur": "بیوی، جبکہ اسی کے متوازی شوہر پر بیوی کے حقوق لازم ہیں۔", "ar": "الزوجة مع تقابل الحقوق على الزوج.", "hi": "पत्नी, साथ ही पति पर भी पत्नी के समान अधिकार लागू होते हैं।"},
+      "mutualBoundaries": {"en": "Crucial Boundary: Husband's rights NEVER override the wife's Quranic rights to dignity, Mahr, maintenance, safety from physical/verbal harm, or obedience to Allah. Qiwamah forbids coercion, isolation from parents, or taking her personal earnings/inheritance by force.", "ur": "لازمی حد: شوہر کا حق کبھی بھی بیوی کی توہین، تشدد، ذاتی کمائی یا وراثت ہتھیانے یا والدین سے ملنے پر ناحق پابندی کی اجازت نہیں دیتا۔", "ar": "لا يجوز للزوج الإضرار أو أخذ مال الزوجة بغير رضاها.", "hi": "स्पष्ट सीमा: पति के अधिकार कभी भी हिंसा, अपमान या पत्नी की कमाई/विरासत हड़पने की अनुमति नहीं देते।"},
+      "rightsViolatedAction": {"en": "Seek sincere private communication first; if severe conflict persists, appoint wise arbiters from both families (4:35). Abuse requires immediate safety planning.", "ur": "اختلاف کی صورت میں باہمی گفتگو اور پھر دونوں خاندانوں سے منصف حکم (النساء 4:35) مقرر کریں۔ تشدد کی صورت میں تحفظ مقدم ہے۔", "ar": "التحكيم العائلي العادل (النساء ٣٥) ودفع الأذى.", "hi": "विवाद में पारिवारिक मध्यस्थता (4:35) लें; हिंसा होने पर सुरक्षा सर्वोपरि है।"},
+      "practicalWays": {
+        "en": ["Guard household secrets and avoid mocking one's spouse publicly", "Use kind speech when resolving finances or household schedules", "Respect each other's extended families fairly"],
+        "ur": ["گھر کے رازوں کی حفاظت کریں اور محفلوں میں شریکِ حیات کی کمزوریاں بیان نہ کریں", "گھریلو و مالی معاملات میں شائستہ گفتگو اور مشورہ کریں", "ایک دوسرے کے والدین اور رشتہ داروں کا احترام کریں"],
+        "ar": ["حفظ أسرار البيت والتشاور باللطف واحترام الأهل."],
+        "hi": ["घर की गोपनीयता बचाएं", "आर्थिक व घरेलू विषयों पर विनम्र संवाद करें", "दोनों परिवारों का सम्मान करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Spouses setting monthly budgets openly together without secrecy or harshness."],
+        "ur": ["میاں بیوی کا ہر ماہ باہمی مشورے سے گھریلو بجٹ طے کرنا۔"],
+        "ar": ["اتفاق الزوجين بالتشاور على ميزانية البيت."],
+        "hi": ["पति-पत्नी का मिलकर पारदर्शिता से घरेलू बजट तय करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Misquoting Hadith out of context to demand unconditional servitude", "Disclosing private disputes on social media"],
+        "ur": ["احادیث کو سیاق و سباق سے ہٹ کر بیوی پر جبر کے لیے استعمال کرنا", "گھریلو اختلافات سوشل میڈیا پر پھیلانا"],
+        "ar": ["إخراج النصوص عن سياقها أو نشر الخلافات الزوجية."],
+        "hi": ["धार्मिक संदर्भ गलत प्रस्तुत करके दबाव बनाना या निजी विवाद सार्वजनिक करना।"]
+      },
+      "actionSteps": {
+        "en": ["Express appreciation for one daily effort your spouse makes", "Resolve one pending point calmly via Shura"],
+        "ur": ["آج شریکِ حیات کی کسی محنت پر شکریہ ادا کریں", "کسی زیرِ التوا معاملے پر نرمی سے مشورہ کریں"],
+        "ar": ["اشكر شريك حياتك اليوم وتحدثا بهدوء."],
+        "hi": ["आज जीवनसाथी के प्रयास की सराहना करें और शांति से संवाद करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 34, "endAyah": 35, "contextExplanation": {"en": "Defines Qiwamah as protective responsibility and establishes family arbitration during discord.", "ur": "قوامیت کی ذمہ داری اور اختلاف کی صورت میں دونوں خاندانوں سے حکم مقرر کرنے کا حکم۔", "ar": "تنظيم القوامة والتحكيم العائلي عند الشقاق.", "hi": "पारिवारिक दायित्व और मतभेद में मध्यस्थता का नियम।"}}],
+      "hadithIds": ["bukhari_893", "muslim_1218a"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:34-35 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/34-35"}],
+      "mcqs": [{"id": "mcq_r03", "question": {"en": "When serious marital conflict persists, what peaceful step does Quran 4:35 prescribe?", "ur": "شدید ازدواجی اختلاف جاری رہے تو سورۃ النساء 4:35 کیا حل تجویز کرتی ہے؟", "ar": "ماذا ترشد الآية النساء ٣٥ عند الشقاق؟", "hi": "गंभीर वैवाहिक विवाद होने पर क़ुरआन 4:35 क्या समाधान बताता है?"}, "options": {"en": ["Publicly shame the spouse", "Appoint one fair arbiter from his family and one from her family", "Use physical intimidation", "Withhold children"], "ur": ["سرِ عام بدنام کریں", "شوہر اور بیوی دونوں کے خاندانوں سے ایک ایک منصف حکم مقرر کریں", "جسمانی دباؤ ڈالیں", "بچوں سے ملنے نہ دیں"], "ar": ["التشهير", "بعث حكم من أهله وحكم من أهلها للإصلاح", "التهديد", "منع الأطفال"], "hi": ["सार्वजनिक अपमान", "दोनों परिवारों से एक-एक न्यायप्रिय मध्यस्थ नियुक्त करें", "डराना-धमकाना", "बच्चों से अलग करना"]}, "correctIndex": 1, "explanation": {"en": "Quran 4:35 teaches fair dual-family arbitration aimed at reconciliation.", "ur": "النساء 4:35 میں اصلاح کی نیت سے دونوں طرف سے ایک ایک منصف مقرر کرنے کی ہدایت ہے۔", "ar": "فابعثوا حكماً من أهله وحكماً من أهلها.", "hi": "क़ुरआन 4:35 सुलह हेतु दोनों पक्षों से मध्यस्थ भेजने को कहता है।"}}]
+    },
+    {
+      "id": "rights_04_wife",
+      "departmentId": "dept_rights",
+      "order": 4,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة وصلة الرحم", "hi": "परिवार और रिश्ते"},
+      "title": {"en": "4. Wife's Rights (Huqooq-uz-Zawjah)", "ur": "4. بیوی کے حقوق (حقوقِ زوجہ)", "ar": "٤. حقوق الزوجة", "hi": "4. पत्नी के अधिकार"},
+      "introduction": {"en": "Islam granted women independent property ownership, stipulated Mahr (dower), financial maintenance regardless of her personal wealth, dignified treatment (Mu'asharah bil-Ma'ruf), and protection from coercion.", "ur": "اسلام نے بیوی کو ذاتی ملکیت کا پورا حق، حقِ مہر، نفقہ و رہائش (چاہے وہ خود مالدار ہو) اور عزت و حسنِ سلوک کا تحفظ عطا فرمایا ہے۔", "ar": "ضمن الإسلام للزوجة المهر والنفقة والذمة المالية المستقلة والمعاشرة بالمعروف.", "hi": "इस्लाम ने पत्नी को महर, भरण-पोषण, स्वतंत्र संपत्ति और सम्मानजनक व्यवहार का अधिकार दिया है।"},
+      "explanation": {"en": "Quran 4:19 commands: 'Live with them in kindness (bil-ma'ruf)' and forbids holding women against their will to seize their Mahr. Quran 2:228 affirms reciprocal rights in fairness. A wife is NOT religiously required to finance the household from her personal salary or inheritance.", "ur": "سورۃ النساء (4:19) میں حکم ہے کہ بیویوں کے ساتھ بھلے طریقے سے زندگی گزارو، اور مہر ہڑپ کرنے کے لیے روک رکھنا حرام ہے۔ البقرہ (2:228) میں معروف کے مطابق مساوی حقوق کا اعلان ہے۔ بیوی اپنی ذاتی کمائی یا وراثت گھر پر خرچ کرنے کی پابند نہیں۔", "ar": "أمر الله بالمعاشرة بالمعروف وحرم عضل النساء لأخذ ما آتوهن.", "hi": "क़ुरआन 4:19 में पत्नी के साथ सम्मान से रहने का स्पष्ट आदेश है।"},
+      "dutyBearer": {"en": "The husband primarily (Mahr, housing/Nafaqah, protection, respect), supported by respectful in-laws.", "ur": "بنیادی طور پر شوہر (مہر، رہائش، نفقہ، تحفظ اور عزت)، اور سسرال پر حسنِ سلوک۔", "ar": "الزوج أساساً ثم أهله بالاحترام.", "hi": "मुख्यतः पति (महर, आवास, खर्च, सुरक्षा और सम्मान)।"},
+      "mutualBoundaries": {"en": "In-laws have NO Islamic right to demand unpaid servitude, seize a daughter-in-law's jewelry/salary, or demand dowry (Jahez). Both spouses have privacy rights.", "ur": "سسرال کو جہیز مانگنے، بہو کا زیور یا تنخواہ لینے یا غیر انسانی خدمت لینے کا کوئی شرعی حق نہیں۔", "ar": "لا حق لأهل الزوج في أخذ مال الزوجة أو تكليفها فوق طاقتها.", "hi": "ससुराल वालों को दहेज मांगने या बहू की कमाई/गहने लेने का कोई धार्मिक अधिकार नहीं।"},
+      "rightsViolatedAction": {"en": "Withholding Mahr, starving/refusing maintenance, or physical/psychological abuse is oppression. Women may seek mediation, Sharia counseling, Khul'/judicial relief, or protective laws.", "ur": "مہر دبانا، خرچہ روکنا یا جسمانی و ذہنی تشدد ظلم ہے۔ متاثرہ خاتون ثالثی، خلع یا قانونی تحفظ کی حق دار ہے۔", "ar": "منع المهر أو النفقة أو الإيذاء يبيح طلب الإنصاف والخلع والقضاء.", "hi": "महर रोकना, खर्च न देना या हिंसा करना अन्याय है; महिला कानूनी व न्यायिक मदद ले सकती है।"},
+      "practicalWays": {
+        "en": ["Pay Mahr promptly and honestly rather than keeping it unpaid for life", "Provide respectful private living space within means", "Thank her openly and help with household chores after the Prophet's Sunnah (Bukhari 676)"],
+        "ur": ["مہر خوش دلی سے جلد ادا کریں، ساری زندگی لٹکا کر نہ رکھیں", "استطاعت کے مطابق باوقار علیحدہ رہائش یا پرائیویسی فراہم کریں", "نبی کریم ﷺ کی سنت کے مطابق گھر کے کاموں میں ہاتھ بٹائیں"],
+        "ar": ["أداء المهر وتوفير السكن اللائق والمساعدة في شؤون البيت."],
+        "hi": ["महर खुशी से समय पर अदा करें", "उचित निजता व आवास दें", "घरेलू कामों में हाथ बटाएं"]
+      },
+      "realLifeExamples": {
+        "en": ["A husband immediately transferring his wife's stipulated Mahr at Nikah and honoring her freedom to manage her own savings."],
+        "ur": ["نکاح کے وقت ہی بیوی کا مقررہ مہر ادا کرنا اور اس کی ذاتی بچت پر مکمل اختیار تسلیم کرنا۔"],
+        "ar": ["تمكين الزوجة من مهرها ومالها الخاص."],
+        "hi": ["निकाह के समय महर अदा करना और उसकी निजी आय का सम्मान करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Treating Mahr as symbolic or never paying it", "Demanding Jahez (dowry) from the bride's parents", "Verbal humiliation or threats of instant triple divorce"],
+        "ur": ["حقِ مہر کو محض کاغذی رسم سمجھ کر ادا نہ کرنا", "لڑکی والوں سے جہیز کا مطالبہ کرنا", "غصے میں طلاق کی دھمکیاں دینا"],
+        "ar": ["مماطلة المهر والمطالبة بتجهيز غير ملزم والابتزاز بالطلاق."],
+        "hi": ["महर न देना, दहेज मांगना या गुस्से में तलाक़ की धमकी देना।"]
+      },
+      "actionSteps": {
+        "en": ["Verify whether your wife's Mahr has been fully paid", "Practice Prophetic gentleness in conversation today"],
+        "ur": ["تصدیق کریں کہ بیوی کا حقِ مہر ادا ہو چکا ہے یا باقی ہے", "آج سنت کے مطابق نرمی اور شکر گزاری کا مظاہرہ کریں"],
+        "ar": ["تأكد من أداء المهر وأظهر التقدير للزوجة."],
+        "hi": ["सुनिश्चित करें कि महर अदा किया जा चुका है और सम्मानपूर्वक बात करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 4, "startAyah": 4, "endAyah": 4, "contextExplanation": {"en": "Commands giving women their Mahr as an unconditional bridal gift.", "ur": "عورتوں کو ان کا حقِ مہر خوش دلی سے عطا کرنے کا حکم۔", "ar": "وجوب إعطاء النساء صدقاتهن نحلة.", "hi": "पत्नी को उसका महर प्रसन्नता से देने का आदेश।"}},
+        {"surahNumber": 4, "startAyah": 19, "endAyah": 19, "contextExplanation": {"en": "Mandates kind treatment and forbids oppressing women or seizing their Mahr.", "ur": "بیویوں کے ساتھ بھلے سلوک اور ظلم و حق تلفی سے ممانعت۔", "ar": "المعاشرة بالمعروف وتحريم الإضرار.", "hi": "सम्मानजनक जीवनसाथी व्यवहार का आदेश।"}}
+      ],
+      "hadithIds": ["muslim_1218a"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:19 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/19"}, {"title": "Sahih Muslim 1218a — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/muslim:1218a"}],
+      "mcqs": [{"id": "mcq_r04", "question": {"en": "Under Islamic law, who owns a wife's earned salary, inheritance, and Mahr?", "ur": "شرعی طور پر بیوی کی ذاتی تنخواہ، وراثت اور مہر کا مالک کون ہے؟", "ar": "من يملك راتب الزوجة وميراثها ومهرها شرعاً؟", "hi": "शरीअत के अनुसार पत्नी के वेतन, विरासत और महर का स्वामी कौन है?"}, "options": {"en": ["Her husband automatically", "Her father-in-law", "The wife herself, unless she voluntarily gifts part of it", "Neighbors"], "ur": ["خود بخود شوہر", "سسر", "خود بیوی مکمل طور پر مالک ہے جب تک وہ اپنی خوشی سے کچھ نہ دے", "پڑوسی"], "ar": ["الزوج", "الحمو", "الزوجة نفسها بذمة مالية مستقلة", "الجيران"], "hi": ["स्वतः पति", "ससुर", "पत्नी स्वयं, जब तक वह स्वेच्छा से कुछ न दे", "पड़ोसी"]}, "correctIndex": 2, "explanation": {"en": "Islam guarantees a married woman independent financial ownership (Quran 4:4, 4:32).", "ur": "اسلام شادی شدہ خاتون کو مکمل مستقل مالی ملکیت عطا کرتا ہے (النساء 4:4، 4:32)۔", "ar": "للزوجة ذمة مالية مستقلة كاملة.", "hi": "इस्लाम विवाहित महिला को पूर्ण स्वतंत्र आर्थिक अधिकार देता है।"}}]
+    },
+    {
+      "id": "rights_05_siblings",
+      "departmentId": "dept_rights",
+      "order": 5,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة وصلة الرحم", "hi": "परिवार और रिश्ते"},
+      "title": {"en": "5. Siblings' Rights (Brothers & Sisters)", "ur": "5. بہن بھائیوں کے حقوق", "ar": "٥. حقوق الإخوة والأخوات", "hi": "5. भाई-बहनों के अधिकार"},
+      "introduction": {"en": "Brothers and sisters share lifelong bonds of kinship, mutual dignity, care after parents age, and clear Quranic shares in inheritance.", "ur": "بہن بھائی زندگی بھر کے خونی رشتے، والدین کے بعد سہارا بننے، عزت و ہمدردی اور وراثت میں صریح قرآنی حقوق کے امین ہیں۔", "ar": "الإخوة والأخوات سند العمر ولهم حقوق الصلة والنصح وحقوق الميراث المقدرة.", "hi": "भाई-बहन जीवन भर के रिश्ते हैं, जिनमें सम्मान, सहयोग व विरासत के स्पष्ट अधिकार हैं।"},
+      "explanation": {"en": "Prophet Musa (AS) sought strength through his brother Harun (AS). After parents pass away, brothers must NEVER guilt or pressure sisters into 'forgiving' (renouncing) their legal Quranic inheritance shares (4:7, 4:11). Younger siblings deserve gentleness, older ones respect.", "ur": "حضرت موسیٰؑ نے اپنے بھائی ہارونؑ کے ذریعے تقویت مانگی۔ والدین کے بعد بھائیوں کا اپنی بہنوں کو وراثتی حق سے محروم کرنا یا جذباتی دباؤ سے حصہ 'معاف' کروانا صریح ظلم ہے (النساء 4:7، 4:11)۔", "ar": "يحرم إكراه الأخوات أو إحراجهن للتنازل عن ميراثهن الشرعي.", "hi": "माता-पिता के बाद भाइयों द्वारा बहनों पर विरासत छोड़ने का दबाव डालना गंभीर अन्याय है (4:7, 4:11)।"},
+      "dutyBearer": {"en": "All brothers and sisters mutually.", "ur": "تمام بھائی اور بہنیں باہمی طور پر۔", "ar": "جميع الإخوة والأخوات بالتبادل.", "hi": "सभी भाई-बहन आपसी रूप से।"},
+      "mutualBoundaries": {"en": "Older brothers do not own their adult sisters' salaries or property, nor may any sibling usurp shared parental land.", "ur": "بڑے بھائیوں کو بہنوں کی کمائی پر قبضے یا مشترکہ جائیداد دبانے کا کوئی حق نہیں۔", "ar": "لا ولاية تملك على مال الأخوات الراشدات.", "hi": "बड़े भाइयों को वयस्क बहनों की संपत्ति या कमाई पर अधिकार नहीं है।"},
+      "rightsViolatedAction": {"en": "When siblings withhold inheritance or cut off ties, pursue transparent mediation via respected elders before resorting to lawful succession courts.", "ur": "اگر وراثت دبائی جا رہی ہو تو پہلے معزز بزرگوں کے ذریعے شفاف تقسیم کی کوشش کریں اور ضرورت پڑنے پر شرعی و قانونی عدالتی حق حاصل کریں۔", "ar": "السعي للصلح العائلي ثم المطالبة القضائية المشروعة بالحقوق.", "hi": "विरासत रोके जाने पर पहले पारिवारिक मध्यस्थता और फिर कानूनी सहायता लें।"},
+      "practicalWays": {
+        "en": ["Check on married and unmarried sisters regularly with warmth", "Distribute parental estate transparently by independent valuation", "Defend siblings' honor behind their backs"],
+        "ur": ["شادی شدہ اور غیر شادی شدہ بہنوں کی باقاعدہ خیریت اور مدد کا خیال رکھیں", "والدین کی جائیداد کی تقسیم غیر جانبدار تخمینے کے ساتھ شفاف رکھیں", "پیٹھ پیچھے اپنے بہن بھائیوں کی عزت کا دفاع کریں"],
+        "ar": ["تفقد الأخوات وقسمة التركة بعدالة وشفافية."],
+        "hi": ["बहनों की नियमित ख़ैर-ख़बर लें", "माता-पिता की संपत्ति पारदर्शी ढंग से बांटें"]
+      },
+      "realLifeExamples": {
+        "en": ["Brothers transferring bank funds and registered property deeds for each sister's exact Quranic share without delay."],
+        "ur": ["بھائیوں کا بغیر کسی ٹال مٹول کے بہنوں کے حصے کی رقم اور رجسٹرڈ کاغذات ان کے نام منتقل کرنا۔"],
+        "ar": ["تسليم الإخوة نصيب أخواتهم الشرعي كاملاً دون تأخير."],
+        "hi": ["भाइयों द्वारा बिना टालमटोल बहनों को उनका पूरा वैध हिस्सा सौंपना।"]
+      },
+      "commonMistakes": {
+        "en": ["Saying 'we spent on your wedding so you get no inheritance'", "Fighting over small furniture while neglecting sisterly love"],
+        "ur": ["یہ کہنا کہ 'تمہاری شادی پر خرچ کیا تھا اس لیے وراثت نہیں ملے گی'", "معمولی گھریلو سامان پر رشتے توڑ لینا"],
+        "ar": ["منع الميراث بحجة نفقات الزفاف."],
+        "hi": ["यह कहना कि 'शादी में खर्च किया था इसलिए विरासत नहीं मिलेगी'।"]
+      },
+      "actionSteps": {
+        "en": ["Message or call a brother or sister today", "Ensure all siblings understand fair Quranic shares"],
+        "ur": ["آج کسی بھائی یا بہن سے محبت بھرا رابطہ کریں", "مشترکہ خاندانی معاملات میں انصاف یقینی بنائیں"],
+        "ar": ["تواصل مع أخيك أو أختك اليوم بالمحبة."],
+        "hi": ["आज किसी भाई या बहन को स्नेह से कॉल करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 7, "endAyah": 7, "contextExplanation": {"en": "Establishes fixed, undeniable inheritance shares for men and women alike.", "ur": "مردوں اور عورتوں دونوں کے لیے وراثت میں مقررہ حق کا قرآنی اصول۔", "ar": "تقرير حق الرجال والنساء في الميراث.", "hi": "पुरुषों व महिलाओं दोनों के लिए विरासत का अटल क़ुरआनी अधिकार।"}}],
+      "hadithIds": ["bukhari_5984"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:7 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/7"}],
+      "mcqs": [{"id": "mcq_r05", "question": {"en": "Does wedding hospitality/dowry paid by parents cancel a sister's Quranic inheritance share?", "ur": "کیا شادی پر کیا گیا خرچ بہن کے قرآنی وراثتی حصے کو ختم کر دیتا ہے؟", "ar": "هل نفقات الزفاف تسقط حق الأخت في الميراث؟", "hi": "क्या शादी पर हुआ खर्च बहन का क़ुरआनी विरासत हिस्सा समाप्त कर देता है?"}, "options": {"en": ["Yes, always", "No — her inheritance right after parents' death remains intact in full", "Only half remains", "It belongs to elder brother"], "ur": ["جی ہاں", "نہیں — والدین کے بعد اس کا مقررہ قرآنی حصہ مکمل باقی رہتا ہے", "صرف آدھا ملتا ہے", "بڑے بھائی کا ہو جاتا ہے"], "ar": ["نعم", "لا، يظل حقها في الميراث كاملاً", "النصف فقط", "يؤول للأخ الأكبر"], "hi": ["हाँ", "नहीं — माता-पिता के बाद उसका पूरा क़ुरआनी हिस्सा सुरक्षित रहता है", "केवल आधा", "बड़े भाई का"]}, "correctIndex": 1, "explanation": {"en": "Gifts/expenses during life do not cancel post-mortem Quranic Faraid shares (4:7).", "ur": "زندگی کے تحائف یا شادی کے اخراجات سے وراثت کا شرعی حق ساقط نہیں ہوتا۔", "ar": "هبات الحياة لا تسقط نصيب الميراث.", "hi": "जीवनकाल के खर्च से मृत्यु के बाद मिलने वाली विरासत समाप्त नहीं होती।"}}]
+    },
+    {
+      "id": "rights_06_relatives",
+      "departmentId": "dept_rights",
+      "order": 6,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة وصلة الرحم", "hi": "परिवार और रिश्ते"},
+      "title": {"en": "6. Extended Relatives' Rights (Silah Rahmi)", "ur": "6. رشتہ داروں کے حقوق (صلہ رحمی)", "ar": "٦. صلة الرحم وحقوق الأقارب", "hi": "6. रिश्तेदारों के अधिकार (सिला रहमी)"},
+      "introduction": {"en": "Maintaining ties of kinship — aunts, uncles, cousins, nieces, nephews, and grandparents — is one of the highest acts of worship in Islam, while severing ties (Qata Rahmi) carries a severe warning.", "ur": "خالہ، ماموں، پھوپھی، چچا، دادا دادی اور دیگر رشتہ داروں سے تعلق جوڑنا (صلہ رحمی) عبادت اور رشتے توڑنا (قطع رحمی) سخت گناہ ہے۔", "ar": "صلة الأرحام واجبة شرعاً والقطيعة من كبائر الذنوب.", "hi": "रिश्तेदारों से संबंध जोड़े रखना (सिला रहमी) इस्लाम में महान कर्तव्य और संबंध तोड़ना गंभीर पाप है।"},
+      "explanation": {"en": "Quran 4:1 commands reverence for Allah and ties of the womb. True Silah Rahmi is maintaining ties even when a relative turns away (Bukhari 5991 principle), visiting the sick, helping financially strained relatives first in charity, and avoiding family feuds.", "ur": "سورۃ النساء (4:1) میں اللہ کا تقویٰ اختیار کرنے اور رشتوں کا لحاظ رکھنے کا حکم ہے۔ حقیقی صلہ رحمی یہ ہے کہ اگر رشتہ دار توڑیں تب بھی آپ جوڑیں، ضرورت مند رشتہ دار کی مدد مقدم رکھیں اور خاندانی عداوت سے بچیں۔", "ar": "أمر الله بتقواه وصلة الأرحام والإنفاق على ذوي القربى.", "hi": "क़ुरआन 4:1 में ईश्वर के भय के साथ रिश्तों के सम्मान का आदेश है।"},
+      "dutyBearer": {"en": "Every adult believer toward paternal and maternal kin.", "ur": "ہر عاقل بالغ فرد اپنے ددھیالی اور ننھیالی رشتہ داروں کے لیے۔", "ar": "كل مسلم تجاه أقاربه من جهة الأب والأم.", "hi": "प्रत्येक वयस्क व्यक्ति मातृ व पितृ दोनों पक्षों के रिश्तेदारों के प्रति।"},
+      "mutualBoundaries": {"en": "Keeping ties does NOT require permitting toxic abuse, intrusion into marital privacy, or participating in sinful family traditions. One can maintain polite greetings, dua, and aid at safe boundaries.", "ur": "صلہ رحمی کا مطلب یہ نہیں کہ کسی کی ناجائز مداخلت یا گناہ کی محفلوں کو قبول کیا جائے؛ باوقار حدود میں سلام دعا اور مدد برقرار رکھی جا سکتی ہے۔", "ar": "لا تعني الصلة القبول بالأذى أو التدخل الضار، بل تكفي المودة والاحترام ضمن حدود آمنة.", "hi": "सिला रहमी का अर्थ विषैले हस्तक्षेप या गलत परंपराओं को सहना नहीं है; सुरक्षित सीमा में सद्व्यवहार पर्याप्त है।"},
+      "rightsViolatedAction": {"en": "If estranged by past bitterness, initiate peaceful reconciliation or delegate an elder neutral relative to heal rifts without reviving old accusations.", "ur": "اگر پرانی رنجشیں حائل ہوں تو پرانے گلے شکوے دہرائے بغیر سلام یا خیر سگالی سے صلح کی پہل کریں۔", "ar": "المبادرة بالسلام وإصلاح ذات البين دون نبش الخلافات.", "hi": "पुरानी कड़वाहट भुलाकर सलाम व सद्भावना से सुलह की पहल करें।"},
+      "practicalWays": {
+        "en": ["Prioritize struggling relatives when giving Sadaqah or gifts", "Attend weddings and funerals to console and share joy", "Phone elderly aunts/uncles regularly"],
+        "ur": ["صدقہ و خیرات میں ضرورت مند رشتہ داروں کو مقدم رکھیں", "خوشی اور غمی کے مواقع پر شریک ہوں", "بزرگ چچا، ماموں، خالہ اور پھوپھی کا حال احوال پوچھتے رہیں"],
+        "ar": ["تقديم القريب المحتاج في الصدقة وتفقد كبار العائلة."],
+        "hi": ["ज़रूरतमंद रिश्तेदारों को दान में प्राथमिकता दें", "बुज़ुर्ग रिश्तेदारों से नियमित बात करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Supporting a widowed aunt's children discreetly with school fees without humiliating them."],
+        "ur": ["بیوہ خالہ یا پھوپھی کے بچوں کی تعلیمی فیس خاموشی سے عزت کے ساتھ ادا کرنا۔"],
+        "ar": ["التكفل السري برسوم دراسة أبناء الخالة الأرملة."],
+        "hi": ["विधवा बुआ/मौसी के बच्चों की स्कूल फ़ीस सम्मानपूर्वक चुपचाप अदा करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Only speaking to wealthy relatives while ignoring poor ones", "Holding multi-generation grudges over property"],
+        "ur": ["صرف امیر رشتہ داروں سے تعلق رکھنا اور غریبوں کو بھول جانا", "نسلوں تک خاندانی رنجشیں پالنا"],
+        "ar": ["تفضيل الأقارب الأغنياء أو توارث الخصومات."],
+        "hi": ["केवल अमीर रिश्तेदारों से मेलजोल रखना और पीढ़ियों तक रंजिश रखना।"]
+      },
+      "actionSteps": {
+        "en": ["Contact one relative you haven't spoken with in months", "Include an extended family member in your prayers today"],
+        "ur": ["کسی ایسے رشتہ دار سے آج رابطہ کریں جن سے مہینوں سے بات نہ ہوئی ہو", "آج خاندان کے لیے خیر کی دعا کریں"],
+        "ar": ["صل قريباً لم تتواصل معه منذ أشهر."],
+        "hi": ["आज किसी ऐसे रिश्तेदार से बात करें जिनसे महीनों से संपर्क न हुआ हो।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 1, "endAyah": 1, "contextExplanation": {"en": "Links consciousness of Allah directly with honoring family kinship ties (Arham).", "ur": "تقویٰ کے ساتھ صلہ رحمی اور خونی رشتوں کے احترام کی تاکید۔", "ar": "الربط بين تقوى الله وحفظ الأرحام.", "hi": "ईश्वर के भय के साथ पारिवारिक रिश्तों के सम्मान का आदेश।"}}],
+      "hadithIds": ["bukhari_5984"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:1 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/1"}, {"title": "Sahih al-Bukhari 5984 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:5984"}],
+      "mcqs": [{"id": "mcq_r06", "question": {"en": "What does Quran 4:1 warn believers to be mindful of alongside Allah?", "ur": "سورۃ النساء 4:1 میں اللہ کے تقویٰ کے ساتھ کس بات کا خاص لحاظ رکھنے کا حکم ہے؟", "ar": "ما الذي أمرت الآية النساء ١ بمراعاته مع تقوى الله؟", "hi": "क़ुरआन 4:1 में अल्लाह के साथ किस बात का ध्यान रखने को कहा गया है?"}, "options": {"en": ["Only business competitors", "The ties of the womb (kinship / Arham)", "Fashion trends", "Gossip"], "ur": ["صرف تجارتی حریف", "رشتہ داری (ارحام)", "مقابلہ بازی", "افواہیں"], "ar": ["المنافسين", "الأرحام وصلتها", "التباهي", "الشائعات"], "hi": ["केवल प्रतिस्पर्धी", "रिश्ते-नाते (अरहाम)", "दिखावा", "अफ़वाहें"]}, "correctIndex": 1, "explanation": {"en": "Quran 4:1: 'Wattaqullahalladhi tasa'aluna bihi wal-arham.'", "ur": "النساء 4:1 میں اللہ سے ڈرنے اور رشتوں کا پاس رکھنے کا حکم دیا گیا ہے۔", "ar": "واتقوا الله الذي تساءلون به والأرحام.", "hi": "क़ुरआन 4:1 में अल्लाह के साथ रिश्तों का सम्मान करने को कहा गया है।"}}]
+    },
+    {
+      "id": "rights_07_neighbors",
+      "departmentId": "dept_rights",
+      "order": 7,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة والمجتمع", "hi": "परिवार और पड़ोस"},
+      "title": {"en": "7. Neighbors' Rights (Huqooq-ul-Jar)", "ur": "7. ہمسایوں کے حقوق (حقوقِ جار)", "ar": "٧. حقوق الجار", "hi": "7. पड़ोसियों के अधिकार"},
+      "introduction": {"en": "Whether Muslim or non-Muslim, near or distant, a neighbor holds immense status in Islam — to the degree Jibril (AS) repeatedly emphasized their rights.", "ur": "ہمسایہ خواہ مسلمان ہو یا غیر مسلم، قریبی ہو یا دور کا، اسلام میں اس کے اتنے عظیم حقوق ہیں کہ حضرت جبریلؑ مسلسل اس کی وصیت فرماتے رہے۔", "ar": "للجار مكانة عظيمة في الإسلام، مسلماً كان أو غير مسلم، وتشمل كف الأذى والإحسان.", "hi": "पड़ोसी चाहे मुस्लिम हो या ग़ैर-मुस्लिम, इस्लाम में उसके बहुत ऊँचे अधिकार हैं।"},
+      "explanation": {"en": "Quran 4:36 explicitly lists both near neighbors and distant/stranger neighbors right after parents and orphans. True neighborliness means zero harm (noise, garbage, blocked driveways, prying) and active goodwill (sharing food, checking during illness or emergencies — Bukhari 6014, 6018).", "ur": "سورۃ النساء (4:36) میں قریبی اور اجنبی دونوں ہمسایوں سے حسنِ سلوک کا حکم ہے۔ ہمسائے کو شور، کوڑا کرکٹ، راستہ روکنے یا بدگمانی سے محفوظ رکھنا اور بیماری و مشکل میں ساتھ دینا لازم ہے (بخاری 6014، 6018)۔", "ar": "أوصى القرآن بالجار ذي القربى والجار الجنب، ومنعت السنة أذى الجار.", "hi": "क़ुरआन 4:36 में क़रीबी और दूर के पड़ोसियों से सद्व्यवहार अनिवार्य किया गया है।"},
+      "dutyBearer": {"en": "Every resident in an apartment, street, hostel, or neighborhood.", "ur": "ہر محلے دار، اپارٹمنٹ یا گلی میں رہنے والا فرد۔", "ar": "كل ساكن في حي أو مبنى.", "hi": "प्रत्येक मोहल्ले, अपार्टमेंट या गली का निवासी।"},
+      "mutualBoundaries": {"en": "Good neighborliness does not justify intruding into a neighbor's private family matters or expecting constant hosting beyond comfort.", "ur": "ہمسائیگی کا مطلب کسی کے ذاتی معاملات میں تجسس یا ناحق مداخلت ہرگز نہیں۔", "ar": "الإحسان للجار لا يبيح التجسس أو انتهاك الخصوصية.", "hi": "पड़ोसीपन का अर्थ दूसरे के घर में ताक-झांक या निजी जीवन में दखल नहीं है।"},
+      "rightsViolatedAction": {"en": "Resolve noise, water leakage, or parking disputes politely first; if ongoing encroachment/harm occurs, involve society committees or municipal authorities calmly.", "ur": "پانی، پارکنگ یا شور کے مسائل شائستہ گفتگو سے حل کریں؛ اگر نقصان برقرار رہے تو محلہ کمیٹی یا بلدیاتی قانون سے رجوع کریں۔", "ar": "معالجة الخلافات بالرفق ثم اللجان السكنية.", "hi": "शोर, पार्किंग या पानी विवाद शालीनता से या सोसाइटी/नगर निगम से सुलझाएं।"},
+      "practicalWays": {
+        "en": ["Do not dump trash, dirty water, or construction debris near a neighbor's door", "Keep music, vehicles, and late-night gatherings quiet", "Share extra home-cooked food or Ramadan Iftar"],
+        "ur": ["ہمسائے کے دروازے کے سامنے کوڑا یا گندا پانی نہ بہائیں", "رات کے وقت شور و غل اور ہارن بجانے سے گریز کریں", "اپنے کھانے اور خوشیوں میں ہمسایوں کو شریک کریں"],
+        "ar": ["كف الأذى وإماطة الضرر وإهداء الطعام وتفقد المريض."],
+        "hi": ["पड़ोसी के दरवाज़े के पास कचरा न डालें", "रात में शोर कम रखें", "भोजन व त्योहार की खुशियाँ बांटें"]
+      },
+      "realLifeExamples": {
+        "en": ["Installing a clean drainage pipe so AC/roof rainwater doesn't drip onto a neighbor's walkway and checking on an elderly neighbor during power outages."],
+        "ur": ["ایئر کنڈیشنر کا پانی ہمسائے کے راستے پر گرنے کے بجائے پائپ سے نکالنا اور لوڈشیڈنگ یا بیماری میں بزرگ ہمسائے کا خیال رکھنا۔"],
+        "ar": ["منع تسرب الماء للجار وتفقد الجار المسن عند الحاجة."],
+        "hi": ["एसी का पानी पड़ोसी के रास्ते पर गिरने से रोकना और बुज़ुर्ग पड़ोसी का हाल पूछना।"]
+      },
+      "commonMistakes": {
+        "en": ["Parking across a neighbor's garage gate", "Gossiping about neighboring families", "Only being polite to wealthy neighbors"],
+        "ur": ["ہمسائے کے گیٹ کے سامنے گاڑی کھڑی کر دینا", "ہمسایوں کے گھروں پر غیبت اور تجسس کرنا", "صرف بااثر ہمسایوں کا احترام کرنا"],
+        "ar": ["إغلاق مدخل الجار والغيبة والتمييز."],
+        "hi": ["पड़ोसी के गेट के सामने गाड़ी खड़ी करना या उनकी बुराई करना।"]
+      },
+      "actionSteps": {
+        "en": ["Greet your next-door neighbor warmly today", "Inspect your exterior cleanliness and parking etiquette"],
+        "ur": ["آج اپنے قریبی ہمسائے کو سلام اور خیرسگالی کا پیغام دیں", "اپنے گھر کے باہر صفائی اور پارکنگ کا جائزہ لیں"],
+        "ar": ["سلّم على جارك وتأكد من عدم وجود أي أذى أمام بيتك."],
+        "hi": ["आज अपने पड़ोसी का अभिवादन करें और अपने बाहर की सफ़ाई जांचें।"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 4, "startAyah": 36, "endAyah": 36, "contextExplanation": {"en": "Direct Quranic mandate to show goodness to near and distant neighbors.", "ur": "قریبی اور اجنبی دونوں طرح کے ہمسایوں کے ساتھ حسنِ سلوک کا قرآنی حکم۔", "ar": "الأمر بالإحسان للجار ذي القربى والجار الجنب.", "hi": "निकट और दूर के पड़ोसियों के साथ सद्व्यवहार का क़ुरआनी आदेश।"}}],
+      "hadithIds": ["bukhari_6014", "bukhari_6018"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:36 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/36"}, {"title": "Sahih al-Bukhari 6014 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:6014"}],
+      "mcqs": [{"id": "mcq_r07", "question": {"en": "According to Sahih al-Bukhari 6014, why did the Prophet ﷺ think Jibril might make the neighbor an heir?", "ur": "صحیح بخاری 6014 کے مطابق نبی کریم ﷺ کو یہ گمان کیوں گزرا کہ ہمسائے کو وراثت میں شریک کر دیا جائے گا؟", "ar": "لماذا ظن النبي ﷺ أن جبريل سيورث الجار؟", "hi": "सहीह बुखारी 6014 के अनुसार नबी ﷺ को ऐसा क्यों लगा कि पड़ोसी को वारिस बना दिया जाएगा?"}, "options": {"en": ["Because of continuous, intense Divine emphasis on the neighbor's rights", "Because neighbors pay rent", "Because neighbors live far away", "Only during travel"], "ur": ["کیونکہ حضرت جبریلؑ مسلسل ہمسائے کے حقوق کی تاکید فرماتے رہے", "کیونکہ ہمسایہ کرایہ دیتا ہے", "صرف سفر کے دوران", "بلاوجہ"], "ar": ["لكثرة وصية جبريل بالجار", "بسبب الإيجار", "في السفر فقط", "لسبب آخر"], "hi": ["क्योंकि जिब्रील (अ.) लगातार पड़ोसी के हक़ की नसीहत करते रहे", "किराये के कारण", "केवल यात्रा में", "अन्य कारण"]}, "correctIndex": 0, "explanation": {"en": "Jibril's repeated counsel highlighted how sacred a neighbor's dignity and safety are in Islam.", "ur": "حضرت جبریلؑ کی مسلسل وصیت ہمسائے کے حقوق کی غیر معمولی اہمیت کی دلیل ہے۔", "ar": "دليل على عِظم حق الجار في الإسلام.", "hi": "यह पड़ोसी के अधिकारों की असाधारण महत्ता को दर्शाता है।"}}]
+    },
+    {
+      "id": "rights_08_guests_hosts",
+      "departmentId": "dept_rights",
+      "order": 8,
+      "groupCode": "FAMILY",
+      "groupLabel": {"en": "Family & Relationships", "ur": "خاندان اور قریبی رشتے", "ar": "الأسرة والمجتمع", "hi": "परिवार और आतिथ्य"},
+      "title": {"en": "8. Guests' & Hosts' Mutual Rights", "ur": "8. مہمان اور میزبان کے باہمی حقوق", "ar": "٨. حقوق الضيف والمضيف", "hi": "8. मेहमान और मेज़बान के अधिकार"},
+      "introduction": {"en": "Islamic hospitality balances generous, warm reception of guests with thoughtful consideration by visitors so neither side is burdened or disrespected.", "ur": "اسلامی مہمان نوازی میں میزبان کی کشادہ دلی اور مہمان کی طرف سے میزبان کی سہولت و رازداری کے احترام کا حسین توازن پایا جاتا ہے۔", "ar": "يوازن الإسلام بين إكرام الضيف ومراعاة الضيف لقدرة المضيف وخصوصيته.", "hi": "इस्लामी आतिथ्य में मेज़बान की उदारता और मेहमान द्वारा मेज़बान की सुविधा के सम्मान का संतुलन है।"},
+      "explanation": {"en": "Honoring one's guest is linked directly to faith in Allah and the Last Day (Bukhari 6018), exemplified by Prophet Ibrahim (AS) serving promptly (Quran 51:26). Equally, guests must seek permission before entering (24:27), avoid unannounced overstaying that distresses the host, and make dua for the host.", "ur": "مہمان کی تکریم کو اللہ اور آخرت پر ایمان کی علامت قرار دیا گیا (بخاری 6018)۔ اسی طرح مہمان پر لازم ہے کہ اجازت لے کر داخل ہو (النور 24:27)، میزبان کو بے جا مشقت میں نہ ڈالے اور میزبان کے لیے برکت کی دعا کرے۔", "ar": "إكرام الضيف من الإيمان، وعلى الضيف الاستئذان وعدم الإثقال على المضيف.", "hi": "मेहमान का सम्मान ईमान की निशानी है (बुख़ारी 6018), और मेहमान को अनुमति लेकर आना व मेज़बान को कष्ट न देना चाहिए (24:27)।"},
+      "dutyBearer": {"en": "Hosts offer warmth within means without show-off; guests respect time, privacy, and gratitude.", "ur": "میزبان استطاعت کے مطابق خوش دلی دکھائے؛ مہمان وقت، پرائیویسی اور شکر گزاری کا خیال رکھے۔", "ar": "المضيف والمضيف متكافلان في الأدب والتقدير.", "hi": "मेज़बान क्षमता अनुसार सत्कार करे और मेहमान निजता व समय का सम्मान करे।"},
+      "mutualBoundaries": {"en": "Hospitality never requires taking Riba loans for lavish feasts, nor may a guest pry into rooms, finances, or stay indefinitely uninvited.", "ur": "مہمان نوازی کے لیے سودی قرض لے کر تکلف کرنا ضروری نہیں، اور نہ مہمان کو گھر میں تانک جھانک کا حق ہے۔", "ar": "لا يُطلب التكلف المرهق من المضيف ولا التجسس من الضيف.", "hi": "दिखावे के लिए क़र्ज़ लेना ज़रूरी नहीं, न ही मेहमान को ताक-झांक करने का हक़ है।"},
+      "rightsViolatedAction": {"en": "Clarify arrival/departure plans politely in advance so both host privacy and guest welcome stay pleasant.", "ur": "آمد و رفت کے اوقات پہلے سے شائستگی کے ساتھ طے کر لیں تاکہ دونوں فریق سہولت میں رہیں۔", "ar": "التنسيق المسبق لمواعيد الزيارة حفظاً للخصوصية والود.", "hi": "आने-जाने का समय पहले से शालीनता से तय कर लें।"},
+      "practicalWays": {
+        "en": ["Inform before visiting (Quran 24:27 / Bukhari 6245)", "Welcome guests warmly with whatever Halal food is cleanly available", "Keep eyes lowered and do not criticize food or home decor"],
+        "ur": ["ملاقات سے پہلے اطلاع اور اجازت لیں (النور 24:27)", "جو حلال میسر ہو خوش دلی سے پیش کریں", "مہمان گھر کے اندرونی حصوں پر نظر نہ دوڑائے اور کھانے میں عیب نہ نکالے"],
+        "ar": ["الاستئذان المسبق وبشاشة الوجه وعدم عيب الطعام."],
+        "hi": ["मिलने से पहले सूचना व अनुमति लें", "उपलब्ध हलाल भोजन खुशी से परोसें", "भोजन की कमी न निकालें"]
+      },
+      "realLifeExamples": {
+        "en": ["Calling before visiting a friend's family and bringing a modest gift without expecting extravagant dishes."],
+        "ur": ["کسی دوست کے گھر جانے سے پہلے فون پر وقت طے کرنا اور تکلف کی توقع نہ رکھنا۔"],
+        "ar": ["الاتصال قبل الزيارة وتخفيف الكلفة."],
+        "hi": ["किसी के घर जाने से पहले फ़ोन कर समय तय करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Arriving late at night unannounced", "Expecting lavish multi-dish feasts beyond a family's budget", "Complaining behind the host's back"],
+        "ur": ["بغیر اطلاع بے وقت گھر پہنچ جانا", "میزبان کی گنجائش سے بڑھ کر تکلفات کی توقع رکھنا", "واپس آ کر میزبان کی غیبت کرنا"],
+        "ar": ["الزيارة المفاجئة والتثقيل أو ذم الضيافة."],
+        "hi": ["बिना बताए असमय पहुंच जाना या मेज़बान की क्षमता से अधिक अपेक्षा करना।"]
+      },
+      "actionSteps": {
+        "en": ["Always confirm visiting times ahead", "Serve guests with warmth rather than extravagance"],
+        "ur": ["ہمیشہ پیشگی وقت طے کر کے ملاقات کریں", "تکلف کے بجائے محبت و خلوص سے پیش آئیں"],
+        "ar": ["نسّق زياراتك مسبقاً وقدم البساطة مع الود."],
+        "hi": ["हमेशा पहले से समय तय कर मिलने जाएं।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 24, "startAyah": 27, "endAyah": 27, "contextExplanation": {"en": "Establishes seeking permission and offering Salam before entering others' homes.", "ur": "دوسروں کے گھروں میں اجازت اور سلام کے بعد داخل ہونے کا قرآنی قانون۔", "ar": "وجوب الاستئذان والتسليم قبل دخول بيوت الغير.", "hi": "दूसरों के घरों में अनुमति व सलाम के बाद प्रवेश का नियम।"}}],
+      "hadithIds": ["bukhari_6018", "bukhari_6245"],
+      "sourceLinks": [{"title": "Surah An-Nur 24:27 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/24/27"}, {"title": "Sahih al-Bukhari 6018 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:6018"}],
+      "mcqs": [{"id": "mcq_r08", "question": {"en": "What rule does Quran 24:27 teach before entering someone else's home?", "ur": "کسی کے گھر داخل ہونے سے پہلے سورۃ النور 24:27 کیا اصول بیان کرتی ہے؟", "ar": "ما الحكم المستفاد من النور ٢٧ عند دخول بيوت الآخرين؟", "hi": "किसी के घर में प्रवेश से पहले क़ुरआन 24:27 क्या सिखाता है?"}, "options": {"en": ["Enter silently without asking", "Seek permission and greet the household with Salam", "Peek through windows", "Wait inside unannounced"], "ur": ["بغیر پوچھے اندر چلے جائیں", "اجازت طلب کریں اور گھر والوں کو سلام کریں", "کھڑکیوں سے جھانکیں", "بے اطلاع انتظار کریں"], "ar": ["الدخول دون استئذان", "الاستئذان والسلام على أهل البيت", "النظر من النوافذ", "المفاجأة"], "hi": ["बिना पूछे घुस जाएं", "अनुमति लें और घरवालों को सलाम करें", "खिड़की से झांकें", "बिना बताए बैठें"]}, "correctIndex": 1, "explanation": {"en": "Quran 24:27 mandates 'hatta tasta'nisu wa tusallimu ala ahliha' — ask permission and greet peacefully.", "ur": "اجازت اور سلام گھر کی حرمت و پرائیویسی کا بنیادی اسلامی قانون ہے۔", "ar": "حفظ حرمة البيوت وخصوصية أهلها.", "hi": "अनुमति और सलाम घर की निजता की सुरक्षा का मूल सिद्धांत है।"}}]
+    },
+    {
+      "id": "rights_09_orphans",
+      "departmentId": "dept_rights",
+      "order": 9,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "9. Orphans' Rights (Huqooq-ul-Yatama)", "ur": "9. یتیموں کے حقوق (حقوقِ یتامیٰ)", "ar": "٩. حقوق الأيتام", "hi": "9. अनाथों (यतीमों) के अधिकार"},
+      "introduction": {"en": "Our beloved Prophet ﷺ grew up an orphan; Islam treats protection of orphans' dignity, education, and property as one of the clearest tests of genuine faith.", "ur": "ہمارے پیارے نبی ﷺ خود یتیمی میں پلے بڑھے؛ اسلام میں یتیموں کی عزت، تعلیم اور ان کے مال کی حفاظت سچے ایمان کی پہچان ہے۔", "ar": "رعاية اليتيم وحفظ ماله وكرامته من أوضح علامات الإيمان الصادق.", "hi": "अनाथों की गरिमा, शिक्षा और संपत्ति की सुरक्षा सच्चे ईमान की कसौटी है।"},
+      "explanation": {"en": "Surah Al-Ma'un (107:1-3) warns those who push away the orphan while claiming devotion. Surah Ad-Duha (93:9) commands: 'Do not oppress the orphan!' Surah An-Nisa (4:2, 4:6, 4:10) forbids consuming an orphan's inheritance or swapping bad goods for good, comparing unjust consumption of their wealth to eating fire.", "ur": "سورۃ الماعون (107:1-3) میں یتیم کو دھکے دینے والے کو دین جھٹلانے والا کہا گیا۔ سورۃ الضحیٰ (93:9) میں یتیم پر سختی سے منع فرمایا گیا، اور سورۃ النساء (4:2، 4:10) میں یتیم کا مال کھانے کو پیٹ میں آگ بھرنے کے مترادف قرار دیا گیا۔", "ar": "حذر القرآن أشد تحذير من قهر اليتيم أو أكل ماله ظلماً.", "hi": "क़ुरआन (4:10, 93:9, 107:1-3) ने अनाथ पर सख्ती और उसका माल हड़पने को महापाप बताया है।"},
+      "dutyBearer": {"en": "Surviving guardians/uncles/grandparents, relatives, and the Muslim community.", "ur": "سرپرست رشتہ دار (چچا، دادا، والدہ) اور پورا مسلم معاشرہ۔", "ar": "الأولياء والأقارب والمجتمع المسلم.", "hi": "संरक्षक रिश्तेदार और पूरा समाज।"},
+      "mutualBoundaries": {"en": "A guardian who is well-off must manage the orphan's wealth free of charge; a poor guardian may consume only a strictly modest, documented fee for direct care (4:6). Hand over property cleanly with witnesses at maturity.", "ur": "خوشحال سرپرست بغیر اجرت کے یتیم کے مال کی حفاظت کرے؛ محتاج سرپرست صرف بقدرِ ضرورت معروف اجرت لے سکتا ہے، اور بالغ ہونے پر گواہوں کے سامنے مال واپس کر دے (النساء 4:6)۔", "ar": "يتعفف الغني عن أكل مال اليتيم، ويأكل الفقير بالمعروف، ويدفع إليه ماله بالإشهاد عند البلوغ.", "hi": "संपन्न संरक्षक अनाथ के धन से कुछ न ले, और वयस्क होने पर गवाहों के सामने संपत्ति सौंप दे।"},
+      "rightsViolatedAction": {"en": "Uncles or relatives usurping an orphan's paternal home or land must be challenged via transparent family accounts, social elders, and guardianship courts.", "ur": "اگر رشتہ دار یتیم کی وراثتی زمین یا گھر پر قبضہ کریں تو خاندانی احتساب اور قانونی سرپرستی عدالت کے ذریعے ان کا حق دلایا جائے۔", "ar": "اللجوء للقضاء ولجان الأوصياء لاسترداد مال اليتيم المنهوب.", "hi": "यदि कोई रिश्तेदार अनाथ की संपत्ति हड़पे तो पारिवारिक पंचायत और न्यायालय से उसका हक़ दिलाया जाए।"},
+      "practicalWays": {
+        "en": ["Sponsor an orphan's education and healthcare respectfully without embarrassing photos", "Document every asset owned by orphan children in a family trust", "Treat orphan children in your extended family with extra warmth and encouragement"],
+        "ur": ["یتیم بچوں کی تعلیم و صحت کی کفالت کریں (بغیر دکھاوے اور تصاویر کے)", "یتیم بچوں کی وراثتی جائیداد اور حسابات تحریری طور پر محفوظ رکھیں", "خاندان کے یتیم بچوں کو خصوصی شفقت اور حوصلہ دیں"],
+        "ar": ["كفالة تعليم اليتيم وصحته وحفظ حسابات أمواله بدقة دون تشهير."],
+        "hi": ["अनाथों की शिक्षा व स्वास्थ्य का खर्च उठाएं (बिना दिखावे की फ़ोटो के)", "उनकी संपत्ति का लिखित रिकॉर्ड रखें"]
+      },
+      "realLifeExamples": {
+        "en": ["Maintaining a dedicated bank account with annual receipts for deceased brother's orphan children until adulthood."],
+        "ur": ["مرحوم بھائی کے یتیم بچوں کے لیے الگ بینک اکاؤنٹ اور سالانہ حساب رکھ کر بالغ ہونے پر پورا مال سپرد کرنا۔"],
+        "ar": ["إفراد حساب بنكي مستقل لأموال الأيتام حتى بلوغهم سن الرشد."],
+        "hi": ["दिवंगत भाई के अनाथ बच्चों के लिए अलग बैंक खाता व हिसाब रखकर बालिग होने पर उन्हें सौंपना।"]
+      },
+      "commonMistakes": {
+        "en": ["Using deceased brother's house/business for personal gain", "Exploiting orphans as unpaid domestic servants", "Publicly posting photos of orphan children while distributing aid"],
+        "ur": ["مرحوم بھائی کا گھر یا کاروبار ذاتی مفاد میں استعمال کرنا", "یتیم بچوں سے مفت گھریلو مزدوری لینا", "مدد کرتے وقت یتیم بچوں کی تصاویر سوشل میڈیا پر لگانا"],
+        "ar": ["استغلال أموال الأيتام أو تشغيلهم أو تصويرهم عند المساعدة."],
+        "hi": ["मृत भाई की संपत्ति अपने लाभ में उपयोग करना या अनाथ बच्चों से मज़दूरी कराना।"]
+      },
+      "actionSteps": {
+        "en": ["Support a local trustworthy orphan-care fund or relative's child silently", "Audit fairness if managing any minor's property"],
+        "ur": ["خاموشی سے کسی مستحق یتیم کی تعلیم یا کفالت میں حصہ ڈالیں", "اگر کسی نابالغ کی جائیداد زیرِ نگہداشت ہے تو اس کا شفاف حساب رکھیں"],
+        "ar": ["ساهم في كفالة يتيم بصمت وحافظ على حقوق القاصرين."],
+        "hi": ["चुपचाप किसी अनाथ की शिक्षा में सहायता करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 4, "startAyah": 10, "endAyah": 10, "contextExplanation": {"en": "Severe warning against unjustly consuming the property of orphans.", "ur": "ناحق طریقے سے یتیموں کا مال کھانے پر سخت قرآنی وعید۔", "ar": "التحذير الشديد من أكل أموال الأيتام ظلماً.", "hi": "अनाथों की संपत्ति हड़पने पर कठोर चेतावनी।"}},
+        {"surahNumber": 93, "startAyah": 9, "endAyah": 9, "contextExplanation": {"en": "Direct command: 'As for the orphan, do not oppress him.'", "ur": "یتیم پر سختی اور زیادتی نہ کرنے کا صریح حکم۔", "ar": "فأما اليتيم فلا تقهر.", "hi": "अनाथ को न दबाने का सीधा आदेश।"}}
+      ],
+      "hadithIds": ["bukhari_5304"],
+      "sourceLinks": [{"title": "Surah An-Nisa 4:10 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/4/10"}, {"title": "Sahih al-Bukhari 5304 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:5304"}],
+      "mcqs": [{"id": "mcq_r09", "question": {"en": "In Sahih al-Bukhari 5304, what closeness did the Prophet ﷺ promise the caretaker of an orphan?", "ur": "صحیح بخاری 5304 میں نبی کریم ﷺ نے یتیم کی کفالت کرنے والے کو جنت میں کس قربت کی بشارت دی؟", "ar": "بماذا بشّر النبي ﷺ كافل اليتيم في البخاري ٥٣٠٤؟", "hi": "सहीह बुखारी 5304 में नबी ﷺ ने अनाथ के पालक को जन्नत में किस निकटता की खुशखबरी दी?"}, "options": {"en": ["Close like two adjacent fingers (index and middle) in Paradise", "Only worldly applause", "Exemption from prayer", "Right to orphan's wealth"], "ur": ["جنت میں دو قریبی انگلیوں (شہادت اور درمیانی انگلی) کی طرح قربت", "صرف دنیاوی شہرت", "نماز سے معافی", "یتیم کے مال کا حق"], "ar": ["مجاورته في الجنة كالسبابة والوسطى", "الشهرة الدنيوية", "سقوط الصلاة", "أكل ماله"], "hi": ["जन्नत में दो उँगलियों जैसी निकटता", "केवल सांसारिक प्रशंसा", "नमाज़ से छूट", "अनाथ का धन"]}, "correctIndex": 0, "explanation": {"en": "The Prophet ﷺ gestured with his index and middle fingers to show deep closeness in Paradise.", "ur": "آپ ﷺ نے شہادت اور درمیانی انگلی کے اشارے سے جنت میں رفاقت کی خوشخبری عطا فرمائی۔", "ar": "أشار بالسبابة والوسطى للدلالة على القرب في الجنة.", "hi": "आपने दो उँगलियों के इशारे से जन्नत में निकटता की खुशखबरी दी।"}}]
+    },
+    {
+      "id": "rights_10_widows",
+      "departmentId": "dept_rights",
+      "order": 10,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "10. Widows' Rights (Huqooq-ul-Aramil)", "ur": "10. بیواؤں کے حقوق", "ar": "١٠. حقوق الأرامل", "hi": "10. विधवाओं के अधिकार"},
+      "introduction": {"en": "Instead of cultural stigma or isolation, Islam honors widows with full inheritance, personal dignity, community support, and full freedom to remarry lawfully after Iddah.", "ur": "اسلام نے بیوہ عورت کے ساتھ توہم پرستی اور نظراندازی کو ختم کر کے اسے مکمل وراثت، عزتِ نفس، معاشرتی کفالت اور عدت کے بعد دوبارہ نکاح کا پورا اختیار دیا ہے۔", "ar": "كرم الإسلام الأرملة وضمن لها الميراث والنفقة والاختيار الحر للزواج بعد العدة.", "hi": "इस्लाम ने विधवा महिलाओं को पूरा विरासत हक़, सामाजिक सम्मान और इद्दत के बाद पुनर्विवाह की आज़ादी दी है।"},
+      "explanation": {"en": "In Sahih al-Bukhari 5353, serving a widow and needy person equals striving in Allah's path. After her husband passes, she receives her fixed Quranic share (1/4 or 1/8) plus full unpaid Mahr, observes a dignified 4-month 10-day Iddah (2:234) without harsh superstition, and makes her own free decision regarding remarriage.", "ur": "صحیح بخاری (5353) میں بیوہ اور مسکین کی کفالت کو جہاد اور تہجد کے برابر قرار دیا گیا ہے۔ شوہر کے انتقال پر بیوہ کو اس کا واجب المہر اور وراثت میں 1/4 یا 1/8 حصہ ملتا ہے، 4 ماہ 10 دن کی باوقار عدت (البقرہ 2:234) کے بعد وہ اپنی مرضی سے دوبارہ نکاح کی مجاز ہے۔", "ar": "للمتوفى عنها زوجها المهر والميراث والعدة الكريمة (٤ أشهر وعشرة أيام) وحرية الزواج بعدها.", "hi": "सहीह बुखारी 5353 के अनुसार विधवा की सहायता महान पुण्य है; उसे महर, विरासत व पुनर्विवाह का पूरा अधिकार है।"},
+      "dutyBearer": {"en": "Her late husband's family/heirs (ensuring her Mahr & inheritance), her own family, and the community.", "ur": "مرحوم شوہر کے ورثاء (مہر و وراثت کی ادائیگی میں)، میکہ اور معاشرہ۔", "ar": "أهل الزوج في أداء الحقوق، وأهلها والمجتمع في الرعاية.", "hi": "मृत पति के वारिस (महर व विरासत देने में), मायका व समाज।"},
+      "mutualBoundaries": {"en": "No cultural custom may force a widow to stay isolated in a dark room, treat her as 'bad luck' at weddings, deny her remarriage, or force her into an unwanted marriage with a brother-in-law.", "ur": "بیوہ کو نحوست سمجھنا، اندھیرے کمرے میں قید رکھنا، دوسری شادی سے روکنا یا کسی دیور سے زبردستی نکاح کروانا اسلام کے صریح خلاف ہے (النساء 4:19)۔", "ar": "يحرم التشاؤم بالأرملة أو عضلها ومنعها من الزواج أو إجبارها على نكاح غير مرغوب.", "hi": "विधवा को अशुभ मानना, अलग-थलग करना या पुनर्विवाह से रोकना इस्लाम के सख्त खिलाफ है।"},
+      "rightsViolatedAction": {"en": "When a widow is cheated out of her home, pension, or Mahr, community elders and family lawyers should actively help protect her legal rights.", "ur": "اگر بیوہ کا گھر، پنشن یا وراثتی حصہ دبایا جائے تو بااثر بزرگ اور قانونی ماہرین اس کی فوری مدد کریں۔", "ar": "مساندة الأرملة قانونياً واجتماعياً لحفظ سكنها وميراثها.", "hi": "यदि विधवा की संपत्ति या अधिकार छीने जाएं तो समाज और कानून से तुरंत मदद लें।"},
+      "practicalWays": {
+        "en": ["Pay unpaid Mahr and husband's inheritance share immediately", "Offer dignified livelihood support, skills training, or scholarship for her children", "Encourage societal acceptance of widow remarriage as Prophetic Sunnah"],
+        "ur": ["مرحوم شوہر کی طرف سے واجب المہر اور وراثتی حصہ فوراً ادا کریں", "باوقار روزگار یا بچوں کی تعلیم کا سہارا بنیں", "بیواؤں کے نکاحِ ثانی کو سنتِ نبوی ﷺ کے مطابق معاشرتی عزت دیں"],
+        "ar": ["تمكينها من الميراث ودعم تعليم أبنائها وتيسير زواجها إن رغبت."],
+        "hi": ["महर व विरासत तुरंत अदा करें", "बच्चों की पढ़ाई व आजीविका में मदद करें", "पुनर्विवाह को सामाजिक सम्मान दें"]
+      },
+      "realLifeExamples": {
+        "en": ["A family arranging peaceful remarriage of a young widow with dignity and securing her orphan children's trust fund separately."],
+        "ur": ["ایک خاندان کا جوان بیوہ بیٹی کا باعزت نکاح کروانا اور اس کے بچوں کا وراثتی مال محفوظ رکھنا۔"],
+        "ar": ["تيسير الزواج الثاني للأرملة مع حفظ حقوق أبنائها."],
+        "hi": ["युवा विधवा का सम्मानपूर्वक पुनर्विवाह कराना और बच्चों की संपत्ति सुरक्षित रखना।"]
+      },
+      "commonMistakes": {
+        "en": ["Evicting a widow from her deceased husband's home before estate distribution", "Inventing harsh un-Islamic Iddah taboos", "Mocking widows who choose to remarry"],
+        "ur": ["وراثت تقسیم ہونے سے پہلے ہی بیوہ کو سسرال سے نکال دینا", "عدت کے نام پر غیر شرعی سختیاں ایجاد کرنا", "دوبارہ نکاح کرنے والی بیوہ پر طعنے کسنا"],
+        "ar": ["إخراج الأرملة من بيتها قبل القسمة وابتداع قيود في العدة."],
+        "hi": ["बंटवारे से पहले विधवा को घर से निकालना या इद्दत के नाम पर अंधविश्वास थोपना।"]
+      },
+      "actionSteps": {
+        "en": ["Check on a widowed relative or neighbor respectfully this week", "Educate elders against cultural stigmas surrounding Iddah and remarriage"],
+        "ur": ["اس ہفتے کسی بیوہ رشتہ دار یا ہمسائی کی ضروریات کا باوقار انداز میں جائزہ لیں", "بیواؤں کے متعلق غلط رسومات کی اصلاح کریں"],
+        "ar": ["تفقد أرملة قريبة بالاحترام وحارب العادات الجاهلية."],
+        "hi": ["इस सप्ताह किसी विधवा रिश्तेदार या पड़ोसी का सम्मानपूर्वक हाल जानें।"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 2, "startAyah": 234, "endAyah": 234, "contextExplanation": {"en": "Specifies the widow's four-month ten-day waiting period (Iddah) followed by her free lawful choice.", "ur": "بیوہ کی 4 ماہ 10 دن کی عدت اور اس کے بعد باوقار اختیار کا قرآنی بیان۔", "ar": "تحديد عدة المتوفى عنها زوجها بأربعة أشهر وعشراً.", "hi": "विधवा की 4 माह 10 दिन की इद्दत और उसके बाद स्वतंत्र निर्णय का नियम।"}}],
+      "hadithIds": ["bukhari_5353"],
+      "sourceLinks": [{"title": "Surah Al-Baqarah 2:234 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/2/234"}, {"title": "Sahih al-Bukhari 5353 — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/bukhari:5353"}],
+      "mcqs": [{"id": "mcq_r10", "question": {"en": "Which statement about a widow's rights in Islam is TRUE?", "ur": "اسلام میں بیوہ کے حقوق کے حوالے سے کون سی بات درست ہے؟", "ar": "أي العبارات التالية صحيحة حول حقوق الأرملة في الإسلام؟", "hi": "इस्लाम में विधवा के अधिकारों के बारे में कौन सा कथन सही है?"}, "options": {"en": ["She has no inheritance", "She cannot remarry", "She receives Mahr + inheritance and may freely remarry after Iddah", "She must never leave her room again"], "ur": ["اسے وراثت نہیں ملتی", "دوبارہ نکاح جائز نہیں", "وہ مہر و وراثت کی حقدار ہے اور عدت کے بعد آزادانہ نکاح کر سکتی ہے", "تا عمر کمرے میں رہنا لازم ہے"], "ar": ["لا ترث", "يُمنع زواجها", "لها المهر والميراث وحق الزواج بعد العدة", "تلازم الغرفة أبداً"], "hi": ["उसे विरासत नहीं मिलती", "पुनर्विवाह वर्जित है", "उसे महर व विरासत मिलती है और इद्दत के बाद वह पुनर्विवाह कर सकती है", "उम्र भर घर में रहे"]}, "correctIndex": 2, "explanation": {"en": "Islam fully protects widows' property, inheritance, and lawful remarriage (2:234, 4:12).", "ur": "اسلام بیوہ کی عزت، مال، وراثت اور نکاحِ ثانی کا پورا حق محفوظ رکھتا ہے۔", "ar": "كفل الإسلام للأرملة كامل حقوقها المالية والشخصية.", "hi": "इस्लाम विधवा के आर्थिक और व्यक्तिगत अधिकारों की पूरी रक्षा करता है।"}}]
+    },
+    {
+      "id": "rights_11_poor_indebted",
+      "departmentId": "dept_rights",
+      "order": 11,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "11. Poor, Needy & Indebted Persons' Rights", "ur": "11. غریبوں، مسکینوں اور مقروضوں کے حقوق", "ar": "١١. حقوق الفقراء والمساكين والغارمين", "hi": "11. ग़रीबों, ज़रूरतमंदों और क़र्ज़दारों के अधिकार"},
+      "introduction": {"en": "Helping the poor, feeding the hungry, and relieving struggling debtors is not optional vanity — Zakat is an established right in believers' wealth (51:19).", "ur": "غریبوں کی مدد، بھوکے کو کھانا کھلانا اور تنگدست مقروض کو مہلت دینا محض احسان نہیں بلکہ مال میں مستحقین کا مقررہ حق ہے (الذاریات 51:19)۔", "ar": "للسائل والمحروم والغارم حق معلوم في المال بالزكاة والإنفاق وإنظار المعسر.", "hi": "ग़रीबों की मदद व तंगदस्त क़र्ज़दार को मोहलत देना ज़कात व इस्लामी करुणा का अनिवार्य अंग है।"},
+      "explanation": {"en": "Quran 2:280 explicitly commands: 'If the debtor is in difficulty, grant him time until ease returns — and forgiving the debt as charity is even better.' Surah Al-Insan (76:8) praises feeding the poor, orphan, and captive solely for Allah's sake without expecting gratitude. Surah Al-Ma'un (107:1-3) condemns indifference to hunger.", "ur": "سورۃ البقرہ (2:280) میں حکم ہے کہ اگر مقروض تنگدست ہو تو آسانی تک اسے مہلت دو اور معاف کر دینا سب سے بہتر صدقہ ہے۔ سورۃ الدہر (76:8) میں بے غرض کھانا کھلانے کی تعریف کی گئی ہے اور الماعون (107:3) میں مسکین کو کھلانے کی ترغیب نہ دینے پر مذمت ہے۔", "ar": "أمر الله بإنظار المعسر والندب إلى التصدق عليه وإطعام المسكين ابتغاء وجه الله.", "hi": "क़ुरआन 2:280 तंगदस्त देनदार को समय देने और 76:8 निस्वार्थ भोजन कराने की प्रेरणा देता है।"},
+      "dutyBearer": {"en": "Wealthy individuals (Zakat/Sadaqah), creditors, and welfare institutions.", "ur": "صاحبِ نصاب افراد، قرض خواہ اور فلاحی ادارے۔", "ar": "الأغنياء والدائنون ومؤسسات الزكاة.", "hi": "संपन्न व्यक्ति, ऋणदाता और सामाजिक संस्थाएं।"},
+      "mutualBoundaries": {"en": "Debtors who *have* the ability to pay must repay honestly on time without procrastination; rich delay is injustice (Bukhari 2287 concept). Assistance must preserve the poor person's honor without humiliation.", "ur": "جو مقروض ادا کرنے کی طاقت رکھتا ہو اس پر وقت پر ادائیگی لازم ہے؛ امیری کے باوجود ٹال مٹول ظلم ہے۔ مدد کرتے وقت فقیر کی عزتِ نفس مجروح نہ کی جائے۔", "ar": "مطل الغني ظلم، وإذلال الفقير بالمن والأذى محرم.", "hi": "सक्षम देनदार को समय पर कर्ज़ लौटाना अनिवार्य है, और मदद करते समय किसी को अपमानित न करें।"},
+      "rightsViolatedAction": {"en": "Avoid predatory interest-bearing loans when helping the poor; use Qard Hasan or Zakat funds for struggling debtors.", "ur": "غریبوں کو سودی قرض کے جال میں پھنسانے کے بجائے قرضِ حسنہ یا زکوٰۃ (مصرفِ غارمین) سے مدد کریں۔", "ar": "حماية الفقراء من القروض الربوية وإعانتهم من مصرف الغارمين.", "hi": "ग़रीबों को सूद के जाल से बचाकर क़र्ज़-ए-हसन या ज़कात से मदद करें।"},
+      "practicalWays": {
+        "en": ["Calculate and distribute annual 2.5% Zakat accurately to genuine recipients", "Grant breathing space or partial debt forgiveness to genuinely struggling borrowers", "Give silently with both respect and privacy"],
+        "ur": ["ہر سال 2.5% زکوٰۃ مستحقین تک عزت کے ساتھ پہنچائیں", "تنگدست مقروض کو قسطوں یا وقت کی سہولت دیں", "امداد کی سیلفیاں اور ویڈیوز بنانے سے پرہیز کریں"],
+        "ar": ["أداء الزكاة وتفريج كرب المعسرين دون منّ أو تصوير."],
+        "hi": ["ज़कात सही पात्रों तक पहुँचाएं", "तंगदस्त देनदार को मोहलत दें", "मदद का दिखावा न करें"]
+      },
+      "realLifeExamples": {
+        "en": ["A shopkeeper quietly erasing a struggling widowed neighbor's grocery ledger balance before Ramadan."],
+        "ur": ["ایک دکاندار کا خاموشی سے کسی بیوہ یا غریب محلے دار کا راشن کا پرانا کھاتہ معاف کر دینا۔"],
+        "ar": ["تجاوز التاجر عن دين جار معسر سراً."],
+        "hi": ["एक दुकानदार द्वारा चुपचाप किसी ज़रूरतमंद पड़ोसी का बकाया माफ़ करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Publicly filming charity distribution", "Harassing impoverished debtors or charging late interest penalties", "Giving spoiled or unusable leftover items as charity"],
+        "ur": ["راشن دیتے وقت غریبوں کی تصاویر بنانا", "مقروض کی سرِ عام بے عزتی یا تاخیر پر جرمانہ/سود عائد کرنا", "خراب اور ناقابلِ استعمال چیزیں صدقے میں دینا"],
+        "ar": ["التشهير بالفقراء أو فرض غرامات تأخير ربوية أو التصدق بالرديء."],
+        "hi": ["दान देते समय फ़ोटो खींचना या देर होने पर सूद-जुर्माना लगाना।"]
+      },
+      "actionSteps": {
+        "en": ["Check if anyone indebted to you is facing real hardship and ease their terms", "Donate discreetly toward food or education today"],
+        "ur": ["اگر آپ کا کسی پر قرض ہے اور وہ تنگدست ہے تو اسے مہلت یا تخفیف دیں", "آج خفیہ طور پر کسی مستحق کی مدد کریں"],
+        "ar": ["يسّر على معسر اليوم وتصدق سراً."],
+        "hi": ["आज किसी तंगदस्त क़र्ज़दार को राहत दें या गुप्त दान करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [
+        {"surahNumber": 2, "startAyah": 280, "endAyah": 280, "contextExplanation": {"en": "Mandates giving time to an indebted person in hardship, and encourages remission as charity.", "ur": "تنگدست مقروض کو مہلت دینے اور معاف کر دینے کی فضیلت۔", "ar": "إنظار المعسر إلى ميسرة والندب إلى التصدق.", "hi": "तंगदस्त देनदार को समय देने और माफ़ी की श्रेष्ठता।"}},
+        {"surahNumber": 76, "startAyah": 8, "endAyah": 8, "contextExplanation": {"en": "Commends feeding the needy, orphan, and captive solely out of love for Allah.", "ur": "مسکین، یتیم اور قیدی کو محض اللہ کی رضا کے لیے کھلانے کی مدح۔", "ar": "الإطعام خالصاً لوجه الله دون انتظار جزاء.", "hi": "अल्लाह की प्रसन्नता हेतु ग़रीब, अनाथ व कैदी को भोजन कराना।"}}
+      ],
+      "hadithIds": ["bukhari_5353", "bukhari_2076"],
+      "sourceLinks": [{"title": "Surah Al-Baqarah 2:280 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/2/280"}, {"title": "Surah Al-Ma'un 107:1-3 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/107/1-3"}],
+      "mcqs": [{"id": "mcq_r11", "question": {"en": "According to Quran 2:280, what should a lender do when a borrower is in genuine financial hardship?", "ur": "سورۃ البقرہ 2:280 کے مطابق اگر مقروض واقعی تنگدست ہو تو قرض خواہ کیا کرے؟", "ar": "ماذا يأمر القرآن ٢:٢٨٠ عند إعسار المدين؟", "hi": "क़ुरआन 2:280 के अनुसार देनदार तंगदस्त हो तो ऋणदाता को क्या करना चाहिए?"}, "options": {"en": ["Double the debt via late fees", "Grant respite until ease returns, or forgive as charity", "Confiscate personal clothing", "Publicly shame him"], "ur": ["تاخیر پر سود/جرمانہ بڑھا دے", "آسانی آنے تک مہلت دے یا بطور صدقہ معاف کر دے", "ذاتی کپڑے چھین لے", "محلے میں بدنام کرے"], "ar": ["مضاعفة الدين", "نظرة إلى ميسرة أو التصدق", "مصادرة ثيابه", "فضحه"], "hi": ["ब्याज से कर्ज़ बढ़ाए", "आसानी तक मोहलत दे या दान रूप में माफ़ करे", "कपड़े छीने", "अपमानित करे"]}, "correctIndex": 1, "explanation": {"en": "Quran 2:280 explicitly commands respite (nazirah ila maysarah) and prohibits exploitative doubling.", "ur": "البقرہ 2:280 تنگدست کو مہلت دینے اور سود کی طرح رقم بڑھانے سے بچنے کا حکم دیتی ہے۔", "ar": "وإن كان ذو عسرة فنظرة إلى ميسرة.", "hi": "क़ुरआन 2:280 स्पष्ट रूप से मोहलत या क्षमा करने का निर्देश देता है।"}}]
+    },
+    {
+      "id": "rights_12_elders",
+      "departmentId": "dept_rights",
+      "order": 12,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "12. Elders' & Senior Citizens' Rights", "ur": "12. بزرگوں کے حقوق", "ar": "١٢. حقوق كبار السن", "hi": "12. बुज़ुर्गों और वरिष्ठ नागरिकों के अधिकार"},
+      "introduction": {"en": "Honoring gray-haired elders — in families, mosques, transit, and lines — is part of venerating Allah Himself.", "ur": "خاندان، مسجد، سواری اور قطاروں میں بزرگوں کی عزت اور تکریم اسلامی تہذیب کا روشن باب ہے۔", "ar": "إجلال ذي الشيبة المسلم من إجلال الله في الإسلام.", "hi": "परिवार, मस्जिद और समाज में बुज़ुर्गों का सम्मान इस्लामी संस्कृति की मूल पहचान है।"},
+      "explanation": {"en": "Islam emphasizes respecting elders' wisdom, listening to them with patience, offering them front seats, and consulting them gently while caring for physical frailty (Tirmidhi/Abu Dawud principles alongside Prophetic emphasis 'Not of us is he who does not show mercy to our young and respect our elders').", "ur": "بزرگوں کے تجربے کا احترام، قطاروں اور مجلس میں انہیں ترجیح دینا، ان کی بات صبر سے سننا اور کمزوری میں سہارا دینا اسلامی ادب کا اہم تقاضا ہے۔", "ar": "تقديم كبار السن في المجلس والقول والرفق بضعفهم.", "hi": "बुज़ुर्गों को बैठने में प्राथमिकता देना और कमज़ोरी में सहायता करना इस्लामी शिष्टाचार है।"},
+      "dutyBearer": {"en": "Youth, adult children, mosque committees, and public service institutions.", "ur": "نوجوان، اولاد، مسجد کمیٹیاں اور عوامی ادارے۔", "ar": "الشباب والأبناء ومؤسسات المجتمع.", "hi": "युवा वर्ग, संतान और सार्वजनिक संस्थान।"},
+      "mutualBoundaries": {"en": "Respecting elders does not mean accepting harmful cultural superstitions or injustice against youth/women; disagree respectfully without mocking age.", "ur": "بزرگوں کے احترام کا مطلب غلط رسومات یا نوجوانوں پر ظلم کو تسلیم کرنا نہیں؛ اختلافِ رائے ادب اور وقار کے ساتھ کیا جائے۔", "ar": "احترام الكبير يكون بالرفق حتى عند اختلاف الرأي.", "hi": "बुज़ुर्गों के सम्मान में भी असहमति विनम्रता से रखनी चाहिए, उम्र का मज़ाक न उड़ाएं।"},
+      "rightsViolatedAction": {"en": "Abandoning elderly family members without healthcare or basic company violates kinship duties; organize shared care.", "ur": "بزرگوں کو تنہائی یا بے علاج چھوڑ دینا صلہ رحمی کی خلاف ورزی ہے؛ خاندان مل کر دیکھ بھال کرے۔", "ar": "منع إهمال المسنين أو تركهم بلا رعاية.", "hi": "बुज़ुर्गों को अकेले व बिना इलाज न छोड़ें; परिवार मिलकर देखभाल करे।"},
+      "practicalWays": {
+        "en": ["Give up seats in public transport and waiting rooms", "Speak slowly and clearly without sighing at repeated questions", "Build mosque ramps and comfortable chairs for seniors"],
+        "ur": ["بس یا ہسپتال میں بزرگوں کو نشست پیش کریں", "ایک ہی سوال دوبارہ پوچھنے پر جھنجھلائیں نہیں", "مساجد اور گھروں میں بزرگوں کے لیے ریمپ اور آرام دہ کرسیوں کا انتظام کریں"],
+        "ar": ["إفساح المجالس والمقاعد وتيسير الوصول للمساجد."],
+        "hi": ["सार्वजनिक स्थानों पर सीट दें", "बार-बार पूछने पर न झल्लाएं", "मस्जिदों में रैंप व कुर्सी की व्यवस्था करें"]
+      },
+      "realLifeExamples": {
+        "en": ["Neighborhood youth offering free grocery runs and pharmacy pickups for elderly couples living alone."],
+        "ur": ["محلے کے نوجوانوں کا اکیلے رہنے والے بزرگ میاں بیوی کا سودا سلف اور دوائیاں لا کر دینا۔"],
+        "ar": ["مبادرة شباب الحي لتوصيل دواء ومشتريات كبار السن."],
+        "hi": ["मोहल्ले के युवाओं द्वारा अकेले रहने वाले बुज़ुर्गों की दवा व किराना लाना।"]
+      },
+      "commonMistakes": {
+        "en": ["Mocking slower speech or memory decline", "Cutting ahead of seniors in bank/hospital queues"],
+        "ur": ["بزرگوں کی بھول یا سست رفتاری کا مذاق اڑانا", "بینک یا ہسپتال کی قطار میں بزرگوں سے آگے نکل جانا"],
+        "ar": ["السخرية من بطء المسن أو تجاوزه في الطوابير."],
+        "hi": ["बुज़ुर्गों की धीमी गति का मज़ाक उड़ाना या लाइन में आगे निकल जाना।"]
+      },
+      "actionSteps": {
+        "en": ["Sit with an elderly family member for 15 minutes and listen warmly", "Give seniors priority in public spaces"],
+        "ur": ["آج کسی بزرگ کے پاس 15 منٹ بیٹھ کر محبت سے ان کی بات سنیں", "عوامی مقامات پر بزرگوں کو راستہ دیں"],
+        "ar": ["جالس كبيراً في عائلتك اليوم واستمع إليه بود."],
+        "hi": ["आज किसी बुज़ुर्ग के पास बैठकर प्रेम से उनकी बात सुनें।"]
+      },
+      "evidenceBadge": "scholarly_consensus",
+      "quranRefSpecs": [{"surahNumber": 17, "startAyah": 23, "endAyah": 24, "contextExplanation": {"en": "Sets the golden standard of gentle dignity toward aging elders.", "ur": "بڑھاپے کے مراحل میں نرمی، وقار اور ادب کا قرآنی معیار۔", "ar": "الرحمة وخفض الجناح عند الكبر.", "hi": "बुढ़ापे के प्रति करुणा और सम्मान का क़ुरआनी मानक।"}}],
+      "hadithIds": ["muslim_2318a", "bukhari_5971"],
+      "sourceLinks": [{"title": "Surah Al-Isra 17:23 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/17/23"}],
+      "mcqs": [{"id": "mcq_r12", "question": {"en": "What is the proper Islamic response when an elderly person repeats the same question several times?", "ur": "جب کوئی بزرگ ایک ہی بات کئی بار پوچھ لیں تو اسلامی اخلاق کیا تقاضا کرتا ہے؟", "ar": "ما الأدب الإسلامي إذا كرر كبير السن السؤال؟", "hi": "जब कोई बुज़ुर्ग एक ही सवाल कई बार पूछें तो इस्लामी शिष्टाचार क्या कहता है?"}, "options": {"en": ["Snap angrily", "Answer gently every time with patience and kindness", "Ignore them completely", "Laugh loudly"], "ur": ["غصے سے جھڑک دیں", "ہر بار صبر، نرمی اور مسکراہٹ سے جواب دیں", "بالکل نظرانداز کر دیں", "مذاق اڑائیں"], "ar": ["التأفف", "الإجابة برفق وصبر كل مرة", "التجاهل", "الضحك"], "hi": ["गुस्से से झिड़कें", "हर बार धैर्य और विनम्रता से जवाब दें", "अनदेखा करें", "हंसी उड़ाएं"]}, "correctIndex": 1, "explanation": {"en": "Quran 17:23 forbids harshness and teaches noble, patient words ('qawlan karima').", "ur": "قرآنِ پاک نے 'قولاً کریماً' (عزت اور نرمی والی بات) کا حکم دیا ہے۔", "ar": "وقل لهما قولاً كريماً.", "hi": "क़ुरआन 17:23 हमेशा सम्मानजनक व धैर्यपूर्ण शब्द बोलने की शिक्षा देता है।"}}]
+    },
+    {
+      "id": "rights_13_sick",
+      "departmentId": "dept_rights",
+      "order": 13,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "13. Sick Persons' Rights (Iyadat-ul-Mareed)", "ur": "13. مریضوں کے حقوق (عیادتِ مریض)", "ar": "١٣. حقوق المرضى وآداب العيادة", "hi": "13. बीमार व्यक्तियों के अधिकार"},
+      "introduction": {"en": "Visiting the sick (Iyadah), easing their medical burden, praying for their healing, and speaking hopeful words are among the core social duties of every Muslim.", "ur": "مریض کی عیادت کرنا، علاج میں مدد دینا، شفا کی دعا کرنا اور حوصلہ افزا کلمات کہنا ہر مسلمان کا سماجی حق ہے۔", "ar": "عيادة المريض وتخفيف ألمه والدعاء له من حقوق المسلم على أخيه.", "hi": "बीमार की ख़बर लेना, इलाज में मदद और स्वास्थ्य की दुआ इस्लामी समाज के मूल कर्तव्य हैं।"},
+      "explanation": {"en": "Islam treats visiting the sick as both a spiritual blessing and community duty (Muslim 2586a one-body analogy). Patients have rights to competent medical care, privacy, quiet recovery (keeping visits short!), hopeful words instead of terrifying stories, and genuine relief from stigma regarding mental or physical illness.", "ur": "مسلمان ایک جسم کی مانند ہیں (مسلم 2586a)۔ مریض کا حق ہے کہ اسے معیاری علاج، پرائیویسی، آرام (مختصر عیادت)، حوصلہ افزائی اور جسمانی یا ذہنی بیماری پر طعنوں سے تحفظ ملے۔", "ar": "للمريض حق العلاج والستر وتخفيف الزيارة وبعث الأمل.", "hi": "मरीज़ को उचित चिकित्सा, निजता, संक्षिप्त भेंट और मानसिक या शारीरिक बीमारी पर कलंक से मुक्ति का अधिकार है।"},
+      "dutyBearer": {"en": "Family, friends, neighbors, healthcare workers, and employers.", "ur": "اہلِ خانہ، دوست، ہمسائے، طبی عملہ اور آجر (ملازمت دینے والے)۔", "ar": "الأهل والأصدقاء والأطباء وأرباب العمل.", "hi": "परिवार, मित्र, पड़ोसी, चिकित्सक और नियोक्ता।"},
+      "mutualBoundaries": {"en": "Never stay too long, bring noisy crowds to a hospital ward, push unverified herbal/spiritual claims replacing doctors, or share patient photos without consent.", "ur": "مریض کے پاس طویل نشست جما کر اسے تھکائیں نہیں، ڈاکٹروں کے علاج کو روک کر غیر مصدقہ ٹوٹکے نہ تھوپیں، اور مریض کی تصویر اجازت کے بغیر شیئر نہ کریں۔", "ar": "عدم إطالة الزيارة أو التدخل الطبي العشوائي أو نشر صور المريض.", "hi": "अस्पताल में भीड़ न लगाएं, बिना प्रमाण के इलाज न थोपें और मरीज़ की फ़ोटो साझा न करें।"},
+      "rightsViolatedAction": {"en": "Seek lawful medical relief, employer sick-leave protections, and ethical healthcare oversight when patient dignity is neglected.", "ur": "مریض کی دیکھ بھال یا میڈیکل چھٹیوں کے حقوق پامال ہوں تو قانونی طبی تحفظ حاصل کیا جائے۔", "ar": "حفظ الحقوق الطبية والإجازات المرضية النظامية.", "hi": "चिकित्सा लापरवाही या अवकाश अधिकार हनन पर कानूनी संरक्षण लें।"},
+      "practicalWays": {
+        "en": ["Keep hospital visits brief and soothing", "Help with practical tasks (meals, transport, medicines, childcare) instead of empty words", "Speak words of hope and make dua for healing"],
+        "ur": ["عیادت مختصر اور پُرسکون رکھیں", "کھانا، دوائی، سواری یا بچوں کی دیکھ بھال میں عملی مدد کریں", "مریض کو مایوس کرنے کے بجائے شفا اور حوصلے کی بات کریں"],
+        "ar": ["قصر الزيارة وتقديم المساعدة العملية والدعاء بالشفاء."],
+        "hi": ["भेंट संक्षिप्त व शांत रखें", "दवा, भोजन व परिवहन में व्यावहारिक मदद करें", "उम्मीद की बात कहें"]
+      },
+      "realLifeExamples": {
+        "en": ["Friends organizing a meal drop-off schedule for a sick neighbor's household while keeping visits to 10 minutes."],
+        "ur": ["دوستوں کا بیمار ساتھی کے گھر کھانا پہنچانے کی باری لگانا اور عیادت کو مختصر رکھنا۔"],
+        "ar": ["تنسيق الجيران لإرسال الطعام لأسرة المريض مع اختصار الزيارة."],
+        "hi": ["पड़ोसियों द्वारा बीमार के परिवार को भोजन पहुँचाना और संक्षिप्त भेंट करना।"]
+      },
+      "commonMistakes": {
+        "en": ["Telling frightening stories about similar illnesses", "Taking loud groups into ICU/recovery rooms", "Dismissing clinical depression or mental illness as 'weak faith'"],
+        "ur": ["مریض کے سامنے دوسری خوفناک اموات کے قصے سنانا", "ہسپتال میں شور مچانا", "نفسیاتی یا ذہنی بیماری کو محض کمزور ایمان کہہ کر علاج سے روکنا"],
+        "ar": ["تخويف المريض بقصص سلبية أو تجاهل المرض النفسي."],
+        "hi": ["डरावने किस्से सुनाना, शोर करना या मानसिक बीमारी का मज़ाक/उपेक्षा करना।"]
+      },
+      "actionSteps": {
+        "en": ["Send a short encouraging dua or practical help to someone unwell today", "Support medical charity when possible"],
+        "ur": ["آج کسی بیمار کو مختصر حوصلہ افزا پیغام یا عملی مدد پیش کریں"],
+        "ar": ["تفقد مريضاً اليوم بدعاء صادق ومساعدة عملية."],
+        "hi": ["आज किसी बीमार का हाल पूछें और व्यावहारिक सहायता दें।"]
+      },
+      "evidenceBadge": "authentic_hadith",
+      "quranRefSpecs": [{"surahNumber": 24, "startAyah": 61, "endAyah": 61, "contextExplanation": {"en": "Removes hardship from the sick, blind, and impaired in social interaction.", "ur": "مریض، نابینا اور معذور افراد پر سماجی تنگی و حرج ختم کرنے کا قرآنی بیان۔", "ar": "ليس على الأعمى حرج ولا على الأعرج حرج ولا على المريض حرج.", "hi": "बीमार और दिव्यांगों के प्रति सामाजिक सहजता का क़ुरआनी उल्लेख।"}}],
+      "hadithIds": ["muslim_2586a"],
+      "sourceLinks": [{"title": "Surah An-Nur 24:61 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/24/61"}, {"title": "Sahih Muslim 2586a — Sunnah.com", "attribution": "Hadith Reference", "url": "https://sunnah.com/muslim:2586a"}],
+      "mcqs": [{"id": "mcq_r13", "question": {"en": "What is one of the best etiquettes when visiting a hospitalized or recovering patient?", "ur": "ہسپتال یا گھر میں مریض کی عیادت کا بہترین ادب کون سا ہے؟", "ar": "ما أبرز آداب عيادة المريض؟", "hi": "बीमार की ख़बर लेने (इयादत) का सर्वोत्तम शिष्टाचार क्या है?"}, "options": {"en": ["Stay for three hours debating politics", "Keep the visit brief, peaceful, hopeful, and offer practical help", "Speak loudly", "Tell alarming medical stories"], "ur": ["تین گھنٹے بیٹھ کر بحث کریں", "ملاقات مختصر، پرسکون اور حوصلہ افزا رکھیں اور عملی مدد پیش کریں", "اونچی آواز میں بولیں", "خوفناک کہانیاں سنائیں"], "ar": ["إطالة الجلوس", "تخفيف الزيارة وبعث الأمل وتقديم العون", "رفع الصوت", "التخويف"], "hi": ["घंटों बैठना", "संक्षिप्त, शांत, उम्मीदभरी भेंट और व्यावहारिक मदद", "ज़ोर से बोलना", "डराना"]}, "correctIndex": 1, "explanation": {"en": "Brief, comforting visits preserve the patient's rest while fulfilling Islamic brotherhood.", "ur": "مختصر اور پُرامید عیادت مریض کے آرام اور سنتِ نبوی ﷺ کے عین مطابق ہے۔", "ar": "تخفيف الزيارة يجمع بين الأجر وراحة المريض.", "hi": "संक्षिप्त व शांत भेंट से मरीज़ को आराम और शिष्टाचार दोनों पूरे होते हैं।"}}]
+    },
+    {
+      "id": "rights_14_disabled",
+      "departmentId": "dept_rights",
+      "order": 14,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "14. Persons With Disabilities' Rights", "ur": "14. معذور (خصوصی) افراد کے حقوق", "ar": "١٤. حقوق ذوي الإعاقة والهمم", "hi": "14. दिव्यांग व्यक्तियों के अधिकार"},
+      "introduction": {"en": "Islam strictly prohibits mocking physical, sensory, or cognitive differences (49:11) and honors every human being for taqwa and heart rather than outward body (Abasa 80:1-10, Muslim 2564c).", "ur": "اسلام جسمانی، حسی یا ذہنی معذوری کا مذاق اڑانے سے سختی سے منع کرتا ہے (الحجرات 49:11) اور ظاہری جسم کے بجائے دل و تقویٰ کو معیارِ عزت قرار دیتا ہے۔", "ar": "ينهى الإسلام عن السخرية والتمييز ويُعلي شأن ذوي الهمم وكرامتهم.", "hi": "इस्लाम किसी की शारीरिक या मानसिक भिन्नता का मज़ाक उड़ाने से सख्त मना करता है (49:11)।"},
+      "explanation": {"en": "The Prophet ﷺ honored companions like Abdullah ibn Umm Maktum (RA) — who was blind — by appointing him leader of Madinah multiple times and caller to Fajr prayer. Quran 49:11 forbids ridicule and derogatory nicknames. Communities must provide wheelchair ramps, accessible bathrooms, fair employment, and full inheritance.", "ur": "نبی کریم ﷺ نے نابینا صحابی حضرت عبداللہ بن ام مکتومؓ کو کئی بار مدینہ منورہ کا قائم مقام مقرر فرمایا۔ الحجرات (49:11) میں تمسخر اور برے القابات حرام قرار دیے گئے ہیں۔ معاشرتی ذمہ داری ہے کہ ریمپس، تعلیم، باوقار روزگار اور وراثت تک رسائی یقینی بنائی جائے۔", "ar": "ولّى النبي ﷺ ابن أم مكتوم المدينة مراراً، وحرم التنابز بالألقاب والسخرية.", "hi": "नबी ﷺ ने दृष्टिबाधित सहाबी इब्न उम्म मक्तूम को मदीना का कार्यवाहक नियुक्त किया; दिव्यांगों को सुलभ प्रवेश, शिक्षा व रोज़गार का पूरा हक़ है।"},
+      "dutyBearer": {"en": "Families, mosque administrations, schools, employers, and city planners.", "ur": "خاندان، مساجد کے منتظمین، اسکول، آجر اور شہری ادارے۔", "ar": "الأسرة والمساجد والمدارس وأرباب العمل.", "hi": "परिवार, मस्जिद समितियाँ, स्कूल, नियोक्ता और प्रशासन।"},
+      "mutualBoundaries": {"en": "Pitying, hiding away, or denying inheritance/marriage rights to disabled family members is unjust. Treat them as full agents with dignified accessibility.", "ur": "خصوصی افراد کو گھر میں چھپانا، ان کی شادی یا وراثت روکنا ظلم ہے؛ انہیں باوقار خود مختاری اور سہولیات فراہم کی جائیں۔", "ar": "لا يجوز حبس ذوي الإعاقة أو حرمانهم من الميراث والعمل.", "hi": "दिव्यांगों को छिपाना या विरासत/विवाह से वंचित करना अन्याय है।"},
+      "rightsViolatedAction": {"en": "Advocate for workplace disability quotas, barrier-free mosques, and anti-bullying protection.", "ur": "مساجد و دفاتر میں آسان رسائی اور ہراسانی سے تحفظ کے قوانین کا نفاذ یقینی بنایا جائے۔", "ar": "المطالبة بتهيئة المساجد والمرافق وحماية الحقوق القانونية.", "hi": "सुलभ प्रवेश, रोज़गार व बुलिंग-विरोधी कानूनी संरक्षण के लिए आवाज़ उठाएं।"},
+      "practicalWays": {
+        "en": ["Build ramps and accessible Wudu areas in local mosques", "Never imitate accents, limps, or cognitive struggles", "Create inclusive jobs and digital screen-reader compatibility"],
+        "ur": ["مساجد میں وہیل چیئر ریمپ اور آسان وضو خانے بنائیں", "کسی کی چال، آواز یا ذہنی کیفیت کی نقل نہ اتاریں", "خصوصی افراد کو ہنر اور روزگار کے مواقع دیں"],
+        "ar": ["تهيئة الممرات والمرافق وتوفير فرص عمل لائقة."],
+        "hi": ["मस्जिदों में व्हीलचेयर रैंप बनवाएं", "किसी की चाल या आवाज़ की नकल न करें", "समावेशी रोज़गार दें"]
+      },
+      "realLifeExamples": {
+        "en": ["A community mosque building a smooth side ramp and reserving accessible Wudu seats near the entrance."],
+        "ur": ["محلے کی مسجد میں وہیل چیئر ریمپ اور آرام دہ وضو کی جگہ تعمیر کرنا۔"],
+        "ar": ["تجهيز المسجد بمنحدر ودورات مياه مهيأة لذوي الإعاقة."],
+        "hi": ["स्थानीय मस्जिद में रैंप और सुगम वुज़ू स्थान बनाना।"]
+      },
+      "commonMistakes": {
+        "en": ["Using disability words as insults", "Blocking wheelchair curb cuts with parked motorcycles/cars", "Assuming disabled individuals cannot hold leadership roles"],
+        "ur": ["معذوری سے متعلق الفاظ کو گالی یا طنز بنانا", "فٹ پاتھ اور ریمپس پر گاڑیاں کھڑی کرنا", "معذور افراد کو نااہل سمجھنا"],
+        "ar": ["إغلاق الممرات المخصصة أو استخدام الإعاقة للتنمر."],
+        "hi": ["दिव्यांगता शब्दों का ताने में उपयोग करना या रैंप के आगे वाहन खड़ा करना।"]
+      },
+      "actionSteps": {
+        "en": ["Check whether your local mosque or workplace is wheelchair accessible", "Speak up immediately if anyone mocks a person with disabilities"],
+        "ur": ["اپنی مسجد یا دفتر میں وہیل چیئر کی رسائی کا جائزہ لیں", "تمسخر کے خلاف فوراً اخلاقی آواز اٹھائیں"],
+        "ar": ["تحقق من سهولة وصول ذوي الهمم لمسجدك ومنع التنمر."],
+        "hi": ["अपनी मस्जिद या कार्यस्थल में सुलभता जांचें और उपहास का विरोध करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 49, "startAyah": 11, "endAyah": 11, "contextExplanation": {"en": "Strictly forbids mocking, belittling, or labeling people with insulting nicknames.", "ur": "مذاق اڑانے، طعنہ زنی اور برے القاب رکھنے کی قطعی ممانعت۔", "ar": "تحريم السخرية واللمز والتنابز بالألقاب.", "hi": "उपहास और अपमानजनक उपनामों पर कठोर क़ुरआनी प्रतिबंध।"}}],
+      "hadithIds": ["muslim_2564a"],
+      "sourceLinks": [{"title": "Surah Al-Hujurat 49:11 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/49/11"}],
+      "mcqs": [{"id": "mcq_r14", "question": {"en": "How did the Prophet ﷺ demonstrate trust in visually impaired companion Abdullah ibn Umm Maktum (RA)?", "ur": "نبی کریم ﷺ نے نابینا صحابی حضرت عبداللہ بن ام مکتومؓ پر اعتماد کا اظہار کیسے فرمایا؟", "ar": "كيف أكرم النبي ﷺ الصحابي الكفيف عبد الله بن أم مكتوم؟", "hi": "नबी ﷺ ने दृष्टिबाधित सहाबी अब्दुल्लाह इब्न उम्म मक्तूम पर भरोसा कैसे दिखाया?"}, "options": {"en": ["Excluded him from society", "Appointed him Mu'adhdhin and acting governor of Madinah multiple times", "Forbade him from mosque", "Mocked him"], "ur": ["معاشرے سے الگ کر دیا", "انہیں مؤذن اور کئی بار مدینہ منورہ کا قائم مقام مقرر فرمایا", "مسجد آنے سے روکا", "نظرانداز کیا"], "ar": ["عزله", "جعله مؤذناً واستخلفه على المدينة مراراً", "منعه من المسجد", "أبعده"], "hi": ["अलग-थलग किया", "उन्हें मुअज़्ज़िन और कई बार मदीना का कार्यवाहक बनाया", "मस्जिद से रोका", "अनदेखा किया"]}, "correctIndex": 1, "explanation": {"en": "Surah Abasa (80:1-10) and Prophetic history affirm full honor and leadership dignity for persons with disabilities.", "ur": "قرآن و سیرت نے معذور افراد کی مکمل عزت اور صلاحیتوں کے اعتراف کا درس دیا ہے۔", "ar": "إكرام أهل الهمم وإسناد المسؤوليات إليهم.", "hi": "सीरत दिव्यांगों की पूर्ण क्षमता और सम्मान का प्रमाण है।"}}]
+    },
+    {
+      "id": "rights_15_travelers",
+      "departmentId": "dept_rights",
+      "order": 15,
+      "groupCode": "VULNERABLE",
+      "groupLabel": {"en": "Vulnerable People & Social Responsibilities", "ur": "کمزور طبقات اور سماجی ذمہ داریاں", "ar": "الفئات الضعيفة والمسؤولية الاجتماعية", "hi": "कमज़ोर वर्ग और सामाजिक दायित्व"},
+      "title": {"en": "15. Travelers' & Wayfarers' Rights (Ibn as-Sabil)", "ur": "15. مسافروں اور راہگیروں کے حقوق (ابن السبیل)", "ar": "١٥. حقوق المسافر وابن السبيل", "hi": "15. यात्रियों और राहगीरों के अधिकार"},
+      "introduction": {"en": "Whether stranded without funds or simply passing through a neighborhood, travelers (Ibn as-Sabil) hold explicit Quranic rights to safety, honest guidance, hospitality, and emergency Zakat support.", "ur": "مسافر خواہ اپنے شہر میں صاحبِ حیثیت ہو مگر سفر میں محتاج ہو جائے یا محض راستے سے گزر رہا ہو، قرآن میں اس کے لیے تحفظ، رہنمائی اور زکوٰۃ کا حق مقرر ہے۔", "ar": "جعل القرآن لابن السبيل حقاً في النفقة والزكاة والإرشاد والأمان.", "hi": "यात्रियों और राहगीरों (इब्न अस-सबील) को क़ुरआन ने सहायता, सुरक्षित मार्ग और आपात ज़कात का अधिकार दिया है।"},
+      "explanation": {"en": "Quran 4:36 and 9:60 designate Ibn as-Sabil as a formal category deserving compassion and Zakat if stranded. Hosts, drivers, hotels, and shopkeepers must never overcharge strangers or mislead them on routes.", "ur": "سورۃ النساء (4:36) اور التوبہ (9:60) میں مسافر کو باقاعدہ مستحق قرار دیا گیا ہے۔ دکانداروں، ٹیکسی ڈرائیوروں اور مقامی افراد پر لازم ہے کہ اجنبی مسافر سے زیادہ کرایہ نہ لیں اور غلط راستہ نہ بتائیں۔", "ar": "ابن السبيل من مصارف الزكاة؛ ويحرم استغلاله أو تغريره.", "hi": "क़ुरआन 4:36 व 9:60 में यात्री को ज़कात और करुणा का पात्र बताया गया है; अनजान यात्रियों को ठगना हराम है।"},
+      "dutyBearer": {"en": "Local residents, transport providers, hosts, and charity organizations.", "ur": "مقامی شہری، ٹرانسپورٹر، میزبان اور فلاحی ادارے۔", "ar": "أهل البلد وأصحاب المواصلات والجهات الخيرية.", "hi": "स्थानीय नागरिक, परिवहन कर्मी व समाजसेवी संस्थाएं।"},
+      "mutualBoundaries": {"en": "Verify identity and safety cautiously when hosting unknown strangers at home; refer unverified cases to public shelters, mosques, or verified welfare desks while still offering water, food, and honest directions.", "ur": "اجنبی شخص کی تصدیق اور خاندانی تحفظ کا خیال رکھتے ہوئے کھانے، پانی اور محفوظ مسافر خانوں کی رہنمائی سے مدد کریں۔", "ar": "مراعاة الحذر الأمني الأسري مع تقديم الطعام والإرشاد أو المأوى الموثوق.", "hi": "घरेलू सुरक्षा का ध्यान रखते हुए अनजान यात्रियों को भोजन, पानी व सुरक्षित आश्रय का मार्ग दिखाएं।"},
+      "rightsViolatedAction": {"en": "Report predatory taxi/tourism scams and assist stranded travelers safely to official embassies, verified charities, or family.", "ur": "مسافروں کو لوٹنے والے ڈرائیوروں کی شکایت کریں اور پھنسے ہوئے مسافر کو محفوظ سرکاری یا فلاحی مرکز تک پہنچائیں۔", "ar": "حماية المسافرين من الاستغلال وتوجيههم للجهات الرسمية.", "hi": "यात्रियों से ठगी रोकें और फंसे हुए यात्रियों को सुरक्षित सहायता केंद्र तक पहुँचाएं।"},
+      "practicalWays": {
+        "en": ["Charge fair, transparent fares to tourists and out-of-town travelers", "Give clear directions politely without mocking accents", "Support roadside clean water coolers (Sabeel) and safe bus-station shelters"],
+        "ur": ["اجنبی مسافروں سے بھی مقامی کرایہ اور اصل قیمت لیں", "راستہ پوچھنے والے کو نرمی اور توجہ سے صحیح سمت بتائیں", "سڑکوں پر صاف پانی کی سبیل اور مسافر خانوں میں تعاون کریں"],
+        "ar": ["العدل في الأسعار للغرباء وإرشاد التائه وسقي الماء."],
+        "hi": ["अनजान यात्रियों से उचित किराया लें", "सही रास्ता विनम्रता से बताएं", "प्याऊ व आश्रय स्थल में सहयोग करें"]
+      },
+      "realLifeExamples": {
+        "en": ["An airport cab driver returning a forgotten wallet and charging strictly the metered fare to a visiting student."],
+        "ur": ["ایک ٹیکسی ڈرائیور کا مسافر کا بھولا ہوا بٹوا واپس لوٹانا اور میٹر کے عین مطابق کرایہ لینا۔"],
+        "ar": ["إعادة سائق أجرة لمحفظة مسافر واكتفاؤه بالأجرة الرسمية."],
+        "hi": ["टैक्सी चालक द्वारा यात्री का भूला बटुआ लौटाना और सही किराया लेना।"]
+      },
+      "commonMistakes": {
+        "en": ["Doubling prices when hearing a non-local accent", "Giving false directions out of carelessness", "Blocking sidewalks needed by pedestrians and travelers"],
+        "ur": ["باہر کے مسافر کو دیکھ کر دوگنی قیمت مانگنا", "لاپرواہی سے غلط راستہ بتانا", "پیدل چلنے والوں کے فٹ پاتھ پر قبضہ کرنا"],
+        "ar": ["استغلال الغريب برفع الأسعار أو إغلاق طرق المارة."],
+        "hi": ["बाहरी व्यक्ति देखकर दोगुना दाम मांगना या गलत रास्ता बताना।"]
+      },
+      "actionSteps": {
+        "en": ["Offer accurate, kind guidance whenever someone asks directions", "Ensure clean drinking water access outside your workplace/shop"],
+        "ur": ["جب کوئی راستہ پوچھے تو خوش اخلاقی سے رہنمائی کریں", "ممکن ہو تو دکان یا دفتر کے باہر پینے کے صاف پانی کا انتظام کریں"],
+        "ar": ["أرشد السائلين بلطف وشارك في سقيا الماء."],
+        "hi": ["रास्ता पूछने वालों की विनम्रता से मदद करें।"]
+      },
+      "evidenceBadge": "quran",
+      "quranRefSpecs": [{"surahNumber": 9, "startAyah": 60, "endAyah": 60, "contextExplanation": {"en": "Explicitly includes the stranded traveler (Ibn as-Sabil) among the eight Zakat categories.", "ur": "زکوٰۃ کے آٹھ مصارف میں مسافر (ابن السبیل) کا صریح ذکر۔", "ar": "ذكر ابن السبيل ضمن مصارف الزكاة الثمانية.", "hi": "ज़कात के आठ पात्रों में यात्री (इब्न अस-सबील) का उल्लेख।"}}],
+      "hadithIds": ["bukhari_6018"],
+      "sourceLinks": [{"title": "Surah At-Tawbah 9:60 — Quran.com", "attribution": "Quran Text", "url": "https://quran.com/9/60"}],
+      "mcqs": [{"id": "mcq_r15", "question": {"en": "Under Quran 9:60, can a wealthy person who is temporarily stranded with no access to money receive emergency Zakat assistance as Ibn as-Sabil?", "ur": "کیا اپنے وطن میں مالدار شخص اگر سفر میں پیسوں سے محروم ہو جائے تو قرآن 9:60 کے تحت بطور ابن السبیل مدد کا مستحق ہو سکتا ہے؟", "ar": "هل يستحق الغني المنقطع في السفر المساعدة بصفة ابن السبيل؟", "hi": "क्या यात्रा में धन से वंचित व्यक्ति क़ुरआन 9:60 के तहत इब्न अस-सबील के रूप में मदद पा सकता है?"}, "options": {"en": ["No, never", "Yes, to reach safety/home according to classical fiqh", "Only after 5 years", "Only merchants"], "ur": ["نہیں، ہرگز نہیں", "جی ہاں، گھر یا محفوظ منزل تک پہنچنے کی بقدر مدد جائز ہے", "پانچ سال بعد", "صرف تاجروں کو"], "ar": ["لا", "نعم بقدر ما يوصله إلى بلده", "بعد سنوات", "للتجار فقط"], "hi": ["नहीं", "हाँ, घर लौटने भर की सहायता वैध है", "5 साल बाद", "केवल व्यापारियों को"]}, "correctIndex": 1, "explanation": {"en": "In classical fiqh, a stranded wayfarer lacking accessible funds in transit qualifies under Ibn as-Sabil.", "ur": "فقہاء کے مطابق مسافر اگر سفر میں رقم سے کٹ جائے تو بقدرِ ضرورت ابن السبیل کے مصرف میں آتا ہے۔", "ar": "ابن السبيل يُعطى بقدر ما يبلغ به بلده.", "hi": "यात्रा में धनहीन होने पर यात्री इब्न अस-सबील के तहत सहायता का पात्र होता है।"}}]
+    }
+  ]
+}

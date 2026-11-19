@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 3,
+  "mode": "ONLINE_LIVE_FETCH",
+  "offlineBundledCorpus": false,
+  "apis": [
+    {
+      "id": "quran_foundation_v4",
+      "name": "Quran.com / Quran Foundation Content API v4",
+      "resourcesEndpoint": "https://api.quran.com/api/v4/resources/tafsirs",
+      "byAyahTemplate": "https://api.quran.com/api/v4/tafsirs/{id}/by_ayah/{surah}:{ayah}"
+    },
+    {
+      "id": "spa5k_tafsir_api",
+      "name": "spa5k/tafsir_api CDN (QUL & Al-Tafsir.com mirror)",
+      "editionsEndpoint": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@v1.2.3/tafsir/editions.json",
+      "byAyahTemplate": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/{slug}/{surah}/{ayah}.json",
+      "bySurahFallbackTemplate": "https://cdn.jsdelivr.net/gh/spa5k/tafsir_api@main/tafsir/{slug}/{surah}.json"
+    }
+  ],
+  "supportedLanguages": ["ur", "en", "hi", "ar"],
+  "editionsByLanguage": {
+    "ur": [
+      {"id": "ur_ibn_kathir", "qfId": "160", "spa5kSlug": "ur-tafseer-ibn-e-kaseer", "name": "Tafsir Ibn Kathir (Urdu)"},
+      {"id": "ur_bayan_ul_quran", "qfId": "159", "spa5kSlug": "ur-tafsir-bayan-ul-quran", "name": "Bayan ul Quran (Dr. Israr Ahmad)"},
+      {"id": "ur_fi_zilal", "qfId": "157", "spa5kSlug": "tafsir-fe-zalul-quran-syed-qatab", "name": "Fi Zilal al-Quran (Urdu)"},
+      {"id": "ur_saadi", "qfId": null, "spa5kSlug": "ur-tafsir-as-saadi-urdu", "name": "Tafsir As-Saadi (Urdu)"},
+      {"id": "ur_tazkirul_quran", "qfId": "818", "spa5kSlug": "ur-tazkirul-quran", "name": "Tazkirul Quran (Urdu)"}
+    ],
+    "en": [
+      {"id": "en_ibn_kathir", "qfId": "169", "spa5kSlug": "en-tafisr-ibn-kathir", "name": "Tafsir Ibn Kathir (Abridged English)"},
+      {"id": "en_maariful_quran", "qfId": "168", "spa5kSlug": "en-tafsir-maarif-ul-quran", "name": "Maarif al-Quran (Mufti Muhammad Shafi)"},
+      {"id": "en_jalalayn", "qfId": null, "spa5kSlug": "en-al-jalalayn", "name": "Tafsir al-Jalalayn (Al-Tafsir.com)"},
+      {"id": "en_ibn_abbas", "qfId": null, "spa5kSlug": "en-tafsir-ibn-abbas", "name": "Tanwir al-Miqbas min Tafsir Ibn Abbas"},
+      {"id": "en_tazkirul_quran", "qfId": "817", "spa5kSlug": "en-tazkirul-quran", "name": "Tazkirul Quran (English)"}
+    ],
+    "hi": [
+      {"id": "hi_al_mukhtasar", "qfId": null, "spa5kSlug": "hindi-mokhtasar", "name": "Al-Mukhtasar fi Tafsir al-Quran (Hindi)", "note": "Only Hindi Tafseer published in verified QUL/spa5k catalogs."}
+    ],
+    "ar": [
+      {"id": "ar_ibn_kathir", "qfId": "14", "spa5kSlug": "ar-tafsir-ibn-kathir", "name": "تفسير ابن كثير"},
+      {"id": "ar_tabari", "qfId": "15", "spa5kSlug": "ar-tafsir-al-tabari", "name": "تفسير الطبري"},
+      {"id": "ar_qurtubi", "qfId": "90", "spa5kSlug": "ar-tafseer-al-qurtubi", "name": "تفسير القرطبي"},
+      {"id": "ar_baghawi", "qfId": "94", "spa5kSlug": "ar-tafsir-al-baghawi", "name": "تفسير البغوي"},
+      {"id": "ar_saadi", "qfId": "91", "spa5kSlug": "ar-tafseer-al-saddi", "name": "تفسير السعدي"},
+      {"id": "ar_wasit", "qfId": "93", "spa5kSlug": "ar-tafsir-al-wasit", "name": "التفسير الوسيط"},
+      {"id": "ar_jalalayn", "qfId": null, "spa5kSlug": "ar-tafsir-al-jalalayn", "name": "تفسير الجلالين"}
+    ]
+  }
+}

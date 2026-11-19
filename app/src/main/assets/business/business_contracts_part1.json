@@ -1,0 +1,1224 @@
+{
+  "contracts": [
+    {
+      "id": "contract_murabaha",
+      "order": 1,
+      "arabicTerm": "المرابحة للآمر بالشراء",
+      "name": {
+        "en": "1. Murabaha (Cost-Plus Sale)",
+        "ur": "1. مرابحہ (لاگت اور متعین نفع کے ساتھ بیع)",
+        "ar": "١. المرابحة للآمر بالشراء",
+        "hi": "1. मुराबहा (लागत-प्लस विक्रय अनुबंध)"
+      },
+      "definition": {
+        "en": "A trust-based sale (Bay' al-Amanah) where the seller discloses the exact acquisition cost of an asset and sells it to the buyer at that cost plus an agreed-upon fixed profit margin or amount.",
+        "ur": "بیعِ امانت کی ایک قسم جس میں بائع خریدار کو شے کی اصل لاگت صاف بتاتا ہے اور اس پر متعین و متفقہ نفع شامل کر کے فروخت کرتا ہے۔",
+        "ar": "بيع بمثل الثمن الأول مع زيادة ربح معلوم متفق عليه، مع اشتراط تملك البائع للسلعة وقبضها قبل البيع.",
+        "hi": "विश्वास-आधारित बिक्री जिसमें विक्रेता वस्तु की वास्तविक लागत बताता है और पूर्व-निर्धारित निश्चित लाभ जोड़कर बेचता है।"
+      },
+      "purpose": {
+        "en": "Facilitates asset acquisition, raw material procurement, and working-capital inventory purchase without interest-bearing loans.",
+        "ur": "بغیر سودی قرض کے کاروباری مال، خام مال یا اثاثوں کی خریداری کو ممکن بنانا۔",
+        "ar": "توفير تمويل حلال لشراء الأصول والبضائع ومستلزمات الإنتاج دون الاقتراض بالربا.",
+        "hi": "ब्याज-आधारित ऋण के बिना कच्चा माल, स्टॉक और संपत्ति खरीदने की हलाल व्यवस्था।"
+      },
+      "shariahPrinciples": {
+        "en": "Permissible trade (2:275, 4:29). Seller must genuinely own and possess (actual or constructive Qabd) the asset and bear risk of loss before executing the Murabaha sale. Once concluded, price is fixed and cannot increase upon late payment.",
+        "ur": "قرآن (2:275، 4:29) کے مطابق جائز تجارت۔ بائع کے لیے ضروری ہے کہ بیع سے پہلے مال اس کی ملکیت و قبضہ (حقیقی یا حکمی) میں آئے اور نقصان کا خطرہ اس کے ذمہ ہو؛ عقد کے بعد تاخیر پر قیمت میں اضافہ جائز نہیں۔",
+        "ar": "أصلها حل البيع (البقرة ٢٧٥). يشترط دخول السلعة في ملك البائع وضمانه وقبضه الحقيقي أو الحكمي، وثبات الثمن بعد العقد.",
+        "hi": "क़ुरआन (2:275, 4:29) के अंतर्गत वैध व्यापार। बिक्री से पहले विक्रेता का वास्तविक स्वामित्व और जोखिम (क़ब्ज़) अनिवार्य है; देरी पर कीमत बढ़ाना हराम है।"
+      },
+      "conditions": {
+        "en": [
+          "Asset must exist, be halal, and be owned by seller before selling.",
+          "Original cost price and agreed profit must be clearly disclosed and fixed.",
+          "Risk of ownership passes to financier/seller between purchase and onward sale.",
+          "No extra profit charge for delayed payment; any late-payment charity goes strictly to charity."
+        ],
+        "ur": [
+          "شے موجود، حلال اور بیچنے سے پہلے بائع کی ملکیت میں ہو۔",
+          "اصل قیمتِ خرید اور طے شدہ نفع واضح اور متعین ہو۔",
+          "خریداری اور آگے فروخت کے درمیانی وقفے میں مال کا رسک بائع/بینک پر ہو۔",
+          "تاخیرِ ادائیگی پر قیمت میں اضافہ نہیں ہو سکتا؛ التزامِ تصدق صرف خیرات میں جائے گا۔"
+        ],
+        "ar": [
+          "وجود المبيع وكونه مباحاً ومملوكاً للبائع قبل البيع.",
+          "العلم بالثمن الأول والربح المعلوم.",
+          "تحمل البائع مخاطر السلعة قبل تسليمها للمشتري.",
+          "عدم زيادة الثمن عند التأخر في السداد."
+        ],
+        "hi": [
+          "वस्तु मौजूद, हलाल और बिक्री से पहले विक्रेता के स्वामित्व में हो।",
+          "वास्तविक लागत और तय लाभ स्पष्ट व निश्चित हो।",
+          "खरीद और पुनः बिक्री के बीच जोखिम विक्रेता का हो।",
+          "भुगतान में देरी पर कीमत नहीं बढ़ाई जा सकती।"
+        ]
+      },
+      "partyRights": {
+        "en": "Buyer has right to inspect cost receipts, receive defect-free delivery or cancel for defect, and pay fixed price. Seller has right to timely payment and collateral (Rahn) if agreed.",
+        "ur": "خریدار کو اصل رسیدیں دیکھنے، عیب کی صورت میں واپسی اور مقررہ قیمت کی حفاظت کا حق ہے؛ بائع کو بروقت ادائیگی اور رہن/ضمانت کا حق حاصل ہے۔",
+        "ar": "للمشتري التحقق من الثمن الأول وخيار العيب وثبات الثمن، وللبائع قبض الثمن وطلب الضمانات المشروعة.",
+        "hi": "खरीदार को वास्तविक बिल देखने और दोषपूर्ण वस्तु लौटाने का अधिकार है; विक्रेता को समय पर भुगतान का अधिकार है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Two sequential distinct contracts: (1) Seller purchases asset and takes actual/constructive possession; (2) Thereafter executes Murabaha sale to buyer.",
+        "ur": "دو الگ مرحلے لازم ہیں: (1) بائع پہلے سپلائر سے خرید کر قبضہ حاصل کرے، (2) اس کے بعد ہی خریدار سے عقدِ مرابحہ کرے۔",
+        "ar": "يمر بعقدين منفصلين: شراء البائع أولاً وقبضه الحقيقي أو الحكمي، ثم بيع المرابحة للعميل.",
+        "hi": "दो अलग चरण अनिवार्य हैं: पहले विक्रेता खरीदकर क़ब्ज़ ले, तभी ग्राहक को मुराबहा में बेचे।"
+      },
+      "profitAndLossRules": {
+        "en": "Before buyer takes delivery, damage/loss belongs to seller. Supplier cash rebates reduce the cost base.",
+        "ur": "حوالگی تک مال کے نقصان کی ذمہ داری بائع پر ہے؛ سپلائر ڈسکاؤنٹ اصل لاگت سے کم کیا جائے گا۔",
+        "ar": "ضمان المبيع على البائع قبل القبض، وأي حسم من المورد يُخفض من التكلفة الأساسية.",
+        "hi": "सुपुर्दगी से पहले नुकसान का जोखिम विक्रेता का है; आपूर्तिकर्ता की छूट लागत से घटाई जाती है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Disguised cash loan ('Bay' al-Inah' or fake invoice without real goods).",
+          "Executing Murabaha on goods the client already purchased earlier.",
+          "Charging compounding interest on overdue installments."
+        ],
+        "ur": [
+          "بغیر مال کے فرضی رسید پر نقد قرض (بیع العینہ)۔",
+          "اس مال پر مرابحہ کرنا جو گاہک پہلے ہی خرید چکا ہو۔",
+          "قسط تاخیر ہونے پر اضافی جرمانہ بطور منافع وصول کرنا۔"
+        ],
+        "ar": [
+          "المرابحة الصورية أو بيع العينة دون سلعة حقيقية.",
+          "إجراء المرابحة على بضاعة اشتراها العميل مسبقاً.",
+          "فرض غرامات تأخير تضاف إلى ربح البائع."
+        ],
+        "hi": [
+          "बिना वास्तविक माल के नकली चालान पर नक़द उधार देना।",
+          "ग्राहक द्वारा पहले से खरीदे गए माल पर मुराबहा करना।",
+          "किस्त में देरी पर ब्याज रूपी जुर्माना मुनाफ़े में जोड़ना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "An Islamic bank buys solar panels for PKR 2,000,000, takes constructive possession, then sells them to a factory for PKR 2,240,000 in 12 fixed installments.",
+        "ur": "اسلامی بینک فیکٹری کے لیے 20 لاکھ روپے کے سولر پینل خرید کر قبضے میں لیتا ہے اور پھر 22 لاکھ 40 ہزار روپے میں 12 متعین اقساط پر فروخت کرتا ہے۔",
+        "ar": "يشتري المصرف الإسلامي ألواحاً شمسية بمبلغ محدد ويتسلمها، ثم يبيعها للمصنع مرابحة بربح معلوم على ١٢ قسطاً ثابتاً.",
+        "hi": "इस्लामी बैंक फैक्ट्री के लिए सोलर पैनल खरीदकर क़ब्ज़ में लेता है और फिर निश्चित लाभ जोड़कर 12 मासिक किस्तों में बेचता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 8 (Murabahah)",
+      "sbpGuidance": {
+        "en": "Per SBP Islamic Banking FAQs: Bank purchases goods first; Offer-Acceptance follows possession; late-payment charity goes strictly to charity fund.",
+        "ur": "اسٹیٹ بینک آف پاکستان کے مطابق بینک خود یا وکیل کے ذریعے خریدے، قبضے کے بعد ایجاب و قبول ہو، اور تاخیری صدقہ خیرات میں جائے۔",
+        "ar": "وفق إرشادات بنك الدولة الباكستاني: يشترط الشراء الفعلي والتملك قبل البيع، وتوجيه غرامة المماطلة للخير.",
+        "hi": "SBP इस्लामी बैंकिंग FAQ के अनुसार बैंक को पहले माल खरीदकर क़ब्ज़ लेना होगा; देरी पर जुर्माना दान खाते में जाता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All four schools permit Murabaha when ownership precedes sale; Hanafi/Maliki/Hanbali forbid Bay' al-Inah, and IIFA Resolution No. 157 prohibits organized Tawarruq/Inah.",
+        "ur": "چاروں ائمہ حقیقی ملکیت و قبضہ کے ساتھ مرابحہ کو جائز کہتے ہیں؛ بیع العینہ اور منظم تورق مجمع الفقہ (قرارداد 157) کے نزدیک ممنوع ہے۔",
+        "ar": "يجيز الجمهور المرابحة بشروطها، وقد قرر مجمع الفقه الدولي (١٥٧) تحريم العينة والتورق المنظم.",
+        "hi": "चारों मज़हब वास्तविक स्वामित्व के साथ मुराबहा को वैध मानते हैं; IIFA प्रस्ताव 157 इसे बनावटी रूप से करने से रोकता है।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Was asset possession evidenced before Murabaha offer & acceptance?",
+          "Are supplier rebates deducted from Murabaha cost?"
+        ],
+        "ur": [
+          "کیا ایجاب و قبول سے قبل مال کا قبضہ ثابت ہو چکا تھا؟",
+          "کیا سپلائر رعایت اصل لاگت سے کم کی گئی ہے؟"
+        ],
+        "ar": [
+          "هل تم القبض الفعلي أو الحكمي قبل توقيع عقد المرابحة؟"
+        ],
+        "hi": [
+          "क्या मुराबहा अनुबंध पर हस्ताक्षर से पहले वास्तविक क़ब्ज़ प्रमाणित था?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 275,
+          "endAyah": 275,
+          "contextNote": {
+            "en": "Distinguishes permissible trade (Bay') from prohibited Riba.",
+            "ur": "تجارت (بیع) کے حلال ہونے اور سود (ربا) کے حرام ہونے کا بنیادی قرآنی اصول۔",
+            "ar": "تقرر الآية الفرق الجوهري بين البيع الحلال والربا المحرم.",
+            "hi": "यह आयत वैध व्यापार और वर्जित सूद के बीच मूल अंतर स्पष्ट करती है।"
+          },
+          "businessRelevance": {
+            "en": "Murabaha is valid only with real asset ownership and risk.",
+            "ur": "مرابحہ تبھی حلال بیع ہے جب حقیقی شے، ملکیت اور رسک موجود ہو۔",
+            "ar": "تصح المرابحة لكونها بيع سلعة حقيقية مع التملك والضمان.",
+            "hi": "मुराबहा तभी हलाल है जब वास्तविक वस्तु और स्वामित्व जोखिम शामिल हो।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_1532a"],
+      "mcqs": [
+        {
+          "id": "mcq_mur_1",
+          "question": {
+            "en": "What makes Murabaha fundamentally different from an interest-based loan?",
+            "ur": "مرابحہ کو سودی قرض سے بنیادی طور پر کیا چیز ممتاز کرتی ہے؟",
+            "ar": "ما الفرق الجوهري بين المرابحة والقرض الربوي؟",
+            "hi": "मुराबहा को ब्याज-आधारित ऋण से क्या अलग करता है?"
+          },
+          "options": {
+            "en": [
+              "Seller must genuinely own and bear asset risk before reselling at a disclosed fixed price",
+              "Profit percentage is always below 10%",
+              "Penalties are charged as extra bank profit"
+            ],
+            "ur": [
+              "بیچنے سے پہلے بائع کا شے کا مالک ہونا، رسک اٹھانا اور متعین لاگت و نفع پر بیچنا",
+              "نفع کی شرح 10 فیصد سے کم ہونا",
+              "تاخیر پر اضافی منافع وصول کرنا"
+            ],
+            "ar": [
+              "تملك البائع للسلعة وتحمله مخاطرها قبل بيعها بثمن معلوم ثابت",
+              "نسبة الربح أقل من ١٠٪"
+            ],
+            "hi": [
+              "विक्रेता का वास्तविक स्वामित्व, जोखिम वहन करना और निश्चित लागत+लाभ पर बेचना",
+              "लाभ 10% से कम होना"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Per AAOIFI Standard No. 8 and SBP guidance, Murabaha requires genuine ownership, possession, risk assumption, and a fixed price.",
+            "ur": "AAOIFI معیار 8 اور اسٹیٹ بینک کی رہنمائی کے مطابق مرابحہ میں حقیقی ملکیت، قبضہ، رسک اور متعین قیمت لازم ہے۔",
+            "ar": "تتطلب المرابحة تملكاً حقيقياً وضماناً للسلعة وثباتاً للثمن بعد العقد.",
+            "hi": "AAOIFI मानक 8 के अनुसार वास्तविक स्वामित्व, क़ब्ज़, जोखिम और निश्चित कीमत अनिवार्य है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_mudarabah",
+      "order": 2,
+      "arabicTerm": "المضاربة",
+      "name": {
+        "en": "2. Mudarabah (Trust Capital Partnership)",
+        "ur": "2. مضاربت (سرمایہ اور محنت کی شراکت)",
+        "ar": "٢. المضاربة",
+        "hi": "2. मुदारबाह (पूंजी व श्रम साझेदारी)"
+      },
+      "definition": {
+        "en": "A profit-sharing partnership where Rabb al-Mal provides 100% capital and Mudarib contributes management and labor.",
+        "ur": "منافع میں شراکت کا عقد جس میں رب المال پورا سرمایہ لگاتا ہے اور مضارب محنت و انتظام فراہم کرتا ہے۔",
+        "ar": "شركة في الربح بمال من رب المال وعمل من المضارب.",
+        "hi": "लाभ की साझेदारी जिसमें रब्बुल-माल पूरी पूंजी देता है और मुदारिब श्रम व प्रबंधन करता है।"
+      },
+      "purpose": {
+        "en": "Connects capital owners with skilled entrepreneurs and underpins Islamic investment accounts.",
+        "ur": "سرمایہ کاروں کو باصلاحیت تاجروں سے جوڑنا اور اسلامی بینکوں کے منافع بخش کھاتوں کی بنیاد فراہم کرنا۔",
+        "ar": "الجمع بين أصحاب رؤوس الأموال وأصحاب الكفاءات التجارية.",
+        "hi": "पूंजी मालिकों को कुशल उद्यमियों से जोड़ना और इस्लामी निवेश खातों का आधार बनाना।"
+      },
+      "shariahPrinciples": {
+        "en": "Profit is shared by agreed ratio (e.g., 60:40), never a fixed lump sum. Financial loss is borne solely by Rabb al-Mal unless Mudarib commits negligence or misconduct.",
+        "ur": "نفع فیصد تناسب سے طے ہوتا ہے، متعین رقم نہیں۔ مالی نقصان صرف رب المال کا ہوتا ہے، الا یہ کہ مضارب غفلت یا خلاف ورزی کرے۔",
+        "ar": "توزيع الربح بنسبة شائعة متفق عليها، والخسارة المالية على رب المال ما لم يتعدَّ المضارب.",
+        "hi": "लाभ तय अनुपात में बंटता है। वित्तीय नुकसान केवल पूंजीपति का होता है जब तक मुदारिब लापरवाही न करे।"
+      },
+      "conditions": {
+        "en": [
+          "Capital must be quantified and delivered.",
+          "Profit-sharing ratio agreed explicitly at inception.",
+          "No guaranteed return or capital guarantee by Mudarib."
+        ],
+        "ur": [
+          "سرمایہ واضح، معلوم اور سپرد کیا گیا ہو۔",
+          "نفع کا تناسب عقد کے وقت واضح طے ہو۔",
+          "مضارب کی طرف سے اصل رقم یا مقررہ نفع کی ضمانت نہ ہو۔"
+        ],
+        "ar": [
+          "معلومية رأس المال، وتحديد نسبة الربح، وعدم ضمان رأس المال من المضارب."
+        ],
+        "hi": [
+          "पूंजी स्पष्ट हो, लाभ अनुपात तय हो, और पूंजी गारंटी न हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Rabb al-Mal has right to transparent accounts and mandate compliance; Mudarib has operational freedom within mandate.",
+        "ur": "رب المال کو شفاف حساب کتاب اور شرائط کی پابندی کا حق ہے؛ مضارب کو کاروبار چلانے کی آزادی حاصل ہے۔",
+        "ar": "لرب المال الاطلاع على الحسابات، وللمضارب حرية الإدارة ضمن الشروط.",
+        "hi": "रब्बुल-माल को पारदर्शी हिसाब का अधिकार है; मुदारिब को व्यापार चलाने की स्वतंत्रता है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Assets belong to Rabb al-Mal; Mudarib acts as Amin (trustee), Wakil (agent), and Sharik in realized profit.",
+        "ur": "مضاربت کا مال رب المال کی ملکیت رہتا ہے؛ مضارب امین و وکیل اور نفع میں شریک ہوتا ہے۔",
+        "ar": "أصول المضاربة مملوكة لرب المال والمضارب أمين ووكيل ثم شريك في الربح.",
+        "hi": "संपत्ति रब्बुल-माल की रहती है; मुदारिब अमीन व वकील होता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Profit is distributed only after capital is preserved intact; guaranteed return invalidates contract.",
+        "ur": "منافع کی تقسیم اصل سرمائے کی بحالی کے بعد ہوتی ہے؛ مقررہ منافع کی ضمانت عقد کو فاسد کر دیتی ہے۔",
+        "ar": "لا ربح إلا بعد سلامة رأس المال؛ واشتراط عائد مضمون يُفسد العقد.",
+        "hi": "मूल पूंजी सुरक्षित रहने के बाद ही लाभ बंटता है; निश्चित गारंटी अवैध है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Promising fixed 2% monthly profit regardless of business performance.",
+          "Making Mudarib guarantee principal against market downturns."
+        ],
+        "ur": [
+          "سرمائے پر 'ہر ماہ 2 فیصد مقررہ نفع' کی ضمانت دینا۔",
+          "کاروباری نقصان میں بھی مضارب کو اصل رقم کی واپسی کا پابند کرنا۔"
+        ],
+        "ar": [
+          "اشتراط ربح شهري مقطوع، أو تضمين المضارب رأس المال في الخسارة الطبيعية."
+        ],
+        "hi": [
+          "निश्चित मासिक लाभ की गारंटी देना, या प्राकृतिक नुकसान पर पूंजी वापसी मांगना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Investor funds PKR 1M for an experienced exporter on a 50:50 net profit ratio; normal loss is absorbed by capital.",
+        "ur": "سرمایہ کار 10 لاکھ روپے تجربہ کار تاجر کو 50:50 نفع کے تناسب پر دیتا ہے؛ کاروباری نقصان سرمائے سے کٹے گا۔",
+        "ar": "يموّل مستثمر تاجراً بمليون على مناصفة الربح ٥٠٪، وتُخصم الخسارة الطبيعية من رأس المال.",
+        "hi": "निवेशक व्यापारी को 50:50 लाभ अनुपात पर 10 लाख पूंजी देता है; नुकसान पूंजी से घटेगा।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 13 (Mudarabah)",
+      "sbpGuidance": {
+        "en": "SBP uses Mudarabah for Islamic deposit pools with transparent weightages.",
+        "ur": "اسٹیٹ بینک کے تحت اسلامی بینکوں کے منافع بخش کھاتے مضاربت پر مبنی ہوتے ہیں۔",
+        "ar": "تعتمد حسابات الاستثمار الإسلامية لدى بنك الدولة على عقد المضاربة.",
+        "hi": "SBP के तहत इस्लामी बैंक निवेश खाते मुदारबाह पर आधारित होते हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "All four Madhahib agree on Mudarabah; Hanafis & Hanbalis allow fixed duration limits while Shafi'is & Malikis restrict non-cash capital.",
+        "ur": "چاروں فقہ میں مضاربت جائز ہے۔ احناف و حنابلہ مدت مقرر کرنے کی اجازت دیتے ہیں جبکہ شوافع و مالکیہ نقد سرمائے کی شرط پر زور دیتے ہیں۔",
+        "ar": "أجمع الفقهاء على مشروعيتها، واختلفوا في توقيتها بالأجل وفي رأس المال غير النقدي.",
+        "hi": "चारों फ़िक़्ह मुदारबाह को वैध मानते हैं; समय-सीमा और गैर-नक़द पूंजी पर आंशिक मतभेद हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "How should constructive liquidation (Tandeed Hukmi) be audited when investors enter or exit mid-year?"
+        ],
+        "ur": [
+          "مضاربت کے دوران نئے شرکاء کے داخل ہونے یا نکلنے پر تنضیض حکمی کیسے ہو؟"
+        ],
+        "ar": [
+          "ما ضوابط التنضيض الحكمي عند تصفية المضاربة المستمرة؟"
+        ],
+        "hi": [
+          "चलते हुए मुदारबाह में परिसमापन का आकलन कैसे हो?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": {
+            "en": "Validates commerce based on mutual consent.",
+            "ur": "باہمی رضامندی سے تجارت کے جواز کا بیان۔",
+            "ar": "إباحة التجارة عن تراضٍ.",
+            "hi": "आपसी सहमति के व्यापार की अनुमति।"
+          },
+          "businessRelevance": {
+            "en": "Shared risk and proportional profit make Mudarabah halal.",
+            "ur": "باہمی رضامندی سے نفع و نقصان کی شرکت مضاربت کو حلال بناتی ہے۔",
+            "ar": "التراضي على المشاركة في الغنم والغرم يجعل المضاربة حلالاً.",
+            "hi": "लाभ-हानि में सहमति इसे वैध बनाती है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_mud_1",
+          "question": {
+            "en": "In a valid Mudarabah without Mudarib negligence, who bears financial loss?",
+            "ur": "اگر مضارب کی غفلت نہ ہو تو مضاربت میں مالی نقصان کون برداشت کرتا ہے؟",
+            "ar": "إذا وقعت خسارة في المضاربة دون تقصير، فمن يتحمل الخسارة المالية؟",
+            "hi": "बिना लापरवाही के मुदारबाह में वित्तीय नुकसान कौन उठाता है?"
+          },
+          "options": {
+            "en": [
+              "Rabb al-Mal bears financial loss; Mudarib loses labor/effort",
+              "Mudarib repays 100% of capital",
+              "Both split financial loss equally"
+            ],
+            "ur": [
+              "مالی نقصان رب المال کا اور مضارب کی محنت ضائع ہوتی ہے",
+              "مضارب پورا سرمایہ واپس کرتا ہے",
+              "دونوں برابر بھرتے ہیں"
+            ],
+            "ar": [
+              "يتحمل رب المال الخسارة المالية ويخسر المضارب جهده",
+              "يضمن المضارب رأس المال كاملاً"
+            ],
+            "hi": [
+              "वित्तीय नुकसान पूंजीपति (रब्बुल-माल) का होता है और मुदारिब का श्रम व्यर्थ जाता है",
+              "मुदारिब पूरी पूंजी लौटाएगा"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Under classical fiqh and AAOIFI SS 13, financial loss falls on the capital owner absent negligence or breach.",
+            "ur": "فقہ اور AAOIFI معیار 13 کے مطابق بغیر غفلت کے مالی نقصان رب المال کے ذمہ ہے۔",
+            "ar": "وفق معيار أيوفي ١٣، الخسارة المالية على رب المال ما لم يثبت التقصير.",
+            "hi": "AAOIFI मानक 13 के अनुसार बिना लापरवाही के वित्तीय नुकसान पूंजीपति का होता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_musharakah",
+      "order": 3,
+      "arabicTerm": "المشاركة",
+      "name": {
+        "en": "3. Musharakah (Equity Joint Partnership)",
+        "ur": "3. مشارکہ (مشترکہ سرمایہ و شراکت)",
+        "ar": "٣. المشاركة (شركة العقد)",
+        "hi": "3. मुशारकाह (संयुक्त इक्विटी साझेदारी)"
+      },
+      "definition": {
+        "en": "A joint enterprise where two or more partners contribute capital, sharing profit by agreed ratio and loss strictly by capital ratio.",
+        "ur": "ایسا کاروبار جس میں دو یا زائد شریک سرمایہ لگائیں؛ نفع طے شدہ تناسب سے اور نقصان لازماً سرمائے کے تناسب سے تقسیم ہو۔",
+        "ar": "اشتراك اثنين فأكثر في رأس المال والربح حسب الاتفاق والوضيعة على قدر المالين.",
+        "hi": "संयुक्त साझेदारी जिसमें साझेदार पूंजी लगाते हैं; लाभ तय अनुपात से और हानि पूंजी अनुपात में होती है।"
+      },
+      "purpose": {
+        "en": "Co-owned SMEs, equity startups, and joint projects without debt interest.",
+        "ur": "بغیر سود کے مشترکہ کاروبار اور منصوبوں میں شراکت داری قائم کرنا۔",
+        "ar": "تمويل الشركات والمشاريع المشتركة بالملكية الحقيقية.",
+        "hi": "सूद के बिना संयुक्त व्यवसाय और स्टार्टअप में इक्विटी भागीदारी बनाना।"
+      },
+      "shariahPrinciples": {
+        "en": "Profit is per agreed ratio; loss MUST follow capital ownership ratio. Sleeping partner profit ratio cannot exceed capital share (Hanafi/Hanbali).",
+        "ur": "نفع شرط کے مطابق اور نقصان بقدرِ سرمایہ۔ سلیپنگ پارٹنر کے نفع کا تناسب اس کے سرمائے کے تناسب سے زیادہ نہیں ہو سکتا۔",
+        "ar": "الربح على ما اشترطا والوضيعة على قدر المالين.",
+        "hi": "लाभ आपसी सहमति से और नुकसान पूंजी के अनुपात से होता है।"
+      },
+      "conditions": {
+        "en": [
+          "Capital of every partner valued and known.",
+          "Profit ratio expressed as percentage of actual profit.",
+          "Loss strictly follows capital share."
+        ],
+        "ur": [
+          "ہر شریک کا سرمایہ متعین ہو۔",
+          "نفع حقیقی منافع کا فیصد ہو۔",
+          "نقصان ہر حال میں سرمائے کے تناسب سے ہو۔"
+        ],
+        "ar": [
+          "تحديد رأس مال كل شريك، ونسبة شائعة من الربح، والخسارة بقدر المال."
+        ],
+        "hi": [
+          "हर साझेदार की पूंजी स्पष्ट हो, लाभ प्रतिशत में हो, और नुकसान पूंजी अनुपात में हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Ownership equity, audit/inspection rights, Shura governance, and fair exit terms.",
+        "ur": "ہر شریک کو ملکیت، حسابات کی جانچ، مشورہ اور علیحدگی کا حق حاصل ہے۔",
+        "ar": "لكل شريك حق الملكية والاطلاع على الدفاتر والمشاركة في الإدارة.",
+        "hi": "प्रत्येक साझेदार को स्वामित्व, खाता जांच और सलाह का अधिकार है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Assets are jointly owned undivided shares (Musha') matching capital ratios.",
+        "ur": "اثاثے سرمائے کے تناسب سے مشترکہ (مشاع) ملکیت ہوتے ہیں۔",
+        "ar": "تكون أصول الشركة مملوكة على الشيوع بين الشركاء.",
+        "hi": "संपत्ति पूंजी अनुपात में संयुक्त स्वामित्व में होती है।"
+      },
+      "profitAndLossRules": {
+        "en": "Any clause shifting loss away from capital proportion is void.",
+        "ur": "نقصان کو سرمائے کے تناسب سے ہٹانے والی شرط باطل ہے۔",
+        "ar": "يبطل أي شرط يحمّل الخسارة لغير نسبة رأس المال.",
+        "hi": "पूंजी अनुपात से अलग नुकसान की शर्त अवैध है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Stipulating one partner bears 100% of losses while sharing profit.",
+          "Guaranteeing fixed monthly capital return."
+        ],
+        "ur": [
+          "نفع میں برابر مگر نقصان صرف ایک شریک کے ذمہ ڈالنا۔",
+          "سرمائے پر مقررہ ماہانہ نفع کی شرط لگانا۔"
+        ],
+        "ar": [
+          "اشتراط تحمل أحد الشركاء الخسارة منفرداً، أو تخصيص مبلغ مقطوع مضمون."
+        ],
+        "hi": [
+          "एक ही साझेदार पर पूरा नुकसान डालना या निश्चित मासिक राशि की गारंटी देना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Two engineers invest 60:40 and both work, agreeing to 50:50 profit; any loss still splits 60:40.",
+        "ur": "دو دوست 60:40 سرمایہ لگا کر دونوں کام کریں تو نفع 50:50 طے کر سکتے ہیں، مگر نقصان 60:40 ہی ہوگا۔",
+        "ar": "شريكان بنسبة ٦٠٪ و٤٠٪ يعملان معاً فيتقاسمان الربح مناصفة، أما الخسارة فبنسبة ٦٠٪ و٤٠٪.",
+        "hi": "दो भागीदार 60:40 पूंजी लगाते हैं और दोनों काम करते हैं तो लाभ 50:50 हो सकता है, पर नुकसान 60:40 होगा।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 12 (Musharakah)",
+      "sbpGuidance": {
+        "en": "SBP permits corporate Musharakah linked to actual profit-and-loss accounting.",
+        "ur": "اسٹیٹ بینک حقیقی نفع و نقصان سے منسلک کارپوریٹ مشارکہ کی اجازت دیتا ہے۔",
+        "ar": "يقر بنك الدولة المشاركة المرتبطة بالإيرادات الفعلية.",
+        "hi": "SBP वास्तविक आय से जुड़ी मुशारकाह की अनुमति देता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafi & Hanbali allow flexible profit ratios for active partners; Shafi'i & Maliki tie profit to capital ratio.",
+        "ur": "احناف و حنابلہ کام کی بنا پر مختلف تناسبِ نفع کی اجازت دیتے ہیں؛ شوافع و مالکیہ اسے سرمائے کے تابع رکھتے ہیں۔",
+        "ar": "يجيز الحنفية والحنابلة تفاوت الربح بالعمل بخلاف الشافعية والمالكية.",
+        "hi": "हनफ़ी व हनबली काम के आधार पर अलग लाभ अनुपात मानते हैं, जबकि शाफ़िई व मालिकी पूंजी अनुपात रखते हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "How should asset valuation at partner exit or Running Musharakah profit ceiling be structured?"
+        ],
+        "ur": [
+          "شریک کے اخراج پر اثاثوں کی مالیت کا تعین کیسے ہو؟"
+        ],
+        "ar": [
+          "كيف تُقوّم الأصول عند تخارج الشريك؟"
+        ],
+        "hi": [
+          "साझेदार के बाहर निकलने पर संपत्ति का मूल्यांकन कैसे हो?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": {
+            "en": "Requires mutual consent in commerce.",
+            "ur": "باہمی رضامندی سے تجارت کی ہدایت۔",
+            "ar": "اشتراط التراضي في المعاملات.",
+            "hi": "आपसी सहमति पर आधारित व्यापार।"
+          },
+          "businessRelevance": {
+            "en": "Partners consent cleanly to shared ownership and proportional risk.",
+            "ur": "شرکاء باہمی رضامندی سے ملکیت و رسک میں شریک ہوتے ہیں۔",
+            "ar": "اتفاق الشركاء على تقاسم الملكية والمخاطر.",
+            "hi": "साझेदार सहमति से स्वामित्व व जोखिम बांटते हैं।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_mush_1",
+          "question": {
+            "en": "Partners A (70% capital) and B (30% capital) suffer a net loss of 100,000. How must it be borne?",
+            "ur": "شریک الف (70%) اور ب (30%) کو 1 لاکھ نقصان ہو تو تقسیم کیسے ہوگی؟",
+            "ar": "شريك بنسبة ٧٠٪ وآخر ٣٠٪ تعرضا لخسارة ١٠٠ ألف، كيف توزع؟",
+            "hi": "70% और 30% पूंजी वाले साझेदारों में 1 लाख की हानि कैसे बंटेगी?"
+          },
+          "options": {
+            "en": [
+              "70,000 by A and 30,000 by B (capital ratio)",
+              "50,000 each",
+              "100,000 by managing partner"
+            ],
+            "ur": [
+              "70 ہزار الف اور 30 ہزار ب پر (سرمائے کے تناسب سے)",
+              "پچاس پچاس ہزار",
+              "صرف کام کرنے والے پر"
+            ],
+            "ar": [
+              "٧٠ ألفاً و٣٠ ألفاً بنسبة رأس المال",
+              "٥٠ ألفاً على كل منهما"
+            ],
+            "hi": [
+              "70,000 और 30,000 (पूंजी अनुपात में)",
+              "50,000-50,000 बराबर"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "In Musharakah, all scholars agree losses follow exact capital ownership share.",
+            "ur": "مشارکہ میں بالاتفاق نقصان ہمیشہ سرمائے کے تناسب سے تقسیم ہوتا ہے۔",
+            "ar": "اتفق الفقهاء أن الخسارة في المشاركة بقدر رأس المال.",
+            "hi": "मुशारकाह में नुकसान सदैव पूंजी के अनुपात में बंटता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_diminishing_musharakah",
+      "order": 4,
+      "arabicTerm": "المشاركة المتناقصة",
+      "name": {
+        "en": "4. Diminishing Musharakah (Home / Asset Co-Ownership)",
+        "ur": "4. شرکتِ متناقصہ (گھر یا اثاثے کی بتدریج خریداری)",
+        "ar": "٤. المشاركة المتناقصة المنتهية بالتمليك",
+        "hi": "4. डिमिनिशिंग मुशारकाह (क्रमिक स्वामित्व साझेदारी)"
+      },
+      "definition": {
+        "en": "Financier and client jointly purchase an asset; client leases financier's share via Ijarah and gradually buys financier's units until 100% ownership.",
+        "ur": "مشترکہ ملکیت جس میں بینک اور گاہک مل کر گھر یا مشینری خریدیں، گاہک بینک کے حصے کا کرایہ دے اور بتدریج یونٹس خرید کر مکمل مالک بن جائے۔",
+        "ar": "شراكة ملك يؤجر فيها طرف حصته للآخر، مع شراء الحصص تدريجياً حتى التملك الكامل.",
+        "hi": "दोनों मिलकर संपत्ति खरीदते हैं, ग्राहक दूसरे का हिस्सा किराए पर लेता है और धीरे-धीरे यूनिट खरीदकर 100% मालिक बनता है।"
+      },
+      "purpose": {
+        "en": "Halal alternative to conventional mortgage and vehicle/plant financing.",
+        "ur": "سودی ہوم لون، گاڑی اور مشینری فنانسنگ کا شرعی متبادل۔",
+        "ar": "البديل الشرعي للتمويل العقاري وتمويل المعدات.",
+        "hi": "सूद-मुक्त होम फाइनेंस और वाहन फाइनेंसिंग का इस्लामी विकल्प।"
+      },
+      "shariahPrinciples": {
+        "en": "Three distinct agreements: (1) Joint purchase, (2) Ijarah lease of financier's share, (3) Separate unit purchases. Rent decreases as client equity rises.",
+        "ur": "تین الگ عقد لازم ہیں: مشترکہ خریداری، اجارہ، اور یونٹس کی بتدریج خریداری۔ گاہک کا حصہ بڑھنے کے ساتھ کرایہ کم ہوتا جائے۔",
+        "ar": "عقود مستقلة: شركة ملك، إجارة الحصة، وبيع الحصص المتدرج.",
+        "hi": "तीन स्वतंत्र चरण: संयुक्त खरीद, किराया (इजाराह) और इकाइयों की क्रमिक खरीद।"
+      },
+      "conditions": {
+        "en": [
+          "Co-ownership, lease, and unit sales remain legally independent.",
+          "Rent falls proportionally as units are bought.",
+          "Ownership maintenance/takaful shared by equity ratio."
+        ],
+        "ur": [
+          "شرکت، اجارہ اور یونٹ خریداری کے معاہدے الگ ہوں۔",
+          "یونٹس خریدنے سے کرایہ متناسب کم ہو۔",
+          "بڑی مرمت و تکافل ملکیت کے تناسب سے مشترک ہو۔"
+        ],
+        "ar": [
+          "استقلال العقود، وانخفاض الأجرة تناسبياً، وتقاسم مخاطر الملكية."
+        ],
+        "hi": [
+          "अनुबंध अलग हों, हिस्से बढ़ने पर किराया घटे, और जोखिम स्वामित्व अनुपात में हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Client enjoys usage and declining rent; financier receives rent and unit proceeds while sharing risk.",
+        "ur": "گاہک کو استعمال اور گھٹتے کرائے کا حق ہے؛ بینک کو کرایہ اور یونٹ قیمت ملتی ہے مع ملکیتی رسک۔",
+        "ar": "للعميل الانتفاع وتناقص الأجرة، وللممول الأجرة وثمن الوحدات.",
+        "hi": "ग्राहक को उपयोग व घटते किराए का अधिकार है; वित्तपोषक को शेष किराया मिलता है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Documented undivided title evolves from e.g. 20:80 to 100:0.",
+        "ur": "دستاویزی ملکیت بتدریج 20:80 سے 100:0 تک منتقل ہوتی ہے۔",
+        "ar": "ملكية شائعة موثقة تتحول تدريجياً من ٢٠:٨٠ إلى ١٠٠:٠.",
+        "hi": "स्वामित्व अनुपात दस्तावेज़ों में धीरे-धीरे 100:0 होता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Total loss splits strictly by current ownership percentages; rent stops upon destruction.",
+        "ur": "نقصان موجودہ ملکیت کے تناسب سے بٹتا ہے اور تباہی پر کرایہ ختم ہو جاتا ہے۔",
+        "ar": "عند الهلاك تُقسم الخسارة بنسبة الملكية القائمة.",
+        "hi": "हानि वर्तमान स्वामित्व अनुपात से बंटती है और किराया बंद हो जाता है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Forcing client to bear 100% of major property loss while holding only 10% equity.",
+          "Charging rent on already-purchased units."
+        ],
+        "ur": [
+          "بنیادی ملکیتی نقصان صرف گاہک پر ڈال دینا۔",
+          "بک چکے یونٹس پر بھی کرایہ جاری رکھنا۔"
+        ],
+        "ar": [
+          "تحميل العميل كامل مخاطر الهلاك، أو أخذ أجرة على حصص مبيعة."
+        ],
+        "hi": [
+          "पूरा नुकसान ग्राहक पर डालना या बिक चुकी इकाइयों पर किराया वसूलना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Bank funds 80%, buyer 20% of a house; buyer pays rent on 80% and buys 1 unit/month for 120 months.",
+        "ur": "مکان میں 80% بینک اور 20% گاہک کا حصہ؛ گاہک کرائے کے ساتھ ماہانہ یونٹ خرید کر مکمل مالک بن جائے۔",
+        "ar": "تملك عقار بنسبة ٨٠٪ للمصرف و٢٠٪ للعميل مع شراء الوحدات شهرياً.",
+        "hi": "घर में 80% बैंक और 20% ग्राहक; ग्राहक किराया और हर माह यूनिट खरीदकर मालिक बनता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 12 (Diminishing Musharakah)",
+      "sbpGuidance": {
+        "en": "Approved by SBP for Islamic housing with separate agreements and proportional risk.",
+        "ur": "اسٹیٹ بینک ہاؤسنگ فنانسنگ کے لیے الگ عقود اور متناسب رسک کے ساتھ منظور کرتا ہے۔",
+        "ar": "معتمد لدى بنك الدولة بشرط فصل العقود وتناسب المخاطر.",
+        "hi": "SBP अलग अनुबंधों और आनुपातिक जोखिम के साथ इसे मान्यता देता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Approved by IIFA/AAOIFI only when unit purchase promise is separate from lease.",
+        "ur": "مجمع الفقہ اور AAOIFI الگ وعدہ و اجارہ کی شرط پر جواز دیتے ہیں۔",
+        "ar": "أجازه مجمع الفقه وأيوفي بشرط عدم الربط الشرطي بين العقود.",
+        "hi": "AAOIFI व IIFA शर्त रहित अलग अनुबंधों के साथ इसे वैध मानते हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Should equity units be priced at face value or market value at sale date?"
+        ],
+        "ur": [
+          "یونٹس کی قیمت فروخت کے وقت مارکیٹ ویلیو پر ہو یا متعین قیمت پر؟"
+        ],
+        "ar": [
+          "ما حكم تحديد ثمن الحصص مسبقاً مقابل القيمة السوقية؟"
+        ],
+        "hi": [
+          "इकाइयों की कीमत बाज़ार मूल्य पर हो या पूर्व-निर्धारित मूल्य पर?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 5,
+          "startAyah": 1,
+          "endAyah": 1,
+          "contextNote": {
+            "en": "Mandates faithful fulfillment of structured contracts.",
+            "ur": "معاہدوں کی پاسداری کا حکم۔",
+            "ar": "وجوب الوفاء بالعقود.",
+            "hi": "अनुबंधों का निष्ठापूर्वक पालन।"
+          },
+          "businessRelevance": {
+            "en": "Each stage—co-ownership, lease, and unit transfer—must be honored faithfully.",
+            "ur": "شرکت، اجارہ اور یونٹ کی منتقلی کے ہر مرحلے کی دیانتداری سے پابندی لازم ہے۔",
+            "ar": "الالتزام بأحكام كل مرحلة من الشراكة والإجارة.",
+            "hi": "हर चरण का ईमानदारी से पालन आवश्यक है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_dm_1",
+          "question": {
+            "en": "What happens to monthly rent as the buyer purchases more equity units in Diminishing Musharakah?",
+            "ur": "شرکتِ متناقصہ میں مزید یونٹس خریدنے سے ماہانہ کرائے پر کیا اثر پڑتا ہے؟",
+            "ar": "ماذا يحدث للأجرة كلما اشترى العميل وحدات جديدة؟",
+            "hi": "डिमिनिशिंग मुशारकाह में अधिक यूनिट खरीदने पर किराए पर क्या प्रभाव पड़ता है?"
+          },
+          "options": {
+            "en": [
+              "Rent decreases proportionally as financier's remaining share decreases",
+              "Rent stays identical until last month",
+              "Rent doubles automatically"
+            ],
+            "ur": [
+              "بینک کا حصہ کم ہونے کے ساتھ کرایہ بھی اسی تناسب سے کم ہوتا جاتا ہے",
+              "کرایہ آخری ماہ تک برابر رہتا ہے",
+              "کرایہ دوگنا ہو جاتا ہے"
+            ],
+            "ar": [
+              "تنخفض الأجرة تناسبياً مع تناقص حصة الممول",
+              "تبقى الأجرة ثابتة"
+            ],
+            "hi": [
+              "वित्तपोषक के शेष हिस्से कम होने के साथ किराया कम होता है",
+              "अंतिम माह तक समान रहता है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Rent applies only to the financier's currently owned units, so it drops as units transfer to the client.",
+            "ur": "کرایہ صرف بینک کے باقی ماندہ حصے کا ہوتا ہے اس لیے یونٹ خریدنے سے کم ہوتا ہے۔",
+            "ar": "الأجرة تُدفع فقط عن الحصة المتبقية للممول.",
+            "hi": "किराया केवल वित्तपोषक के शेष हिस्से पर लिया जाता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_ijarah",
+      "order": 5,
+      "arabicTerm": "الإجارة",
+      "name": {
+        "en": "5. Ijarah (Islamic Leasing & Employment Services)",
+        "ur": "5. اجارہ (کرایہ داری اور ملازمت کا عقد)",
+        "ar": "٥. الإجارة",
+        "hi": "5. इजाराह (इस्लामी पट्टा व सेवा अनुबंध)"
+      },
+      "definition": {
+        "en": "Transferring the usufruct (right of use) of a non-consumable asset or human labor for a known period and rent/wage.",
+        "ur": "کسی غیر صرفی اثاثے کا فائدہ (منفعت) یا محنت و خدمت متعین مدت و کرایہ/اجرت کے بدلے دینا۔",
+        "ar": "عقد على منفعة مباحة معلومة لمدة معلومة بعوض معلوم.",
+        "hi": "टिकाऊ संपत्ति के उपयोग का अधिकार या श्रम सेवा निश्चित अवधि व किराए/मज़दूरी के बदले देना।"
+      },
+      "purpose": {
+        "en": "Equipment leasing, commercial rentals, vehicle leasing (Ijarah Muntahia bit-Tamlik), and employment contracts.",
+        "ur": "دکان/مکان کرایہ داری، گاڑی لیزنگ اور ملازمین کے معاہدوں کی شرعی بنیاد۔",
+        "ar": "تأجير المعدات والعقارات والمركبات وعقود العمل.",
+        "hi": "दुकान/मकान किराए, वाहन लीज़िंग और रोज़गार अनुबंध का आधार।"
+      },
+      "shariahPrinciples": {
+        "en": "Lessor retains ownership, major maintenance, and asset risk; rent cannot start before asset delivery.",
+        "ur": "ملکیت اور بڑی مرمت و تکافل مالک پر رہتی ہے؛ حوالگی سے پہلے کرایہ شروع نہیں ہو سکتا۔",
+        "ar": "تبقى ملكية العين وصيانتها الأساسية على المؤجر، ولا تستحق الأجرة قبل التسليم.",
+        "hi": "स्वामित्व व मुख्य मरम्मत मालिक पर रहती है; सुपुर्दगी से पहले किराया शुरू नहीं हो सकता।"
+      },
+      "conditions": {
+        "en": [
+          "Asset survives use (consumables cannot be leased).",
+          "Rent, term, and permitted use are clear.",
+          "In Ijarah-to-own, final title transfer is a separate sale/gift deed."
+        ],
+        "ur": [
+          "کرایہ کی شے استعمال سے فنا نہ ہونے والی ہو۔",
+          "کرایہ، مدت اور جائز استعمال واضح ہو۔",
+          "آخر میں ملکیت کی منتقلی الگ بیع یا ہبہ کے ذریعے ہو۔"
+        ],
+        "ar": [
+          "بقاء العين، وتحديد الأجرة والمدة، وفصل عقد التمليك النهائي."
+        ],
+        "hi": [
+          "वस्तु नष्ट न होने वाली हो, किराया व अवधि स्पष्ट हो, और अंत में अलग हस्तांतरण हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Lessee has right to uninterrupted use and rent abatement upon total loss; lessor receives agreed rent.",
+        "ur": "کرایہ دار کو استعمال اور شے تباہ ہونے پر کرایہ معافی کا حق ہے؛ مالک کو کرایہ کا حق ہے۔",
+        "ar": "للمستأجر الانتفاع وسقوط الأجرة بتعذر المنفعة، وللمؤجر الأجرة.",
+        "hi": "किरायेदार को निर्बाध उपयोग का और मालिक को तय किराए का अधिकार है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Ownership stays 100% with lessor; lessee holds usufruct only.",
+        "ur": "ملکیت مکمل طور پر مالک کے پاس رہتی ہے۔",
+        "ar": "تبقى الرقبة مملوكة للمؤجر، وللمستأجر المنفعة فقط.",
+        "hi": "स्वामित्व मालिक के पास रहता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Major damage/loss falls on lessor absent lessee negligence.",
+        "ur": "بڑا نقصان مالک کا ہے؛ کرایہ دار صرف غفلت پر ذمہ دار ہے۔",
+        "ar": "ضمان العين على المؤجر ولا يضمن المستأجر إلا بالتعدي.",
+        "hi": "मुख्य क्षति मालिक वहन करता है; किरायेदार केवल लापरवाही पर जिम्मेदार है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Charging rent before delivery or after total destruction.",
+          "Shifting structural ownership repairs and asset insurance onto lessee."
+        ],
+        "ur": [
+          "حوالگی سے پہلے یا تباہی کے بعد کرایہ وصول کرنا۔",
+          "بنیادی ملکیتی مرمت اور انشورنس کرایہ دار پر ڈالنا۔"
+        ],
+        "ar": [
+          "أخذ أجرة قبل التسليم أو بعد الهلاك، أو تحميل الصيانة الأساسية للمستأجر."
+        ],
+        "hi": [
+          "सुपुर्दगी से पहले या नष्ट होने के बाद किराया लेना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Bank leases a delivery van for 36 months at PKR 55,000/month and covers takaful & structural risks.",
+        "ur": "بینک اپنی ملکیتی وین 36 ماہ کے اجارہ پر 55 ہزار ماہانہ کرائے پر دے اور ملکیتی تکافل خود ادا کرے۔",
+        "ar": "يؤجر المصرف شاحنة مملوكة له لمدة ٣٦ شهراً ويتحمل الصيانة الأساسية والتكافل.",
+        "hi": "बैंक अपनी वैन 36 माह के किराए पर देता है और मुख्य रखरखाव व तकाफ़ुल स्वयं वहन करता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 9 (Ijarah)",
+      "sbpGuidance": {
+        "en": "SBP mandates lessor ownership, delivery before rental accrual, and separate gift/sale deed at end.",
+        "ur": "اسٹیٹ بینک کے مطابق حوالگی کے بعد ہی کرایہ لاگو ہوگا اور آخر میں الگ دستاویز سے ملکیت منتقل ہوگی۔",
+        "ar": "يشترط بنك الدولة التسليم قبل احتساب الأجرة واستقلال عقد التمليك.",
+        "hi": "SBP सुपुर्दगी के बाद किराया शुरू करने और अंत में अलग हस्तांतरण का निर्देश देता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafis allow termination upon valid personal hardship ('Udhr); Majority treat fixed-term leases as binding unless usufruct fails.",
+        "ur": "احناف معقول عذر پر اجارہ فسخ کرنے کی گنجائش دیتے ہیں جبکہ جمہور منفعت کے تلف ہونے کو معیار بناتے ہیں۔",
+        "ar": "يجيز الحنفية الفسخ بالعذر المعتبر بخلاف الجمهور.",
+        "hi": "हनफ़ी उचित कारण से समाप्ति की अनुमति देते हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "Are floating rental benchmarks for future periods structured with clear floor/ceiling?"
+        ],
+        "ur": [
+          "مستقبل کے کرائے کے لیے متغیر بینچ مارک کی حد بندی کیسے ہو؟"
+        ],
+        "ar": [
+          "ما ضوابط الأجرة المتغيرة للفترات المستقبلية؟"
+        ],
+        "hi": [
+          "भविष्य की किराया अवधियों के लिए परिवर्तनीय दर की शर्तें क्या हैं?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": {
+            "en": "Commands returning trusts (Amanat) and upholding justice.",
+            "ur": "امانتیں ان کے حقداروں کو پہنچانے اور انصاف کرنے کا حکم۔",
+            "ar": "الأمر بأداء الأمانات والعدل.",
+            "hi": "अमानत लौटाने और न्याय करने का आदेश।"
+          },
+          "businessRelevance": {
+            "en": "Leased assets are an Amanah requiring fair rent and care.",
+            "ur": "کرایہ کی چیز امانت ہے اور کرایہ و مرمت میں انصاف لازم ہے۔",
+            "ar": "العين المؤجرة أمانة وتوازن الالتزامات يحقق العدل.",
+            "hi": "किराए की वस्तु अमानत है।"
+          }
+        }
+      ],
+      "hadithIds": ["ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_ij_1",
+          "question": {
+            "en": "Who bears major ownership repairs and total loss risk (without lessee negligence) in Ijarah?",
+            "ur": "اجارہ میں بغیر کرایہ دار کی غلطی کے بڑی ملکیتی مرمت اور مکمل نقصان کا ذمہ دار کون ہے؟",
+            "ar": "من يتحمل الصيانة الأساسية ومخاطر الهلاك في الإجارة؟",
+            "hi": "इजाराह में मुख्य मरम्मत व पूर्ण नुकसान कौन उठाता है?"
+          },
+          "options": {
+            "en": [
+              "The Lessor (owner)",
+              "The Lessee always",
+              "The driver"
+            ],
+            "ur": [
+              "مالک (مؤجر)",
+              "ہمیشہ کرایہ دار",
+              "ڈرائیور"
+            ],
+            "ar": [
+              "المؤجر (مالك العين)",
+              "المستأجر دائماً"
+            ],
+            "hi": [
+              "मालिक (लेसर)",
+              "हमेशा किरायेदार"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Under AAOIFI SS 9, ownership risks and structural repairs remain strictly with the owner/lessor.",
+            "ur": "اجارہ کے اصولوں کے مطابق ملکیتی رسک اور بنیادی مرمت مالک کے ذمہ ہوتی ہے۔",
+            "ar": "تبقى مخاطر الملكية والصيانة الأساسية على المالك المؤجر.",
+            "hi": "इजाराह नियमों के अनुसार स्वामित्व जोखिम मालिक का होता है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_salam",
+      "order": 6,
+      "arabicTerm": "السلم",
+      "name": {
+        "en": "6. Salam (Forward Sale with Full Advance Payment)",
+        "ur": "6. سلم (پیشگی مکمل ادائیگی کے ساتھ مستقبل کی خریداری)",
+        "ar": "٦. بيع السلم",
+        "hi": "6. सलम (पूर्ण अग्रिम भुगतान सहित भविष्य विक्रय)"
+      },
+      "definition": {
+        "en": "Sunnah-permitted exception where 100% of price is paid spot in advance for standardized fungible goods deliverable at a fixed future date.",
+        "ur": "سنت سے ثابت مخصوص عقدِ بیع جس میں پوری قیمت نقد پیشگی ادا کی جاتی ہے اور متعین معیاری مال مقررہ مستقبل کی تاریخ پر ملتا ہے۔",
+        "ar": "بيع موصوف في الذمة مؤجل التسليم بثمن معجل مقبوض في المجلس.",
+        "hi": "सुननत से अनुमत विशेष बिक्री जिसमें 100% कीमत नक़द अग्रिम दी जाती है और मानक वस्तु निश्चित भविष्य तिथि पर मिलती है।"
+      },
+      "purpose": {
+        "en": "Interest-free liquidity for farmers and commodity producers.",
+        "ur": "کسانوں اور پیدا کنندگان کو بغیر سود کے پیشگی سرمایہ فراہم کرنا۔",
+        "ar": "توفير السيولة الفورية للمزارعين والمنتجين دون ربا.",
+        "hi": "किसानों और उत्पादकों को ब्याज-रहित अग्रिम पूंजी उपलब्ध कराना।"
+      },
+      "shariahPrinciples": {
+        "en": "Full spot payment, standardized goods (not one specific farm's crop), exact quality, quantity, date, and place.",
+        "ur": "پوری قیمت نقد، مال عام معیاری ہو، جنس، مقدار، معیار اور تاریخِ حوالگی بالکل متعین ہوں۔",
+        "ar": "تعجيل كامل رأس المال وضبط الصفات والقدر والأجل ومكان التسليم.",
+        "hi": "पूर्ण नक़द भुगतान और मानक, गुणवत्ता, मात्रा, तिथि व स्थान स्पष्ट होना अनिवार्य है।"
+      },
+      "conditions": {
+        "en": [
+          "100% price paid spot at contract.",
+          "Goods are standardized/fungible.",
+          "Exact grade, quantity, date, and place stated."
+        ],
+        "ur": [
+          "پوری قیمت مجلسِ عقد میں نقد ادا ہو۔",
+          "مال معیاری ہو، کسی ایک کھیت سے مقید نہ ہو۔",
+          "جنس، مقدار، تاریخ اور جگہ واضح ہو۔"
+        ],
+        "ar": [
+          "تسليم كامل الثمن معجلاً، وانضباط المبيع بالوصف، وتحديد الأجل والمكان."
+        ],
+        "hi": [
+          "100% नक़द भुगतान, मानक वस्तु, और स्पष्ट मात्रा/तिथि/स्थान।"
+        ]
+      },
+      "partyRights": {
+        "en": "Seller gets immediate cash; buyer gets guaranteed claim to specified goods.",
+        "ur": "بائع کو فوراً نقد ملتا ہے؛ خریدار کو مقررہ وقت پر معیاری مال پانے کا حق ملتا ہے۔",
+        "ar": "يستلم البائع الثمن معجلاً وللمشتري الحق في استلام السلعة الموصوفة.",
+        "hi": "विक्रेता को तुरंत नक़द व खरीदार को तय तिथि पर मानक वस्तु पाने का अधिकार।"
+      },
+      "ownershipAndPossession": {
+        "en": "Buyer cannot resell Salam goods before possession (separate Parallel Salam permitted per AAOIFI).",
+        "ur": "خریدار قبضے سے پہلے وہی مال آگے نہیں بیچ سکتا، البتہ الگ متوازی سلم جائز ہے۔",
+        "ar": "لا يجوز بيع المسلم فيه قبل قبضه، ويجوز السلم الموازي بعقد مستقل.",
+        "hi": "क़ब्ज़ से पहले वह माल नहीं बेच सकता; अलग समानांतर सलम अनुमत है।"
+      },
+      "profitAndLossRules": {
+        "en": "Seller gets production cash; buyer obtains discounted forward goods.",
+        "ur": "کسان کو پیداواری رقم اور خریدار کو مناسب قیمت پر مال ملتا ہے۔",
+        "ar": "يستفيد البائع بالسيولة والمشتري بسعر مناسب.",
+        "hi": "विक्रेता को कार्यशील पूंजी व खरीदार को उचित कीमत पर माल।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Paying only 10% deposit and calling it Salam.",
+          "Cash difference settlement without goods delivery."
+        ],
+        "ur": [
+          "صرف 10 فیصد بیعانہ دے کر سلم کہنا۔",
+          "مال کے بجائے نقد فرق کا تصفیہ کرنا۔"
+        ],
+        "ar": [
+          "تأجيل رأس مال السلم، أو التصفية النقدية للفروق."
+        ],
+        "hi": [
+          "केवल 10% देकर सलम कहना, या बिना माल सुपुर्दगी के नक़द अंतर निपटाना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Bank pays PKR 5M today to a wheat producer for 50 tons Grade-A wheat deliverable May 15.",
+        "ur": "بینک کسان کو آج 50 لاکھ نقد دے کر 15 مئی کو 50 ٹن اے-گریڈ گندم کی فراہمی طے کرتا ہے۔",
+        "ar": "دفع ٥ ملايين اليوم مقابل تسليم ٥٠ طناً من القمح في تاريخ ومكان معلومين.",
+        "hi": "बैंक आज पूर्ण नक़द देकर 15 मई को 50 टन ग्रेड-A गेहूं की डिलीवरी तय करता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 10 (Salam)",
+      "sbpGuidance": {
+        "en": "SBP recommends Salam for agriculture with mandatory 100% spot payment.",
+        "ur": "اسٹیٹ بینک زرعی شعبے کے لیے 100 فیصد پیشگی ادائیگی کے ساتھ سلم کو فروغ دیتا ہے۔",
+        "ar": "موصى به لدى بنك الدولة للتمويل الزراعي.",
+        "hi": "SBP कृषि क्षेत्र हेतु 100% अग्रिम भुगतान के साथ सलम की सिफारिश करता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafis & Hanbalis require a minimum future period; Shafi'is allow short-term Salam; Malikis allow up to 3 days payment delay.",
+        "ur": "احناف و حنابلہ مدت مقرر کرنے کی شرط لگاتے ہیں، شوافع فوری کی بھی گنجائش دیتے ہیں، اور مالکیہ تین دن تک ادائیگی کی مہلت دیتے ہیں۔",
+        "ar": "يشترط الحنفية والحنابلة أجلاً، ويجيز الشافعية الحال، ويرخص المالكية في تأخير الثمن ثلاثة أيام.",
+        "hi": "हनफ़ी व हनबली न्यूनतम अवधि आवश्यक मानते हैं; मालिकी 3 दिन की छूट देते हैं।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "What valid alternatives apply if crop failure prevents delivery?"
+        ],
+        "ur": [
+          "قدرتی آفت سے فصل تباہ ہونے پر متبادل شرعی حل کیا ہوگا؟"
+        ],
+        "ar": [
+          "ما الحكم عند تعذر تسليم المسلم فيه لآفة عامة؟"
+        ],
+        "hi": [
+          "फ़सल खराब होने पर वैध विकल्प क्या होंगे?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 282,
+          "endAyah": 282,
+          "contextNote": {
+            "en": "Ibn Abbas (RA) cited 2:282 on future obligations as validation for Salam.",
+            "ur": "حضرت ابن عباسؓ نے آیت 2:282 سے بیعِ سلم کے جواز پر استدلال فرمایا۔",
+            "ar": "استدل ابن عباس بآية المداينة ٢٨٢ على مشروعية السلم.",
+            "hi": "इब्न अब्बास (रज़ि.) ने 2:282 से सलम की वैधता स्पष्ट की।"
+          },
+          "businessRelevance": {
+            "en": "Written grade, quantity, and date prevent disputes.",
+            "ur": "مقدار، معیار اور تاریخِ حوالگی لکھنے سے جھگڑے ختم ہوتے ہیں۔",
+            "ar": "توثيق القدر والأجل يمنع التنازع.",
+            "hi": "मात्रा, गुणवत्ता व तिथि लिखने से विवाद समाप्त होते हैं।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sal_1",
+          "question": {
+            "en": "How must the purchase price be paid in a valid Salam contract?",
+            "ur": "بیعِ سلم میں قیمت کی ادائیگی کیسے ہونی چاہیے؟",
+            "ar": "كيف يجب سداد الثمن في عقد السلم؟",
+            "hi": "सलम अनुबंध में कीमत का भुगतान कैसे होना चाहिए?"
+          },
+          "options": {
+            "en": [
+              "100% paid spot in advance at contract execution",
+              "Paid after harvest",
+              "10% deposit now"
+            ],
+            "ur": [
+              "مکمل 100 فیصد قیمت عقد کے وقت نقد پیشگی",
+              "فصل کے بعد قسطوں میں",
+              "10 فیصد ابھی"
+            ],
+            "ar": [
+              "تسليم كامل الثمن ١٠٠٪ معجلاً في المجلس",
+              "تقسيط الثمن بعد الحصاد"
+            ],
+            "hi": [
+              "100% कीमत अनुबंध के समय नक़द अग्रिम",
+              "फ़सल के बाद किस्तों में"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Full spot payment prevents invalid exchange of debt for debt.",
+            "ur": "سلم میں مکمل قیمت نقد پیشگی دینا فرض ہے۔",
+            "ar": "يشترط قبض كامل الثمن منعاً لبيع الكالئ بالكالئ.",
+            "hi": "उधार के बदले उधार से बचने के लिए पूर्ण अग्रिम भुगतान अनिवार्य है।"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contract_istisna",
+      "order": 7,
+      "arabicTerm": "الاستصناع",
+      "name": {
+        "en": "7. Istisna (Manufacturing & Construction Contract)",
+        "ur": "7. استصناع (تیاری، مینوفیکچرنگ اور تعمیرات کا عقد)",
+        "ar": "٧. عقد الاستصناع",
+        "hi": "7. इस्तिसना (विनिर्माण और निर्माण अनुबंध)"
+      },
+      "definition": {
+        "en": "Manufacturing or constructing a defined asset using maker's materials and labor, with flexible spot, milestone, or deferred payment.",
+        "ur": "کسی چیز کی تیاری یا عمارت کی تعمیر کا آرڈر جس میں خام مال و محنت کاریگر کی ہو اور ادائیگی پیشگی، قسط وار یا حوالگی پر ہو سکے۔",
+        "ar": "عقد على مبيع في الذمة يُشترط فيه العمل والمواد من الصانع، ويجوز تقسيط الثمن أو تأجيله.",
+        "hi": "निर्माता की सामग्री व श्रम से निश्चित वस्तु या भवन बनाने का अनुबंध, जिसमें भुगतान अग्रिम, चरणबद्ध या बाद में हो सकता है।"
+      },
+      "purpose": {
+        "en": "Construction, custom factory machinery, software builds, and industrial manufacturing.",
+        "ur": "عمارات کی تعمیر، مشینری کی تیاری اور مینوفیکچرنگ منصوبے۔",
+        "ar": "تمويل الإنشاءات والمصانع والمعدات المخصصة.",
+        "hi": "भवन निर्माण, कस्टम मशीनरी और औद्योगिक विनिर्माण।"
+      },
+      "shariahPrinciples": {
+        "en": "Unlike Salam, full spot payment is NOT required. Exact blueprints, materials, and completion deadline are mandatory.",
+        "ur": "سلم کے برعکس پوری قیمت فوراً دینا ضروری نہیں؛ نقشہ، معیار اور مدت کی صراحت لازم ہے۔",
+        "ar": "لا يشترط تعجيل الثمن في الاستصناع، ويجب ضبط المواصفات بدقة.",
+        "hi": "सलम के विपरीत पूर्ण अग्रिम भुगतान अनिवार्य नहीं है; किस्तों में भुगतान वैध है।"
+      },
+      "conditions": {
+        "en": [
+          "Exact blueprints, raw material grade, dimensions, and price known.",
+          "Maker provides materials and fabrication.",
+          "Completion deadline agreed."
+        ],
+        "ur": [
+          "نقشہ، معیار، پیمائش اور قیمت واضح ہوں۔",
+          "خام مال اور تیاری دونوں کاریگر کی طرف سے ہوں۔",
+          "تکمیل کی مدت واضح طے ہو۔"
+        ],
+        "ar": [
+          "بيان المواصفات والثمن بدقة، وتقديم المواد والعمل من الصانع، وتحديد الأجل."
+        ],
+        "hi": [
+          "डिज़ाइन, सामग्री, माप व कीमत स्पष्ट हो; माल व श्रम निर्माता का हो।"
+        ]
+      },
+      "partyRights": {
+        "en": "Buyer inspects against blueprint; manufacturer receives milestone payments.",
+        "ur": "خریدار معیار جانچتا ہے؛ مینوفیکچرر طے شدہ مراحل پر ادائیگی پاتا ہے۔",
+        "ar": "للمستصنع فحص المصنوع، وللصانع تقاضي الأقساط.",
+        "hi": "खरीदार तय मानक जांचता है; निर्माता चरणबद्ध भुगतान पाता है।"
+      },
+      "ownershipAndPossession": {
+        "en": "Ownership transfers upon delivery and acceptance of the completed asset.",
+        "ur": "ملکیت حوالگی اور قبولیت پر گاہک کو منتقل ہوتی ہے۔",
+        "ar": "تنتقل الملكية عند تسليم المصنوع وقبوله.",
+        "hi": "सुपुर्दगी और स्वीकृति पर स्वामित्व हस्तांतरित होता है।"
+      },
+      "profitAndLossRules": {
+        "en": "Work-in-progress risk rests with manufacturer until handover.",
+        "ur": "حوالگی تک تیاری کے دوران نقصان کی ذمہ داری کاریگر پر رہتی ہے۔",
+        "ar": "ضمان المصنوع قبل التسليم على الصانع.",
+        "hi": "सुपुर्दगी तक निर्माण जोखिम निर्माता का रहता है।"
+      },
+      "commonInvalidStructures": {
+        "en": [
+          "Using Istisna on completed existing buildings to disguise cash loans.",
+          "Linking main Istisna to Parallel Istisna conditionally."
+        ],
+        "ur": [
+          "پہلے سے بنی عمارت پر استصناع کے نام سے قرض دینا۔",
+          "اصل اور متوازی استصناع کو مشروط کرنا۔"
+        ],
+        "ar": [
+          "استخدام الاستصناع لمبنى قائم ومكتمل فعلاً، أو ربط الموازي بالأصلي."
+        ],
+        "hi": [
+          "पहले से बनी इमारत पर इस्तिसना के नाम से ऋण देना।"
+        ]
+      },
+      "modernExamples": {
+        "en": "Builder constructs a 10-unit halal cold-storage warehouse over 12 months with 4 milestone payments.",
+        "ur": "تعمیراتی کمپنی 12 ماہ میں کولڈ اسٹوریج بنانے کا استصناع کرے جس کی ادائیگی 4 مراحل پر ہو۔",
+        "ar": "عقد استصناع لبناء مستودع خلال ١٢ شهراً بدفعات مرحلية.",
+        "hi": "बिल्डर 12 माह में 4 चरणबद्ध भुगतानों पर कोल्ड-स्टोरेज गोदाम बनाने का इस्तिसना करता है।"
+      },
+      "aaoifiStandard": "AAOIFI Shariah Standard No. 11 (Istisna'a)",
+      "sbpGuidance": {
+        "en": "SBP approves Istisna and Parallel Istisna for manufacturing and construction.",
+        "ur": "اسٹیٹ بینک مینوفیکچرنگ اور تعمیرات کے لیے استصناع کی اجازت دیتا ہے۔",
+        "ar": "معتمد لدى بنك الدولة لتمويل التصنيع والمقاولات.",
+        "hi": "SBP विनिर्माण और निर्माण हेतु इस्तिसना की अनुमति देता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafis developed Istisna independently; IIFA Resolution 65(3/7) adopted binding Istisna universally.",
+        "ur": "احناف نے استصناع کو مستقل عقد مانا اور مجمع الفقہ (قرارداد 65) نے اسے بالاتفاق لازم قرار دیا۔",
+        "ar": "انفرد الحنفية باعتباره عقداً مستقلاً ثم أقر مجمع الفقه الدولي (٦٥) إلزاميته.",
+        "hi": "हनफ़ी इसे स्वतंत्र अनुबंध मानते थे और IIFA प्रस्ताव 65 ने इसे सर्वसम्मति से मान्य किया।"
+      },
+      "muftiConsultationQuestions": {
+        "en": [
+          "How should mid-project material inflation or change-orders be handled validly?"
+        ],
+        "ur": [
+          "تعمیر کے دوران نقشہ بدلنے یا قیمت میں تبدیلی کا شرعی طریقہ کیا ہوگا؟"
+        ],
+        "ar": [
+          "ما ضوابط تعديل المواصفات أو التكلفة أثناء التنفيذ؟"
+        ],
+        "hi": [
+          "निर्माण के दौरान बदलाव या लागत अंतर का वैध तरीका क्या होगा?"
+        ]
+      },
+      "quranRefSpecs": [
+        {
+          "surahNumber": 5,
+          "startAyah": 1,
+          "endAyah": 1,
+          "contextNote": {
+            "en": "Fulfilling contractual specs and deadlines is mandatory.",
+            "ur": "معاہدے کی شرائط اور وقت کی پابندی ایمانی ذمہ داری ہے۔",
+            "ar": "وجوب الوفاء بمواصفات العقد وآجاله.",
+            "hi": "अनुबंध की शर्तों और समय-सीमा का पालन अनिवार्य है।"
+          },
+          "businessRelevance": {
+            "en": "Builders and makers must deliver exact contracted quality.",
+            "ur": "صنعتکاروں پر طے شدہ معیار کے مطابق مال تیار کرنا لازم ہے۔",
+            "ar": "التزام الصانع بالمواصفات الدقيقة دون غش.",
+            "hi": "निर्माता को तय गुणवत्ता प्रदान करनी होगी।"
+          }
+        }
+      ],
+      "hadithIds": ["muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_ist_1",
+          "question": {
+            "en": "What distinguishes Istisna from Salam regarding payment?",
+            "ur": "ادائیگی کے حوالے سے استصناع اور سلم میں کیا فرق ہے؟",
+            "ar": "ما الفرق بين الاستصناع والسلم في دفع الثمن؟",
+            "hi": "भुगतान के संदर्भ में इस्तिसना और सलम में क्या अंतर है?"
+          },
+          "options": {
+            "en": [
+              "Istisna allows milestone or deferred payment; Salam requires 100% spot advance",
+              "Istisna forbids blueprints",
+              "Salam allows delayed payment"
+            ],
+            "ur": [
+              "استصناع میں قسط وار ادائیگی جائز ہے جبکہ سلم میں مکمل پیشگی ادائیگی فرض ہے",
+              "استصناع میں نقشہ منع ہے",
+              "سلم میں تاخیری ادائیگی ہوتی ہے"
+            ],
+            "ar": [
+              "يجوز في الاستصناع تقسيط الثمن أو تأجيله بخلاف السلم",
+              "الاستصناع يمنع التعاقد الكتابي"
+            ],
+            "hi": [
+              "इस्तिसना में किस्तों या बाद में भुगतान वैध है, जबकि सलम में 100% अग्रिम आवश्यक है",
+              "इस्तिसना में डिज़ाइन मना है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Per IIFA Resolution 65 and AAOIFI SS 11, Istisna uniquely permits deferred or milestone payments.",
+            "ur": "مجمع الفقہ اور AAOIFI معیار 11 کے مطابق استصناع میں قسط وار ادائیگی کی گنجائش ہے۔",
+            "ar": "يجيز الاستصناع تأجيل الثمن وتقسيطه وفق معيار أيوفي ١١.",
+            "hi": "IIFA प्रस्ताव 65 व AAOIFI मानक 11 के अनुसार इस्तिसना में किस्त भुगतान वैध है।"
+          }
+        }
+      ]
+    }
+  ]
+}

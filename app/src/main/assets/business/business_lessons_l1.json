@@ -1,0 +1,1127 @@
+{
+  "lessons": [
+    {
+      "id": "lesson_l1_m1",
+      "level": 1,
+      "moduleNumber": 1,
+      "moduleTitle": {
+        "en": "Module 1: Introduction to Islamic Business",
+        "ur": "ماڈیول 1: اسلامی تجارت کا تعارف و فلسفہ",
+        "ar": "الوحدة ١: مدخل إلى التجارة الإسلامية",
+        "hi": "मॉड्यूल 1: इस्लामी व्यापार का परिचय"
+      },
+      "title": {
+        "en": "Halal Livelihood as Worship & Economic Stewardship",
+        "ur": "حلال رزق بطور عبادت اور معاشی امانتداری",
+        "ar": "الكسب الحلال عبادة وأمانة اقتصادية",
+        "hi": "हलाल रोज़ी एक इबादत और आर्थिक ज़िम्मेदारी"
+      },
+      "primaryEvidenceCategory": "direct_quran",
+      "learningObjectives": {
+        "en": [
+          "Understand why seeking halal livelihood is an Islamic obligation alongside worship.",
+          "Balance wealth creation, lawful enjoyment, Zakat/charity, and social justice.",
+          "Recognize accountability for both how wealth is earned and how it is spent."
+        ],
+        "ur": [
+          "سمجھیں کہ حلال رزق کی تلاش عبادات کے ساتھ ایک دینی ذمہ داری ہے۔",
+          "دولت کمانے، حلال استعمال، زکوٰۃ و صدقات اور معاشرتی عدل میں توازن قائم کریں۔",
+          "مال کمانے اور خرچ کرنے دونوں کے متعلق آخرت کی جوابدہی کا شعور پیدا کریں۔"
+        ],
+        "ar": [
+          "فهم كون السعي في الرزق الحلال طاعة ومسؤولية دينية.",
+          "الموازنة بين تنمية المال والزكاة والعدالة الاجتماعية."
+        ],
+        "hi": [
+          "समझें कि हलाल रोज़ी कमाना इबादत के साथ एक धार्मिक कर्तव्य है।",
+          "धन कमाने, ज़कात/दान और सामाजिक न्याय में संतुलन बनाना सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "Islam does not separate marketplace ethics from Masjid worship. Seeking lawful sustenance through honest enterprise, skilled craft, and service is praised by the Quran (62:9–10) and exemplified by the Prophets.",
+        "ur": "اسلام مسجد اور منڈی کو الگ نہیں کرتا۔ دیانتدارانہ تجارت، محنت اور خدمت کے ذریعے حلال رزق کمانا قرآنِ مجید (الجمعہ 62:9-10) اور انبیاء کرام کی سنت سے ثابت ایک عظیم نیکی ہے۔",
+        "ar": "لا يفصل الإسلام بين أخلاق السوق وعبادة المسجد، بل يعد السعي في طلب الرزق الحلال من أسباب البركة.",
+        "hi": "इस्लाम बाज़ार के नैतिक नियमों को इबादत से अलग नहीं करता। ईमानदारी से हलाल रोज़ी कमाना क़ुरआन और नबियों की सुन्नत है।"
+      },
+      "explanationUr": "اسلام میں کاروبار محض منافع کمانے کا نام نہیں بلکہ اللہ کی عطا کردہ امانت، خلقِ خدا کی خدمت اور حلال روزی کمانے کی عبادت ہے۔ قرآن مجید جمعہ کی نماز کے بعد زمین میں پھیل کر اللہ کا فضل (رزقِ حلال) تلاش کرنے کا حکم دیتا ہے (62:10) اور صحیح بخاری (2072) میں اپنے ہاتھ کی محنت سے کمانے کو بہترین کھانا قرار دیا گیا۔ مسلمان تاجر پر لازم ہے کہ نیت خالص رکھے، خود کفالت کے ساتھ اہل و عیال کی کفالت کرے اور زکوٰۃ، انفاق اور روزگار کے مواقع پیدا کر کے معاشرے میں معاشی عدل قائم کرے۔",
+      "explanationEn": "In Islam, business is not secular profit maximization—it is economic stewardship (Amanah) governed by divine law. Surah Al-Jumu'ah (62:9–10) commands believers to pause trade for Friday prayer and immediately disperse thereafter to seek Allah's bounty. Sahih al-Bukhari (2072) honors earning by one's own hands, noting Prophet Dawud (AS) ate from manual labor. Lawful wealth supports family independence, pays Zakat (9:60), and circulates value without exploitation (2:188).",
+      "explanationAr": "التجارة في الإسلام أمانة ومسؤولية تعبّدية؛ يأمر الله بالانصراف إلى السعي بعد صلاة الجمعة (٦٢:١٠)، ويبين النبي ﷺ في صحيح البخاري (٢٠٧٢) أن خير الطعام ما كان من كسب اليد. فالمال الحلال يعفّ الأسرة ويحقق التكافل بالزكاة والصدقات.",
+      "explanationHi": "इस्लाम में व्यापार केवल मुनाफाखोरी नहीं बल्कि अल्लाह की अमानत और समाज की सेवा है। सूरह अल-जुमुआ (62:9-10) जुमे की नमाज़ के बाद हलाल रोज़ी तलाश करने का आदेश देता है और सहीह बुखारी (2072) अपने हाथ की मेहनत की कमाई को सर्वोत्तम बताती है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 62,
+          "startAyah": 9,
+          "endAyah": 10,
+          "contextNote": {
+            "en": "Balances weekly congregational worship with active commercial enterprise.",
+            "ur": "نمازِ جمعہ کی پابندی اور نماز کے بعد رزقِ حلال کی تلاش کا متوازن حکم۔",
+            "ar": "التوازن بين إقامة صلاة الجمعة والسعي لابتغاء فضل الله.",
+            "hi": "जुमे की नमाज़ और उसके बाद हलाल व्यापार की संतुलित आज्ञा।"
+          },
+          "businessRelevance": {
+            "en": "Establishes that lawful trade is encouraged right alongside Salah, while forbidding trade that distracts from obligatory worship.",
+            "ur": "ثابت کرتا ہے کہ فرض عبادات کے اوقات کی حفاظت کے ساتھ کاروبار اور معاشی دوڑ دھوپ پسندیدہ ہے۔",
+            "ar": "تنظيم وقت التجارة بحيث لا يشغل عن الفرائض ويشجع على العمل بعدها.",
+            "hi": "यह सिखाता है कि फर्ज़ नमाज़ के समय को बचाते हुए हलाल व्यापार प्रोत्साहित है।"
+          }
+        },
+        {
+          "surahNumber": 2,
+          "startAyah": 188,
+          "endAyah": 188,
+          "contextNote": {
+            "en": "Universal prohibition on wrongful acquisition of others' wealth.",
+            "ur": "ناجائز طریقے اور رشوت کے ذریعے دوسروں کا مال کھانے کی قطعی ممانعت۔",
+            "ar": "تحريم أكل أموال الناس بالباطل والرشوة.",
+            "hi": "ग़लत तरीकों और रिश्वत से दूसरों का धन हड़पने पर रोक।"
+          },
+          "businessRelevance": {
+            "en": "Blocks bribery, commercial fraud, fake litigation, and market exploitation.",
+            "ur": "رشوت، دھوکہ دہی، جھوٹے مقدمات اور معاشی استحصال کا دروازہ بند کرتی ہے۔",
+            "ar": "يمنع الرشوة والاحتيال واستغلال القضاء لأكل حقوق الآخرين.",
+            "hi": "रिश्वत, धोखाधड़ी और अन्यायपूर्ण कब्ज़े को रोकती है।"
+          }
+        }
+      ],
+      "hadithIds": ["bukhari_2072", "tirmidhi_1209"],
+      "classicalFiqh": {
+        "en": "Classical scholars (Al-Ghazali, Al-Shaybani in Kitab al-Kasb) classify seeking basic halal sustenance as Fard Ayn (individual duty) upon an earner, and learning trade rulings (Fiqh al-Buyu') before entering the market as obligatory.",
+        "ur": "ائمہ و فقہاء (امام محمد بن حسن الشیبانیؒ کتاب الکسب، امام غزالیؒ) کے نزدیک بنیادی حلال کمائی فرضِ عین اور کاروبار شروع کرنے سے پہلے بیع و شراء کے شرعی مسائل سیکھنا واجب ہے۔",
+        "ar": "بيّن الأئمة كالشيباني والغزالي أن طلب الكسب الحلال وتعلّم فقه المعاملات قبل دخول السوق واجب.",
+        "hi": "शास्त्रीय विद्वानों के अनुसार हलाल रोज़ी कमाना और व्यापार से पहले फ़िक़्ह के नियम सीखना आवश्यक है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Modern Islamic commerce frameworks integrate ethical profit with governance, zakat accounting, fair contracts (AAOIFI), and transparent tax/regulatory compliance.",
+        "ur": "جدید اسلامی معاشیات میں نفع کے ساتھ گورننس، زکوٰۃ، شرعی عقود (AAOIFI) اور ملکی قوانین کی پاسداری لازم ہے۔",
+        "ar": "تجمع الحوكمة الحديثة بين الربحية المشروعة والالتزام بمعايير أيوفي والأنظمة القانونية.",
+        "hi": "आधुनिक इस्लामी व्यापार नैतिक लाभ के साथ AAOIFI मानकों और कानूनी अनुपालन को जोड़ता है।"
+      },
+      "madhhabDifferences": {
+        "en": "All four Sunni schools agree on the superiority of lawful earning over begging and require market knowledge before contracting.",
+        "ur": "چاروں فقہی مکاتب اس بات پر متفق ہیں کہ حلال محنت دستِ سوال دراز کرنے سے بہتر ہے اور کاروبار سے قبل شرعی علم ضروری ہے۔",
+        "ar": "اتفق المذاهب الأربعة على فضل الكسب الحلال ووجوب معرفة أحكام البيع.",
+        "hi": "चारों मज़हब हलाल मेहनत की श्रेष्ठता और व्यापार के नियम जानने पर एकमत हैं।"
+      },
+      "modernExample": {
+        "en": "An entrepreneur sets a calendar lock to pause store checkout for Jumu'ah prayer, keeps clean invoices, budgets 2.5% Zakat, and pays suppliers on time.",
+        "ur": "ایک تاجر جمعہ کے وقت دکان بند رکھتا ہے، اصل رسیدوں کا ریکارڈ رکھتا ہے، سالانہ 2.5 فیصد زکوٰۃ نکالتا ہے اور وقت پر ادائیگی کرتا ہے۔",
+        "ar": "تاجر يغلق متجره وقت صلاة الجمعة، ويوثق فواتيره، ويخرج الزكاة ويسدد للموردين بانتظام.",
+        "hi": "एक व्यापारी जुमे के समय दुकान बंद रखता है, सही बिल बनाता है, और ज़कात व भुगतान समय पर करता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": {
+            "en": "Pausing sales during Jumu'ah call and pursuing honest growth afterward",
+            "ur": "اذانِ جمعہ پر خرید و فروخت روک کر نماز ادا کرنا اور بعد میں محنت کرنا",
+            "ar": "ترك البيع عند نداء الجمعة ثم السعي في الرزق",
+            "hi": "जुमे की अज़ान पर व्यापार रोककर नमाज़ पढ़ना और बाद में काम करना"
+          },
+          "prohibitedPractice": {
+            "en": "Trading during obligatory Friday sermon/prayer or winning contracts via bribes",
+            "ur": "جمعہ کے وقت کاروبار جاری رکھنا یا رشوت سے ٹھیکہ حاصل کرنا",
+            "ar": "البيع وقت نداء الجمعة أو نيل العقود بالرشوة",
+            "hi": "जुमे के समय व्यापार जारी रखना या रिश्वत से ठेका लेना"
+          }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Viewing business strictly as a worldly sphere immune from Shariah rules.",
+          "Chasing revenue while neglecting Jumu'ah prayer or family obligations.",
+          "Assuming giving extra charity purifies wealth earned through fraud or Riba."
+        ],
+        "ur": [
+          "کاروبار کو محض دنیاوی معاملہ سمجھ کر دین کے احکام سے آزاد قرار دینا۔",
+          "منافع کی دوڑ میں نمازِ جمعہ یا اہلِ خانہ کے حقوق ضائع کرنا۔",
+          "یہ سمجھنا کہ دھوکے یا سود کی کمائی میں سے صدقہ دینے سے مال پاک ہو جائے گا۔"
+        ],
+        "ar": [
+          "فصل السوق عن أحكام الشرع، أو الظن أن الصدقة تطهّر المال الحرام.",
+          "تقديم المكسب على صلاة الجمعة."
+        ],
+        "hi": [
+          "व्यापार को धर्म के नियमों से अलग समझना, या ग़लत कमाई को दान से पवित्र मान लेना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Clarify Niyyah (intention) to serve people honestly and avoid dependency.",
+          "Learn core Halal/Haram rules applicable to your trade sector.",
+          "Protect Fard prayer & Jumu'ah times in shop/online policies.",
+          "Audit all revenue streams free of bribery, fraud, and interest."
+        ],
+        "ur": [
+          "خود کفالت اور خلقِ خدا کی خدمت کی خالص نیت کریں۔",
+          "اپنے شعبے کے حلال و حرام کے بنیادی شرعی مسائل سیکھیں۔",
+          "نمازِ جمعہ اور فرض نمازوں کے اوقات کی حفاظت یقینی بنائیں۔",
+          "رشوت، دھوکہ اور سود سے آمدنی کو مکمل پاک رکھیں۔"
+        ],
+        "ar": [
+          "إخلاص النية، وتعلم أحكام القطاع التجاري، والمحافظة على الصلاة والزكاة."
+        ],
+        "hi": [
+          "सच्ची नीयत रखें, अपने व्यापार के हलाल नियम सीखें, और नमाज़ के समय की रक्षा करें।"
+        ]
+      },
+      "summary": {
+        "en": "Islamic business unites sincere intention, manual/entrepreneurial diligence, legal integrity, worship mindfulness, and charitable stewardship.",
+        "ur": "اسلامی تجارت خالص نیت، محنت، امانتداری، عبادات کی پابندی اور معاشرتی فلاح کا حسین امتزاج ہے۔",
+        "ar": "تجمع التجارة الإسلامية بين إخلاص النية والاجتهاد والأمانة والوفاء بحقوق الله والعباد.",
+        "hi": "इस्लामी व्यापार सच्ची नीयत, मेहनत, ईमानदारी, इबादत और सामाजिक भलाई का संगम है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l1_m1_1",
+          "question": {
+            "en": "According to Surah Al-Jumu'ah (62:9–10), how must Muslims respond when the Friday prayer call sounds?",
+            "ur": "سورۃ الجمعہ (62:9-10) کے مطابق جمعہ کی اذان کے وقت مسلمان تاجر پر کیا لازم ہے؟",
+            "ar": "وفق سورة الجمعة (٩-١٠)، ماذا يجب على المسلم عند نداء صلاة الجمعة؟",
+            "hi": "सूरह जुमुआ (62:9-10) के अनुसार जुमे की अज़ान के समय मुस्लिम व्यापारी को क्या करना चाहिए?"
+          },
+          "options": {
+            "en": [
+              "Leave trade immediately for remembrance of Allah, then disperse to seek lawful livelihood",
+              "Continue sales and pray later",
+              "Abandon business permanently"
+            ],
+            "ur": [
+              "فوراً خرید و فروخت چھوڑ کر اللہ کے ذکر کی طرف دوڑیں اور بعد میں رزق تلاش کریں",
+              "دکان کھلی رکھیں",
+              "کاروبار ہمیشہ کے لیے چھوڑ دیں"
+            ],
+            "ar": [
+              "ترك البيع فوراً والسعي إلى ذكر الله ثم الانتشار في طلب الرزق",
+              "الاستمرار في البيع"
+            ],
+            "hi": [
+              "तुरंत व्यापार छोड़कर नमाज़ के लिए जाएं और बाद में हलाल रोज़ी तलाशें",
+              "व्यापार जारी रखें"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "62:9–10 instructs pausing commerce for Jumu'ah and encourages active enterprise right after.",
+            "ur": "آیت 62:9-10 میں جمعہ کے وقت تجارت روکنے اور نماز کے بعد تلاشِ رزق کا حکم ہے۔",
+            "ar": "تأمر الآية بترك البيع وقت النداء ثم الابتغاء من فضل الله.",
+            "hi": "आयत नमाज़ के समय व्यापार रोकने और बाद में काम करने का आदेश देती है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Write a 3-point personal Islamic Business Charter outlining your prayer schedule balance, charity pledge, and zero-bribery commitment.",
+        "ur": "اپنے کاروبار کا 3 نکاتی اسلامی چارٹر لکھیں: اوقاتِ نماز کی پابندی، زکوٰۃ و صدقہ کا نظام اور رشوت سے مکمل اجتناب۔",
+        "ar": "اكتب ميثاقاً شخصياً من ٣ بنود لتنظيم وقت الصلاة والزكاة ومنع التجاوزات.",
+        "hi": "अपने व्यापार के लिए नमाज़ समय, ज़कात व रिश्वत-मुक्त कार्य का 3 सूत्रीय चार्टर लिखें।"
+      },
+      "sources": [
+        { "title": "Quran 62:9-10 & 2:188", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/62/9-10" },
+        { "title": "Sahih al-Bukhari 2072", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:2072" }
+      ]
+    },
+    {
+      "id": "lesson_l1_m2",
+      "level": 1,
+      "moduleNumber": 2,
+      "moduleTitle": {
+        "en": "Module 2: Quran & Sunnah on Trade",
+        "ur": "ماڈیول 2: قرآن و سنت میں تجارت کے اصول",
+        "ar": "الوحدة ٢: أصول التجارة في القرآن والسنة",
+        "hi": "मॉड्यूल 2: क़ुरआन और सुन्नत में व्यापार"
+      },
+      "title": {
+        "en": "Core Verses of Commerce, Weights, Consent & Honesty",
+        "ur": "تجارت کی بنیادی آیات، ناپ تول، باہمی رضامندی اور دیانت",
+        "ar": "الآيات المؤسسة للتجارة والوفاء والتراضي والوزن",
+        "hi": "व्यापार की मूल आयतें: नाप-तौल, सहमति और ईमानदारी"
+      },
+      "primaryEvidenceCategory": "direct_quran",
+      "learningObjectives": {
+        "en": [
+          "Master the foundational commercial verses (2:275, 4:29, 5:1, 17:35, 83:1–3).",
+          "Differentiate verbatim Quranic text from jurisprudential commentary.",
+          "Apply the prophetic Barakah principle in Sahih al-Bukhari 2079 & Muslim 1532a."
+        ],
+        "ur": [
+          "تجارت کی بنیادی قرآنی آیات (2:275، 4:29، 5:1، 17:35، 83:1-3) کو سمجھیں۔",
+          "صریح قرآنی الفاظ اور تشریحات کے درمیان فرق ملحوظ رکھیں۔",
+          "صحیح بخاری 2079 اور مسلم 1532a کے اصولِ برکت کو کاروبار میں نافذ کریں۔"
+        ],
+        "ar": [
+          "إتقان الآيات المحورية في المعاملات وتطبيق حديث البركة في البيع والشراء."
+        ],
+        "hi": [
+          "व्यापार की मुख्य क़ुरआनी आयतों और हदीस 2079 के बरकत सिद्धांत को समझें व लागू करें।"
+        ]
+      },
+      "introduction": {
+        "en": "Every lawful Islamic transaction rests on four revealed pillars: permitted trade over Riba (2:275), genuine mutual consent (4:29), sacred contract fulfillment (5:1), and exact measure without shortchanging (17:35, 83:1–3).",
+        "ur": "اسلامی تجارت چار قرآنی ستونوں پر کھڑی ہے: سود کے مقابلے میں حلال بیع (2:275)، دھوکے سے پاک باہمی رضامندی (4:29)، معاہدات کی تکمیل (5:1) اور ناپ تول میں انصاف (17:35، 83:1-3)۔",
+        "ar": "تقوم المعاملات الشرعية على أربعة أركان قرآنية: إباحة البيع وحرمة الربا، والتراضي، والوفاء بالعقود، وإيفاء الكيل والميزان.",
+        "hi": "इस्लामी व्यापार चार स्तंभों पर खड़ा है: सूद रहित व्यापार (2:275), आपसी सहमति (4:29), अनुबंध पालन (5:1), और पूरा नाप-तौल (17:35, 83:1-3)।"
+      },
+      "explanationUr": "قرآنِ پاک نے تجارت کی پوری عمارت واضح اصولوں پر استوار کی: (1) البقرہ 2:275 نے واضح کیا کہ تجارت حلال اور سود حرام ہے، (2) النساء 4:29 نے دھوکے اور باطل کے بجائے باہمی رضامندی سے تجارت کا حکم دیا، (3) المائدہ 5:1 نے ہر جائز عقد کو پورا کرنا لازم قرار دیا، اور (4) بنی اسرائیل 17:35 و المطففین 83:1-3 نے ناپ تول اور پیمائش میں کمی کرنے والوں پر سخت وعید سنائی۔ صحیح بخاری (2079) و صحیح مسلم (1532a) میں نبی اکرم ﷺ نے سچائی اور عیب ظاہر کرنے پر برکت اور جھوٹ و عیب پوشی پر برکت مٹ جانے کی خبردار فرمایا۔",
+      "explanationEn": "The Quran anchors the marketplace in unambiguous principles: Surah Al-Baqarah (2:275) separates trade from Riba; Surah An-Nisa (4:29) bans consuming wealth unjustly while validating trade by mutual consent; Surah Al-Ma'idah (5:1) orders believers to honor every contract; and Surah Al-Isra (17:35) & Al-Mutaffifin (83:1–3) warn strictly against rigging scales, hidden fees, or reduced deliverables. Together with Sahih al-Bukhari 2079 / Muslim 1532a, transparency brings Barakah while concealment erases it.",
+      "explanationAr": "تجمع الآيات القرآنية أصول السوق العادل: التمييز القطعي بين البيع والربا (٢:٢٧٥)، ومنع أكل المال بالباطل واشتراط التراضي (٤:٢٩)، ووجوب الوفاء بالعقود (٥:١)، والتحذير الشديد من التطفيف في الكيل والوزن (١٧:٣٥، ٨٣:١-٣). ويقرر حديث حكيم بن حزام أن الصدق والبيان سبب البركة.",
+      "explanationHi": "क़ुरआन ने बाज़ार के नियम स्पष्ट किए हैं: 2:275 में सूद से व्यापार अलग किया गया, 4:29 में आपसी सहमति से व्यापार का आदेश है, 5:1 अनुबंध पूरे करने का हुक्म देता है, और 17:35 व 83:1-3 नाप-तौल में कमी की सख़्त निंदा करते हैं। सहीह बुखारी 2079 के अनुसार सच्चाई से बरकत मिलती है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 275,
+          "endAyah": 275,
+          "contextNote": { "en": "Foundational distinction between trade and usury.", "ur": "بیع کے حلال اور سود کے حرام ہونے کی نصِ قطعی۔", "ar": "الفرق القطعي بين البيع والربا.", "hi": "व्यापार और सूद के बीच मूल अंतर।" },
+          "businessRelevance": { "en": "Every commercial profit must stem from real asset risk, work, or usufruct—not pure debt extension.", "ur": "نفع حقیقی شے، خدمت یا رسک پر مبنی ہو، محض قرض پر نہیں۔", "ar": "استحقاق الربح بالبيع والعمل والضمان لا بمجرد الإقراض.", "hi": "लाभ वास्तविक वस्तु, सेवा या जोखिम से होना चाहिए।" }
+        },
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Mutual consent vs wrongful seizure.", "ur": "باطل ذرائع کی ممانعت اور باہمی رضامندی سے تجارت کا حکم۔", "ar": "حظر أكل المال بالباطل واشتراط التراضي.", "hi": "अनुचित तरीके रोककर सहमति से व्यापार।" },
+          "businessRelevance": { "en": "Informed, pressure-free buyer consent requires clear pricing and honest product descriptions.", "ur": "حقیقی رضامندی تبھی ممکن ہے جب قیمت اور معیار میں کوئی پوشیدہ دھوکہ نہ ہو۔", "ar": "لا يتحقق التراضي الصحيح مع الغش أو الإكراه أو إخفاء العيوب.", "hi": "सच्ची सहमति तभी है जब कोई छिपा धोखा न हो।" }
+        },
+        {
+          "surahNumber": 5,
+          "startAyah": 1,
+          "endAyah": 1,
+          "contextNote": { "en": "Binding force of agreements.", "ur": "تمام جائز معاہدات کی تکمیل کا حکم۔", "ar": "الأمر بالوفاء بجميع العقود المشروعة.", "hi": "वैध अनुबंध पूरे करने का आदेश।" },
+          "businessRelevance": { "en": "Honoring delivery deadlines, warranties, SLAs, and refund promises.", "ur": "ترسیل کا وقت، وارنٹی اور واپسی کے وعدوں کو پورا کرنا لازم ہے۔", "ar": "الالتزام بمواعيد التسليم والضمانات المتفق عليها.", "hi": "डिलीवरी समय, वारंटी व अनुबंध शर्तों का पालन अनिवार्य है।" }
+        },
+        {
+          "surahNumber": 17,
+          "startAyah": 35,
+          "endAyah": 35,
+          "contextNote": { "en": "Full measure and balanced scales.", "ur": "پورا ناپنے اور صحیح ترازو سے تولنے کی ہدایت۔", "ar": "إيفاء الكيل والوزن بالقسطاس المستقيم.", "hi": "पूरा माप और सही तराजू से तौलने का आदेश।" },
+          "businessRelevance": { "en": "Covers digital quantities too—accurate net weight, software specs, billable hours, and packaging size.", "ur": "وزن، پیکنگ مقدار، سروس کے اوقات اور سافٹ ویئر ڈیلیوری سب اس میں شامل ہیں۔", "ar": "يشمل الأوزان وساعات العمل والمواصفات الرقمية بدقة.", "hi": "इसमें सटीक वज़न, पैकेजिंग मात्रा और बिलिंग घंटे सब शामिल हैं।" }
+        },
+        {
+          "surahNumber": 83,
+          "startAyah": 1,
+          "endAyah": 3,
+          "contextNote": { "en": "Severe warning against double-standard weighing.", "ur": "لیتے وقت پورا اور دیتے وقت کم تولنے والوں کے لیے سخت وعید۔", "ar": "ويل للمطففين الذين يستوفون ويخسرون.", "hi": "लेते समय पूरा और देते समय कम तौलने वालों पर चेतावनी।" },
+          "businessRelevance": { "en": "Outlaws shrinkflation deception, uncalibrated digital scales, and asymmetric contract clauses.", "ur": "خفیہ طور پر وزن گھٹانا، خراب ترازو اور یکطرفہ شرائط سب ممنوع ہیں۔", "ar": "يحرم التلاعب بالموازين أو إنقاص الكمية خفية.", "hi": "छिपे तौर पर वज़न घटाना और असमान अनुबंध शर्तें वर्जित हैं।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2079", "muslim_1532a"],
+      "classicalFiqh": {
+        "en": "Jurists derive Khiyar al-'Ayb (option to return defective goods) and Khiyar al-Majlis from Bukhari 2079 & Muslim 1532a, obligating defect disclosure.",
+        "ur": "فقہاء نے بخاری 2079 سے خیارِ عیب (عیب پر واپسی کا حق) اور عیب ظاہر کرنے کے وجوب کا قانون مستنبط کیا۔",
+        "ar": "استنبط الفقهاء خيار العيب ووجوب الإبانة من حديث البيعان بالخيار.",
+        "hi": "फ़ुक़हा ने इसी हदीस से दोषपूर्ण वस्तु लौटाने के अधिकार (ख़ियारुल-ऐब) का नियम निकाला।"
+      },
+      "contemporaryGuidance": {
+        "en": "Consumer-protection laws, ISO/PSI weights inspection, and clear e-commerce return policies mirror these Islamic norms.",
+        "ur": "صارفین کے تحفظ کے قوانین، پیمائش کی تصدیق اور واضح آن لائن ریٹرن پالیسیاں انہی اسلامی اصولوں کی عملی شکل ہیں۔",
+        "ar": "قوانين حماية المستهلك وضبط الموازين وسياسات الاسترجاع تطبيق معاصر لهذه النصوص.",
+        "hi": "उपभोक्ता सुरक्षा कानून और स्पष्ट ई-कॉमर्स रिटर्न नीतियां इन्हीं सिद्धांतों के अनुरूप हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Shafi'i & Hanbali affirm Khiyar al-Majlis (right to cancel before parting) literally from Bukhari 2079; Hanafi & Maliki interpret parting as verbal conclusion.",
+        "ur": "شوافع و حنابلہ مجلسِ عقد سے جدا ہونے تک اختیار برقرار رکھتے ہیں جبکہ احناف و مالکیہ ایجاب و قبول کے اختتام کو جدائی قرار دیتے ہیں۔",
+        "ar": "يثبت الشافعية والحنابلة خيار المجلس، ويفسره الحنفية والمالكية بالتفرق بالأقوال.",
+        "hi": "शाफ़िई व हनबली सभा से अलग होने तक विकल्प मानते हैं; हनफ़ी व मालिकी बोलकर सौदा पूर्ण होने को समाप्ति मानते हैं।"
+      },
+      "modernExample": {
+        "en": "A spice packer calibrates scales daily so 500g bags weigh at least 500g net (excluding bag weight) and states expiry dates clearly.",
+        "ur": "مصالحہ پیکر روزانہ ترازو چیک کرتا ہے تاکہ پیکنگ سمیت نہیں بلکہ خالص وزن پورا 500 گرام ہو اور ایکسپائری تاریخ واضح لکھی ہو۔",
+        "ar": "بائع التوابل يعاير الميزان يومياً لضمان الوزن الصافي دون احتساب الغلاف.",
+        "hi": "मसाला पैकर सुनिश्चित करता है कि पैकेट का वजन छोड़कर शुद्ध सामग्री पूरे 500 ग्राम हो।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Selling net weight excluding container weight and disclosing minor flaws", "ur": "ڈبے کے وزن کے بغیر خالص شے تولنا اور معمولی عیب بتانا", "ar": "إعطاء الوزن الصافي وبيان العيوب", "hi": "डिब्बे के बिना शुद्ध वज़न देना और दोष बताना" },
+          "prohibitedPractice": { "en": "Including heavy box in sweet/fruit weight or hiding expired stock", "ur": "مٹھائی یا پھل کے وزن میں بھاری ڈبہ شامل کرنا یا پرانا مال چھپانا", "ar": "وزن العبوة الثقيلة مع السلعة أو إخفاء انتهاء الصلاحية", "hi": "मिठाई के साथ भारी डिब्बा तौलना या बासी माल छिपाना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Weighing heavy cardboard packaging at food per-kg price without customer consent.",
+          "Using 'Sold as-is — No Responsibility' clauses to knowingly conceal hidden defects."
+        ],
+        "ur": [
+          "گاہک کو بتائے بغیر بھاری ڈبے کو مٹھائی یا گوشت کے نرخ میں تولنا۔",
+          "جان بوجھ کر عیب چھپانے کے لیے 'بکا ہوا مال واپس نہیں ہوگا' کا جھوٹا سہارا لینا۔"
+        ],
+        "ar": [
+          "احتساب وزن الكرتون الثقيل بسعر السلعة، أو التحايل بعبارة البضاعة لا تُرد لإخفاء عيب معلوم."
+        ],
+        "hi": [
+          "भारी डिब्बे को मिठाई के भाव तौलना, या जानबूझकर दोष छिपाकर वापसी से इनकार करना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Tare weight set properly on digital scales.",
+          "Defect disclosure policy mandatory before finalizing payment.",
+          "Plain-language contracts & delivery commitments honored."
+        ],
+        "ur": [
+          "ترازو پر خالی ڈبے کا وزن زیرو (Tare) کرنا۔",
+          "ادائیگی سے پہلے ہر نمایاں عیب گاہک کو بتانا۔",
+          "معاہدہ اور حوالگی کا وقت پورا کرنا۔"
+        ],
+        "ar": [
+          "تصفير الميزان، وبيان العيوب قبل الدفع، والوفاء بالعقود."
+        ],
+        "hi": [
+          "डिजिटल कांटे पर डिब्बे का वजन शून्य करना, दोष बताना, और वादा निभाना।"
+        ]
+      },
+      "summary": {
+        "en": "Barakah flows into commerce through truth, consent, fulfilled agreements, and full honest measure.",
+        "ur": "تجارت میں برکت سچائی، باہمی رضامندی، وعدے کی تکمیل اور پورے ناپ تول سے آتی ہے۔",
+        "ar": "البركة في التجارة ثمرة الصدق والتراضي والوفاء وإيفاء المكيال والميزان.",
+        "hi": "व्यापार में बरकत सच्चाई, सहमति, अनुबंध पालन और पूरे नाप-तौल से आती है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l1_m2_1",
+          "question": {
+            "en": "In Sahih al-Bukhari 2079, what happens when buyer and seller conceal defects and lie?",
+            "ur": "صحیح بخاری 2079 کے مطابق اگر بائع و مشتری عیب چھپائیں اور جھوٹ بولیں تو کیا ہوتا ہے؟",
+            "ar": "وفق حديث البخاري ٢٠٧٩، ما أثر الكتمان والكذب على البيع؟",
+            "hi": "सहीह बुखारी 2079 के अनुसार यदि खरीदार व विक्रेता दोष छिपाएं और झूठ बोलें तो क्या होता है?"
+          },
+          "options": {
+            "en": [
+              "The blessing (Barakah) of their transaction is erased",
+              "Profit doubles permanently",
+              "Nothing changes spiritually"
+            ],
+            "ur": [
+              "ان کے سودے کی برکت مٹا دی جاتی ہے",
+              "نفع دوگنا ہو جاتا ہے",
+              "کوئی فرق نہیں پڑتا"
+            ],
+            "ar": [
+              "تُمحق بركة بيعهما",
+              "تزداد البركة"
+            ],
+            "hi": [
+              "उनके सौदे की बरकत समाप्त कर दी जाती है",
+              "बरकत बढ़ जाती है"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Sahih al-Bukhari 2079 & Muslim 1532a state verbatim: 'if they conceal and lie, the blessing of their transaction will be blotted out.'",
+            "ur": "صحیح بخاری 2079 میں صراحت ہے کہ جھوٹ اور عیب پوشی سے تجارت کی برکت ختم کر دی جاتی ہے۔",
+            "ar": "نص الحديث: وإن كتما وكذبا محقت بركة بيعهما.",
+            "hi": "सहीह बुखारी 2079 स्पष्ट कहता है कि झूठ व छिपाव से व्यापार की बरकत मिट जाती है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Inspect one product label or service invoice in your field and rewrite any vague fee or net-weight ambiguity with 100% clarity.",
+        "ur": "اپنے شعبے کی کسی رسید یا پروڈکٹ لیبل کا جائزہ لے کر ہر مبہم چارج یا وزن کی تفصیل بالکل واضح لکھیں۔",
+        "ar": "راجع فاتورة أو ملصق منتج في مجالك وعدّل أي غموض في الوزن أو الرسوم.",
+        "hi": "अपने व्यवसाय के एक बिल या उत्पाद लेबल में अस्पष्ट शुल्क या वज़न विवरण को 100% स्पष्ट लिखें।"
+      },
+      "sources": [
+        { "title": "Quran 2:275, 4:29, 5:1, 17:35, 83:1-3", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/" },
+        { "title": "Sahih al-Bukhari 2079 & Muslim 1532a", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:2079" }
+      ]
+    },
+    {
+      "id": "lesson_l1_m3",
+      "level": 1,
+      "moduleNumber": 3,
+      "moduleTitle": {
+        "en": "Module 3: Halal & Haram in Business",
+        "ur": "ماڈیول 3: کاروبار میں حلال و حرام کے حدود",
+        "ar": "الوحدة ٣: الحلال والحرام في الأعمال",
+        "hi": "मॉड्यूल 3: व्यापार में हलाल और हराम"
+      },
+      "title": {
+        "en": "Unlawful Goods, Contracts, Doubtful Matters & Wealth Purification",
+        "ur": "ناجائز اشیاء و عقود، مشتبہ امور اور حرام آمدنی کی تطہیر",
+        "ar": "المحرمات والمشتبهات وأحكام تطهير المال",
+        "hi": "अवैध वस्तुएं, संदिग्ध मामले और धन शुद्धिकरण"
+      },
+      "primaryEvidenceCategory": "classical_fiqh",
+      "learningObjectives": {
+        "en": [
+          "Distinguish prohibition due to substance (Haram li-Dhatihi) vs transaction method (Haram li-Ghayrihi).",
+          "Avoid doubtful (Shubhah) revenue streams and understand the duty to purify accidental Haram income.",
+          "Apply the maxim: permissible unless a revealed proof prohibits it."
+        ],
+        "ur": [
+          "حرام لذاتہ (ناپاک شے) اور حرام لغیرہ (غلط عقد یا سودی طریقہ) کا فرق جانیں۔",
+          "مشتبہ (شبہات والی) کمائی سے بچنے اور ناگزیر حرام آمدنی کو صدقہ/تطہیر کرنے کا اصول سمجھیں۔",
+          "قاعدہ 'معاملات میں اصل اباحت ہے' کو صحیح طریقے سے سمجھیں۔"
+        ],
+        "ar": [
+          "التمييز بين المحرم لذاته والمحرم لغيره وضوابط اجتناب الشبهات وتطهير المال."
+        ],
+        "hi": [
+          "स्वयं अवैध वस्तु बनाम अवैध अनुबंध विधि का अंतर, संदिग्ध मामलों से बचाव और धन शुद्धिकरण सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "The default rule in commercial transactions is permissibility (Ibahah)—so long as goods, services, contracts, and conduct avoid Riba, Gharar, deception, harm, and inherently unlawful substances.",
+        "ur": "معاملات و تجارت میں بنیادی اصول اباحت (جواز) ہے، جب تک شے، خدمت یا معاہدے میں سود، غرر، دھوکہ، نقصان یا حرام مادہ نہ پایا جائے۔",
+        "ar": "الأصل في المعاملات الإباحة إلا ما دل الدليل على تحريمه كالربا والغرر والظلم والخبائث.",
+        "hi": "व्यापारिक लेनदेन में मूल नियम अनुमति है, जब तक कि वस्तु, अनुबंध या आचरण में सूद, धोखा, ग़रर या हराम तत्व न हो।"
+      },
+      "explanationUr": "شریعت میں تجارت کی حلت جانچنے کے دو پیمانے ہیں: (الف) شے یا خدمت بذاتِ خود حلال ہو (مثلاً شراب، خنزیر، جوا، فحاشی، بت فروشی حرام لذاتہ ہیں)، (ب) خرید و فروخت کا طریقہ اور معاہدہ درست ہو (حلال دودھ یا کپڑا بھی اگر سود، دھوکے، چوری یا غرر سے بیچا جائے تو کمائی ناجائز ہو جاتی ہے)۔ مشتبہ امور سے بچنے سے دین و عزت محفوظ رہتی ہے۔ اگر کسی کاروبار میں غیر ارادی طور پر سودی بینک منافع یا مشکوک حصہ آ جائے تو اسے ذاتی استعمال یا ٹیکس/صدقہ ثواب کی نیت کے بغیر غریبوں میں تطہیر (Tathir/Charity Purification) کر کے نکالنا واجب ہے۔",
+      "explanationEn": "Islamic commercial law checks three layers: (1) Intrinsic permissibility—prohibiting intoxicants, pork, gambling, adult immorality, idols, and harmful scams; (2) Transactional validity—a lawful product like wheat becomes unlawful if financed via Riba, stolen, rigged, or sold under Gharar; (3) Doubtful matters (Shubuhat)—protecting integrity by steering clear of gray schemes. If unlawful bank interest or mixed impermissible fees enter an account unintentionally, AAOIFI Standard No. 21 requires charitable purification (disposing of exact Haram portion to charity without seeking personal reward or using it to pay taxes/liabilities).",
+      "explanationAr": "تفحص الشريعة المال من ثلاث جهات: حلّ العين أو الخدمة، وصحة العقد خالياً من الربا والغرر والغش، واتقاء الشبهات. وإذا خالط المالَ جزءٌ محرم كفوائد بنكية غير مقصودة وجب تطهيره بصرفه في وجوه البر دون نية أجر الصدقة ولا دفع الضرائب.",
+      "explanationHi": "इस्लामी वाणिज्य के तीन स्तर हैं: (1) वस्तु/सेवा स्वयं हलाल हो, (2) अनुबंध सूद, धोखे और चोरी से मुक्त हो, और (3) संदिग्ध कमाई से बचा जाए। यदि अनजाने में ब्याज जुड़ जाए तो AAOIFI मानक 21 के अनुसार बिना पुण्य की उम्मीद के गरीबों में दान कर धन शुद्ध करना अनिवार्य है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 2,
+          "startAyah": 267,
+          "endAyah": 267,
+          "contextNote": { "en": "Give charity only from wholesome lawful earnings.", "ur": "اپنی پاک و حلال کمائی سے خرچ کرنے کا حکم۔", "ar": "الإنفاق من طيبات ما كسبتم.", "hi": "अपनी पवित्र और हलाल कमाई से खर्च करने का आदेश।" },
+          "businessRelevance": { "en": "Allah accepts charity from Tayyib (pure) earnings—underscoring the need to purify business revenue first.", "ur": "صدقہ و خیر تبھی مقبول ہے جب کمائی پاک ہو، اس لیے کاروبار کی تطہیر اولین فرض ہے۔", "ar": "طهارة الكسب شرط لقبول الصدقات.", "hi": "दान तभी स्वीकार होता है जब कमाई हलाल हो।" }
+        },
+        {
+          "surahNumber": 4,
+          "startAyah": 29,
+          "endAyah": 29,
+          "contextNote": { "en": "Ban on all unlawful wealth transfer.", "ur": "باطل ذرائع سے مال کمانے کی حرمت۔", "ar": "تحريم الكسب الباطل.", "hi": "अवैध तरीकों से धन कमाने पर रोक।" },
+          "businessRelevance": { "en": "Covers stolen goods, pirated licenses, and harmful products.", "ur": "چوری کا مال، جعلی ادویات اور نقصان دہ اشیاء سب باطل میں شامل ہیں۔", "ar": "يشمل المسروقات والسلع الضارة والاحتيال.", "hi": "चोरी का माल, नकली दवाएं व हानिकारक उत्पाद इसमें वर्जित हैं।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "muslim_1598"],
+      "classicalFiqh": {
+        "en": "Ibn Taymiyyah and all four Madhahib affirm: 'Al-Asl fil-Mu'amalat al-Ibahah' (transactions are presumed lawful unless prohibited). Selling stolen goods conveys no valid ownership.",
+        "ur": "جمہور فقہا کا متفقہ قاعدہ ہے کہ معاملات میں اصل اباحت ہے جب تک شرعی ممانعت نہ ہو؛ چوری یا غصب شدہ مال بیچنا باطل ہے۔",
+        "ar": "الأصل في العقود الإباحة ما لم يرد تحريم، ولا ينفذ بيع المسروق والمغصوب.",
+        "hi": "फ़िक़्ह नियम: व्यापार मूलतः वैध है जब तक कोई निषेध न हो; चोरी का माल बेचना अवैध है।"
+      },
+      "contemporaryGuidance": {
+        "en": "AAOIFI Shariah Standard No. 21 defines mixed-income screening and strict charitable purification (disposing impure interest without tax set-off or self-benefit).",
+        "ur": "AAOIFI معیار 21 غیر حلال جزو کے اخراج و تطہیر کا باقاعدہ طریقہ بیان کرتا ہے۔",
+        "ar": "يحدد معيار أيوفي ٢١ ضوابط التنقية والتخلص من العوائد المحرمة.",
+        "hi": "AAOIFI मानक 21 मिश्रित आय की जांच और अशुद्ध हिस्से को दान से शुद्ध करने के नियम बताता है।"
+      },
+      "madhhabDifferences": {
+        "en": "Scholars differ on secondary mixed-service investments (e.g., supermarket leasing one halal aisle vs screening equity thresholds); all prohibit core Haram trading.",
+        "ur": "خالص حرام کاروبار پر اجماع ہے؛ مخلوط جدید کمپنیوں کی اسکریننگ حدود میں معاصر فقہی مکاتب میں جزئی اجتہادی فرق پایا جاتا ہے۔",
+        "ar": "يُجمع العلماء على حرمة النشاط المحرم المحض، مع تفاوت اجتهادي في نسب التنقية للمختلط.",
+        "hi": "मुख्य हराम व्यापार पर सर्वसम्मति है; मिश्रित कंपनियों की जांच सीमाओं में समकालीन मतभेद हैं।"
+      },
+      "modernExample": {
+        "en": "A Muslim bakery refuses lucrative orders for alcohol-infused desserts and immediately moves operating cash from a conventional interest account into a current/Islamic account, donating accrued interest.",
+        "ur": "ایک بیکری شراب ملا کیک کا بڑا آرڈر ٹھکرا دیتی ہے اور کاروباری کھاتہ سودی بینک سے نکال کر اسلامی کرنٹ کھاتے میں منتقل کر کے سابقہ سود صدقہ کر دیتی ہے۔",
+        "ar": "مخبز يرفض طلبيات تحتوي على الكحول وينقل حسابه لحساب إسلامي ويتخلص من الفوائد.",
+        "hi": "एक बेकरी अल्कोहल वाले केक का ऑर्डर ठुकरा देती है और खाते में आया ब्याज गरीबों को दान कर देती है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Disposing unintended bank interest strictly to needy charity without expectation of reward", "ur": "غیر ارادی سودی رقم ثواب کی نیت کے بغیر مستحقین میں تطہیر کے طور پر دینا", "ar": "صرف الفائدة البنكية غير المقصودة في المصارف الخيرية بنية التخلص", "hi": "अनजाने ब्याज को पुण्य की इच्छा के बिना गरीबों में शुद्धिकरण हेतु देना" },
+          "prohibitedPractice": { "en": "Using bank interest to pay company electricity bills, Zakat, or taxes", "ur": "سودی رقم سے زکوٰۃ ادا کرنا یا بجلی بل و ٹیکس بھرنا", "ar": "دفع الزكاة أو الضرائب أو فواتير الشركة من الفوائد الربوية", "hi": "ब्याज के पैसे से ज़कात, बिजली बिल या टैक्स भरना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Thinking 'if I only resell Haram items without consuming them personally, it is fine.'",
+          "Using accrued interest to fulfill Zakat obligations (invalid)."
+        ],
+        "ur": [
+          "یہ سمجھنا کہ 'میں خود نہیں پیتا/کھیلتا، صرف بیچتا ہوں تو خیر ہے۔'",
+          "حرام یا سودی رقم سے زکوٰۃ ادا کرنا۔"
+        ],
+        "ar": [
+          "الظن أن بيع المحرم لغير المسلمين أو دون استهلاكه مباح، أو إخراج الزكاة من مال خبيث."
+        ],
+        "hi": [
+          "यह सोचना कि 'मैं स्वयं उपयोग नहीं करता केवल बेचता हूं', या ब्याज से ज़कात अदा करना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Screen all catalog SKUs & client ads for intoxicants, gambling, adult content, and scams.",
+          "Inspect supplier chain for counterfeit or stolen origin.",
+          "Transfer corporate deposits to interest-free/Shariah accounts and purify prior interest."
+        ],
+        "ur": [
+          "اپنے تمام پروڈکٹس و اشتہارات کو حرام اشیاء، جوئے اور فحاشی سے پاک رکھیں۔",
+          "سپلائر کے مال کے حلال و قانونی ماخذ کی تصدیق کریں۔",
+          "کاروباری اکاؤنٹ سودی کھاتے سے اسلامی کھاتے میں منتقل کریں۔"
+        ],
+        "ar": [
+          "فحص قائمة المنتجات والإعلانات، والتحقق من مصدر المورد، وتنقية الحسابات."
+        ],
+        "hi": [
+          "सभी उत्पादों की जांच करें, वैध आपूर्तिकर्ता चुनें, और खाते ब्याज-मुक्त रखें।"
+        ]
+      },
+      "summary": {
+        "en": "Halal profitability demands both pure products/services and Shariah-compliant contracts, plus strict disposal of impure accruals.",
+        "ur": "حلال منافع کے لیے شے کا پاک ہونا، معاہدے کا شرعی ہونا اور ناپاک جزو کی تطہیر لازمی ہے۔",
+        "ar": "يتطلب الكسب الطيب حلّ النشاط وسلامة العقد والتخلص من أي عائد محرم.",
+        "hi": "हलाल मुनाफ़े के लिए उत्पाद, अनुबंध और धन-शुद्धिकरण तीनों आवश्यक हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l1_m3_1",
+          "question": {
+            "en": "If accidental bank interest enters a business account during transition to Islamic banking, what is the scholarly ruling?",
+            "ur": "اگر غیر ارادی طور پر کاروباری کھاتے میں سودی رقم آ جائے تو شرعی حکم کیا ہے؟",
+            "ar": "إذا دخلت فائدة ربوية عرضاً في الحساب التجاري، ما الحكم الشرعي؟",
+            "hi": "यदि व्यावसायिक खाते में अनजाने में ब्याज आ जाए तो शरीअत का नियम क्या है?"
+          },
+          "options": {
+            "en": [
+              "Dispose of the exact amount to the needy for purification without seeking charity reward or using it for Zakat/bills",
+              "Keep it to pay staff bonuses",
+              "Count it toward annual Zakat"
+            ],
+            "ur": [
+              "ثواب کی نیت کے بغیر مستحقین میں دے کر مال پاک کریں، اس سے زکوٰۃ یا بل ادا نہ کریں",
+              "عملے کو بونس دے دیں",
+              "زکوٰۃ میں شمار کر لیں"
+            ],
+            "ar": [
+              "صرفها للفقراء بنية التطهير دون نية الصدقة ودون احتسابها من الزكاة",
+              "احتسابها من الزكاة"
+            ],
+            "hi": [
+              "बिना पुण्य की इच्छा के गरीबों में दान कर शुद्ध करें; इससे ज़कात या बिल न भरें",
+              "ज़कात में गिन लें"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Per AAOIFI SS 21, impure interest must be separated and donated to charitable relief without personal benefit or tax/Zakat credit.",
+            "ur": "AAOIFI معیار 21 کے مطابق سودی رقم ذاتی فائدے یا زکوٰۃ کے بجائے تطہیر کی نیت سے غرباء پر خرچ کرنا لازم ہے۔",
+            "ar": "لا يُنتفع بها في سداد زكاة أو التزامات بل يُتخلص منها في المصالح العامة والفقراء.",
+            "hi": "AAOIFI मानक 21 के अनुसार अशुद्ध राशि का व्यक्तिगत लाभ या ज़कात के बिना दान आवश्यक है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Audit your business bank accounts, catalog items, and marketing channels; flag any Shubhah item and plan remediation.",
+        "ur": "اپنے کاروبار کے بینک کھاتوں، مصنوعات اور اشتہارات کا آڈٹ کر کے کسی بھی مشتبہ پہلو کی اصلاح کا منصوبہ بنائیں۔",
+        "ar": "افحص حساباتك المصرفية وقائمة منتجاتك لإزالة أي شبهة.",
+        "hi": "अपने बैंक खाते, उत्पाद सूची और विज्ञापनों की जांच कर किसी भी संदिग्ध पहलू को सुधारें।"
+      },
+      "sources": [
+        { "title": "Quran 2:267 & 4:29", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/2/267" },
+        { "title": "AAOIFI Shariah Standard No. 21", "category": "contemporary_resolution", "attribution": "AAOIFI", "url": "https://aaoifi.com/shariah-standards-3/?lang=en" }
+      ]
+    },
+    {
+      "id": "lesson_l1_m4",
+      "level": 1,
+      "moduleNumber": 4,
+      "moduleTitle": {
+        "en": "Module 4: Honesty, Amanah & Business Character",
+        "ur": "ماڈیول 4: دیانتداری، امانت اور تجارتی اخلاق",
+        "ar": "الوحدة ٤: الصدق والأمانة وأخلاق التاجر",
+        "hi": "मॉड्यूल 4: ईमानदारी, अमानत और व्यावसायिक चरित्र"
+      },
+      "title": {
+        "en": "Truthfulness, Defect Disclosure, Anti-Hoarding & Ethical Marketing",
+        "ur": "سچائی، عیب کا اظہار، ذخیرہ اندوزی کی حرمت اور بااخلاق تشہیر",
+        "ar": "الإبانة ومنع الغش والاحتكار والنجش",
+        "hi": "सच्चाई, दोष प्रकटीकरण, जमाखोरी निषेध और नैतिक विज्ञापन"
+      },
+      "primaryEvidenceCategory": "authentic_hadith",
+      "learningObjectives": {
+        "en": [
+          "Apply Sahih Muslim 102 ('Whoever deceives us is not one of us') across product quality and ads.",
+          "Identify Najash (fake bidding/reviews), Ihtikar (harmful hoarding), and false oaths.",
+          "Embed Amanah (4:58) into customer service and vendor stewardship."
+        ],
+        "ur": [
+          "صحیح مسلم 102 ('جس نے دھوکہ دیا وہ ہم میں سے نہیں') کو مصنوعات اور مارکیٹنگ پر لاگو کریں۔",
+          "نجش (فرضی بولی/جعلی ریویوز)، احتکار (ذخیرہ اندوزی) اور جھوٹی قسموں کی حرمت جانیں۔",
+          "النساء 4:58 کے تحت امانت داری کو گاہک اور سپلائر تعلقات کی بنیاد بنائیں۔"
+        ],
+        "ar": [
+          "تطبيق حديث مسلم ١٠٢ في منع الغش والنجش والاحتكار والأيمان الكاذبة."
+        ],
+        "hi": [
+          "सहीह मुस्लिम 102 को उत्पाद गुणवत्ता व मार्केटिंग में लागू करें तथा नकली रिव्यू व जमाखोरी से बचें।"
+        ]
+      },
+      "introduction": {
+        "en": "When the Prophet ﷺ passed a heap of grain in Madinah and felt dampness hidden beneath dry grain, he rebuked concealment: 'Why did you not place it on top so people could see it? Whoever deceives us is not of us' (Sahih Muslim 102).",
+        "ur": "نبی اکرم ﷺ نے بازارِ مدینہ میں اوپر خشک اور اندر بھیگا اناج دیکھ کر فرمایا: تم نے بھیگا اوپر کیوں نہ رکھا تاکہ لوگ دیکھ سکیں؟ جس نے دھوکہ دیا وہ ہم میں سے نہیں (صحیح مسلم 102)۔",
+        "ar": "مر النبي ﷺ على صبرة طعام فأدخل يده فنالت أصابعه بللاً، فقال: أفلا جعلته فوق الطعام كي يراه الناس! من غش فليس مني (مسلم ١٠٢).",
+        "hi": "नबी ﷺ ने बाज़ार में सूखे अनाज के नीचे गीला अनाज देखकर फरमाया: ऊपर क्यों नहीं रखा ताकि लोग देख सकें? जिसने धोखा दिया वह हममें से नहीं (सहीह मुस्लिम 102)।"
+      },
+      "explanationUr": "دیانت اور امانت (النساء 4:58) اسلامی کاروبار کی روح ہے۔ اس کے تحت: (1) مال کا ہر عیب خریدار کو صاف بتانا، (2) ملاوٹ، جھوٹے اشتہارات اور ایڈیٹ شدہ جعلی تصویروں سے بچنا، (3) جھوٹے فائیو اسٹار ریویوز یا فرضی خریداری (نجش) سے گریز، (4) مہنگائی پیدا کرنے کے لیے ضروری اشیاء کی ذخیرہ اندوزی (احتکار) سے رکنا، اور (5) بات بات پر اللہ کی قسم کھا کر مال بیچنے سے پرہیز شامل ہے۔",
+      "explanationEn": "Honesty and trust (Surah An-Nisa 4:58) define Muslim commercial character. Key rules derived from Sahih Muslim 102 and Bukhari 2079 include: (1) Placing defects visibly—zero bait-and-switch photos or tampered dates; (2) Outlawing Najash—bidding up prices or buying fake five-star reviews/followers; (3) Prohibiting Ihtikar—hoarding essential goods to force artificial scarcity and price spikes; (4) Avoiding excessive or false swearing during sales pitch, which erases blessing even if it closes a quick deal.",
+      "explanationAr": "تقوم أخلاق التاجر المسلم على الصدق والأمانة (النساء ٥٨)، وإظهار العيوب دون تدليس (مسلم ١٠٢)، وتحريم التقييمات الوهمية والنجش، وتحريم الاحتكار المضِر بالناس، والنهي عن كثرة الحلف في البيع.",
+      "explanationHi": "ईमानदारी और अमानत (सूरह निसा 4:58) मुस्लिम व्यापारी के चरित्र की नींव हैं। इसके अंतर्गत हर दोष स्पष्ट बताना (मुस्लिम 102), नकली 5-स्टार रिव्यू (नजश) से बचना, कृत्रिम महंगाई के लिए जमाखोरी (इहतिकार) न करना, और बिक्री के लिए झूठी कसमें न खाना शामिल है।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": { "en": "Obligation to render trusts and act justly.", "ur": "امانتوں کی ادائیگی اور عدل و انصاف کا حکم۔", "ar": "أداء الأمانات والعدل بين الناس.", "hi": "अमानतों को अदा करने और न्याय का आदेश।" },
+          "businessRelevance": { "en": "Customer data, deposits, consignment goods, and product promises are Amanah.", "ur": "گاہک کا ڈیٹا، ایڈوانس رقم اور کوالٹی کا وعدہ سب امانت ہیں۔", "ar": "بيانات العملاء والعربون وجودة السلع أمانات واجبة الحفظ.", "hi": "ग्राहक डेटा, अग्रिम राशि और गुणवत्ता के वादे अमानत हैं।" }
+        }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079", "tirmidhi_1209"],
+      "classicalFiqh": {
+        "en": "Jurists mandate Hisbah (market ethical oversight) against adulteration, hoarding essentials (Ihtikar), and deceptive bidding (Najash), granting defrauded buyers cancellation rights.",
+        "ur": "فقہائے کرام ملاوٹ، احتکار اور نجش کو حرام اور دھوکہ کھانے والے خریدار کے لیے فسخِ بیع کا حقدار قرار دیتے ہیں۔",
+        "ar": "أقر الفقهاء الحسبة لمنع الغش والاحتكار والنجش وإثبات خيار التدليس للمشتري.",
+        "hi": "विद्वानों ने मिलावट, जमाखोरी व धोखे पर खरीदार को सौदा रद्द करने का अधिकार दिया है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Truth-in-advertising codes, anti-trust hoarding statutes, and verified-purchase review policies reinforce Prophetic ethics.",
+        "ur": "سچائی پر مبنی اشتہارات، ذخیرہ اندوزی کے خلاف قوانین اور مصدقہ ریویوز اسلامی اخلاقیات کی تائید کرتے ہیں۔",
+        "ar": "تتوافق قوانين مكافحة الاحتكار والإعلان الصادق مع الضوابط النبوية.",
+        "hi": "सत्य विज्ञापन और जमाखोरी विरोधी कानून इन्हीं नैतिक सिद्धांतों के अनुरूप हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Hanafis & Malikis apply Ihtikar strictly to food essentials (some expand to all public necessities like medicine/fuel under Hanbali/Shafi'i public-harm reasoning).",
+        "ur": "احناف و مالکیہ احتکار کو بنیادی غذائی اجناس تک خاص کرتے ہیں جبکہ بعض محققین و حنابلہ ہر عوامی ضرورت (ادویات، ایندھن) تک وسعت دیتے ہیں۔",
+        "ar": "قصر بعض الفقهاء الاحتكار على الأقوات ووسعه آخرون ليشمل كل ما يحتاج إليه الناس كالدواء والوقود.",
+        "hi": "कुछ विद्वान जमाखोरी को मुख्य अनाज तक और अन्य सभी आवश्यक वस्तुओं (दवा, ईंधन) तक लागू मानते हैं।"
+      },
+      "modernExample": {
+        "en": "An online seller refuses an agency offer to buy 200 fake positive reviews and explicitly labels refurbished electronics as Grade-B refurbished with battery health %.",
+        "ur": "آن لائن دکاندار جعلی ریویوز خریدنے سے انکار کرے اور ری فربشڈ فون پر واضح لکھے کہ یہ استعمال شدہ/ری فربشڈ ہے اور بیٹری ہیلتھ کتنی ہے۔",
+        "ar": "تاجر إلكتروني يرفض شراء تقييمات مزيفة ويصرح بحالة الجهاز المجدد ونسبة بطاريته.",
+        "hi": "ऑनलाइन विक्रेता नकली रिव्यू खरीदने से इनकार करता है और रीफर्बिश्ड फ़ोन की वास्तविक स्थिति स्पष्ट लिखता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Genuine unretouched product photos and honest review collection", "ur": "اصل تصویر، درست تفصیل اور حقیقی کسٹمر ریویوز", "ar": "صور حقيقية للسلعة وتقييمات صادقة", "hi": "उत्पाद की असली तस्वीर और वास्तविक ग्राहक समीक्षा" },
+          "prohibitedPractice": { "en": "Paid fake 5-star reviews, edited miracle before/after claims, hiding expiry", "ur": "پیسے دے کر جعلی ریویوز، جھوٹے اشتہارات یا ایکسپائری مٹانا", "ar": "شراء تقييمات مزيفة أو إعلانات مضللة أو طمس تاريخ الصلاحية", "hi": "पैसे देकर नकली रिव्यू, झूठे विज्ञापन या एक्सपायरी तारीख मिटाना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Paying influencers to claim they used a product they never tried.",
+          "Deleting negative factual reviews while displaying only paid praise."
+        ],
+        "ur": [
+          "بغیر استعمال کیے کسی مصنوع کی جھوٹی تعریف پر پیسے دے کر ویڈیو بنوانا۔",
+          "حقیقی منفی ریویو حذف کر کے صرف جھوٹی تعریفیں دکھانا۔"
+        ],
+        "ar": [
+          "الترويج الكاذب لمنتجات لم تُجرَّب، وحذف التقييمات النقدية الصادقة."
+        ],
+        "hi": [
+          "बिना उपयोग किए उत्पादों का झूठा प्रचार कराना और वास्तविक नकारात्मक समीक्षाएं हटाना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Show clear real photos + disclose blemishes/refurbishment upfront.",
+          "Zero fake bidding, fake scarcity countdowns, or purchased reviews.",
+          "Honor all advertised specs and return windows."
+        ],
+        "ur": [
+          "اصل تصویر لگائیں اور کسی بھی خرابی کو پہلے بیان کریں۔",
+          "جعلی ریویو، فرضی کاؤنٹ ڈاؤن اور دھوکے بازی سے مکمل اجتناب۔",
+          "اشتہار کے مطابق معیار اور واپسی کی پالیسی پوری کریں۔"
+        ],
+        "ar": [
+          "صور ومواصفات صادقة، ومنع التقييمات والندرة الوهمية."
+        ],
+        "hi": [
+          "सही तस्वीर व दोष बताएं, नकली कमी व फर्जी रिव्यू न लगाएं।"
+        ]
+      },
+      "summary": {
+        "en": "Truthful disclosure builds lasting trust and Prophetic Barakah; deceit destroys both.",
+        "ur": "سچائی اور امانت دائمی اعتماد اور برکت کا سبب ہے؛ دھوکہ دونوں کو تباہ کر دیتا ہے۔",
+        "ar": "الصدق والأمانة يصنعان الثقة والبركة، والغش يمحق البركة.",
+        "hi": "सच्चाई और अमानत विश्वास व बरकत लाती है; धोखा दोनों नष्ट कर देता है।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l1_m4_1",
+          "question": {
+            "en": "Paying associates to post fake 5-star reviews or artificially bid up auction prices violates which prophetic prohibition?",
+            "ur": "جعلی فائیو اسٹار ریویو دلوانا یا قیمت بڑھانے کے لیے فرضی بولی لگوانا کس ممانعت میں آتا ہے؟",
+            "ar": "دفع مقابل لوضع تقييمات مزيفة أو رفع سعر المزاد صورياً يدخل في نهي:",
+            "hi": "नकली 5-स्टार रिव्यू खरीदना या कृत्रिम रूप से बोली बढ़ाना किस निषेध में आता है?"
+          },
+          "options": {
+            "en": [
+              "Ghish (deception) and Najash (artificial bidding/manipulation)",
+              "Murabaha disclosure",
+              "Hawalah clearing"
+            ],
+            "ur": [
+              "غِش (دھوکہ دہی) اور نجش (فرضی قیمت بڑھانا)",
+              "مرابحہ کا اصول",
+              "حوالہ کا عقد"
+            ],
+            "ar": [
+              "الغش والنجش المحرم",
+              "أصل المرابحة"
+            ],
+            "hi": [
+              "ग़िश (धोखा) और नजश (कृत्रिम हेरफेर)",
+              "मुराबहा नियम"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Deceiving customers via fake signals or inflated bids violates Muslim 102 and the prohibition of Najash.",
+            "ur": "جعلی تعریفوں یا فرضی بولی سے گاہک کو دھوکہ دینا غِش اور نجش ہونے کی وجہ سے حرام ہے۔",
+            "ar": "التغرير بالمشترين بالتقييمات أو العروض الوهمية غش ونجش محرم.",
+            "hi": "नकली संकेतों से ग्राहकों को भ्रमित करना हराम धोखा और नजश है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Review your top product/service listing and check every claim against Muslim 102 (could any buyer feel misled upon delivery?).",
+        "ur": "اپنی سب سے اہم مصنوع یا سروس کے اشتہار کا صحیح مسلم 102 کی روشنی میں جائزہ لیں کہ آیا کوئی گاہک دھوکہ محسوس تو نہیں کرے گا؟",
+        "ar": "راجع إعلان منتجك الرئيسي وفق حديث مسلم ١٠٢ للتحقق من عدم وجود أي تضليل.",
+        "hi": "अपने मुख्य उत्पाद विज्ञापन की जांच करें कि डिलीवरी पर कोई ग्राहक भ्रमित न महसूस करे।"
+      },
+      "sources": [
+        { "title": "Quran 4:58", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/4/58" },
+        { "title": "Sahih Muslim 102", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/muslim:102" }
+      ]
+    },
+    {
+      "id": "lesson_l1_m5",
+      "level": 1,
+      "moduleNumber": 5,
+      "moduleTitle": {
+        "en": "Module 5: Commercial Life of Prophet Muhammad ﷺ",
+        "ur": "ماڈیول 5: نبی اکرم ﷺ کی تجارتی و عملی زندگی",
+        "ar": "الوحدة ٥: السيرة التجارية للنبي محمد ﷺ",
+        "hi": "मॉड्यूल 5: पैग़ंबर मुहम्मद ﷺ का व्यापारिक जीवन"
+      },
+      "title": {
+        "en": "As-Sadiq Al-Amin in Makkah, Mudarabah with Khadijah (RA) & Madinah Market Justice",
+        "ur": "الصادق الامین، حضرت خدیجہؓ کے ساتھ تجارتی مضاربت اور مدینہ کا عادلانہ بازار",
+        "ar": "الصادق الأمين، والمضاربة مع خديجة رضي الله عنها، وتنظيم سوق المدينة",
+        "hi": "अस-सादिक़ अल-अमीन, हज़रत ख़दीजा (रज़ि.) संग व्यापार और मदीना बाज़ार व्यवस्था"
+      },
+      "primaryEvidenceCategory": "classical_fiqh",
+      "learningObjectives": {
+        "en": [
+          "Study verified historical reports of Prophet Muhammad ﷺ as shepherd, merchant, and Mudarabah partner.",
+          "Understand why his honesty earned the Makkan title As-Sadiq Al-Amin before Prophethood.",
+          "Learn how he established Madinah's tax-free, deception-free ethical marketplace while preserving historical rigor."
+        ],
+        "ur": [
+          "نبی اکرم ﷺ کی چرواہی، تجارت اور حضرت خدیجہؓ کی مضاربت کے مستند تاریخی واقعات کا مطالعہ کریں۔",
+          "سمجھیں کہ نبوت سے قبل آپ ﷺ کو 'الصادق الامین' کا لقب کس دیانتداری پر ملا۔",
+          "مدینہ منورہ میں دھوکے اور استحصال سے پاک عادلانہ بازار کے قیام کے اصول سیکھیں۔"
+        ],
+        "ar": [
+          "دراسة الجوانب الموثقة من سيرة النبي ﷺ في الرعي والتجارة والمضاربة وتنظيم سوق المدينة."
+        ],
+        "hi": [
+          "नबी ﷺ के चरवाहे, व्यापारी व हज़रत ख़दीजा (रज़ि.) के साथ प्रमाणित व्यापार और मदीना बाज़ार सुधार को समझें।"
+        ]
+      },
+      "introduction": {
+        "en": "Long before revelation, Muhammad ﷺ worked physically (pasturing sheep—Bukhari 2262) and managed long-distance trade with spotless transparency, demonstrating that Prophetic integrity shines inside real commerce.",
+        "ur": "اعلانِ نبوت سے پہلے نبی اکرم ﷺ نے بکریاں چرائیں (صحیح بخاری 2262) اور مکہ و شام کی تجارت میں ایسی بے داغ دیانت دکھائی کہ پورا معاشرہ آپ ﷺ کو الصادق الامین کہتا تھا۔",
+        "ar": "عمل النبي ﷺ برعي الغنم (البخاري ٢٢٦٢) ثم بالتجارة قبل البعثة بأمانة شهد لها أهل مكة قاطبة بلقب الصادق الأمين.",
+        "hi": "नबुव्वत से पहले ही नबी ﷺ ने बकरियां चराईं (बुखारी 2262) और ऐसी ईमानदारी से व्यापार किया कि मक्का ने उन्हें 'अस-सादिक़ अल-अमीन' कहा।"
+      },
+      "explanationUr": "تاریخی طور پر ثابت شدہ اہم نکات (غیر مصدقہ قصوں سے الگ کر کے): (1) بچپن میں مکہ والوں کی بکریاں اجرت پر چرائیں (صحیح بخاری 2262) جس سے محنت کا وقار ثابت ہوتا ہے، (2) چچا ابو طالب کے ساتھ تجارتی اسفار سے تجربہ حاصل کیا، (3) حضرت خدیجہ بنت خویلدؓ کی امانت داری پر مبنی تجارتی شراکت/مضاربت میں شام کا سفر کیا جہاں غلام میسرہ نے آپ ﷺ کے اخلاق اور برکت کی گواہی دی (سیرت ابن ہشام و طبقات ابن سعد)، (4) اہلِ مکہ آپ ﷺ کو الصادق الامین کہتے اور امانتیں رکھواتے تھے، (5) ہجرت کے بعد مدینہ میں مستقل بازار قائم کیا جہاں احتکار، ناپ تول کی چوری اور سودی استحصال پر پابندی لگائی۔ (تحقیقی نوٹ: تجارتی منافع کے مبالغہ آمیز قصے جو سنداً ثابت نہ ہوں بیان نہیں کیے جانے چاہئیں۔)",
+      "explanationEn": "Verified Seerah highlights (strictly separating established history from unverified anecdotes): (1) Every Prophet shepherded sheep, including Muhammad ﷺ for a modest wage in Makkah (Sahih al-Bukhari 2262)—proving dignified manual labor; (2) Accompanied Abu Talib on caravan trade routes in youth, learning supplier pricing and logistics; (3) Managed trade capital for Khadijah bint Khuwaylid (RA) on a profit-sharing/commission basis to Busra/Syria, accompanied by Maysarah who witnessed his extraordinary honesty, resulting in blessed returns and marriage; (4) Pre-Islamic Makkans entrusted valuables to him as 'Al-Amin'; (5) In Madinah, established a fair marketplace free from private monopolies, unfair tolls, Riba, and deceit. (Scholarly note: Unverified legends with invented profit percentages are omitted.)",
+      "explanationAr": "من الثابت في السيرة الصحيحة (مع تمييزه عن المبالغات غير الموثقة): (١) رعي الغنم بالقراريط في مكة (البخاري ٢٢٦٢)، (٢) التعلم في رحلات الشام مع أبي طالب، (٣) خروجه بمال خديجة رضي الله عنها في رحلة الشام مع ميسرة وما ظهر من أمانته وبركته (سيرة ابن هشام)، (٤) حفظ أمانات أهل مكة بلقب الصادق الأمين، (٥) إقامة سوق المدينة خالياً من الظلم والمكوس والغش.",
+      "explanationHi": "सीरत के प्रमाणित तथ्य (बिना अपुष्ट कहानियों के): (1) मक्का में बकरियां चराकर मेहनत की गरिमा दिखाई (बुखारी 2262), (2) अबू तालिब के साथ व्यापारिक यात्राओं में अनुभव लिया, (3) हज़रत ख़दीजा (रज़ि.) की पूंजी से शाम की व्यापारिक यात्रा में अद्वितीय ईमानदारी व बरकत दिखाई (सीरत इब्न हिशाम), (4) मक्का में अमानतों के लिए 'अस-सादिक़ अल-अमीन' कहलाए, और (5) मदीना में धोखे व सूद से मुक्त न्यायसंगत बाज़ार स्थापित किया।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 4,
+          "startAyah": 58,
+          "endAyah": 58,
+          "contextNote": { "en": "Prophetic stewardship of Makkan trusts (Amanat).", "ur": "مکہ کے مخالفین کی امانتیں بھی ہجرت کے وقت واپس پہنچانے کا اہتمام۔", "ar": "أداء الأمانات حتى للمخالفين عند الهجرة.", "hi": "हिजरत के समय भी विरोधियों की अमानतें लौटाने का उदाहरण।" },
+          "businessRelevance": { "en": "Custodial integrity holds even toward difficult competitors or rivals.", "ur": "امانتداری ہر گاہک اور حریف کے ساتھ یکساں فرض ہے۔", "ar": "وجوب حفظ الأمانة مع جميع المتعاملين.", "hi": "ईमानदारी हर ग्राहक व प्रतिस्पर्धी के साथ समान रूप से अनिवार्य है।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2072", "bukhari_2079", "tirmidhi_1209"],
+      "classicalFiqh": {
+        "en": "Ibn Hisham, Al-Tabari, and Bukhari 2262 establish that Prophetic enterprise combined hired labor (Ijarah), capital agency/Mudarabah, and fair market regulation (Hisbah).",
+        "ur": "سیرت ابن ہشام اور صحیح بخاری 2262 ثابت کرتے ہیں کہ نبوی معاشی زندگی میں اجرت، مضاربت اور عادلانہ نظامِ بازار سب شامل تھے۔",
+        "ar": "أثبتت السيرة الموثقة ممارسة النبي ﷺ للإجارة والمضاربة وإقرار حرية السوق العادلة.",
+        "hi": "प्रमाणित सीरत नबी ﷺ द्वारा श्रम, मुदारबाह और न्यायपूर्ण बाज़ार नियम स्थापित करना सिद्ध करती है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Modern founders replicate Prophetic governance by honoring escrow/client funds (Amanah), checking supplier ethics, and refusing deceptive hype.",
+        "ur": "جدید بانی حضرات گاہک کی امانتوں کی حفاظت اور دیانتدارانہ سپلائی چین سے سنتِ نبوی ﷺ پر عمل کر سکتے ہیں۔",
+        "ar": "تحاكي الشركات الحديثة ذلك بحفظ أمانات العملاء والشفافية في العقود.",
+        "hi": "आधुनिक संस्थापक ग्राहक अमानत की रक्षा और पारदर्शी कार्यप्रणाली से इस सुन्नत का पालन करते हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "Historians note two narrations on the Khadijah (RA) arrangement—either Mudarabah profit-sharing or hired/rewarded agency (Ju'alah/Ijarah); both prove lawful capital-labor synergy.",
+        "ur": "مؤرخین نے حضرت خدیجہؓ سے معاہدے کی دو تعبیرات ذکر کی ہیں: مضاربت (نفع میں شرکت) یا اجرت/جعالہ؛ دونوں حلال شراکت کی مثالیں ہیں۔",
+        "ar": "ورد في عقد خديجة رضي الله عنها كونه مضاربة أو عملاً بأجر معلوم، وكلاهما نموذج مشروع.",
+        "hi": "इतिहासकार हज़रत ख़दीजा (रज़ि.) संग समझौते को मुदारबाह या पारिश्रमिक आधारित कार्य मानते हैं; दोनों हलाल हैं।"
+      },
+      "modernExample": {
+        "en": "A founder returning from a trade expo gives 100% transparent supplier receipts to angel investors and refuses to touch customer prepayments for personal expenses.",
+        "ur": "ایک تاجر تجارتی سفر کے بعد سرمایہ کار کو مکمل سچی رسیدیں پیش کرے اور گاہک کے ایڈوانس کو ذاتی خرچ میں ہرگز نہ ملائے۔",
+        "ar": "رائد أعمال يقدم فواتير واضحة للممولين ويفصل ودائع العملاء عن مصروفاته الشخصية.",
+        "hi": "एक उद्यमी व्यापार यात्रा के बाद निवेशक को पूरे सही बिल दिखाता है और ग्राहक की अग्रिम राशि अलग सुरक्षित रखता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Transparent expense & profit reporting to capital partners", "ur": "سرمایہ کار کو مکمل دیانتداری سے سچا حساب پیش کرنا", "ar": "الأمانة التامة في الحسابات أمام الممولين", "hi": "निवेशकों को पूरी ईमानदारी से सही हिसाब देना" },
+          "prohibitedPractice": { "en": "Padding supplier invoices or inventing unverified miracle stories to market courses", "ur": "جعلی رسیدیں بنانا یا کاروباری تشہیر کے لیے غیر مستند قصے گھڑنا", "ar": "تضخيم الفواتير أو نسبة قصص غير موثقة للسيرة", "hi": "बिल बढ़ाकर दिखाना या विपणन हेतु अपुष्ट कहानियां जोड़ना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Citing unverified or fabricated business anecdotes about the Prophet ﷺ without checking classical sources.",
+          "Treating investor Mudarabah money like personal pocket cash."
+        ],
+        "ur": [
+          "تجارتی بیانات میں نبی اکرم ﷺ کی طرف غیر مستند یا من گھڑت قصے منسوب کرنا۔",
+          "مضاربت کے سرمائے کو اپنا ذاتی مال سمجھ کر خرچ کرنا۔"
+        ],
+        "ar": [
+          "نسبة حكايات تجارية غير ثابتة للسيرة، أو خلط مال الشراكة بالمال الشخصي."
+        ],
+        "hi": [
+          "नबी ﷺ से अपुष्ट व्यापारिक कहानियां जोड़ना, या साझेदारी के धन को निजी जेब का मान लेना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Maintain strict separation between company/client escrow and personal cash.",
+          "Cite only verified Seerah events (Bukhari/Muslim/Ibn Hisham) in business talks.",
+          "Honor financial commitments even under difficult market pressure."
+        ],
+        "ur": [
+          "کاروباری و امانت کی رقم اور ذاتی خرچ الگ رکھیں۔",
+          "صرف مستند تاریخی و حدیثی حوالے بیان کریں۔",
+          "مشکل حالات میں بھی معاہدات اور امانتوں کی حفاظت کریں۔"
+        ],
+        "ar": [
+          "فصل حسابات الشركة والأمانات، والتحقق من صحة الروايات قبل نقلها."
+        ],
+        "hi": [
+          "व्यापार व अमानत के खाते निजी खर्च से अलग रखें और केवल प्रमाणित घटनाएं बताएं।"
+        ]
+      },
+      "summary": {
+        "en": "Muhammad ﷺ proved through verified labor, caravan trust, and Madinah's market order that pristine honesty generates supreme moral authority and blessed commerce.",
+        "ur": "نبی اکرم ﷺ نے ثابت فرمایا کہ محنت، بے داغ امانت اور منصفانہ بازار ہی سب سے بڑی اخلاقی قوت اور برکت کا سرچشمہ ہیں۔",
+        "ar": "أثبت النبي ﷺ أن العمل والأمانة وعدالة السوق هي الأساس الحقيقي للبركة والنجاح.",
+        "hi": "नबी ﷺ ने सिद्ध किया कि मेहनत, अमानतदारी और न्यायपूर्ण बाज़ार ही सच्ची बरकत का आधार हैं।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l1_m5_1",
+          "question": {
+            "en": "What authentic trade principle is demonstrated in Sahih al-Bukhari 2262 regarding the early life of the Prophet ﷺ?",
+            "ur": "صحیح بخاری 2262 میں نبی اکرم ﷺ کی ابتدائی عملی زندگی کا کون سا مستند پہلو بیان ہوا ہے؟",
+            "ar": "ما العمل الموثق في صحيح البخاري ٢٢٦٢ من حياة النبي ﷺ المبكرة؟",
+            "hi": "सहीह बुखारी 2262 में नबी ﷺ के प्रारंभिक जीवन के किस प्रमाणित कार्य का उल्लेख है?"
+          },
+          "options": {
+            "en": [
+              "He tended sheep for the people of Makkah for modest wages (Qirats), upholding dignity of manual work",
+              "He ran an interest money-lending house",
+              "He relied solely on begging"
+            ],
+            "ur": [
+              "آپ ﷺ نے اہلِ مکہ کی بکریاں اجرت (قیراط) پر چرائیں، جس سے محنت کی عظمت ثابت ہوتی ہے",
+              "سودی لین دین کیا",
+              "سوال پر گزارا کیا"
+            ],
+            "ar": [
+              "رعي الغنم لأهل مكة على قراريط تقديراً للعمل الكسبي",
+              "العمل بالربا"
+            ],
+            "hi": [
+              "आपने मक्का वालों की बकरियां पारिश्रमिक पर चराईं, जिससे श्रम की गरिमा सिद्ध होती है",
+              "सूदी लेनदेन किया"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Sahih al-Bukhari 2262 explicitly narrates that every Prophet pastured sheep, and Muhammad ﷺ did so for Makkan wages.",
+            "ur": "صحیح بخاری 2262 میں صراحت ہے کہ ہر نبی نے بکریاں چرائیں اور آپ ﷺ نے اہلِ مکہ کی بکریاں اجرت پر چرائیں۔",
+            "ar": "في صحيح البخاري ٢٢٦٢: كنت أرعاها على قراريط لأهل مكة.",
+            "hi": "सहीह बुखारी 2262 में इसका स्पष्ट वर्णन है।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Audit how customer deposits or client funds are held in your workflow and ensure they sit in a dedicated separated ledger.",
+        "ur": "جائزہ لیں کہ آپ کے کام میں گاہکوں کا ایڈوانس یا امانت الگ کھاتے میں محفوظ رہتا ہے یا نہیں۔",
+        "ar": "افحص آلية حفظ ودائع العملاء في عملك وتأكد من عزلها محاسبياً.",
+        "hi": "जांचें कि आपके कार्य में ग्राहकों की अग्रिम राशि या अमानत अलग खाते में सुरक्षित है या नहीं।"
+      },
+      "sources": [
+        { "title": "Sahih al-Bukhari 2262 & Seerah Ibn Hisham", "category": "authentic_hadith", "attribution": "Sunnah.com & Classical Seerah", "url": "https://sunnah.com/bukhari:2262" },
+        { "title": "Quran 4:58", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/4/58" }
+      ]
+    },
+    {
+      "id": "lesson_l1_m6",
+      "level": 1,
+      "moduleNumber": 6,
+      "moduleTitle": {
+        "en": "Module 6: Business Lessons from the Sahabah (RA)",
+        "ur": "ماڈیول 6: صحابہ کرامؓ کے تجارتی اسباق",
+        "ar": "الوحدة ٦: دروس التجارة من سيرة الصحابة رضي الله عنهم",
+        "hi": "मॉड्यूल 6: सहाबा-ए-किराम (रज़ि.) से व्यापारिक सबक"
+      },
+      "title": {
+        "en": "Abdur Rahman ibn Awf, Uthman ibn Affan, Abu Bakr & Talhah (RA)",
+        "ur": "حضرت عبد الرحمٰن بن عوفؓ، عثمان غنیؓ، ابوبکر صدیقؓ اور طلحہؓ کے مستند کاروباری اصول",
+        "ar": "عبد الرحمن بن عوف، عثمان بن عفان، أبو بكر الصديق، وطلحة بن عبيد الله رضي الله عنهم",
+        "hi": "अब्दुर्रहमान बिन औफ़, उस्मान, अबू बक्र व तल्हा (रज़ि.) के व्यापारिक सिद्धांत"
+      },
+      "primaryEvidenceCategory": "authentic_hadith",
+      "learningObjectives": {
+        "en": [
+          "Learn self-reliance & agile trade from Abdur Rahman ibn Awf (RA) in Sahih al-Bukhari 2048.",
+          "Analyze Uthman ibn Affan's (RA) supply reliability and Waqf philanthropy.",
+          "Note Abu Bakr's (RA) public-trust separation and Talhah's (RA) agricultural stewardship while separating verified history from unverified tales."
+        ],
+        "ur": [
+          "صحیح بخاری 2048 سے حضرت عبد الرحمٰن بن عوفؓ کی خود انحصاری اور مدینہ بازار کا سبق سیکھیں۔",
+          "حضرت عثمان غنیؓ کی فراہمیِ رسد اور بیرِ رومہ جیسے اوقاف کا جائزہ لیں۔",
+          "حضرت ابوبکر صدیقؓ کی سرکاری و تجارتی امانت اور حضرت طلحہؓ کی زراعت و سخاوت کا مستند مطالعہ کریں۔"
+        ],
+        "ar": [
+          "استخلاص المنهج التجاري للصحابة من الروايات الصحيحة مع التمييز عن القصص الضعيفة."
+        ],
+        "hi": [
+          "सहीह बुखारी 2048 से आत्मनिर्भरता, वक़्फ़, सार्वजनिक अमानत और कृषि निवेश के प्रामाणिक सिद्धांत सीखें।"
+        ]
+      },
+      "introduction": {
+        "en": "When Abdur Rahman ibn Awf (RA) arrived in Madinah empty-handed, he politely declined passive handouts from Sa'd ibn ar-Rabi' (RA) and asked: 'Point me to the market' (Sahih al-Bukhari 2048). Within days of honest buying and selling of cheese and ghee, he stood independently on his feet.",
+        "ur": "مدینہ منورہ پہنچ کر حضرت عبد الرحمٰن بن عوفؓ نے بھائی سعد بن ربیعؓ کی نصف دولت کی پیشکش شکریہ کے ساتھ ٹال کر فرمایا: 'مجھے صرف بازار کا راستہ بتا دیں' (صحیح بخاری 2048)۔ پنیر اور گھی کی معمولی خرید و فروخت سے جلد ہی خود کفیل ہو گئے۔",
+        "ar": "لما قدم عبد الرحمن بن عوف رضي الله عنه المدينة وعرض عليه سعد بن الربيع نصف ماله قال: بارك الله لك في أهلك ومالك، دلّوني على السوق (البخاري ٢٠٤٨).",
+        "hi": "मदीना पहुंचने पर अब्दुर्रहमान बिन औफ़ (रज़ि.) ने आधी संपत्ति का प्रस्ताव सम्मानपूर्वक अस्वीकार कर कहा: 'मुझे बस बाज़ार का रास्ता बता दें' (बुखारी 2048)।"
+      },
+      "explanationUr": "مستند روایات سے صحابہ کرامؓ کے 4 سنہری کاروباری اصول ملتے ہیں (غیر مصدقہ کہانیوں سے پرہیز کرتے ہوئے): (1) حضرت عبد الرحمٰن بن عوفؓ (بخاری 2048): خود انحصاری، کم نفع پر تیز رفتار گردشِ سرمایہ (کثرتِ بیع) اور خریداری میں عیب نہ ڈھونڈنا، (2) حضرت عثمان بن عفانؓ (بخاری 2778): مدینہ کے پانی کے بحران میں بیرِ رومہ خرید کر وقفِ عام کرنا اور بحرانی حالات میں منافع خوری کے بجائے قافلے اللہ کی راہ میں وقف کر دینا، (3) حضرت ابوبکر صدیقؓ (بخاری 2070 و مسند احمد): کپڑے کی تجارت جاری رکھنا اور خلافت کے وقت اپنا نجی کاروبار و بیت المال بالکل الگ رکھنا، (4) حضرت طلحہ بن عبید اللہؓ: عراق و مدینہ کی زرخیز زمینوں میں سرمایہ کاری اور روزانہ غریبوں و مقروضوں کی کفالت۔",
+      "explanationEn": "Verified narrations reveal four enduring Sahabah commerce habits (carefully omitting unverified anecdotes): (1) Abdur Rahman ibn Awf (RA) (Bukhari 2048): preferred market entry over passive aid, built liquidity via fast inventory turnover in staples (ghee & cheese), and invested real estate/farms wisely; (2) Uthman ibn Affan (RA) (Bukhari 2778; Tirmidhi 3703): acquired the well of Ruma to break a water monopoly and donated it freely as public Waqf, prioritizing community supply over monopolistic hoarding; (3) Abu Bakr as-Siddiq (RA) (Bukhari 2070): practiced cloth commerce and, upon becoming Caliph, insisted on separating public Bayt al-Mal accountability from personal trade; (4) Talhah ibn Ubaydullah (RA) (Tabaqat Ibn Sa'd): cultivated productive agricultural lands with transparent partnership yields while relieving debtors heavily.",
+      "explanationAr": "نستخلص من الروايات الصحيحة (دون القصص الضعيفة): (١) عبد الرحمن بن عوف: المبادرة بالعمل وتدوير رأس المال في السلع الأساسية (البخاري ٢٠٤٨)، (٢) عثمان بن عفان: كسر احتكار المياه بشراء بئر رومة ووقفها للناس (البخاري ٢٧٧٨)، (٣) أبو بكر الصديق: التجارة في البزّ والفصل التام بين المال العام والخاص عند تولي الخلافة، (٤) طلحة بن عبيد الله: استثمار الأراضي الزراعية وتفريج كربات الغارمين.",
+      "explanationHi": "प्रमाणित घटनाओं से चार सबक: (1) अब्दुर्रहमान बिन औफ़ (बुखारी 2048): मदद के बजाय बाज़ार से तेज़ कारोबार शुरू किया; (2) उस्मान (बुखारी 2778): रूमा कुएं को खरीदकर एकाधिकार तोड़ा और सार्वजनिक वक़्फ़ किया; (3) अबू बक्र (बुखारी 2070): कपड़ा व्यापार किया और ख़लीफ़ा बनने पर निजी व सरकारी कोष अलग रखा; (4) तल्हा (रज़ि.): कृषि निवेश से कर्ज़दारों की सहायता की।",
+      "quranRefSpecs": [
+        {
+          "surahNumber": 9,
+          "startAyah": 60,
+          "endAyah": 60,
+          "contextNote": { "en": "Structured distribution of Zakat across eight revealed categories.", "ur": "زکوٰۃ کے آٹھ قرآنی مصارف (فقراء، مساکین، مقروض وغیرہ)۔", "ar": "مصارف الزكاة الثمانية.", "hi": "ज़कात के आठ क़ुरआनी मद।" },
+          "businessRelevance": { "en": "Sahabah merchants treated profit as a pipeline to fund poverty relief and debt emancipation.", "ur": "صحابہ تاجر منافع کو غریبوں اور مقروضوں کی آزادی کا ذریعہ بناتے تھے۔", "ar": "كان تجار الصحابة يسخّرون الأرباح في سد حاجة الفقراء والغارمين.", "hi": "सहाबा व्यापारी लाभ से गरीबों और कर्ज़दारों को राहत देते थे।" }
+        }
+      ],
+      "hadithIds": ["bukhari_2072", "tirmidhi_1209"],
+      "classicalFiqh": {
+        "en": "Ibn Hajar's Fath al-Bari notes on Bukhari 2048 highlight high-volume modest-margin trade, refusing reliance on handouts when able-bodied, and verifying reports before teaching Sahabah biographies.",
+        "ur": "فتح الباری میں امام ابن حجرؒ نے بخاری 2048 کے تحت محنت کی ترغیب اور مستند تاریخی تحقیق پر زور دیا ہے۔",
+        "ar": "أبرز ابن حجر في فتح الباري (٢٠٤٨) فضيلة التعفف عن المسألة والمبادرة إلى التجارة الحلال.",
+        "hi": "फ़तह अल-बारी में इब्न हजर ने आत्मनिर्भर व्यापार और प्रमाणित इतिहास पर ज़ोर दिया है।"
+      },
+      "contemporaryGuidance": {
+        "en": "Entrepreneurs practice the Sahabah model via fast cash-cycle retail, public-good Waqf endowments, and strict public-private expense firewalls.",
+        "ur": "جدید کاروباری حضرات تیز گردشِ سرمایہ، رفاہی اوقاف اور سرکاری و ذاتی کھاتوں کی علیحدگی سے صحابہ کی پیروی کر سکتے ہیں۔",
+        "ar": "تطبيق ذلك اليوم يكون بتسريع دوران المخزون والوقف الخيري وعزل الذمم المالية.",
+        "hi": "आधुनिक उद्यमी तेज़ इन्वेंटरी टर्नओवर, वक़्फ़ और निजी-सरकारी खातों की शुद्धता से इसे अपनाते हैं।"
+      },
+      "madhhabDifferences": {
+        "en": "All schools validate public utility Waqf (following Uthman's well of Ruma in Bukhari 2778) and private-public fiduciary separation.",
+        "ur": "تمام مکاتبِ فکر رفاہِ عامہ کے لیے وقف (جیسا کہ بیرِ رومہ) اور سرکاری امانتوں کی علیحدگی کو متفقہ شرعی سنت مانتے ہیں۔",
+        "ar": "تجمع المذاهب على مشروعية الوقف الخيري العام كوقف بئر رومة.",
+        "hi": "सभी मज़हब सार्वजनिक वक़्फ़ (जैसे रूमा कुआं) और खातों की पारदर्शिता पर एकमत हैं।"
+      },
+      "modernExample": {
+        "en": "A wholesaler grows steadily on 4–6% rapid-turnover margin across essential groceries instead of hoarding for 40% crisis markup, and dedicates 5% equity dividends to a clean-water community Waqf.",
+        "ur": "ایک ہول سیل تاجر بحران میں 40 فیصد مہنگا بیچنے کے بجائے روزمرہ اشیاء پر مناسب کم نفع سے تیز کاروبار کرے اور صاف پانی کے منصوبے کے لیے وقف کرے۔",
+        "ar": "تاجر يعتمد على ربح يسير ودوران سريع بدلاً من استغلال الأزمات، ويخصص جزءاً لوقف خيري.",
+        "hi": "एक थोक व्यापारी संकट में मुनाफाखोरी के बजाय कम मार्जिन और तेज़ बिक्री से कमाता है तथा स्वच्छ जल वक़्फ़ बनाता है।"
+      },
+      "halalVsProhibited": [
+        {
+          "halalPractice": { "en": "Using business success to relieve community scarcity & debt", "ur": "تجارتی وسعت کو کمی اور قرض کے بوجھ کم کرنے کے لیے استعمال کرنا", "ar": "تسخير التجارة لرفع الحرج عن الناس", "hi": "व्यापारिक सफलता से समाज की कमी और कर्ज़ दूर करना" },
+          "prohibitedPractice": { "en": "Exploiting droughts/shortages or circulating fabricated millionaire Sahabah quotes", "ur": "بحران کا فائدہ اٹھا کر بلیک مارکیٹنگ کرنا یا صحابہ کی طرف من گھڑت واقعات منسوب کرنا", "ar": "استغلال الأزمات بالاحتكار أو نشر قصص واهية غير موثقة", "hi": "संकट में कालाबाजारी करना या सहाबा से अपुष्ट कहानियां जोड़ना" }
+        }
+      ],
+      "commonMistakes": {
+        "en": [
+          "Sharing viral motivational quotes attributed to Sahabah without verifying Hadith/historical chains.",
+          "Confusing extreme stinginess with frugality—Sahabah traded diligently specifically to give generously."
+        ],
+        "ur": [
+          "سوشل میڈیا پر صحابہؓ کے نام سے چلنے والے غیر مصدقہ کاروباری اقوال بغیر تحقیق کے آگے پھیلانا۔",
+          "بخل کو سادگی سمجھنا—صحابہؓ خوب محنت کر کے خوب سخاوت فرماتے تھے۔"
+        ],
+        "ar": [
+          "تداول قصص غير موثقة باسم الصحابة، أو الخلط بين البخل وحسن الإدارة."
+        ],
+        "hi": [
+          "सोशल मीडिया पर सहाबा के नाम से अपुष्ट प्रेरक उद्धरण फैलाना, या कंजूसी को सादगी समझना।"
+        ]
+      },
+      "complianceChecklist": {
+        "en": [
+          "Start lean with available skills & modest turnover before taking debt.",
+          "Separate business accounts from public/institutional funds completely.",
+          "Verify every Islamic business story before citing it in presentations."
+        ],
+        "ur": [
+          "قرض لینے سے پہلے اپنی مہارت اور دستیاب وسائل سے ہلکی ابتدا کریں۔",
+          "ادارے اور ذاتی کھاتے مکمل الگ رکھیں۔",
+          "کاروباری گفتگو میں صرف مستند حوالوں پر انحصار کریں۔"
+        ],
+        "ar": [
+          "البدء بالإمكانات المتاحة، وعزل الحسابات، والتحقق من مصادر السيرة."
+        ],
+        "hi": [
+          "कर्ज़ से पहले उपलब्ध कौशल से शुरुआत करें, खाते अलग रखें, और संदर्भ जांचें।"
+        ]
+      },
+      "summary": {
+        "en": "The merchant Sahabah modeled self-starting enterprise, fair circulation, incorruptible public-private separation, and generous Waqf impact.",
+        "ur": "تاجر صحابہؓ نے خود انحصاری، حلال گردشِ دولت، امانتداری اور رفاہی وقف کی بے مثال عملی مثالیں قائم کیں۔",
+        "ar": "قدّم تجار الصحابة نموذج المبادرة الذاتية والأمانة والوقف النافع.",
+        "hi": "व्यापारी सहाबा ने आत्मनिर्भर उद्यम, ईमानदारी और परोपकारी वक़्फ़ का आदर्श प्रस्तुत किया।"
+      },
+      "mcqs": [
+        {
+          "id": "mcq_l1_m6_1",
+          "question": {
+            "en": "What was Abdur Rahman ibn Awf's (RA) immediate response upon arriving in Madinah in Sahih al-Bukhari 2048?",
+            "ur": "صحیح بخاری 2048 کے مطابق مدینہ پہنچنے پر حضرت عبد الرحمٰن بن عوفؓ نے کیا درخواست کی؟",
+            "ar": "ماذا طلب عبد الرحمن بن عوف عند قدومه المدينة في البخاري ٢٠٤٨؟",
+            "hi": "सहीह बुखारी 2048 के अनुसार मदीना पहुंचने पर अब्दुर्रहमान बिन औफ़ (रज़ि.) ने क्या कहा?"
+          },
+          "options": {
+            "en": [
+              "Asked to be shown the marketplace so he could earn honestly himself",
+              "Accepted half of his host's wealth and retired",
+              "Borrowed money at interest"
+            ],
+            "ur": [
+              "مجھے بازار کا راستہ دکھا دیں تاکہ خود محنت سے تجارت کروں",
+              "نصف دولت لے کر آرام سے بیٹھ گئے",
+              "سودی قرض لیا"
+            ],
+            "ar": [
+              "دلّوني على السوق لأكتسب بنفسي",
+              "أخذ نصف المال وتقاعد"
+            ],
+            "hi": [
+              "मुझे बाज़ार का रास्ता दिखाएं ताकि मैं स्वयं मेहनत से कमाऊं",
+              "आधी संपत्ति लेकर बैठ गए"
+            ]
+          },
+          "correctIndex": 0,
+          "explanation": {
+            "en": "He politely thanked his Ansari brother, asked for the marketplace, and built self-reliance from simple dairy trading.",
+            "ur": "آپؓ نے شکرگزاری کے ساتھ بازار کا راستہ پوچھا اور دودھ/پنیر و گھی کی تجارت سے خود کفالت حاصل کی۔",
+            "ar": "شكر أخاه الأنصاري وطلب الدلالة على السوق وبدأ بالكسب الحلال.",
+            "hi": "उन्होंने आभार व्यक्त कर बाज़ार का रास्ता पूछा और मेहनत से आत्मनिर्भर बने।"
+          }
+        }
+      ],
+      "practicalAssignment": {
+        "en": "Identify one quick-turnover staple service or product you can launch with existing personal skills without borrowing interest debt.",
+        "ur": "اپنی موجودہ مہارت سے ایسی ایک چھوٹی حلال خدمت یا مصنوع تجویز کریں جو بغیر قرض کے شروع ہو سکے۔",
+        "ar": "اقترح مشروعاً بسيطاً سريع الدوران يبدأ بمهارتك الحالية دون اقتراض ربوي.",
+        "hi": "बिना ब्याज कर्ज़ लिए अपने मौजूदा कौशल से शुरू किए जा सकने वाले एक त्वरित व्यवसाय का विचार लिखें।"
+      },
+      "sources": [
+        { "title": "Sahih al-Bukhari 2048, 2070, 2778", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/bukhari:2048" },
+        { "title": "Quran 9:60", "category": "direct_quran", "attribution": "Quran.com", "url": "https://quran.com/9/60" }
+      ]
+    }
+  ]
+}

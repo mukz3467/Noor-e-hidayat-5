@@ -1,0 +1,194 @@
+{
+  "hadiths": [
+    {
+      "id": "bukhari_2079",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2079",
+      "chapter": "Kitab al-Buyu' (Book of Sales) — Chapter: If the buyer and seller explain and do not conceal",
+      "arabicText": "الْبَيِّعَانِ بِالْخِيَارِ مَا لَمْ يَتَفَرَّقَا ـ أَوْ قَالَ حَتَّى يَتَفَرَّقَا ـ فَإِنْ صَدَقَا وَبَيَّنَا بُورِكَ لَهُمَا فِي بَيْعِهِمَا، وَإِنْ كَتَمَا وَكَذَبَا مُحِقَتْ بَرَكَةُ بَيْعِهِمَا",
+      "urduTranslation": "خریدنے والا اور بیچنے والا دونوں کو اس وقت تک (بیع ختم کرنے کا) اختیار رہتا ہے جب تک وہ ایک دوسرے سے جدا نہ ہوں۔ پس اگر دونوں سچ بولیں اور (عیب وغیرہ) صاف بیان کر دیں تو ان کے سودے میں برکت دی جاتی ہے، اور اگر وہ (عیب) چھپائیں اور جھوٹ بولیں تو ان کے سودے کی برکت مٹا دی جاتی ہے۔",
+      "englishTranslation": "The buyer and the seller have the option to cancel or confirm the bargain as long as they have not parted. If they both speak the truth and make everything clear (disclosing defects), they will be blessed in their transaction; but if they conceal and lie, the blessing of their transaction will be erased.",
+      "hindiTranslation": "खरीदने वाले और बेचने वाले दोनों को तब तक (सौदा रद्द करने का) अधिकार रहता है जब तक वे एक-दूसरे से अलग न हो जाएं। यदि दोनों सच बोलें और (वस्तु का दोष) स्पष्ट बता दें तो उनके सौदे में बरकत दी जाती है, और यदि वे छिपाएं और झूठ बोलें तो उनके सौदे की बरकत समाप्त कर दी जाती है।",
+      "narrator": "Hakim ibn Hizam (رضي الله عنه)",
+      "grading": "Sahih (Muttafaqun Alayh)",
+      "gradingSourceAndNotes": {
+        "en": "Agreed upon (Sahih al-Bukhari 2079; Sahih Muslim 1532a). Unanimously graded Sahih by Hadith scholars.",
+        "ur": "متفق علیہ (صحیح بخاری 2079، صحیح مسلم 1532a)۔ محدثین کے نزدیک بالاتفاق صحیح ہے۔",
+        "ar": "متفق عليه (صحيح البخاري ٢٠٧٩، صحيح مسلم ١٥٣٢ أ). صحيح بالإجماع.",
+        "hi": "मुत्तफ़क़ अलैह (सहीह बुखारी 2079; सहीह मुस्लिम 1532a)। सर्वसम्मति से सहीह।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2079"
+    },
+    {
+      "id": "muslim_1532a",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "1532a",
+      "chapter": "Kitab al-Buyu' (Book of Business Transactions) — Chapter: Honesty in Transactions and Clarity",
+      "arabicText": "الْبَيِّعَانِ بِالْخِيَارِ مَا لَمْ يَتَفَرَّقَا، فَإِنْ صَدَقَا وَبَيَّنَا بُورِكَ لَهُمَا فِي بَيْعِهِمَا، وَإِنْ كَذَبَا وَكَتَمَا مُحِقَتْ بَرَكَةُ بَيْعِهِمَا",
+      "urduTranslation": "فریقینِ بیع (بائع و مشتری) کو جدا ہونے سے پہلے تک اختیار ہے؛ اگر دونوں سچ بولیں اور ہر بات واضح کر دیں تو ان کی تجارت میں برکت رکھی جاتی ہے، اور اگر جھوٹ بولیں اور عیب چھپائیں تو ان کے کاروبار کی برکت ختم کر دی جاتی ہے۔",
+      "englishTranslation": "Both parties in a business transaction have a right to annul it so long as they have not separated; if they speak the truth and make everything clear, they will be blessed in their transaction, but if they tell a lie and conceal anything, the blessing on their transaction will be blotted out.",
+      "hindiTranslation": "सौदे के दोनों पक्षों को अलग होने से पहले तक उसे रद्द करने का विकल्प है। यदि दोनों सच बोलें और स्पष्ट कर दें तो उनके व्यापार में बरकत होती है, और यदि वे झूठ बोलें और दोष छिपाएं तो उनके सौदे की बरकत मिट जाती है।",
+      "narrator": "Hakim ibn Hizam (رضي الله عنه)",
+      "grading": "Sahih",
+      "gradingSourceAndNotes": {
+        "en": "Authenticated in Sahih Muslim (Book 21, Hadith 1532a) and corroborated by Sahih al-Bukhari 2079.",
+        "ur": "صحیح مسلم (کتاب البیوع، حدیث 1532a) میں مروی و مستند، صحیح بخاری 2079 سے مؤید۔",
+        "ar": "رواه مسلم في كتاب البيوع (١٥٣٢ أ) وأخرجه البخاري (٢٠٧٩).",
+        "hi": "सहीह मुस्लिम (किताबुल-बुयू, हदीस 1532a) में प्रामाणिक, सहीह बुखारी 2079 से समर्थित।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:1532a"
+    },
+    {
+      "id": "muslim_102",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "102",
+      "chapter": "Kitab al-Iman (Book of Faith) — Chapter: The Prophet's saying: Whoever deceives us is not one of us",
+      "arabicText": "مَنْ حَمَلَ عَلَيْنَا السِّلَاحَ فَلَيْسَ مِنَّا، وَمَنْ غَشَّنَا فَلَيْسَ مِنَّا",
+      "urduTranslation": "(دورانِ بازار نبی اکرم ﷺ کا گزر اناج کے ڈھیر پر ہوا، اندر ہاتھ ڈالا تو نمی پائی؛ فرمایا:) جس نے ہم پر ہتھیار اٹھایا وہ ہم میں سے نہیں، اور جس نے ہمیں دھوکہ دیا وہ ہم میں سے نہیں۔",
+      "englishTranslation": "(After finding damp grain hidden beneath dry grain in the marketplace, the Messenger of Allah ﷺ said:) Whoever bears arms against us is not of us, and whoever deceives us is not of us.",
+      "hindiTranslation": "(बाज़ार में सूखे अनाज के नीचे भीगा अनाज छिपा देखकर नबी ﷺ ने फ़रमाया:) जिसने हम पर हथियार उठाया वह हममें से नहीं, और जिसने हमें धोखा दिया वह हममें से नहीं।",
+      "narrator": "Abu Hurayrah (رضي الله عنه)",
+      "grading": "Sahih",
+      "gradingSourceAndNotes": {
+        "en": "Authenticated in Sahih Muslim (Book of Faith, Hadith 102; also variant 101 concerning the wet food pile).",
+        "ur": "صحیح مسلم (کتاب الایمان، حدیث 102 و 101) میں سندِ صحیح کے ساتھ ثابت ہے۔",
+        "ar": "رواه مسلم في كتاب الإيمان (١٠٢ و ١٠١) وهو حديث صحيح.",
+        "hi": "सहीह मुस्लिम (किताबुल-ईमान, हदीस 102 व 101) में सहीह सनद से वर्णित।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:102"
+    },
+    {
+      "id": "bukhari_2400",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2400",
+      "chapter": "Kitab al-Istiqrad (Book of Loans and Payment of Debts) — Chapter: Procrastination of a rich person is oppression",
+      "arabicText": "مَطْلُ الْغَنِيِّ ظُلْمٌ، فَإِذَا أُتْبِعَ أَحَدُكُمْ عَلَى مَلِيٍّ فَلْيَتْبَعْ",
+      "urduTranslation": "مالدار (اور ادائیگی کی قدرت رکھنے والے) کا قرض کی ادائیگی میں ٹال مٹول کرنا ظلم ہے۔ اور جب تم میں سے کسی کا قرض کسی صاحبِ حیثیت شخص کے ذمے منتقل (حوالہ) کر دیا جائے تو اسے قبول کر لینا چاہیے۔",
+      "englishTranslation": "Procrastination (delay in repaying debt) by a wealthy/solvent person is injustice (oppression). And if any one of you has his debt referred (Hawalah) to a solvent person, he should accept the transfer.",
+      "hindiTranslation": "सामर्थ्यवान (धनी) व्यक्ति द्वारा कर्ज़ चुकाने में टालमटोल करना ज़ुल्म (अन्याय) है। और यदि तुममें से किसी का कर्ज़ किसी सक्षम व्यक्ति को स्थानांतरित (हवाला) किया जाए तो उसे स्वीकार कर लेना चाहिए।",
+      "narrator": "Abu Hurayrah (رضي الله عنه)",
+      "grading": "Sahih (Muttafaqun Alayh)",
+      "gradingSourceAndNotes": {
+        "en": "Sahih al-Bukhari 2400 (also 2287, 2288) and Sahih Muslim 1564. Establishes both timely debt repayment and Hawalah (debt assignment).",
+        "ur": "صحیح بخاری 2400 (و 2287، 2288) اور صحیح مسلم 1564؛ بروقت ادائیگی اور عقدِ حوالہ کی بنیادی دلیل۔",
+        "ar": "متفق عليه: صحيح البخاري (٢٤٠٠، ٢٢٨٧) وصحيح مسلم (١٥٦٤). أصل في حرمة المماطلة ومشروعية الحوالة.",
+        "hi": "सहीह बुखारी 2400 और सहीह मुस्लिम 1564; समय पर कर्ज़ अदायगी और हवाला अनुबंध का प्रमाण।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2400"
+    },
+    {
+      "id": "ibnmajah_2443",
+      "collection": "Sunan Ibn Majah",
+      "hadithNumber": "2443",
+      "chapter": "Kitab al-Ruhun (Book of Pledges) — Chapter: Giving the hired worker his wages",
+      "arabicText": "أَعْطُوا الأَجِيرَ أَجْرَهُ قَبْلَ أَنْ يَجِفَّ عَرَقُهُ",
+      "urduTranslation": "مزدور کو اس کی مزدوری اس کا پسینہ خشک ہونے سے پہلے ادا کر دو۔",
+      "englishTranslation": "Give the worker his wages before his sweat dries.",
+      "hindiTranslation": "मज़दूर को उसकी मज़दूरी उसका पसीना सूखने से पहले दे दो।",
+      "narrator": "Abdullah ibn Umar (رضي الله عنهما)",
+      "grading": "Sahih li-ghayrihi / Hasan (Scholarly discussion noted)",
+      "gradingSourceAndNotes": {
+        "en": "Sunan Ibn Majah 2443. Grading note: The specific chain through Abdur-Rahman ibn Zayd ibn Aslam was weakened by some classical critics (e.g., Ibn Hajar, Al-Busiri noted its weakness), while Al-Albani graded it Sahih due to corroborating witnesses (Abu Ya'la, Al-Tabarani, Al-Bayhaqi; see Irwa al-Ghalil 1498). The core obligation of timely wage payment is independently established by Sahih al-Bukhari 2270 ('Allah is the adversary of one who employs a worker, takes full work, and withholds his wage').",
+        "ur": "سنن ابن ماجہ 2443۔ اسنادی نوٹ: اس کی ایک سند میں عبد الرحمٰن بن زید بن اسلم پر کلام موجود ہے (بوصیریؒ نے ضعف بیان کیا)، تاہم شواہد (ابویعلیٰ، طبرانی، بیہقی) کی بنا پر علامہ البانیؒ وغیرہ نے اسے صحیح لغیرہ قرار دیا (إرواء الغليل 1498)۔ نیز اجرت نہ دینے کی شدید وعید صحیح بخاری 2270 سے بھی ثابت ہے۔",
+        "ar": "سنن ابن ماجه (٢٤٤٣). تنبيه إسنادي: في سنده عبد الرحمن بن زيد بن أسلم وهو ضعيف عند جمع من النقاد، لكن صححه الألباني بشواهده (إرواء الغليل ١٤٩٨)، كما أن حرمة مطل الأجير ثابتة قطعاً في صحيح البخاري (٢٢٧٠).",
+        "hi": "सुनन इब्न माजा 2443। सनद टिप्पणी: इसकी एक कड़ी पर कुछ मुहद्दिसीन ने चर्चा की है, किंतु अन्य समर्थक हदीसों के आधार पर अल्लामा अलबानी ने इसे सहीह/हसन कहा (इरवा उल-गलील 1498)। समय पर मज़दूरी का अनिवार्य हुक्म सहीह बुखारी 2270 से भी स्पष्ट साबित है।"
+      },
+      "sourceUrl": "https://sunnah.com/ibnmajah:2443"
+    },
+    {
+      "id": "bukhari_2072",
+      "collection": "Sahih al-Bukhari",
+      "hadithNumber": "2072",
+      "chapter": "Kitab al-Buyu' — Chapter: Earning one's livelihood and working with one's hands",
+      "arabicText": "مَا أَكَلَ أَحَدٌ طَعَامًا قَطُّ خَيْرًا مِنْ أَنْ يَأْكُلَ مِنْ عَمَلِ يَدِهِ، وَإِنَّ نَبِيَّ اللَّهِ دَاوُدَ عَلَيْهِ السَّلَامُ كَانَ يَأْكُلُ مِنْ عَمَلِ يَدِهِ",
+      "urduTranslation": "کسی شخص نے اس سے بہتر کھانا کبھی نہیں کھایا جو وہ اپنے ہاتھ کی کمائی سے کھائے، اور اللہ کے نبی داؤد علیہ السلام اپنے ہاتھ کی کمائی سے کھایا کرتے تھے۔",
+      "englishTranslation": "Nobody has ever eaten a better meal than that which one has earned by working with one's own hands. The Prophet of Allah, Dawud (peace be upon him), used to eat from the earnings of his manual labor.",
+      "hindiTranslation": "किसी व्यक्ति ने कभी उससे बेहतर खाना नहीं खाया जो उसने अपने हाथ की कमाई से कमाया हो; अल्लाह के नबी दाऊद अलैहिस्सलाम अपने हाथ की मेहनत से खाते थे।",
+      "narrator": "Al-Miqdam ibn Ma'dikarib (رضي الله عنه)",
+      "grading": "Sahih",
+      "gradingSourceAndNotes": {
+        "en": "Authenticated in Sahih al-Bukhari (Book of Sales, Hadith 2072).",
+        "ur": "صحیح بخاری (کتاب البیوع، حدیث 2072) میں سندِ صحیح سے مروی۔",
+        "ar": "أخرجه البخاري في كتاب البيوع (٢٠٧٢) وهو حديث صحيح.",
+        "hi": "सहीह बुखारी (किताबुल-बुयू, हदीस 2072) में सहीह सनद से वर्णित।"
+      },
+      "sourceUrl": "https://sunnah.com/bukhari:2072"
+    },
+    {
+      "id": "muslim_1598",
+      "collection": "Sahih Muslim",
+      "hadithNumber": "1598",
+      "chapter": "Kitab al-Musaqah — Chapter: Curse on the taker and payer of Riba",
+      "arabicText": "لَعَنَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ آكِلَ الرِّبَا وَمُؤْكِلَهُ وَكَاتِبَهُ وَشَاهِدَيْهِ، وَقَالَ: هُمْ سَوَاءٌ",
+      "urduTranslation": "رسول اللہ ﷺ نے سود کھانے والے، سود کھلانے والے، اس کی تحریر لکھنے والے اور اس کے دونوں گواہوں پر لعنت فرمائی، اور فرمایا: یہ سب (گناہ میں) برابر ہیں۔",
+      "englishTranslation": "The Messenger of Allah ﷺ cursed the one who consumes Riba (interest/usury), the one who pays it, the one who writes down the contract, and its two witnesses, and he said: They are all equal (in sin).",
+      "hindiTranslation": "रसूलुल्लाह ﷺ ने सूद (ब्याज) खाने वाले, खिलाने वाले, उसका अनुबंध लिखने वाले और उसके दोनों गवाहों पर लानत फरमाई और कहा: ये सब (पाप में) बराबर हैं।",
+      "narrator": "Jabir ibn Abdullah (رضي الله عنه)",
+      "grading": "Sahih",
+      "gradingSourceAndNotes": {
+        "en": "Authenticated in Sahih Muslim (Hadith 1598). Foundational Hadith on institutional and contractual complicity in Riba.",
+        "ur": "صحیح مسلم (حدیث 1598) میں صحیح سند سے ثابت؛ سود کے عقد اور اس میں معاونت کی حرمت کی دلیل۔",
+        "ar": "رواه مسلم (١٥٩٨) وهو حديث صحيح في تحريم الربا والتعاون عليه.",
+        "hi": "सहीह मुस्लिम (हदीस 1598) में सहीह सनद से वर्णित; सूद और उसके समझौते में भागीदारी की मनाही।"
+      },
+      "sourceUrl": "https://sunnah.com/muslim:1598"
+    },
+    {
+      "id": "tirmidhi_1209",
+      "collection": "Jami' at-Tirmidhi",
+      "hadithNumber": "1209",
+      "chapter": "Kitab al-Buyu' — Chapter: What has been related about merchants and the Prophet's naming them",
+      "arabicText": "التَّاجِرُ الصَّدُوقُ الأَمِينُ مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ",
+      "urduTranslation": "سچا اور امانت دار تاجر (قیامت کے دن) انبیاء، صدیقین اور شہداء کے ساتھ ہوگا۔",
+      "englishTranslation": "The truthful, trustworthy merchant will be with the Prophets, the truthful ones (Siddiqin), and the martyrs (Shuhada).",
+      "hindiTranslation": "सच्चा और ईमानदार (अमानतदार) व्यापारी क़ियामत के दिन नबियों, सिद्दीक़ीन और शहीदों के साथ होगा।",
+      "narrator": "Abu Sa'id al-Khudri (رضي الله عنه)",
+      "grading": "Hasan (Grading nuance recorded)",
+      "gradingSourceAndNotes": {
+        "en": "Jami' at-Tirmidhi 1209. Imam at-Tirmidhi graded this narration Hasan, noting its chain passes through Abu Hamzah (whose memory critics discussed), while Al-Hakim and Adh-Dhahabi strengthened it through supporting narrations (including Ibn Majah 2139 via Ibn Umar, graded Sahih/Hasan by some scholars and weak by others). Used for spiritual encouragement alongside Sahih al-Bukhari 2079.",
+        "ur": "جامع ترمذی 1209۔ امام ترمذیؒ نے اسے حسن قرار دیا اور راوی پر کلام کی نشاندہی کی؛ ابن ماجہ 2139 وغیرہ کے شواہد سے متعدد محدثین نے اسے حسن/صحیح لغیرہ کہا۔ فقہی احکام کے بجائے ترغیب و اخلاقِ تجارت میں بیان کیا جاتا ہے۔",
+        "ar": "جامع الترمذي (١٢٠٩) وحسنه الترمذي مع تنبيهه على أبي حمزة؛ وللحديث شواهد في ابن ماجه وغيره تقوي معناه في فضل الصدق والأمانة.",
+        "hi": "जामे तिर्मिज़ी 1209। इमाम तिर्मिज़ी ने इसे हसन कहा और रावी पर चर्चा दर्ज की; अन्य प्रमाणों से नैतिक प्रोत्साहन के रूप में उद्धृत।"
+      },
+      "sourceUrl": "https://sunnah.com/tirmidhi:1209"
+    }
+  ],
+  "officialSources": [
+    {
+      "title": "The Noble Quran (Tanzil Uthmani & Verified Translations)",
+      "category": "direct_quran",
+      "attribution": "Quran.com & Tanzil Project",
+      "url": "https://quran.com/"
+    },
+    {
+      "title": "Primary Hadith Collections (Bukhari, Muslim, Abu Dawud, Tirmidhi, Ibn Majah)",
+      "category": "authentic_hadith",
+      "attribution": "Sunnah.com Reference Archive",
+      "url": "https://sunnah.com/"
+    },
+    {
+      "title": "AAOIFI Shariah Standards (Conceptual Educational Summaries)",
+      "category": "contemporary_resolution",
+      "attribution": "Accounting and Auditing Organization for Islamic Financial Institutions",
+      "url": "https://aaoifi.com/shariah-standards-3/?lang=en"
+    },
+    {
+      "title": "State Bank of Pakistan — Islamic Banking FAQs",
+      "category": "regulatory_legal",
+      "attribution": "State Bank of Pakistan (Islamic Banking Department)",
+      "url": "https://www.sbp.org.pk/faqs/faqs-islamic-banking"
+    },
+    {
+      "title": "SECP AAOIFI Shariah Standards Notification S.R.O. 729(I)/2024",
+      "category": "regulatory_legal",
+      "attribution": "Securities and Exchange Commission of Pakistan (May 21, 2024)",
+      "url": "https://www.secp.gov.pk/document/aaoifi-shariah-standards-s-r-o-7291-2024-dated-may-21-2024/"
+    },
+    {
+      "title": "International Islamic Fiqh Academy (IIFA) Resolutions",
+      "category": "contemporary_resolution",
+      "attribution": "Organisation of Islamic Cooperation (OIC) IIFA",
+      "url": "https://iifa-aifi.org/en/"
+    }
+  ]
+}

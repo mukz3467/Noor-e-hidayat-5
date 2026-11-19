@@ -1,0 +1,298 @@
+{
+  "sectors": [
+    {
+      "id": "sector_19_healthcare",
+      "sectorNumber": 19,
+      "name": {
+        "en": "19. Healthcare, Pharmacy & Clinics",
+        "ur": "19. ہیلتھ کیئر، فارمیسی اور کلینکس",
+        "ar": "١٩. الرعاية الصحية والصيدليات والعيادات",
+        "hi": "19. स्वास्थ्य सेवा, फ़ार्मेसी और क्लिनिक"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Healing and medicine supply are noble community duties (Fard Kifayah) when pharmaceuticals are authentic/halal-screened, doctors never take pharma kickbacks, and patient privacy & safety stay sacred.",
+        "ur": "علاج و ادویات کی فراہمی عظیم انسانی خدمت ہے بشرطیکہ دوائیں اصلی و محفوظ ہوں، ڈاکٹر فارما کمپنیوں سے کمیشن نہ لیں اور مریض کی جان و راز کی حفاظت ہو۔",
+        "ar": "من أشرف المهن وفرض كفاية، بشرط أمانة التشخيص، وأصالة الدواء، ومنع عمولات شركات الأدوية.",
+        "hi": "चिकित्सा सेवा अत्यंत नेक कार्य है बशर्ते दवाएं असली व सुरक्षित हों, डॉक्टर फ़ार्मा रिश्वत न लें और रोगी गोपनीयता बनी रहे।"
+      },
+      "introductionA": { "en": "Licensed clinics, diagnostic labs, dental practices, and retail/wholesale community pharmacies.", "ur": "رجسٹرڈ کلینکس، تشخیصی لیبارٹریاں، ڈینٹل اور فارمیسی کا کاروبار۔", "ar": "العيادات الطبية ومختبرات التحاليل والصيدليات المرخصة.", "hi": "लाइसेंस प्राप्त क्लिनिक, डायग्नोस्टिक लैब और फ़ार्मेसी व्यवसाय।" },
+      "howItOperatesB": { "en": "Diagnoses ethically, dispenses genuine cold-stored medicines by prescription, keeps transparent medical billing.", "ur": "درست تشخیص، نسخے کے مطابق اصلی و محفوظ ادویات کی فراہمی اور شفاف بلنگ۔", "ar": "تشخيص أمين، وصرف أدوية أصلية محفوظة بالتبريد، وفوترة شفافة.", "hi": "ईमानदार निदान, सही तापमान वाली असली दवा वितरण और पारदर्शी बिलिंग।" },
+      "startupRequirementsC": { "en": "Physician/Pharmacist national council registration, drug-control license, cold-chain vaccine fridges, and medical waste disposal.", "ur": "ڈاکٹر/فارماسسٹ رجسٹریشن، ڈرگ لائسنس، ویکسین فریج اور میڈیکل ویسٹ کا محفوظ انتظام۔", "ar": "تراخيص المزاولة الطبية والصيدلانية، برادات الأدوية، والتخلص الآمن من النفايات الطبية.", "hi": "चिकित्सा/फ़ार्मेसी पंजीकरण, ड्रग लाइसेंस, कोल्ड फ्रिज व बायो-वेस्ट निपटान।" },
+      "capitalAndInvestmentD": { "en": "Physician Musharakah clinic, diagnostic lab scanner Ijarah/Diminishing Musharakah.", "ur": "ڈاکٹروں کی مشارکہ شراکت یا ایکسرے/الٹراساؤنڈ مشینری کا شرعی اجارہ۔", "ar": "مشاركة طبية أو إجارة لأجهزة المختبر والأشعة.", "hi": "डॉक्टर मुशारकाह क्लिनिक या लैब उपकरणों का इज़ाराह।" },
+      "supplierSelectionE": { "en": "Purchase solely from authorized pharma distributors—never gray-market or counterfeit batch middlemen.", "ur": "صرف مستند ڈسٹری بیوٹرز سے دوائیں لیں؛ جعلی یا اسمگل شدہ بیچ ہرگز نہ خریدیں۔", "ar": "الشراء من الموزعين المعتمدين فقط لمنع الأدوية المقلدة.", "hi": "केवल अधिकृत वितरकों से दवाएं खरीदें; नकली बैच से पूर्णतः बचें।" },
+      "purchasingProcurementF": { "en": "Check temperature indicators, batch seals, and expiry dates immediately on pharmacy receipt.", "ur": "وصولی کے وقت کولڈ چین، سیل اور ایکسپائری تاریخ فوراً چیک کریں۔", "ar": "فحص سلسلة التبريد والختم وتاريخ الصلاحية فور الاستلام.", "hi": "दवा प्राप्ति पर सील, तापमान व एक्सपायरी तुरंत जांचें।" },
+      "ownershipPossessionG": { "en": "Dispense stocked pharmacy SKUs owned cleanly; keep lab tests honest without inventing unnecessary panels.", "ur": "مملوک دوائیں بیچیں اور محض کمیشن کے لیے غیر ضروری لیب ٹیسٹ ہرگز نہ لکھیں۔", "ar": "بيع أدوية مملوكة والامتناع عن طلب تحاليل غير ضرورية.", "hi": "स्व-स्वामित्व दवाएं बेचें और कमीशन हेतु अनावश्यक जांच न लिखें।" },
+      "productsServicesH": { "en": "Check alcohol/gelatin inactive excipients; when life-saving necessity lacks Halal excipient alternative, qualified scholars guide patient necessity.", "ur": "ادویات میں الکحل/جیلاٹین کا جائزہ لیں؛ متبادل موجود ہو تو حلال دوا دیں، اور جان بچانے کے اضطرار میں مستند مفتی کی رہنمائی لیں۔", "ar": "اختيار البدائل الخالية من الكحول والجيلاتين المحرم، وعند الضرورة العلاجية يُرجع لأهل الفتوى.", "hi": "हलाल विकल्प चुनें; जीवन-रक्षक अपरिहार्य स्थिति में प्रमाणित मुफ़्ती सलाह लें।" },
+      "pricingProfitI": { "en": "Observe statutory drug MRP controls strictly; zero price gouging during epidemics.", "ur": "حکومتی مقررہ نرخ (MRP) کی پابندی کریں؛ وبا میں ادویات ذخیرہ کر کے مہنگی بیچنا شدید ظلم ہے۔", "ar": "الالتزام بالتسعيرة الرسمية للدواء وتحريم احتكار الدواء وقت الأوبئة.", "hi": "सरकारी MRP मानें; महामारी में दवाओं की जमाखोरी व मुनाफाखोरी न करें।" },
+      "customerRightsJ": { "en": "Explain dosage/side-effects patiently, protect sensitive patient records (Amanah), and ban doctor-lab kickbacks.", "ur": "مقدارِ خوراک سمجھائیں، مریض کا راز محفوظ رکھیں اور ڈاکٹر و لیبارٹری کے خفیہ کمیشن ختم کریں۔", "ar": "شرح الجرعات بأمانة، وحفظ أسرار المرضى، وتحريم عمولات المختبرات السرية.", "hi": "खुराक समझाएं, रोगी के रिकॉर्ड गोपनीय रखें और लैब कमीशन बंद करें।" },
+      "employeeRightsK": { "en": "Provide nurses & lab techs PPE protection, manageable shift rosters, and fair timely pay.", "ur": "نرسوں اور لیب عملے کو حفاظتی کِٹ، متوازن شفٹیں اور وقت پر اجرت۔", "ar": "توفير وسائل الوقاية للتمريض والفنيين مع رواتب عادلة ومنتظمة.", "hi": "नर्सों व लैब तकनीशियनों को PPE किट, संतुलित शिफ्ट और समय पर वेतन दें।" },
+      "relevantContractsL": { "en": ["Musawamah (Medicine Retail)", "Ijarah (Consultation / Lab)", "Musharakah (Clinic)", "Istisna (Compounding)"], "ur": ["مساومہ", "اجارہ (طبی مشورہ)", "مشارکہ", "استصناع"], "ar": ["المساومة", "الإجارة الطبية", "المشاركة", "الاستصناع"], "hi": ["मुसावमह", "इजाराह", "मुशारकाह", "इस्तिसना"] },
+      "potentialProhibitedM": { "en": ["Doctors prescribing expensive brands for pharma trip/cash kickbacks", "Selling near-expired/uncooled insulin", "Practicing without qualification"], "ur": ["فارما کمپنیوں کے تحفوں/کمیشن پر مہنگی دوائیں لکھنا", "خراب فریج میں رکھی انسولین بیچنا", "عطائیت/بغیر ڈگری علاج"], "ar": ["عمولات شركات الأدوية للأطباء", "بيع أنسولين تالف التبريد", "انتحال الطب دون مؤهل"], "hi": ["फ़ार्मा रिश्वत लेकर महंगी दवा लिखना", "बिना कोल्ड-चेन इंसुलिन बेचना", "झोलाछाप प्रैक्टिस"] },
+      "halalChecklistN": { "en": ["Zero pharma/lab kickbacks", "Batch & temperature log verified", "Bio-waste disposed safely"], "ur": ["کمیشن و تحفہ خوری سے پاک", "درجہ حرارت اور بیچ ریکارڈ", "میڈیکل فضلے کا محفوظ اخراج"], "hi": ["शून्य फ़ार्मा किकबैक", "तापमान व बैच लॉग", "बायो-वेस्ट सुरक्षित निपटान"] },
+      "realisticCaseStudyO": { "en": "A diagnostic clinic cuts patient bills 25% by banning doctor referral kickbacks and competes purely on rapid, accurate reporting.", "ur": "تشخیصی لیب نے ڈاکٹروں کو خفیہ کمیشن دینا بند کر کے مریضوں کی فیس 25% کم کر دی اور معیاری رپورٹ سے شہرت پائی۔", "ar": "ألغى مختبر تحاليل عمولات الأطباء السرية وخفض الأسعار ٢٥٪ للمرضى فزادت ثقة الناس به.", "hi": "डायग्नोस्टिक लैब ने डॉक्टर कमीशन बंद करके रोगी शुल्क 25% घटाया और सटीक रिपोर्ट से भरोसा जीता।" },
+      "commonMistakesP": { "en": ["Selling prescription antibiotics loosely without physician oversight, fueling fatal resistance."], "ur": ["بغیر ڈاکٹر کے نسخے کے خطرناک اینٹی بایوٹکس یا نشہ آور گولیاں کھلے عام بیچ دینا۔"], "ar": ["صرف المضادات الحيوية القوية أو المؤثرات العقلية دون وصفة طبية."], "hi": "बिना डॉक्टर पर्ची के तेज़ एंटीबायोटिक या नशीली दवाएं बेचना।" },
+      "practicalAssignmentQ": { "en": "Draft a Clinic Anti-Kickback & Patient Amanah Policy forbidding pharma sponsored gifts and lab referral cuts.", "ur": "اپنے کلینک یا فارمیسی کے لیے فارما تحائف اور لیب کمیشن کی ممانعت کا واضح پالیسی بیان لکھیں۔", "ar": "اكتب ميثاق أمانة طبي يمنع هدايا شركات الأدوية وعمولات التحاليل.", "hi": "क्लिनिक के लिए फ़ार्मा उपहार और लैब कमीशन निषेध नीति लिखें।" },
+      "referencesR": [
+        { "title": "Bukhari 2079, Muslim 102 & IIFA Medical Resolutions", "category": "contemporary_resolution", "attribution": "Sunnah.com & IIFA", "url": "https://iifa-aifi.org/en/" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextNote": { "en": "Patient life & records as sacred Amanah.", "ur": "مریض کی جان، صحت اور راز امانت ہیں۔", "ar": "حفظ صحة المريض وأسراره أمانة عظيمة.", "hi": "रोगी का जीवन और गोपनीयता अमानत है।" }, "businessRelevance": { "en": "Eliminates kickback prescribing and counterfeit medicine.", "ur": "کمیشن خوری اور جعلی ادویات کا خاتمہ کرتی ہے۔", "ar": "يمنع التربح على حساب المريض.", "hi": "कमीशन वाली दवा व नकली दवा को रोकती है।" } }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_19",
+          "question": { "en": "May a physician accept sponsored foreign vacations or cash cuts from a lab/pharma company in return for prescribing their costlier tests or brands?", "ur": "کیا ڈاکٹر کسی لیبارٹری یا دوا ساز کمپنی سے مہنگی دوائیں یا ٹیسٹ لکھنے کے بدلے کمیشن یا غیر ملکی دورہ قبول کر سکتا ہے؟", "ar": "هل يجوز للطبيب قبول هدايا أو نسب مالية من مختبر أو شركة دواء مقابل توجيه المرضى إليهم؟", "hi": "क्या डॉक्टर महंगे टेस्ट या दवा लिखने के बदले लैब या फ़ार्मा कंपनी से कमीशन या यात्रा उपहार ले सकता है?" },
+          "options": { "en": ["No; it violates patient trust (Amanah, 4:58) and constitutes forbidden commercial bribery", "Yes, perk of profession", "Only during conferences"], "ur": ["نہیں؛ یہ مریض کی امانت میں خیانت اور ناجائز رشوت ہے", "ہاں پیشہ ورانہ رعایت ہے", "صرف کانفرنس میں"], "ar": ["لا؛ هو خيانة لأمانة المريض ورشوة محرمة (النساء ٥٨)", "نعم من مزايا المهنة"], "hi": ["नहीं; यह रोगी की अमानत से विश्वासघात और वर्जित रिश्वत है", "हाँ, यह पेशे का लाभ है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Patients trust physicians solely for unbiased clinical judgment; hidden pharma/lab incentives corrupt that Amanah.", "ur": "مریض ڈاکٹر پر بے لوث علاج کا اعتماد کرتا ہے؛ خفیہ کمیشن اس امانت کے خلاف ہے۔", "ar": "يستأمن المريض الطبيب على نصحه، والعمولات السرية تفسد هذه الأمانة.", "hi": "रोगी निष्पक्ष सलाह पर भरोसा करता है; गुप्त कमीशन इस अमानत को तोड़ता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_20_cosmetics",
+      "sectorNumber": 20,
+      "name": {
+        "en": "20. Halal Cosmetics & Personal Care",
+        "ur": "20. حلال کاسمیٹکس اور ذاتی نگہداشت",
+        "ar": "٢٠. مستحضرات التجميل والعناية الشخصية الحلال",
+        "hi": "20. हलाल कॉस्मेटिक्स और पर्सनल केयर व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Growing Halal opportunity when formulations exclude Najis/porcine collagen, alcohol intoxicants, and toxic mercury creams, and marketing stays truthful & modest.",
+        "ur": "وسیع حلال موقع ہے بشرطیکہ مصنوعات خنزیر/ناپاک اجزاء، نشہ آور الکحل اور زہریلی مرکری رنگ گورا کرنے والی کریموں سے پاک ہوں اور تشہیر باحیا و سچی ہو۔",
+        "ar": "قطاع واعد ومباح متى خلا من النجاسات والزئبق السام ومنع الإعلانات الخادعة وغير المحتشمة.",
+        "hi": "यह बढ़ता हलाल क्षेत्र है जब उत्पाद नापाक वसा और जहरीली पारा क्रीम से मुक्त हों तथा विज्ञापन सत्य व शालीन हों।"
+      },
+      "introductionA": { "en": "Formulating and selling Halal-certified skincare, hair oils, attar perfumes, herbal soaps, and grooming kits.", "ur": "حلال اسکن کیئر، ہیئر آئل، عطر، جڑی بوٹیوں کے صابن اور صفائی کی مصنوعات۔", "ar": "تصنيع وبيع منتجات العناية بالبشرة والشعر والعطور والصابون الحلال.", "hi": "हलाल स्किनकेयर, हेयर ऑयल, इत्र, हर्बल साबुन और ग्रूमिंग उत्पादों का निर्माण व बिक्री।" },
+      "howItOperatesB": { "en": "Sources certified botanical/halal raw materials, manufactures under GMP lab hygiene, certifies Halal/DRAP safety, and markets cleanly.", "ur": "مستند حلال اجزاء لینا، محفوظ لیب میں تیاری، لائسنس/حلال تصدیق اور بااخلاق مارکیٹنگ۔", "ar": "اختيار خامات نباتية وحلال، تصنيع وفق معايير السلامة، وتسويق صادق.", "hi": "हलाल सामग्री से निर्माण, सुरक्षा परीक्षण, लाइसेंस और नैतिक विपणन।" },
+      "startupRequirementsC": { "en": "Cosmetic lab safety testing, certified ingredient MSDS sheets, leak-proof jars, and truthful INCI labels.", "ur": "اسکن سیفٹی ٹیسٹنگ، اجزاء کی سرٹیفیکیشن، محفوظ پیکنگ اور درست لیبل۔", "ar": "اختبارات سلامة جلدية، وثائق المواد، وملصقات مكونات دقيقة.", "hi": "त्वचा सुरक्षा जांच, सामग्री प्रमाणपत्र और सटीक घटक लेबल।" },
+      "capitalAndInvestmentD": { "en": "Bootstrapped small-batch equity or contract factory Istisna.", "ur": "محدود بیچ سے ذاتی سرمایہ کاری یا تصنیعی معاہدہ استصناع۔", "ar": "رأس مال ذاتي لدفعات صغيرة أو استصناع لدى مصنع مرخص.", "hi": "छोटे बैच हेतु निजी पूंजी या कारखाना इस्तिसना।" },
+      "supplierSelectionE": { "en": "Audit glycerin, stearic acid, collagen, and keratin sources (plant/marine vs porcine/unlawful animal).", "ur": "گلیسرین، کولیجن اور کیراٹین کے پودے/سمندری یا حلال ذرائع کی تصدیق (خنزیر و مردار سے پاک)۔", "ar": "التحقق من مصادر الجليسرين والكولاجين والكيراتين النباتية أو البحرية.", "hi": "ग्लिसरीन, कोलेजन व केराटिन के वनस्पति या हलाल स्रोतों की जांच।" },
+      "purchasingProcurementF": { "en": "Bulk botanical carrier oils via Murabaha/Musawamah with batch CoA lab verification.", "ur": "تیل و خام مال کی معیاری لیب رپورٹ کے ساتھ خریداری۔", "ar": "توريد الزيوت الأساسية بشهادات تحليل مخبرية.", "hi": "लैब विश्लेषण प्रमाणपत्र के साथ वनस्पति तेल खरीदना।" },
+      "ownershipPossessionG": { "en": "Own blended finished inventory (or co-pack via Istisna under clear IP control) prior to customer sale.", "ur": "تیار مصنوعات کی ملکیت و قبضہ فروخت سے پہلے مکمل ہو۔", "ar": "تملك الدفعة المصنعة قبل البيع.", "hi": "बिक्री से पहले तैयार बैच का स्वामित्व व क़ब्ज़।" },
+      "productsServicesH": { "en": "Attar, organic balms, halal sunscreens, breathable water-permeable products; strictly ban toxic steroids/mercury skin-bleach creams.", "ur": "عطر، صاف لوشن، وضو دوست مصنوعات؛ جلد تباہ کرنے والی اسٹیرائڈ یا مرکری والی گورا رنگ کریموں سے مکمل اجتناب۔", "ar": "عطور وكريمات آمنة، والمنع التام لكريمات الزئبق والكورتيزون الضارة.", "hi": "इत्र व सुरक्षित क्रीम; त्वचा खराब करने वाली पारा/स्टेरॉयड क्रीम पूर्णतः वर्जित।" },
+      "pricingProfitI": { "en": "Clear ml/gram quantities; forbid selling 15ml dropper serum disguised in an oversized thick double-wall bottle.", "ur": "صریح ملی لیٹر/گرام مقدار لکھیں؛ موٹے دوہرے شیشے میں کم مقدار چھپا کر دھوکہ نہ دیں۔", "ar": "بيان الحجم الصافي بدقة دون عبوات مخادعة.", "hi": "सही मिली/ग्राम लिखें; मोटे डिब्बे में कम मात्रा न छिपाएं।" },
+      "customerRightsJ": { "en": "Patch-test warnings, zero Photoshopped '7-day miracle cure' fakes, batch expiry stamps.", "ur": "الرجی ٹیسٹ ہدایت، فوٹوشاپ جھوٹ سے پاک اصل نتائج اور واضح ایکسپائری تاریخ۔", "ar": "تنبيهات الحساسية ومنع تعديل الصور لإيهام نتائج سريعة كاذبة.", "hi": "एलर्जी चेतावनी, बिना फोटोशॉप असली परिणाम और स्पष्ट एक्सपायरी।" },
+      "employeeRightsK": { "en": "Fume masks/ventilation in blending rooms, lab coats, timely fair payroll.", "ur": "مکسنگ کمرے میں ماسک، ہواداری، حفاظتی کوٹ اور وقت پر تنخواہ۔", "ar": "تهوية وكمامات السلامة للعاملين ورواتب منتظمة.", "hi": "मिश्रण कक्ष में मास्क/वेंटिलेशन और समय पर वेतन।" },
+      "relevantContractsL": { "en": ["Istisna (Private-label manufacturing)", "Musawamah", "Wakalah (Distribution)", "Musharakah"], "ur": ["استصناع (پرائیویٹ لیبل)", "مساومہ", "وکالت", "مشارکہ"], "ar": ["الاستصناع", "المساومة", "الوكالة", "المشاركة"], "hi": ["इस्तिसना", "मुसावमह", "वकालह", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Blending hidden topical steroids/mercury", "Using porcine/carmine/unhalal fats unverified", "Immodest influencer promos"], "ur": ["کریموں میں خفیہ مرکری و اسٹیرائڈ ملانا", "ناپاک یا خنزیر کے اجزاء", "بے حیا تشہیر"], "ar": ["خلط الزئبق والستيرويدات الضارة", "مكونات محرمة", "تسويق غير محتشم"], "hi": ["पारा/स्टेरॉयड मिलाना", "नापाक तत्व", "अशोभनीय प्रचार"] },
+      "halalChecklistN": { "en": ["Mercury/steroid-free lab tested", "100% halal botanical/synthetic raw input", "Honest unedited visuals"], "ur": ["زہریلے اجزاء سے پاک لیب ٹیسٹ", "100% حلال اجزاء", "اصل تصاویر"], "hi": ["पारा-मुक्त लैब जांच", "100% हलाल घटक", "बिना छेड़छाड़ विज्ञापन"] },
+      "realisticCaseStudyO": { "en": "A botanical skincare founder lab-tests every moisturizer for zero heavy metals, drops 'instant fairness' hype, and exports Halal-certified balms across GCC.", "ur": "ایک اسکن کیئر بانی نے 'فوری گورا رنگ' جیسے جھوٹے دعوے چھوڑ کر لیب ٹیسٹ شدہ حلال و محفوظ بام بنایا اور خلیج تک برآمد کیا۔", "ar": "تخلّت مؤسسة علامة عناية عن دعاوى التبييض الفوري السامة وركزت على المكونات الحلال الآمنة فنجحت في التصدير.", "hi": "स्किनकेयर संस्थापक ने जहरीली फ़ेयरनेस क्रीम छोड़कर लैब-परीक्षित हलाल उत्पाद बनाए और निर्यात किया।" },
+      "commonMistakesP": { "en": ["Claiming '100% Organic Handmade' while repackaging harsh unlabeled wholesale chemical cream."], "ur": ["بازار کی سستی کیمیکل کریم ڈبی میں بھر کر 'خالص دیسی و آرگینک' لکھ کر بیچنا۔"], "ar": ["تعبئة كريمات كيميائية رخيصة وبيعها على أنها طبيعية منزلية."], "hi": "बाज़ार की सस्ती केमिकल क्रीम को डिब्बे में भरकर 'शुद्ध ऑर्गेनिक' बताकर बेचना।" },
+      "practicalAssignmentQ": { "en": "Audit 3 common skincare/shampoo INCI labels for glycerin origin, alcohol type, and mercury/hydroquinone risks.", "ur": "تین عام شیمپو یا کریموں کے اجزاء میں گلیسرین، الکحل اور نقصان دہ کیمیکلز کا جائزہ لیں۔", "ar": "افحص ملصق ٣ منتجات عناية للتحقق من مصدر الجليسرين وخلوها من المواد الضارة.", "hi": "3 शैंपू/क्रीम लेबल में ग्लिसरीन स्रोत, अल्कोहल व हानिकारक रसायनों की जांच करें।" },
+      "referencesR": [
+        { "title": "Sahih Muslim 102 & Ibn Majah 2340 (No Harm)", "category": "authentic_hadith", "attribution": "Sunnah.com", "url": "https://sunnah.com/muslim:102" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 2, "startAyah": 267, "endAyah": 267, "contextNote": { "en": "Pure wholesome consumables.", "ur": "پاکیزہ اور بے ضرر مصنوعات۔", "ar": "الطيبات الآمنة الخالية من الضرر.", "hi": "शुद्ध एवं सुरक्षित उत्पाद।" }, "businessRelevance": { "en": "Bans toxic skin-damaging adulterants.", "ur": "جلد تباہ کرنے والی ملاوٹ کو روکتی ہے۔", "ar": "منع الغش والمواد السامة.", "hi": "त्वचा को नुकसान पहुँचाने वाली मिलावट रोकती है।" } }
+      ],
+      "hadithIds": ["muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_20",
+          "question": { "en": "Why is adding hidden mercury or strong steroids into 'instant whitening' creams strictly Haram in Islam?", "ur": "'فوری گورا کرنے والی' کریموں میں خفیہ مرکری یا تیز اسٹیرائڈز ملانا اسلام میں کیوں حرام ہے؟", "ar": "لماذا يحرم خلط الزئبق أو الكورتيزون سراً في كريمات التجميل؟", "hi": "'त्वरित निखार' क्रीम में चुपके से पारा या स्टेरॉयड मिलाना इस्लाम में हराम क्यों है?" },
+          "options": { "en": ["It violates 'La Darar wa la Dirar' (harming human health) and constitutes concealed product fraud (Muslim 102)", "Only because jars break", "Allowed if customer doesn't read"], "ur": ["یہ انسانی صحت کو نقصان (لا ضرر) اور خفیہ ملاوٹ و دھوکہ (مسلم 102) دونوں کی خلاف ورزی ہے", "صرف شیشی ٹوٹنے کا خطرہ ہے", "جائز ہے اگر گاہک نہ پڑھے"], "ar": ["لأنه إضرار بالصحة (لا ضرر) وغش وتدليس (مسلم ١٠٢)", "لكسر العبوة فقط"], "hi": ["यह स्वास्थ्य हानि ('ला ज़रर') और गुप्त मिलावट धोखा (मुस्लिम 102) दोनों का उल्लंघन है", "केवल शीशी टूटने के कारण"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Harming buyers' health secretly breaches both medical harm bans and sales truthfulness.", "ur": "گاہک کی صحت تباہ کرنا اور اجزاء چھپانا دونوں شرعاً سخت حرام ہیں۔", "ar": "إيذاء صحة الناس وإخفاء المكونات حرام قطعاً.", "hi": "ग्राहकों के स्वास्थ्य को नुकसान पहुँचाना और सामग्री छिपाना सख्त हराम है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_21_manufacturing",
+      "sectorNumber": 21,
+      "name": {
+        "en": "21. Manufacturing & Factory Business",
+        "ur": "21. مینوفیکچرنگ اور فیکٹری کا کاروبار",
+        "ar": "٢١. التصنيع والمصانع الإنتاجية",
+        "hi": "21. विनिर्माण और फ़ैक्टरी व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Productive manufacturing builds community self-reliance when products are useful, industrial pollution is filtered, machine safety guards protect operators, and Istisna/Murabaha replace interest debt.",
+        "ur": "صنعتکاری خود کفالت کی ریڑھ کی ہڈی ہے جب مصنوعات حلال و معیاری ہوں، آلودگی کنٹرول ہو، مزدوروں کی حفاظت ہو اور فنانسنگ سود سے پاک ہو۔",
+        "ar": "التصنيع ركيزة اقتصادية مباركة عند جودة الإنتاج ومعالجة التلوث وحماية العمال وتجنب الربا.",
+        "hi": "विनिर्माण आत्मनिर्भरता का आधार है जब उत्पाद उपयोगी हों, प्रदूषण नियंत्रित हो, श्रमिक सुरक्षित हों और वित्त सूद-मुक्त हो।"
+      },
+      "introductionA": { "en": "Small workshops to mid-size factories producing packaging, tools, plastics, furniture, or food processing lines.", "ur": "پیکنگ، فرنیچر، اوزار، پلاسٹک یا فوڈ پروسیسنگ کے کارخانے۔", "ar": "الورش والمصانع لإنتاج الأدوات والتغليف والأثاث والسلع الاستهلاكية.", "hi": "पैकेजिंग, फर्नीचर, औज़ार व खाद्य प्रसंस्करण करने वाले कारखाने।" },
+      "howItOperatesB": { "en": "Procures raw inputs, transforms via factory machinery, runs QC batch tests, fulfills B2B/Istisna orders, and ships wholesale.", "ur": "خام مال خریدنا، مشینوں سے تیاری، کوالٹی ٹیسٹنگ اور ہول سیل/استصناع آرڈرز کی فراہمی۔", "ar": "توريد المواد الخام، التشغيل، فحص الجودة، وتسليم الطلبيات.", "hi": "कच्चा माल खरीदना, मशीनों से उत्पादन, गुणवत्ता जांच और थोक वितरण।" },
+      "startupRequirementsC": { "en": "Industrial zoning/EPA permit, 3-phase power safety, factory machinery, and standardized SOPs.", "ur": "انڈسٹریل لائسنس و ماحولیاتی منظوری، بجلی کی حفاظت، مشینری اور کوالٹی معیار۔", "ar": "ترخيص صناعي وبيئي، أمان كهربائي، آلات، ومعايير جودة.", "hi": "औद्योगिक व पर्यावरण लाइसेंस, बिजली सुरक्षा, मशीनरी और SOP।" },
+      "capitalAndInvestmentD": { "en": "Industrial Diminishing Musharakah / Ijarah for heavy presses/CNCs, Murabaha raw steel/resin lines.", "ur": "بھاری مشینوں کے لیے شرکتِ متناقصہ یا اجارہ، اور خام مال کے لیے مرابحہ۔", "ar": "إجارة أو مشاركة متناقصة للآلات ومرابحة للمواد الخام.", "hi": "मशीनरी हेतु डिमिनिशिंग मुशारकाह/इज़ाराह और कच्चे माल हेतु मुराबहा।" },
+      "supplierSelectionE": { "en": "Certified grade raw inputs without stolen scrap or illegally toxic materials.", "ur": "اصل معیاری خام مال؛ چوری کا اسکریپ یا ممنوع زہریلے مواد ہرگز نہیں۔", "ar": "مواد خام معتمدة ومنع الخردة المسروقة والمواد المحظورة.", "hi": "प्रमाणित कच्चा माल चुनें; चोरी का कबाड़ न लें।" },
+      "purchasingProcurementF": { "en": "POs + lab weight checks at weighbridge; honest raw-material accounting.", "ur": "تحریری خریداری آرڈر اور فیکٹری گیٹ پر وزن کی تصدیق۔", "ar": "فحص الأوزان والمواصفات عند التوريد.", "hi": "PO और फैक्ट्री गेट पर सही वज़न जांच।" },
+      "ownershipPossessionG": { "en": "Raw materials inside factory yard are owned cleanly; custom OEM fabrication uses Istisna.", "ur": "کارخانے کا خام مال ملکیت میں ہو؛ کسٹم آرڈرز استصناع کے تحت بنائے جائیں۔", "ar": "تملك المواد داخل المصنع وتنفيذ الطلبيات الخاصة بالاستصناع.", "hi": "कच्चा माल स्वामित्व में हो और कस्टम ऑर्डर इस्तिसना से पूरे हों।" },
+      "productsServicesH": { "en": "Useful household/industrial tools & packaging; never fabricate counterfeit brand bottles, gambling machines, or weapons for crime.", "ur": "مفید گھریلو و صنعتی اشیاء؛ کسی برانڈ کی نقلی بوتلیں، جوئے کی مشینیں یا جرائم کے آلات نہ بنائیں۔", "ar": "تصنيع منتجات نافعة، ومنع تصنيع العبوات المقلدة أو آلات القمار.", "hi": "उपयोगी उत्पाद बनाएं; नकली ब्रांड पैकिंग या जुए की मशीनें न बनाएं।" },
+      "pricingProfitI": { "en": "Accurate unit BOM costing; respect net count/thickness tolerances truthfully.", "ur": "درست لاگت کا حساب؛ موٹائی، گیج اور پیسوں کی گنتی معیار کے عین مطابق دیں۔", "ar": "تسعير دقيق والالتزام بالسماكة والعدد المتفق عليه.", "hi": "सटीक लागत व तय मोटाई/संख्या का ईमानदारी से पालन।" },
+      "customerRightsJ": { "en": "Replace defective factory lots fairly and disclose slight variance upfront.", "ur": "خراب بیچ کی منصفانہ تبدیلی اور کسی معمولی فرق کی پیشگی اطلاع۔", "ar": "استبدال الدفعات المعيبة والوضوح التام.", "hi": "दोषपूर्ण बैच बदलें और किसी भी अंतर को पहले बताएं।" },
+      "employeeRightsK": { "en": "Machine finger guards, ear/eye protection, safety training, clear shift pay, and zero child labor.", "ur": "مشینوں پر حفاظتی گارڈز، کان و آنکھ کے تحفظ کے آلات، وقت پر اجرت اور چائلڈ لیبر سے مکمل پرہیز۔", "ar": "حواجز أمان للآلات، ووقاية السمع والبصر، ومنع عمالة الأطفال.", "hi": "मशीन सुरक्षा गार्ड, आंख/कान बचाव उपकरण, समय पर वेतन और शून्य बाल श्रम।" },
+      "relevantContractsL": { "en": ["Istisna (Custom manufacturing)", "Murabaha (Raw material)", "Ijarah (Plant)", "Musharakah"], "ur": ["استصناع", "مرابحہ", "اجارہ پلانٹ", "مشارکہ"], "ar": ["الاستصناع", "المرابحة", "الإجارة", "المشاركة"], "hi": ["इस्तिसना", "मुराबहा", "इजाराह", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Dumping factory smoke/effluent without treatment", "Cutting machine safety sensors to boost speed", "Selling counterfeit packaging"], "ur": ["بغیر صفائی دھواں/کیمیکل پھیلانا", "رفتار بڑھانے کو مشین کا سیفٹی سینسر بند کرنا", "نقلی پیکنگ بنانا"], "ar": ["التلوث الصناعي", "تعطيل حساسات الأمان", "تصنيع عبوات مقلدة"], "hi": ["औद्योगिक प्रदूषण", "सुरक्षा सेंसर हटाना", "नकली पैकेजिंग बनाना"] },
+      "halalChecklistN": { "en": ["Safety guards intact", "Zero counterfeit tooling", "Treatment filters active"], "ur": ["مشین حفاظتی گارڈز فعال", "نقلی برانڈ تیاری سے پاک", "آلودگی فلٹرز چالو"], "hi": ["सुरक्षा गार्ड चालू", "शून्य नकली उत्पादन", "प्रदूषण फ़िल्टर सक्रिय"] },
+      "realisticCaseStudyO": { "en": "A plastic bottle plant rejects an order to mold knockoff shampoo bottles for counterfeiters, invests in machine safety interlocks, and secures Fortune-brand Halal food bottling contracts.", "ur": "بوتل ساز فیکٹری نے جعلی برانڈ بوتلیں ڈھالنے کا بڑا آرڈر ٹھکرا کر سیفٹی سسٹم بہتر کیا اور بڑی حلال فوڈ کمپنیوں کے مستقل آرڈر جیت لیے۔", "ar": "رفض مصنع عبوات تصنيع قوارير مقلدة وركّز على معايير الأمان والجودة فنال عقود شركات الأغذية الحلال.", "hi": "प्लास्टिक बोतल फ़ैक्ट्री ने नकली ब्रांड मोल्डिंग ठुकराकर सुरक्षा मानक सुधारे और हलाल फूड अनुबंध पाए।" },
+      "commonMistakesP": { "en": ["Delivering 4.2kg cartons labeled '5kg net' or shaving sheet metal gauge secretly."], "ur": ["کاغذ پر 5 کلو یا پورا گیج لکھ کر اندر سے ہلکی چادر یا کم وزن دینا۔"], "ar": ["إنقاص السماكة أو الوزن الفعلي عن المدون في الفاتورة."], "hi": "कागज़ पर पूरा वज़न/गेज लिखकर कम सामग्री देना।" },
+      "practicalAssignmentQ": { "en": "Walk through 3 factory safety/ethical checkpoints: machine guards, dust/fume extraction, and zero-defect sampling integrity.", "ur": "کارخانے کے 3 حفاظتی و اخلاقی مراحل لکھیں: مشین گارڈز، دھواں/گرد صفائی، اور معیار کی تصدیق۔", "ar": "حدّد ٣ نقاط فحص في المصنع: حواجز الأمان، والتهوية، ودقة فحص الجودة.", "hi": "मशीन गार्ड, धुआं निकास और गुणवत्ता नमूना जांच के 3 कारखाना सुरक्षा बिंदु लिखें।" },
+      "referencesR": [
+        { "title": "AAOIFI SS 11 & Quran 17:35", "category": "contemporary_resolution", "attribution": "AAOIFI & Quran.com", "url": "https://quran.com/17/35" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 17, "startAyah": 35, "endAyah": 35, "contextNote": { "en": "Industrial unit accuracy.", "ur": "صنعتی پیداوار میں وزن و گنتی کی درستگی۔", "ar": "دقة الأوزان والمقاسات الصناعية.", "hi": "औद्योगिक माप और संख्या सटीकता।" }, "businessRelevance": { "en": "Forbids secret underweight packs or gauge shaving.", "ur": "چوری چھپے وزن یا موٹائی کم کرنا منع ہے۔", "ar": "منع التلاعب في السماكة والوزن.", "hi": "चुपके से वज़न या मोटाई घटाना वर्जित।" } }
+      ],
+      "hadithIds": ["muslim_102", "ibnmajah_2443"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_21",
+          "question": { "en": "What is the Shariah ruling on a custom molding workshop knowingly accepting an order to print lookalike bottles & labels for a counterfeiter?", "ur": "کیا پلاسٹک یا پرنٹنگ فیکٹری جان بوجھ کر جعلی برانڈ کی ہو بہو بوتلیں اور لیبل بنانے کا آرڈر لے سکتی ہے؟", "ar": "هل يجوز للمصنع قبول طلبية طباعة عبوات وملصقات مقلدة لعلامة تجارية مسروقة؟", "hi": "क्या कोई कारखाना जानबूझकर नकली ब्रांड की हूबहू बोतलें और लेबल छापने का ऑर्डर ले सकता है?" },
+          "options": { "en": ["Haram; it directly enables consumer deception (Muslim 102) and violates protected commercial rights", "Allowed if customer brings art file", "Allowed locally only"], "ur": ["حرام؛ یہ گاہک کو دھوکہ دینے (مسلم 102) اور تجارتی حق تلفی میں براہِ راست معاونت ہے", "اگر گاہک فائل لائے تو جائز ہے", "صرف مقامی طور پر جائز ہے"], "ar": ["حرام؛ لأنه إعانة مباشرة على الغش وانتهاك الحقوق التجارية", "جائز إذا أحضر العميل التصميم"], "hi": ["हराम; यह उपभोक्ता धोखाधड़ी (मुस्लिम 102) और अधिकार उल्लंघन में सीधा सहयोग है", "यदि ग्राहक फाइल लाए तो वैध है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Manufacturing counterfeit trade dress actively cooperates in marketplace deceit (5:2 & Muslim 102).", "ur": "نقلی برانڈنگ بنانا دھوکے اور باطل میں کھلی معاونت ہے۔", "ar": "تصنيع العبوات المقلدة تعاون مباشر على الغش.", "hi": "नकली पैकेजिंग बनाना धोखे में प्रत्यक्ष सहयोग है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_22_repair",
+      "sectorNumber": 22,
+      "name": {
+        "en": "22. Repair & Maintenance Services",
+        "ur": "22. مرمت اور دیکھ بھال کی خدمات (ریپئرنگ و مینٹیننس)",
+        "ar": "٢٢. خدمات الصيانة والإصلاح",
+        "hi": "22. मरम्मत और रखरखाव सेवा व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Honest repair trades earn deep Barakah by extending asset life and avoiding waste—provided technicians never invent fake faults, swap working client parts, or charge hidden fees.",
+        "ur": "مرمت کا پیشہ حلال و بابرکت ہے بشرطیکہ مستری جھوٹے نقائص نہ نکالے، گاہک کا اصل پرزہ چوری نہ بدلے اور سچی اجرت لے۔",
+        "ar": "مهن الصيانة من أطيب المكاسب متى امتنع الفني عن اختلاق الأعطال أو تبديل القطع الأصلية.",
+        "hi": "मरम्मत सेवा बरकत वाली है जब मैकेनिक नकली खराबी न बताए, ग्राहक के असली पुर्जे न बदले और सही शुल्क ले।"
+      },
+      "introductionA": { "en": "Auto mechanics, AC/appliance technicians, phone/laptop repair shops, plumbing, and electrical contracting.", "ur": "آٹو مکینک، اے سی/فریج، موبائل/لیپ ٹاپ ریپئرنگ، پلمبنگ اور الیکٹریشن خدمات۔", "ar": "ورش السيارات، صيانة الأجهزة والتكييف والهواتف، والسباكة والكهرباء.", "hi": "ऑटो मैकेनिक, एसी/उपकरण, मोबाइल/लैपटॉप मरम्मत, प्लंबिंग और इलेक्ट्रिशियन सेवाएं।" },
+      "howItOperatesB": { "en": "Diagnoses fault transparently, states separate labor Ujrah + spare part Musawamah quote, repairs skillfully, and hands back old replaced parts.", "ur": "درست تشخیص، مزدوری اور پرزے کا الگ واضح تخمینہ، مہارت سے مرمت اور پرانا خراب پرزہ گاہک کو واپس دکھانا۔", "ar": "تشخيص أمين، فصل أجرة اليد عن ثمن القطعة، الإصلاح المتقن، ورد القطع التالفة للعميل.", "hi": "सही जांच, मजदूरी व पुर्जे की अलग कीमत, कुशल मरम्मत और पुराना पुर्जा वापस देना।" },
+      "startupRequirementsC": { "en": "Certified testing gauges/tools, clean workbench, serialized job-card intake receipts.", "ur": "درست ٹیسٹنگ آلات، صاف ورکشاپ اور آلات وصولی کی تحریری پرچی۔", "ar": "أدوات فحص دقيقة، ورشة منظمة، وإيصالات استلام مسلسلة.", "hi": "सटीक जांच उपकरण, स्वच्छ कार्यशाला और क्रमबद्ध जॉब कार्ड रसीद।" },
+      "capitalAndInvestmentD": { "en": "Small savings toolset, apprenticeship Musharakah or shop Ijarah.", "ur": "کم ذاتی سرمایہ، آلات کی خریداری یا ورکشاپ اجارہ۔", "ar": "رأس مال ميسر للأدوات وإجارة الورشة.", "hi": "कम निजी पूंजी से औज़ार और दुकान इज़ाराह।" },
+      "supplierSelectionE": { "en": "Source OEM or transparently graded aftermarket spare parts—never pass used/fake copies as 'original genuine'.", "ur": "اصلی یا واضح بتا کر کاپی پرزہ لگائیں؛ سستا نقلی پرزہ 'اوریجنل' کہہ کر نہ لگائیں۔", "ar": "توفير قطع أصلية أو الإفصاح عن التجارية، ومنع بيع المقلد كأصلي.", "hi": "असली या स्पष्ट बताकर सेकेंडरी पुर्जे लगाएं; नकली को 'ओरिजिनल' कहकर न बेचें।" },
+      "purchasingProcurementF": { "en": "Keep supplier invoices for spares; let buyers verify new sealed parts when possible.", "ur": "نئے پرزے کا بل اور سیل پیک ڈبہ گاہک کے سامنے کھولیں۔", "ar": "عرض القطعة الجديدة المختومة وفاتورتها للعميل عند الإمكان.", "hi": "नए पुर्जे का बिल व सील बंद पैक ग्राहक को दिखाएं।" },
+      "ownershipPossessionG": { "en": "Customer's device/car sits strictly as Amanah while under repair; shop liable only for workshop negligence/mishandling.", "ur": "گاہک کی گاڑی یا موبائل مرمت کے دوران امانت ہے؛ کاریگر کی لاپرواہی سے نقصان پر تاوان ہوگا۔", "ar": "الجهاز أو السيارة أمانة لدى الورشة وتضمن عند التعدي أو التقصير.", "hi": "मरम्मत के समय ग्राहक का सामान अमानत है; लापरवाही होने पर जिम्मेदारी होगी।" },
+      "productsServicesH": { "en": "Restoring honest consumer/business hardware; refuse unlocking stolen phones (IMEI tampering) or bypassing electric/gas meters.", "ur": "حلال آلات کی مرمت؛ چوری کے فون کا لاک/IMEI بدلنا یا بجلی و گیس کے میٹر سلو/ٹیمپر کرنا حرام ہے۔", "ar": "صيانة الأجهزة المشروعة؛ ويحرم فك الهواتف المسروقة أو العبث بعدادات الكهرباء.", "hi": "वैध उपकरण सुधारें; चोरी के फोन अनलॉक करना या बिजली मीटर से छेड़छाड़ हराम है।" },
+      "pricingProfitI": { "en": "Approve repair estimate before replacing major parts; distinguish inspection fee vs repair labor cleanly.", "ur": "بڑا پرزہ ڈالنے سے پہلے گاہک سے قیمت کی اجازت لیں؛ چیکنگ فیس پہلے واضح بتائیں۔", "ar": "موافقة العميل قبل تبديل القطع المكلفة ووضوح رسوم الفحص.", "hi": "महंगे पुर्जे बदलने से पहले ग्राहक की अनुमति लें और जांच शुल्क पहले बताएं।" },
+      "customerRightsJ": { "en": "Return old replaced spare parts to verify actual swap, uphold workmanship warranty, and protect phone/laptop personal privacy.", "ur": "بدلا ہوا پرانا پرزہ واپس کریں، مرمت کی وارنٹی دیں اور موبائل/لیپ ٹاپ کے ذاتی ڈیٹا و تصاویر کی مکمل حفاظت کریں۔", "ar": "تسليم القطعة التالفة للعميل، وضمان العمل، وحرمة الاطلاع على بيانات الهواتف والحواسيب.", "hi": "बदला गया पुराना पुर्जा लौटाएं, कार्य वारंटी दें और फ़ोन/लैपटॉप का निजी डेटा न देखें।" },
+      "employeeRightsK": { "en": "Apprentices/helpers must receive real training and fair stipend—never treat young trainees as unpaid tea/errand servants for years.", "ur": "شاگردوں کو ایمانداری سے ہنر سکھائیں اور معقول روزانہ/ہفتہ وار معاوضہ دیں، برسوں مفت مزدوری نہ کرائیں۔", "ar": "تعليم المتدربين بأمانة ومنحهم مكافآت عادلة دون استغلال.", "hi": "प्रशिक्षुओं को ईमानदारी से काम सिखाएं और उचित पारिश्रमिक दें, मुफ्त शोषण न करें।" },
+      "relevantContractsL": { "en": ["Ijarah (Repair Labor / Diagnostics)", "Musawamah (Spare Parts)", "Ju'alah ('No fix, no fee' repair)"], "ur": ["اجارہ (مرمت کاری)", "مساومہ (پرزہ جات)", "جعالہ (کام ہونے پر فیس)"], "ar": ["الإجارة", "المساومة", "الجعالة"], "hi": ["इजाराह", "मुसावमह", "जुआलाह"] },
+      "potentialProhibitedM": { "en": ["Inventing a '$200 motherboard replacement' for a loose $2 wire", "Swapping customer's original battery/RAM secretly", "Unlocking stolen phones or browsing private photos"], "ur": ["معمولی تار کی خرابی پر پورا مدر بورڈ خراب بتانا", "گاہک کی اصلی بیٹری یا ریم چوری نکال لینا", "فون کی ذاتی تصاویر دیکھنا"], "ar": ["اختلاق أعطال وهمية", "سرقة قطع أصلية من جهاز العميل", "انتهاك خصوصية ملفات العميل"], "hi": ["छोटी खराबी पर महंगा दोष बताना", "असली पुर्जा निकाल लेना", "निजी फ़ोटो देखना"] },
+      "halalChecklistN": { "en": ["Pre-repair written estimate approved", "Replaced parts returned", "Zero browsing of client digital files"], "ur": ["مرمت سے پہلے قیمت کی منظوری", "پرانا پرزہ واپسی", "ڈیجیٹل پرائیویسی کی مکمل حفاظت"], "hi": ["पूर्व-अनुमान स्वीकृति", "पुराना पुर्जा वापसी", "डेटा गोपनीयता सुरक्षा"] },
+      "realisticCaseStudyO": { "en": "An AC mechanic finds a blown $1 capacitor instead of charging $120 for a new compressor, charges honest $15 labor, and receives lifelong family referrals.", "ur": "اے سی مستری نے کمپریسر بدلنے کا جھوٹ بولنے کے بجائے 200 روپے کا کیپیسٹر بدلا، اپنی معقول مزدوری لی اور پورے خاندان کا مستقل اعتماد جیت لیا۔", "ar": "فني تكييف اكتشف عطل مكثف بسيط وأصلحه بأمانة دون الادعاء بتلف الضاغط فكسب عملاء دائمين.", "hi": "एसी मैकेनिक ने नया कंप्रेसर बताने के बजाय छोटा कैपेसिटर बदला, उचित मजदूरी ली और स्थायी ग्राहक बनाए।" },
+      "commonMistakesP": { "en": ["Checking only gas top-up yearly without fixing the tiny pinhole leak deliberately so the customer returns every summer."], "ur": ["لیکج جان بوجھ کر ٹھیک نہ کرنا اور ہر گرمی میں صرف گیس بھر کر پیسے کمانا۔"], "ar": ["إهمال إصلاح التسريب عمداً ليعود العميل للشحن كل عام."], "hi": "जानबूझकर रिसाव न सुधारना ताकि ग्राहक हर साल दोबारा गैस भरवाने आए।" },
+      "practicalAssignmentQ": { "en": "Create a Repair Job Card featuring fault estimate box, original-parts custody box, data-privacy sign-off, and replaced-part return box.", "ur": "ورکشاپ کے لیے تحریری جاب کارڈ بنائیں جس میں تخمینہ، امانت، پرائیویسی اور پرانا پرزہ واپسی کا خانہ ہو۔", "ar": "صمم بطاقة صيانة تشمل التقدير المسبق وحفظ الخصوصية وتسليم القطع المستبدلة.", "hi": "पूर्व-अनुमान, डेटा गोपनीयता व पुराने पुर्जे वापसी वाला मरम्मत जॉब कार्ड बनाएं।" },
+      "referencesR": [
+        { "title": "Quran 4:58 & Sahih Muslim 102", "category": "direct_quran", "attribution": "Quran.com & Sunnah.com", "url": "https://quran.com/4/58" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextNote": { "en": "Repaired devices as Amanah.", "ur": "مرمت کے لیے آیا سامان امانت ہے۔", "ar": "الأجهزة المودعة للصيانة أمانات.", "hi": "मरम्मत हेतु दिया उपकरण अमानत है।" }, "businessRelevance": { "en": "Forbids part-swapping and data snooping.", "ur": "پرزے بدلنے اور ذاتی ڈیٹا دیکھنے سے روکتی ہے۔", "ar": "منع تبديل القطع وتصفح البيانات.", "hi": "पुर्जे बदलने व डेटा देखने पर रोक।" } }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_22",
+          "question": { "en": "May a phone technician repair a broken charging port legitimately AND simultaneously open the customer's private gallery without consent?", "ur": "کیا موبائل مستری مرمت کے دوران اجازت کے بغیر گاہک کی ذاتی گیلری یا پیغامات دیکھ سکتا ہے؟", "ar": "هل يجوز لفني الصيانة تصفح صور العميل أو ملفاته الخاصة دون إذنه أثناء الإصلاح؟", "hi": "क्या मोबाइल तकनीशियन मरम्मत के दौरान बिना अनुमति ग्राहक की निजी गैलरी देख सकता है?" },
+          "options": { "en": ["No; customer hardware and stored data are sacred Amanah (4:58) and privacy invasion is strictly forbidden", "Yes, part of testing", "Only if password is off"], "ur": ["نہیں؛ گاہک کا آلہ و ڈیٹا امانت ہے اور تجسس و راز کھوجنا سخت حرام ہے", "ہاں ٹیسٹنگ کا حصہ ہے", "اگر لاک نہ ہو تو جائز ہے"], "ar": ["لا؛ الجهاز والبيانات أمانة، والتجسس على الخصوصية محرم قطعاً", "نعم جزء من الفحص"], "hi": ["नहीं; उपकरण व डेटा अमानत है, और निजता में ताक-झांक सख्त हराम है", "हाँ, यह जांच का हिस्सा है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Quran 49:12 (ban on spying/Tajassus) and 4:58 (Amanah) strictly forbid accessing private client files during repair.", "ur": "تجسس کی قرآنی ممانعت (الحجرات 12) اور امانت (4:58) صارف کی پرائیویسی پر کسی بھی نظر کی اجازت نہیں دیتی۔", "ar": "تحريم التجسس (الحجرات ١٢) ووجوب حفظ الأمانة (النساء ٥٨).", "hi": "ताक-झांक का निषेध (49:12) और अमानत (4:58) निजी फाइलों तक पहुँच को रोकते हैं।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_23_printing",
+      "sectorNumber": 23,
+      "name": {
+        "en": "23. Printing, Publishing & Media",
+        "ur": "23. پرنٹنگ، اشاعت اور تعلیمی میڈیا",
+        "ar": "٢٣. الطباعة والنشر والإعلام الهادف",
+        "hi": "23. प्रिंटिंग, प्रकाशन और मीडिया व्यवसाय"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Publishing books, packaging, and ethical media spreads knowledge and civilization cleanly—when copyright is respected, content is clean & factual, and paper/print counts aren't shortchanged.",
+        "ur": "اشاعت و پرنٹنگ علم و تجارت کا بہترین ذریعہ ہے جب کاپی رائٹ کی خلاف ورزی نہ ہو، حرام/فحش مواد نہ چھاپا جائے اور کاغذ و گنتی پوری رکھی جائے۔",
+        "ar": "الطباعة والنشر نشاط نافع ومباح مع احترام حقوق التأليف والبعد عن المحتوى المحرم والتزوير.",
+        "hi": "प्रकाशन उपयोगी व हलाल व्यवसाय है जब कॉपीराइट का सम्मान हो, सामग्री स्वच्छ व सत्य हो तथा कागज़/प्रतियाँ पूरी मिलें।"
+      },
+      "introductionA": { "en": "Commercial offset/digital printing presses, book publishing houses, packaging boxes, and ethical digital media outlets.", "ur": "کتب کی اشاعت، تجارتی پیکنگ پرنٹنگ اور باوقار میڈیا ہاؤسز۔", "ar": "المطابع التجارية، دور النشر، طباعة العبوات، والإعلام الملتزم.", "hi": "कमर्शियल प्रिंटिंग प्रेस, पुस्तक प्रकाशन, पैकेजिंग प्रिंट और नैतिक मीडिया।" },
+      "howItOperatesB": { "en": "Acquires authentic publishing licenses/copyrights, runs paper & ink Istisna print jobs, binds neatly, and distributes.", "ur": "قانونی اشاعت کے حقوق، کاغذ و سیاہی سے معیاری پرنٹنگ، جلد سازی اور ترسیل۔", "ar": "عقود النشر الحقوقية، طباعة الاستصناع، التجليد، والتوزيع.", "hi": "वैध प्रकाशन अधिकार, कागज़-स्याही द्वारा इस्तिसना प्रिंटिंग, बाइंडिंग और वितरण।" },
+      "startupRequirementsC": { "en": "Press licensing, ISBN/publisher registration, ink ventilation safety, and IP compliance policies.", "ur": "پریس رجسٹریشن، ISBN اندراج، سیاہی کی ہواداری اور کاپی رائٹ پالیسی۔", "ar": "ترخيص المطبعة، أرقام النشر المعيارية، وتهوية أحبار الطباعة.", "hi": "प्रेस लाइसेंस, ISBN पंजीकरण, स्याही वेंटिलेशन और कॉपीराइट नीति।" },
+      "capitalAndInvestmentD": { "en": "Offset press Ijarah / Diminishing Musharakah, client publishing Istisna advances.", "ur": "پرنٹنگ مشین کا اجارہ/متناقصہ اور کلائنٹ آرڈر پر استصناع۔", "ar": "إجارة آلات الطباعة واستصناع الطلبيات.", "hi": "प्रिंटिंग मशीन इज़ाराह/डिमिनिशिंग मुशारकाह और ग्राहक इस्तिसना।" },
+      "supplierSelectionE": { "en": "Honest paper GSM & eco-safe soy/water inks; clear author royalty transparency.", "ur": "کاغذ کا پورا گرام (GSM)، محفوظ سیاہی اور مصنفین کے ساتھ صاف رائلٹی معاہدے۔", "ar": "ورق بالمواصفات، أحبار آمنة، وشفافية عوائد المؤلفين.", "hi": "सही पेपर GSM, सुरक्षित स्याही और लेखकों संग पारदर्शी रॉयल्टी।" },
+      "purchasingProcurementF": { "en": "Buy bulk paper reams cleanly via Murabaha/Musawamah verifying sheet counts.", "ur": "کاغذ کے رم گنتی و وزن کی جانچ کر کے خریدیں۔", "ar": "شراء رزم الورق بعدّها وفحص جودتها.", "hi": "शीट गिनती व गुणवत्ता जांचकर कागज़ के रीम खरीदें।" },
+      "ownershipPossessionG": { "en": "Books printed in-house for sale are publisher inventory; author manuscripts rest under Mudarabah/Royalty or licensing contracts.", "ur": "اپنی چھاپی کتب پبلشر کی ملکیت ہیں؛ مصنف کی رائلٹی یا خریداری کا واضح تحریری معاہدہ ہو۔", "ar": "الكتب المطبوعة مخزون الناشر، وتُضبط حقوق المؤلف بعقد مكتوب.", "hi": "प्रकाशन हेतु छपी किताबें प्रकाशक का स्टॉक हैं; लेखक रॉयल्टी लिखित हो।" },
+      "productsServicesH": { "en": "Quranic/academic books, commercial boxes, ethical newspapers; strictly decline pirated books, fake currency/degrees, gambling flyers, or immodest magazines.", "ur": "دینی و تعلیمی کتب، حلال پیکنگ؛ چوری کی پائریٹڈ کتب، جعلی ڈگریاں، لاٹری پمفلٹ یا فحش رسائل ہرگز نہ چھاپیں۔", "ar": "الكتب النافعة والتغليف المباح، والامتناع عن الطباعة المقرصنة والإباحية والمزورة.", "hi": "शैक्षणिक पुस्तकें व बॉक्स; पायरेटेड किताबें, नकली डिग्री या अश्लील सामग्री कभी न छापें।" },
+      "pricingProfitI": { "en": "State exact print run quantity (1,000 copies means 1,000), paper GSM, and color separation without sneaky shortcuts.", "ur": "طے شدہ کاپیاں پوری (1000 کا مطلب پورا 1000) اور عین طے شدہ گرام کاغذ استعمال کریں۔", "ar": "الالتزام الكامل بالعدد المتفق عليه ووزن الورق.", "hi": "तय प्रतियों की पूरी संख्या व पेपर GSM ईमानदारी से दें।" },
+      "customerRightsJ": { "en": "Send print-ready proof before mass press run, reprint misregistered ink defects freely.", "ur": "پوری پرنٹنگ سے پہلے گاہک سے پروف چیک کروائیں اور خرابی کی صورت میں مفت دوبارہ چھاپیں۔", "ar": "اعتماد البروفة المسبقة وإعادة طباعة المعيب.", "hi": "बड़ी छपाई से पहले प्रूफ दिखाएं और दोषपूर्ण छपाई मुफ्त सुधारें।" },
+      "employeeRightsK": { "en": "Protective ear plugs near loud presses, chemical fume exhausts, fair overtime during book seasons.", "ur": "تیز آواز والی مشینوں پر کان کے حفاظتی آلات، سیاہی کی بو سے بچاؤ اور سیزن میں اوور ٹائم کی پوری ادائیگی۔", "ar": "وقاية السمع والأبخرة للعمال وسداد أجر العمل الإضافي.", "hi": "प्रिंटिंग शोर व स्याही धुएं से सुरक्षा और ओवरटाइम भुगतान।" },
+      "relevantContractsL": { "en": ["Istisna (Custom Print Run)", "Ijarah (Press Equipment)", "Musharakah (Publishing Royalty/Split)", "Musawamah (Ready Books)"], "ur": ["استصناع (پرنٹنگ)", "اجارہ", "مشارکہ (مصنف/پبلشر)", "مساومہ"], "ar": ["الاستصناع", "الإجارة", "المشاركة", "المساومة"], "hi": ["इस्तिसना", "इजाराह", "मुशारकाह", "मुसावमह"] },
+      "potentialProhibitedM": { "en": ["Printing pirated copyrighted textbooks secretly", "Delivering 880 books billed as 1,000", "Printing forged receipts/stamps/bank checks"], "ur": ["بغیر اجازت دوسروں کی کاپی رائٹ کتابیں چھاپ کر بیچنا", "1000 کے بجائے 880 کاپیاں دینا", "جعلی رسیدیں یا مہریں بنانا"], "ar": ["طباعة الكتب المقرصنة", "إنقاص عدد النسخ", "تزوير الأختام والفواتير"], "hi": ["पायरेटेड किताबें छापना", "1000 कहकर 880 प्रतियाँ देना", "नकली मुहर/रसीद बनाना"] },
+      "halalChecklistN": { "en": ["Author IP license signed", "Exact copy counts verified", "Zero forged documents/forgeries"], "ur": ["مصنف سے اشاعتی اجازت نامہ", "کاپیوں کی پوری گنتی", "جعلسازی سے مکمل پاک"], "hi": ["लेखक अनुमति पत्र", "सटीक प्रति गिनती", "शून्य जालसाज़ी"] },
+      "realisticCaseStudyO": { "en": "A print shop declines printing counterfeit medicine cartons even at triple rate, invests in digital food-grade packaging, and becomes a trusted hospital supplier.", "ur": "پرنٹنگ پریس نے تگنے معاوضے پر بھی جعلی دوائیوں کے ڈبے چھاپنے سے انکار کیا اور فوڈ گریڈ پیکجنگ میں بڑی کامیابی حاصل کی۔", "ar": "رفضت مطبعة طباعة عبوات أدوية مزورة رغم المغريات، وتخصصت في التغليف الطبي والغذائي الحلال.", "hi": "प्रिंट शॉप ने तिगुने पैसे पर भी नकली दवा कार्टन छापने से मना कर फूड-ग्रेड पैकेजिंग में सफलता पाई।" },
+      "commonMistakesP": { "en": ["Reporting 500 books printed to the royalty author while secretly selling 2,000 copies."], "ur": ["مصنف کو صرف 500 کاپیوں کا حساب بتا کر خفیہ طور پر 2000 کتابیں چھاپ کر بیچنا۔"], "ar": ["إخفاء عدد النسخ المطبوعة الحقيقي عن المؤلف لهضم حقوقه."], "hi": "लेखक को 500 प्रतियां बताकर चुपके से 2000 प्रतियां बेच देना।" },
+      "practicalAssignmentQ": { "en": "Write a 3-point Press Ethics Gate covering copyright authorization, zero-forgery refusal, and honest copy count audit.", "ur": "اپنی پرنٹنگ پریس کے لیے 3 نکاتی اخلاقی اصول لکھیں: کاپی رائٹ، جعلسازی سے انکار، اور پوری گنتی۔", "ar": "اكتب ٣ ضوابط للمطبعة: حقوق النشر، منع التزوير، وأمانة العدد.", "hi": "प्रिंट शॉप हेतु कॉपीराइट, शून्य-जालसाज़ी और सटीक संख्या के 3 नियम लिखें।" },
+      "referencesR": [
+        { "title": "IIFA Res. 43 (Copyright) & Quran 83:1-3", "category": "contemporary_resolution", "attribution": "IIFA & Quran.com", "url": "https://iifa-aifi.org/en/" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 83, "startAyah": 1, "endAyah": 3, "contextNote": { "en": "Shortchanging printed copy counts.", "ur": "چھپی ہوئی کتابوں یا ڈبوں کی گنتی میں کمی۔", "ar": "الوفاء بعدد النسخ والمطبوعات.", "hi": "छपी प्रतियों की संख्या में ईमानदारी।" }, "businessRelevance": { "en": "Bans billing 1,000 sheets while bundling 900.", "ur": "1000 کا بل لے کر 900 کاپیاں دینا منع ہے۔", "ar": "منع تسليم عدد أقل من المتفق.", "hi": "1000 कहकर 900 प्रतियाँ देना वर्जित।" } }
+      ],
+      "hadithIds": ["muslim_102", "bukhari_2079"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_23",
+          "question": { "en": "What is the contemporary scholarly consensus (IIFA Resolution 43) on unauthorized pirating and reselling of copyrighted books?", "ur": "کاپی رائٹ محفوظ کتابوں کو مصنف/پبلشر کی اجازت کے بغیر چھاپ کر بیچنے کے متعلق مجمع الفقہ (قرارداد 43) کا فیصلہ کیا ہے؟", "ar": "ما قرار مجمع الفقه الدولي (٤٣) بشأن قرصنة الكتب المحمية بحقوق الطبع؟", "hi": "कॉपीराइट पुस्तकों की अनधिकृत पायरेसी और बिक्री पर IIFA प्रस्ताव 43 का निर्णय क्या है?" },
+          "options": { "en": ["Intellectual & publishing rights are Shariah-protected property; unauthorized piracy for profit is prohibited", "Books have zero ownership", "Only Arabic books are protected"], "ur": ["فکری و اشاعتی حقوق شرعاً معتبر مال ہیں؛ اجازت کے بغیر کاروباری پائریسی ناجائز ہے", "کتابوں کی کوئی ملکیت نہیں", "صرف عربی کتب محفوظ ہیں"], "ar": ["الحقوق الفكرية مملوكة ومعتبرة شرعاً ويحرم الاعتداء عليها بالقرصنة", "لا ملكية في الكتب"], "hi": ["बौद्धिक व प्रकाशन अधिकार शरीअत-संरक्षित संपत्ति हैं; अनधिकृत पायरेसी वर्जित है", "पुस्तकों का कोई स्वामित्व नहीं"] },
+          "correctIndex": 0,
+          "explanation": { "en": "IIFA Resolution No. 43(5/5) recognizes copyright, patents, and software IP as financially valuable protected rights.", "ur": "مجمع الفقہ (قرارداد 43) کاپی رائٹ اور سافٹ ویئر حقوق کو شرعی مال قرار دیتا ہے۔", "ar": "أقر مجمع الفقه رقم ٤٣ اعتبار الحقوق المعنوية وحرم التعدي عليها.", "hi": "IIFA प्रस्ताव 43 कॉपीराइट और बौद्धिक संपदा को संरक्षित संपत्ति मानता है।" }
+        }
+      ]
+    },
+    {
+      "id": "sector_24_photography",
+      "sectorNumber": 24,
+      "name": {
+        "en": "24. Photography, Videography & Content Creation",
+        "ur": "24. فوٹوگرافی، ویڈیوگرافی اور کانٹینٹ کریشن",
+        "ar": "٢٤. التصوير الفوتوغرافي والفيديو وصناعة المحتوى",
+        "hi": "24. फ़ोटोग्राफ़ी, वीडियोग्राफ़ी और कंटेंट क्रिएशन"
+      },
+      "nonBlanketAssessmentNote": {
+        "en": "Contains genuine Fiqh nuances: product, nature, medical, educational & family-event documentation are widely permitted by contemporary scholars for beneficial commerce, while immodesty, music violations, non-consent privacy leaks, and Haram brand ads are prohibited. Consult scholars on portrait artistry nuances.",
+        "ur": "اس شعبے میں فقہی باریکیاں ہیں: مصنوعات، قدرتی مناظر، تعلیم، ڈاکومنٹری اور باحیا تقریب کی ویڈیو معاصر علماء کی اکثریت کے نزدیک جائز ہے، جبکہ بے حیائی، بغیر اجازت تصاویر پھیلانا اور حرام تشہیر ممنوع ہے۔ (جاندار کی تصویر کے فقہی اختلافات میں احتیاط و مفتی سے رہنمائی لی جائے۔)",
+        "ar": "للمجال تفصيل فقهي: يجيز جمع كبير من المعاصرين تصوير المنتجات والطبيعة والتعليم والمناسبات المحتشمة، مع منع التبرج والموسيقى المحرمة وانتهاك الخصوصية.",
+        "hi": "इसमें फ़िक़्ही बारीकियां हैं: उत्पाद, प्रकृति, शिक्षा व शालीन आयोजन दस्तावेज़ीकरण समकालीन विद्वानों में प्रचलित व वैध माना जाता है, जबकि अश्लीलता, निजता उल्लंघन व हराम प्रचार वर्जित हैं।"
+      },
+      "introductionA": { "en": "Commercial product shoots, real estate tours, educational YouTube channels, documentaries, and dignified family wedding media.", "ur": "پروڈکٹ فوٹوگرافی، تعلیمی ویڈیوز، ڈاکومنٹریز اور باحیا عائلی تقریبات کی کوریج۔", "ar": "تصوير المنتجات والعقارات، وإنتاج المحتوى التعليمي والوثائقي، وتوثيق المناسبات المحتشمة.", "hi": "उत्पाद शूट, रियल एस्टेट टूर, शैक्षिक वीडियो और शालीन पारिवारिक आयोजन कवरेज।" },
+      "howItOperatesB": { "en": "Scopes shooting deliverables, signs explicit media privacy/usage permissions, shoots/edits professionally, and delivers cleanly.", "ur": "معاہدہ طے کرنا، تصاویر کے استعمال و پرائیویسی کی تحریری اجازت لینا، ایڈیٹنگ اور ترسیل۔", "ar": "الاتفاق على المخرجات، توثيق إذن النشر والخصوصية، المونتاج، والتسليم.", "hi": "डिलिवरेबल्स तय करना, निजता/प्रकाशन सहमति लेना, संपादन और डिलीवरी।" },
+      "startupRequirementsC": { "en": "Camera/lighting gear, encrypted backup SSDs, licensed editing software & clean nasheed/ambient audio, written privacy releases.", "ur": "کیمرہ و لائٹنگ، محفوظ بیک اپ ہارڈ ڈرائیوز، قانونی سافٹ ویئر اور پرائیویسی اجازت نامے۔", "ar": "معدات تصوير، أقراص حفظ مشفرة، برامج مرخصة، وتصاريح نشر مكتوبة.", "hi": "कैमरा उपकरण, सुरक्षित बैकअप ड्राइव, लाइसेंस सॉफ्टवेयर और लिखित सहमति पत्र।" },
+      "capitalAndInvestmentD": { "en": "Own savings or Musharakah studio partner; gear Ijarah.", "ur": "ذاتی سرمایہ، اسٹوڈیو مشارکہ یا کیمرے کا اجارہ۔", "ar": "تمويل ذاتي أو شراكة استوديو أو إجارة معدات.", "hi": "निजी बचत, स्टूडियो साझेदारी या उपकरण इज़ाराह।" },
+      "supplierSelectionE": { "en": "License royalty-free ambient soundtracks/nasheeds and authentic stock B-roll legally.", "ur": "قانونی آڈیو و اسٹاک کلپس استعمال کریں، کاپی رائٹ چوری نہ کریں۔", "ar": "استخدام مؤثرات صوتية ومقاطع مرخصة بعيداً عن المحرمات والقرصنة.", "hi": "वैध लाइसेंस ऑडियो व फुटेज उपयोग करें, चोरी न करें।" },
+      "purchasingProcurementF": { "en": "Purchase lenses/gimbals via Musawamah checking shutter counts; never buy stolen gear.", "ur": "کیمرہ و لینس کی حالت اور شٹر کاؤنٹ چیک کر کے خریدیں، چوری کا مال نہ لیں۔", "ar": "فحص الكاميرات المستعملة وخلوها من السرقة.", "hi": "शटर काउंट जांचकर उपकरण खरीदें; चोरी का सामान न लें।" },
+      "ownershipPossessionG": { "en": "Define usage rights upfront: client private archive only (especially female/family wedding shoots!) vs public portfolio permission.", "ur": "پرائیویٹ عائلی تقریبات کی تصاویر ہرگز اپنے فیس بک/انسٹاگرام پورٹ فولیو میں بغیر تحریری اجازت نہ لگائیں!", "ar": "حفظ صور العائلات والنساء كأمانة خاصة وعدم نشرها مطلقاً في المعرض دون إذن مكتوب.", "hi": "परिवार व महिलाओं के निजी आयोजन की तस्वीरें बिना लिखित अनुमति कभी सोशल मीडिया पर न डालें!" },
+      "productsServicesH": { "en": "Educational tutorials, architecture, halal food styling, e-commerce product shots; refuse adult/immodest shoots, alcohol/gambling ads, and deceptive clickbait.", "ur": "تعلیم، آرکیٹیکچر، حلال مصنوعات اور باوقار ڈاکومنٹری؛ فحش شوٹس، جوا/شراب اشتہارات اور جھوٹے کلک بیٹ سے مکمل اجتناب۔", "ar": "تصوير المنتجات والتعليم والطبيعة، ومنع الإعلانات المحرمة والتبرج.", "hi": "शिक्षा, उत्पाद व प्रकृति शूट; अश्लील शूट, जुआ/शराब विज्ञापन व झूठे क्लिकबेट से बचें।" },
+      "pricingProfitI": { "en": "Clear package hours, raw vs edited photo deliverables, and transparent licensing fees.", "ur": "شوٹ کے گھنٹے، ایڈیٹڈ تصاویر کی تعداد اور مکمل فیس پہلے واضح طے کریں۔", "ar": "تحديد ساعات التصوير وعدد الصور المعدلة والأجر مسبقاً.", "hi": "शूटिंग घंटे, संपादित फोटो संख्या व लाइसेंस शुल्क पहले तय करें।" },
+      "customerRightsJ": { "en": "Strict private vault storage + permanent deletion option after delivery for sensitive family weddings.", "ur": "خاندانی تقریبات کی فائلیں محفوظ رکھ کر حوالگی کے بعد مستقل حذف کرنے کا اختیار دیں اور کسی غیر متعلق کو ایڈیٹنگ کو نہ دیں۔", "ar": "حفظ ملفات العائلات في خوادم محمية وحذفها بعد التسليم دون تداولها.", "hi": "संवेदनशील पारिवारिक फ़ाइलें सुरक्षित रखकर डिलीवरी के बाद स्थायी डिलीट करने का विकल्प दें।" },
+      "employeeRightsK": { "en": "For ladies-only weddings, deploy trained female photographers exclusively; pay editors & lighting assistants promptly.", "ur": "خواتین کی تقریبات کے لیے باپردہ مستند لیڈی فوٹوگرافر فراہم کریں اور عملے کو وقت پر معاوضہ دیں۔", "ar": "توفير مصورات نساء لحفلات النساء ودفع أجور المساعدين والمونتير بانتظام.", "hi": "महिला आयोजनों में महिला फ़ोटोग्राफ़र रखें और एडिटिंग टीम को समय पर भुगतान दें।" },
+      "relevantContractsL": { "en": ["Ijarah (Shoot / Editing Service)", "Istisna (Produced Film / Ad)", "Ju'alah (Viral/Ad milestone)", "Musharakah"], "ur": ["اجارہ (شوٹنگ)", "استصناع (فلم/اشتہار)", "جعالہ", "مشارکہ"], "ar": ["الإجارة", "الاستصناع", "الجعالة", "المشاركة"], "hi": ["इजाराह", "इस्तिसना", "जुआलाह", "मुशारकाह"] },
+      "potentialProhibitedM": { "en": ["Posting private client family/female photos on Instagram without consent", "Editing fake food/cosmetic illusions", "Enabling AdSense Haram ads blindly"], "ur": ["بغیر اجازت فیملی تصاویر سوشل میڈیا پر ڈالنا", "کھانے/مصنوع کی جھوٹی نمائش", "بلا فلٹر حرام اشتہارات لگانا"], "ar": ["نشر صور العائلات دون إذن", "خداع البصريات في الطعام", "تفعيل إعلانات محرمة"], "hi": ["बिना सहमति निजी पारिवारिक फोटो पोस्ट करना", "भ्रामक उत्पाद एडिटिंग", "हराम विज्ञापन चलाना"] },
+      "halalChecklistN": { "en": ["Written privacy vault policy", "Halal sponsor & ad filters on", "Female crew for segregated events"], "ur": ["تحریری پرائیویسی امانت نامہ", "حلال اسپانسر و ایڈ فلٹر", "پردہ تقریبات کے لیے لیڈی ٹیم"], "hi": ["लिखित निजता नीति", "हलाल विज्ञापन फ़िल्टर", "महिला आयोजनों हेतु महिला टीम"] },
+      "realisticCaseStudyO": { "en": "A studio offers 'Zero-Social-Upload Privacy Guarantee' for family weddings alongside a dedicated female editing team, becoming the region's most booked ethical studio.", "ur": "اسٹوڈیو نے خاندانی تقریبات کے لیے 'تصاویر سوشل میڈیا پر نہ ڈالنے کی 100 فیصد گارنٹی' اور لیڈی ایڈیٹنگ ٹیم کا نظام بنایا اور علاقے میں سب سے زیادہ بکنگ حاصل کی۔", "ar": "قدّم استوديو ضماناً كتابياً بعدم رفع صور الأعراس على الإنترنت مع طاقم نسائي فأصبح الخيار الأول.", "hi": "स्टूडियो ने 'शून्य-सोशल-अपलोड गोपनीयता गारंटी' और महिला एडिटिंग टीम शुरू कर सर्वाधिक भरोसेमंद बुकिंग प्राप्त की।" },
+      "commonMistakesP": { "en": ["Using inedible glue/motor oil instead of milk/syrup to fake product food commercials (deceptive marketing!)."], "ur": ["فوڈ اشتہار میں دودھ کے بجائے گلو یا انجن آئل استعمال کر کے گاہک کو جھوٹا معیار دکھانا۔"], "ar": ["استخدام مواد غير غذائية في إعلانات الطعام لإيهام المشاهد بجودة مزيفة."], "hi": "खाने के विज्ञापन में नकली गुणवत्ता दिखाने हेतु गोंद या इंजन ऑयल का उपयोग करना।" },
+      "practicalAssignmentQ": { "en": "Draft a Private Media Custody Covenant assuring zero unauthorized sharing, encrypted local storage, and verifiable post-delivery purge.", "ur": "نجی تصاویر و ویڈیوز کی حفاظت کا 3 نکاتی عہد نامہ تحریر کریں۔", "ar": "صغ ميثاق حفظ الخصوصية للملفات العائلية ومنع النشر غير المصرح به.", "hi": "निजी मीडिया की सुरक्षा और डिलीवरी के बाद डिलीट करने का 3-सूत्री गोपनीयता करार लिखें।" },
+      "referencesR": [
+        { "title": "Quran 4:58 & 24:19 (Privacy/Dignity) & IIFA Media Guidance", "category": "scholarly_review_required", "attribution": "Quran.com & Contemporary Fiqh", "url": "https://quran.com/4/58" }
+      ],
+      "quranRefSpecs": [
+        { "surahNumber": 4, "startAyah": 58, "endAyah": 58, "contextNote": { "en": "Client wedding/family footage is heavy Amanah.", "ur": "خاندانی تقریبات کی ویڈیو اور تصاویر انتہائی حساس امانت ہیں۔", "ar": "حفظ أعراض الناس وملفاتهم الخاصة أمانة.", "hi": "परिवारों की निजी फुटेज अत्यंत संवेदनशील अमानत है।" }, "businessRelevance": { "en": "Never leak, sell, or showcase private client reels without explicit consent.", "ur": "تحریری اجازت کے بغیر نجی فائلیں دکھانا یا شائع کرنا خیانت ہے۔", "ar": "حرمة نشر أو تسريب ملفات العملاء.", "hi": "बिना स्पष्ट अनुमति निजी फ़ुटेज दिखाना विश्वासघात है।" } }
+      ],
+      "hadithIds": ["muslim_102"],
+      "mcqs": [
+        {
+          "id": "mcq_sec_24",
+          "question": { "en": "If a family hires a videographer privately for a segregated wedding with clear instruction 'Do not post online', may the studio post highlights as Instagram portfolio?", "ur": "اگر خاندان کسی اسٹوڈیو کو واضح ہدایت دے کہ ہماری تقریب کی ویڈیو آن لائن نہ لگائی جائے، تو کیا اسٹوڈیو اپنے پورٹ فولیو کے لیے انسٹاگرام ریل ڈال سکتا ہے؟", "ar": "إذا اشترطت الأسرة عدم نشر صور المناسبة مطلقاً، فهل يجوز للمصور نشر مقتطفات للترويج؟", "hi": "यदि परिवार स्पष्ट कहे कि शादी की तस्वीरें ऑनलाइन न डालें, तो क्या स्टूडियो पोर्टफोलियो के लिए रील पोस्ट कर सकता है?" },
+          "options": { "en": ["No; it violates contractual obligation (5:1), privacy dignity, and Amanah (4:58)", "Yes, cropped faces are fine", "Yes for portfolio"], "ur": ["نہیں؛ یہ معاہدے (5:1)، حیا اور امانت (4:58) کی سنگین خلاف ورزی ہے", "چہرہ چھپا کر جائز ہے", "پورٹ فولیو کے لیے جائز ہے"], "ar": ["لا؛ لأنه نقض للعهد وخيانة للأمانة (٥:١ و ٤:٥٨)", "نعم للترويج"], "hi": ["नहीं; यह अनुबंध (5:1), निजता और अमानत (4:58) का गंभीर उल्लंघन है", "पोर्टफोलियो हेतु वैध है"] },
+          "correctIndex": 0,
+          "explanation": { "en": "Private family media held in trust may never be published without explicit consent.", "ur": "امانتاً رکھی نجی تصاویر و ویڈیو بغیر اجازت شائع کرنا حرام و خیانت ہے۔", "ar": "لا يجوز نشر الصور الخاصة دون إذن صريح.", "hi": "अमानत के रूप में रखे निजी दृश्य बिना अनुमति प्रकाशित नहीं किए जा सकते।" }
+        }
+      ]
+    }
+  ]
+}
