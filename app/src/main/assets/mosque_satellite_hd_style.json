@@ -1,0 +1,149 @@
+{
+  "version": 8,
+  "name": "Noor HD Satellite",
+  "sources": {
+    "esri-clarity-base": {
+      "type": "raster",
+      "tiles": [
+        "https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 16,
+      "attribution": "Esri World Imagery Clarity (Maxar Vivid)"
+    },
+    "esri-world-imagery-hd": {
+      "type": "raster",
+      "tiles": [
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      ],
+      "tileSize": 256,
+      "minzoom": 14,
+      "maxzoom": 18,
+      "attribution": "Esri, Maxar WorldView-3, Earthstar Geographics, and the GIS User Community"
+    },
+    "aws-terrarium-dem": {
+      "type": "raster-dem",
+      "tiles": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "maxzoom": 15,
+      "encoding": "terrarium",
+      "attribution": "Mapzen / AWS Terrain Tiles"
+    },
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://tiles.openfreemap.org/planet"
+    }
+  },
+  "sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "noor-terrain-background",
+      "type": "background",
+      "paint": {
+        "background-color": "#1D3329"
+      }
+    },
+    {
+      "id": "fallback-vector-landcover",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "paint": {
+        "fill-color": "#264236",
+        "fill-opacity": 0.9
+      }
+    },
+    {
+      "id": "fallback-vector-water",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#14486E",
+        "fill-opacity": 1.0
+      }
+    },
+    {
+      "id": "satellite-clarity-base",
+      "type": "raster",
+      "source": "esri-clarity-base",
+      "minzoom": 0,
+      "maxzoom": 24,
+      "paint": {
+        "raster-opacity": 1.0,
+        "raster-fade-duration": 0,
+        "raster-resampling": "linear",
+        "raster-contrast": 0.12,
+        "raster-saturation": 0.10,
+        "raster-brightness-min": 0.02
+      }
+    },
+    {
+      "id": "satellite-imagery-hd",
+      "type": "raster",
+      "source": "esri-world-imagery-hd",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "paint": {
+        "raster-opacity": 1.0,
+        "raster-fade-duration": 0,
+        "raster-resampling": "linear",
+        "raster-contrast": 0.12,
+        "raster-saturation": 0.10,
+        "raster-brightness-min": 0.02
+      }
+    },
+    {
+      "id": "sat-terrain-hillshade",
+      "type": "hillshade",
+      "source": "aws-terrarium-dem",
+      "minzoom": 6,
+      "maxzoom": 18,
+      "paint": {
+        "hillshade-exaggeration": 0.28,
+        "hillshade-shadow-color": "#0F172A",
+        "hillshade-highlight-color": "#FFFBEB"
+      }
+    },
+    {
+      "id": "sat-road-labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation_name",
+      "minzoom": 14,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 300,
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 14, 10.5, 18, 13.0]
+      },
+      "paint": {
+        "text-color": "#ffffff",
+        "text-halo-color": "#0f172a",
+        "text-halo-width": 2.4
+      }
+    },
+    {
+      "id": "sat-place-labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 3,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 12, 15, 17, 16.5]
+      },
+      "paint": {
+        "text-color": "#ffffff",
+        "text-halo-color": "#0f172a",
+        "text-halo-width": 2.4
+      }
+    }
+  ]
+}

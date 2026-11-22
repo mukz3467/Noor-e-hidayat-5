@@ -7,6 +7,9 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
+import android.os.Build
+import android.view.Surface
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -34,6 +37,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
+import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
@@ -43,22 +47,21 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.data.location.AppLocationManager
+import com.example.data.location.CompassMath
+import com.example.data.location.CompassMath.AssistedSensorSource
+import com.example.data.location.CompassMath.HybridQiblaMode
+import com.example.data.location.CompassMath.LiveSensorSource
 import com.example.data.location.LocationSource
 import com.example.data.model.AppLanguage
 import com.example.data.repository.PrayerCalculator
 import com.example.localization.AppLocalization
 import com.example.ui.components.NoorTopBar
+import com.example.ui.components.noorSelectableChipColors
 import java.util.Locale
 import kotlin.math.abs
 import kotlin.math.cos
 import kotlin.math.roundToInt
 import kotlin.math.sin
-
-private enum class CompassSensorMode {
-    ROTATION_VECTOR,
-    ACCEL_MAGNETOMETER,
-    UNAVAILABLE
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -100,6 +103,9 @@ fun QiblaScreen(
     val qiblaBearing = remember(userLocation.latitude, userLocation.longitude) {
         PrayerCalculator.calculateQiblaBearing(userLocation.latitude, userLocation.longitude)
     }
+    val qiblaCardinal = remember(qiblaBearing) {
+        CompassMath.cardinalLabel(qiblaBearing.toFloat())
+    }
     val distanceKm = remember(userLocation.latitude, userLocation.longitude) {
         PrayerCalculator.calculateDistanceToKaabaKm(userLocation.latitude, userLocation.longitude)
     }
@@ -118,119 +124,337 @@ fun QiblaScreen(
         }
     }
 
-    var rawMagneticHeading by remember { mutableFloatStateOf(0f) }
-    var hasValidCompassReading by remember { mutableStateOf(false) }
-    var sensorAccuracy by remember { mutableIntStateOf(SensorManager.SENSOR_STATUS_ACCURACY_HIGH) }
-    var sensorMode by remember { mutableStateOf(CompassSensorMode.UNAVAILABLE) }
+    // Automatic device sensor capability detection
+    val sensorCapabilities = remember(context) {
+        val sm = runCatching {
+            context.getSystemService(Context.SENSOR_SERVICE) as? SensorManager
+        }.getOrNull()
+        CompassMath.detectSensorCapabilities(sm)
+    }
 
-    DisposableEffect(Unit) {
-        val sensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-        val rotationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)
-        val accelSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
-        val magSensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)
+    var selectedMode by remember(sensorCapabilities) {
+        mutableStateOf(sensorCapabilities.recommendedMode)
+    }
+    var isAutoSelectedMode by remember(sensorCapabilities) {
+        mutableStateOf(true)
+    }
+
+    // Live Compass state
+    var rawMagneticHeading by remember { mutableFloatStateOf(0f) }
+    var hasValidLiveReading by remember { mutableStateOf(false) }
+    var sensorAccuracy by remember { mutableIntStateOf(SensorManager.SENSOR_STATUS_ACCURACY_HIGH) }
+    var liveUnwrappedDialAngle by remember { mutableFloatStateOf(0f) }
+    var hasUnwrappedLiveAngle by remember { mutableStateOf(false) }
+
+    // Assisted Direction state (relative orientation sensor + verified external reference anchor)
+    var relativeYawDeg by remember { mutableFloatStateOf(0f) }
+    var hasRelativeYawReading by remember { mutableStateOf(false) }
+    var assistedAnchored by remember { mutableStateOf(false) }
+    var anchorTrueAzimuthDeg by remember { mutableFloatStateOf(0f) }
+    var anchorRelativeYawDeg by remember { mutableFloatStateOf(0f) }
+    var assistedUnwrappedDialAngle by remember { mutableFloatStateOf(0f) }
+    var hasUnwrappedAssistedAngle by remember { mutableStateOf(false) }
+
+    // Current astronomical solar position for Assisted Direction external reference
+    var solarTickMs by remember { mutableLongStateOf(System.currentTimeMillis()) }
+    val solarPosition = remember(userLocation.latitude, userLocation.longitude, solarTickMs) {
+        CompassMath.calculateSolarPosition(userLocation.latitude, userLocation.longitude, solarTickMs)
+    }
+
+    // Register appropriate Android sensors for the active mode (cleanly unregistered on mode switch or dispose)
+    DisposableEffect(selectedMode, sensorCapabilities) {
+        val sensorManager = runCatching {
+            context.getSystemService(Context.SENSOR_SERVICE) as? SensorManager
+        }.getOrNull()
 
         var listener: SensorEventListener? = null
 
-        if (rotationSensor != null) {
-            sensorMode = CompassSensorMode.ROTATION_VECTOR
-            listener = object : SensorEventListener {
-                private val rotationMatrix = FloatArray(9)
-                private val orientationAngles = FloatArray(3)
-
-                override fun onSensorChanged(event: SensorEvent?) {
-                    val values = event?.values ?: return
-                    if (values.size < 3 || values.any { it.isNaN() || it.isInfinite() }) return
-                    try {
-                        SensorManager.getRotationMatrixFromVector(rotationMatrix, values)
-                        SensorManager.getOrientation(rotationMatrix, orientationAngles)
-                        val rad = orientationAngles[0]
-                        if (rad.isNaN() || rad.isInfinite()) return
-                        val azimuthDegrees = Math.toDegrees(rad.toDouble()).toFloat()
-                        val normalized = (azimuthDegrees + 360f) % 360f
-                        rawMagneticHeading = if (hasValidCompassReading) {
-                            lowPass(normalized, rawMagneticHeading)
-                        } else {
-                            normalized
-                        }
-                        hasValidCompassReading = true
-                    } catch (_: Exception) {}
-                }
-
-                override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-                    sensorAccuracy = accuracy
-                }
-            }
-            sensorManager.registerListener(listener, rotationSensor, SensorManager.SENSOR_DELAY_UI)
-        } else if (accelSensor != null && magSensor != null) {
-            sensorMode = CompassSensorMode.ACCEL_MAGNETOMETER
-            listener = object : SensorEventListener {
-                private val gravity = FloatArray(3)
-                private val geomagnetic = FloatArray(3)
-                private var hasGravity = false
-                private var hasMag = false
-                private val rotationMatrix = FloatArray(9)
-                private val orientationAngles = FloatArray(3)
-
-                override fun onSensorChanged(event: SensorEvent?) {
-                    val e = event ?: return
-                    val vals = e.values ?: return
-                    if (vals.size < 3 || vals.any { it.isNaN() || it.isInfinite() }) return
-                    if (e.sensor.type == Sensor.TYPE_ACCELEROMETER) {
-                        System.arraycopy(vals, 0, gravity, 0, 3)
-                        hasGravity = true
-                    } else if (e.sensor.type == Sensor.TYPE_MAGNETIC_FIELD) {
-                        System.arraycopy(vals, 0, geomagnetic, 0, 3)
-                        hasMag = true
+        if (sensorManager != null && selectedMode == HybridQiblaMode.LIVE_COMPASS && sensorCapabilities.canUseLiveCompass) {
+            val liveSource = sensorCapabilities.bestLiveSource
+            when (liveSource) {
+                LiveSensorSource.ROTATION_VECTOR,
+                LiveSensorSource.GEOMAGNETIC_ROTATION_VECTOR -> {
+                    val sensorType = if (liveSource == LiveSensorSource.ROTATION_VECTOR) {
+                        Sensor.TYPE_ROTATION_VECTOR
+                    } else {
+                        Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR
                     }
+                    val rotSensor = sensorManager.getDefaultSensor(sensorType)
+                    if (rotSensor != null) {
+                        listener = object : SensorEventListener {
+                            private val rotationMatrix = FloatArray(9)
 
-                    if (hasGravity && hasMag &&
-                        SensorManager.getRotationMatrix(rotationMatrix, null, gravity, geomagnetic)
-                    ) {
-                        SensorManager.getOrientation(rotationMatrix, orientationAngles)
-                        val rad = orientationAngles[0]
-                        if (rad.isNaN() || rad.isInfinite()) return
-                        val azimuth = Math.toDegrees(rad.toDouble()).toFloat()
-                        val normalized = (azimuth + 360f) % 360f
-                        rawMagneticHeading = if (hasValidCompassReading) {
-                            lowPass(normalized, rawMagneticHeading)
-                        } else {
-                            normalized
+                            override fun onSensorChanged(event: SensorEvent?) {
+                                val values = event?.values ?: return
+                                if (!CompassMath.isValidSensorVector(values, 3)) return
+                                try {
+                                    SensorManager.getRotationMatrixFromVector(rotationMatrix, values)
+                                    val azimuth = CompassMath.extractTiltAwareAzimuthFromRotationMatrix(
+                                        rotationMatrix = rotationMatrix,
+                                        displayRotation = getDisplayRotation(context)
+                                    ) ?: return
+                                    rawMagneticHeading = CompassMath.lowPassSmoothHeading(
+                                        currentDeg = azimuth,
+                                        previousDeg = rawMagneticHeading,
+                                        hasPreviousReading = hasValidLiveReading
+                                    )
+                                    hasValidLiveReading = true
+                                } catch (_: Exception) {
+                                }
+                            }
+
+                            override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+                                sensorAccuracy = accuracy
+                            }
                         }
-                        hasValidCompassReading = true
+                        sensorManager.registerListener(listener, rotSensor, SensorManager.SENSOR_DELAY_UI)
                     }
                 }
 
-                override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-                    sensorAccuracy = accuracy
+                LiveSensorSource.GRAVITY_MAGNETOMETER,
+                LiveSensorSource.ACCEL_MAGNETOMETER -> {
+                    val gravityType = if (liveSource == LiveSensorSource.GRAVITY_MAGNETOMETER) {
+                        Sensor.TYPE_GRAVITY
+                    } else {
+                        Sensor.TYPE_ACCELEROMETER
+                    }
+                    val gravitySensor = sensorManager.getDefaultSensor(gravityType)
+                    val magSensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)
+                    if (gravitySensor != null && magSensor != null) {
+                        listener = object : SensorEventListener {
+                            private val gravity = FloatArray(3)
+                            private val geomagnetic = FloatArray(3)
+                            private var hasGravity = false
+                            private var hasMag = false
+                            private val rotationMatrix = FloatArray(9)
+
+                            override fun onSensorChanged(event: SensorEvent?) {
+                                val e = event ?: return
+                                val vals = e.values ?: return
+                                if (!CompassMath.isValidSensorVector(vals, 3)) return
+                                if (!CompassMath.hasNonZeroMagnitude(vals)) return
+
+                                when (e.sensor.type) {
+                                    gravityType -> {
+                                        if (hasGravity && gravityType == Sensor.TYPE_ACCELEROMETER) {
+                                            // Low-pass filter raw accelerometer to isolate gravity vector
+                                            val alpha = 0.8f
+                                            gravity[0] = alpha * gravity[0] + (1f - alpha) * vals[0]
+                                            gravity[1] = alpha * gravity[1] + (1f - alpha) * vals[1]
+                                            gravity[2] = alpha * gravity[2] + (1f - alpha) * vals[2]
+                                        } else {
+                                            System.arraycopy(vals, 0, gravity, 0, 3)
+                                            hasGravity = true
+                                        }
+                                    }
+                                    Sensor.TYPE_MAGNETIC_FIELD -> {
+                                        if (hasMag) {
+                                            val alpha = 0.7f
+                                            geomagnetic[0] = alpha * geomagnetic[0] + (1f - alpha) * vals[0]
+                                            geomagnetic[1] = alpha * geomagnetic[1] + (1f - alpha) * vals[1]
+                                            geomagnetic[2] = alpha * geomagnetic[2] + (1f - alpha) * vals[2]
+                                        } else {
+                                            System.arraycopy(vals, 0, geomagnetic, 0, 3)
+                                            hasMag = true
+                                        }
+                                    }
+                                }
+
+                                if (hasGravity && hasMag &&
+                                    SensorManager.getRotationMatrix(rotationMatrix, null, gravity, geomagnetic)
+                                ) {
+                                    val azimuth = CompassMath.extractTiltAwareAzimuthFromRotationMatrix(
+                                        rotationMatrix = rotationMatrix,
+                                        displayRotation = getDisplayRotation(context)
+                                    ) ?: return
+                                    rawMagneticHeading = CompassMath.lowPassSmoothHeading(
+                                        currentDeg = azimuth,
+                                        previousDeg = rawMagneticHeading,
+                                        hasPreviousReading = hasValidLiveReading
+                                    )
+                                    hasValidLiveReading = true
+                                }
+                            }
+
+                            override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+                                if (sensor == null || sensor.type == Sensor.TYPE_MAGNETIC_FIELD) {
+                                    sensorAccuracy = accuracy
+                                }
+                            }
+                        }
+                        sensorManager.registerListener(listener, gravitySensor, SensorManager.SENSOR_DELAY_UI)
+                        sensorManager.registerListener(listener, magSensor, SensorManager.SENSOR_DELAY_UI)
+                    }
                 }
+
+                LiveSensorSource.NONE -> Unit
             }
-            sensorManager.registerListener(listener, accelSensor, SensorManager.SENSOR_DELAY_UI)
-            sensorManager.registerListener(listener, magSensor, SensorManager.SENSOR_DELAY_UI)
-        } else {
-            sensorMode = CompassSensorMode.UNAVAILABLE
+        } else if (sensorManager != null && selectedMode == HybridQiblaMode.ASSISTED_DIRECTION && sensorCapabilities.canUseAssistedDirection) {
+            when (sensorCapabilities.bestAssistedSource) {
+                AssistedSensorSource.GAME_ROTATION_VECTOR -> {
+                    val gameRot = sensorManager.getDefaultSensor(Sensor.TYPE_GAME_ROTATION_VECTOR)
+                    if (gameRot != null) {
+                        listener = object : SensorEventListener {
+                            private val rotationMatrix = FloatArray(9)
+                            override fun onSensorChanged(event: SensorEvent?) {
+                                val vals = event?.values ?: return
+                                if (!CompassMath.isValidSensorVector(vals, 3)) return
+                                try {
+                                    SensorManager.getRotationMatrixFromVector(rotationMatrix, vals)
+                                    val yaw = CompassMath.extractTiltAwareAzimuthFromRotationMatrix(
+                                        rotationMatrix = rotationMatrix,
+                                        displayRotation = getDisplayRotation(context)
+                                    ) ?: return
+                                    relativeYawDeg = CompassMath.lowPassSmoothHeading(
+                                        currentDeg = yaw,
+                                        previousDeg = relativeYawDeg,
+                                        hasPreviousReading = hasRelativeYawReading,
+                                        alpha = 0.25f
+                                    )
+                                    hasRelativeYawReading = true
+                                } catch (_: Exception) {
+                                }
+                            }
+
+                            override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
+                        }
+                        sensorManager.registerListener(listener, gameRot, SensorManager.SENSOR_DELAY_UI)
+                    }
+                }
+
+                AssistedSensorSource.GYROSCOPE -> {
+                    val gyro = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
+                    if (gyro != null) {
+                        listener = object : SensorEventListener {
+                            private var lastTimestampNs: Long = 0L
+                            override fun onSensorChanged(event: SensorEvent?) {
+                                val e = event ?: return
+                                val vals = e.values ?: return
+                                if (!CompassMath.isValidSensorVector(vals, 3)) return
+                                val ts = e.timestamp
+                                if (lastTimestampNs != 0L && ts > lastTimestampNs) {
+                                    val dtSec = ((ts - lastTimestampNs) / 1_000_000_000.0).coerceIn(0.0, 0.25)
+                                    // Positive Z rotation is counter-clockwise; clockwise azimuth decreases with +Z
+                                    val deltaDeg = -Math.toDegrees(vals[2] * dtSec).toFloat()
+                                    if (deltaDeg.isFinite()) {
+                                        relativeYawDeg = CompassMath.normalizeDegrees(relativeYawDeg + deltaDeg)
+                                    }
+                                }
+                                lastTimestampNs = ts
+                                hasRelativeYawReading = true
+                            }
+
+                            override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) = Unit
+                        }
+                        sensorManager.registerListener(listener, gyro, SensorManager.SENSOR_DELAY_UI)
+                    }
+                }
+
+                AssistedSensorSource.NONE -> Unit
+            }
         }
 
         onDispose {
-            listener?.let { sensorManager.unregisterListener(it) }
+            if (sensorManager != null && listener != null) {
+                runCatching { sensorManager.unregisterListener(listener) }
+            }
         }
     }
 
-    val hasCompassSensor = sensorMode != CompassSensorMode.UNAVAILABLE
-    val trueHeading = ((rawMagneticHeading + magneticDeclination) + 360f) % 360f
-    val relativeAngle = ((qiblaBearing.toFloat() - trueHeading) + 360f) % 360f
-    val signedTurnDiff = ((relativeAngle + 180f) % 360f) - 180f
+    val isLiveModeActive = selectedMode == HybridQiblaMode.LIVE_COMPASS && sensorCapabilities.canUseLiveCompass
+    val isAssistedActive = selectedMode == HybridQiblaMode.ASSISTED_DIRECTION
+    val isManualModeActive = selectedMode == HybridQiblaMode.MANUAL_QIBLA ||
+        (selectedMode == HybridQiblaMode.LIVE_COMPASS && !sensorCapabilities.canUseLiveCompass)
 
-    val animatedCompassRotation by animateFloatAsState(
-        targetValue = if (hasValidCompassReading) -trueHeading else 0f,
-        animationSpec = spring(dampingRatio = 0.8f, stiffness = 300f),
-        label = "compass_rotation"
+    val liveTrueHeading = CompassMath.magneticToTrueHeading(rawMagneticHeading, magneticDeclination)
+    val assistedTrueHeading = if (assistedAnchored) {
+        CompassMath.computeAssistedTrueHeading(
+            anchorTrueAzimuthDeg = anchorTrueAzimuthDeg,
+            currentRelativeYawDeg = relativeYawDeg,
+            anchorRelativeYawDeg = anchorRelativeYawDeg
+        )
+    } else {
+        0f
+    }
+
+    // Update unwrapped angles to prevent 359° <-> 0° animation whip-back
+    LaunchedEffect(liveTrueHeading, hasValidLiveReading) {
+        if (hasValidLiveReading) {
+            liveUnwrappedDialAngle = CompassMath.unwrapContinuousAngle(
+                currentTargetAngle = -liveTrueHeading,
+                previousUnwrappedAngle = liveUnwrappedDialAngle,
+                hasPrevious = hasUnwrappedLiveAngle
+            )
+            hasUnwrappedLiveAngle = true
+        }
+    }
+
+    LaunchedEffect(assistedTrueHeading, assistedAnchored) {
+        if (assistedAnchored) {
+            assistedUnwrappedDialAngle = CompassMath.unwrapContinuousAngle(
+                currentTargetAngle = -assistedTrueHeading,
+                previousUnwrappedAngle = assistedUnwrappedDialAngle,
+                hasPrevious = hasUnwrappedAssistedAngle
+            )
+            hasUnwrappedAssistedAngle = true
+        } else {
+            hasUnwrappedAssistedAngle = false
+            assistedUnwrappedDialAngle = 0f
+        }
+    }
+
+    val animatedLiveRotation by animateFloatAsState(
+        targetValue = if (hasValidLiveReading) liveUnwrappedDialAngle else 0f,
+        animationSpec = spring(dampingRatio = 0.82f, stiffness = 260f),
+        label = "live_compass_rotation"
     )
 
-    val isAligned = hasCompassSensor &&
-        hasValidCompassReading &&
-        sensorAccuracy != SensorManager.SENSOR_STATUS_UNRELIABLE &&
-        sensorAccuracy != SensorManager.SENSOR_STATUS_ACCURACY_LOW &&
-        abs(signedTurnDiff) <= 3.5f
+    val animatedAssistedRotation by animateFloatAsState(
+        targetValue = if (assistedAnchored) assistedUnwrappedDialAngle else 0f,
+        animationSpec = spring(dampingRatio = 0.82f, stiffness = 260f),
+        label = "assisted_compass_rotation"
+    )
+
+    val activeHeadingAvailable = (isLiveModeActive && hasValidLiveReading) ||
+        (isAssistedActive && assistedAnchored)
+    val activeTrueHeading = when {
+        isLiveModeActive && hasValidLiveReading -> liveTrueHeading
+        isAssistedActive && assistedAnchored -> assistedTrueHeading
+        else -> 0f
+    }
+    val signedTurnDiff = if (activeHeadingAvailable) {
+        CompassMath.shortestSignedDelta(activeTrueHeading, qiblaBearing.toFloat())
+    } else {
+        0f
+    }
+
+    val isAligned = when {
+        isLiveModeActive -> CompassMath.isAlignedWithQibla(
+            hasCompassSensor = sensorCapabilities.canUseLiveCompass,
+            hasValidReading = hasValidLiveReading,
+            sensorAccuracy = sensorAccuracy,
+            trueHeadingDeg = liveTrueHeading,
+            qiblaBearingDeg = qiblaBearing.toFloat()
+        )
+        isAssistedActive && assistedAnchored -> abs(signedTurnDiff) <= CompassMath.ALIGNMENT_TOLERANCE_DEGREES
+        else -> false
+    }
+
+    val modeExplanationText = when {
+        isLiveModeActive -> AppLocalization.get(sensorCapabilities.autoModeReasonKey, language)
+        isAssistedActive -> when {
+            !sensorCapabilities.canUseAssistedDirection ->
+                AppLocalization.get("qibla_reason_assisted_no_sensor", language)
+            assistedAnchored ->
+                AppLocalization.get("qibla_reason_assisted_anchored", language)
+            else ->
+                AppLocalization.get("qibla_reason_assisted_unanchored", language)
+        }
+        !sensorCapabilities.canUseLiveCompass ->
+            AppLocalization.get(sensorCapabilities.autoModeReasonKey, language)
+        else ->
+            AppLocalization.get("qibla_reason_manual_user", language)
+    }
 
     Scaffold(
         topBar = {
@@ -480,14 +704,104 @@ fun QiblaScreen(
                 }
             }
 
-            Spacer(modifier = Modifier.height(14.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
-            // Low calibration warning when live sensor is active but low accuracy
-            if (hasCompassSensor && (sensorAccuracy == SensorManager.SENSOR_STATUS_UNRELIABLE || sensorAccuracy == SensorManager.SENSOR_STATUS_ACCURACY_LOW)) {
+            // Hybrid Mode Selector (Live Compass / Assisted Direction / Manual Qibla)
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .testTag("qibla_mode_selector")
+            ) {
+                FilterChip(
+                    selected = selectedMode == HybridQiblaMode.LIVE_COMPASS,
+                    enabled = sensorCapabilities.canUseLiveCompass,
+                    onClick = {
+                        selectedMode = HybridQiblaMode.LIVE_COMPASS
+                        isAutoSelectedMode = false
+                    },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.Explore,
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    },
+                    label = {
+                        Text(
+                            text = AppLocalization.get("qibla_mode_live", language),
+                            maxLines = 1
+                        )
+                    },
+                    colors = noorSelectableChipColors(),
+                    modifier = Modifier
+                        .weight(1f)
+                        .testTag("qibla_mode_chip_live")
+                )
+
+                FilterChip(
+                    selected = selectedMode == HybridQiblaMode.ASSISTED_DIRECTION,
+                    onClick = {
+                        selectedMode = HybridQiblaMode.ASSISTED_DIRECTION
+                        isAutoSelectedMode = false
+                        solarTickMs = System.currentTimeMillis()
+                    },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.WbSunny,
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    },
+                    label = {
+                        Text(
+                            text = AppLocalization.get("qibla_mode_assisted", language),
+                            maxLines = 1
+                        )
+                    },
+                    colors = noorSelectableChipColors(),
+                    modifier = Modifier
+                        .weight(1f)
+                        .testTag("qibla_mode_chip_assisted")
+                )
+
+                FilterChip(
+                    selected = selectedMode == HybridQiblaMode.MANUAL_QIBLA,
+                    onClick = {
+                        selectedMode = HybridQiblaMode.MANUAL_QIBLA
+                        isAutoSelectedMode = false
+                    },
+                    leadingIcon = {
+                        Icon(
+                            imageVector = Icons.Default.CompassCalibration,
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    },
+                    label = {
+                        Text(
+                            text = AppLocalization.get("qibla_mode_manual", language),
+                            maxLines = 1
+                        )
+                    },
+                    colors = noorSelectableChipColors(),
+                    modifier = Modifier
+                        .weight(1f)
+                        .testTag("qibla_mode_chip_manual")
+                )
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            // Low calibration warning when live sensor is active with low/unreliable accuracy
+            if (isLiveModeActive && CompassMath.needsCalibration(sensorAccuracy)) {
                 Card(
                     shape = RoundedCornerShape(12.dp),
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .testTag("qibla_calibration_card")
                 ) {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
@@ -515,9 +829,10 @@ fun QiblaScreen(
                         }
                     }
                 }
-                Spacer(modifier = Modifier.height(14.dp))
+                Spacer(modifier = Modifier.height(12.dp))
             }
 
+            // Alignment Banner (ONLY when genuine live/anchored heading is aligned within tolerance)
             AnimatedVisibility(visible = isAligned) {
                 Surface(
                     shape = RoundedCornerShape(14.dp),
@@ -529,7 +844,7 @@ fun QiblaScreen(
                     ),
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(bottom = 14.dp)
+                        .padding(bottom = 12.dp)
                         .testTag("qibla_aligned_banner")
                 ) {
                     Row(
@@ -548,224 +863,363 @@ fun QiblaScreen(
                 }
             }
 
-            if (hasCompassSensor) {
-                val primaryColor = MaterialTheme.colorScheme.primary
-                Box(
-                    contentAlignment = Alignment.Center,
-                    modifier = Modifier
-                        .size(300.dp)
-                        .padding(8.dp)
-                        .testTag("qibla_compass_dial")
-                ) {
-                    Canvas(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .rotate(animatedCompassRotation)
-                    ) {
-                        val center = Offset(size.width / 2, size.height / 2)
-                        val radius = size.minDimension / 2 - 12.dp.toPx()
+            // Active Mode Primary Visual
+            when {
+                // MODE 1: LIVE COMPASS MODE
+                isLiveModeActive -> {
+                    QiblaMovingCompassDial(
+                        dialRotationDeg = animatedLiveRotation,
+                        qiblaBearingDeg = qiblaBearing.toFloat(),
+                        isAligned = isAligned,
+                        language = language,
+                        dialTestTag = "qibla_compass_dial"
+                    )
 
-                        drawCircle(
-                            color = primaryColor.copy(alpha = 0.18f),
-                            radius = radius,
-                            center = center,
-                            style = Stroke(width = 3.dp.toPx())
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    val turnHintText = when {
+                        !hasValidLiveReading -> AppLocalization.get("qibla_waiting_sensor_hint", language)
+                        isAligned -> AppLocalization.get("qibla_aligned_banner", language)
+                        signedTurnDiff > 0f -> String.format(
+                            Locale.getDefault(),
+                            AppLocalization.get("qibla_turn_right", language),
+                            abs(signedTurnDiff).roundToInt()
                         )
-
-                        for (deg in 0 until 360 step 5) {
-                            val angleRad = Math.toRadians((deg - 90).toDouble())
-                            val isMajor = (deg % 30 == 0)
-                            val isCardinal = (deg % 90 == 0)
-                            val tickLength = if (isCardinal) 16.dp.toPx() else if (isMajor) 10.dp.toPx() else 5.dp.toPx()
-                            val strokeWidth = if (isCardinal) 3.dp.toPx() else if (isMajor) 2.dp.toPx() else 1.dp.toPx()
-                            val tickColor = if (deg == 0) Color(0xFFE53935) else if (isMajor) primaryColor else Color.Gray.copy(alpha = 0.5f)
-
-                            val startX = (center.x + (radius - tickLength) * cos(angleRad)).toFloat()
-                            val startY = (center.y + (radius - tickLength) * sin(angleRad)).toFloat()
-                            val endX = (center.x + radius * cos(angleRad)).toFloat()
-                            val endY = (center.y + radius * sin(angleRad)).toFloat()
-
-                            drawLine(
-                                color = tickColor,
-                                start = Offset(startX, startY),
-                                end = Offset(endX, endY),
-                                strokeWidth = strokeWidth
-                            )
-                        }
-                    }
-
-                    Box(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .rotate(animatedCompassRotation)
-                    ) {
-                        Text(
-                            text = AppLocalization.get("qibla_north_short", language),
-                            color = Color(0xFFE53935),
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 18.sp,
-                            modifier = Modifier.align(Alignment.TopCenter).padding(top = 18.dp)
+                        else -> String.format(
+                            Locale.getDefault(),
+                            AppLocalization.get("qibla_turn_left", language),
+                            abs(signedTurnDiff).roundToInt()
                         )
-                        Text(
-                            text = AppLocalization.get("qibla_south_short", language),
-                            color = MaterialTheme.colorScheme.primary,
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 16.sp,
-                            modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 18.dp)
-                        )
-                        Text(
-                            text = AppLocalization.get("qibla_east_short", language),
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 16.sp,
-                            modifier = Modifier.align(Alignment.CenterEnd).padding(end = 18.dp)
-                        )
-                        Text(
-                            text = AppLocalization.get("qibla_west_short", language),
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 16.sp,
-                            modifier = Modifier.align(Alignment.CenterStart).padding(start = 18.dp)
-                        )
-                    }
-
-                    Box(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .rotate(animatedCompassRotation + qiblaBearing.toFloat())
-                    ) {
-                        Column(
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                            modifier = Modifier.align(Alignment.TopCenter).padding(top = 28.dp)
-                        ) {
-                            Surface(
-                                shape = CircleShape,
-                                color = if (isAligned) Color(0xFFE6A100) else primaryColor,
-                                modifier = Modifier.size(40.dp)
-                            ) {
-                                Box(contentAlignment = Alignment.Center) {
-                                    Icon(
-                                        imageVector = Icons.Default.Mosque,
-                                        contentDescription = "Kaaba Qibla Direction",
-                                        tint = Color.White,
-                                        modifier = Modifier.size(22.dp)
-                                    )
-                                }
-                            }
-                            Canvas(modifier = Modifier.size(16.dp, 28.dp)) {
-                                val p = Path().apply {
-                                    moveTo(size.width / 2, 0f)
-                                    lineTo(size.width, size.height)
-                                    lineTo(0f, size.height)
-                                    close()
-                                }
-                                drawPath(p, color = if (isAligned) Color(0xFFE6A100) else primaryColor)
-                            }
-                        }
                     }
 
                     Surface(
-                        shape = CircleShape,
-                        color = MaterialTheme.colorScheme.surface,
-                        shadowElevation = 6.dp,
-                        modifier = Modifier.size(110.dp)
+                        shape = RoundedCornerShape(20.dp),
+                        color = if (isAligned) {
+                            MaterialTheme.colorScheme.primaryContainer
+                        } else {
+                            MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.7f)
+                        },
+                        modifier = Modifier.testTag("qibla_turn_guidance_badge")
+                    ) {
+                        Text(
+                            text = turnHintText,
+                            style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.SemiBold),
+                            color = if (isAligned) {
+                                MaterialTheme.colorScheme.onPrimaryContainer
+                            } else {
+                                MaterialTheme.colorScheme.onSecondaryContainer
+                            },
+                            modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp)
+                        )
+                    }
+                }
+
+                // MODE 2: ASSISTED DIRECTION MODE (Strictly Reference-Locked — NEVER fakes North)
+                isAssistedActive -> {
+                    Card(
+                        shape = RoundedCornerShape(20.dp),
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .testTag("qibla_assisted_card")
                     ) {
                         Column(
                             horizontalAlignment = Alignment.CenterHorizontally,
-                            verticalArrangement = Arrangement.Center,
-                            modifier = Modifier.fillMaxSize()
+                            modifier = Modifier.padding(16.dp)
                         ) {
                             Text(
-                                text = "${qiblaBearing.roundToInt()}°",
-                                style = MaterialTheme.typography.headlineMedium.copy(fontWeight = FontWeight.Bold),
+                                text = AppLocalization.get("qibla_assisted_title", language),
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.primary
                             )
-                            Text(
-                                text = AppLocalization.get("qibla_angle_label", language),
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+
+                            if (!sensorCapabilities.canUseAssistedDirection) {
+                                Icon(
+                                    imageVector = Icons.Default.ExploreOff,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colorScheme.primary,
+                                    modifier = Modifier.size(40.dp)
+                                )
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Text(
+                                    text = AppLocalization.get("qibla_reason_assisted_no_sensor", language),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    textAlign = TextAlign.Center,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                                Spacer(modifier = Modifier.height(12.dp))
+                                Button(
+                                    onClick = {
+                                        selectedMode = HybridQiblaMode.MANUAL_QIBLA
+                                        isAutoSelectedMode = false
+                                    },
+                                    modifier = Modifier
+                                        .defaultMinSize(minHeight = 48.dp)
+                                        .testTag("qibla_assisted_switch_manual_btn")
+                                ) {
+                                    Text(AppLocalization.get("qibla_assisted_switch_manual", language))
+                                }
+                            } else {
+                                // Show moving assisted dial ONLY AFTER user locks a verified external reference
+                                if (assistedAnchored) {
+                                    QiblaMovingCompassDial(
+                                        dialRotationDeg = animatedAssistedRotation,
+                                        qiblaBearingDeg = qiblaBearing.toFloat(),
+                                        isAligned = isAligned,
+                                        language = language,
+                                        dialTestTag = "qibla_assisted_dial"
+                                    )
+                                    Spacer(modifier = Modifier.height(8.dp))
+                                    val turnText = if (isAligned) {
+                                        AppLocalization.get("qibla_aligned_banner", language)
+                                    } else if (signedTurnDiff > 0f) {
+                                        String.format(
+                                            Locale.getDefault(),
+                                            AppLocalization.get("qibla_turn_right", language),
+                                            abs(signedTurnDiff).roundToInt()
+                                        )
+                                    } else {
+                                        String.format(
+                                            Locale.getDefault(),
+                                            AppLocalization.get("qibla_turn_left", language),
+                                            abs(signedTurnDiff).roundToInt()
+                                        )
+                                    }
+                                    Text(
+                                        text = turnText,
+                                        style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold),
+                                        color = MaterialTheme.colorScheme.primary
+                                    )
+                                    Spacer(modifier = Modifier.height(10.dp))
+                                    OutlinedButton(
+                                        onClick = { assistedAnchored = false },
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .defaultMinSize(minHeight = 48.dp)
+                                            .testTag("qibla_assisted_reset_btn")
+                                    ) {
+                                        Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(18.dp))
+                                        Spacer(modifier = Modifier.width(6.dp))
+                                        Text(AppLocalization.get("qibla_assisted_reset_lock", language))
+                                    }
+                                } else {
+                                    // Unanchored: Static reference diagram + Lock Reference buttons (NO fake moving needle!)
+                                    QiblaStaticReferenceDial(
+                                        qiblaBearingDeg = qiblaBearing.toFloat(),
+                                        qiblaCardinal = qiblaCardinal,
+                                        language = language,
+                                        testTag = "qibla_manual_reference_dial"
+                                    )
+                                    Spacer(modifier = Modifier.height(10.dp))
+                                    Surface(
+                                        shape = RoundedCornerShape(12.dp),
+                                        color = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.6f),
+                                        modifier = Modifier.fillMaxWidth()
+                                    ) {
+                                        Text(
+                                            text = if (solarPosition.isUsableForReference) {
+                                                String.format(
+                                                    Locale.getDefault(),
+                                                    AppLocalization.get("qibla_assisted_sun_status", language),
+                                                    solarPosition.azimuthDeg.roundToInt(),
+                                                    CompassMath.cardinalLabel(solarPosition.azimuthDeg),
+                                                    solarPosition.altitudeDeg.roundToInt()
+                                                )
+                                            } else {
+                                                AppLocalization.get("qibla_assisted_sun_below", language)
+                                            },
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSecondaryContainer,
+                                            modifier = Modifier.padding(10.dp)
+                                        )
+                                    }
+                                    Spacer(modifier = Modifier.height(10.dp))
+                                    if (solarPosition.isUsableForReference) {
+                                        Button(
+                                            onClick = {
+                                                solarTickMs = System.currentTimeMillis()
+                                                val freshSun = CompassMath.calculateSolarPosition(
+                                                    userLocation.latitude,
+                                                    userLocation.longitude,
+                                                    solarTickMs
+                                                )
+                                                anchorTrueAzimuthDeg = freshSun.azimuthDeg
+                                                anchorRelativeYawDeg = relativeYawDeg
+                                                assistedAnchored = true
+                                            },
+                                            modifier = Modifier
+                                                .fillMaxWidth()
+                                                .defaultMinSize(minHeight = 48.dp)
+                                                .testTag("qibla_assisted_lock_sun_btn")
+                                        ) {
+                                            Icon(Icons.Default.WbSunny, contentDescription = null, modifier = Modifier.size(18.dp))
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text(
+                                                String.format(
+                                                    Locale.getDefault(),
+                                                    AppLocalization.get("qibla_assisted_lock_sun", language),
+                                                    solarPosition.azimuthDeg.roundToInt()
+                                                )
+                                            )
+                                        }
+                                        Spacer(modifier = Modifier.height(8.dp))
+                                    }
+                                    OutlinedButton(
+                                        onClick = {
+                                            anchorTrueAzimuthDeg = 0f
+                                            anchorRelativeYawDeg = relativeYawDeg
+                                            assistedAnchored = true
+                                        },
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .defaultMinSize(minHeight = 48.dp)
+                                            .testTag("qibla_assisted_lock_north_btn")
+                                    ) {
+                                        Icon(Icons.Default.North, contentDescription = null, modifier = Modifier.size(18.dp))
+                                        Spacer(modifier = Modifier.width(6.dp))
+                                        Text(AppLocalization.get("qibla_assisted_lock_north", language))
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-            } else {
-                Card(
-                    shape = RoundedCornerShape(20.dp),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.55f)),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 8.dp)
-                        .testTag("qibla_unavailable_card")
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        modifier = Modifier.padding(20.dp)
+
+                // MODE 3: MANUAL QIBLA MODE (Works on EVERY phone, even without Magnetometer)
+                else -> {
+                    Card(
+                        shape = RoundedCornerShape(20.dp),
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.55f)),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 4.dp)
+                            .testTag("qibla_unavailable_card")
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.ExploreOff,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.size(44.dp)
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Surface(
-                            shape = RoundedCornerShape(8.dp),
-                            color = MaterialTheme.colorScheme.secondaryContainer,
-                            modifier = Modifier.testTag("qibla_calculated_only_badge")
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            modifier = Modifier.padding(18.dp)
                         ) {
-                            Text(
-                                text = AppLocalization.get("qibla_calculated_only_badge", language),
-                                style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
-                                color = MaterialTheme.colorScheme.onSecondaryContainer,
-                                modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                            Surface(
+                                shape = RoundedCornerShape(8.dp),
+                                color = MaterialTheme.colorScheme.secondaryContainer,
+                                modifier = Modifier.testTag("qibla_calculated_only_badge")
+                            ) {
+                                Text(
+                                    text = AppLocalization.get("qibla_calculated_only_badge", language),
+                                    style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
+                                    color = MaterialTheme.colorScheme.onSecondaryContainer,
+                                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                                )
+                            }
+                            Spacer(modifier = Modifier.height(10.dp))
+
+                            // Static N/S/E/W reference compass diagram (NEVER animates falsely)
+                            QiblaStaticReferenceDial(
+                                qiblaBearingDeg = qiblaBearing.toFloat(),
+                                qiblaCardinal = qiblaCardinal,
+                                language = language,
+                                testTag = "qibla_manual_reference_dial"
                             )
-                        }
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Text(
-                            text = AppLocalization.get("qibla_no_sensor_title", language),
-                            style = MaterialTheme.typography.titleMedium,
-                            fontWeight = FontWeight.Bold
-                        )
-                        Spacer(modifier = Modifier.height(6.dp))
-                        Text(
-                            text = AppLocalization.get("qibla_no_sensor_desc", language),
-                            style = MaterialTheme.typography.bodySmall,
-                            textAlign = TextAlign.Center,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                        Spacer(modifier = Modifier.height(12.dp))
-                        Surface(
-                            shape = RoundedCornerShape(12.dp),
-                            color = MaterialTheme.colorScheme.primaryContainer,
-                            modifier = Modifier.fillMaxWidth()
-                        ) {
-                            Column(modifier = Modifier.padding(14.dp)) {
+
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text(
+                                text = AppLocalization.get("qibla_static_ref_label", language),
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                textAlign = TextAlign.Center
+                            )
+
+                            if (!sensorCapabilities.canUseLiveCompass) {
+                                Spacer(modifier = Modifier.height(10.dp))
                                 Text(
-                                    text = "${AppLocalization.get("qibla_calculated_bearing", language)}: ${qiblaBearing.roundToInt()}°",
+                                    text = AppLocalization.get("qibla_no_sensor_title", language),
                                     style = MaterialTheme.typography.titleMedium,
-                                    fontWeight = FontWeight.Bold,
-                                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    fontWeight = FontWeight.Bold
                                 )
-                                Spacer(modifier = Modifier.height(6.dp))
+                                Spacer(modifier = Modifier.height(4.dp))
                                 Text(
-                                    text = String.format(
-                                        Locale.US,
-                                        AppLocalization.get("qibla_no_sensor_guide", language),
-                                        qiblaBearing.roundToInt(),
-                                        String.format(Locale.US, "%+.1f", magneticDeclination)
-                                    ),
+                                    text = AppLocalization.get("qibla_no_sensor_desc", language),
                                     style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    textAlign = TextAlign.Center,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
+                            }
+
+                            Spacer(modifier = Modifier.height(12.dp))
+                            Surface(
+                                shape = RoundedCornerShape(12.dp),
+                                color = MaterialTheme.colorScheme.primaryContainer,
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Column(modifier = Modifier.padding(14.dp)) {
+                                    Text(
+                                        text = "${AppLocalization.get("qibla_calculated_bearing", language)}: ${qiblaBearing.roundToInt()}° ($qiblaCardinal)",
+                                        style = MaterialTheme.typography.titleMedium,
+                                        fontWeight = FontWeight.Bold,
+                                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    )
+                                    Spacer(modifier = Modifier.height(6.dp))
+                                    Text(
+                                        text = String.format(
+                                            Locale.US,
+                                            AppLocalization.get("qibla_no_sensor_guide", language),
+                                            qiblaBearing.roundToInt(),
+                                            String.format(Locale.US, "%+.1f", magneticDeclination)
+                                        ),
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    )
+                                }
                             }
                         }
                     }
                 }
             }
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
-            // Directional Metrics Card
+            // Mode Explanation Strip (explains why active mode was auto-selected or active)
+            Surface(
+                shape = RoundedCornerShape(12.dp),
+                color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.65f),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .testTag("qibla_mode_explanation_card")
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 10.dp)
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Info,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Column(modifier = Modifier.weight(1f)) {
+                        if (isAutoSelectedMode) {
+                            Text(
+                                text = AppLocalization.get("qibla_mode_auto_badge", language),
+                                style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
+                                color = MaterialTheme.colorScheme.primary
+                            )
+                        }
+                        Text(
+                            text = modeExplanationText,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Directional Metrics Card (strictly separates Qibla Bearing vs Live Device Heading)
             Card(
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
@@ -794,7 +1248,7 @@ fun QiblaScreen(
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                             Text(
-                                text = String.format(Locale.US, "%.1f°", qiblaBearing),
+                                text = String.format(Locale.US, "%.1f° %s", qiblaBearing, qiblaCardinal),
                                 style = MaterialTheme.typography.titleMedium,
                                 fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colorScheme.primary
@@ -808,8 +1262,8 @@ fun QiblaScreen(
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                             Text(
-                                text = if (hasCompassSensor && hasValidCompassReading) {
-                                    String.format(Locale.US, "%.1f°", trueHeading)
+                                text = if (activeHeadingAvailable) {
+                                    String.format(Locale.US, "%.1f°", activeTrueHeading)
                                 } else {
                                     "--"
                                 },
@@ -835,15 +1289,31 @@ fun QiblaScreen(
 
                     HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
 
-                    val sensorModeLabel = when (sensorMode) {
-                        CompassSensorMode.ROTATION_VECTOR -> AppLocalization.get("qibla_sensor_rotation_vector", language)
-                        CompassSensorMode.ACCEL_MAGNETOMETER -> AppLocalization.get("qibla_sensor_accel_mag", language)
-                        CompassSensorMode.UNAVAILABLE -> AppLocalization.get("qibla_sensor_unavailable", language)
+                    val sensorModeLabel = when {
+                        isLiveModeActive -> when (sensorCapabilities.bestLiveSource) {
+                            LiveSensorSource.ROTATION_VECTOR -> AppLocalization.get("qibla_sensor_rotation_vector", language)
+                            LiveSensorSource.GEOMAGNETIC_ROTATION_VECTOR -> AppLocalization.get("qibla_sensor_geomag_rv", language)
+                            LiveSensorSource.GRAVITY_MAGNETOMETER -> AppLocalization.get("qibla_sensor_gravity_mag", language)
+                            LiveSensorSource.ACCEL_MAGNETOMETER -> AppLocalization.get("qibla_sensor_accel_mag", language)
+                            LiveSensorSource.NONE -> AppLocalization.get("qibla_sensor_unavailable", language)
+                        }
+                        isAssistedActive -> when (sensorCapabilities.bestAssistedSource) {
+                            AssistedSensorSource.GAME_ROTATION_VECTOR -> AppLocalization.get("qibla_sensor_game_rv", language)
+                            AssistedSensorSource.GYROSCOPE -> AppLocalization.get("qibla_sensor_gyroscope", language)
+                            AssistedSensorSource.NONE -> AppLocalization.get("qibla_sensor_unavailable", language)
+                        }
+                        else -> AppLocalization.get("qibla_mode_manual", language)
                     }
 
                     val accLabel = when {
-                        !hasCompassSensor -> AppLocalization.get("qibla_sensor_unavailable", language)
-                        !hasValidCompassReading -> AppLocalization.get("qibla_acc_waiting", language)
+                        isManualModeActive -> AppLocalization.get("qibla_calculated_only_badge", language)
+                        isAssistedActive -> if (assistedAnchored) {
+                            AppLocalization.get("qibla_assisted_title", language)
+                        } else {
+                            AppLocalization.get("qibla_acc_waiting", language)
+                        }
+                        !sensorCapabilities.canUseLiveCompass -> AppLocalization.get("qibla_sensor_unavailable", language)
+                        !hasValidLiveReading -> AppLocalization.get("qibla_acc_waiting", language)
                         sensorAccuracy == SensorManager.SENSOR_STATUS_ACCURACY_HIGH -> AppLocalization.get("qibla_acc_high", language)
                         sensorAccuracy == SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM -> AppLocalization.get("qibla_acc_medium", language)
                         sensorAccuracy == SensorManager.SENSOR_STATUS_ACCURACY_LOW -> AppLocalization.get("qibla_acc_low", language)
@@ -1055,28 +1525,14 @@ fun QiblaScreen(
             confirmButton = {
                 Button(
                     onClick = {
-                        val lat = latInput.trim().toDoubleOrNull()
-                        val lon = lonInput.trim().toDoubleOrNull()
-                        var valid = true
-                        if (lat == null) {
-                            latError = AppLocalization.get("qibla_error_invalid_number", language)
-                            valid = false
-                        } else if (lat !in -90.0..90.0) {
-                            latError = AppLocalization.get("qibla_error_lat_range", language)
-                            valid = false
-                        }
-                        if (lon == null) {
-                            lonError = AppLocalization.get("qibla_error_invalid_number", language)
-                            valid = false
-                        } else if (lon !in -180.0..180.0) {
-                            lonError = AppLocalization.get("qibla_error_lon_range", language)
-                            valid = false
-                        }
-                        if (valid && lat != null && lon != null) {
+                        val validation = CompassMath.validateManualCoordinates(latInput, lonInput)
+                        latError = validation.latErrorKey?.let { AppLocalization.get(it, language) }
+                        lonError = validation.lonErrorKey?.let { AppLocalization.get(it, language) }
+                        if (validation.isValid && validation.latitude != null && validation.longitude != null) {
                             AppLocationManager.setManualCoordinates(
                                 context,
-                                lat,
-                                lon,
+                                validation.latitude,
+                                validation.longitude,
                                 cityInput.trim().ifBlank { "Custom Location" },
                                 "",
                                 userLocation.timeZoneId
@@ -1098,10 +1554,333 @@ fun QiblaScreen(
     }
 }
 
-private fun lowPass(current: Float, previous: Float): Float {
-    val alpha = 0.25f
-    var diff = current - previous
-    while (diff < -180f) diff += 360f
-    while (diff > 180f) diff -= 360f
-    return (previous + alpha * diff + 360f) % 360f
+@Composable
+private fun QiblaMovingCompassDial(
+    dialRotationDeg: Float,
+    qiblaBearingDeg: Float,
+    isAligned: Boolean,
+    language: AppLanguage,
+    dialTestTag: String
+) {
+    val primaryColor = MaterialTheme.colorScheme.primary
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .size(300.dp)
+            .padding(8.dp)
+            .testTag(dialTestTag)
+    ) {
+        // Fixed top phone-heading pointer notch
+        Box(
+            modifier = Modifier
+                .align(Alignment.TopCenter)
+                .size(width = 6.dp, height = 14.dp)
+                .background(
+                    color = if (isAligned) Color(0xFFE6A100) else primaryColor,
+                    shape = RoundedCornerShape(3.dp)
+                )
+        )
+
+        Canvas(
+            modifier = Modifier
+                .fillMaxSize()
+                .rotate(dialRotationDeg)
+        ) {
+            val center = Offset(size.width / 2, size.height / 2)
+            val radius = size.minDimension / 2 - 12.dp.toPx()
+
+            drawCircle(
+                color = primaryColor.copy(alpha = 0.18f),
+                radius = radius,
+                center = center,
+                style = Stroke(width = 3.dp.toPx())
+            )
+
+            for (deg in 0 until 360 step 5) {
+                val angleRad = Math.toRadians((deg - 90).toDouble())
+                val isMajor = (deg % 30 == 0)
+                val isCardinal = (deg % 90 == 0)
+                val tickLength = if (isCardinal) 16.dp.toPx() else if (isMajor) 10.dp.toPx() else 5.dp.toPx()
+                val strokeWidth = if (isCardinal) 3.dp.toPx() else if (isMajor) 2.dp.toPx() else 1.dp.toPx()
+                val tickColor = if (deg == 0) Color(0xFFE53935) else if (isMajor) primaryColor else Color.Gray.copy(alpha = 0.5f)
+
+                val startX = (center.x + (radius - tickLength) * cos(angleRad)).toFloat()
+                val startY = (center.y + (radius - tickLength) * sin(angleRad)).toFloat()
+                val endX = (center.x + radius * cos(angleRad)).toFloat()
+                val endY = (center.y + radius * sin(angleRad)).toFloat()
+
+                drawLine(
+                    color = tickColor,
+                    start = Offset(startX, startY),
+                    end = Offset(endX, endY),
+                    strokeWidth = strokeWidth
+                )
+            }
+        }
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .rotate(dialRotationDeg)
+        ) {
+            Text(
+                text = AppLocalization.get("qibla_north_short", language),
+                color = Color(0xFFE53935),
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp,
+                modifier = Modifier.align(Alignment.TopCenter).padding(top = 18.dp)
+            )
+            Text(
+                text = AppLocalization.get("qibla_south_short", language),
+                color = MaterialTheme.colorScheme.primary,
+                fontWeight = FontWeight.Bold,
+                fontSize = 16.sp,
+                modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 18.dp)
+            )
+            Text(
+                text = AppLocalization.get("qibla_east_short", language),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                fontWeight = FontWeight.Bold,
+                fontSize = 16.sp,
+                modifier = Modifier.align(Alignment.CenterEnd).padding(end = 18.dp)
+            )
+            Text(
+                text = AppLocalization.get("qibla_west_short", language),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                fontWeight = FontWeight.Bold,
+                fontSize = 16.sp,
+                modifier = Modifier.align(Alignment.CenterStart).padding(start = 18.dp)
+            )
+        }
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .rotate(dialRotationDeg + qiblaBearingDeg)
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.align(Alignment.TopCenter).padding(top = 28.dp)
+            ) {
+                Surface(
+                    shape = CircleShape,
+                    color = if (isAligned) Color(0xFFE6A100) else primaryColor,
+                    modifier = Modifier.size(40.dp)
+                ) {
+                    Box(contentAlignment = Alignment.Center) {
+                        Icon(
+                            imageVector = Icons.Default.Mosque,
+                            contentDescription = "Kaaba Qibla Direction",
+                            tint = Color.White,
+                            modifier = Modifier.size(22.dp)
+                        )
+                    }
+                }
+                Canvas(modifier = Modifier.size(16.dp, 28.dp)) {
+                    val p = Path().apply {
+                        moveTo(size.width / 2, 0f)
+                        lineTo(size.width, size.height)
+                        lineTo(0f, size.height)
+                        close()
+                    }
+                    drawPath(p, color = if (isAligned) Color(0xFFE6A100) else primaryColor)
+                }
+            }
+        }
+
+        Surface(
+            shape = CircleShape,
+            color = MaterialTheme.colorScheme.surface,
+            shadowElevation = 6.dp,
+            modifier = Modifier.size(110.dp)
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxSize()
+            ) {
+                Text(
+                    text = "${qiblaBearingDeg.roundToInt()}°",
+                    style = MaterialTheme.typography.headlineMedium.copy(fontWeight = FontWeight.Bold),
+                    color = MaterialTheme.colorScheme.primary
+                )
+                Text(
+                    text = AppLocalization.get("qibla_angle_label", language),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+    }
+}
+
+/**
+ * Static N/S/E/W visual reference dial for Manual Qibla Mode (and unanchored Assisted Mode).
+ * Fixed with True North at top (0°) so users on magnetometer-less phones see the exact
+ * Qibla bearing angle relative to North, East, South, and West without any fake live movement.
+ */
+@Composable
+private fun QiblaStaticReferenceDial(
+    qiblaBearingDeg: Float,
+    qiblaCardinal: String,
+    language: AppLanguage,
+    testTag: String
+) {
+    val primaryColor = MaterialTheme.colorScheme.primary
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier
+            .size(240.dp)
+            .padding(6.dp)
+            .testTag(testTag)
+    ) {
+        Canvas(modifier = Modifier.fillMaxSize()) {
+            val center = Offset(size.width / 2, size.height / 2)
+            val radius = size.minDimension / 2 - 12.dp.toPx()
+
+            drawCircle(
+                color = primaryColor.copy(alpha = 0.22f),
+                radius = radius,
+                center = center,
+                style = Stroke(width = 2.5.dp.toPx())
+            )
+
+            // Crosshair N-S and E-W reference axes
+            drawLine(
+                color = primaryColor.copy(alpha = 0.14f),
+                start = Offset(center.x, center.y - radius + 16.dp.toPx()),
+                end = Offset(center.x, center.y + radius - 16.dp.toPx()),
+                strokeWidth = 1.5.dp.toPx()
+            )
+            drawLine(
+                color = primaryColor.copy(alpha = 0.14f),
+                start = Offset(center.x - radius + 16.dp.toPx(), center.y),
+                end = Offset(center.x + radius - 16.dp.toPx(), center.y),
+                strokeWidth = 1.5.dp.toPx()
+            )
+
+            for (deg in 0 until 360 step 15) {
+                val angleRad = Math.toRadians((deg - 90).toDouble())
+                val isCardinal = (deg % 90 == 0)
+                val tickLength = if (isCardinal) 13.dp.toPx() else 6.dp.toPx()
+                val tickColor = if (deg == 0) Color(0xFFE53935) else if (isCardinal) primaryColor else Color.Gray.copy(alpha = 0.45f)
+                val startX = (center.x + (radius - tickLength) * cos(angleRad)).toFloat()
+                val startY = (center.y + (radius - tickLength) * sin(angleRad)).toFloat()
+                val endX = (center.x + radius * cos(angleRad)).toFloat()
+                val endY = (center.y + radius * sin(angleRad)).toFloat()
+                drawLine(
+                    color = tickColor,
+                    start = Offset(startX, startY),
+                    end = Offset(endX, endY),
+                    strokeWidth = if (isCardinal) 2.5.dp.toPx() else 1.2.dp.toPx()
+                )
+            }
+
+            // Static Qibla bearing ray from center to perimeter
+            val qiblaRad = Math.toRadians((qiblaBearingDeg - 90f).toDouble())
+            val rayEnd = Offset(
+                (center.x + (radius - 28.dp.toPx()) * cos(qiblaRad)).toFloat(),
+                (center.y + (radius - 28.dp.toPx()) * sin(qiblaRad)).toFloat()
+            )
+            drawLine(
+                color = primaryColor,
+                start = center,
+                end = rayEnd,
+                strokeWidth = 4.dp.toPx(),
+                cap = StrokeCap.Round
+            )
+        }
+
+        // Fixed N / E / S / W cardinal labels
+        Text(
+            text = AppLocalization.get("qibla_north_short", language),
+            color = Color(0xFFE53935),
+            fontWeight = FontWeight.Bold,
+            fontSize = 15.sp,
+            modifier = Modifier.align(Alignment.TopCenter).padding(top = 14.dp)
+        )
+        Text(
+            text = AppLocalization.get("qibla_south_short", language),
+            color = MaterialTheme.colorScheme.primary,
+            fontWeight = FontWeight.Bold,
+            fontSize = 14.sp,
+            modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = 14.dp)
+        )
+        Text(
+            text = AppLocalization.get("qibla_east_short", language),
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            fontWeight = FontWeight.Bold,
+            fontSize = 14.sp,
+            modifier = Modifier.align(Alignment.CenterEnd).padding(end = 14.dp)
+        )
+        Text(
+            text = AppLocalization.get("qibla_west_short", language),
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            fontWeight = FontWeight.Bold,
+            fontSize = 14.sp,
+            modifier = Modifier.align(Alignment.CenterStart).padding(start = 14.dp)
+        )
+
+        // Kaaba marker positioned at static Qibla bearing angle
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .rotate(qiblaBearingDeg)
+        ) {
+            Surface(
+                shape = CircleShape,
+                color = primaryColor,
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(top = 24.dp)
+                    .size(32.dp)
+            ) {
+                Box(contentAlignment = Alignment.Center) {
+                    Icon(
+                        imageVector = Icons.Default.Mosque,
+                        contentDescription = "Qibla Direction Reference",
+                        tint = Color.White,
+                        modifier = Modifier.size(18.dp)
+                    )
+                }
+            }
+        }
+
+        Surface(
+            shape = CircleShape,
+            color = MaterialTheme.colorScheme.surface,
+            shadowElevation = 4.dp,
+            modifier = Modifier.size(86.dp)
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxSize()
+            ) {
+                Text(
+                    text = "${qiblaBearingDeg.roundToInt()}°",
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
+                    color = MaterialTheme.colorScheme.primary
+                )
+                Text(
+                    text = qiblaCardinal,
+                    style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.SemiBold),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+    }
+}
+
+private fun getDisplayRotation(context: Context): Int {
+    return runCatching {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            context.display?.rotation ?: Surface.ROTATION_0
+        } else {
+            @Suppress("DEPRECATION")
+            val wm = context.getSystemService(Context.WINDOW_SERVICE) as? WindowManager
+            @Suppress("DEPRECATION")
+            wm?.defaultDisplay?.rotation ?: Surface.ROTATION_0
+        }
+    }.getOrDefault(Surface.ROTATION_0)
 }

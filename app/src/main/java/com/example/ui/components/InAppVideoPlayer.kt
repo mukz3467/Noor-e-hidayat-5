@@ -22,6 +22,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -105,6 +106,17 @@ object YouTubeIFramePlayerConfig {
         return "$host/embed/$cleanId?autoplay=$autoplayInt&playsinline=1&rel=0&fs=1&modestbranding=1"
     }
 
+    fun buildChannelLiveEmbedUrl(
+        channelId: String,
+        autoplay: Boolean = true,
+        useNoCookie: Boolean = false
+    ): String {
+        val cleanChannelId = channelId.trim().filter { it.isLetterOrDigit() || it == '_' || it == '-' }.take(32)
+        val autoplayInt = if (autoplay) 1 else 0
+        val host = if (useNoCookie) "https://www.youtube-nocookie.com" else "https://www.youtube.com"
+        return "$host/embed/live_stream?channel=$cleanChannelId&autoplay=$autoplayInt&playsinline=1&rel=0&fs=1&modestbranding=1"
+    }
+
     fun buildRefererHeaders(packageName: String): Map<String, String> {
         val safePkg = packageName.trim().ifBlank { "com.aistudio.noorehidayat" }
         return mapOf("Referer" to "https://$safePkg/")
@@ -130,8 +142,23 @@ object YouTubeIFramePlayerConfig {
             }
             return false;
           }
-          setTimeout(checkPlayerError, 1000);
+          function checkVideoDuration() {
+            try {
+              var v = document.querySelector('video');
+              if (v && isFinite(v.duration) && v.duration > 0 && !window.__noorDurationReported) {
+                window.__noorDurationReported = true;
+                if (window.NoorBridge && window.NoorBridge.onVideoDuration) {
+                  window.NoorBridge.onVideoDuration(Math.round(v.duration));
+                }
+              }
+            } catch (e) {}
+          }
+          setTimeout(function() {
+            checkPlayerError();
+            checkVideoDuration();
+          }, 1000);
           var errTimer = setInterval(function() {
+            checkVideoDuration();
             if (checkPlayerError()) {
               clearInterval(errTimer);
             }
@@ -354,7 +381,8 @@ object YouTubeIFramePlayerConfig {
 
 private class YouTubeJsBridge(
     private val onReady: () -> Unit,
-    private val onError: (Int) -> Unit
+    private val onError: (Int) -> Unit,
+    private val onDuration: ((Int) -> Unit)? = null
 ) {
     @JavascriptInterface
     fun onPlayerReady() {
@@ -365,6 +393,13 @@ private class YouTubeJsBridge(
     fun onPlayerError(code: Int) {
         onError(code)
     }
+
+    @JavascriptInterface
+    fun onVideoDuration(seconds: Int) {
+        if (seconds > 0) {
+            onDuration?.invoke(seconds)
+        }
+    }
 }
 
 @SuppressLint("SetJavaScriptEnabled")
@@ -374,7 +409,8 @@ fun InAppYouTubePlayer(
     modifier: Modifier = Modifier,
     autoplay: Boolean = true,
     language: AppLanguage = AppLanguage.ENGLISH,
-    onFallbackRequested: (() -> Unit)? = null
+    onFallbackRequested: (() -> Unit)? = null,
+    onDurationDetected: ((Int) -> Unit)? = null
 ) {
     val context = LocalContext.current
     val activity = remember(context) { context.findActivity() }
@@ -575,6 +611,13 @@ fun InAppYouTubePlayer(
                                                         hasError = true
                                                         isLoading = false
                                                     }
+                                                }
+                                            }
+                                        },
+                                        onDuration = { seconds ->
+                                            mainHandler.post {
+                                                if (!isDisposed.get() && seconds > 0) {
+                                                    onDurationDetected?.invoke(seconds)
                                                 }
                                             }
                                         }
@@ -866,7 +909,10 @@ fun InAppYouTubePlayer(
                                     onFallbackRequested?.invoke()
                                 },
                                 shape = RoundedCornerShape(10.dp),
-                                modifier = Modifier.sizeIn(minHeight = 48.dp)
+                                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
+                                modifier = Modifier
+                                    .weight(1f, fill = false)
+                                    .sizeIn(minHeight = 48.dp)
                             ) {
                                 Icon(
                                     Icons.Default.Refresh,
@@ -875,7 +921,12 @@ fun InAppYouTubePlayer(
                                     modifier = Modifier.size(16.dp)
                                 )
                                 Spacer(modifier = Modifier.width(6.dp))
-                                Text(AppLocalization.get("retry", language), color = Color.White)
+                                Text(
+                                    text = AppLocalization.get("retry", language),
+                                    color = Color.White,
+                                    maxLines = 1,
+                                    overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
+                                )
                             }
 
                             if (cleanVideoId.isNotBlank()) {
@@ -892,7 +943,10 @@ fun InAppYouTubePlayer(
                                         }
                                     },
                                     shape = RoundedCornerShape(10.dp),
-                                    modifier = Modifier.sizeIn(minHeight = 48.dp)
+                                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
+                                    modifier = Modifier
+                                        .weight(1f, fill = false)
+                                        .sizeIn(minHeight = 48.dp)
                                 ) {
                                     Icon(
                                         Icons.AutoMirrored.Filled.OpenInNew,
@@ -903,7 +957,9 @@ fun InAppYouTubePlayer(
                                     Spacer(modifier = Modifier.width(6.dp))
                                     Text(
                                         text = AppLocalization.get("lectures_watch_on_youtube", language),
-                                        color = Color.White
+                                        color = Color.White,
+                                        maxLines = 1,
+                                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis
                                     )
                                 }
                             }

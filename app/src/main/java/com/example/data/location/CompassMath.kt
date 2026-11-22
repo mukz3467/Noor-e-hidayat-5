@@ -1,13 +1,19 @@
 package com.example.data.location
 
+import android.hardware.Sensor
 import android.hardware.SensorManager
 import android.view.Surface
+import kotlin.math.PI
 import kotlin.math.abs
+import kotlin.math.asin
+import kotlin.math.atan2
+import kotlin.math.cos
+import kotlin.math.sin
 
 /**
- * Pure Kotlin compass & orientation math helpers for Qibla Finder.
- * Handles 0°/360° wrap-around smoothing, continuous rotation angle unwrapping,
- * display-rotation coordinate remapping, sensor validation, and manual coordinate validation.
+ * Pure Kotlin compass, hybrid sensor detection, solar reference, and orientation math helpers
+ * for Qibla Finder. Handles 0°/360° wrap-around smoothing, continuous rotation angle unwrapping,
+ * display-rotation + tilt coordinate remapping, hybrid mode auto-selection, and manual validation.
  */
 object CompassMath {
 
@@ -19,6 +25,90 @@ object CompassMath {
         UNAVAILABLE
     }
 
+    enum class HybridQiblaMode {
+        LIVE_COMPASS,
+        ASSISTED_DIRECTION,
+        MANUAL_QIBLA
+    }
+
+    enum class LiveSensorSource {
+        ROTATION_VECTOR,
+        GEOMAGNETIC_ROTATION_VECTOR,
+        GRAVITY_MAGNETOMETER,
+        ACCEL_MAGNETOMETER,
+        NONE
+    }
+
+    enum class AssistedSensorSource {
+        GAME_ROTATION_VECTOR,
+        GYROSCOPE,
+        NONE
+    }
+
+    data class SensorCapabilities(
+        val hasRotationVector: Boolean = false,
+        val hasGeomagneticRotationVector: Boolean = false,
+        val hasAccelerometer: Boolean = false,
+        val hasGravity: Boolean = false,
+        val hasMagnetometer: Boolean = false,
+        val hasGyroscope: Boolean = false,
+        val hasGameRotationVector: Boolean = false
+    ) {
+        val bestLiveSource: LiveSensorSource
+            get() = when {
+                hasRotationVector -> LiveSensorSource.ROTATION_VECTOR
+                hasGeomagneticRotationVector -> LiveSensorSource.GEOMAGNETIC_ROTATION_VECTOR
+                hasGravity && hasMagnetometer -> LiveSensorSource.GRAVITY_MAGNETOMETER
+                hasAccelerometer && hasMagnetometer -> LiveSensorSource.ACCEL_MAGNETOMETER
+                else -> LiveSensorSource.NONE
+            }
+
+        val canUseLiveCompass: Boolean
+            get() = bestLiveSource != LiveSensorSource.NONE
+
+        val bestAssistedSource: AssistedSensorSource
+            get() = when {
+                hasGameRotationVector -> AssistedSensorSource.GAME_ROTATION_VECTOR
+                hasGyroscope -> AssistedSensorSource.GYROSCOPE
+                else -> AssistedSensorSource.NONE
+            }
+
+        val canUseAssistedDirection: Boolean
+            get() = bestAssistedSource != AssistedSensorSource.NONE
+
+        /**
+         * Automatically selects the most reliable mode without ever pretending a gyroscope
+         * alone knows True North. When a magnetometer-backed live source exists, selects
+         * [HybridQiblaMode.LIVE_COMPASS]; otherwise selects [HybridQiblaMode.MANUAL_QIBLA]
+         * (with Assisted Direction available once the user locks an external Sun/North reference).
+         */
+        val recommendedMode: HybridQiblaMode
+            get() = if (canUseLiveCompass) {
+                HybridQiblaMode.LIVE_COMPASS
+            } else {
+                HybridQiblaMode.MANUAL_QIBLA
+            }
+
+        val autoModeReasonKey: String
+            get() = when (bestLiveSource) {
+                LiveSensorSource.ROTATION_VECTOR -> "qibla_reason_live_rv"
+                LiveSensorSource.GEOMAGNETIC_ROTATION_VECTOR -> "qibla_reason_live_geomag"
+                LiveSensorSource.GRAVITY_MAGNETOMETER -> "qibla_reason_live_grav_mag"
+                LiveSensorSource.ACCEL_MAGNETOMETER -> "qibla_reason_live_accel_mag"
+                LiveSensorSource.NONE -> if (canUseAssistedDirection) {
+                    "qibla_reason_no_mag_assisted_avail"
+                } else {
+                    "qibla_reason_no_mag_manual_only"
+                }
+            }
+    }
+
+    data class SolarPosition(
+        val azimuthDeg: Float,
+        val altitudeDeg: Float,
+        val isUsableForReference: Boolean
+    )
+
     data class CoordinateValidationResult(
         val isValid: Boolean,
         val latitude: Double? = null,
@@ -26,6 +116,33 @@ object CompassMath {
         val latErrorKey: String? = null,
         val lonErrorKey: String? = null
     )
+
+    fun detectSensorCapabilities(sensorManager: SensorManager?): SensorCapabilities {
+        if (sensorManager == null) return SensorCapabilities()
+        return SensorCapabilities(
+            hasRotationVector = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR) != null
+            }.getOrDefault(false),
+            hasGeomagneticRotationVector = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR) != null
+            }.getOrDefault(false),
+            hasAccelerometer = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null
+            }.getOrDefault(false),
+            hasGravity = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_GRAVITY) != null
+            }.getOrDefault(false),
+            hasMagnetometer = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD) != null
+            }.getOrDefault(false),
+            hasGyroscope = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE) != null
+            }.getOrDefault(false),
+            hasGameRotationVector = runCatching {
+                sensorManager.getDefaultSensor(Sensor.TYPE_GAME_ROTATION_VECTOR) != null
+            }.getOrDefault(false)
+        )
+    }
 
     fun normalizeDegrees(angleDeg: Float): Float {
         if (!angleDeg.isFinite()) return 0f
@@ -82,6 +199,80 @@ object CompassMath {
         if (!magneticHeadingDeg.isFinite()) return 0f
         val decl = if (declinationDeg.isFinite()) declinationDeg else 0f
         return normalizeDegrees(magneticHeadingDeg + decl)
+    }
+
+    /**
+     * Computes Assisted Direction true heading ONLY relative to a verified external reference
+     * (e.g. calculated astronomical Sun Azimuth or user-verified True North).
+     */
+    fun computeAssistedTrueHeading(
+        anchorTrueAzimuthDeg: Float,
+        currentRelativeYawDeg: Float,
+        anchorRelativeYawDeg: Float
+    ): Float {
+        if (!anchorTrueAzimuthDeg.isFinite() || !currentRelativeYawDeg.isFinite() || !anchorRelativeYawDeg.isFinite()) {
+            return normalizeDegrees(anchorTrueAzimuthDeg)
+        }
+        val relativeTurn = shortestSignedDelta(anchorRelativeYawDeg, currentRelativeYawDeg)
+        return normalizeDegrees(anchorTrueAzimuthDeg + relativeTurn)
+    }
+
+    /**
+     * Computes real astronomical Sun azimuth (degrees clockwise from True North) and altitude
+     * (degrees above horizon) using standard USNO/NOAA low-precision solar ephemeris (~0.5° accuracy).
+     * 100% offline pure math. Usable as an external heading reference when altitude is in [2°, 85°].
+     */
+    fun calculateSolarPosition(
+        latitudeDeg: Double,
+        longitudeDeg: Double,
+        epochMillis: Long
+    ): SolarPosition {
+        if (!latitudeDeg.isFinite() || !longitudeDeg.isFinite()) {
+            return SolarPosition(0f, -90f, false)
+        }
+        val jd = epochMillis / 86_400_000.0 + 2_440_587.5
+        val n = jd - 2_451_545.0
+
+        val meanLongDeg = ((280.460 + 0.9856474 * n) % 360.0 + 360.0) % 360.0
+        val meanAnomDeg = ((357.528 + 0.9856003 * n) % 360.0 + 360.0) % 360.0
+        val meanAnomRad = Math.toRadians(meanAnomDeg)
+
+        val eclipticLongDeg = meanLongDeg + 1.915 * sin(meanAnomRad) + 0.020 * sin(2.0 * meanAnomRad)
+        val eclipticLongRad = Math.toRadians(eclipticLongDeg)
+        val obliquityRad = Math.toRadians(23.439 - 0.0000004 * n)
+
+        val sinDec = sin(obliquityRad) * sin(eclipticLongRad)
+        val decRad = asin(sinDec.coerceIn(-1.0, 1.0))
+        val raRad = atan2(cos(obliquityRad) * sin(eclipticLongRad), cos(eclipticLongRad))
+        val raDeg = ((Math.toDegrees(raRad) % 360.0) + 360.0) % 360.0
+
+        // Greenwich Mean Sidereal Time in degrees
+        val gmstDeg = ((280.46061837 + 360.98564736629 * n) % 360.0 + 360.0) % 360.0
+        val lstDeg = ((gmstDeg + longitudeDeg) % 360.0 + 360.0) % 360.0
+        val hourAngleRad = Math.toRadians(lstDeg - raDeg)
+
+        val latRad = Math.toRadians(latitudeDeg.coerceIn(-89.999, 89.999))
+        val sinAlt = sin(latRad) * sin(decRad) + cos(latRad) * cos(decRad) * cos(hourAngleRad)
+        val altRad = asin(sinAlt.coerceIn(-1.0, 1.0))
+        val altDeg = Math.toDegrees(altRad).toFloat()
+
+        // Azimuth clockwise from True North
+        val y = -sin(hourAngleRad) * cos(decRad)
+        val x = sin(decRad) * cos(latRad) - cos(decRad) * sin(latRad) * cos(hourAngleRad)
+        val azDeg = normalizeDegrees(Math.toDegrees(atan2(y, x)).toFloat())
+
+        val usable = altDeg.isFinite() && azDeg.isFinite() && altDeg in 2.0f..85.0f
+        return SolarPosition(azimuthDeg = azDeg, altitudeDeg = altDeg, isUsableForReference = usable)
+    }
+
+    /**
+     * Returns an 8-point cardinal sector label (N, NE, E, SE, S, SW, W, NW) for a bearing.
+     */
+    fun cardinalLabel(bearingDeg: Float): String {
+        val norm = normalizeDegrees(bearingDeg)
+        val sectors = arrayOf("N", "NE", "E", "SE", "S", "SW", "W", "NW")
+        val index = (((norm + 22.5f) % 360f) / 45f).toInt().coerceIn(0, 7)
+        return sectors[index]
     }
 
     /**
@@ -150,6 +341,52 @@ object CompassMath {
         val orientation = FloatArray(3)
         SensorManager.getOrientation(matrixToUse, orientation)
         val azimuthRad = orientation[0]
+        if (!azimuthRad.isFinite()) return null
+        val deg = Math.toDegrees(azimuthRad.toDouble()).toFloat()
+        return if (deg.isFinite()) normalizeDegrees(deg) else null
+    }
+
+    /**
+     * Extracts azimuth handling both flat and tilted/upright phone postures along with screen rotation.
+     * When the phone is held steeply upright (|pitch| > 60°), remaps the camera/back-face axis so
+     * compass azimuth doesn't suffer gimbal lock.
+     */
+    fun extractTiltAwareAzimuthFromRotationMatrix(
+        rotationMatrix: FloatArray,
+        displayRotation: Int
+    ): Float? {
+        if (rotationMatrix.size < 9) return null
+        val (baseX, baseY) = getRemapAxesForDisplayRotation(displayRotation)
+        val displayRemapped = FloatArray(9)
+        val mappedDisplay = SensorManager.remapCoordinateSystem(rotationMatrix, baseX, baseY, displayRemapped)
+        val active = if (mappedDisplay) displayRemapped else rotationMatrix
+
+        val orientation = FloatArray(3)
+        SensorManager.getOrientation(active, orientation)
+        val pitchRad = orientation[1]
+        if (!pitchRad.isFinite()) return null
+
+        val uprightThresholdRad = Math.toRadians(60.0).toFloat()
+        val finalOrientation = if (abs(pitchRad) > uprightThresholdRad) {
+            val uprightRemapped = FloatArray(9)
+            val uprightMapped = SensorManager.remapCoordinateSystem(
+                active,
+                SensorManager.AXIS_X,
+                SensorManager.AXIS_Z,
+                uprightRemapped
+            )
+            if (uprightMapped) {
+                val out = FloatArray(3)
+                SensorManager.getOrientation(uprightRemapped, out)
+                out
+            } else {
+                orientation
+            }
+        } else {
+            orientation
+        }
+
+        val azimuthRad = finalOrientation[0]
         if (!azimuthRad.isFinite()) return null
         val deg = Math.toDegrees(azimuthRad.toDouble()).toFloat()
         return if (deg.isFinite()) normalizeDegrees(deg) else null

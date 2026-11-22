@@ -53,6 +53,7 @@ import com.example.data.mosque.MosqueFinderRepository
 import com.example.data.mosque.MosqueItem
 import com.example.data.mosque.MosqueRouteResult
 import com.example.data.mosque.OsmVerificationLevel
+import com.example.data.mosque.OverpassMosqueService
 import com.example.localization.AppLocalization
 import org.maplibre.android.MapLibre
 import org.maplibre.android.camera.CameraPosition
@@ -60,6 +61,7 @@ import org.maplibre.android.camera.CameraUpdateFactory
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.geometry.LatLngBounds
 import org.maplibre.android.maps.MapLibreMap
+import org.maplibre.android.maps.MapLibreMapOptions
 import org.maplibre.android.maps.MapView
 import org.maplibre.android.maps.Style
 import org.maplibre.android.style.expressions.Expression
@@ -89,10 +91,14 @@ private const val SELECTED_LABEL_LAYER_ID = "noor-mosque-selected-label-layer"
 private const val FOOTPRINT_SOURCE_ID = "noor-mosque-footprint-source"
 private const val FOOTPRINT_FILL_LAYER_ID = "noor-mosque-footprint-fill-layer"
 private const val FOOTPRINT_LINE_LAYER_ID = "noor-mosque-footprint-line-layer"
+private const val FOOTPRINT_EXTRUSION_LAYER_ID = "noor-mosque-footprint-3d-layer"
 private const val ROUTE_SOURCE_ID = "noor-osrm-route-source"
 private const val ROUTE_CASING_LAYER_ID = "noor-osrm-route-casing-layer"
 private const val ROUTE_LINE_LAYER_ID = "noor-osrm-route-line-layer"
 private const val USER_SOURCE_ID = "noor-user-location-source"
+private const val USER_ACCURACY_SOURCE_ID = "noor-user-accuracy-source"
+private const val USER_ACCURACY_FILL_LAYER_ID = "noor-user-accuracy-fill-layer"
+private const val USER_ACCURACY_LINE_LAYER_ID = "noor-user-accuracy-line-layer"
 private const val USER_HALO_LAYER_ID = "noor-user-location-halo-layer"
 private const val USER_LAYER_ID = "noor-user-location-layer"
 private const val VERIFIED_ICON_ID = "noor-mosque-verified-icon"
@@ -121,24 +127,25 @@ internal object MapLibreRuntimeHelper {
     }
 
     fun buildPinBitmap(fillColorInt: Int, borderColorInt: Int, isCandidate: Boolean): Bitmap {
-        val sizePx = 76
+        // 2x HiDPI supersampled bitmap (rendered at iconSize = 0.56f) for razor-sharp pins on xxhdpi/xxxhdpi screens
+        val sizePx = 128
         val bmp = Bitmap.createBitmap(sizePx, sizePx, Bitmap.Config.ARGB_8888)
         val canvas = Canvas(bmp)
         val cx = sizePx / 2f
-        val cy = sizePx / 2f - 4f
-        val radius = 22f
+        val cy = sizePx / 2f - 6f
+        val radius = 38f
 
         val shadowPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-            color = android.graphics.Color.argb(85, 0, 0, 0)
+            color = android.graphics.Color.argb(90, 0, 0, 0)
             style = Paint.Style.FILL
         }
-        canvas.drawCircle(cx, cy + 3f, radius + 2.5f, shadowPaint)
+        canvas.drawCircle(cx, cy + 5f, radius + 4.5f, shadowPaint)
 
         val borderPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
             color = borderColorInt
             style = Paint.Style.FILL
         }
-        canvas.drawCircle(cx, cy, radius + 3.5f, borderPaint)
+        canvas.drawCircle(cx, cy, radius + 6f, borderPaint)
 
         val fillPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
             color = fillColorInt
@@ -149,35 +156,35 @@ internal object MapLibreRuntimeHelper {
         val innerPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
             color = android.graphics.Color.WHITE
             style = if (isCandidate) Paint.Style.STROKE else Paint.Style.FILL
-            strokeWidth = 3f
+            strokeWidth = 5f
         }
-        val archRect = RectF(cx - 8f, cy - 4f, cx + 8f, cy + 9f)
-        canvas.drawRoundRect(archRect, 8f, 8f, innerPaint)
-        canvas.drawCircle(cx, cy - 8.5f, 2.5f, innerPaint)
+        val archRect = RectF(cx - 14f, cy - 7f, cx + 14f, cy + 16f)
+        canvas.drawRoundRect(archRect, 14f, 14f, innerPaint)
+        canvas.drawCircle(cx, cy - 15f, 4.5f, innerPaint)
         return bmp
     }
 
     /**
-     * Iconic crimson teardrop marker with white border & mosque dome silhouette matching reference UI.
+     * 2x HiDPI crimson teardrop marker with white border & mosque dome silhouette (rendered at iconSize = 0.58f).
      */
     fun buildSelectedTeardropBitmap(): Bitmap {
-        val width = 92
-        val height = 112
+        val width = 160
+        val height = 196
         val bmp = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
         val canvas = Canvas(bmp)
         val cx = width / 2f
-        val circleCy = 38f
-        val radius = 30f
-        val tipY = height - 8f
+        val circleCy = 66f
+        val radius = 52f
+        val tipY = height - 14f
 
         val shadowPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-            color = android.graphics.Color.argb(80, 0, 0, 0)
+            color = android.graphics.Color.argb(85, 0, 0, 0)
             style = Paint.Style.FILL
         }
-        canvas.drawOval(RectF(cx - 16f, tipY - 5f, cx + 16f, tipY + 4f), shadowPaint)
+        canvas.drawOval(RectF(cx - 28f, tipY - 8f, cx + 28f, tipY + 7f), shadowPaint)
 
         val pinPath = Path().apply {
-            addCircle(cx, circleCy, radius + 3.5f, Path.Direction.CW)
+            addCircle(cx, circleCy, radius + 6f, Path.Direction.CW)
             moveTo(cx - radius * 0.72f, circleCy + radius * 0.65f)
             lineTo(cx, tipY)
             lineTo(cx + radius * 0.72f, circleCy + radius * 0.65f)
@@ -192,7 +199,7 @@ internal object MapLibreRuntimeHelper {
         val innerPath = Path().apply {
             addCircle(cx, circleCy, radius, Path.Direction.CW)
             moveTo(cx - radius * 0.62f, circleCy + radius * 0.60f)
-            lineTo(cx, tipY - 5f)
+            lineTo(cx, tipY - 9f)
             lineTo(cx + radius * 0.62f, circleCy + radius * 0.60f)
             close()
         }
@@ -206,13 +213,37 @@ internal object MapLibreRuntimeHelper {
             color = android.graphics.Color.WHITE
             style = Paint.Style.FILL
         }
-        // Simple crisp mosque dome + side minarets silhouette
-        canvas.drawRect(cx - 11f, circleCy - 1f, cx + 11f, circleCy + 11f, whitePaint)
-        canvas.drawArc(RectF(cx - 8f, circleCy - 12f, cx + 8f, circleCy + 4f), 180f, 180f, true, whitePaint)
-        canvas.drawRect(cx - 14f, circleCy - 11f, cx - 10.5f, circleCy + 11f, whitePaint)
-        canvas.drawRect(cx + 10.5f, circleCy - 11f, cx + 14f, circleCy + 11f, whitePaint)
-        canvas.drawCircle(cx, circleCy - 14.5f, 2f, whitePaint)
+        canvas.drawRect(cx - 19f, circleCy - 2f, cx + 19f, circleCy + 19f, whitePaint)
+        canvas.drawArc(RectF(cx - 14f, circleCy - 21f, cx + 14f, circleCy + 7f), 180f, 180f, true, whitePaint)
+        canvas.drawRect(cx - 24.5f, circleCy - 19f, cx - 18.5f, circleCy + 19f, whitePaint)
+        canvas.drawRect(cx + 18.5f, circleCy - 19f, cx + 24.5f, circleCy + 19f, whitePaint)
+        canvas.drawCircle(cx, circleCy - 25f, 3.5f, whitePaint)
         return bmp
+    }
+
+    /**
+     * Builds a real-scale geographic circle polygon representing the live GPS accuracy radius in meters.
+     */
+    fun buildAccuracyCircleRing(
+        centerLat: Double,
+        centerLon: Double,
+        accuracyMeters: Float,
+        segments: Int = 48
+    ): List<Point> {
+        val clampedMeters = accuracyMeters.toDouble().coerceIn(2.0, 500.0)
+        val earthRadiusMeters = 6_371_000.0
+        val latRad = Math.toRadians(centerLat)
+        val cosLat = cos(latRad).coerceAtLeast(0.01)
+        val dLat = Math.toDegrees(clampedMeters / earthRadiusMeters)
+        val dLon = Math.toDegrees(clampedMeters / (earthRadiusMeters * cosLat))
+        val ring = ArrayList<Point>(segments + 1)
+        for (i in 0..segments) {
+            val theta = 2.0 * PI * i / segments
+            val pLat = (centerLat + dLat * sin(theta)).coerceIn(-85.0, 85.0)
+            val pLon = (centerLon + dLon * cos(theta)).coerceIn(-179.99, 179.99)
+            ring.add(Point.fromLngLat(pLon, pLat))
+        }
+        return ring
     }
 
     fun computeVisibleBoundingBox(centerLat: Double, centerLon: Double, zoom: Double, widthPx: Int, heightPx: Int): MapBoundingBox {
@@ -236,6 +267,13 @@ internal object MapLibreRuntimeHelper {
             east = max(west, east)
         )
     }
+
+    fun zoomForRadiusMeters(radiusMeters: Int): Double = when {
+        radiusMeters <= 1000 -> 14.5
+        radiusMeters <= 3000 -> 13.2
+        radiusMeters <= 5000 -> 12.4
+        else -> 11.4
+    }
 }
 
 @Composable
@@ -244,9 +282,11 @@ fun MosqueMapPane(
     centerLat: Double,
     centerLon: Double,
     hasConfirmedCenter: Boolean,
+    radiusMeters: Int = 5000,
     userLat: Double,
     userLon: Double,
     hasUserCoords: Boolean,
+    userAccuracyMeters: Float? = null,
     language: AppLanguage,
     selectedMosque: MosqueItem? = null,
     selectedFootprint: List<Pair<Double, Double>> = emptyList(),
@@ -272,12 +312,15 @@ fun MosqueMapPane(
 
     val initialLat = if (hasConfirmedCenter) centerLat else 21.4225
     val initialLon = if (hasConfirmedCenter) centerLon else 39.8262
-    val initialZoom = if (hasConfirmedCenter) 14.2 else 2.2
-    val initialTilt = if (hasConfirmedCenter && is3dEnabled) 52.0 else 0.0
+    val radiusZoom = remember(radiusMeters) { MapLibreRuntimeHelper.zoomForRadiusMeters(radiusMeters) }
+    val initialZoom = if (hasConfirmedCenter) radiusZoom else 2.2
+    val effective3dActive = is3dEnabled && stylePreset != MapStylePreset.SATELLITE_HD
+    val initialTilt = if (hasConfirmedCenter && effective3dActive) 48.0 else 0.0
 
     var mapLibreRef by remember { mutableStateOf<MapLibreMap?>(null) }
     var loadedStyleRef by remember { mutableStateOf<Style?>(null) }
     var loadedStyleUri by remember { mutableStateOf<String?>(null) }
+    var requestedStyleUri by remember { mutableStateOf<String?>(null) }
     var tileLoadFailed by remember { mutableStateOf(false) }
     var isStyleLoading by remember { mutableStateOf(useNativeMap) }
     var lastVisibleSearchMs by remember { mutableLongStateOf(-1L) }
@@ -287,25 +330,51 @@ fun MosqueMapPane(
     val latestSelectedMosque by rememberUpdatedState(selectedMosque)
     val latestFootprint by rememberUpdatedState(selectedFootprint)
     val latestRoute by rememberUpdatedState(route)
-    val latestIs3d by rememberUpdatedState(is3dEnabled)
+    val latestIs3d by rememberUpdatedState(effective3dActive)
+    val latestStylePreset by rememberUpdatedState(stylePreset)
+    val latestUserAccuracy by rememberUpdatedState(userAccuracyMeters)
 
     // Headless JVM / Robolectric fallback state
-    var fallbackZoom by remember(hasConfirmedCenter) { mutableDoubleStateOf(initialZoom) }
+    var fallbackZoom by remember(hasConfirmedCenter, radiusMeters) { mutableDoubleStateOf(initialZoom) }
     var fallbackLat by remember(initialLat, initialLon) { mutableDoubleStateOf(initialLat) }
     var fallbackLon by remember(initialLat, initialLon) { mutableDoubleStateOf(initialLon) }
-    var fallbackTilt by remember(is3dEnabled) { mutableDoubleStateOf(if (is3dEnabled) 52.0 else 0.0) }
+    var fallbackTilt by remember(effective3dActive) { mutableDoubleStateOf(if (effective3dActive) 40.0 else 0.0) }
     var fallbackBearing by remember { mutableDoubleStateOf(0.0) }
 
-    // Synchronize camera when search center changes
-    LaunchedEffect(centerLat, centerLon, hasConfirmedCenter, mapLibreRef) {
+    // Synchronize camera when search center, radius, or returned mosque set changes so all nearby pins are framed
+    LaunchedEffect(centerLat, centerLon, radiusMeters, mosques.size, hasConfirmedCenter, mapLibreRef) {
         if (!hasConfirmedCenter) return@LaunchedEffect
         val map = mapLibreRef ?: run {
             fallbackLat = centerLat
             fallbackLon = centerLon
+            fallbackZoom = MapLibreRuntimeHelper.zoomForRadiusMeters(radiusMeters)
             return@LaunchedEffect
         }
-        val targetZoom = max(map.cameraPosition.zoom, 14.2)
-        val targetTilt = if (latestIs3d) max(map.cameraPosition.tilt, 50.0) else 0.0
+        if (latestRoute != null) return@LaunchedEffect
+
+        if (mosques.size >= 2) {
+            val points = buildList {
+                add(LatLng(centerLat, centerLon))
+                mosques.take(25).forEach { m -> add(LatLng(m.latitude, m.longitude)) }
+            }
+            val bounds = runCatching { LatLngBounds.Builder().includes(points).build() }.getOrNull()
+            val camPos = bounds?.let { map.getCameraForLatLngBounds(it, intArrayOf(90, 150, 90, 220)) }
+            if (camPos != null) {
+                map.animateCamera(
+                    CameraUpdateFactory.newCameraPosition(
+                        CameraPosition.Builder(camPos)
+                            .zoom(camPos.zoom.coerceIn(10.0, 15.2))
+                            .tilt(if (latestIs3d) 42.0 else 0.0)
+                            .build()
+                    ),
+                    500
+                )
+                return@LaunchedEffect
+            }
+        }
+
+        val targetZoom = MapLibreRuntimeHelper.zoomForRadiusMeters(radiusMeters)
+        val targetTilt = if (latestIs3d) 48.0 else 0.0
         map.animateCamera(
             CameraUpdateFactory.newCameraPosition(
                 CameraPosition.Builder()
@@ -332,8 +401,8 @@ fun MosqueMapPane(
             CameraUpdateFactory.newCameraPosition(
                 CameraPosition.Builder()
                     .target(LatLng(m.latitude, m.longitude))
-                    .zoom(max(map.cameraPosition.zoom, 16.0))
-                    .tilt(if (latestIs3d) 54.0 else 0.0)
+                    .zoom(max(map.cameraPosition.zoom, 17.5).coerceAtMost(latestStylePreset.maxCameraZoom))
+                    .tilt(if (latestIs3d) 50.0 else 0.0)
                     .build()
             ),
             550
@@ -354,7 +423,8 @@ fun MosqueMapPane(
             map.animateCamera(
                 CameraUpdateFactory.newCameraPosition(
                     CameraPosition.Builder(camPos)
-                        .tilt(if (latestIs3d) 46.0 else 0.0)
+                        .zoom(camPos.zoom.coerceAtMost(latestStylePreset.maxCameraZoom))
+                        .tilt(if (latestIs3d) 38.0 else 0.0)
                         .build()
                 ),
                 600
@@ -364,10 +434,22 @@ fun MosqueMapPane(
         }
     }
 
-    // Apply OpenFreeMap / Hybrid 3D style preset changes cleanly
+    // Apply Hybrid HD / HD Satellite / Liberty 3D / Bright style preset changes cleanly & clamp maxZoom
     LaunchedEffect(stylePreset, mapLibreRef) {
         val map = mapLibreRef ?: return@LaunchedEffect
-        if (loadedStyleUri == stylePreset.styleUrl) return@LaunchedEffect
+        map.setMaxZoomPreference(stylePreset.maxCameraZoom)
+        if (map.cameraPosition.zoom > stylePreset.maxCameraZoom) {
+            map.animateCamera(
+                CameraUpdateFactory.newCameraPosition(
+                    CameraPosition.Builder(map.cameraPosition)
+                        .zoom(stylePreset.maxCameraZoom)
+                        .build()
+                ),
+                250
+            )
+        }
+        if (loadedStyleUri == stylePreset.styleUrl || requestedStyleUri == stylePreset.styleUrl) return@LaunchedEffect
+        requestedStyleUri = stylePreset.styleUrl
         isStyleLoading = true
         tileLoadFailed = false
         map.setStyle(Style.Builder().fromUri(stylePreset.styleUrl)) { style ->
@@ -378,7 +460,8 @@ fun MosqueMapPane(
                 primaryArgb = primaryArgb,
                 candidateArgb = candidateArgb,
                 whiteArgb = whiteArgb,
-                is3dEnabled = latestIs3d
+                is3dEnabled = latestIs3d,
+                allowBuilding3dInjection = stylePreset != MapStylePreset.SATELLITE_HD
             )
             loadedStyleRef = style
             syncMapLibreSources(
@@ -389,24 +472,33 @@ fun MosqueMapPane(
                 route = latestRoute,
                 userLat = userLat,
                 userLon = userLon,
-                hasUserCoords = hasUserCoords
+                hasUserCoords = hasUserCoords,
+                userAccuracyMeters = latestUserAccuracy
             )
         }
     }
 
-    // Apply 2D <-> 3D building extrusion visibility & camera pitch
-    LaunchedEffect(is3dEnabled, loadedStyleRef, mapLibreRef) {
+    // Apply 2D <-> 3D building extrusion visibility & crisp optical camera pitch
+    LaunchedEffect(effective3dActive, loadedStyleRef, mapLibreRef) {
         val style = loadedStyleRef
         if (style != null) {
-            configureBuilding3dLayer(style, is3dEnabled)
+            configureBuilding3dLayer(
+                style = style,
+                is3dEnabled = effective3dActive,
+                allowBuilding3dInjection = latestStylePreset != MapStylePreset.SATELLITE_HD
+            )
         }
         val map = mapLibreRef ?: run {
-            fallbackTilt = if (is3dEnabled) 52.0 else 0.0
+            fallbackTilt = if (effective3dActive) 50.0 else 0.0
             return@LaunchedEffect
         }
         val current = map.cameraPosition
-        val targetTilt = if (is3dEnabled) 52.0 else 0.0
-        val targetZoom = if (is3dEnabled && hasConfirmedCenter) max(current.zoom, 14.5) else current.zoom
+        val targetTilt = if (effective3dActive) 50.0 else 0.0
+        val targetZoom = if (effective3dActive && hasConfirmedCenter) {
+            max(current.zoom, 15.5).coerceAtMost(latestStylePreset.maxCameraZoom)
+        } else {
+            current.zoom.coerceAtMost(latestStylePreset.maxCameraZoom)
+        }
         if (abs(current.tilt - targetTilt) > 2.0 || abs(current.zoom - targetZoom) > 0.2) {
             map.animateCamera(
                 CameraUpdateFactory.newCameraPosition(
@@ -420,8 +512,8 @@ fun MosqueMapPane(
         }
     }
 
-    // Sync GeoJSON sources (OSM mosques, selected red pin + callout/footprint, OSRM blue route, GPS user point)
-    LaunchedEffect(mosques, selectedMosque, selectedFootprint, route, userLat, userLon, hasUserCoords, loadedStyleRef) {
+    // Sync GeoJSON sources (OSM mosques, selected red pin + callout/footprint, OSRM blue route, GPS user point + accuracy ring)
+    LaunchedEffect(mosques, selectedMosque, selectedFootprint, route, userLat, userLon, hasUserCoords, userAccuracyMeters, loadedStyleRef) {
         val style = loadedStyleRef ?: return@LaunchedEffect
         syncMapLibreSources(
             style = style,
@@ -431,20 +523,27 @@ fun MosqueMapPane(
             route = route,
             userLat = userLat,
             userLon = userLon,
-            hasUserCoords = hasUserCoords
+            hasUserCoords = hasUserCoords,
+            userAccuracyMeters = userAccuracyMeters
         )
     }
 
     BoxWithConstraints(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFF102A20))
+            .background(Color(0xFF1D3329))
             .testTag("mosque_map_canvas_container")
     ) {
         val isCompactMap = maxHeight < 420.dp
         if (useNativeMap) {
             val mapView = remember {
-                MapView(context).apply {
+                // TextureView + full native display density prevents SurfaceView black frames on Compose zoom
+                // and renders vectors, pins, and tiles at native xxhdpi/xxxhdpi sharpness.
+                val nativePixelRatio = context.resources.displayMetrics.density.coerceIn(1.5f, 4.0f)
+                val mapOptions = MapLibreMapOptions.createFromAttributes(context)
+                    .textureMode(true)
+                    .pixelRatio(nativePixelRatio)
+                MapView(context, mapOptions).apply {
                     onCreate(null)
                 }
             }
@@ -480,6 +579,7 @@ fun MosqueMapPane(
                     mapView.addOnDidFailLoadingMapListener {
                         isStyleLoading = false
                         if (loadedStyleRef == null) {
+                            requestedStyleUri = null
                             tileLoadFailed = true
                         }
                     }
@@ -497,11 +597,13 @@ fun MosqueMapPane(
                         map.uiSettings.isZoomGesturesEnabled = true
                         map.uiSettings.isScrollGesturesEnabled = true
                         map.setMaxPitchPreference(60.0)
-                        map.setMinZoomPreference(1.5)
+                        map.setMinZoomPreference(2.0)
+                        map.setMaxZoomPreference(latestStylePreset.maxCameraZoom)
+                        map.setPrefetchZoomDelta(4)
 
                         map.cameraPosition = CameraPosition.Builder()
                             .target(LatLng(initialLat, initialLon))
-                            .zoom(initialZoom)
+                            .zoom(initialZoom.coerceAtMost(latestStylePreset.maxCameraZoom))
                             .tilt(initialTilt)
                             .build()
 
@@ -517,7 +619,9 @@ fun MosqueMapPane(
                                 hitRect,
                                 SELECTED_PIN_LAYER_ID,
                                 VERIFIED_LAYER_ID,
-                                CANDIDATE_LAYER_ID
+                                CANDIDATE_LAYER_ID,
+                                FOOTPRINT_EXTRUSION_LAYER_ID,
+                                FOOTPRINT_FILL_LAYER_ID
                             )
                             val hit = features.firstOrNull()
                             val osmKey = hit?.getStringProperty(PROP_OSM_KEY)
@@ -530,17 +634,19 @@ fun MosqueMapPane(
                             }
                         }
 
+                        requestedStyleUri = latestStylePreset.styleUrl
                         isStyleLoading = true
-                        map.setStyle(Style.Builder().fromUri(stylePreset.styleUrl)) { style ->
+                        map.setStyle(Style.Builder().fromUri(latestStylePreset.styleUrl)) { style ->
                             isStyleLoading = false
                             tileLoadFailed = false
-                            loadedStyleUri = stylePreset.styleUrl
+                            loadedStyleUri = latestStylePreset.styleUrl
                             setupMosqueMapStyle(
                                 style = style,
                                 primaryArgb = primaryArgb,
                                 candidateArgb = candidateArgb,
                                 whiteArgb = whiteArgb,
-                                is3dEnabled = latestIs3d
+                                is3dEnabled = latestIs3d,
+                                allowBuilding3dInjection = latestStylePreset != MapStylePreset.SATELLITE_HD
                             )
                             loadedStyleRef = style
                             syncMapLibreSources(
@@ -551,7 +657,8 @@ fun MosqueMapPane(
                                 route = latestRoute,
                                 userLat = userLat,
                                 userLon = userLon,
-                                hasUserCoords = hasUserCoords
+                                hasUserCoords = hasUserCoords,
+                                userAccuracyMeters = latestUserAccuracy
                             )
                         }
                     }
@@ -594,12 +701,21 @@ fun MosqueMapPane(
                         val map = mapLibreRef
                         val bounds = if (map != null) {
                             val b = map.projection.visibleRegion.latLngBounds
-                            MapBoundingBox(
-                                south = b.latitudeSouth,
-                                west = b.longitudeWest,
-                                north = b.latitudeNorth,
-                                east = b.longitudeEast
-                            )
+                            val latSpan = abs(b.latitudeNorth - b.latitudeSouth)
+                            val lonSpan = abs(b.longitudeEast - b.longitudeWest)
+                            if (latSpan > 0.35 || lonSpan > 0.35) {
+                                val target = map.cameraPosition.target
+                                val cLat = target?.latitude ?: initialLat
+                                val cLon = target?.longitude ?: initialLon
+                                OverpassMosqueService.boundingBoxFromRadius(cLat, cLon, 5000)
+                            } else {
+                                MapBoundingBox(
+                                    south = b.latitudeSouth,
+                                    west = b.longitudeWest,
+                                    north = b.latitudeNorth,
+                                    east = b.longitudeEast
+                                )
+                            }
                         } else {
                             MapLibreRuntimeHelper.computeVisibleBoundingBox(
                                 centerLat = fallbackLat,
@@ -636,11 +752,12 @@ fun MosqueMapPane(
                     )
                 }
 
-                // Style Preset Switcher (Hybrid 3D Satellite+Vector -> Liberty 3D -> Bright)
+                // Style Preset Switcher (Hybrid HD -> HD Satellite -> Liberty 3D Vector -> Bright Vector)
                 Surface(
                     onClick = {
                         val next = when (stylePreset) {
-                            MapStylePreset.HYBRID_3D -> MapStylePreset.LIBERTY
+                            MapStylePreset.HYBRID_3D -> MapStylePreset.SATELLITE_HD
+                            MapStylePreset.SATELLITE_HD -> MapStylePreset.LIBERTY
                             MapStylePreset.LIBERTY -> MapStylePreset.BRIGHT
                             MapStylePreset.BRIGHT -> MapStylePreset.HYBRID_3D
                         }
@@ -666,6 +783,7 @@ fun MosqueMapPane(
                         Spacer(modifier = Modifier.width(5.dp))
                         val labelKey = when (stylePreset) {
                             MapStylePreset.HYBRID_3D -> "mosque_style_hybrid"
+                            MapStylePreset.SATELLITE_HD -> "mosque_style_satellite_hd"
                             MapStylePreset.LIBERTY -> "mosque_style_liberty"
                             MapStylePreset.BRIGHT -> "mosque_style_bright"
                         }
@@ -735,11 +853,19 @@ fun MosqueMapPane(
                         IconButton(
                             onClick = {
                                 tileLoadFailed = false
+                                requestedStyleUri = stylePreset.styleUrl
                                 isStyleLoading = true
                                 mapLibreRef?.setStyle(Style.Builder().fromUri(stylePreset.styleUrl)) { style ->
                                     isStyleLoading = false
                                     loadedStyleUri = stylePreset.styleUrl
-                                    setupMosqueMapStyle(style, primaryArgb, candidateArgb, whiteArgb, latestIs3d)
+                                    setupMosqueMapStyle(
+                                        style = style,
+                                        primaryArgb = primaryArgb,
+                                        candidateArgb = candidateArgb,
+                                        whiteArgb = whiteArgb,
+                                        is3dEnabled = latestIs3d,
+                                        allowBuilding3dInjection = stylePreset != MapStylePreset.SATELLITE_HD
+                                    )
                                     loadedStyleRef = style
                                     syncMapLibreSources(
                                         style = style,
@@ -749,7 +875,8 @@ fun MosqueMapPane(
                                         route = latestRoute,
                                         userLat = userLat,
                                         userLon = userLon,
-                                        hasUserCoords = hasUserCoords
+                                        hasUserCoords = hasUserCoords,
+                                        userAccuracyMeters = latestUserAccuracy
                                     )
                                 }
                             },
@@ -773,20 +900,26 @@ fun MosqueMapPane(
             if (map != null) {
                 val cur = map.cameraPosition
                 val nextTilt = when {
-                    cur.tilt < 20.0 -> 48.0
-                    cur.tilt < 54.0 -> 60.0
+                    cur.tilt < 15.0 -> 42.0
+                    cur.tilt < 48.0 -> 55.0
                     else -> 0.0
                 }
                 map.animateCamera(
                     CameraUpdateFactory.newCameraPosition(
                         CameraPosition.Builder(cur)
                             .tilt(nextTilt)
-                            .zoom(if (nextTilt > 0.0) max(cur.zoom, 15.0) else cur.zoom)
+                            .zoom(
+                                if (nextTilt > 0.0) {
+                                    max(cur.zoom, 16.0).coerceAtMost(latestStylePreset.maxCameraZoom)
+                                } else {
+                                    cur.zoom.coerceAtMost(latestStylePreset.maxCameraZoom)
+                                }
+                            )
                             .build()
                     )
                 )
             } else {
-                fallbackTilt = if (fallbackTilt < 30.0) 52.0 else 0.0
+                fallbackTilt = if (fallbackTilt < 30.0) 48.0 else 0.0
             }
         }
         val onResetNorthAction: () -> Unit = {
@@ -807,15 +940,33 @@ fun MosqueMapPane(
         val onZoomInAction: () -> Unit = {
             val map = mapLibreRef
             if (map != null) {
-                map.animateCamera(CameraUpdateFactory.zoomIn())
+                val cur = map.cameraPosition
+                val nextZoom = (cur.zoom + 1.0).coerceAtMost(latestStylePreset.maxCameraZoom)
+                map.animateCamera(
+                    CameraUpdateFactory.newCameraPosition(
+                        CameraPosition.Builder(cur)
+                            .zoom(nextZoom)
+                            .build()
+                    ),
+                    250
+                )
             } else {
-                fallbackZoom = (fallbackZoom + 1.0).coerceAtMost(18.0)
+                fallbackZoom = (fallbackZoom + 1.0).coerceAtMost(latestStylePreset.maxCameraZoom)
             }
         }
         val onZoomOutAction: () -> Unit = {
             val map = mapLibreRef
             if (map != null) {
-                map.animateCamera(CameraUpdateFactory.zoomOut())
+                val cur = map.cameraPosition
+                val nextZoom = (cur.zoom - 1.0).coerceAtLeast(2.0)
+                map.animateCamera(
+                    CameraUpdateFactory.newCameraPosition(
+                        CameraPosition.Builder(cur)
+                            .zoom(nextZoom)
+                            .build()
+                    ),
+                    250
+                )
             } else {
                 fallbackZoom = (fallbackZoom - 1.0).coerceAtLeast(2.0)
             }
@@ -827,8 +978,8 @@ fun MosqueMapPane(
                     CameraUpdateFactory.newCameraPosition(
                         CameraPosition.Builder()
                             .target(LatLng(centerLat, centerLon))
-                            .zoom(if (latestIs3d) 15.4 else 14.2)
-                            .tilt(if (latestIs3d) 52.0 else 0.0)
+                            .zoom(16.5.coerceAtMost(latestStylePreset.maxCameraZoom))
+                            .tilt(if (latestIs3d) 48.0 else 0.0)
                             .build()
                     )
                 )
@@ -983,41 +1134,49 @@ private fun WhiteFloatingMapControlButton(
     }
 }
 
-private fun configureBuilding3dLayer(style: Style, is3dEnabled: Boolean) {
-    val strictHeightFilter = Expression.all(
-        Expression.neq(Expression.get("hide_3d"), Expression.literal(true)),
-        Expression.any(
-            Expression.has("render_height"),
-            Expression.has("height")
-        )
-    )
-    val visProp = PropertyFactory.visibility(if (is3dEnabled) Property.VISIBLE else Property.NONE)
+private fun configureBuilding3dLayer(
+    style: Style,
+    is3dEnabled: Boolean,
+    allowBuilding3dInjection: Boolean = true
+) {
+    // Include ALL mapped OSM building footprints (not just those with explicit OSM height tags)
+    // so residential neighborhoods, markets, and mosques across every region render in real 3D.
+    val allBuildingsFilter = Expression.neq(Expression.get("hide_3d"), Expression.literal(true))
+    val effectiveVis = is3dEnabled && allowBuilding3dInjection
+    val visProp = PropertyFactory.visibility(if (effectiveVis) Property.VISIBLE else Property.NONE)
+
+    val footprint3d = style.getLayer(FOOTPRINT_EXTRUSION_LAYER_ID) as? FillExtrusionLayer
+    footprint3d?.setProperties(visProp)
 
     val builtIn = style.getLayer(BUILTIN_LIBERTY_3D_LAYER_ID) as? FillExtrusionLayer
     if (builtIn != null) {
-        builtIn.setFilter(strictHeightFilter)
+        builtIn.setFilter(allBuildingsFilter)
         builtIn.setProperties(visProp)
         return
     }
 
     val custom3d = style.getLayer(NOOR_BUILDING_3D_LAYER_ID) as? FillExtrusionLayer
     if (custom3d != null) {
+        custom3d.setFilter(allBuildingsFilter)
         custom3d.setProperties(visProp)
         return
     }
 
-    // Attach 3D extrusion layer below the first SymbolLayer when style includes openmaptiles without built-in 3D
+    if (!allowBuilding3dInjection) return
+
+    // Attach solid sunlit 3D extrusion layer below the first SymbolLayer for styles without built-in 3D
     val openMapTilesSource = style.getSource("openmaptiles") ?: return
     if (openMapTilesSource.id.isNotBlank()) {
         val extrusionLayer = FillExtrusionLayer(NOOR_BUILDING_3D_LAYER_ID, openMapTilesSource.id).apply {
             setSourceLayer("building")
-            minZoom = 14.0f
-            setFilter(strictHeightFilter)
+            minZoom = 14.5f
+            setFilter(allBuildingsFilter)
             setProperties(
                 PropertyFactory.fillExtrusionHeight(
                     Expression.coalesce(
                         Expression.get("render_height"),
-                        Expression.get("height")
+                        Expression.get("height"),
+                        Expression.literal(8)
                     )
                 ),
                 PropertyFactory.fillExtrusionBase(
@@ -1027,8 +1186,9 @@ private fun configureBuilding3dLayer(style: Style, is3dEnabled: Boolean) {
                         Expression.literal(0)
                     )
                 ),
-                PropertyFactory.fillExtrusionColor("#D8CFC0"),
-                PropertyFactory.fillExtrusionOpacity(0.76f),
+                PropertyFactory.fillExtrusionColor("#D9CEBC"),
+                PropertyFactory.fillExtrusionOpacity(0.88f),
+                PropertyFactory.fillExtrusionVerticalGradient(true),
                 visProp
             )
         }
@@ -1046,9 +1206,10 @@ private fun setupMosqueMapStyle(
     primaryArgb: Int,
     candidateArgb: Int,
     whiteArgb: Int,
-    is3dEnabled: Boolean
+    is3dEnabled: Boolean,
+    allowBuilding3dInjection: Boolean = true
 ) {
-    configureBuilding3dLayer(style, is3dEnabled)
+    configureBuilding3dLayer(style, is3dEnabled, allowBuilding3dInjection)
 
     if (style.getImage(VERIFIED_ICON_ID) == null) {
         style.addImage(
@@ -1069,23 +1230,36 @@ private fun setupMosqueMapStyle(
         )
     }
 
-    // Selected mosque building footprint polygon
+    // Selected mosque building footprint polygon + real 3D emerald mosque extrusion
     if (style.getSource(FOOTPRINT_SOURCE_ID) == null) {
         style.addSource(GeoJsonSource(FOOTPRINT_SOURCE_ID, FeatureCollection.fromFeatures(emptyArray())))
     }
     if (style.getLayer(FOOTPRINT_FILL_LAYER_ID) == null) {
         style.addLayer(
             FillLayer(FOOTPRINT_FILL_LAYER_ID, FOOTPRINT_SOURCE_ID).withProperties(
-                PropertyFactory.fillColor("#1D63ED"),
-                PropertyFactory.fillOpacity(0.24f)
+                PropertyFactory.fillColor("#0B6E4F"),
+                PropertyFactory.fillOpacity(0.28f)
+            )
+        )
+    }
+    if (style.getLayer(FOOTPRINT_EXTRUSION_LAYER_ID) == null) {
+        val mosque3dVis = if (is3dEnabled && allowBuilding3dInjection) Property.VISIBLE else Property.NONE
+        style.addLayer(
+            FillExtrusionLayer(FOOTPRINT_EXTRUSION_LAYER_ID, FOOTPRINT_SOURCE_ID).withProperties(
+                PropertyFactory.fillExtrusionColor("#0B6E4F"),
+                PropertyFactory.fillExtrusionHeight(15f),
+                PropertyFactory.fillExtrusionBase(0f),
+                PropertyFactory.fillExtrusionOpacity(0.88f),
+                PropertyFactory.fillExtrusionVerticalGradient(true),
+                PropertyFactory.visibility(mosque3dVis)
             )
         )
     }
     if (style.getLayer(FOOTPRINT_LINE_LAYER_ID) == null) {
         style.addLayer(
             LineLayer(FOOTPRINT_LINE_LAYER_ID, FOOTPRINT_SOURCE_ID).withProperties(
-                PropertyFactory.lineColor("#1D4ED8"),
-                PropertyFactory.lineWidth(2.5f)
+                PropertyFactory.lineColor("#F59E0B"),
+                PropertyFactory.lineWidth(2.6f)
             )
         )
     }
@@ -1112,6 +1286,28 @@ private fun setupMosqueMapStyle(
                 PropertyFactory.lineWidth(6.0f),
                 PropertyFactory.lineCap(Property.LINE_CAP_ROUND),
                 PropertyFactory.lineJoin(Property.LINE_JOIN_ROUND)
+            )
+        )
+    }
+
+    // Real-scale GPS accuracy radius ring (drawn from real FusedLocationProviderClient accuracyMeters)
+    if (style.getSource(USER_ACCURACY_SOURCE_ID) == null) {
+        style.addSource(GeoJsonSource(USER_ACCURACY_SOURCE_ID, FeatureCollection.fromFeatures(emptyArray())))
+    }
+    if (style.getLayer(USER_ACCURACY_FILL_LAYER_ID) == null) {
+        style.addLayer(
+            FillLayer(USER_ACCURACY_FILL_LAYER_ID, USER_ACCURACY_SOURCE_ID).withProperties(
+                PropertyFactory.fillColor("#3B82F6"),
+                PropertyFactory.fillOpacity(0.14f)
+            )
+        )
+    }
+    if (style.getLayer(USER_ACCURACY_LINE_LAYER_ID) == null) {
+        style.addLayer(
+            LineLayer(USER_ACCURACY_LINE_LAYER_ID, USER_ACCURACY_SOURCE_ID).withProperties(
+                PropertyFactory.lineColor("#60A5FA"),
+                PropertyFactory.lineWidth(1.5f),
+                PropertyFactory.lineOpacity(0.65f)
             )
         )
     }
@@ -1149,6 +1345,7 @@ private fun setupMosqueMapStyle(
         style.addLayer(
             SymbolLayer(CANDIDATE_LAYER_ID, CANDIDATE_SOURCE_ID).withProperties(
                 PropertyFactory.iconImage(CANDIDATE_ICON_ID),
+                PropertyFactory.iconSize(0.56f),
                 PropertyFactory.iconAllowOverlap(true),
                 PropertyFactory.iconIgnorePlacement(true),
                 PropertyFactory.iconAnchor(Property.ICON_ANCHOR_CENTER)
@@ -1162,6 +1359,7 @@ private fun setupMosqueMapStyle(
         style.addLayer(
             SymbolLayer(VERIFIED_LAYER_ID, VERIFIED_SOURCE_ID).withProperties(
                 PropertyFactory.iconImage(VERIFIED_ICON_ID),
+                PropertyFactory.iconSize(0.56f),
                 PropertyFactory.iconAllowOverlap(true),
                 PropertyFactory.iconIgnorePlacement(true),
                 PropertyFactory.iconAnchor(Property.ICON_ANCHOR_CENTER)
@@ -1188,6 +1386,7 @@ private fun setupMosqueMapStyle(
         style.addLayer(
             SymbolLayer(SELECTED_PIN_LAYER_ID, SELECTED_SOURCE_ID).withProperties(
                 PropertyFactory.iconImage(SELECTED_ICON_ID),
+                PropertyFactory.iconSize(0.58f),
                 PropertyFactory.iconAllowOverlap(true),
                 PropertyFactory.iconIgnorePlacement(true),
                 PropertyFactory.iconAnchor(Property.ICON_ANCHOR_BOTTOM)
@@ -1221,7 +1420,8 @@ private fun syncMapLibreSources(
     route: MosqueRouteResult?,
     userLat: Double,
     userLon: Double,
-    hasUserCoords: Boolean
+    hasUserCoords: Boolean,
+    userAccuracyMeters: Float? = null
 ) {
     val verifiedFeatures = mutableListOf<Feature>()
     val candidateFeatures = mutableListOf<Feature>()
@@ -1256,7 +1456,11 @@ private fun syncMapLibreSources(
     val footprintFeatures = if (selectedFootprint.size >= 3) {
         val ring = selectedFootprint.map { (lat, lon) -> Point.fromLngLat(lon, lat) }.toMutableList()
         if (ring.first() != ring.last()) ring.add(ring.first())
-        listOf(Feature.fromGeometry(Polygon.fromLngLats(listOf(ring))))
+        val feat = Feature.fromGeometry(Polygon.fromLngLats(listOf(ring)))
+        if (selectedMosque != null) {
+            feat.addStringProperty(PROP_OSM_KEY, selectedMosque.id)
+        }
+        listOf(feat)
     } else emptyList()
     style.getSourceAs<GeoJsonSource>(FOOTPRINT_SOURCE_ID)
         ?.setGeoJson(FeatureCollection.fromFeatures(footprintFeatures))
@@ -1275,6 +1479,15 @@ private fun syncMapLibreSources(
     }
     style.getSourceAs<GeoJsonSource>(USER_SOURCE_ID)
         ?.setGeoJson(FeatureCollection.fromFeatures(userFeatures))
+
+    val accuracyFeatures = if (hasUserCoords && userAccuracyMeters != null && userAccuracyMeters in 1f..500f) {
+        val ring = MapLibreRuntimeHelper.buildAccuracyCircleRing(userLat, userLon, userAccuracyMeters)
+        listOf(Feature.fromGeometry(Polygon.fromLngLats(listOf(ring))))
+    } else {
+        emptyList()
+    }
+    style.getSourceAs<GeoJsonSource>(USER_ACCURACY_SOURCE_ID)
+        ?.setGeoJson(FeatureCollection.fromFeatures(accuracyFeatures))
 }
 
 /**

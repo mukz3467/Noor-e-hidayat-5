@@ -23,10 +23,14 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.CloudOff
+import androidx.compose.material.icons.filled.ErrorOutline
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.RadioButtonUnchecked
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.Sync
 import androidx.compose.material.icons.filled.Verified
 import androidx.compose.material.icons.filled.WarningAmber
 import androidx.compose.material3.Button
@@ -43,15 +47,11 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -63,52 +63,39 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
+import com.example.data.live.HarameynLiveSources
+import com.example.data.live.LiveConnectionPhase
+import com.example.data.live.LivePlayerTransport
+import com.example.data.live.LiveSourceAttemptStatus
 import com.example.data.model.AppLanguage
 import com.example.data.repository.HarameynLocation
-import com.example.data.repository.LiveBroadcastState
-import com.example.data.repository.LiveStreamStatusResult
-import com.example.data.repository.YouTubeRepository
-import com.example.data.repository.YouTubeVideoItem
 import com.example.localization.AppLocalization
+import com.example.ui.components.InAppHlsLivePlayer
+import com.example.ui.components.InAppYouTubeLivePlayer
 import com.example.ui.components.InAppYouTubePlayer
 import com.example.ui.components.NoorTopBar
+import com.example.ui.viewmodel.LiveStreamViewModel
 
 @Composable
 fun LiveStreamScreen(
     language: AppLanguage,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    viewModel: LiveStreamViewModel = viewModel()
 ) {
     val context = LocalContext.current
-    var selectedChannelIndex by rememberSaveable { mutableIntStateOf(0) } // 0 = Makkah, 1 = Madinah
-    var reloadKey by remember { mutableIntStateOf(0) }
-    var selectedRecordedVideo by remember { mutableStateOf<YouTubeVideoItem?>(null) }
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    val selectedLocation = if (selectedChannelIndex == 0) HarameynLocation.MAKKAH else HarameynLocation.MADINAH
-    val channelMeta = YouTubeRepository.HARAMEYN_CHANNELS.getValue(selectedLocation)
-
-    var statusResult by remember(selectedLocation) {
-        mutableStateOf(
-            LiveStreamStatusResult(
-                location = selectedLocation,
-                channel = channelMeta,
-                state = LiveBroadcastState.LOADING
-            )
-        )
+    DisposableEffect(viewModel) {
+        viewModel.onScreenAttached()
+        onDispose { viewModel.onScreenDisposed() }
     }
 
-    LaunchedEffect(selectedLocation, reloadKey) {
-        statusResult = LiveStreamStatusResult(
-            location = selectedLocation,
-            channel = channelMeta,
-            state = LiveBroadcastState.LOADING
-        )
-        val result = YouTubeRepository.checkHarameynLiveStatus(context, selectedLocation)
-        statusResult = result
-        if (selectedRecordedVideo == null && result.state != LiveBroadcastState.LIVE_CONFIRMED) {
-            selectedRecordedVideo = result.recentRecordedUploads.firstOrNull()
-        }
-    }
+    val selectedLocation = uiState.selectedLocation
+    val selectedChannelIndex = if (selectedLocation == HarameynLocation.MAKKAH) 0 else 1
+    val channelMeta = uiState.channel
 
     val channelTitle = if (selectedLocation == HarameynLocation.MAKKAH) {
         AppLocalization.get("live_makkah_title", language)
@@ -124,7 +111,7 @@ fun LiveStreamScreen(
                 onBackClick = onBack,
                 actions = {
                     IconButton(
-                        onClick = { reloadKey++ },
+                        onClick = { viewModel.retryAllSources() },
                         modifier = Modifier
                             .sizeIn(minWidth = 48.dp, minHeight = 48.dp)
                             .testTag("reload_stream_btn")
@@ -155,10 +142,7 @@ fun LiveStreamScreen(
             ) {
                 Tab(
                     selected = selectedChannelIndex == 0,
-                    onClick = {
-                        selectedChannelIndex = 0
-                        selectedRecordedVideo = null
-                    },
+                    onClick = { viewModel.selectLocation(HarameynLocation.MAKKAH) },
                     selectedContentColor = MaterialTheme.colorScheme.primary,
                     unselectedContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                     text = {
@@ -171,10 +155,7 @@ fun LiveStreamScreen(
                 )
                 Tab(
                     selected = selectedChannelIndex == 1,
-                    onClick = {
-                        selectedChannelIndex = 1
-                        selectedRecordedVideo = null
-                    },
+                    onClick = { viewModel.selectLocation(HarameynLocation.MADINAH) },
                     selectedContentColor = MaterialTheme.colorScheme.primary,
                     unselectedContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                     text = {
@@ -189,31 +170,13 @@ fun LiveStreamScreen(
 
             Spacer(modifier = Modifier.height(14.dp))
 
-            // Player Box ONLY when user selects a verified recorded upload OR a confirmed live ID
-            val activeRecorded = selectedRecordedVideo
-            val confirmedLiveId = statusResult.verifiedVideoId
-            if (statusResult.state == LiveBroadcastState.LIVE_CONFIRMED && !confirmedLiveId.isNullOrBlank()) {
-                Card(
-                    shape = RoundedCornerShape(18.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color.Black),
-                    elevation = CardDefaults.cardElevation(defaultElevation = 6.dp),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(240.dp)
-                        .testTag("embedded_live_player")
-                ) {
-                    key(confirmedLiveId, reloadKey) {
-                        InAppYouTubePlayer(
-                            videoId = confirmedLiveId,
-                            modifier = Modifier.fillMaxSize(),
-                            autoplay = true,
-                            language = language
-                        )
-                    }
-                }
-                Spacer(modifier = Modifier.height(12.dp))
-            } else if (activeRecorded != null) {
-                // Recorded upload explicitly badged NOT LIVE
+            // Single Active Player Slot (NEVER mounts two players simultaneously)
+            val activeRecorded = uiState.selectedRecordedVideo
+            val activeLiveSource = uiState.activeSource
+            val activeToken = uiState.attemptToken
+
+            if (activeRecorded != null) {
+                // User explicitly chose a recorded upload -> clearly badged NOT LIVE
                 Surface(
                     shape = RoundedCornerShape(10.dp),
                     color = MaterialTheme.colorScheme.secondaryContainer,
@@ -237,8 +200,18 @@ fun LiveStreamScreen(
                             style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.SemiBold),
                             color = MaterialTheme.colorScheme.onSecondaryContainer,
                             maxLines = 2,
-                            overflow = TextOverflow.Ellipsis
+                            overflow = TextOverflow.Ellipsis,
+                            modifier = Modifier.weight(1f)
                         )
+                        TextButton(
+                            onClick = { viewModel.returnToLiveBroadcast() },
+                            modifier = Modifier.testTag("return_to_live_btn")
+                        ) {
+                            Text(
+                                text = AppLocalization.get("live_return_to_live", language),
+                                style = MaterialTheme.typography.labelSmall
+                            )
+                        }
                     }
                 }
                 Spacer(modifier = Modifier.height(8.dp))
@@ -251,7 +224,7 @@ fun LiveStreamScreen(
                         .height(240.dp)
                         .testTag("embedded_recorded_harameyn_player")
                 ) {
-                    key(activeRecorded.id, reloadKey) {
+                    key(activeRecorded.id, uiState.sessionNonce) {
                         InAppYouTubePlayer(
                             videoId = activeRecorded.id,
                             modifier = Modifier.fillMaxSize(),
@@ -261,9 +234,69 @@ fun LiveStreamScreen(
                     }
                 }
                 Spacer(modifier = Modifier.height(12.dp))
+            } else if (activeLiveSource != null) {
+                val playerTag = if (uiState.phase == LiveConnectionPhase.LIVE) {
+                    "embedded_live_player"
+                } else {
+                    "connecting_live_player"
+                }
+                Card(
+                    shape = RoundedCornerShape(18.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.Black),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 6.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(240.dp)
+                        .testTag(playerTag)
+                ) {
+                    key(
+                        selectedLocation,
+                        activeLiveSource.config.id,
+                        activeToken,
+                        uiState.sessionNonce
+                    ) {
+                        when (activeLiveSource.transport) {
+                            LivePlayerTransport.HLS_NATIVE -> {
+                                val hlsUrl = activeLiveSource.hlsStreamUrl.orEmpty()
+                                InAppHlsLivePlayer(
+                                    hlsUrl = hlsUrl,
+                                    language = language,
+                                    onLivePlaybackConfirmed = {
+                                        viewModel.onPlayerConfirmedLive(activeToken)
+                                    },
+                                    onReconnecting = {
+                                        viewModel.onPlayerReconnecting(activeToken)
+                                    },
+                                    onPlaybackFailed = { reason ->
+                                        viewModel.onPlayerFailed(activeToken, reason)
+                                    },
+                                    modifier = Modifier.fillMaxSize()
+                                )
+                            }
+                            LivePlayerTransport.YOUTUBE_VIDEO_EMBED,
+                            LivePlayerTransport.YOUTUBE_CHANNEL_LIVE_EMBED -> {
+                                InAppYouTubeLivePlayer(
+                                    resolvedSource = activeLiveSource,
+                                    language = language,
+                                    onLivePlaybackConfirmed = {
+                                        viewModel.onPlayerConfirmedLive(activeToken)
+                                    },
+                                    onReconnecting = {
+                                        viewModel.onPlayerReconnecting(activeToken)
+                                    },
+                                    onPlaybackFailed = { reason ->
+                                        viewModel.onPlayerFailed(activeToken, reason)
+                                    },
+                                    modifier = Modifier.fillMaxSize()
+                                )
+                            }
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(12.dp))
             }
 
-            // Honest Verification Status Card (No fake LIVE badge, no hardcoded stream IDs)
+            // Honest Live Status & Automatic Fallback Card
             Card(
                 shape = RoundedCornerShape(14.dp),
                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
@@ -304,26 +337,117 @@ fun LiveStreamScreen(
 
                     Spacer(modifier = Modifier.height(12.dp))
 
-                    when (statusResult.state) {
-                        LiveBroadcastState.LOADING -> {
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                modifier = Modifier.padding(vertical = 8.dp)
+                    // Honest Connection Phase Banner
+                    val activeSourceLabel = uiState.activeSource?.config?.localizedLabel(language)
+                        ?: uiState.sourceAttempts.getOrNull(uiState.activeSourceIndex)?.source?.localizedLabel(language)
+                        ?: channelMeta.localizedName(language)
+
+                    when (uiState.phase) {
+                        LiveConnectionPhase.CONNECTING -> {
+                            Surface(
+                                shape = RoundedCornerShape(10.dp),
+                                color = MaterialTheme.colorScheme.surfaceVariant,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("live_phase_connecting_banner")
                             ) {
-                                CircularProgressIndicator(modifier = Modifier.size(22.dp), strokeWidth = 2.5.dp)
-                                Spacer(modifier = Modifier.width(12.dp))
-                                Text(
-                                    text = AppLocalization.get("live_status_checking", language),
-                                    style = MaterialTheme.typography.bodyMedium,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                                )
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier.padding(12.dp)
+                                ) {
+                                    CircularProgressIndicator(modifier = Modifier.size(20.dp), strokeWidth = 2.5.dp)
+                                    Spacer(modifier = Modifier.width(12.dp))
+                                    Column(modifier = Modifier.weight(1f)) {
+                                        Text(
+                                            text = AppLocalization.get("live_phase_connecting", language),
+                                            style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold),
+                                            color = MaterialTheme.colorScheme.onSurface
+                                        )
+                                        Text(
+                                            text = activeSourceLabel,
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                            maxLines = 1,
+                                            overflow = TextOverflow.Ellipsis
+                                        )
+                                    }
+                                }
                             }
                         }
-                        LiveBroadcastState.OFFLINE -> {
+                        LiveConnectionPhase.RECONNECTING -> {
+                            Surface(
+                                shape = RoundedCornerShape(10.dp),
+                                color = MaterialTheme.colorScheme.secondaryContainer,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("live_phase_reconnecting_banner")
+                            ) {
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier.padding(12.dp)
+                                ) {
+                                    CircularProgressIndicator(modifier = Modifier.size(20.dp), strokeWidth = 2.5.dp)
+                                    Spacer(modifier = Modifier.width(12.dp))
+                                    Column(modifier = Modifier.weight(1f)) {
+                                        Text(
+                                            text = AppLocalization.get("live_phase_reconnecting", language),
+                                            style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold),
+                                            color = MaterialTheme.colorScheme.onSecondaryContainer
+                                        )
+                                        Text(
+                                            text = activeSourceLabel,
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSecondaryContainer,
+                                            maxLines = 1,
+                                            overflow = TextOverflow.Ellipsis
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                        LiveConnectionPhase.LIVE -> {
+                            Surface(
+                                shape = RoundedCornerShape(10.dp),
+                                color = MaterialTheme.colorScheme.primaryContainer,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("live_phase_confirmed_banner")
+                            ) {
+                                Column(modifier = Modifier.padding(12.dp)) {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Box(
+                                            modifier = Modifier
+                                                .size(9.dp)
+                                                .clip(CircleShape)
+                                                .background(Color(0xFFDC2626))
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                        Text(
+                                            text = "${AppLocalization.get("live_badge_confirmed", language)} • $activeSourceLabel",
+                                            style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold),
+                                            color = MaterialTheme.colorScheme.onPrimaryContainer,
+                                            maxLines = 2,
+                                            overflow = TextOverflow.Ellipsis
+                                        )
+                                    }
+                                    if (uiState.isFallbackActive) {
+                                        Spacer(modifier = Modifier.height(4.dp))
+                                        Text(
+                                            text = AppLocalization.get("live_fallback_relay_note", language),
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.85f)
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                        LiveConnectionPhase.OFFLINE -> {
                             Surface(
                                 shape = RoundedCornerShape(10.dp),
                                 color = MaterialTheme.colorScheme.errorContainer,
-                                modifier = Modifier.fillMaxWidth()
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("live_phase_offline_banner")
                             ) {
                                 Row(
                                     verticalAlignment = Alignment.CenterVertically,
@@ -337,17 +461,19 @@ fun LiveStreamScreen(
                                     Spacer(modifier = Modifier.width(10.dp))
                                     Text(
                                         text = AppLocalization.get("live_status_offline", language),
-                                        style = MaterialTheme.typography.bodySmall,
+                                        style = MaterialTheme.typography.bodySmall.copy(fontWeight = FontWeight.SemiBold),
                                         color = MaterialTheme.colorScheme.onErrorContainer
                                     )
                                 }
                             }
                         }
-                        LiveBroadcastState.CURRENTLY_UNAVAILABLE -> {
+                        LiveConnectionPhase.SOURCE_UNAVAILABLE -> {
                             Surface(
                                 shape = RoundedCornerShape(10.dp),
                                 color = MaterialTheme.colorScheme.errorContainer,
-                                modifier = Modifier.fillMaxWidth()
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("live_phase_unavailable_banner")
                             ) {
                                 Column(modifier = Modifier.padding(12.dp)) {
                                     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -358,85 +484,75 @@ fun LiveStreamScreen(
                                         )
                                         Spacer(modifier = Modifier.width(8.dp))
                                         Text(
-                                            text = AppLocalization.get("live_status_unavailable", language),
+                                            text = AppLocalization.get("live_phase_source_unavailable", language),
                                             style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Bold),
                                             color = MaterialTheme.colorScheme.onErrorContainer
                                         )
                                     }
                                     Spacer(modifier = Modifier.height(6.dp))
                                     Text(
-                                        text = AppLocalization.get("live_unavailable_desc", language),
-                                        style = MaterialTheme.typography.bodySmall,
-                                        color = MaterialTheme.colorScheme.onErrorContainer
-                                    )
-                                }
-                            }
-                        }
-                        LiveBroadcastState.LIVE_STATUS_UNCONFIRMED,
-                        LiveBroadcastState.NO_ACTIVE_BROADCAST -> {
-                            Surface(
-                                shape = RoundedCornerShape(10.dp),
-                                color = MaterialTheme.colorScheme.surfaceVariant,
-                                modifier = Modifier.fillMaxWidth()
-                            ) {
-                                Column(modifier = Modifier.padding(12.dp)) {
-                                    Row(verticalAlignment = Alignment.CenterVertically) {
-                                        Icon(
-                                            imageVector = Icons.Default.Info,
-                                            contentDescription = null,
-                                            tint = MaterialTheme.colorScheme.primary
-                                        )
-                                        Spacer(modifier = Modifier.width(8.dp))
-                                        Text(
-                                            text = AppLocalization.get("live_status_unconfirmed", language),
-                                            style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Bold),
-                                            color = MaterialTheme.colorScheme.onSurface
-                                        )
-                                    }
-                                    Spacer(modifier = Modifier.height(6.dp))
-                                    Text(
-                                        text = AppLocalization.get("live_unconfirmed_desc", language),
+                                        text = AppLocalization.get("live_source_unavailable_desc", language),
                                         style = MaterialTheme.typography.bodySmall.copy(lineHeight = 18.sp),
-                                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                                    )
-                                }
-                            }
-                        }
-                        LiveBroadcastState.LIVE_CONFIRMED -> {
-                            Surface(
-                                shape = RoundedCornerShape(10.dp),
-                                color = MaterialTheme.colorScheme.primaryContainer,
-                                modifier = Modifier.fillMaxWidth()
-                            ) {
-                                Row(
-                                    verticalAlignment = Alignment.CenterVertically,
-                                    modifier = Modifier.padding(12.dp)
-                                ) {
-                                    Box(
-                                        modifier = Modifier
-                                            .size(8.dp)
-                                            .clip(CircleShape)
-                                            .background(Color(0xFFDC2626))
-                                    )
-                                    Spacer(modifier = Modifier.width(8.dp))
-                                    Text(
-                                        text = "${AppLocalization.get("live_badge_confirmed", language)} • ${statusResult.streamTitle}",
-                                        style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold),
-                                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                                        color = MaterialTheme.colorScheme.onErrorContainer
                                     )
                                 }
                             }
                         }
                     }
 
+                    // Ordered 3-source fallback transparency rows
+                    Spacer(modifier = Modifier.height(10.dp))
+                    Text(
+                        text = AppLocalization.get("live_sources_label", language),
+                        style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.SemiBold),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(modifier = Modifier.height(6.dp))
+                    uiState.sourceAttempts.forEach { attempt ->
+                        val (icon, tint) = when (attempt.status) {
+                            LiveSourceAttemptStatus.ACTIVE_LIVE ->
+                                Icons.Default.CheckCircle to MaterialTheme.colorScheme.primary
+                            LiveSourceAttemptStatus.TESTING ->
+                                Icons.Default.Sync to MaterialTheme.colorScheme.tertiary
+                            LiveSourceAttemptStatus.FAILED ->
+                                Icons.Default.ErrorOutline to MaterialTheme.colorScheme.error
+                            LiveSourceAttemptStatus.PENDING ->
+                                Icons.Default.RadioButtonUnchecked to MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
+                        }
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 3.dp)
+                                .testTag("live_source_row_${attempt.source.id.name.lowercase()}")
+                        ) {
+                            Icon(
+                                imageVector = icon,
+                                contentDescription = null,
+                                tint = tint,
+                                modifier = Modifier.size(16.dp)
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                text = "${attempt.source.priorityOrder}. ${attempt.source.localizedLabel(language)}",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurface,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis,
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
+
                     Spacer(modifier = Modifier.height(12.dp))
 
+                    // Primary Retry + Official YouTube Channel Actions
                     Row(
                         horizontalArrangement = Arrangement.spacedBy(10.dp),
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Button(
-                            onClick = { reloadKey++ },
+                            onClick = { viewModel.retryAllSources() },
                             shape = RoundedCornerShape(10.dp),
                             modifier = Modifier
                                 .weight(1f)
@@ -450,12 +566,7 @@ fun LiveStreamScreen(
 
                         OutlinedButton(
                             onClick = {
-                                try {
-                                    context.startActivity(
-                                        Intent(Intent.ACTION_VIEW, Uri.parse(channelMeta.officialChannelUrl))
-                                    )
-                                } catch (_: Exception) {
-                                }
+                                openExternalUrl(context, channelMeta.officialChannelUrl)
                             },
                             shape = RoundedCornerShape(10.dp),
                             modifier = Modifier
@@ -473,6 +584,52 @@ fun LiveStreamScreen(
                         }
                     }
 
+                    // External Browser Fallback links when all embedded sources fail
+                    if (uiState.phase == LiveConnectionPhase.SOURCE_UNAVAILABLE) {
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(10.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            OutlinedButton(
+                                onClick = {
+                                    openExternalUrl(context, HarameynLiveSources.QURAN_HAYAT_PAGE_URL)
+                                },
+                                shape = RoundedCornerShape(10.dp),
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .sizeIn(minHeight = 48.dp)
+                                    .testTag("live_open_quranhayat_btn")
+                            ) {
+                                Icon(Icons.AutoMirrored.Filled.OpenInNew, contentDescription = null, modifier = Modifier.size(16.dp))
+                                Spacer(modifier = Modifier.width(4.dp))
+                                Text(
+                                    text = AppLocalization.get("live_open_quranhayat", language),
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis
+                                )
+                            }
+                            OutlinedButton(
+                                onClick = {
+                                    openExternalUrl(context, HarameynLiveSources.HARAMAIN_VOICE_PAGE_URL)
+                                },
+                                shape = RoundedCornerShape(10.dp),
+                                modifier = Modifier
+                                    .weight(1f)
+                                    .sizeIn(minHeight = 48.dp)
+                                    .testTag("live_open_haramainvoice_btn")
+                            ) {
+                                Icon(Icons.AutoMirrored.Filled.OpenInNew, contentDescription = null, modifier = Modifier.size(16.dp))
+                                Spacer(modifier = Modifier.width(4.dp))
+                                Text(
+                                    text = AppLocalization.get("live_open_haramainvoice", language),
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis
+                                )
+                            }
+                        }
+                    }
+
                     HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
 
                     Text(
@@ -484,7 +641,7 @@ fun LiveStreamScreen(
             }
 
             // Recent Recorded Uploads from Official Channel RSS (Explicitly labeled Recorded, NOT Live)
-            if (statusResult.recentRecordedUploads.isNotEmpty()) {
+            if (uiState.recentRecordedUploads.isNotEmpty()) {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = AppLocalization.get("live_recorded_uploads_title", language),
@@ -493,10 +650,10 @@ fun LiveStreamScreen(
                 )
                 Spacer(modifier = Modifier.height(8.dp))
 
-                statusResult.recentRecordedUploads.forEach { upload ->
-                    val isSelected = selectedRecordedVideo?.id == upload.id
+                uiState.recentRecordedUploads.forEach { upload ->
+                    val isSelected = uiState.selectedRecordedVideo?.id == upload.id
                     Card(
-                        onClick = { selectedRecordedVideo = upload },
+                        onClick = { viewModel.selectRecordedVideo(upload) },
                         shape = RoundedCornerShape(14.dp),
                         colors = CardDefaults.cardColors(
                             containerColor = if (isSelected) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f) else MaterialTheme.colorScheme.surface
@@ -577,5 +734,11 @@ fun LiveStreamScreen(
                 }
             }
         }
+    }
+}
+
+private fun openExternalUrl(context: android.content.Context, url: String) {
+    runCatching {
+        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
     }
 }

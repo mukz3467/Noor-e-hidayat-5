@@ -68,6 +68,7 @@ class YouTubeLecturesAndPlayerTest {
     fun setUp() {
         context = ApplicationProvider.getApplicationContext()
         context.getSharedPreferences("noor_youtube_feeds_v2", Context.MODE_PRIVATE).edit().clear().commit()
+        com.example.data.live.HarameynLiveStreamPrefs.clearForTest(context)
         YouTubeRepository.clearTestCaches()
         YouTubeRepository.networkChecker = { true }
         YouTubeRepository.currentTimeProvider = null
@@ -220,9 +221,12 @@ class YouTubeLecturesAndPlayerTest {
 
         val tafseerRes = YouTubeRepository.fetchLecturesForTopic(context, LectureCategory.QURAN_TAFSEER, forceRefresh = true)
         assertEquals(FeedLoadStatus.ONLINE_FRESH, tafseerRes.status)
-        // Only Bayyinah + SeekersGuidance should be requested for QURAN_TAFSEER (2 channels, NOT all 16)
-        assertEquals(2, requestedUrls.size)
-        assertTrue(requestedUrls.all { it.contains(bayyinahId) || it.contains(seekersId) })
+        val expectedTafseerChannels = YouTubeRepository.channelsForTopic(LectureCategory.QURAN_TAFSEER)!!
+        val expectedBatch0Count = minOf(expectedTafseerChannels.size, YouTubeRepository.DEFAULT_CHANNEL_BATCH_SIZE)
+        assertEquals(expectedBatch0Count, requestedUrls.size)
+        assertEquals(expectedTafseerChannels.size > YouTubeRepository.DEFAULT_CHANNEL_BATCH_SIZE, tafseerRes.hasMoreChannelBatches)
+        assertTrue(requestedUrls.all { url -> expectedTafseerChannels.any { url.contains(it.channelId) } })
+        assertTrue(expectedTafseerChannels.size < YouTubeRepository.VERIFIED_CHANNELS.size)
         // Only the Surah Yusuf Tafseer item matches QURAN_TAFSEER (neither "Train Your Mind" nor "Hadith Lesson 1")
         assertEquals(1, tafseerRes.videos.size)
         assertEquals("vid12345678", tafseerRes.videos[0].id)
@@ -350,7 +354,7 @@ class YouTubeLecturesAndPlayerTest {
         assertEquals(LiveBroadcastState.OFFLINE, offlineMakkah.state)
         assertNull(offlineMakkah.verifiedVideoId)
 
-        // 2. Online HTTP error -> CURRENTLY_UNAVAILABLE
+        // 2. Online HTTP error across all sources -> SOURCE_UNAVAILABLE
         YouTubeRepository.networkChecker = { true }
         YouTubeRepository.httpClient = buildMockClient { req ->
             requestedUrls.add(req.url.toString())
@@ -359,31 +363,43 @@ class YouTubeLecturesAndPlayerTest {
                 .body("".toResponseBody("text/plain".toMediaType())).build()
         }
         val unavailMadinah = YouTubeRepository.checkHarameynLiveStatus(context, HarameynLocation.MADINAH)
-        assertEquals(LiveBroadcastState.CURRENTLY_UNAVAILABLE, unavailMadinah.state)
+        assertEquals(LiveBroadcastState.SOURCE_UNAVAILABLE, unavailMadinah.state)
         assertNull(unavailMadinah.verifiedVideoId)
-        assertTrue("Must NEVER scrape /live HTML", requestedUrls.none { it.contains("/live") })
+        assertNull(unavailMadinah.resolvedSource)
+        assertTrue(
+            "Must NEVER scrape YouTube /live HTML",
+            requestedUrls.none { it.contains("youtube.com") && it.contains("/live") }
+        )
 
-        // 3. Online valid official RSS -> LIVE_STATUS_UNCONFIRMED (recent uploads marked recorded, never LIVE)
+        // 3. Online valid official RSS only (live sources fail) -> LIVE_STATUS_UNCONFIRMED (recent uploads marked recorded, never LIVE)
         requestedUrls.clear()
         val makkahId = YouTubeRepository.HARAMEYN_CHANNELS.getValue(HarameynLocation.MAKKAH).channelId
         YouTubeRepository.httpClient = buildMockClient { req ->
-            requestedUrls.add(req.url.toString())
-            val xml = sampleAtomFeed(
-                makkahId,
-                "قناة القرآن الكريم",
-                listOf(Triple("x9mC9QJIZH0", "صلاة العشاء من المسجد الحرام", "2026-11-14T17:54:17+00:00"))
-            )
-            Response.Builder()
-                .request(req).protocol(Protocol.HTTP_1_1).code(200).message("OK")
-                .body(xml.toResponseBody("application/atom+xml".toMediaType())).build()
+            val url = req.url.toString()
+            requestedUrls.add(url)
+            if (url.contains("feeds/videos.xml")) {
+                val xml = sampleAtomFeed(
+                    makkahId,
+                    "قناة القرآن الكريم",
+                    listOf(Triple("x9mC9QJIZH0", "صلاة العشاء من المسجد الحرام", "2026-11-14T17:54:17+00:00"))
+                )
+                Response.Builder()
+                    .request(req).protocol(Protocol.HTTP_1_1).code(200).message("OK")
+                    .body(xml.toResponseBody("application/atom+xml".toMediaType())).build()
+            } else {
+                Response.Builder()
+                    .request(req).protocol(Protocol.HTTP_1_1).code(503).message("Unavailable")
+                    .body("".toResponseBody("text/plain".toMediaType())).build()
+            }
         }
         val makkahRes = YouTubeRepository.checkHarameynLiveStatus(context, HarameynLocation.MAKKAH)
         assertEquals(LiveBroadcastState.LIVE_STATUS_UNCONFIRMED, makkahRes.state)
-        assertNull("Without Data API credentials, verifiedVideoId must remain null (never fake LIVE)", makkahRes.verifiedVideoId)
+        assertNull("Without confirmed live source, verifiedVideoId must remain null (never fake LIVE)", makkahRes.verifiedVideoId)
+        assertNull(makkahRes.resolvedSource)
         assertFalse(makkahRes.isEmbeddableConfirmed)
         assertEquals(1, makkahRes.recentRecordedUploads.size)
         assertEquals("x9mC9QJIZH0", makkahRes.recentRecordedUploads[0].id)
-        assertTrue("Must only call official RSS feed", requestedUrls.all { it.contains("feeds/videos.xml") })
+        assertTrue("Must never scrape YouTube /live HTML", requestedUrls.none { it.contains("youtube.com") && it.contains("/live") })
     }
 
     @Test
@@ -509,7 +525,9 @@ class YouTubeLecturesAndPlayerTest {
         composeRule.waitUntil(timeoutMillis = 5_000L) {
             composeRule.onAllNodesWithTag("lectures_empty_state").fetchSemanticsNodes().isNotEmpty()
         }
-        assertEquals(2, requestedUrls.size)
+        val expectedTafseerCount = YouTubeRepository.channelsForTopic(LectureCategory.QURAN_TAFSEER, context = context)!!.size
+        val expectedBatch0Count = minOf(expectedTafseerCount, YouTubeRepository.DEFAULT_CHANNEL_BATCH_SIZE)
+        assertEquals(expectedBatch0Count, requestedUrls.size)
         composeRule.onNodeWithTag("lectures_lazy_column")
             .performScrollToNode(hasTestTag("lectures_empty_state"))
         composeRule.onNodeWithText("No verified videos are currently available for this topic.").assertIsDisplayed()
@@ -519,14 +537,22 @@ class YouTubeLecturesAndPlayerTest {
     fun testLiveStreamScreenNeverDisplaysFakeLiveBadge() {
         val makkahId = YouTubeRepository.HARAMEYN_CHANNELS.getValue(HarameynLocation.MAKKAH).channelId
         YouTubeRepository.httpClient = buildMockClient { req ->
-            val body = sampleAtomFeed(
-                makkahId,
-                "Saudi Quran TV",
-                listOf(Triple("x9mC9QJIZH0", "Isha Prayer Makkah", "2026-11-14T17:54:17+00:00"))
-            )
-            Response.Builder()
-                .request(req).protocol(Protocol.HTTP_1_1).code(200).message("OK")
-                .body(body.toResponseBody("application/atom+xml".toMediaType())).build()
+            val url = req.url.toString()
+            if (url.contains("feeds/videos.xml")) {
+                val body = sampleAtomFeed(
+                    makkahId,
+                    "Saudi Quran TV",
+                    listOf(Triple("x9mC9QJIZH0", "Isha Prayer Makkah", "2026-11-14T17:54:17+00:00"))
+                )
+                Response.Builder()
+                    .request(req).protocol(Protocol.HTTP_1_1).code(200).message("OK")
+                    .body(body.toResponseBody("application/atom+xml".toMediaType())).build()
+            } else {
+                // Live sources fail -> recorded upload alone must NEVER trigger a LIVE badge
+                Response.Builder()
+                    .request(req).protocol(Protocol.HTTP_1_1).code(503).message("Unavailable")
+                    .body("".toResponseBody("text/plain".toMediaType())).build()
+            }
         }
 
         composeRule.setContent {
@@ -535,14 +561,17 @@ class YouTubeLecturesAndPlayerTest {
             }
         }
         composeRule.waitUntil(timeoutMillis = 5_000L) {
-            composeRule.onAllNodesWithText("Live broadcast status cannot be confirmed")
-                .fetchSemanticsNodes().isNotEmpty()
+            composeRule.onAllNodesWithTag("live_phase_unavailable_banner")
+                .fetchSemanticsNodes().isNotEmpty() &&
+                composeRule.onAllNodesWithTag("live_recorded_card_x9mC9QJIZH0")
+                    .fetchSemanticsNodes().isNotEmpty()
         }
 
         composeRule.onNodeWithTag("live_status_card").performScrollTo().assertIsDisplayed()
-        composeRule.onNodeWithText("Live broadcast status cannot be confirmed").performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("SOURCE UNAVAILABLE").performScrollTo().assertIsDisplayed()
         composeRule.onNodeWithText("Recorded Upload • Not Live").performScrollTo().assertIsDisplayed()
         assertEquals(0, composeRule.onAllNodesWithTag("embedded_live_player").fetchSemanticsNodes().size)
+        assertEquals(0, composeRule.onAllNodesWithTag("live_phase_confirmed_banner").fetchSemanticsNodes().size)
         assertEquals(0, composeRule.onAllNodesWithText("24/7 LIVE").fetchSemanticsNodes().size)
         assertEquals(0, composeRule.onAllNodesWithText("FEED").fetchSemanticsNodes().size)
     }
@@ -573,7 +602,7 @@ class YouTubeLecturesAndPlayerTest {
             "live_recorded_badge",
             "player_error_153"
         )
-        assertEquals("Must cover all 12 categories", 12, LectureCategory.entries.size)
+        assertEquals("Must cover all 16 categories (12 core + 4 new topics)", 16, LectureCategory.entries.size)
 
         keys.forEach { key ->
             val en = AppLocalization.get(key, AppLanguage.ENGLISH)

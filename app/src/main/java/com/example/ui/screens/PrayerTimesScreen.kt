@@ -31,6 +31,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.location.AppLocationManager
@@ -1079,22 +1080,39 @@ fun PrayerTimesScreen(
                     Spacer(modifier = Modifier.height(8.dp))
                 }
 
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
                     Button(
                         onClick = {
                             PrayerNotificationManager.sendTestNotification(context, "Asr", schedule.asr)
                             Toast.makeText(context, AppLocalization.get("prayer_test_toast", language), Toast.LENGTH_SHORT).show()
                         },
-                        modifier = Modifier.weight(1f)
+                        shape = RoundedCornerShape(12.dp),
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
+                        modifier = Modifier.weight(1f).heightIn(min = 48.dp)
                     ) {
-                        Icon(Icons.Default.VolumeUp, contentDescription = null)
+                        Icon(Icons.Default.VolumeUp, contentDescription = null, modifier = Modifier.size(18.dp))
                         Spacer(modifier = Modifier.width(6.dp))
-                        Text(AppLocalization.get("azan_test_btn", language), maxLines = 1)
+                        Text(
+                            text = AppLocalization.get("azan_test_btn", language),
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
                     }
                     OutlinedButton(
-                        onClick = { PrayerNotificationManager.stopAzanAudio(context) }
+                        onClick = { PrayerNotificationManager.stopAzanAudio(context) },
+                        shape = RoundedCornerShape(12.dp),
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
+                        modifier = Modifier.widthIn(max = 140.dp).heightIn(min = 48.dp)
                     ) {
-                        Text(AppLocalization.get("azan_stop_btn", language))
+                        Text(
+                            text = AppLocalization.get("azan_stop_btn", language),
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
                     }
                 }
             }

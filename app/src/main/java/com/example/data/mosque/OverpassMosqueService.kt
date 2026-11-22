@@ -3,12 +3,9 @@ package com.example.data.mosque
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import kotlinx.coroutines.withTimeoutOrNull
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -46,26 +43,27 @@ object OverpassMosqueService {
     private const val PHOTON_ENDPOINT = "https://photon.komoot.io/api"
     private const val NOMINATIM_SEARCH_ENDPOINT = "https://nominatim.openstreetmap.org/search"
     private const val MAX_RETRIES_SINGLE_ENDPOINT = 1
-    private const val RACE_TIMEOUT_MS = 8000L
-    private const val HEDGE_DELAY_MS = 1000L
+    private const val OVERPASS_QUERY_TIMEOUT_SEC = 18
+    private const val POSTPASS_RESULT_LIMIT = 300
 
     val DEFAULT_ENDPOINTS = listOf(
-        POSTPASS_ENDPOINT,
         "https://overpass-api.de/api/interpreter",
         "https://overpass.kumi.systems/api/interpreter",
-        "https://overpass.private.coffee/api/interpreter"
+        "https://overpass.private.coffee/api/interpreter",
+        POSTPASS_ENDPOINT
     )
 
     internal var httpClientForTest: OkHttpClient? = null
     internal var endpointsForTest: List<String>? = null
     internal var backoffBaseMsForTest: Long = 350L
+    internal var allowMultiEngineInTest: Boolean = false
 
     private val sharedClient: OkHttpClient by lazy {
         OkHttpClient.Builder()
-            .connectTimeout(3, TimeUnit.SECONDS)
-            .readTimeout(6, TimeUnit.SECONDS)
-            .writeTimeout(3, TimeUnit.SECONDS)
-            .callTimeout(7000, TimeUnit.MILLISECONDS)
+            .connectTimeout(8, TimeUnit.SECONDS)
+            .readTimeout(20, TimeUnit.SECONDS)
+            .writeTimeout(8, TimeUnit.SECONDS)
+            .callTimeout(24, TimeUnit.SECONDS)
             .build()
     }
 
@@ -100,7 +98,7 @@ object OverpassMosqueService {
         val latStr = String.format(Locale.US, "%.6f", lat)
         val lonStr = String.format(Locale.US, "%.6f", lon)
         return """
-            [out:json][timeout:6];
+            [out:json][timeout:$OVERPASS_QUERY_TIMEOUT_SEC];
             (
               nwr["amenity"="place_of_worship"]["religion"="muslim"](around:$safeRadius,$latStr,$lonStr);
               nwr["building"="place_of_worship"]["religion"="muslim"](around:$safeRadius,$latStr,$lonStr);
@@ -119,7 +117,7 @@ object OverpassMosqueService {
         val n = String.format(Locale.US, "%.6f", bounds.north.coerceIn(-89.9, 89.9))
         val e = String.format(Locale.US, "%.6f", bounds.east.coerceIn(-179.9, 179.9))
         return """
-            [out:json][timeout:6];
+            [out:json][timeout:$OVERPASS_QUERY_TIMEOUT_SEC];
             (
               nwr["amenity"="place_of_worship"]["religion"="muslim"]($s,$w,$n,$e);
               nwr["building"="place_of_worship"]["religion"="muslim"]($s,$w,$n,$e);
@@ -133,7 +131,7 @@ object OverpassMosqueService {
     }
 
     /**
-     * Indexed fast quad-tile Overpass bbox query (3 concise tag predicates instead of 6 spherical scans).
+     * Indexed fast quad-tile Overpass bbox query (concise indexed tag predicates).
      */
     private fun buildFastIndexedOverpassBboxQuery(bounds: MapBoundingBox): String {
         val s = String.format(Locale.US, "%.6f", bounds.south.coerceIn(-89.9, 89.9))
@@ -141,10 +139,11 @@ object OverpassMosqueService {
         val n = String.format(Locale.US, "%.6f", bounds.north.coerceIn(-89.9, 89.9))
         val e = String.format(Locale.US, "%.6f", bounds.east.coerceIn(-179.9, 179.9))
         return """
-            [out:json][timeout:6];
+            [out:json][timeout:$OVERPASS_QUERY_TIMEOUT_SEC];
             (
               nwr["religion"="muslim"]($s,$w,$n,$e);
               nwr["building"="mosque"]($s,$w,$n,$e);
+              nwr["amenity"="prayer_room"]["muslim"="yes"]($s,$w,$n,$e);
               nwr["musalla"="yes"]($s,$w,$n,$e);
             );
             out center tags;
@@ -167,7 +166,7 @@ object OverpassMosqueService {
                 OR (tags->>'amenity' = 'prayer_room' AND (tags->>'religion' = 'muslim' OR tags->>'muslim' = 'yes'))
                 OR tags->>'musalla' = 'yes'
               )
-            LIMIT 160
+            LIMIT $POSTPASS_RESULT_LIMIT
         """.trimIndent()
     }
 
@@ -185,14 +184,16 @@ object OverpassMosqueService {
         radiusMeters: Int,
         preferredEndpoint: String? = null
     ): Result<OverpassFetchResult> {
-        val useTestPath = endpointsForTest != null || httpClientForTest != null
+        val safeMaxDist = radiusMeters.coerceIn(250, 50_000).toDouble() * 1.05
+        val useTestPath = !allowMultiEngineInTest && (endpointsForTest != null || httpClientForTest != null)
         if (useTestPath) {
             val query = buildOverpassQuery(lat, lon, radiusMeters)
             return executeOverpassQuery(
                 query = query,
                 originLat = lat,
                 originLon = lon,
-                preferredEndpoint = preferredEndpoint
+                preferredEndpoint = preferredEndpoint,
+                maxDistanceMeters = safeMaxDist
             )
         }
         val bounds = boundingBoxFromRadius(lat, lon, radiusMeters)
@@ -200,7 +201,7 @@ object OverpassMosqueService {
             bounds = bounds,
             originLat = lat,
             originLon = lon,
-            maxDistanceMeters = radiusMeters.coerceIn(250, 50_000).toDouble() * 1.05,
+            maxDistanceMeters = safeMaxDist,
             preferredEndpoint = preferredEndpoint
         )
     }
@@ -214,7 +215,7 @@ object OverpassMosqueService {
         if (!bounds.isValid()) {
             return Result.failure(OverpassException("Invalid map bounding box coordinates."))
         }
-        val useTestPath = endpointsForTest != null || httpClientForTest != null
+        val useTestPath = !allowMultiEngineInTest && (endpointsForTest != null || httpClientForTest != null)
         if (useTestPath) {
             val query = buildOverpassBboxQuery(bounds)
             return executeOverpassQuery(
@@ -322,21 +323,12 @@ object OverpassMosqueService {
         return if (pts.size >= 3) pts else emptyList()
     }
 
-    private enum class EngineTier { AUTHORITATIVE_OSM, SEARCH_HEDGE }
-
-    private data class EngineOutcome(
-        val tier: EngineTier,
-        val result: Result<OverpassFetchResult>
-    )
-
     /**
-     * Multi-engine live OSM query race:
-     * 1) Geofabrik Postpass (PostGIS GIST indexed, sub-second, zero Overpass limits)
-     * 2) Fast BBox Overpass mirrors (overpass-api.de, kumi.systems, private.coffee)
-     * 3) Delayed 1s Hedge -> Komoot Photon + OSM Nominatim extratags bounded POI search
-     *
-     * Authoritative Postpass/Overpass answers win immediately; Search Hedge rescues within ~1.5s
-     * if Overpass/Postpass mirrors are busy or throttled, eliminating multi-minute timeouts.
+     * Polite, authoritative tiered live OSM query failover (never hammers multiple servers at once
+     * and never lets a sparse 1-result text search cancel an authoritative Overpass/Postpass query):
+     * 1) Authoritative Overpass mirrors sequentially (overpass-api.de -> kumi.systems -> private.coffee)
+     * 2) Authoritative Geofabrik Postpass (PostGIS GIST indexed) if Overpass mirrors fail
+     * 3) Bounded Nominatim + Komoot Photon fallback ONLY if all authoritative OSM engines fail
      */
     private suspend fun executeMultiEngineOsmQuery(
         bounds: MapBoundingBox,
@@ -348,112 +340,84 @@ object OverpassMosqueService {
         val overpassQuery = buildFastIndexedOverpassBboxQuery(bounds)
         val overpassBodyStr = "data=" + URLEncoder.encode(overpassQuery, "UTF-8")
         val postpassSql = buildPostpassBboxSql(bounds)
+        val bboxFilter = if (maxDistanceMeters == null) bounds else null
 
         if (!preferredEndpoint.isNullOrBlank()) {
             val clean = preferredEndpoint.trim()
-            if (clean.contains("postpass.", ignoreCase = true)) {
-                return@withContext queryPostpassEndpoint(
+            return@withContext if (clean.contains("postpass.", ignoreCase = true)) {
+                queryPostpassEndpoint(
                     endpoint = clean,
                     sqlQuery = postpassSql,
                     originLat = originLat,
                     originLon = originLon,
-                    bounds = if (maxDistanceMeters == null) bounds else null,
+                    bounds = bboxFilter,
+                    maxDistanceMeters = maxDistanceMeters
+                )
+            } else {
+                querySingleEndpoint(
+                    endpoint = clean,
+                    bodyStr = overpassBodyStr,
+                    originLat = originLat,
+                    originLon = originLon,
+                    maxRetries = MAX_RETRIES_SINGLE_ENDPOINT,
+                    bounds = bboxFilter,
                     maxDistanceMeters = maxDistanceMeters
                 )
             }
-            return@withContext querySingleEndpoint(
-                endpoint = clean,
+        }
+
+        val endpoints = resolveEndpoints(null)
+        val overpassMirrors = endpoints.filter { !it.contains("postpass.", ignoreCase = true) }
+        val postpassEndpoints = endpoints.filter { it.contains("postpass.", ignoreCase = true) }
+        var lastErr: Throwable? = null
+
+        // Tier 1: Sequential Overpass mirror failover (one mirror at a time, complete OSM results)
+        for (mirror in overpassMirrors) {
+            val res = querySingleEndpoint(
+                endpoint = mirror,
                 bodyStr = overpassBodyStr,
                 originLat = originLat,
                 originLon = originLon,
-                maxRetries = 1,
-                bounds = if (maxDistanceMeters == null) bounds else null,
+                maxRetries = 0,
+                bounds = bboxFilter,
                 maxDistanceMeters = maxDistanceMeters
             )
-        }
-
-        val overpassMirrors = DEFAULT_ENDPOINTS.filter { !it.contains("postpass.", ignoreCase = true) }
-        val totalWorkers = 1 + overpassMirrors.size + 1 // Postpass + Overpass mirrors + Hedge track
-        val raced = withTimeoutOrNull(RACE_TIMEOUT_MS) {
-            coroutineScope {
-                val channel = Channel<EngineOutcome>(totalWorkers)
-                val jobs = mutableListOf<kotlinx.coroutines.Job>()
-
-                // Track 1: Geofabrik Postpass (t = 0ms)
-                jobs += launch {
-                    val res = queryPostpassEndpoint(
-                        endpoint = POSTPASS_ENDPOINT,
-                        sqlQuery = postpassSql,
-                        originLat = originLat,
-                        originLon = originLon,
-                        bounds = if (maxDistanceMeters == null) bounds else null,
-                        maxDistanceMeters = maxDistanceMeters
-                    )
-                    channel.trySend(EngineOutcome(EngineTier.AUTHORITATIVE_OSM, res))
-                }
-
-                // Track 2: Fast BBox Overpass Mirrors (t = 0ms)
-                overpassMirrors.forEach { mirror ->
-                    jobs += launch {
-                        val res = querySingleEndpoint(
-                            endpoint = mirror,
-                            bodyStr = overpassBodyStr,
-                            originLat = originLat,
-                            originLon = originLon,
-                            maxRetries = 0,
-                            bounds = if (maxDistanceMeters == null) bounds else null,
-                            maxDistanceMeters = maxDistanceMeters
-                        )
-                        channel.trySend(EngineOutcome(EngineTier.AUTHORITATIVE_OSM, res))
-                    }
-                }
-
-                // Track 3: Komoot Photon + OSM Nominatim rapid rescue hedge (t = 1000ms)
-                jobs += launch {
-                    delay(HEDGE_DELAY_MS)
-                    val res = queryPhotonAndNominatimFallback(
-                        bounds = bounds,
-                        originLat = originLat,
-                        originLon = originLon,
-                        maxDistanceMeters = maxDistanceMeters
-                    )
-                    channel.trySend(EngineOutcome(EngineTier.SEARCH_HEDGE, res))
-                }
-
-                val authoritativeCount = 1 + overpassMirrors.size
-                var authoritativeRemaining = authoritativeCount
-                var bestAuthoritativeEmpty: OverpassFetchResult? = null
-                var lastErr: Throwable? = null
-
-                repeat(totalWorkers) {
-                    val outcome = channel.receive()
-                    if (outcome.tier == EngineTier.AUTHORITATIVE_OSM) {
-                        authoritativeRemaining -= 1
-                    }
-                    val res = outcome.result
-                    if (res.isSuccess) {
-                        val payload = res.getOrNull()!!
-                        if (payload.items.isNotEmpty()) {
-                            jobs.forEach { it.cancel() }
-                            return@coroutineScope Result.success(payload)
-                        } else if (outcome.tier == EngineTier.AUTHORITATIVE_OSM) {
-                            bestAuthoritativeEmpty = payload
-                        }
-                    } else {
-                        lastErr = res.exceptionOrNull()
-                    }
-                    if (authoritativeRemaining <= 0 && bestAuthoritativeEmpty != null && lastErr == null) {
-                        jobs.forEach { it.cancel() }
-                        return@coroutineScope Result.success(bestAuthoritativeEmpty!!)
-                    }
-                }
-
-                bestAuthoritativeEmpty?.let { return@coroutineScope Result.success(it) }
-                Result.failure(lastErr ?: OverpassNetworkException("Unable to reach OpenStreetMap servers."))
+            if (res.isSuccess) {
+                return@withContext res
             }
+            lastErr = res.exceptionOrNull()
         }
-        raced ?: Result.failure(
-            OverpassNetworkException("OpenStreetMap query timed out. Tap Retry or try another area.")
+
+        // Tier 2: Geofabrik Postpass (complete PostGIS OSM mirror) if all Overpass mirrors failed
+        for (postpassUrl in postpassEndpoints) {
+            val res = queryPostpassEndpoint(
+                endpoint = postpassUrl,
+                sqlQuery = postpassSql,
+                originLat = originLat,
+                originLon = originLon,
+                bounds = bboxFilter,
+                maxDistanceMeters = maxDistanceMeters
+            )
+            if (res.isSuccess) {
+                return@withContext res
+            }
+            lastErr = res.exceptionOrNull()
+        }
+
+        // Tier 3: Last-resort Nominatim + Photon bounded fallback ONLY when all authoritative OSM servers failed
+        val fallbackRes = queryPhotonAndNominatimFallback(
+            bounds = bounds,
+            originLat = originLat,
+            originLon = originLon,
+            maxDistanceMeters = maxDistanceMeters
+        )
+        if (fallbackRes.isSuccess) {
+            return@withContext fallbackRes
+        }
+
+        Result.failure(
+            lastErr ?: fallbackRes.exceptionOrNull()
+                ?: OverpassNetworkException("Unable to reach OpenStreetMap servers. Check your connection and tap Retry.")
         )
     }
 
@@ -461,7 +425,8 @@ object OverpassMosqueService {
         query: String,
         originLat: Double,
         originLon: Double,
-        preferredEndpoint: String?
+        preferredEndpoint: String?,
+        maxDistanceMeters: Double? = null
     ): Result<OverpassFetchResult> = withContext(Dispatchers.IO) {
         val bodyStr = "data=" + URLEncoder.encode(query, "UTF-8")
         val endpoints = resolveEndpoints(preferredEndpoint)
@@ -470,47 +435,25 @@ object OverpassMosqueService {
             return@withContext Result.failure(OverpassNetworkException("No HTTPS Overpass endpoints configured."))
         }
 
-        if (endpoints.size == 1) {
-            return@withContext querySingleEndpoint(
-                endpoint = endpoints.first(),
+        // Polite sequential failover: retry once when only 1 endpoint exists; otherwise fail over cleanly
+        val retriesPerEndpoint = if (endpoints.size == 1) MAX_RETRIES_SINGLE_ENDPOINT else 0
+        var lastErr: Throwable? = null
+        for (endpoint in endpoints) {
+            val res = querySingleEndpoint(
+                endpoint = endpoint,
                 bodyStr = bodyStr,
                 originLat = originLat,
                 originLon = originLon,
-                maxRetries = MAX_RETRIES_SINGLE_ENDPOINT
+                maxRetries = retriesPerEndpoint,
+                maxDistanceMeters = maxDistanceMeters
             )
-        }
-
-        val raced = withTimeoutOrNull(RACE_TIMEOUT_MS) {
-            coroutineScope {
-                val resultsChannel = Channel<Result<OverpassFetchResult>>(endpoints.size)
-                val jobs = endpoints.map { endpoint ->
-                    launch {
-                        val res = querySingleEndpoint(
-                            endpoint = endpoint,
-                            bodyStr = bodyStr,
-                            originLat = originLat,
-                            originLon = originLon,
-                            maxRetries = 0
-                        )
-                        resultsChannel.trySend(res)
-                    }
-                }
-                var lastErr: Throwable? = null
-                repeat(endpoints.size) {
-                    val outcome = resultsChannel.receive()
-                    if (outcome.isSuccess) {
-                        jobs.forEach { it.cancel() }
-                        return@coroutineScope outcome
-                    }
-                    lastErr = outcome.exceptionOrNull()
-                }
-                Result.failure(
-                    lastErr ?: OverpassNetworkException("Unable to reach OpenStreetMap Overpass servers.")
-                )
+            if (res.isSuccess) {
+                return@withContext res
             }
+            lastErr = res.exceptionOrNull()
         }
-        raced ?: Result.failure(
-            OverpassNetworkException("OpenStreetMap Overpass query timed out. Tap Retry or adjust area.")
+        Result.failure(
+            lastErr ?: OverpassNetworkException("Unable to reach OpenStreetMap Overpass servers.")
         )
     }
 
@@ -613,7 +556,7 @@ object OverpassMosqueService {
         if (combined.isNotEmpty()) {
             Result.success(
                 OverpassFetchResult(
-                    items = combined.values.sortedBy { it.distanceMeters },
+                    items = deduplicateMosques(combined.values.toList()),
                     endpointUsed = usedEndpoint ?: NOMINATIM_SEARCH_ENDPOINT,
                     fetchedAtMs = System.currentTimeMillis()
                 )
@@ -875,7 +818,7 @@ object OverpassMosqueService {
                 dedupedByKey[uniqueKey] = candidate
             }
         }
-        return dedupedByKey.values.sortedBy { it.distanceMeters }
+        return deduplicateMosques(dedupedByKey.values.toList())
     }
 
     fun parsePostpassGeoJson(
@@ -951,7 +894,7 @@ object OverpassMosqueService {
                 dedupedByKey[uniqueKey] = candidate
             }
         }
-        return dedupedByKey.values.sortedBy { it.distanceMeters }
+        return deduplicateMosques(dedupedByKey.values.toList())
     }
 
     fun parsePhotonGeoJson(
@@ -1036,7 +979,7 @@ object OverpassMosqueService {
             )
             dedupedByKey.putIfAbsent(uniqueKey, item)
         }
-        return dedupedByKey.values.sortedBy { it.distanceMeters }
+        return deduplicateMosques(dedupedByKey.values.toList())
     }
 
     fun parseNominatimPoiJson(
@@ -1143,7 +1086,115 @@ object OverpassMosqueService {
                 dedupedByKey[uniqueKey] = item
             }
         }
-        return dedupedByKey.values.sortedBy { it.distanceMeters }
+        return deduplicateMosques(dedupedByKey.values.toList())
+    }
+
+    /**
+     * Removes both exact OSM ID duplicates and spatial/node-inside-way duplicates
+     * (e.g., when OpenStreetMap maps the same mosque as both a building way and a POI node),
+     * preserving the highest verification level and richest metadata, sorted nearest-first.
+     */
+    fun deduplicateMosques(items: List<MosqueItem>): List<MosqueItem> {
+        if (items.size <= 1) return items.sortedBy { it.distanceMeters }
+
+        // Pass 1: exact OSM id deduplication with metadata merge
+        val byId = LinkedHashMap<String, MosqueItem>(items.size)
+        for (item in items) {
+            val existing = byId[item.id]
+            byId[item.id] = if (existing == null) item else mergeMosquePair(existing, item)
+        }
+
+        // Pass 2: spatial + normalized-name deduplication for OSM node/way pairs
+        val candidates = byId.values.sortedBy { it.distanceMeters }
+        val kept = ArrayList<MosqueItem>(candidates.size)
+
+        for (candidate in candidates) {
+            val matchIndex = kept.indexOfFirst { existing -> isLikelySamePhysicalMosque(existing, candidate) }
+            if (matchIndex >= 0) {
+                kept[matchIndex] = mergeMosquePair(kept[matchIndex], candidate)
+            } else {
+                kept.add(candidate)
+            }
+        }
+        return kept.sortedBy { it.distanceMeters }
+    }
+
+    private fun isLikelySamePhysicalMosque(a: MosqueItem, b: MosqueItem): Boolean {
+        if (a.id == b.id) return true
+        val separationMeters = haversineDistanceMeters(a.latitude, a.longitude, b.latitude, b.longitude)
+        if (separationMeters > 60.0) return false
+
+        val nameA = normalizeMosqueNameForDedup(a.name)
+        val nameB = normalizeMosqueNameForDedup(b.name)
+        val aUnnamed = nameA.isBlank()
+        val bUnnamed = nameB.isBlank()
+
+        // Case 1: Both named and names match closely within 60m
+        if (!aUnnamed && !bUnnamed) {
+            if (nameA == nameB) return true
+            val minLen = minOf(nameA.length, nameB.length)
+            if (minLen >= 6 && (nameA.contains(nameB) || nameB.contains(nameA))) return true
+            return false
+        }
+
+        // Case 2: Unnamed building polygon (way/relation) + POI node at the exact same spot (<= 35m)
+        if ((aUnnamed || bUnnamed) && a.osmType != b.osmType && separationMeters <= 35.0) {
+            val oneIsNode = a.osmType == "node" || b.osmType == "node"
+            val oneIsArea = a.osmType == "way" || a.osmType == "relation" ||
+                b.osmType == "way" || b.osmType == "relation"
+            if (oneIsNode && oneIsArea) return true
+        }
+        return false
+    }
+
+    private fun normalizeMosqueNameForDedup(name: String): String {
+        val trimmed = name.trim()
+        if (trimmed.isBlank() || trimmed.equals("Unnamed Mosque (OpenStreetMap)", ignoreCase = true)) {
+            return ""
+        }
+        return trimmed
+            .lowercase(Locale.ROOT)
+            .replace(Regex("[\\p{Punct}]+"), " ")
+            .replace(Regex("\\s+"), " ")
+            .trim()
+    }
+
+    private fun mergeMosquePair(first: MosqueItem, second: MosqueItem): MosqueItem {
+        val firstUnnamed = normalizeMosqueNameForDedup(first.name).isBlank()
+        val secondUnnamed = normalizeMosqueNameForDedup(second.name).isBlank()
+
+        val primary = when {
+            first.verificationLevel.ordinal < second.verificationLevel.ordinal -> first
+            second.verificationLevel.ordinal < first.verificationLevel.ordinal -> second
+            !firstUnnamed && secondUnnamed -> first
+            firstUnnamed && !secondUnnamed -> second
+            metadataScore(first) >= metadataScore(second) -> first
+            else -> second
+        }
+        val secondary = if (primary === first) second else first
+
+        return primary.copy(
+            name = if (normalizeMosqueNameForDedup(primary.name).isBlank()) secondary.name else primary.name,
+            distanceMeters = minOf(primary.distanceMeters, secondary.distanceMeters),
+            address = primary.address ?: secondary.address,
+            phone = primary.phone ?: secondary.phone,
+            website = primary.website ?: secondary.website,
+            openingHours = primary.openingHours ?: secondary.openingHours,
+            wheelchair = primary.wheelchair ?: secondary.wheelchair,
+            denomination = primary.denomination ?: secondary.denomination,
+            osmTagsSummary = primary.osmTagsSummary.ifBlank { secondary.osmTagsSummary }
+        )
+    }
+
+    private fun metadataScore(item: MosqueItem): Int {
+        var score = 0
+        if (!item.address.isNullOrBlank()) score += 2
+        if (!item.phone.isNullOrBlank()) score += 1
+        if (!item.website.isNullOrBlank()) score += 1
+        if (!item.openingHours.isNullOrBlank()) score += 1
+        if (!item.wheelchair.isNullOrBlank()) score += 1
+        if (!item.denomination.isNullOrBlank()) score += 1
+        return score
     }
 
     private fun extractGeoJsonCenter(geometry: JSONObject): Pair<Double, Double>? {

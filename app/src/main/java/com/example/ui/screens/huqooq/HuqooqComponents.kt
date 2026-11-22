@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDirection
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.huqooq.*
@@ -439,12 +440,17 @@ fun HuqooqMcqSection(
                     onSaveQuizScore(score, mcqs.size)
                 },
                 enabled = selections.size == mcqs.size && !submitted,
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
                 modifier = Modifier
                     .weight(1f)
                     .height(48.dp)
                     .testTag("hq_quiz_submit_$lessonId")
             ) {
-                Text(AppLocalization.get("hq_check_answers", language))
+                Text(
+                    text = AppLocalization.get("hq_check_answers", language),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
             if (submitted) {
                 OutlinedButton(
@@ -452,11 +458,17 @@ fun HuqooqMcqSection(
                         selections.clear()
                         submitted = false
                     },
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
                     modifier = Modifier
+                        .widthIn(max = 135.dp)
                         .height(48.dp)
                         .testTag("hq_quiz_retry_$lessonId")
                 ) {
-                    Text(AppLocalization.get("hq_retry", language))
+                    Text(
+                        text = AppLocalization.get("hq_retry", language),
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
                 }
             }
         }

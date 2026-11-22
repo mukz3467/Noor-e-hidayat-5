@@ -30,6 +30,7 @@ import com.example.data.model.AppLanguage
 import com.example.data.model.AppTheme
 import com.example.data.notification.DailyReminderScheduler
 import com.example.data.notification.PrayerNotificationManager
+import com.example.data.podcast.PodcastRefreshWorker
 import com.example.data.ramadan.RamadanDailyRefreshWorker
 import com.example.data.ramadan.RamadanRepository
 import com.example.data.repository.IslamicCalendarRepository
@@ -110,6 +111,7 @@ class MainActivity : ComponentActivity() {
         DailyReminderScheduler.rescheduleAll(applicationContext)
         RamadanRepository.init(applicationContext)
         RamadanDailyRefreshWorker.schedulePeriodicRefresh(applicationContext)
+        PodcastRefreshWorker.schedulePeriodicRefresh(applicationContext)
         QuranOfflineSyncManager.startAutoSync(applicationContext)
         QuranTafseerRepository.init(applicationContext)
         MissedSalahRepository.init(applicationContext)

@@ -16,6 +16,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDirection
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.business.*
@@ -331,9 +332,14 @@ fun InteractiveMcqSection(
                     onSaveQuizScore(score, mcqs.size)
                 },
                 enabled = selections.size == mcqs.size && !submitted,
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
                 modifier = Modifier.weight(1f).height(48.dp).testTag("quiz_submit_$itemId")
             ) {
-                Text(AppLocalization.get("ba_check_answers", language))
+                Text(
+                    text = AppLocalization.get("ba_check_answers", language),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
             if (submitted) {
                 OutlinedButton(
@@ -341,9 +347,14 @@ fun InteractiveMcqSection(
                         selections.clear()
                         submitted = false
                     },
-                    modifier = Modifier.height(48.dp).testTag("quiz_retry_$itemId")
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
+                    modifier = Modifier.widthIn(max = 135.dp).height(48.dp).testTag("quiz_retry_$itemId")
                 ) {
-                    Text(AppLocalization.get("ba_retry", language))
+                    Text(
+                        text = AppLocalization.get("ba_retry", language),
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
                 }
             }
         }

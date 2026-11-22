@@ -21,12 +21,15 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.CloudOff
 import androidx.compose.material.icons.filled.Directions
 import androidx.compose.material.icons.filled.DirectionsBike
 import androidx.compose.material.icons.filled.DirectionsCar
 import androidx.compose.material.icons.filled.DirectionsWalk
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.LocationOff
@@ -120,6 +123,7 @@ fun MosqueFinderScreen(
     var isGeocoding by remember { mutableStateOf(false) }
     var showEndpointDialog by remember { mutableStateOf(false) }
     var locationFixError by remember { mutableStateOf<String?>(null) }
+    var visibleListCount by remember { mutableIntStateOf(MosqueFinderRepository.DEFAULT_PAGE_SIZE) }
 
     val hasPermission = AppLocationManager.hasLocationPermission(context)
     val isGpsEnabled = AppLocationManager.isGpsEnabled(context)
@@ -241,6 +245,14 @@ fun MosqueFinderScreen(
         MosqueFinderRepository.filterMosques(searchState.mosques, keywordFilter, selectedCategory)
     }
 
+    LaunchedEffect(searchState.mosques, keywordFilter, selectedCategory, searchState.radiusMeters) {
+        visibleListCount = MosqueFinderRepository.DEFAULT_PAGE_SIZE
+    }
+
+    val nextLargerRadius = remember(searchState.radiusMeters) {
+        MosqueFinderRepository.nextLargerRadiusMeters(searchState.radiusMeters)
+    }
+
     // Auto-select nearest mosque cleanly for Picture-3 bottom preview card & red pin without popping modal sheet
     LaunchedEffect(filteredMosques) {
         val current = focusedMosque
@@ -286,12 +298,12 @@ fun MosqueFinderScreen(
                 )
                 isGeocoding = false
                 res.onSuccess { list ->
-                    areaMatches = list
                     if (list.isEmpty()) {
-                        areaLookupError = AppLocalization.get("mosque_area_not_found", language)
-                    } else if (list.size == 1) {
-                        val first = list.first()
                         areaMatches = emptyList()
+                        areaLookupError = AppLocalization.get("mosque_area_not_found", language)
+                    } else {
+                        val first = list.first()
+                        areaMatches = if (list.size > 1) list else emptyList()
                         keywordFilter = ""
                         MosqueFinderRepository.clearRoute()
                         focusedMosque = null
@@ -646,54 +658,92 @@ fun MosqueFinderScreen(
                         }
                     }
 
-                    // Collapsible Filter Tray (Radius + Category + Local Name Filter)
+                    // Row 3: Always-accessible Radius Options (1/3/5/10 km) + Live Result Count Pill
+                    val headerChipColors = FilterChipDefaults.filterChipColors(
+                        containerColor = Color.Transparent,
+                        labelColor = Color.White,
+                        selectedContainerColor = HeaderGold,
+                        selectedLabelColor = HeaderEmerald
+                    )
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(6.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .horizontalScroll(rememberScrollState())
+                            .padding(horizontal = 4.dp, vertical = 2.dp)
+                    ) {
+                        MosqueFinderRepository.RADIUS_OPTIONS_METERS.forEach { meters ->
+                            val km = meters / 1000
+                            val selected = searchState.radiusMeters == meters
+                            FilterChip(
+                                selected = selected,
+                                onClick = {
+                                    if (hasEffectiveCenter) {
+                                        triggerNearbySearch(
+                                            effectiveLat,
+                                            effectiveLon,
+                                            meters,
+                                            searchState.searchLabel,
+                                            searchState.precisionMode,
+                                            true
+                                        )
+                                    }
+                                },
+                                label = { Text("$km km") },
+                                colors = headerChipColors,
+                                border = FilterChipDefaults.filterChipBorder(
+                                    enabled = true,
+                                    selected = selected,
+                                    borderColor = Color.White.copy(alpha = 0.45f)
+                                ),
+                                modifier = Modifier.testTag("mosque_radius_$km")
+                            )
+                        }
+
+                        if (searchState.hasSearched && !searchState.isLoading) {
+                            val radiusKm = (searchState.radiusMeters / 1000).coerceAtLeast(1)
+                            val countLabel = if (filteredMosques.size == 1) {
+                                String.format(
+                                    Locale.getDefault(),
+                                    AppLocalization.get("mosque_result_single_fmt", language),
+                                    radiusKm
+                                )
+                            } else {
+                                String.format(
+                                    Locale.getDefault(),
+                                    AppLocalization.get("mosque_results_count_fmt", language),
+                                    filteredMosques.size,
+                                    radiusKm
+                                )
+                            }
+                            Surface(
+                                onClick = { isMapView = !isMapView },
+                                shape = RoundedCornerShape(16.dp),
+                                color = Color(0x38FFFFFF),
+                                border = BorderStroke(1.dp, HeaderGold.copy(alpha = 0.7f)),
+                                modifier = Modifier
+                                    .defaultMinSize(minHeight = 32.dp)
+                                    .testTag("mosque_results_count_pill")
+                            ) {
+                                Text(
+                                    text = countLabel,
+                                    style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
+                                    color = HeaderGold,
+                                    maxLines = 1,
+                                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp)
+                                )
+                            }
+                        }
+                    }
+
+                    // Collapsible Filter Tray (Category + Local Name Filter)
                     AnimatedVisibility(visible = showFilters) {
                         Column(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(top = 4.dp, bottom = 2.dp)
+                                .padding(top = 2.dp, bottom = 2.dp)
                         ) {
-                            val headerChipColors = FilterChipDefaults.filterChipColors(
-                                containerColor = Color.Transparent,
-                                labelColor = Color.White,
-                                selectedContainerColor = HeaderGold,
-                                selectedLabelColor = HeaderEmerald
-                            )
-                            Row(
-                                horizontalArrangement = Arrangement.spacedBy(6.dp),
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .horizontalScroll(rememberScrollState())
-                                    .padding(horizontal = 4.dp)
-                            ) {
-                                MosqueFinderRepository.RADIUS_OPTIONS_METERS.forEach { meters ->
-                                    val km = meters / 1000
-                                    val selected = searchState.radiusMeters == meters
-                                    FilterChip(
-                                        selected = selected,
-                                        onClick = {
-                                            if (hasEffectiveCenter) {
-                                                triggerNearbySearch(
-                                                    effectiveLat,
-                                                    effectiveLon,
-                                                    meters,
-                                                    searchState.searchLabel,
-                                                    searchState.precisionMode,
-                                                    true
-                                                )
-                                            }
-                                        },
-                                        label = { Text("$km km") },
-                                        colors = headerChipColors,
-                                        border = FilterChipDefaults.filterChipBorder(
-                                            enabled = true,
-                                            selected = selected,
-                                            borderColor = Color.White.copy(alpha = 0.45f)
-                                        ),
-                                        modifier = Modifier.testTag("mosque_radius_$km")
-                                    )
-                                }
-                            }
                             Row(
                                 horizontalArrangement = Arrangement.spacedBy(6.dp),
                                 modifier = Modifier
@@ -800,54 +850,89 @@ fun MosqueFinderScreen(
                                 .padding(horizontal = 10.dp, vertical = 4.dp)
                         ) {
                             if (areaMatches.isNotEmpty()) {
-                                Card(
-                                    shape = RoundedCornerShape(12.dp),
-                                    colors = CardDefaults.cardColors(containerColor = Color.White),
-                                    elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-                                    modifier = Modifier.fillMaxWidth()
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.spacedBy(6.dp),
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .testTag("mosque_area_matches_bar")
                                 ) {
-                                    Column(modifier = Modifier.padding(4.dp)) {
-                                        areaMatches.forEach { candidate ->
-                                            Row(
-                                                verticalAlignment = Alignment.CenterVertically,
+                                    Row(
+                                        horizontalArrangement = Arrangement.spacedBy(6.dp),
+                                        verticalAlignment = Alignment.CenterVertically,
+                                        modifier = Modifier
+                                            .weight(1f)
+                                            .horizontalScroll(rememberScrollState())
+                                    ) {
+                                        areaMatches.forEachIndexed { idx, candidate ->
+                                            val isSelectedCity = searchState.searchLabel.equals(
+                                                candidate.shortName,
+                                                ignoreCase = true
+                                            )
+                                            Surface(
+                                                onClick = {
+                                                    keyboardController?.hide()
+                                                    focusManager.clearFocus()
+                                                    showFilters = false
+                                                    isMapView = true
+                                                    keywordFilter = ""
+                                                    MosqueFinderRepository.clearRoute()
+                                                    focusedMosque = null
+                                                    triggerNearbySearch(
+                                                        candidate.latitude,
+                                                        candidate.longitude,
+                                                        searchState.radiusMeters,
+                                                        candidate.shortName,
+                                                        LocationPrecisionMode.MANUAL_PRESET,
+                                                        true
+                                                    )
+                                                },
+                                                shape = RoundedCornerShape(18.dp),
+                                                color = if (isSelectedCity) HeaderGold else Color.White.copy(alpha = 0.16f),
+                                                border = BorderStroke(
+                                                    1.dp,
+                                                    if (isSelectedCity) HeaderGold else Color.White.copy(alpha = 0.35f)
+                                                ),
                                                 modifier = Modifier
-                                                    .fillMaxWidth()
-                                                    .defaultMinSize(minHeight = 48.dp)
-                                                    .clickable {
-                                                        keyboardController?.hide()
-                                                        focusManager.clearFocus()
-                                                        showFilters = false
-                                                        isMapView = true
-                                                        areaMatches = emptyList()
-                                                        keywordFilter = ""
-                                                        MosqueFinderRepository.clearRoute()
-                                                        focusedMosque = null
-                                                        triggerNearbySearch(
-                                                            candidate.latitude,
-                                                            candidate.longitude,
-                                                            searchState.radiusMeters,
-                                                            candidate.shortName,
-                                                            LocationPrecisionMode.MANUAL_PRESET,
-                                                            true
-                                                        )
-                                                    }
-                                                    .padding(horizontal = 8.dp, vertical = 4.dp)
+                                                    .defaultMinSize(minHeight = 36.dp)
+                                                    .testTag("mosque_area_match_$idx")
                                             ) {
-                                                Icon(
-                                                    imageVector = Icons.Default.LocationOn,
-                                                    contentDescription = null,
-                                                    tint = HeaderEmerald,
-                                                    modifier = Modifier.size(18.dp)
-                                                )
-                                                Spacer(modifier = Modifier.width(8.dp))
-                                                Text(
-                                                    text = candidate.displayName,
-                                                    style = MaterialTheme.typography.bodyMedium,
-                                                    color = Color(0xFF0F172A),
-                                                    modifier = Modifier.weight(1f)
-                                                )
+                                                Row(
+                                                    verticalAlignment = Alignment.CenterVertically,
+                                                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp)
+                                                ) {
+                                                    Icon(
+                                                        imageVector = Icons.Default.LocationOn,
+                                                        contentDescription = null,
+                                                        tint = if (isSelectedCity) HeaderEmerald else HeaderGold,
+                                                        modifier = Modifier.size(14.dp)
+                                                    )
+                                                    Spacer(modifier = Modifier.width(4.dp))
+                                                    Text(
+                                                        text = candidate.shortName,
+                                                        style = MaterialTheme.typography.labelMedium.copy(
+                                                            fontWeight = if (isSelectedCity) FontWeight.Bold else FontWeight.Medium
+                                                        ),
+                                                        color = if (isSelectedCity) Color(0xFF0A3320) else Color.White,
+                                                        maxLines = 1,
+                                                        overflow = TextOverflow.Ellipsis
+                                                    )
+                                                }
                                             }
                                         }
+                                    }
+                                    IconButton(
+                                        onClick = { areaMatches = emptyList() },
+                                        modifier = Modifier
+                                            .size(48.dp)
+                                            .testTag("mosque_area_matches_close")
+                                    ) {
+                                        Icon(
+                                            imageVector = Icons.Default.Clear,
+                                            contentDescription = "Dismiss city suggestions",
+                                            tint = Color.White.copy(alpha = 0.85f),
+                                            modifier = Modifier.size(18.dp)
+                                        )
                                     }
                                 }
                             }
@@ -920,9 +1005,11 @@ fun MosqueFinderScreen(
                             centerLat = effectiveLat,
                             centerLon = effectiveLon,
                             hasConfirmedCenter = hasEffectiveCenter,
+                            radiusMeters = searchState.radiusMeters,
                             userLat = appLocation.latitude,
                             userLon = appLocation.longitude,
                             hasUserCoords = hasConfirmedUserLoc,
+                            userAccuracyMeters = appLocation.accuracyMeters,
                             language = language,
                             selectedMosque = focusedMosque,
                             selectedFootprint = activeFootprint,
@@ -966,11 +1053,16 @@ fun MosqueFinderScreen(
                             }
                         }
 
-                        // Picture-3 Floating Bottom Mosque Card (replaces extra bottom strips cleanly)
+                        // Picture-3 Floating Bottom Mosque Card with multi-mosque switcher synced to map pins
                         if (showBottomPreviewOverlay) {
                             val activeTarget = focusedMosque
                                 ?: filteredMosques.firstOrNull { it.id == routeState.targetMosqueId }
                             val isRouteHudVisible = isRouteHudActive
+                            val activeIndex = if (activeTarget != null) {
+                                filteredMosques.indexOfFirst { it.id == activeTarget.id }
+                            } else {
+                                -1
+                            }
 
                             Box(
                                 modifier = Modifier
@@ -980,10 +1072,24 @@ fun MosqueFinderScreen(
                             ) {
                                 FloatingPicture3MosqueCard(
                                     mosque = activeTarget,
+                                    mosqueIndex = activeIndex,
+                                    totalMosques = filteredMosques.size,
                                     routeState = routeState,
                                     isRouteHudVisible = isRouteHudVisible,
                                     hasValidOrigin = hasEffectiveCenter,
                                     language = language,
+                                    onPreviousMosque = {
+                                        if (filteredMosques.size > 1 && activeIndex >= 0) {
+                                            val prevIdx = (activeIndex - 1 + filteredMosques.size) % filteredMosques.size
+                                            selectAndFocusMosque(filteredMosques[prevIdx], false)
+                                        }
+                                    },
+                                    onNextMosque = {
+                                        if (filteredMosques.size > 1 && activeIndex >= 0) {
+                                            val nextIdx = (activeIndex + 1) % filteredMosques.size
+                                            selectAndFocusMosque(filteredMosques[nextIdx], false)
+                                        }
+                                    },
                                     onOpenDetails = {
                                         val target = activeTarget ?: searchState.mosques.firstOrNull { it.id == routeState.targetMosqueId }
                                         if (target != null) {
@@ -1104,12 +1210,73 @@ fun MosqueFinderScreen(
                         }
                     }
 
-                    items(filteredMosques, key = { it.id }) { mosque ->
+                    val displayedMosques = filteredMosques.take(visibleListCount)
+                    items(displayedMosques, key = { it.id }) { mosque ->
                         MosqueListItemCard(
                             mosque = mosque,
+                            isSelected = focusedMosque?.id == mosque.id,
                             language = language,
                             onClick = { selectAndFocusMosque(mosque, true) }
                         )
+                    }
+
+                    if (filteredMosques.size > visibleListCount) {
+                        item {
+                            val remaining = filteredMosques.size - visibleListCount
+                            OutlinedButton(
+                                onClick = { visibleListCount += MosqueFinderRepository.DEFAULT_PAGE_SIZE },
+                                shape = RoundedCornerShape(12.dp),
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .defaultMinSize(minHeight = 48.dp)
+                                    .testTag("mosque_load_more_btn")
+                            ) {
+                                Icon(Icons.Default.ExpandMore, contentDescription = null, modifier = Modifier.size(18.dp))
+                                Spacer(modifier = Modifier.width(6.dp))
+                                Text(
+                                    text = String.format(
+                                        Locale.getDefault(),
+                                        AppLocalization.get("mosque_load_more_fmt", language),
+                                        remaining
+                                    ),
+                                    fontWeight = FontWeight.SemiBold
+                                )
+                            }
+                        }
+                    }
+
+                    if (nextLargerRadius != null && hasEffectiveCenter && searchState.hasSearched && !searchState.isLoading) {
+                        item {
+                            val nextKm = nextLargerRadius / 1000
+                            FilledTonalButton(
+                                onClick = {
+                                    triggerNearbySearch(
+                                        effectiveLat,
+                                        effectiveLon,
+                                        nextLargerRadius,
+                                        searchState.searchLabel,
+                                        searchState.precisionMode,
+                                        true
+                                    )
+                                },
+                                shape = RoundedCornerShape(12.dp),
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .defaultMinSize(minHeight = 48.dp)
+                                    .testTag("mosque_expand_radius_btn")
+                            ) {
+                                Icon(Icons.Default.Search, contentDescription = null, modifier = Modifier.size(18.dp))
+                                Spacer(modifier = Modifier.width(6.dp))
+                                Text(
+                                    text = String.format(
+                                        Locale.getDefault(),
+                                        AppLocalization.get("mosque_expand_radius_fmt", language),
+                                        nextKm
+                                    ),
+                                    fontWeight = FontWeight.SemiBold
+                                )
+                            }
+                        }
                     }
 
                     item {
@@ -1170,10 +1337,14 @@ fun MosqueFinderScreen(
 @Composable
 private fun FloatingPicture3MosqueCard(
     mosque: MosqueItem?,
+    mosqueIndex: Int,
+    totalMosques: Int,
     routeState: MosqueRouteState,
     isRouteHudVisible: Boolean,
     hasValidOrigin: Boolean,
     language: AppLanguage,
+    onPreviousMosque: () -> Unit,
+    onNextMosque: () -> Unit,
     onOpenDetails: () -> Unit,
     onNavigate: (OSRMRouteProfile) -> Unit,
     onClearRoute: () -> Unit
@@ -1388,6 +1559,45 @@ private fun FloatingPicture3MosqueCard(
                                 )
                             },
                             colors = noorSelectableChipColors()
+                        )
+                    }
+                }
+            } else if (totalMosques > 1 && mosqueIndex >= 0) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 4.dp)
+                ) {
+                    IconButton(
+                        onClick = onPreviousMosque,
+                        modifier = Modifier
+                            .size(40.dp)
+                            .testTag("mosque_prev_btn")
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                            contentDescription = AppLocalization.get("mosque_prev_cd", language),
+                            tint = EmeraldAction
+                        )
+                    }
+                    Text(
+                        text = "${mosqueIndex + 1} / $totalMosques",
+                        style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.Bold),
+                        color = Color(0xFF334155),
+                        modifier = Modifier.testTag("mosque_pager_index")
+                    )
+                    IconButton(
+                        onClick = onNextMosque,
+                        modifier = Modifier
+                            .size(40.dp)
+                            .testTag("mosque_next_btn")
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                            contentDescription = AppLocalization.get("mosque_next_cd", language),
+                            tint = EmeraldAction
                         )
                     }
                 }
@@ -1661,14 +1871,22 @@ private fun LocationUnsetPromptCard(
 @Composable
 private fun MosqueListItemCard(
     mosque: MosqueItem,
+    isSelected: Boolean = false,
     language: AppLanguage,
     onClick: () -> Unit
 ) {
     Card(
         onClick = onClick,
         shape = RoundedCornerShape(14.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = if (isSelected) {
+                MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.25f)
+            } else {
+                MaterialTheme.colorScheme.surface
+            }
+        ),
+        border = if (isSelected) BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary) else null,
+        elevation = CardDefaults.cardElevation(defaultElevation = if (isSelected) 4.dp else 2.dp),
         modifier = Modifier
             .fillMaxWidth()
             .defaultMinSize(minHeight = 48.dp)

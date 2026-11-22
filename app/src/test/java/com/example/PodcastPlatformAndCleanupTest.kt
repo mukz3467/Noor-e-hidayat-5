@@ -15,6 +15,7 @@ import com.example.data.model.AppLanguage
 import com.example.data.podcast.PodcastCategory
 import com.example.data.podcast.PodcastDownloadStatus
 import com.example.data.podcast.PodcastEpisode
+import com.example.data.podcast.PodcastLibraryRepository
 import com.example.data.podcast.PodcastPlayerManager
 import com.example.data.podcast.PodcastRepository
 import com.example.data.podcast.PodcastShow
@@ -58,6 +59,7 @@ class PodcastPlatformAndCleanupTest {
 
     private lateinit var appContext: Application
     private val originalYtClient = YouTubeRepository.httpClient
+    private val originalPodcastLibClient = PodcastLibraryRepository.httpClient
 
     private val dummyShow = PodcastShow(
         id = "test_show",
@@ -92,6 +94,10 @@ class PodcastPlatformAndCleanupTest {
         YouTubeRepository.httpClient = originalYtClient
         YouTubeRepository.networkChecker = { true }
         YouTubeRepository.clearTestCaches()
+        PodcastLibraryRepository.httpClient = originalPodcastLibClient
+        PodcastLibraryRepository.networkChecker = { true }
+        PodcastLibraryRepository.youtubeApiKeyProvider = { "" }
+        PodcastLibraryRepository.clearTestCaches(appContext)
         PodcastPlayerManager.setPlaybackSpeed(1.0f)
     }
 
@@ -102,6 +108,9 @@ class PodcastPlatformAndCleanupTest {
         YouTubeRepository.httpClient = originalYtClient
         YouTubeRepository.networkChecker = null
         YouTubeRepository.clearTestCaches()
+        PodcastLibraryRepository.httpClient = originalPodcastLibClient
+        PodcastLibraryRepository.networkChecker = null
+        PodcastLibraryRepository.clearTestCaches(appContext)
         File(appContext.filesDir, "podcasts").deleteRecursively()
     }
 
@@ -218,9 +227,9 @@ class PodcastPlatformAndCleanupTest {
     @Test
     fun podcastsScreen_doesNotMixFeedsOnOpenAndSeparatesUrduArabicEnglish() {
         val requestedUrls = CopyOnWriteArrayList<String>()
-        val othmanId = YouTubeRepository.VERIFIED_CHANNELS.first { it.key == "othman_alkamees" }.channelId
+        val othmanId = "UCWjCSGhmSGu0VLf2mPFS0Kg"
 
-        YouTubeRepository.httpClient = OkHttpClient.Builder()
+        PodcastLibraryRepository.httpClient = OkHttpClient.Builder()
             .addInterceptor(Interceptor { chain ->
                 val url = chain.request().url.toString()
                 requestedUrls.add(url)
@@ -253,9 +262,8 @@ class PodcastPlatformAndCleanupTest {
         composeRule.onNodeWithTag("pod_lang_${PodcastLanguageSection.URDU.id}").assertIsDisplayed()
         composeRule.onNodeWithTag("pod_lang_${PodcastLanguageSection.ARABIC.id}").assertIsDisplayed()
         composeRule.onNodeWithTag("pod_lang_${PodcastLanguageSection.ENGLISH.id}").assertIsDisplayed()
-        composeRule.onNodeWithTag("pod_lang_${PodcastLanguageSection.LANGUAGE_NOT_VERIFIED.id}").assertIsDisplayed()
 
-        // Tap Arabic Podcasts -> fetches ONLY Arabic channels and displays Arabic episode
+        // Tap Arabic Podcasts -> fetches ONLY Arabic channels and displays Arabic long-form episode
         composeRule.onNodeWithTag("pod_lang_${PodcastLanguageSection.ARABIC.id}").performClick()
         composeRule.waitUntil(timeoutMillis = 5_000L) {
             composeRule.onAllNodesWithText("صحيح مسلم المجلس 41 - الشيخ د. عثمان الخميس")

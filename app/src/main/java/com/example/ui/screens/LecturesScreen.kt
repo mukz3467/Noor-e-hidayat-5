@@ -35,18 +35,22 @@ import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.CloudOff
 import androidx.compose.material.icons.filled.History
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.PlayCircleOutline
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.Schedule
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.TouchApp
 import androidx.compose.material.icons.filled.Verified
 import androidx.compose.material.icons.filled.WarningAmber
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -58,13 +62,12 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -81,104 +84,107 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
+import com.example.data.lectures.DurationFilterPolicy
+import com.example.data.lectures.DurationVerificationStatus
+import com.example.data.lectures.LectureDurationConfig
+import com.example.data.lectures.LectureLanguageGroup
 import com.example.data.model.AppLanguage
 import com.example.data.repository.FeedLoadStatus
 import com.example.data.repository.LectureCategory
-import com.example.data.repository.LectureFeedResult
 import com.example.data.repository.YouTubeRepository
 import com.example.data.repository.YouTubeVideoItem
 import com.example.localization.AppLocalization
 import com.example.ui.components.InAppYouTubePlayer
 import com.example.ui.components.NoorTopBar
 import com.example.ui.components.noorSelectableChipColors
-
-private enum class LectureLibraryTab {
-    ALL_FEEDS,
-    FAVORITES,
-    RECENTLY_WATCHED
-}
+import com.example.ui.viewmodel.LectureLibraryTab
+import com.example.ui.viewmodel.LecturesViewModel
+import java.util.Locale
 
 @Composable
 fun LecturesScreen(
     language: AppLanguage,
     onBack: () -> Unit,
-    initialQuery: String? = null
+    initialQuery: String? = null,
+    viewModel: LecturesViewModel = viewModel()
 ) {
     val context = LocalContext.current
+    val lifecycleOwner = LocalLifecycleOwner.current
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    var showDirectoryDialog by remember { mutableStateOf(false) }
 
-    var selectedTab by rememberSaveable { mutableStateOf(LectureLibraryTab.ALL_FEEDS) }
-    var selectedChannelKey by rememberSaveable { mutableStateOf<String?>(null) }
-    var selectedCategory by remember(initialQuery) {
-        mutableStateOf<LectureCategory?>(if (!initialQuery.isNullOrBlank()) LectureCategory.LATEST_LECTURES else null)
-    }
-    var selectedLanguageFilter by rememberSaveable { mutableStateOf<String?>(null) }
-    var searchQuery by remember { mutableStateOf(initialQuery ?: "") }
-
-    var isLoading by remember { mutableStateOf(false) }
-    var refreshTrigger by remember { mutableIntStateOf(0) }
-    var feedResult by remember {
-        mutableStateOf(
-            LectureFeedResult(
-                videos = emptyList(),
-                status = FeedLoadStatus.IDLE
-            )
-        )
+    LaunchedEffect(initialQuery) {
+        viewModel.applyInitialQueryIfNeeded(initialQuery)
     }
 
-    var favoriteLectures by remember { mutableStateOf(YouTubeRepository.getFavoriteLectures(context)) }
-    var recentLectures by remember { mutableStateOf(YouTubeRepository.getRecentlyWatchedLectures(context)) }
-    var activeVideo by remember { mutableStateOf<YouTubeVideoItem?>(null) }
-
-    // Topic-based / channel-based on-demand fetch ONLY when user selects a topic or scholar.
-    // Never fetches every configured channel on initial screen open.
-    LaunchedEffect(selectedCategory, selectedChannelKey, refreshTrigger) {
-        val topic = selectedCategory
-        val chKey = selectedChannelKey
-        if (topic == null && chKey == null) {
-            isLoading = false
-            feedResult = LectureFeedResult(videos = emptyList(), status = FeedLoadStatus.IDLE)
-            return@LaunchedEffect
+    DisposableEffect(viewModel, lifecycleOwner) {
+        viewModel.startForegroundAutoRefreshTicker()
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) {
+                viewModel.refreshIfStale()
+            }
         }
-        isLoading = true
-        feedResult = YouTubeRepository.fetchLecturesForTopic(
-            context = context,
-            topic = topic,
-            channelKey = chKey,
-            forceRefresh = refreshTrigger > 0
-        )
-        isLoading = false
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
+            viewModel.cancelActiveOperations()
+        }
     }
 
-    val favoriteIds = remember(favoriteLectures) { favoriteLectures.map { it.id }.toSet() }
+    val favoriteIds = remember(uiState.favoriteLectures) {
+        uiState.favoriteLectures.map { it.id }.toSet()
+    }
 
+    // Verified channels filtered cleanly by selected language group (preserves all verified channels when ALL)
+    val visibleScholarChannels = remember(uiState.verifiedChannels, uiState.selectedLanguageGroup) {
+        if (uiState.selectedLanguageGroup == LectureLanguageGroup.ALL) {
+            uiState.verifiedChannels
+        } else {
+            uiState.verifiedChannels.filter { it.supportsLanguageGroup(uiState.selectedLanguageGroup) }
+        }
+    }
+
+    // Single-pass local search only for ALL_FEEDS (category, language, and duration were already applied in repository — NO double filtering!)
     val visibleVideos = remember(
-        selectedTab,
-        feedResult.videos,
-        favoriteLectures,
-        recentLectures,
-        searchQuery,
-        selectedCategory,
-        selectedChannelKey,
-        selectedLanguageFilter
+        uiState.selectedTab,
+        uiState.feedResult.videos,
+        uiState.favoriteLectures,
+        uiState.recentLectures,
+        uiState.searchQuery,
+        uiState.selectedLanguageGroup
     ) {
-        val baseList = when (selectedTab) {
-            LectureLibraryTab.ALL_FEEDS -> feedResult.videos
-            LectureLibraryTab.FAVORITES -> favoriteLectures
-            LectureLibraryTab.RECENTLY_WATCHED -> recentLectures
+        when (uiState.selectedTab) {
+            LectureLibraryTab.ALL_FEEDS -> {
+                if (uiState.searchQuery.isBlank()) {
+                    uiState.feedResult.videos
+                } else {
+                    YouTubeRepository.searchLocalVerifiedLectures(
+                        items = uiState.feedResult.videos,
+                        query = uiState.searchQuery
+                    )
+                }
+            }
+            LectureLibraryTab.FAVORITES -> {
+                YouTubeRepository.searchLocalVerifiedLectures(
+                    items = uiState.favoriteLectures,
+                    query = uiState.searchQuery,
+                    languageGroupFilter = uiState.selectedLanguageGroup
+                )
+            }
+            LectureLibraryTab.RECENTLY_WATCHED -> {
+                YouTubeRepository.searchLocalVerifiedLectures(
+                    items = uiState.recentLectures,
+                    query = uiState.searchQuery,
+                    languageGroupFilter = uiState.selectedLanguageGroup
+                )
+            }
         }
-        YouTubeRepository.searchLocalVerifiedLectures(
-            items = baseList,
-            query = searchQuery,
-            category = if (selectedTab == LectureLibraryTab.ALL_FEEDS && selectedChannelKey == null) selectedCategory else null,
-            channelKey = if (selectedTab == LectureLibraryTab.ALL_FEEDS) selectedChannelKey else null,
-            languageFilter = selectedLanguageFilter
-        )
-    }
-
-    fun selectAndPlay(video: YouTubeVideoItem) {
-        activeVideo = video
-        recentLectures = YouTubeRepository.recordWatchedLecture(context, video)
     }
 
     Scaffold(
@@ -188,9 +194,20 @@ fun LecturesScreen(
                 language = language,
                 onBackClick = onBack,
                 actions = {
-                    if (selectedCategory != null || selectedChannelKey != null) {
+                    IconButton(
+                        onClick = { showDirectoryDialog = true },
+                        modifier = Modifier
+                            .sizeIn(minWidth = 48.dp, minHeight = 48.dp)
+                            .testTag("lectures_directory_info_btn")
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Info,
+                            contentDescription = AppLocalization.get("lectures_directory_title", language)
+                        )
+                    }
+                    if (uiState.selectedCategory != null || uiState.selectedChannelKey != null) {
                         IconButton(
-                            onClick = { refreshTrigger++ },
+                            onClick = { viewModel.refresh() },
                             modifier = Modifier
                                 .sizeIn(minWidth = 48.dp, minHeight = 48.dp)
                                 .testTag("lectures_refresh_icon_btn")
@@ -220,17 +237,51 @@ fun LecturesScreen(
                     .fillMaxSize()
                     .testTag("lectures_lazy_column")
             ) {
-                // Header Section
+                // Header Section + Directory Coverage Pill
                 item {
                     Column(modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp)) {
-                        Text(
-                            text = AppLocalization.get("lectures_banner_tag", language),
-                            style = MaterialTheme.typography.labelSmall.copy(
-                                fontWeight = FontWeight.Bold,
-                                letterSpacing = 1.sp
-                            ),
-                            color = MaterialTheme.colorScheme.primary
-                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text(
+                                text = AppLocalization.get("lectures_banner_tag", language),
+                                style = MaterialTheme.typography.labelSmall.copy(
+                                    fontWeight = FontWeight.Bold,
+                                    letterSpacing = 1.sp
+                                ),
+                                color = MaterialTheme.colorScheme.primary
+                            )
+                            Surface(
+                                onClick = { showDirectoryDialog = true },
+                                shape = RoundedCornerShape(16.dp),
+                                color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f),
+                                modifier = Modifier.testTag("lectures_directory_badge")
+                            ) {
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.Default.Verified,
+                                        contentDescription = null,
+                                        tint = MaterialTheme.colorScheme.primary,
+                                        modifier = Modifier.size(13.dp)
+                                    )
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                    Text(
+                                        text = String.format(
+                                            Locale.getDefault(),
+                                            AppLocalization.get("lectures_directory_btn", language),
+                                            uiState.coverageReport.totalVerified
+                                        ),
+                                        style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.SemiBold),
+                                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    )
+                                }
+                            }
+                        }
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
                             text = AppLocalization.get("lectures_header_title", language),
@@ -250,7 +301,7 @@ fun LecturesScreen(
                 }
 
                 // Offline / Expired Cache / Partial Unavailable Status Banners
-                if (feedResult.status == FeedLoadStatus.OFFLINE_CACHE) {
+                if (uiState.feedResult.status == FeedLoadStatus.OFFLINE_CACHE) {
                     item {
                         Surface(
                             shape = RoundedCornerShape(12.dp),
@@ -280,9 +331,9 @@ fun LecturesScreen(
                             }
                         }
                     }
-                } else if (feedResult.status == FeedLoadStatus.EXPIRED_CACHE_FALLBACK) {
+                } else if (uiState.feedResult.status == FeedLoadStatus.EXPIRED_CACHE_FALLBACK) {
                     item {
-                        val updatedText = YouTubeRepository.formatLastUpdatedDisplay(feedResult.lastUpdatedMs)
+                        val updatedText = YouTubeRepository.formatLastUpdatedDisplay(uiState.feedResult.lastUpdatedMs)
                         Surface(
                             shape = RoundedCornerShape(12.dp),
                             color = MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.8f),
@@ -316,7 +367,7 @@ fun LecturesScreen(
                     }
                 }
 
-                if (feedResult.unavailableChannels.isNotEmpty() && feedResult.videos.isNotEmpty()) {
+                if (uiState.feedResult.unavailableChannels.isNotEmpty() && uiState.feedResult.videos.isNotEmpty()) {
                     item {
                         Surface(
                             shape = RoundedCornerShape(12.dp),
@@ -340,7 +391,7 @@ fun LecturesScreen(
                                 Text(
                                     text = String.format(
                                         AppLocalization.get("lectures_partial_unavailable", language),
-                                        feedResult.unavailableChannels.joinToString(", ")
+                                        uiState.feedResult.unavailableChannels.joinToString(", ")
                                     ),
                                     style = MaterialTheme.typography.bodySmall,
                                     color = MaterialTheme.colorScheme.onTertiaryContainer,
@@ -354,7 +405,7 @@ fun LecturesScreen(
                 // Active Official YouTube IFrame Player + Metadata Card
                 item {
                     Column(modifier = Modifier.padding(horizontal = 16.dp)) {
-                        val currentPlaying = activeVideo
+                        val currentPlaying = uiState.activeVideo
                         if (currentPlaying != null) {
                             Card(
                                 shape = RoundedCornerShape(18.dp),
@@ -370,7 +421,10 @@ fun LecturesScreen(
                                         videoId = currentPlaying.id,
                                         language = language,
                                         modifier = Modifier.fillMaxSize(),
-                                        autoplay = true
+                                        autoplay = true,
+                                        onDurationDetected = { detectedSec ->
+                                            viewModel.onVideoDurationDetected(currentPlaying.id, detectedSec)
+                                        }
                                     )
                                 }
                             }
@@ -421,6 +475,41 @@ fun LecturesScreen(
                                         }
                                     }
 
+                                    // Real player-verified duration notice (honest warning if < min duration)
+                                    val durSec = currentPlaying.durationSeconds
+                                    if (durSec != null && durSec > 0) {
+                                        Spacer(modifier = Modifier.height(6.dp))
+                                        val formatted = LectureDurationConfig.formatConfirmedDuration(durSec)
+                                        val isShort = currentPlaying.durationStatus == DurationVerificationStatus.CONFIRMED_SHORT_REJECTED
+                                        Surface(
+                                            shape = RoundedCornerShape(8.dp),
+                                            color = if (isShort) {
+                                                MaterialTheme.colorScheme.errorContainer
+                                            } else {
+                                                MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f)
+                                            }
+                                        ) {
+                                            Text(
+                                                text = if (isShort) {
+                                                    String.format(
+                                                        Locale.getDefault(),
+                                                        AppLocalization.get("lectures_short_detected_warning", language),
+                                                        uiState.minDurationSeconds / 60
+                                                    ) + " ($formatted)"
+                                                } else {
+                                                    String.format(
+                                                        Locale.getDefault(),
+                                                        AppLocalization.get("lectures_duration_confirmed_fmt", language),
+                                                        formatted
+                                                    )
+                                                },
+                                                style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.SemiBold),
+                                                color = if (isShort) MaterialTheme.colorScheme.onErrorContainer else MaterialTheme.colorScheme.onPrimaryContainer,
+                                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                                            )
+                                        }
+                                    }
+
                                     Spacer(modifier = Modifier.height(10.dp))
 
                                     val isFav = favoriteIds.contains(currentPlaying.id)
@@ -429,10 +518,7 @@ fun LecturesScreen(
                                         modifier = Modifier.fillMaxWidth()
                                     ) {
                                         OutlinedButton(
-                                            onClick = {
-                                                YouTubeRepository.toggleFavoriteLecture(context, currentPlaying)
-                                                favoriteLectures = YouTubeRepository.getFavoriteLectures(context)
-                                            },
+                                            onClick = { viewModel.toggleFavorite(currentPlaying) },
                                             shape = RoundedCornerShape(10.dp),
                                             modifier = Modifier
                                                 .weight(1f)
@@ -525,7 +611,7 @@ fun LecturesScreen(
                     }
                 }
 
-                // Search Bar (Local filter within fetched topic/channel feeds only — not global YouTube search)
+                // Search Bar (Local filter within fetched topic/channel feeds only)
                 item {
                     Column(
                         modifier = Modifier
@@ -533,8 +619,8 @@ fun LecturesScreen(
                             .padding(horizontal = 16.dp)
                     ) {
                         OutlinedTextField(
-                            value = searchQuery,
-                            onValueChange = { searchQuery = it },
+                            value = uiState.searchQuery,
+                            onValueChange = { viewModel.updateSearchQuery(it) },
                             placeholder = {
                                 Text(
                                     text = AppLocalization.get("lectures_search_hint", language),
@@ -551,9 +637,9 @@ fun LecturesScreen(
                                 )
                             },
                             trailingIcon = {
-                                if (searchQuery.isNotBlank()) {
+                                if (uiState.searchQuery.isNotBlank()) {
                                     IconButton(
-                                        onClick = { searchQuery = "" },
+                                        onClick = { viewModel.updateSearchQuery("") },
                                         modifier = Modifier.sizeIn(minWidth = 48.dp, minHeight = 48.dp)
                                     ) {
                                         Icon(
@@ -595,8 +681,8 @@ fun LecturesScreen(
                     ) {
                         item {
                             FilterChip(
-                                selected = selectedTab == LectureLibraryTab.ALL_FEEDS,
-                                onClick = { selectedTab = LectureLibraryTab.ALL_FEEDS },
+                                selected = uiState.selectedTab == LectureLibraryTab.ALL_FEEDS,
+                                onClick = { viewModel.selectTab(LectureLibraryTab.ALL_FEEDS) },
                                 label = { Text(AppLocalization.get("lectures_categories_title", language)) },
                                 leadingIcon = {
                                     Icon(Icons.Default.Verified, contentDescription = null, modifier = Modifier.size(16.dp))
@@ -607,10 +693,10 @@ fun LecturesScreen(
                         }
                         item {
                             FilterChip(
-                                selected = selectedTab == LectureLibraryTab.FAVORITES,
-                                onClick = { selectedTab = LectureLibraryTab.FAVORITES },
+                                selected = uiState.selectedTab == LectureLibraryTab.FAVORITES,
+                                onClick = { viewModel.selectTab(LectureLibraryTab.FAVORITES) },
                                 label = {
-                                    Text("${AppLocalization.get("lectures_saved_favorites", language)} (${favoriteLectures.size})")
+                                    Text("${AppLocalization.get("lectures_saved_favorites", language)} (${uiState.favoriteLectures.size})")
                                 },
                                 leadingIcon = {
                                     Icon(Icons.Default.Bookmark, contentDescription = null, modifier = Modifier.size(16.dp))
@@ -621,10 +707,10 @@ fun LecturesScreen(
                         }
                         item {
                             FilterChip(
-                                selected = selectedTab == LectureLibraryTab.RECENTLY_WATCHED,
-                                onClick = { selectedTab = LectureLibraryTab.RECENTLY_WATCHED },
+                                selected = uiState.selectedTab == LectureLibraryTab.RECENTLY_WATCHED,
+                                onClick = { viewModel.selectTab(LectureLibraryTab.RECENTLY_WATCHED) },
                                 label = {
-                                    Text("${AppLocalization.get("lectures_recently_watched", language)} (${recentLectures.size})")
+                                    Text("${AppLocalization.get("lectures_recently_watched", language)} (${uiState.recentLectures.size})")
                                 },
                                 leadingIcon = {
                                     Icon(Icons.Default.History, contentDescription = null, modifier = Modifier.size(16.dp))
@@ -636,34 +722,108 @@ fun LecturesScreen(
                     }
                 }
 
-                // Language Filter Chips (All / EN / UR / AR)
+                // Language Filter Chips: All Languages | Urdu / Hindi | English | Arabic
                 item {
                     LazyRow(
                         contentPadding = PaddingValues(horizontal = 16.dp),
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .testTag("lectures_language_row")
                     ) {
-                        val langOptions = listOf(
-                            null to "lectures_all_languages",
-                            "en" to "lectures_lang_en",
-                            "ur" to "lectures_lang_ur",
-                            "ar" to "lectures_lang_ar"
-                        )
-                        items(langOptions) { (code, key) ->
+                        items(LectureLanguageGroup.USER_FILTER_OPTIONS, key = { it.id }) { group ->
                             FilterChip(
-                                selected = selectedLanguageFilter == code,
-                                onClick = { selectedLanguageFilter = code },
-                                label = { Text(AppLocalization.get(key, language)) },
+                                selected = uiState.selectedLanguageGroup == group,
+                                onClick = { viewModel.selectLanguageGroup(group) },
+                                label = { Text(AppLocalization.get(group.labelKey, language)) },
                                 colors = noorSelectableChipColors(),
-                                modifier = Modifier.testTag("lang_chip_${code ?: "all"}")
+                                modifier = Modifier.testTag("lang_chip_${group.id}")
                             )
                         }
                     }
                 }
 
-                // Topic Categories & Verified Scholar Channels (shown in Topics tab)
-                if (selectedTab == LectureLibraryTab.ALL_FEEDS) {
-                    // 12 Predefined Islamic Lecture Topics (Select a topic to fetch only its mapped channels)
+                // Long-Form Duration Policy Row (8 / 10 / 15 / 20 min + Honest RSS Duration Notice)
+                if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS) {
+                    item {
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = 16.dp)
+                                .testTag("lectures_duration_policy_section")
+                        ) {
+                            LazyRow(
+                                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                items(LectureDurationConfig.ALLOWED_MIN_DURATION_SECONDS_OPTIONS) { sec ->
+                                    val mins = sec / 60
+                                    FilterChip(
+                                        selected = uiState.minDurationSeconds == sec,
+                                        onClick = { viewModel.selectMinDurationSeconds(sec) },
+                                        leadingIcon = {
+                                            Icon(
+                                                imageVector = Icons.Default.Schedule,
+                                                contentDescription = null,
+                                                modifier = Modifier.size(14.dp)
+                                            )
+                                        },
+                                        label = {
+                                            Text(
+                                                text = String.format(
+                                                    Locale.getDefault(),
+                                                    AppLocalization.get("lectures_duration_min_fmt", language),
+                                                    mins
+                                                ),
+                                                fontSize = 11.5.sp
+                                            )
+                                        },
+                                        colors = noorSelectableChipColors(),
+                                        modifier = Modifier.testTag("duration_min_${mins}m_chip")
+                                    )
+                                }
+                                item {
+                                    val strictOnly = uiState.durationPolicy == DurationFilterPolicy.CONFIRMED_LONG_FORM_ONLY
+                                    FilterChip(
+                                        selected = strictOnly,
+                                        onClick = {
+                                            viewModel.selectDurationPolicy(
+                                                if (strictOnly) {
+                                                    DurationFilterPolicy.EXCLUDE_CONFIRMED_SHORTS_SHOW_UNVERIFIED_WITH_BADGE
+                                                } else {
+                                                    DurationFilterPolicy.CONFIRMED_LONG_FORM_ONLY
+                                                }
+                                            )
+                                        },
+                                        label = {
+                                            Text(
+                                                text = AppLocalization.get(
+                                                    if (strictOnly) "lectures_duration_only_confirmed" else "lectures_duration_include_unverified",
+                                                    language
+                                                ),
+                                                fontSize = 11.5.sp
+                                            )
+                                        },
+                                        colors = noorSelectableChipColors(),
+                                        modifier = Modifier.testTag("duration_policy_toggle_chip")
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = String.format(
+                                    Locale.getDefault(),
+                                    AppLocalization.get("lectures_duration_rss_notice", language),
+                                    uiState.minDurationSeconds / 60
+                                ),
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.padding(horizontal = 2.dp)
+                            )
+                        }
+                    }
+
+                    // 16 Islamic Lecture Topics (Original 12 + Prophets, Battles, Sahaba, Caliphates)
                     item {
                         Column(modifier = Modifier.fillMaxWidth()) {
                             Text(
@@ -679,16 +839,15 @@ fun LecturesScreen(
                             LazyRow(
                                 contentPadding = PaddingValues(horizontal = 16.dp),
                                 horizontalArrangement = Arrangement.spacedBy(8.dp),
-                                modifier = Modifier.fillMaxWidth()
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("lectures_categories_row")
                             ) {
                                 items(LectureCategory.entries, key = { it.id }) { cat ->
-                                    val isCatSelected = selectedCategory == cat
+                                    val isCatSelected = uiState.selectedCategory == cat && uiState.selectedChannelKey == null
                                     FilterChip(
                                         selected = isCatSelected,
-                                        onClick = {
-                                            selectedChannelKey = null
-                                            selectedCategory = if (isCatSelected) null else cat
-                                        },
+                                        onClick = { viewModel.selectCategory(cat) },
                                         label = { Text(AppLocalization.get(cat.labelKey, language), fontSize = 12.sp) },
                                         shape = RoundedCornerShape(10.dp),
                                         colors = noorSelectableChipColors(),
@@ -699,7 +858,7 @@ fun LecturesScreen(
                         }
                     }
 
-                    // Verified Scholar Channels Row (allows on-demand single-channel fetch)
+                    // Verified Scholar Channels Row (filtered by selected language group)
                     item {
                         Column(modifier = Modifier.fillMaxWidth()) {
                             Text(
@@ -715,18 +874,14 @@ fun LecturesScreen(
                             LazyRow(
                                 contentPadding = PaddingValues(horizontal = 16.dp),
                                 horizontalArrangement = Arrangement.spacedBy(10.dp),
-                                modifier = Modifier.fillMaxWidth()
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .testTag("lectures_scholars_row")
                             ) {
-                                items(YouTubeRepository.VERIFIED_CHANNELS, key = { it.channelId }) { channel ->
-                                    val isSel = selectedChannelKey == channel.key
+                                items(visibleScholarChannels, key = { it.channelId }) { channel ->
+                                    val isSel = uiState.selectedChannelKey == channel.key
                                     Card(
-                                        onClick = {
-                                            if (isSel) {
-                                                selectedChannelKey = null
-                                            } else {
-                                                selectedChannelKey = channel.key
-                                            }
-                                        },
+                                        onClick = { viewModel.selectChannel(channel.key) },
                                         shape = RoundedCornerShape(12.dp),
                                         colors = CardDefaults.cardColors(
                                             containerColor = if (isSel) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surface
@@ -739,7 +894,7 @@ fun LecturesScreen(
                                         Column(
                                             modifier = Modifier
                                                 .padding(horizontal = 14.dp, vertical = 10.dp)
-                                                .width(185.dp)
+                                                .width(190.dp)
                                         ) {
                                             Row(verticalAlignment = Alignment.CenterVertically) {
                                                 Text(
@@ -774,10 +929,13 @@ fun LecturesScreen(
                     }
                 }
 
-                // Count + Last Updated + Refresh Bar (only shown once a topic/channel is selected or inside Favorites/Recent)
-                if (selectedTab != LectureLibraryTab.ALL_FEEDS || selectedCategory != null || selectedChannelKey != null) {
+                // Count + Last Updated + Filtered Shorts Summary + Refresh Bar
+                if (uiState.selectedTab != LectureLibraryTab.ALL_FEEDS ||
+                    uiState.selectedCategory != null ||
+                    uiState.selectedChannelKey != null
+                ) {
                     item {
-                        val lastUpdatedStr = YouTubeRepository.formatLastUpdatedDisplay(feedResult.lastUpdatedMs)
+                        val lastUpdatedStr = YouTubeRepository.formatLastUpdatedDisplay(uiState.feedResult.lastUpdatedMs)
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.SpaceBetween,
@@ -794,7 +952,18 @@ fun LecturesScreen(
                                     style = MaterialTheme.typography.bodySmall.copy(fontWeight = FontWeight.SemiBold),
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
-                                if (selectedTab == LectureLibraryTab.ALL_FEEDS && lastUpdatedStr.isNotBlank()) {
+                                if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS && uiState.feedResult.filteredShortsCount > 0) {
+                                    Text(
+                                        text = String.format(
+                                            Locale.getDefault(),
+                                            AppLocalization.get("lectures_shorts_filtered_fmt", language),
+                                            uiState.feedResult.filteredShortsCount
+                                        ),
+                                        style = MaterialTheme.typography.labelSmall,
+                                        color = MaterialTheme.colorScheme.primary
+                                    )
+                                }
+                                if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS && lastUpdatedStr.isNotBlank()) {
                                     Text(
                                         text = String.format(
                                             AppLocalization.get("lectures_last_updated", language),
@@ -805,9 +974,9 @@ fun LecturesScreen(
                                     )
                                 }
                             }
-                            if (selectedTab == LectureLibraryTab.ALL_FEEDS) {
+                            if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS) {
                                 TextButton(
-                                    onClick = { refreshTrigger++ },
+                                    onClick = { viewModel.refresh() },
                                     modifier = Modifier.sizeIn(minHeight = 48.dp)
                                 ) {
                                     Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
@@ -820,9 +989,9 @@ fun LecturesScreen(
                 }
 
                 // Initial IDLE state before selecting a topic (Zero unnecessary network calls on open!)
-                if (selectedTab == LectureLibraryTab.ALL_FEEDS &&
-                    selectedCategory == null &&
-                    selectedChannelKey == null
+                if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS &&
+                    uiState.selectedCategory == null &&
+                    uiState.selectedChannelKey == null
                 ) {
                     item {
                         Card(
@@ -856,7 +1025,7 @@ fun LecturesScreen(
                             }
                         }
                     }
-                } else if (isLoading && visibleVideos.isEmpty()) {
+                } else if (uiState.isLoading && visibleVideos.isEmpty()) {
                     // Loading State
                     item {
                         Box(
@@ -878,8 +1047,8 @@ fun LecturesScreen(
                             }
                         }
                     }
-                } else if (selectedTab == LectureLibraryTab.ALL_FEEDS &&
-                    feedResult.status == FeedLoadStatus.INVALID_MAPPING
+                } else if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS &&
+                    uiState.feedResult.status == FeedLoadStatus.INVALID_MAPPING
                 ) {
                     // Invalid or Missing Topic Mapping Error
                     item {
@@ -911,8 +1080,8 @@ fun LecturesScreen(
                             }
                         }
                     }
-                } else if (selectedTab == LectureLibraryTab.ALL_FEEDS &&
-                    feedResult.status == FeedLoadStatus.ERROR_NO_CACHE &&
+                } else if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS &&
+                    uiState.feedResult.status == FeedLoadStatus.ERROR_NO_CACHE &&
                     visibleVideos.isEmpty()
                 ) {
                     // Offline & No Cache / Feed Error State
@@ -944,7 +1113,7 @@ fun LecturesScreen(
                                 )
                                 Spacer(modifier = Modifier.height(12.dp))
                                 Button(
-                                    onClick = { refreshTrigger++ },
+                                    onClick = { viewModel.refresh() },
                                     modifier = Modifier.sizeIn(minHeight = 48.dp)
                                 ) {
                                     Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
@@ -957,11 +1126,11 @@ fun LecturesScreen(
                 } else if (visibleVideos.isEmpty()) {
                     // Honest Empty State (Never substitute fake unrelated videos!)
                     item {
-                        val isTopicEmptyWithoutSearch = selectedTab == LectureLibraryTab.ALL_FEEDS && searchQuery.isBlank()
+                        val isTopicEmptyWithoutSearch = uiState.selectedTab == LectureLibraryTab.ALL_FEEDS && uiState.searchQuery.isBlank()
                         val emptyText = when {
-                            selectedTab == LectureLibraryTab.FAVORITES ->
+                            uiState.selectedTab == LectureLibraryTab.FAVORITES ->
                                 AppLocalization.get("lectures_empty_favorites", language)
-                            selectedTab == LectureLibraryTab.RECENTLY_WATCHED ->
+                            uiState.selectedTab == LectureLibraryTab.RECENTLY_WATCHED ->
                                 AppLocalization.get("lectures_empty_recent", language)
                             isTopicEmptyWithoutSearch ->
                                 AppLocalization.get("lectures_no_topic_videos", language)
@@ -990,7 +1159,7 @@ fun LecturesScreen(
                                     modifier = Modifier.size(28.dp)
                                 )
                                 Spacer(modifier = Modifier.height(8.dp))
-                                if (selectedTab == LectureLibraryTab.ALL_FEEDS && searchQuery.isNotBlank()) {
+                                if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS && uiState.searchQuery.isNotBlank()) {
                                     Text(
                                         text = AppLocalization.get("lectures_empty_search_title", language),
                                         style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Bold),
@@ -1005,12 +1174,17 @@ fun LecturesScreen(
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                                     textAlign = TextAlign.Center
                                 )
-                                if (searchQuery.isNotBlank() || selectedLanguageFilter != null) {
+                                if (uiState.searchQuery.isNotBlank() ||
+                                    uiState.selectedLanguageGroup != LectureLanguageGroup.ALL ||
+                                    uiState.durationPolicy == DurationFilterPolicy.CONFIRMED_LONG_FORM_ONLY
+                                ) {
                                     Spacer(modifier = Modifier.height(10.dp))
                                     OutlinedButton(
                                         onClick = {
-                                            searchQuery = ""
-                                            selectedLanguageFilter = null
+                                            viewModel.clearFilters()
+                                            viewModel.selectDurationPolicy(
+                                                DurationFilterPolicy.EXCLUDE_CONFIRMED_SHORTS_SHOW_UNVERIFIED_WITH_BADGE
+                                            )
                                         },
                                         modifier = Modifier.sizeIn(minHeight = 48.dp)
                                     ) {
@@ -1035,13 +1209,10 @@ fun LecturesScreen(
                                     VerifiedLectureGridCard(
                                         video = video,
                                         language = language,
-                                        isPlayingNow = activeVideo?.id == video.id,
+                                        isPlayingNow = uiState.activeVideo?.id == video.id,
                                         isFavorite = favoriteIds.contains(video.id),
-                                        onClick = { selectAndPlay(video) },
-                                        onToggleFavorite = {
-                                            YouTubeRepository.toggleFavoriteLecture(context, video)
-                                            favoriteLectures = YouTubeRepository.getFavoriteLectures(context)
-                                        }
+                                        onClick = { viewModel.selectAndPlay(video) },
+                                        onToggleFavorite = { viewModel.toggleFavorite(video) }
                                     )
                                 }
                             }
@@ -1050,9 +1221,95 @@ fun LecturesScreen(
                             }
                         }
                     }
+
+                    // Incremental Batch Loader for Topics with >10 Verified Channels
+                    if (uiState.selectedTab == LectureLibraryTab.ALL_FEEDS && uiState.feedResult.hasMoreChannelBatches) {
+                        item {
+                            Box(
+                                contentAlignment = Alignment.Center,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(horizontal = 16.dp, vertical = 4.dp)
+                            ) {
+                                OutlinedButton(
+                                    onClick = { viewModel.loadMoreChannelBatches() },
+                                    enabled = !uiState.isLoadingMoreBatches,
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .sizeIn(minHeight = 48.dp)
+                                        .testTag("lectures_load_more_channels_btn")
+                                ) {
+                                    if (uiState.isLoadingMoreBatches) {
+                                        CircularProgressIndicator(modifier = Modifier.size(18.dp), strokeWidth = 2.dp)
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                    }
+                                    Text(
+                                        text = String.format(
+                                            Locale.getDefault(),
+                                            AppLocalization.get("lectures_load_more_channels", language),
+                                            uiState.feedResult.loadedChannelCount,
+                                            uiState.feedResult.totalMatchingChannels
+                                        )
+                                    )
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+
+    if (showDirectoryDialog) {
+        val report = uiState.coverageReport
+        AlertDialog(
+            onDismissRequest = { showDirectoryDialog = false },
+            title = {
+                Text(
+                    text = AppLocalization.get("lectures_directory_title", language),
+                    style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
+                )
+            },
+            text = {
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    modifier = Modifier.testTag("lectures_directory_dialog_body")
+                ) {
+                    Text(
+                        text = AppLocalization.get("lectures_directory_target_note", language),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    HorizontalDivider()
+                    Text(
+                        text = "${AppLocalization.get("lectures_lang_ur_hi", language)}: ${report.urduHindiVerified} / ${report.urduHindiTarget}",
+                        style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.SemiBold)
+                    )
+                    Text(
+                        text = "${AppLocalization.get("lectures_lang_en", language)}: ${report.englishVerified} / ${report.englishTarget}",
+                        style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.SemiBold)
+                    )
+                    Text(
+                        text = "${AppLocalization.get("lectures_lang_ar", language)}: ${report.arabicVerified} / ${report.arabicTarget}",
+                        style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.SemiBold)
+                    )
+                    HorizontalDivider()
+                    Text(
+                        text = "Total Verified: ${report.totalVerified} / ${report.totalTarget} • Candidates awaiting verification: ${report.candidateCount}",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = { showDirectoryDialog = false },
+                    modifier = Modifier.sizeIn(minHeight = 48.dp)
+                ) {
+                    Text(AppLocalization.get("close", language))
+                }
+            }
+        )
     }
 }
 
@@ -1113,6 +1370,27 @@ private fun VerifiedLectureGridCard(
                     )
                 }
 
+                // Confirmed Long-Form Duration Badge (ONLY when genuinely verified from XML/player)
+                if (video.durationStatus == DurationVerificationStatus.CONFIRMED_LONG_FORM && video.durationSeconds != null) {
+                    Surface(
+                        shape = RoundedCornerShape(6.dp),
+                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.92f),
+                        modifier = Modifier
+                            .align(Alignment.TopEnd)
+                            .padding(6.dp)
+                    ) {
+                        Text(
+                            text = LectureDurationConfig.formatConfirmedDuration(video.durationSeconds),
+                            style = MaterialTheme.typography.labelSmall.copy(
+                                fontSize = 10.sp,
+                                fontWeight = FontWeight.Bold
+                            ),
+                            color = MaterialTheme.colorScheme.onPrimary,
+                            modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                        )
+                    }
+                }
+
                 // Publication Date badge (real Atom <published> metadata)
                 if (video.publishedDisplay.isNotBlank()) {
                     Surface(
@@ -1170,6 +1448,32 @@ private fun VerifiedLectureGridCard(
                         text = video.channel,
                         style = MaterialTheme.typography.labelSmall.copy(fontSize = 11.sp),
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+
+                // Honest duration status indicator (never claims unverified RSS items as confirmed long-form)
+                Spacer(modifier = Modifier.height(3.dp))
+                val durationLabel = when (video.durationStatus) {
+                    DurationVerificationStatus.CONFIRMED_LONG_FORM -> String.format(
+                        Locale.getDefault(),
+                        AppLocalization.get("lectures_duration_confirmed_fmt", language),
+                        LectureDurationConfig.formatConfirmedDuration(video.durationSeconds)
+                    )
+                    DurationVerificationStatus.UNVERIFIED_FROM_RSS ->
+                        AppLocalization.get("lectures_duration_unverified_badge", language)
+                    DurationVerificationStatus.CONFIRMED_SHORT_REJECTED -> ""
+                }
+                if (durationLabel.isNotBlank()) {
+                    Text(
+                        text = durationLabel,
+                        style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
+                        color = if (video.durationStatus == DurationVerificationStatus.CONFIRMED_LONG_FORM) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
+                        },
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )

@@ -4,31 +4,51 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.util.Log
+import com.example.data.lectures.ChannelCatalogLoader
+import com.example.data.lectures.ChannelDirectoryCoverageReport
+import com.example.data.lectures.ChannelFeedHealth
+import com.example.data.lectures.ChannelFeedStatus
+import com.example.data.lectures.ChannelRegistryEntry
+import com.example.data.lectures.ChannelType
+import com.example.data.lectures.ChannelVerificationStatus
+import com.example.data.lectures.DurationFilterPolicy
+import com.example.data.lectures.DurationVerificationStatus
+import com.example.data.lectures.LectureDurationConfig
+import com.example.data.lectures.LectureLanguageGroup
+import com.example.data.lectures.LoadedChannelCatalog
+import com.example.data.lectures.VerifiedScholarRegistry
+import com.example.data.lectures.YouTubeRssParser
+import com.example.data.live.HarameynLiveSourceResolver
+import com.example.data.live.HarameynLiveSources
+import com.example.data.live.LiveSourceAttempt
+import com.example.data.live.LiveSourceAttemptStatus
+import com.example.data.live.ResolvedLiveStreamSource
 import com.example.data.model.AppLanguage
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.sync.Semaphore
+import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.json.JSONArray
 import org.json.JSONObject
-import org.xmlpull.v1.XmlPullParser
-import org.xmlpull.v1.XmlPullParserFactory
-import java.io.StringReader
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-import java.util.TimeZone
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.TimeUnit
+import java.util.concurrent.atomic.AtomicLong
 
 enum class LectureCategory(
     val id: String,
     val labelKey: String,
-    val matchKeywords: List<String>
+    val matchKeywords: List<String>,
+    val exclusionKeywords: List<String> = emptyList()
 ) {
     POPULAR_SCHOLARS(
         id = "popular_scholars",
@@ -44,86 +64,235 @@ enum class LectureCategory(
         id = "quran_tafseer",
         labelKey = "lecture_cat_tafseer",
         matchKeywords = listOf(
-            "tafseer", "tafsir", "surah", "sura", "ayat", "ayah", "deeper look",
-            "تفسير", "تفسیر", "سورة", "قرآن", "القرآن", "quran", "qur'an"
-        )
+            "tafseer", "tafsir", "surah", "sura", "surat", "ayat", "ayah", "ayahs", "deeper look",
+            "bayan ul quran", "bayan-ul-quran", "tafheem", "parah", "para", "juz", "juzz", "quran",
+            "qur'an", "exegesis", "commentary", "dars e quran", "dars-e-quran", "baqarah", "imran",
+            "nisa", "maidah", "anam", "araf", "anfal", "tawbah", "yunus", "yusuf", "kahf", "maryam",
+            "taha", "yaseen", "yasin", "rahman", "waqiah", "mulk", "fatiha", "fatihah", "ikhlas",
+            "تفسير", "تفسیر", "سورة", "سورت", "قرآن", "القرآن", "بیان القرآن", "پارہ", "آیت",
+            "آية", "آيات", "تدبر", "البيان القرآني", "لمسات بيانية", "درس قرآن", "تفهيم القرآن",
+            "तफ़सीर", "क़ुरआन", "सूरह", "आयत"
+        ),
+        exclusionKeywords = listOf("#shorts", "trailer", "promo", "teaser")
     ),
     QURAN_EXPLANATION(
         id = "quran_explanation",
         labelKey = "lecture_cat_quran_explanation",
         matchKeywords = listOf(
-            "tadabbur", "reflection", "reflections", "story", "stories", "meaning",
-            "message", "quran", "qur'an", "surah", "sura", "فہم", "تدبر", "قرآن", "تلاوة"
-        )
+            "tadabbur", "reflection", "reflections", "meaning", "message", "quran", "qur'an",
+            "surah", "sura", "surat", "arabic", "vocabulary", "themes", "recitation", "tilawat",
+            "tilawah", "qirat", "khatm", "khatam", "ayah", "ayat", "tajweed", "memorize", "hifz",
+            "فہم", "فهم", "تدبر", "قرآن", "القرآن", "تلاوة", "تلاوت", "ترجمہ", "معانی", "هدايات",
+            "ختمة", "قراءة", "سورة", "آيات", "وقفات", "تأملات",
+            "क़ुरआन", "तदब्बुर", "अनुवाद", "तिलावत"
+        ),
+        exclusionKeywords = listOf("#shorts", "promo", "teaser")
     ),
     HADITH(
         id = "hadith",
         labelKey = "lecture_cat_hadith",
         matchKeywords = listOf(
-            "hadith", "hadeeth", "bukhari", "muslim", "sunnah", "narrator", "narrators",
-            "صحيح", "حديث", "حدیث", "سنت", "السنة"
-        )
+            "hadith", "hadeeth", "ahadith", "bukhari", "muslim", "tirmidhi", "abu dawud", "nasai",
+            "ibn majah", "muwatta", "musnad", "sunnah", "sunnat", "dars-e-hadith", "dars e hadith",
+            "narrator", "narrators", "riyad", "riyadh", "nawawi", "forty hadith", "40 hadith",
+            "shama'il", "shamail", "sahih", "isnad", "muhaddis", "mishkat", "bulugh",
+            "صحيح", "صحیح", "حديث", "حدیث", "احادیث", "أحاديث", "سنت", "السنة", "بخاری", "بخاري",
+            "مسلم", "الترمذي", "مسند", "رياض الصالحين", "الأربعين النووية", "شمائل", "درر", "الهدي النبوي",
+            "हदीस", "बुख़ारी", "सुन्नत"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     SEERAH(
         id = "seerah",
         labelKey = "lecture_cat_seerah",
         matchKeywords = listOf(
-            "seerah", "sirah", "prophet", "muhammad", "makkah", "madinah", "medina",
-            "hijrah", "firsts", "companion", "companions", "سيرة", "سیرت", "نبی", "الرسول"
-        )
+            "seerah", "sirah", "seerat", "prophet muhammad", "messenger of allah", "rasool", "rasul",
+            "nabi", "mustafa", "makkah", "mecca", "madinah", "medina", "hijrah", "hijrat", "isra",
+            "miraj", "firsts", "farewell sermon", "prophetic", "huzoor", "khatm e nabuwwat", "nabuwat",
+            "banu", "quraysh", "quraish", "hudaybiyyah", "khutbah", "milad", "mawlid",
+            "سيرة", "السيرة", "سیرت", "النبي", "نبی", "الرسول", "رسول الله", "رسول اللہ", "ہجرت",
+            "الهجرة", "معراج", "الإسراء", "مکہ", "مكة", "مدینہ", "المدينة", "المصطفى", "حضور",
+            "सीरत", "पैग़ंबर मुहम्मद", "हिजरत", "रसूल"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     ISLAMIC_HISTORY(
         id = "islamic_history",
         labelKey = "lecture_cat_history",
         matchKeywords = listOf(
-            "history", "companions", "sahaba", "ummah", "khilafah", "jerusalem",
-            "aqsa", "firsts", "medina", "uzbekistan", "تاريخ", "تاریخ", "صحابہ"
-        )
+            "history", "historical", "tareekh", "tarikh", "ummah", "civilization", "jerusalem",
+            "aqsa", "quds", "andalus", "cordoba", "granada", "baghdad", "damascus", "cairo",
+            "golden age", "ottoman", "abbasid", "umayyad", "mamluk", "ayyubid", "seljuk", "mughal",
+            "delhi sultanate", "sultanate", "empire", "dynasty", "salahuddin", "saladin", "fatimid",
+            "caliph", "caliphate", "khilafat", "khilafah", "waqia", "waqiat", "karbala", "crusade",
+            "mongol", "heritage", "muslim world", "conquest", "fath", "century", "ancient",
+            "تاريخ", "التاريخ", "تاریخ", "امت", "الأمة", "الحضارة", "القدس", "الأندلس", "اسلامی تاریخ",
+            "العثمانية", "الأموية", "العباسية", "صلاح الدين", "المسلمين", "العظماء", "السلاطين", "واقعہ",
+            "واقعات", "تہذیب", "خلافت", "سلطنت", "فتوحات",
+            "इस्लामी इतिहास", "इतिहास", "सभ्यता", "वाक़िआ"
+        ),
+        exclusionKeywords = listOf("#shorts")
+    ),
+    STORIES_OF_PROPHETS(
+        id = "stories_of_prophets",
+        labelKey = "lecture_cat_prophets",
+        matchKeywords = listOf(
+            "stories of prophets", "stories of the prophets", "prophets in islam", "prophetic stories",
+            "stories of the messengers", "qasas", "story of", "prophet", "anbiya", "ambiya",
+            "ibrahim", "abraham", "musa", "moses", "pharaoh", "firaun", "yusuf", "joseph",
+            "nuh", "noah", "isa", "jesus", "maryam", "adam", "dawud", "david", "sulayman", "solomon",
+            "yunus", "jonah", "ayyub", "job", "zakariya", "yahya", "ismail", "ishmael", "ishaq",
+            "yaqub", "jacob", "hud", "salih", "lut", "shuayb", "idris", "khidr", "dhul qarnayn",
+            "hazrat adam", "hazrat nuh", "hazrat ibrahim", "hazrat musa", "hazrat yusuf",
+            "hazrat isa", "hazrat dawud", "hazrat sulayman", "hazrat yunus", "hazrat ayyub",
+            "انبیاء", "قصص الانبیاء", "حضرت آدم", "حضرت نوح", "حضرت ابراہیم", "حضرت موسی",
+            "حضرت یوسف", "حضرت عیسی", "حضرت داؤد", "حضرت سلیمان", "حضرت یونس", "حضرت ایوب",
+            "حضرت اسماعیل", "حضرت یعقوب", "نبی", "فرعون",
+            "قصص الأنبياء", "قصص الرسل", "الأنبياء", "قصة", "آدم", "نوح", "إبراهيم", "موسى",
+            "يوسف", "عيسى", "مريم", "داود", "سليمان", "يونس", "أيوب", "إدريس", "سيدنا",
+            "पैग़ंबर", "क़िस्से", "हज़रत आदम", "हज़रत इब्राहीम", "हज़रत मूसा", "हज़रत यूसुफ़"
+        ),
+        exclusionKeywords = listOf("#shorts")
+    ),
+    ISLAMIC_BATTLES(
+        id = "islamic_battles",
+        labelKey = "lecture_cat_battles",
+        matchKeywords = listOf(
+            "battles in islamic history", "islamic battles", "battle", "battles", "ghazawat",
+            "ghazwah", "ghazwa", "badr", "uhud", "trench", "khandaq", "ahzab", "khaybar", "khaibar",
+            "hudaybiyyah", "hudaybiyah", "conquest of makkah", "fath makkah", "tabuk", "mu'tah",
+            "mutah", "hunayn", "hunain", "yarmouk", "yarmuk", "qadisiyyah", "qadisiyah", "hattin",
+            "ain jalut", "nahawand", "karbala", "conquest", "crusade", "military", "war", "jihad",
+            "martyr", "shahid", "shaheed", "victory", "fath", "expedition", "army", "khalid",
+            "غزوات", "غزوہ", "جنگ", "جنگیں", "بدر", "احد", "خندق", "خیبر", "حدیبیہ", "فتح مکہ",
+            "تبوک", "موتہ", "کربلا", "فتوحات", "شہادت", "جہاد", "حنین", "یرموک", "قادسیہ",
+            "الغزوات", "غزوة", "المعارك", "معركة", "المعركة", "بدر", "أحد", "الخندق", "خيبر",
+            "الحديبية", "فتح مكة", "تبوك", "مؤتة", "الفتوحات", "اليرموك", "القادسية", "حطين",
+            "جهاد", "قتال", "القتال", "الجيش", "انتصار", "النصر", "الشهداء", "مقاتل",
+            "ग़ज़वा", "बद्र", "उहुद", "फ़तह मक्का", "कर्बला", "इस्लामी युद्ध"
+        ),
+        exclusionKeywords = listOf("#shorts", "gaming", "pubg", "video game", "meme")
+    ),
+    SAHABA_STORIES(
+        id = "sahaba_stories",
+        labelKey = "lecture_cat_sahaba",
+        matchKeywords = listOf(
+            "stories of sahaba", "sahaba", "sahabah", "sahabi", "companions", "companion",
+            "abu bakr", "siddiq", "umar", "farooq", "uthman", "usman", "ali ibn", "maula ali",
+            "hazrat ali", "imam hussain", "hussain", "hasan", "bilal", "khalid ibn", "khalid bin",
+            "abu ubaidah", "musab", "aisha", "khadijah", "khadija", "fatimah", "fatima",
+            "abu hurairah", "salman al-farsi", "hamza", "zubair", "talhah", "saad ibn", "muadh",
+            "amr ibn", "jabir", "ibn abbas", "ibn masud", "ahle bait", "ahlul bayt", "muawiya",
+            "صحابہ", "صحابی", "حضرت ابو بکر", "صدیق اکبر", "حضرت عمر", "عمر فاروق", "حضرت عثمان",
+            "حضرت علی", "مولا علی", "امام حسین", "حضرت بلال", "خالد بن ولید", "حضرت عائشہ",
+            "حضرت خدیجہ", "حضرت فاطمہ", "اہل بیت", "عظمت صحابہ",
+            "قصص الصحابة", "الصحابة", "صحابي", "أبو بكر", "الصديق", "عمر بن الخطاب", "الفاروق",
+            "عثمان بن عفان", "علي بن أبي طالب", "بلال بن رباح", "خالد بن الوليد", "عائشة",
+            "خديجة", "فاطمة", "الحسين", "الزبير", "معاذ بن جبل", "عمرو بن", "العشرة المبشرون",
+            "सहाबा", "हज़रत अबू बक्र", "हज़रत उमर", "हज़रत उस्मान", "हज़रत अली", "इमाम हुसैन"
+        ),
+        exclusionKeywords = listOf("#shorts")
+    ),
+    ISLAMIC_CALIPHATES(
+        id = "islamic_caliphates",
+        labelKey = "lecture_cat_caliphates",
+        matchKeywords = listOf(
+            "caliph", "caliphate", "caliphates", "khilafat", "khilafah", "khulafa", "rashidun",
+            "rightly guided", "umayyad", "abbasid", "ottoman", "andalus", "fatimid", "mamluk",
+            "ayyubid", "sultanate", "sultan", "dynasty", "empire", "islamic civilization",
+            "golden age", "governance", "shariah", "sharia", "nizam", "hukumat", "daur-e-hukumat",
+            "revival", "ummah", "state", "imamate", "muawiya", "harun", "mutasim", "abdul hamid",
+            "خلافت", "خلیفہ", "خلفاء", "راشدہ", "راشدین", "بنو امیہ", "بنو عباس", "عثمانیہ",
+            "سلطنت", "حکومت", "نظام", "تہذیب", "اندلس", "امت", "اسلامی ریاست",
+            "الخلافة", "خليفة", "الخلفاء", "الراشدة", "الراشدون", "الأموية", "الأمويون", "العباسية",
+            "العثمانية", "الحضارة", "الأندلس", "الدولة", "الدول", "ولاية", "السلطان", "المعتصم",
+            "ख़िलाफ़त", "ख़लीफ़ा", "ख़ुलाफ़ा-ए-राशिदीन", "इस्लामी सभ्यता", "सल्तनत"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     SALAH_WORSHIP(
         id = "salah_worship",
         labelKey = "lecture_cat_salah",
         matchKeywords = listOf(
-            "salah", "salat", "prayer", "pray", "namaz", "wudu", "fasting", "ramadan",
-            "zakat", "hajj", "dua", "dhikr", "worship", "humility", "صلاة", "نماز",
-            "عبادت", "دعاء", "وضوء", "العشاء", "المغرب", "الفجر"
-        )
+            "salah", "salat", "prayer", "pray", "praying", "namaz", "wudu", "wudhu", "ghusl",
+            "fasting", "ramadan", "ramazan", "roza", "zakat", "sadaqah", "charity", "hajj", "umrah",
+            "dua", "dhikr", "zikr", "tasbeeh", "tasbih", "istighfar", "tahajjud", "fajr", "jummah",
+            "jumuah", "jumma", "khutbah", "khutba", "taraweeh", "eid", "qurbani", "worship",
+            "ibadah", "khushu", "humility", "azan", "azaan", "adhan", "masjid", "mosque",
+            "صلاة", "الصلاة", "نماز", "عبادت", "العبادة", "دعاء", "دعا", "وضوء", "وضو", "رمضان",
+            "روزہ", "صيام", "زکوٰۃ", "زكاة", "حج", "عمرة", "عمرہ", "العشاء", "المغرب", "الفجر",
+            "الجمعة", "جمعه", "جمعہ", "تہجد", "تراویح", "ذکر", "ذكر", "استغفار", "تسبیح", "قربانی",
+            "नमाज़", "रोज़ा", "ज़कात", "हज", "उमराह", "इबादत", "दुआ", "रमज़ान"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     ISLAMIC_MANNERS(
         id = "islamic_manners",
         labelKey = "lecture_cat_manners",
         matchKeywords = listOf(
-            "akhlaq", "adab", "manners", "character", "patience", "sabr", "mercy",
-            "forgiveness", "heart", "soul", "sinning", "humility", "mind", "charity",
-            "sadness", "اخلاق", "أخلاق", "صبر", "توبہ", "قلب", "تواضع"
-        )
+            "akhlaq", "adab", "manners", "character", "patience", "sabr", "mercy", "tawbah",
+            "taubah", "repentance", "forgiveness", "heart", "hearts", "soul", "sin", "sins",
+            "sinning", "gunah", "humility", "mind", "charity", "sadness", "anxiety", "peace",
+            "sukoon", "tazkiyah", "purification", "gratitude", "shukr", "sincerity", "ikhlas",
+            "tawakkul", "trust allah", "love", "muhabbat", "mohabbat", "haya", "modesty", "honesty",
+            "arrogance", "ego", "nafs", "nafsiyat", "akhirah", "akhirat", "jannah", "paradise",
+            "death", "maut", "qabar", "islahi", "reminder", "bayan", "spiritual", "barakah",
+            "اخلاق", "أخلاق", "صبر", "توبہ", "توبة", "قلب", "القلوب", "تواضع", "تزکیہ", "تزكية",
+            "اصلاح", "شکر", "اخلاص", "محبت", "حیا", "گناہ", "آخرت", "جنت", "موت", "سکون", "تقوى",
+            "الخشوع", "الإيمان", "موعظة", "النفس", "القيم", "غض البصر", "التفاؤل",
+            "अख़लाक़", "सब्र", "तौबा", "चरित्र", "हया", "सुकून", "ईमान"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     FAMILY_SOCIETY(
         id = "family_society",
         labelKey = "lecture_cat_family",
         matchKeywords = listOf(
-            "family", "marriage", "parents", "mother", "father", "children", "child",
-            "youth", "community", "wife", "husband", "nikah", "talaq", "نکاح", "طلاق",
-            "والدین", "خاندان", "الأسرة", "الشباب"
-        )
+            "family", "marriage", "marry", "parents", "mother", "father", "children", "child",
+            "kids", "parenting", "youth", "community", "wife", "husband", "nikah", "talaq",
+            "divorce", "society", "home", "ghar", "women", "woman", "sister", "brother", "aurat",
+            "biwi", "shohar", "miya", "shadi", "shaadi", "rishta", "waldain", "maa", "baap",
+            "aulaad", "social media", "muashra", "huqooq", "rights", "relationship", "love",
+            "نکاح", "طلاق", "والدین", "خاندان", "معاشرہ", "نوجوان", "گھر", "عورت", "بیوی", "شوہر",
+            "شادی", "اولاد", "حقوق", "الأسرة", "الزواج", "الزوجة", "الطلاق", "الأولاد", "الشباب",
+            "المجتمع", "الوالدين", "الأم", "التربية", "المرأة", "الخطبة",
+            "परिवार", "निकाह", "माता-पिता", "समाज", "शादी", "औरत", "बच्चे"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     NEW_MUSLIM_EDUCATION(
         id = "new_muslim_education",
         labelKey = "lecture_cat_new_muslim",
         matchKeywords = listOf(
-            "revert", "convert", "new muslim", "basics", "pillar", "pillars",
-            "islam", "faith", "aqeedah", "shahada", "muslim", "allah", "belief",
-            "عقيدة", "ایمان", "اسلام", "الإيمان"
-        )
+            "revert", "convert", "new muslim", "basics", "pillar", "pillars", "five pillars",
+            "islam", "faith", "aqeedah", "aqidah", "aqeeda", "tawheed", "tawhid", "shahada",
+            "shahadah", "belief", "certainty", "yaqeen", "introduction to islam", "dawah", "da'wah",
+            "christian", "bible", "atheist", "atheism", "doubt", "doubts", "shirk", "kufr",
+            "truth", "haqq", "purpose of life", "who is allah", "god", "deen", "iman", "imaan",
+            "qiyamah", "qiyamat", "day of judgment", "hereafter", "angels", "taqdeer", "qadr",
+            "عقيدة", "العقيدة", "عقیدہ", "توحید", "التوحيد", "ایمان", "اسلام", "الإسلام", "الإيمان",
+            "أركان الإسلام", "دعوة", "شبهات", "ملحد", "الإلحاد", "شرك", "شرک", "دین", "تقدیر",
+            "قیامت", "اللہ", "الله",
+            "ईमान", "तौहीद", "इस्लाम", "अक़ीदा", "दीन"
+        ),
+        exclusionKeywords = listOf("#shorts")
     ),
     ISLAMIC_QA(
         id = "islamic_qa",
         labelKey = "lecture_cat_qa",
         matchKeywords = listOf(
-            "q&a", "question", "questions", "ask", "fatwa", "ruling", "halal",
-            "haram", "permissible", "masail", "must i", "is it", "is there",
-            "هل ", "مسئلہ", "مسائل", "سوال", "جواب", "فتوى", "askzad"
-        )
+            "q&a", "qa", "question", "questions", "ask", "fatwa", "fatawa", "ruling", "rulings",
+            "halal", "haram", "haraam", "permissible", "allowed", "jaiz", "najaiz", "masail",
+            "masla", "masala", "must i", "is it", "is there", "can a", "can muslims", "how does",
+            "why", "kya", "kia", "kaisa", "kaisi", "sahi hai", "darul ifta", "darulifta",
+            "askzad", "fiqh", "shariah", "bidah", "bid'ah", "sunni", "hanafi", "shafii", "maliki",
+            "hanbali", "mufti", "jawab", "sawal", "crypto", "interest", "riba", "zakat",
+            "هل ", "ما حكم", "حكم", "مسئلہ", "مسائل", "سوال", "جواب", "فتوى", "فتاوى", "فتوی",
+            "يستفتونك", "حلال", "حرام", "فقہ", "الفقه", "فقه", "جائز", "ناجائز", "دار الافتاء",
+            "مفتی", "مفتي", "أحكام",
+            "सवाल", "जवाब", "मसाइल", "फ़तवा", "हलाल", "हराम", "जायज़"
+        ),
+        exclusionKeywords = listOf("#shorts")
     )
 }
 
@@ -174,9 +343,12 @@ enum class HarameynLocation {
 
 enum class LiveBroadcastState {
     LOADING,
+    CONNECTING,
+    RECONNECTING,
     LIVE_CONFIRMED,
     LIVE_STATUS_UNCONFIRMED,
     NO_ACTIVE_BROADCAST,
+    SOURCE_UNAVAILABLE,
     CURRENTLY_UNAVAILABLE,
     OFFLINE
 }
@@ -204,15 +376,28 @@ data class VerifiedIslamicChannel(
     val specialtyAr: String,
     val specialtyHi: String,
     val languageCode: String,
+    val primaryLanguageGroup: LectureLanguageGroup = LectureLanguageGroup.fromCode(languageCode),
+    val secondaryLanguageGroups: List<LectureLanguageGroup> = emptyList(),
     val primaryCategories: List<LectureCategory>,
     val podcastLanguage: PodcastLanguageSection? = null,
-    val podcastTopics: List<PodcastTopicFilter> = emptyList()
+    val podcastTopics: List<PodcastTopicFilter> = emptyList(),
+    val verificationStatus: ChannelVerificationStatus = ChannelVerificationStatus.VERIFIED,
+    val officialWebsite: String = "",
+    val verificationSource: String = "",
+    val channelType: ChannelType = ChannelType.SCHOLAR,
+    val priority: Int = 50,
+    val notes: String = ""
 ) {
     val feedUrl: String
         get() = "https://www.youtube.com/feeds/videos.xml?channel_id=$channelId"
 
     val officialChannelUrl: String
         get() = "https://www.youtube.com/channel/$channelId"
+
+    fun supportsLanguageGroup(group: LectureLanguageGroup): Boolean {
+        if (group == LectureLanguageGroup.ALL) return true
+        return primaryLanguageGroup == group || secondaryLanguageGroups.contains(group)
+    }
 
     fun localizedName(language: AppLanguage): String = when (language) {
         AppLanguage.ENGLISH -> nameEn
@@ -260,12 +445,18 @@ data class YouTubeVideoItem(
     val channelKey: String = "",
     val thumbnail: String,
     val publishedIso: String = "",
+    val updatedIso: String = "",
     val publishedDisplay: String = "",
     val publishedEpochMs: Long = 0L,
     val videoUrl: String = "https://www.youtube.com/watch?v=$id",
-    val languageCode: String = "en",
+    val description: String = "",
+    val languageCode: String = "und",
+    val languageGroup: LectureLanguageGroup = LectureLanguageGroup.fromCode(languageCode),
     val verifiedPodcastLanguage: PodcastLanguageSection = PodcastLanguageSection.LANGUAGE_NOT_VERIFIED,
     val categories: List<LectureCategory> = listOf(LectureCategory.LATEST_LECTURES),
+    val durationSeconds: Int? = null,
+    val durationStatus: DurationVerificationStatus = DurationVerificationStatus.UNVERIFIED_FROM_RSS,
+    val viewCount: Long? = null,
     val isFromCache: Boolean = false,
     val isCacheExpired: Boolean = false
 )
@@ -276,7 +467,13 @@ data class LectureFeedResult(
     val unavailableChannels: List<String> = emptyList(),
     val lastUpdatedMs: Long = 0L,
     val isCacheExpired: Boolean = false,
-    val errorMessage: String? = null
+    val errorMessage: String? = null,
+    val loadedChannelCount: Int = 0,
+    val totalMatchingChannels: Int = 0,
+    val hasMoreChannelBatches: Boolean = false,
+    val filteredShortsCount: Int = 0,
+    val unverifiedDurationCount: Int = 0,
+    val confirmedLongFormCount: Int = 0
 )
 
 data class LiveStreamStatusResult(
@@ -290,19 +487,23 @@ data class LiveStreamStatusResult(
     val isEmbeddableConfirmed: Boolean = false,
     val recentRecordedUploads: List<YouTubeVideoItem> = emptyList(),
     val statusDetail: String = "",
-    val checkedAtMs: Long = System.currentTimeMillis()
+    val checkedAtMs: Long = System.currentTimeMillis(),
+    val resolvedSource: ResolvedLiveStreamSource? = null,
+    val sourceAttempts: List<LiveSourceAttempt> = emptyList()
 )
 
 /**
  * Zero-API-key YouTube repository backed strictly by official public YouTube Atom RSS feeds:
  * https://www.youtube.com/feeds/videos.xml?channel_id=CHANNEL_ID
  *
- * - Zero API keys, zero OAuth, zero HTML scraping, zero unofficial endpoints.
- * - Topic-based fetching for Lectures (fetches ONLY mapped channels for selected topic).
- * - Separated Urdu / Arabic / English YouTube RSS podcasts with content-based language
- *   verification and explicit "Language Not Verified" categorization.
- * - Honest live broadcast handling for Makkah & Madinah (never fakes LIVE status or
- *   substitutes recorded uploads as active live broadcasts).
+ * Architecture highlights:
+ * - Expandable offline JSON channel catalog (`assets/lectures/channel_catalog_v1.json`) supporting 300+ channels
+ *   with strict separation between VERIFIED, CANDIDATE, REJECTED, TEMPORARILY_UNAVAILABLE, and INVALID_RSS.
+ * - Controlled batching (batch size 10) + bounded concurrency (max 5 simultaneous RSS requests) +
+ *   per-channel feed health tracking and capped exponential backoff.
+ * - Combined Urdu/Hindi, English, and Arabic language filtering wired directly into channel selection & item matching.
+ * - Honest long-form duration policy (default 480s / 8 min): rejects confirmed Shorts (< 480s or /shorts/ URL),
+ *   NEVER invents duration when omitted by YouTube RSS, and caches real player-verified durations once played.
  */
 object YouTubeRepository {
 
@@ -314,15 +515,22 @@ object YouTubeRepository {
     private const val KEY_RECENT_WATCHED_JSON = "lecture_recent_v2"
     private const val KEY_PODCAST_FAVORITES_JSON = "yt_podcast_favorites_v1"
     private const val KEY_PODCAST_RECENT_JSON = "yt_podcast_recent_v1"
+    private const val KEY_VERIFIED_DURATIONS_JSON = "verified_video_durations_v1"
     internal const val CACHE_TTL_MS = 30 * 60 * 1000L
     private const val MAX_RECENT_WATCHED = 25
+    private const val KEY_LECTURE_BG_SWEEP_OFFSET = "lecture_bg_sweep_offset_v1"
+    const val MAX_CUMULATIVE_VIDEOS_PER_CHANNEL = 120
+    const val DEFAULT_BG_SWEEP_BATCH_SIZE = 55
 
-    private val CHANNEL_ID_REGEX = Regex("^UC[A-Za-z0-9_-]{22}$")
-    private val VIDEO_ID_REGEX = Regex("^[A-Za-z0-9_-]{11}$")
+    const val DEFAULT_CHANNEL_BATCH_SIZE = 10
+    const val MAX_CONCURRENT_RSS_REQUESTS = 8
+    private const val MAX_BACKOFF_FAILURES = 4
+    private const val BASE_BACKOFF_MS = 30_000L
+    private const val MAX_BACKOFF_MS = 5 * 60 * 1000L
 
     internal var httpClient: OkHttpClient = OkHttpClient.Builder()
         .connectTimeout(12, TimeUnit.SECONDS)
-        .readTimeout(12, TimeUnit.SECONDS)
+        .readTimeout(15, TimeUnit.SECONDS)
         .followRedirects(true)
         .build()
 
@@ -333,368 +541,60 @@ object YouTubeRepository {
 
     private val memoryCache = ConcurrentHashMap<String, Pair<Long, List<YouTubeVideoItem>>>()
     private val inFlightRequests = ConcurrentHashMap<String, Deferred<ChannelFetchOutcome>>()
+    private val channelHealthMap = ConcurrentHashMap<String, ChannelFeedHealth>()
+    private val verifiedDurationCache = ConcurrentHashMap<String, Int>()
+    private val cacheGeneration = AtomicLong(0L)
+    private val rssConcurrencyLimiter = Semaphore(MAX_CONCURRENT_RSS_REQUESTS)
 
     /**
-     * Verified public YouTube channels whose UC channel IDs and official Atom RSS feeds
-     * (https://www.youtube.com/feeds/videos.xml?channel_id=...) have been confirmed live.
+     * Live-verified Islamic scholar & educational publisher channels (325 total: 108 Urdu/Hindi,
+     * 109 English, 108 Arabic — every UC Channel ID verified via YouTube & live HTTP 200 Atom RSS).
      */
-    val VERIFIED_CHANNELS: List<VerifiedIslamicChannel> = listOf(
-        VerifiedIslamicChannel(
-            key = "bayyinah",
-            channelId = "UCRtiU-lpcBSi-ipFKyfIkug",
-            handle = "@bayyinah",
-            nameEn = "Nouman Ali Khan (Bayyinah)",
-            nameUr = "نعمان علی خان (بینہ انسٹیٹیوٹ)",
-            nameAr = "نعمان علي خان (مؤسسة بينة)",
-            nameHi = "नोमान अली ख़ान (बय्यिनाह)",
-            specialtyEn = "Quran Tafseer & Deep Linguistic Explanation",
-            specialtyUr = "تفسیر اور فہمِ قرآن",
-            specialtyAr = "التفسير وتدبر القرآن",
-            specialtyHi = "क़ुरआन तफ़सीर और गहन व्याख्या",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.QURAN_TAFSEER,
-                LectureCategory.QURAN_EXPLANATION
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.QURAN_TAFSEER, PodcastTopicFilter.SPIRITUAL_REMINDERS)
-        ),
-        VerifiedIslamicChannel(
-            key = "mufti_menk",
-            channelId = "UCNB_OaI4524fASt8h0IL8dw",
-            handle = "@muftimenkofficial",
-            nameEn = "Mufti Menk Official",
-            nameUr = "مفتی مینک آفیشل",
-            nameAr = "المفتي منك الرسمي",
-            nameHi = "मुफ़्ती मेनक आधिकारिक",
-            specialtyEn = "Manners, Family Guidance & Daily Reminders",
-            specialtyUr = "اخلاق، خاندانی تربیت اور ایمانی تذکیر",
-            specialtyAr = "الأخلاق والأسرة والتذكير الإيماني",
-            specialtyHi = "इस्लामी शिष्टाचार, परिवार और मार्गदर्शन",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.ISLAMIC_MANNERS,
-                LectureCategory.FAMILY_SOCIETY,
-                LectureCategory.NEW_MUSLIM_EDUCATION
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.SPIRITUAL_REMINDERS, PodcastTopicFilter.FAMILY_YOUTH)
-        ),
-        VerifiedIslamicChannel(
-            key = "yaqeen",
-            channelId = "UC3vHW2h22WE-pNi5WJtRIjg",
-            handle = "@yaqeeninstituteofficial",
-            nameEn = "Yaqeen Institute (Dr. Omar Suleiman)",
-            nameUr = "یقین انسٹیٹیوٹ (ڈاکٹر عمر سلیمان)",
-            nameAr = "معهد يقين (د. عمر سليمان)",
-            nameHi = "यक़ीन इंस्टीट्यूट (डॉ. उमर सुलेमान)",
-            specialtyEn = "Seerah, Islamic History & Contemporary Faith",
-            specialtyUr = "سیرت النبی ﷺ، اسلامی تاریخ اور جدید مسائل",
-            specialtyAr = "السيرة والتاريخ الإسلامي والفكر",
-            specialtyHi = "सीरत, इस्लामी इतिहास और ईमान",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.SEERAH,
-                LectureCategory.ISLAMIC_HISTORY,
-                LectureCategory.ISLAMIC_MANNERS
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.SEERAH_HISTORY, PodcastTopicFilter.SPIRITUAL_REMINDERS)
-        ),
-        VerifiedIslamicChannel(
-            key = "seekersguidance",
-            channelId = "UCbPVEsJhn5My75IfMWXv1_Q",
-            handle = "@seekersguidanceorg",
-            nameEn = "SeekersGuidance",
-            nameUr = "سیکرز گائیڈنس",
-            nameAr = "سيكرز جايدنس للعلوم الشرعية",
-            nameHi = "सीकर्सगाइडेंस",
-            specialtyEn = "Quran Tafsir, Hadith & Classical Knowledge",
-            specialtyUr = "تفسیرِ قرآن، حدیث اور دینی علوم",
-            specialtyAr = "تفسير القرآن والحديث والعلوم الشرعية",
-            specialtyHi = "क़ुरआन तफ़सीर, हदीस और इस्लामी शिक्षा",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.QURAN_TAFSEER,
-                LectureCategory.HADITH,
-                LectureCategory.SALAH_WORSHIP,
-                LectureCategory.NEW_MUSLIM_EDUCATION
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.QURAN_TAFSEER, PodcastTopicFilter.ISLAMIC_QA)
-        ),
-        VerifiedIslamicChannel(
-            key = "assim",
-            channelId = "UCWsdcrre0WbCWML_PnuzoAg",
-            handle = "@assimalhakeem",
-            nameEn = "Sheikh Assim Al-Hakeem",
-            nameUr = "شیخ عاصم الحکیم",
-            nameAr = "الشيخ عاصم الحكيم",
-            nameHi = "शेख़ आसिम अल-हकीम",
-            specialtyEn = "Islamic Q&A, Salah & Practical Jurisprudence",
-            specialtyUr = "سوال و جواب، نماز اور عملی مسائل",
-            specialtyAr = "الفتاوى والأسئلة وفقه الصلاة",
-            specialtyHi = "इस्लामी प्रश्नोत्तर, नमाज़ और फ़िक़्ह",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.ISLAMIC_QA,
-                LectureCategory.SALAH_WORSHIP,
-                LectureCategory.NEW_MUSLIM_EDUCATION
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.ISLAMIC_QA)
-        ),
-        VerifiedIslamicChannel(
-            key = "qalam",
-            channelId = "UCVp5Ze24V2iFiUY1y0WtRaA",
-            handle = "@QalamInstitute",
-            nameEn = "Qalam Institute",
-            nameUr = "قلم انسٹیٹیوٹ",
-            nameAr = "معهد قلم",
-            nameHi = "क़लम इंस्टीट्यूट",
-            specialtyEn = "Seerah, Khutbahs & Youth Guidance",
-            specialtyUr = "سیرت، خطبات اور نوجوانوں کی رہنمائی",
-            specialtyAr = "السيرة والخطب وتوجيه الشباب",
-            specialtyHi = "सीरत, ख़ुत्बा और युवा मार्गदर्शन",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.SEERAH,
-                LectureCategory.FAMILY_SOCIETY,
-                LectureCategory.ISLAMIC_MANNERS
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.SEERAH_HISTORY, PodcastTopicFilter.FAMILY_YOUTH)
-        ),
-        VerifiedIslamicChannel(
-            key = "almadina",
-            channelId = "UCys4f7i9vgHiJlk7zLpvk2A",
-            handle = "@almadinainstitute",
-            nameEn = "Al-Madina Institute",
-            nameUr = "المدینہ انسٹیٹیوٹ",
-            nameAr = "معهد المدينة",
-            nameHi = "अल-मदीना इंस्टीट्यूट",
-            specialtyEn = "Podcast Discussions, Faith & Society",
-            specialtyUr = "پوڈکاسٹ مکالمے، ایمان اور معاشرہ",
-            specialtyAr = "بودكاست وحوارات الإيمان والمجتمع",
-            specialtyHi = "पॉडकास्ट चर्चा, ईमान और समाज",
-            languageCode = "en",
-            primaryCategories = listOf(
-                LectureCategory.ISLAMIC_MANNERS,
-                LectureCategory.FAMILY_SOCIETY
-            ),
-            podcastLanguage = PodcastLanguageSection.ENGLISH,
-            podcastTopics = listOf(PodcastTopicFilter.SPIRITUAL_REMINDERS, PodcastTopicFilter.FAMILY_YOUTH)
-        ),
-        VerifiedIslamicChannel(
-            key = "tariq_masood",
-            channelId = "UCumT1HMTXegYzESyPKH3pVg",
-            handle = "@MuftiTariqMasoodSpeeches",
-            nameEn = "Mufti Tariq Masood Speeches",
-            nameUr = "مفتی طارق مسعود اسپیچز",
-            nameAr = "خطب المفتي طارق مسعود",
-            nameHi = "मुफ़्ती तारिक़ मसूद स्पीचेज़",
-            specialtyEn = "Urdu Masail, Family Life & Q&A",
-            specialtyUr = "اردو مسائل، خاندانی زندگی اور سوال و جواب",
-            specialtyAr = "المسائل الأسرية والأسئلة بالأردية",
-            specialtyHi = "उर्दू मसाइल, पारिवारिक जीवन और प्रश्नोत्तर",
-            languageCode = "ur",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.SALAH_WORSHIP,
-                LectureCategory.FAMILY_SOCIETY,
-                LectureCategory.ISLAMIC_QA
-            ),
-            podcastLanguage = PodcastLanguageSection.URDU,
-            podcastTopics = listOf(PodcastTopicFilter.ISLAMIC_QA, PodcastTopicFilter.FAMILY_YOUTH)
-        ),
-        VerifiedIslamicChannel(
-            key = "tariq_jamil",
-            channelId = "UCct5L-DaVYK8UtmqGU8gJtw",
-            handle = "@tariqjamilofficial",
-            nameEn = "Maulana Tariq Jamil Official",
-            nameUr = "مولانا طارق جمیل آفیشل",
-            nameAr = "مولانا طارق جميل الرسمي",
-            nameHi = "मौलाना तारिक़ जमील आधिकारिक",
-            specialtyEn = "Urdu Spiritual Talks, History & Repentance",
-            specialtyUr = "ایمانی بیانات، اسلامی تاریخ اور اصلاحِ قلب",
-            specialtyAr = "الدروس الإيمانية والتاريخ الإسلامي بالأردية",
-            specialtyHi = "उर्दू रूहानी बयान, इतिहास और तौबा",
-            languageCode = "ur",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.ISLAMIC_MANNERS,
-                LectureCategory.ISLAMIC_HISTORY
-            ),
-            podcastLanguage = PodcastLanguageSection.URDU,
-            podcastTopics = listOf(PodcastTopicFilter.SPIRITUAL_REMINDERS, PodcastTopicFilter.SEERAH_HISTORY)
-        ),
-        VerifiedIslamicChannel(
-            key = "youth_club",
-            channelId = "UCTedHfyVtctMgTWX2uZkEDQ",
-            handle = "@YouthClubPK",
-            nameEn = "Youth Club Pakistan",
-            nameUr = "یوتھ کلب پاکستان",
-            nameAr = "نادي الشباب باكستان",
-            nameHi = "यूथ क्लब पाकिस्तान",
-            specialtyEn = "Youth Podcasts, Quran & Hadith Discussions",
-            specialtyUr = "نوجوانوں کے پوڈکاسٹس، قرآن و حدیث مکالمے",
-            specialtyAr = "بودكاست الشباب وحلقات القرآن والحديث",
-            specialtyHi = "युवा पॉडकास्ट, क़ुरआन व हदीस चर्चा",
-            languageCode = "ur",
-            primaryCategories = listOf(
-                LectureCategory.FAMILY_SOCIETY,
-                LectureCategory.QURAN_EXPLANATION,
-                LectureCategory.HADITH
-            ),
-            podcastLanguage = PodcastLanguageSection.URDU,
-            podcastTopics = listOf(PodcastTopicFilter.FAMILY_YOUTH, PodcastTopicFilter.QURAN_TAFSEER, PodcastTopicFilter.ISLAMIC_QA)
-        ),
-        VerifiedIslamicChannel(
-            key = "ajmal_qadri",
-            channelId = "UC2SqSPyDNijIPVQuo14lQEQ",
-            handle = "@PeerAjmalRazaQadri",
-            nameEn = "Peer Ajmal Raza Qadri",
-            nameUr = "پیر اجمل رضا قادری",
-            nameAr = "بير أجمل رضا قادري",
-            nameHi = "पीर अजमल रज़ा क़ादरी",
-            specialtyEn = "Urdu Seerah & Emotional Islamic Talks",
-            specialtyUr = "سیرت النبی ﷺ اور اصلاحی بیانات",
-            specialtyAr = "السيرة النبوية والمواعظ بالأردية",
-            specialtyHi = "उर्दू सीरत व इस्लामी बयान",
-            languageCode = "ur",
-            primaryCategories = listOf(
-                LectureCategory.SEERAH,
-                LectureCategory.ISLAMIC_MANNERS
-            ),
-            podcastLanguage = PodcastLanguageSection.URDU,
-            podcastTopics = listOf(PodcastTopicFilter.SEERAH_HISTORY, PodcastTopicFilter.SPIRITUAL_REMINDERS)
-        ),
-        VerifiedIslamicChannel(
-            key = "othman_alkamees",
-            channelId = "UCWjCSGhmSGu0VLf2mPFS0Kg",
-            handle = "@othmanalkamees",
-            nameEn = "Dr. Othman Al-Kamees (Arabic)",
-            nameUr = "ڈاکٹر عثمان الخمیس (عربی)",
-            nameAr = "الشيخ د. عثمان الخميس",
-            nameHi = "डॉ. उस्मान अल-ख़मीस (अरबी)",
-            specialtyEn = "Arabic Hadith (Sahih Muslim), Fiqh & Fatwa Q&A",
-            specialtyUr = "صحیح مسلم، فقہ اور عربی فتاویٰ",
-            specialtyAr = "شرح صحيح مسلم والفقه والفتاوى",
-            specialtyHi = "अरबी हदीस (सहीह मुस्लिम), फ़िक़्ह व फ़तवा",
-            languageCode = "ar",
-            primaryCategories = listOf(
-                LectureCategory.POPULAR_SCHOLARS,
-                LectureCategory.HADITH,
-                LectureCategory.ISLAMIC_QA,
-                LectureCategory.SALAH_WORSHIP
-            ),
-            podcastLanguage = PodcastLanguageSection.ARABIC,
-            podcastTopics = listOf(PodcastTopicFilter.ISLAMIC_QA, PodcastTopicFilter.SEERAH_HISTORY)
-        ),
-        VerifiedIslamicChannel(
-            key = "mustafa_hosny",
-            channelId = "UCwttCEi9Fq1DgTd5Anil6rQ",
-            handle = "@MustafaHosny",
-            nameEn = "Mustafa Hosny (Arabic)",
-            nameUr = "مصطفیٰ حسنی (عربی)",
-            nameAr = "مصطفى حسني",
-            nameHi = "मुस्तफ़ा होस्नी (अरबी)",
-            specialtyEn = "Arabic Spiritual Reminders & Names of Allah",
-            specialtyUr = "اسماء الحسنیٰ اور ایمانی تربیت (عربی)",
-            specialtyAr = "الرقائق وشرح أسماء الله الحسنى",
-            specialtyHi = "अरबी रूहानी तज़कीर व अस्माउल हुस्ना",
-            languageCode = "ar",
-            primaryCategories = listOf(
-                LectureCategory.ISLAMIC_MANNERS,
-                LectureCategory.FAMILY_SOCIETY
-            ),
-            podcastLanguage = PodcastLanguageSection.ARABIC,
-            podcastTopics = listOf(PodcastTopicFilter.SPIRITUAL_REMINDERS, PodcastTopicFilter.FAMILY_YOUTH)
-        ),
-        VerifiedIslamicChannel(
-            key = "islamweb",
-            channelId = "UCeH0M5ZjsNE1BDBs-AeH4sA",
-            handle = "@islamweb",
-            nameEn = "IslamWeb Official (Arabic)",
-            nameUr = "اسلام ویب آفیشل (عربی)",
-            nameAr = "إسلام ويب الرسمي",
-            nameHi = "इस्लामवेब आधिकारिक (अरबी)",
-            specialtyEn = "Arabic Quran Competitions, Fatwa & Knowledge",
-            specialtyUr = "قرآن، فقہ اور شرعی علم (عربی)",
-            specialtyAr = "القرآن الكريم والعلوم الشرعية",
-            specialtyHi = "अरबी क़ुरआन, फ़िक़्ह व इस्लामी ज्ञान",
-            languageCode = "ar",
-            primaryCategories = listOf(
-                LectureCategory.QURAN_EXPLANATION,
-                LectureCategory.NEW_MUSLIM_EDUCATION
-            ),
-            podcastLanguage = PodcastLanguageSection.ARABIC,
-            podcastTopics = listOf(PodcastTopicFilter.QURAN_TAFSEER, PodcastTopicFilter.ISLAMIC_QA)
-        ),
-        VerifiedIslamicChannel(
-            key = "saudi_quran",
-            channelId = "UCos52azQNBgW63_9uDJoPDA",
-            handle = "@SaudiQuranTv",
-            nameEn = "Saudi Quran TV (Makkah)",
-            nameUr = "سعودی قرآن ٹی وی (مکہ مکرمہ)",
-            nameAr = "قناة القرآن الكريم السعودية",
-            nameHi = "सऊदी क़ुरआन टीवी (मक्का)",
-            specialtyEn = "Official Masjid al-Haram Recitations & Prayers",
-            specialtyUr = "مسجد الحرام کی تلاوت و نمازیں",
-            specialtyAr = "تلاوات وصلوات المسجد الحرام",
-            specialtyHi = "मस्जिद अल-हरम से तिलावत व नमाज़",
-            languageCode = "ar",
-            primaryCategories = listOf(
-                LectureCategory.QURAN_EXPLANATION,
-                LectureCategory.SALAH_WORSHIP
-            ),
-            podcastLanguage = PodcastLanguageSection.ARABIC,
-            podcastTopics = listOf(PodcastTopicFilter.QURAN_TAFSEER)
-        ),
-        VerifiedIslamicChannel(
-            key = "saudi_sunnah",
-            channelId = "UCROKYPep-UuODNwyipe6JMw",
-            handle = "@SaudiSunnahTv",
-            nameEn = "Saudi Sunnah TV (Madinah)",
-            nameUr = "سعودی سنت ٹی وی (مدینہ منورہ)",
-            nameAr = "قناة السنة النبوية السعودية",
-            nameHi = "सऊदी सुन्नत टीवी (मदीना)",
-            specialtyEn = "Official Masjid an-Nabawi Prayers & Recitations",
-            specialtyUr = "مسجد نبوی ﷺ سے تلاوت و نمازیں",
-            specialtyAr = "تلاوات وصلوات المسجد النبوي",
-            specialtyHi = "मस्जिद अन-नबवी से तिलावत व नमाज़",
-            languageCode = "ar",
-            primaryCategories = listOf(
-                LectureCategory.HADITH,
-                LectureCategory.SEERAH
-            ),
-            podcastLanguage = PodcastLanguageSection.ARABIC,
-            podcastTopics = listOf(PodcastTopicFilter.SEERAH_HISTORY)
-        )
-    )
+    val VERIFIED_CHANNELS: List<VerifiedIslamicChannel> = VerifiedScholarRegistry.VERIFIED_CHANNELS
+
+    internal val SEED_VERIFIED_ENTRIES: List<ChannelRegistryEntry> by lazy {
+        VERIFIED_CHANNELS.map { ch ->
+            ChannelRegistryEntry(
+                channelId = ch.key,
+                channelName = ch.nameEn,
+                scholarOrOrgName = ch.nameEn,
+                youtubeChannelId = ch.channelId,
+                handle = ch.handle,
+                channelUrl = ch.officialChannelUrl,
+                rssUrl = ch.feedUrl,
+                nameEn = ch.nameEn,
+                nameUr = ch.nameUr,
+                nameAr = ch.nameAr,
+                nameHi = ch.nameHi,
+                specialtyEn = ch.specialtyEn,
+                specialtyUr = ch.specialtyUr,
+                specialtyAr = ch.specialtyAr,
+                specialtyHi = ch.specialtyHi,
+                primaryLanguage = ch.primaryLanguageGroup,
+                secondaryLanguages = ch.secondaryLanguageGroups,
+                topics = ch.primaryCategories.map { it.id },
+                channelType = ch.channelType,
+                verificationStatus = ChannelVerificationStatus.VERIFIED,
+                verificationSource = ch.verificationSource,
+                officialWebsite = ch.officialWebsite,
+                lastVerifiedAt = "2026-11-19",
+                feedStatus = ChannelFeedStatus.HEALTHY,
+                duplicateDetectionKey = "uc:${ch.channelId.lowercase(Locale.ROOT)}",
+                notes = ch.notes,
+                enabled = true,
+                priority = ch.priority,
+                podcastLanguage = ch.podcastLanguage,
+                podcastTopics = ch.podcastTopics
+            )
+        }
+    }
 
     /**
-     * Explicit topic-to-channel mapping so selecting a lecture topic fetches ONLY the
-     * relevant channel RSS feeds (never all configured channels unnecessarily).
+     * Explicit topic-to-channel mapping covering verified Urdu/Hindi, English, and Arabic scholars
+     * across all 16 Islamic lecture topics.
      */
-    val TOPIC_CHANNEL_MAPPING: Map<LectureCategory, List<String>> = mapOf(
-        LectureCategory.POPULAR_SCHOLARS to listOf("bayyinah", "yaqeen", "tariq_masood", "othman_alkamees"),
-        LectureCategory.LATEST_LECTURES to listOf("yaqeen", "bayyinah", "tariq_masood", "othman_alkamees"),
-        LectureCategory.QURAN_TAFSEER to listOf("bayyinah", "seekersguidance"),
-        LectureCategory.QURAN_EXPLANATION to listOf("bayyinah", "saudi_quran", "youth_club"),
-        LectureCategory.HADITH to listOf("seekersguidance", "othman_alkamees", "youth_club"),
-        LectureCategory.SEERAH to listOf("yaqeen", "qalam", "ajmal_qadri"),
-        LectureCategory.ISLAMIC_HISTORY to listOf("yaqeen", "tariq_jamil"),
-        LectureCategory.SALAH_WORSHIP to listOf("assim", "tariq_masood", "saudi_quran", "saudi_sunnah"),
-        LectureCategory.ISLAMIC_MANNERS to listOf("mufti_menk", "mustafa_hosny", "tariq_jamil"),
-        LectureCategory.FAMILY_SOCIETY to listOf("mufti_menk", "tariq_masood", "qalam", "youth_club"),
-        LectureCategory.NEW_MUSLIM_EDUCATION to listOf("assim", "mufti_menk", "seekersguidance"),
-        LectureCategory.ISLAMIC_QA to listOf("assim", "tariq_masood", "othman_alkamees")
-    )
+    val TOPIC_CHANNEL_MAPPING: Map<LectureCategory, List<String>> =
+        VerifiedScholarRegistry.TOPIC_CHANNEL_MAPPING
 
     val HARAMEYN_CHANNELS: Map<HarameynLocation, HarameynStreamChannel> = mapOf(
         HarameynLocation.MAKKAH to HarameynStreamChannel(
@@ -717,21 +617,76 @@ object YouTubeRepository {
         )
     )
 
-    fun isValidChannelId(channelId: String): Boolean = CHANNEL_ID_REGEX.matches(channelId.trim())
+    fun isValidChannelId(channelId: String): Boolean = YouTubeRssParser.isValidChannelId(channelId)
 
-    fun isValidVideoId(videoId: String): Boolean = VIDEO_ID_REGEX.matches(videoId.trim())
+    fun isValidVideoId(videoId: String): Boolean = YouTubeRssParser.isValidVideoId(videoId)
 
+    fun getChannelCatalog(context: Context? = null, forceReload: Boolean = false): LoadedChannelCatalog =
+        ChannelCatalogLoader.load(context, forceReload)
+
+    fun getDirectoryCoverageReport(context: Context? = null): ChannelDirectoryCoverageReport =
+        getChannelCatalog(context).coverageReport
+
+    fun getVerifiedChannels(context: Context? = null): List<VerifiedIslamicChannel> {
+        val loaded = getChannelCatalog(context).verifiedEntries.map { it.toVerifiedIslamicChannel() }
+        return if (loaded.isNotEmpty()) loaded else VERIFIED_CHANNELS
+    }
+
+    fun verifiedChannelsForLanguage(
+        languageGroup: LectureLanguageGroup,
+        context: Context? = null
+    ): List<VerifiedIslamicChannel> {
+        val all = getVerifiedChannels(context)
+        if (languageGroup == LectureLanguageGroup.ALL) return all
+        return all.filter { it.supportsLanguageGroup(languageGroup) }
+    }
+
+    fun getChannelHealth(channelId: String): ChannelFeedHealth =
+        channelHealthMap[channelId] ?: ChannelFeedHealth(channelId = channelId)
+
+    /**
+     * Resolves verified channels for [topic], optionally scoped to [languageGroup].
+     * Combines explicit [channelMapping] with any dynamically added verified channels in the
+     * expandable catalog whose `topics` list includes [topic].
+     */
     fun channelsForTopic(
         topic: LectureCategory?,
-        channelMapping: Map<LectureCategory, List<String>> = TOPIC_CHANNEL_MAPPING
+        channelMapping: Map<LectureCategory, List<String>> = TOPIC_CHANNEL_MAPPING,
+        languageGroup: LectureLanguageGroup = LectureLanguageGroup.ALL,
+        context: Context? = null
     ): List<VerifiedIslamicChannel>? {
         if (topic == null) return null
+        val verifiedPool = getVerifiedChannels(context)
         val mappedKeys = channelMapping[topic] ?: return null
         if (mappedKeys.isEmpty()) return null
-        val resolved = mappedKeys.mapNotNull { key ->
-            VERIFIED_CHANNELS.firstOrNull { it.key == key && isValidChannelId(it.channelId) }
+
+        val explicitResolved = mappedKeys.mapNotNull { key ->
+            verifiedPool.firstOrNull { it.key == key && isValidChannelId(it.channelId) }
         }
-        return if (resolved.size == mappedKeys.size && resolved.isNotEmpty()) resolved else null
+        if (explicitResolved.size != mappedKeys.size || explicitResolved.isEmpty()) {
+            return null
+        }
+
+        // Also include any additional verified channels from the expandable JSON catalog tagged with this topic
+        val catalogExtras = if (topic == LectureCategory.LATEST_LECTURES) {
+            emptyList()
+        } else {
+            verifiedPool.filter { ch ->
+                ch.primaryCategories.contains(topic) && explicitResolved.none { it.key == ch.key }
+            }
+        }
+
+        // Preserve curated topic-first order for explicit mappings (so dedicated channels like
+        // The Islamic History appear first in Islamic History and Bayyinah/Dr. Israr appear first in Tafseer),
+        // then append additional catalog channels tagged with this topic sorted by priority.
+        val combined = (explicitResolved + catalogExtras.sortedByDescending { it.priority })
+            .distinctBy { it.channelId }
+
+        return if (languageGroup == LectureLanguageGroup.ALL) {
+            combined
+        } else {
+            combined.filter { it.supportsLanguageGroup(languageGroup) }
+        }
     }
 
     fun podcastChannelsForSelection(
@@ -775,21 +730,30 @@ object YouTubeRepository {
     )
 
     /**
-     * Topic-based lecture fetch:
-     * - Never fetches all configured channels.
-     * - Resolves ONLY channels mapped to [topic].
-     * - If mapping is missing/invalid, returns [FeedLoadStatus.INVALID_MAPPING] without network calls.
-     * - Filters genuine fetched items to the selected topic locally.
+     * Topic-based lecture fetch with:
+     * - Language-aware verified channel selection (never fetches unrelated channels or unverified candidates).
+     * - Controlled channel batching (default 10 channels per batch) and bounded concurrency (max 5 simultaneous).
+     * - Single-pass accurate topic filtering (no destructive double-filtering).
+     * - Centralized long-form duration policy (default 480s / 8 min; excludes confirmed Shorts; honest about unverified RSS duration).
      */
     suspend fun fetchLecturesForTopic(
         context: Context,
         topic: LectureCategory?,
         channelKey: String? = null,
         forceRefresh: Boolean = false,
-        channelMapping: Map<LectureCategory, List<String>> = TOPIC_CHANNEL_MAPPING
+        channelMapping: Map<LectureCategory, List<String>> = TOPIC_CHANNEL_MAPPING,
+        languageGroup: LectureLanguageGroup = LectureLanguageGroup.ALL,
+        minDurationSeconds: Int = LectureDurationConfig.MIN_LECTURE_DURATION_SECONDS,
+        durationPolicy: DurationFilterPolicy = DurationFilterPolicy.EXCLUDE_CONFIRMED_SHORTS_SHOW_UNVERIFIED_WITH_BADGE,
+        batchIndex: Int = 0,
+        batchSize: Int = DEFAULT_CHANNEL_BATCH_SIZE
     ): LectureFeedResult = withContext(Dispatchers.IO) {
-        val targets = if (!channelKey.isNullOrBlank()) {
-            val single = VERIFIED_CHANNELS.firstOrNull { it.key == channelKey && isValidChannelId(it.channelId) }
+        ensureVerifiedDurationsLoaded(context)
+
+        val allMatchingTargets = if (!channelKey.isNullOrBlank()) {
+            val single = getVerifiedChannels(context).firstOrNull {
+                it.key == channelKey && isValidChannelId(it.channelId)
+            }
             if (single == null) {
                 return@withContext LectureFeedResult(
                     videos = emptyList(),
@@ -799,27 +763,59 @@ object YouTubeRepository {
             }
             listOf(single)
         } else {
-            channelsForTopic(topic, channelMapping)
-                ?: return@withContext LectureFeedResult(
+            val resolved = channelsForTopic(
+                topic = topic,
+                channelMapping = channelMapping,
+                languageGroup = languageGroup,
+                context = context
+            ) ?: return@withContext LectureFeedResult(
+                videos = emptyList(),
+                status = FeedLoadStatus.INVALID_MAPPING,
+                errorMessage = "Missing or invalid topic channel mapping."
+            )
+            if (resolved.isEmpty()) {
+                return@withContext LectureFeedResult(
                     videos = emptyList(),
-                    status = FeedLoadStatus.INVALID_MAPPING,
-                    errorMessage = "Missing or invalid topic channel mapping."
+                    status = FeedLoadStatus.ONLINE_FRESH,
+                    loadedChannelCount = 0,
+                    totalMatchingChannels = 0,
+                    hasMoreChannelBatches = false
                 )
+            }
+            resolved
         }
+
+        val safeBatchSize = batchSize.coerceAtLeast(1)
+        val endExclusive = ((batchIndex.coerceAtLeast(0) + 1) * safeBatchSize).coerceAtMost(allMatchingTargets.size)
+        val batchTargets = allMatchingTargets.take(endExclusive)
+        val hasMoreBatches = endExclusive < allMatchingTargets.size
 
         val online = isNetworkAvailable(context)
         val outcomes = coroutineScope {
-            targets.map { channel ->
-                async { fetchSingleChannelFeed(context, channel, forceRefresh, online) }
+            batchTargets.map { channel ->
+                async {
+                    rssConcurrencyLimiter.withPermit {
+                        fetchSingleChannelFeed(
+                            context = context,
+                            channel = channel,
+                            forceRefresh = forceRefresh,
+                            isOnline = online,
+                            minDurationSeconds = minDurationSeconds
+                        )
+                    }
+                }
             }.awaitAll()
         }
 
+        // Re-evaluate duration status with current threshold & player-verified cache
         val rawCombined = outcomes
             .flatMap { it.items }
             .distinctBy { it.id }
+            .map { item -> applyDurationPolicyMetadata(item, minDurationSeconds) }
             .sortedByDescending { it.publishedEpochMs }
 
-        val filteredByTopic = if (!channelKey.isNullOrBlank() || topic == null ||
+        // Single-pass topic filter
+        val topicFiltered = if (!channelKey.isNullOrBlank() || topic == null ||
             topic == LectureCategory.LATEST_LECTURES || topic == LectureCategory.POPULAR_SCHOLARS
         ) {
             rawCombined
@@ -827,28 +823,55 @@ object YouTubeRepository {
             rawCombined.filter { it.categories.contains(topic) }
         }
 
+        // Language group filter (never mixes English into Urdu/Hindi or Arabic unless ALL is selected)
+        val languageFiltered = if (languageGroup == LectureLanguageGroup.ALL) {
+            topicFiltered
+        } else {
+            topicFiltered.filter { it.languageGroup == languageGroup }
+        }
+
+        // Long-form duration policy filter (rejects all confirmed Shorts < minDurationSeconds or /shorts/ links)
+        val filteredShortsCount = languageFiltered.count {
+            it.durationStatus == DurationVerificationStatus.CONFIRMED_SHORT_REJECTED
+        }
+        val durationEligible = languageFiltered.filter { item ->
+            LectureDurationConfig.isEligibleForDisplay(item.durationStatus, durationPolicy)
+        }
+        val confirmedLongCount = durationEligible.count {
+            it.durationStatus == DurationVerificationStatus.CONFIRMED_LONG_FORM
+        }
+        val unverifiedDurationCount = durationEligible.count {
+            it.durationStatus == DurationVerificationStatus.UNVERIFIED_FROM_RSS
+        }
+
         buildFeedResult(
-            videos = filteredByTopic,
+            videos = durationEligible,
             outcomes = outcomes,
             online = online,
-            hadAnyRawItems = rawCombined.isNotEmpty()
+            hadAnyRawItems = rawCombined.isNotEmpty(),
+            loadedChannelCount = batchTargets.size,
+            totalMatchingChannels = allMatchingTargets.size,
+            hasMoreChannelBatches = hasMoreBatches,
+            filteredShortsCount = filteredShortsCount,
+            unverifiedDurationCount = unverifiedDurationCount,
+            confirmedLongFormCount = confirmedLongCount
         )
     }
 
     /**
-     * Fetches official Atom XML feeds for a specific verified channel key or all verified channels.
-     * If a non-blank [channelKey] does not match any verified channel, returns [FeedLoadStatus.INVALID_MAPPING]
-     * instead of silently fetching all channels.
+     * Fetches official Atom XML feeds for a specific verified channel key or all verified channels
+     * using bounded concurrency.
      */
     suspend fun fetchVerifiedChannelFeeds(
         context: Context,
         channelKey: String? = null,
         forceRefresh: Boolean = false
     ): LectureFeedResult = withContext(Dispatchers.IO) {
+        val verified = getVerifiedChannels(context)
         val targets = if (channelKey.isNullOrBlank()) {
-            VERIFIED_CHANNELS
+            verified
         } else {
-            val matched = VERIFIED_CHANNELS.filter { it.key == channelKey }
+            val matched = verified.filter { it.key == channelKey }
             if (matched.isEmpty()) {
                 return@withContext LectureFeedResult(
                     videos = emptyList(),
@@ -862,7 +885,11 @@ object YouTubeRepository {
         val online = isNetworkAvailable(context)
         val outcomes = coroutineScope {
             targets.map { channel ->
-                async { fetchSingleChannelFeed(context, channel, forceRefresh, online) }
+                async {
+                    rssConcurrencyLimiter.withPermit {
+                        fetchSingleChannelFeed(context, channel, forceRefresh, online)
+                    }
+                }
             }.awaitAll()
         }
 
@@ -875,7 +902,10 @@ object YouTubeRepository {
             videos = combined,
             outcomes = outcomes,
             online = online,
-            hadAnyRawItems = combined.isNotEmpty()
+            hadAnyRawItems = combined.isNotEmpty(),
+            loadedChannelCount = targets.size,
+            totalMatchingChannels = targets.size,
+            hasMoreChannelBatches = false
         )
     }
 
@@ -900,7 +930,11 @@ object YouTubeRepository {
         val online = isNetworkAvailable(context)
         val outcomes = coroutineScope {
             targets.map { channel ->
-                async { fetchSingleChannelFeed(context, channel, forceRefresh, online) }
+                async {
+                    rssConcurrencyLimiter.withPermit {
+                        fetchSingleChannelFeed(context, channel, forceRefresh, online)
+                    }
+                }
             }.awaitAll()
         }
 
@@ -918,18 +952,38 @@ object YouTubeRepository {
         ) {
             languageFiltered
         } else {
-            val byKeyword = languageFiltered.filter { item ->
+            languageFiltered.filter { item ->
                 val lower = item.title.lowercase(Locale.ROOT)
                 topicFilter.matchKeywords.any { kw -> lower.contains(kw) }
             }
-            byKeyword
         }
 
         buildFeedResult(
             videos = topicFiltered,
             outcomes = outcomes,
             online = online,
-            hadAnyRawItems = allItems.isNotEmpty()
+            hadAnyRawItems = allItems.isNotEmpty(),
+            loadedChannelCount = targets.size,
+            totalMatchingChannels = targets.size,
+            hasMoreChannelBatches = false
+        )
+    }
+
+    private fun applyDurationPolicyMetadata(
+        item: YouTubeVideoItem,
+        minDurationSeconds: Int
+    ): YouTubeVideoItem {
+        val knownDuration = item.durationSeconds ?: verifiedDurationCache[item.id]
+        val isShortsUrl = item.videoUrl.contains("/shorts/", ignoreCase = true) ||
+            item.durationStatus == DurationVerificationStatus.CONFIRMED_SHORT_REJECTED && knownDuration == null
+        val evaluated = LectureDurationConfig.evaluateDuration(
+            durationSeconds = knownDuration,
+            isShortsUrl = isShortsUrl,
+            minDurationSeconds = minDurationSeconds
+        )
+        return item.copy(
+            durationSeconds = knownDuration,
+            durationStatus = evaluated
         )
     }
 
@@ -937,7 +991,13 @@ object YouTubeRepository {
         videos: List<YouTubeVideoItem>,
         outcomes: List<ChannelFetchOutcome>,
         online: Boolean,
-        hadAnyRawItems: Boolean
+        hadAnyRawItems: Boolean,
+        loadedChannelCount: Int = outcomes.size,
+        totalMatchingChannels: Int = outcomes.size,
+        hasMoreChannelBatches: Boolean = false,
+        filteredShortsCount: Int = 0,
+        unverifiedDurationCount: Int = 0,
+        confirmedLongFormCount: Int = 0
     ): LectureFeedResult {
         val unavailable = outcomes.filter { it.unavailable }.map { it.channel.handle }
         val latestTimestamp = outcomes.maxOfOrNull { it.cacheTimestampMs } ?: 0L
@@ -967,7 +1027,13 @@ object YouTubeRepository {
             unavailableChannels = unavailable,
             lastUpdatedMs = latestTimestamp,
             isCacheExpired = anyExpiredCache && !anyFreshOnline,
-            errorMessage = errorDetail
+            errorMessage = errorDetail,
+            loadedChannelCount = loadedChannelCount,
+            totalMatchingChannels = totalMatchingChannels,
+            hasMoreChannelBatches = hasMoreChannelBatches,
+            filteredShortsCount = filteredShortsCount,
+            unverifiedDurationCount = unverifiedDurationCount,
+            confirmedLongFormCount = confirmedLongFormCount
         )
     }
 
@@ -975,9 +1041,11 @@ object YouTubeRepository {
         context: Context,
         channel: VerifiedIslamicChannel,
         forceRefresh: Boolean,
-        isOnline: Boolean
+        isOnline: Boolean,
+        minDurationSeconds: Int = LectureDurationConfig.MIN_LECTURE_DURATION_SECONDS
     ): ChannelFetchOutcome {
         if (!isValidChannelId(channel.channelId)) {
+            recordChannelFailure(channel.channelId, "Invalid channel ID format", ChannelFeedStatus.INVALID_RSS)
             return ChannelFetchOutcome(
                 channel = channel,
                 items = emptyList(),
@@ -989,6 +1057,7 @@ object YouTubeRepository {
             )
         }
 
+        val startGen = cacheGeneration.get()
         val now = nowMs()
         if (!forceRefresh) {
             val mem = memoryCache[channel.channelId]
@@ -1005,7 +1074,9 @@ object YouTubeRepository {
             val diskCached = loadChannelCache(context, channel.channelId)
             if (diskCached.second.isNotEmpty() && (now - diskCached.first) < CACHE_TTL_MS) {
                 val cachedList = diskCached.second.map { it.copy(isFromCache = true, isCacheExpired = false) }
-                memoryCache[channel.channelId] = diskCached.first to cachedList
+                if (cacheGeneration.get() == startGen) {
+                    memoryCache[channel.channelId] = diskCached.first to cachedList
+                }
                 return ChannelFetchOutcome(
                     channel = channel,
                     items = cachedList,
@@ -1013,6 +1084,22 @@ object YouTubeRepository {
                     cacheTimestampMs = diskCached.first,
                     isExpiredCache = false,
                     unavailable = false
+                )
+            }
+
+            // Respect exponential backoff cooldown for repeatedly failing channels (unless forceRefresh)
+            val health = channelHealthMap[channel.channelId]
+            if (health != null && health.isInBackoff(now)) {
+                val fallbackCache = loadChannelCache(context, channel.channelId)
+                val expired = fallbackCache.first > 0L && (now - fallbackCache.first) >= CACHE_TTL_MS
+                return ChannelFetchOutcome(
+                    channel = channel,
+                    items = fallbackCache.second.map { it.copy(isFromCache = true, isCacheExpired = expired) },
+                    fetchedOnline = false,
+                    cacheTimestampMs = fallbackCache.first,
+                    isExpiredCache = expired && fallbackCache.second.isNotEmpty(),
+                    unavailable = true,
+                    errorDetail = health.lastErrorMessage ?: "Channel temporarily in backoff cooldown."
                 )
             }
         }
@@ -1041,21 +1128,42 @@ object YouTubeRepository {
                 try {
                     val fetchResult = executeGetWithRetry(channel.feedUrl, maxAttempts = 2)
                     if (fetchResult.body != null) {
-                        val parsed = parseAtomFeedXml(fetchResult.body, channel)
+                        val parsed = parseAtomFeedXml(
+                            xml = fetchResult.body,
+                            channel = channel,
+                            minDurationSeconds = minDurationSeconds
+                        )
                         if (parsed.isNotEmpty()) {
                             val timestamp = nowMs()
-                            memoryCache[channel.channelId] = timestamp to parsed
-                            saveChannelCache(context, channel.channelId, timestamp, parsed)
+                            // Cumulatively merge newly discovered long-form lectures with previously cached
+                            // verified uploads for this channel (newest first, deduplicated by videoId,
+                            // zero confirmed Shorts) so every 30-minute refresh grows the real library.
+                            val priorCached = loadChannelCache(context, channel.channelId).second
+                                .map { applyDurationPolicyMetadata(it, minDurationSeconds) }
+                                .filter { it.durationStatus != DurationVerificationStatus.CONFIRMED_SHORT_REJECTED }
+                            val mergedForCache = (parsed + priorCached)
+                                .distinctBy { it.id }
+                                .filter { it.durationStatus != DurationVerificationStatus.CONFIRMED_SHORT_REJECTED }
+                                .sortedByDescending { it.publishedEpochMs }
+                                .take(MAX_CUMULATIVE_VIDEOS_PER_CHANNEL)
+                            val outcomeItems = (parsed + priorCached)
+                                .distinctBy { it.id }
+                                .sortedByDescending { it.publishedEpochMs }
+                                .take(MAX_CUMULATIVE_VIDEOS_PER_CHANNEL)
+                            if (cacheGeneration.get() == startGen) {
+                                memoryCache[channel.channelId] = timestamp to mergedForCache
+                                saveChannelCache(context, channel.channelId, timestamp, mergedForCache)
+                                recordChannelSuccess(channel.channelId, timestamp)
+                            }
                             ChannelFetchOutcome(
                                 channel = channel,
-                                items = parsed,
+                                items = outcomeItems,
                                 fetchedOnline = true,
                                 cacheTimestampMs = timestamp,
                                 isExpiredCache = false,
                                 unavailable = false
                             )
                         } else {
-                            // Empty or malformed feed XML — do not treat expired cache as fresh
                             val fallbackCache = loadChannelCache(context, channel.channelId)
                             val expired = fallbackCache.first > 0L && (nowMs() - fallbackCache.first) >= CACHE_TTL_MS
                             ChannelFetchOutcome(
@@ -1068,6 +1176,12 @@ object YouTubeRepository {
                             )
                         }
                     } else {
+                        val feedStatus = when {
+                            fetchResult.httpCode == 429 -> ChannelFeedStatus.RATE_LIMITED
+                            fetchResult.httpCode == 404 || fetchResult.httpCode == 410 -> ChannelFeedStatus.INVALID_RSS
+                            else -> ChannelFeedStatus.TEMPORARILY_UNAVAILABLE
+                        }
+                        recordChannelFailure(channel.channelId, fetchResult.errorMessage, feedStatus)
                         val fallbackCache = loadChannelCache(context, channel.channelId)
                         val expired = fallbackCache.first > 0L && (nowMs() - fallbackCache.first) >= CACHE_TTL_MS
                         ChannelFetchOutcome(
@@ -1080,6 +1194,8 @@ object YouTubeRepository {
                             errorDetail = fetchResult.errorMessage
                         )
                     }
+                } catch (ce: CancellationException) {
+                    throw ce
                 } finally {
                     inFlightRequests.remove(channel.channelId)
                 }
@@ -1089,10 +1205,129 @@ object YouTubeRepository {
         }
     }
 
-    private data class HttpFetchResult(val body: String? = null, val errorMessage: String? = null)
+    data class LectureCatalogRefreshSummary(
+        val channelsSwept: Int,
+        val totalCatalogChannels: Int,
+        val totalAccumulatedLectures: Int,
+        val newVideosAdded: Int
+    )
+
+    /**
+     * Sweeps a rotating batch of stale verified channels across the full 325+ Islamic Lectures
+     * catalog every ~30 minutes, cumulatively merging newly published real long-form lectures
+     * (never Shorts, never fake videos) into per-channel caches.
+     */
+    suspend fun refreshCumulativeLectureCatalog(
+        context: Context,
+        batchSize: Int = DEFAULT_BG_SWEEP_BATCH_SIZE,
+        forceAllChannels: Boolean = false
+    ): LectureCatalogRefreshSummary = withContext(Dispatchers.IO) {
+        ensureVerifiedDurationsLoaded(context)
+        val allChannels = getVerifiedChannels(context).filter { isValidChannelId(it.channelId) }
+        if (allChannels.isEmpty() || !isNetworkAvailable(context)) {
+            return@withContext LectureCatalogRefreshSummary(
+                channelsSwept = 0,
+                totalCatalogChannels = allChannels.size,
+                totalAccumulatedLectures = getAccumulatedLectureCount(context),
+                newVideosAdded = 0
+            )
+        }
+
+        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        val priorTotal = getAccumulatedLectureCount(context)
+        val targets = if (forceAllChannels) {
+            allChannels
+        } else {
+            val offset = prefs.getInt(KEY_LECTURE_BG_SWEEP_OFFSET, 0) % allChannels.size
+            val slice = (0 until minOf(batchSize.coerceAtLeast(1), allChannels.size)).map { idx ->
+                allChannels[(offset + idx) % allChannels.size]
+            }
+            val nextOffset = (offset + slice.size) % allChannels.size
+            prefs.edit().putInt(KEY_LECTURE_BG_SWEEP_OFFSET, nextOffset).apply()
+            slice
+        }
+
+        val outcomes = coroutineScope {
+            targets.map { channel ->
+                async {
+                    rssConcurrencyLimiter.withPermit {
+                        fetchSingleChannelFeed(
+                            context = context,
+                            channel = channel,
+                            forceRefresh = false,
+                            isOnline = true,
+                            minDurationSeconds = LectureDurationConfig.MIN_LECTURE_DURATION_SECONDS
+                        )
+                    }
+                }
+            }.awaitAll()
+        }
+
+        val sweptOnline = outcomes.count { it.fetchedOnline }
+        val newTotal = getAccumulatedLectureCount(context)
+        LectureCatalogRefreshSummary(
+            channelsSwept = sweptOnline,
+            totalCatalogChannels = allChannels.size,
+            totalAccumulatedLectures = newTotal,
+            newVideosAdded = (newTotal - priorTotal).coerceAtLeast(0)
+        )
+    }
+
+    /**
+     * Counts all unique verified non-short lectures currently accumulated across all verified channels.
+     */
+    fun getAccumulatedLectureCount(context: Context): Int {
+        val seenIds = HashSet<String>()
+        val channels = getVerifiedChannels(context)
+        for (ch in channels) {
+            val items = memoryCache[ch.channelId]?.second ?: loadChannelCache(context, ch.channelId).second
+            for (item in items) {
+                if (item.durationStatus != DurationVerificationStatus.CONFIRMED_SHORT_REJECTED) {
+                    seenIds.add(item.id)
+                }
+            }
+        }
+        return seenIds.size
+    }
+
+    private fun recordChannelSuccess(channelId: String, timestampMs: Long) {
+        channelHealthMap[channelId] = ChannelFeedHealth(
+            channelId = channelId,
+            lastFeedSuccessAtMs = timestampMs,
+            lastErrorAtMs = 0L,
+            consecutiveFailures = 0,
+            backoffUntilMs = 0L,
+            lastErrorMessage = null,
+            feedStatus = ChannelFeedStatus.HEALTHY
+        )
+    }
+
+    private fun recordChannelFailure(channelId: String, error: String?, status: ChannelFeedStatus) {
+        val now = nowMs()
+        val prev = channelHealthMap[channelId]
+        val failures = ((prev?.consecutiveFailures ?: 0) + 1).coerceAtMost(MAX_BACKOFF_FAILURES)
+        val exponent = (failures - 1).coerceAtLeast(0)
+        val backoffMs = (BASE_BACKOFF_MS shl exponent).coerceAtMost(MAX_BACKOFF_MS)
+        channelHealthMap[channelId] = ChannelFeedHealth(
+            channelId = channelId,
+            lastFeedSuccessAtMs = prev?.lastFeedSuccessAtMs ?: 0L,
+            lastErrorAtMs = now,
+            consecutiveFailures = failures,
+            backoffUntilMs = now + backoffMs,
+            lastErrorMessage = error,
+            feedStatus = status
+        )
+    }
+
+    private data class HttpFetchResult(
+        val body: String? = null,
+        val errorMessage: String? = null,
+        val httpCode: Int? = null
+    )
 
     private fun executeGetWithRetry(url: String, maxAttempts: Int = 2): HttpFetchResult {
         var lastErr = "Request failed"
+        var lastCode: Int? = null
         repeat(maxAttempts) { attempt ->
             try {
                 val request = Request.Builder()
@@ -1100,272 +1335,60 @@ object YouTubeRepository {
                     .get()
                     .build()
                 httpClient.newCall(request).execute().use { response ->
+                    lastCode = response.code
                     if (response.isSuccessful) {
-                        return HttpFetchResult(body = response.body?.string())
+                        return HttpFetchResult(body = response.body?.string(), httpCode = response.code)
                     }
                     lastErr = "HTTP ${response.code}"
                     Log.w(TAG, "RSS request returned HTTP ${response.code}")
-                    if (response.code == 404 || response.code == 410 || response.code in 400..499) {
-                        return HttpFetchResult(body = null, errorMessage = lastErr)
+                    if (response.code == 404 || response.code == 410 || response.code == 429 || response.code in 400..499) {
+                        return HttpFetchResult(body = null, errorMessage = lastErr, httpCode = response.code)
                     }
                 }
             } catch (e: Exception) {
                 lastErr = e::class.java.simpleName
                 Log.w(TAG, "RSS request attempt ${attempt + 1} failed: ${e::class.java.simpleName}")
                 if (attempt == maxAttempts - 1) {
-                    return HttpFetchResult(body = null, errorMessage = lastErr)
+                    return HttpFetchResult(body = null, errorMessage = lastErr, httpCode = lastCode)
                 }
             }
         }
-        return HttpFetchResult(body = null, errorMessage = lastErr)
+        return HttpFetchResult(body = null, errorMessage = lastErr, httpCode = lastCode)
     }
 
     /**
      * Parses an official YouTube Atom XML feed (`https://www.youtube.com/feeds/videos.xml?channel_id=...`).
-     * Validates video IDs (`^[A-Za-z0-9_-]{11}$`), skips malformed entries, deduplicates IDs, and sorts newest first.
      */
     fun parseAtomFeedXml(
         xml: String,
-        channel: VerifiedIslamicChannel? = null
-    ): List<YouTubeVideoItem> {
-        val cleanXml = xml.trimStart('\uFEFF', ' ', '\t', '\r', '\n').trim()
-        if (cleanXml.isBlank()) return emptyList()
-        val items = mutableListOf<YouTubeVideoItem>()
+        channel: VerifiedIslamicChannel? = null,
+        minDurationSeconds: Int = LectureDurationConfig.MIN_LECTURE_DURATION_SECONDS
+    ): List<YouTubeVideoItem> = YouTubeRssParser.parseAtomFeedXml(
+        xml = xml,
+        channel = channel,
+        minDurationSeconds = minDurationSeconds,
+        verifiedDurationLookup = { vid -> verifiedDurationCache[vid] }
+    )
 
-        try {
-            val factory = XmlPullParserFactory.newInstance()
-            factory.isNamespaceAware = true
-            val parser = factory.newPullParser()
-            parser.setInput(StringReader(cleanXml))
-
-            var eventType = parser.eventType
-            var insideEntry = false
-            var insideAuthor = false
-            var feedTitle = ""
-
-            var entryVideoId = ""
-            var entryTitle = ""
-            var entryAuthor = ""
-            var entryPublished = ""
-            var entryThumbnail = ""
-            var entryLink = ""
-
-            while (eventType != XmlPullParser.END_DOCUMENT) {
-                when (eventType) {
-                    XmlPullParser.START_TAG -> {
-                        val name = parser.name ?: ""
-                        when {
-                            name == "title" && !insideEntry -> {
-                                feedTitle = parser.nextText().trim()
-                            }
-                            name == "entry" -> {
-                                insideEntry = true
-                                entryVideoId = ""
-                                entryTitle = ""
-                                entryAuthor = ""
-                                entryPublished = ""
-                                entryThumbnail = ""
-                                entryLink = ""
-                            }
-                            insideEntry -> {
-                                when {
-                                    name == "videoId" -> {
-                                        entryVideoId = parser.nextText().trim()
-                                    }
-                                    name == "title" -> {
-                                        entryTitle = parser.nextText().trim()
-                                    }
-                                    name == "author" -> {
-                                        insideAuthor = true
-                                    }
-                                    name == "name" && insideAuthor -> {
-                                        entryAuthor = parser.nextText().trim()
-                                    }
-                                    name == "published" -> {
-                                        entryPublished = parser.nextText().trim()
-                                    }
-                                    name == "thumbnail" -> {
-                                        val urlAttr = parser.getAttributeValue(null, "url")?.trim().orEmpty()
-                                        if (urlAttr.startsWith("https://") && entryThumbnail.isBlank()) {
-                                            entryThumbnail = urlAttr
-                                        }
-                                    }
-                                    name == "link" -> {
-                                        val rel = parser.getAttributeValue(null, "rel") ?: "alternate"
-                                        val href = parser.getAttributeValue(null, "href")?.trim().orEmpty()
-                                        if (rel == "alternate" && href.isNotBlank()) {
-                                            entryLink = href
-                                            if (entryVideoId.isBlank() && href.contains("v=")) {
-                                                entryVideoId = href.substringAfter("v=").substringBefore("&").trim()
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    XmlPullParser.END_TAG -> {
-                        val name = parser.name ?: ""
-                        if (name == "author" && insideAuthor) {
-                            insideAuthor = false
-                        } else if (name == "entry" && insideEntry) {
-                            insideEntry = false
-                            if (isValidVideoId(entryVideoId) && entryTitle.isNotBlank()) {
-                                val resolvedChannelName = entryAuthor.ifBlank {
-                                    channel?.nameEn ?: feedTitle.ifBlank { "Verified Channel" }
-                                }
-                                val thumb = entryThumbnail.ifBlank {
-                                    "https://i.ytimg.com/vi/$entryVideoId/hqdefault.jpg"
-                                }
-                                val videoLink = entryLink.ifBlank {
-                                    "https://www.youtube.com/watch?v=$entryVideoId"
-                                }
-                                val epochMs = parseIsoDateEpoch(entryPublished)
-                                val displayDate = formatIsoDateShort(entryPublished)
-                                val categories = classifyLectureCategories(entryTitle, channel)
-                                val verifiedPodcastLang = verifyPodcastLanguageFromContent(
-                                    title = entryTitle,
-                                    channelName = resolvedChannelName
-                                )
-                                val resolvedLangCode = when (verifiedPodcastLang) {
-                                    PodcastLanguageSection.URDU -> "ur"
-                                    PodcastLanguageSection.ARABIC -> "ar"
-                                    PodcastLanguageSection.ENGLISH -> "en"
-                                    PodcastLanguageSection.LANGUAGE_NOT_VERIFIED -> channel?.languageCode ?: "und"
-                                }
-
-                                items.add(
-                                    YouTubeVideoItem(
-                                        id = entryVideoId,
-                                        title = entryTitle,
-                                        channel = resolvedChannelName,
-                                        channelId = channel?.channelId ?: "",
-                                        channelKey = channel?.key ?: "",
-                                        thumbnail = thumb,
-                                        publishedIso = entryPublished,
-                                        publishedDisplay = displayDate,
-                                        publishedEpochMs = epochMs,
-                                        videoUrl = videoLink,
-                                        languageCode = resolvedLangCode,
-                                        verifiedPodcastLanguage = verifiedPodcastLang,
-                                        categories = categories,
-                                        isFromCache = false,
-                                        isCacheExpired = false
-                                    )
-                                )
-                            }
-                        }
-                    }
-                }
-                eventType = parser.next()
-            }
-        } catch (e: Exception) {
-            Log.w(TAG, "Atom feed XML parse error: ${e::class.java.simpleName}")
-            return items
-        }
-
-        return items.distinctBy { it.id }.sortedByDescending { it.publishedEpochMs }
-    }
-
-    /**
-     * Inspects actual RSS entry title & metadata to verify podcast language reliably.
-     * Never guesses from channel name alone and never mislabels English titles as Urdu or Arabic.
-     * Ambiguous/unverifiable titles are placed into [PodcastLanguageSection.LANGUAGE_NOT_VERIFIED].
-     */
     fun verifyPodcastLanguageFromContent(
         title: String,
         channelName: String = ""
-    ): PodcastLanguageSection {
-        val clean = title.trim()
-        if (clean.isBlank()) return PodcastLanguageSection.LANGUAGE_NOT_VERIFIED
+    ): PodcastLanguageSection = YouTubeRssParser.verifyPodcastLanguageFromContent(title, channelName)
 
-        val urduOnlyChars = setOf('ٹ', 'ڈ', 'ڑ', 'ں', 'ے', 'ھ', 'پ', 'چ', 'ژ', 'گ', 'ک', 'ی', 'ہ')
-        val arabicDistinctChars = setOf('ة', 'ي', 'ك', 'أ', 'إ', 'ؤ', 'ئ', 'ى')
-
-        val arabicScriptCount = clean.count { it in '\u0600'..'\u06FF' }
-        val latinLetterCount = clean.count { it in 'a'..'z' || it in 'A'..'Z' }
-
-        if (arabicScriptCount >= 4) {
-            val hasUrduSpecific = clean.any { it in urduOnlyChars }
-            val hasArabicDistinct = clean.any { it in arabicDistinctChars }
-            return when {
-                hasUrduSpecific && !hasArabicDistinct -> PodcastLanguageSection.URDU
-                hasUrduSpecific && clean.any { it in setOf('ٹ', 'ڈ', 'ڑ', 'ں', 'ے', 'ھ', 'پ', 'چ', 'گ') } -> PodcastLanguageSection.URDU
-                hasArabicDistinct || arabicScriptCount >= 6 -> PodcastLanguageSection.ARABIC
-                else -> PodcastLanguageSection.LANGUAGE_NOT_VERIFIED
-            }
-        }
-
-        if (latinLetterCount < 4) {
-            return PodcastLanguageSection.LANGUAGE_NOT_VERIFIED
-        }
-
-        // Tokenize Latin words for deterministic Roman Urdu vs English verification
-        val tokens = clean.lowercase(Locale.ROOT)
-            .split(Regex("[^a-z0-9']+"))
-            .filter { it.isNotBlank() }
-            .toSet()
-
-        val romanUrduMarkers = setOf(
-            "ki", "ka", "ke", "ko", "se", "par", "pe", "mein", "main", "hai", "hain", "tha", "thi",
-            "nahi", "kya", "kyu", "kiu", "kyun", "kaise", "kaisa", "kro", "karo", "karen", "apni",
-            "apna", "apne", "aap", "hum", "tum", "woh", "ye", "yeh", "bayan", "masail", "talaq",
-            "hifazat", "sehat", "madad", "muhabbat", "mohabbat", "dosti", "zindagi", "waqia",
-            "rula", "dene", "wala", "paak", "sabr", "namaz", "duniya", "akhirat", "qabar",
-            "daawa", "ahl", "teen", "khatam", "aaj", "kal", "raaz", "dil", "sabak", "tarbiyat"
-        )
-        val urduHits = tokens.count { it in romanUrduMarkers }
-        if (urduHits >= 2) {
-            return PodcastLanguageSection.URDU
-        }
-        // Single strong Roman Urdu word combined with known Urdu speaker keywords
-        val lowerFull = "$clean $channelName".lowercase(Locale.ROOT)
-        if (urduHits == 1 && (lowerFull.contains("bayan") || lowerFull.contains("masood") ||
-                lowerFull.contains("jamil") || lowerFull.contains("qadri") || lowerFull.contains("urdu"))
-        ) {
-            return PodcastLanguageSection.URDU
-        }
-
-        val englishMarkers = setOf(
-            "the", "and", "for", "with", "from", "that", "this", "what", "why", "how", "when",
-            "who", "where", "which", "are", "was", "were", "have", "has", "not", "you", "your",
-            "about", "never", "ever", "there", "here", "must", "should", "would", "could",
-            "into", "over", "under", "role", "miracle", "ep", "episode", "podcast", "muslim",
-            "muslims", "islam", "islamic", "prophet", "prayer", "sinning", "mother", "patience",
-            "faith", "belief", "perfection", "mental", "depression", "revival", "people", "life",
-            "best", "mind", "honor", "loss", "train", "good", "being", "real", "hardest", "days"
-        )
-        val englishHits = tokens.count { it in englishMarkers }
-        if (englishHits >= 2 || (englishHits >= 1 && tokens.size >= 4 && urduHits == 0)) {
-            return PodcastLanguageSection.ENGLISH
-        }
-
-        return PodcastLanguageSection.LANGUAGE_NOT_VERIFIED
-    }
+    fun detectVideoLanguageGroup(
+        title: String,
+        description: String = "",
+        channel: VerifiedIslamicChannel? = null
+    ): LectureLanguageGroup = YouTubeRssParser.detectVideoLanguageGroup(title, description, channel)
 
     internal fun classifyLectureCategories(
         title: String,
-        channel: VerifiedIslamicChannel?
-    ): List<LectureCategory> {
-        val lower = title.lowercase(Locale.ROOT)
-        val matched = LinkedHashSet<LectureCategory>()
-        matched.add(LectureCategory.LATEST_LECTURES)
-
-        if (channel != null && LectureCategory.POPULAR_SCHOLARS in channel.primaryCategories) {
-            matched.add(LectureCategory.POPULAR_SCHOLARS)
-        }
-
-        LectureCategory.entries.forEach { cat ->
-            if (cat.matchKeywords.isNotEmpty() && cat.matchKeywords.any { kw -> lower.contains(kw) }) {
-                matched.add(cat)
-            }
-        }
-
-        return matched.toList()
-    }
+        channel: VerifiedIslamicChannel?,
+        description: String = ""
+    ): List<LectureCategory> = YouTubeRssParser.classifyLectureCategories(title, description, channel)
 
     /**
-     * Searches ONLY across real verified feed items (scholar, title, channel, category keywords, language).
+     * Searches ONLY across real verified feed items (scholar, title, description, channel, category keywords, language).
      * Never returns fake unrelated fallback videos when nothing matches.
      */
     fun searchLocalVerifiedLectures(
@@ -1373,12 +1396,20 @@ object YouTubeRepository {
         query: String = "",
         category: LectureCategory? = null,
         channelKey: String? = null,
-        languageFilter: String? = null
+        languageFilter: String? = null,
+        languageGroupFilter: LectureLanguageGroup? = null
     ): List<YouTubeVideoItem> {
         val trimmed = query.trim().lowercase(Locale.ROOT)
+        val effectiveGroup = languageGroupFilter ?: when {
+            languageFilter.isNullOrBlank() -> null
+            else -> LectureLanguageGroup.fromCode(languageFilter)
+        }
         return items.filter { item ->
             val matchesChannel = channelKey.isNullOrBlank() || item.channelKey == channelKey
-            val matchesLang = languageFilter.isNullOrBlank() || item.languageCode.equals(languageFilter, ignoreCase = true)
+            val matchesLang = when (effectiveGroup) {
+                null, LectureLanguageGroup.ALL -> true
+                else -> item.languageGroup == effectiveGroup
+            }
             val matchesCat = when (category) {
                 null, LectureCategory.LATEST_LECTURES, LectureCategory.POPULAR_SCHOLARS -> true
                 else -> item.categories.contains(category)
@@ -1390,6 +1421,7 @@ object YouTubeRepository {
             val channelMeta = VERIFIED_CHANNELS.firstOrNull { it.key == item.channelKey }
             val searchableFields = listOfNotNull(
                 item.title,
+                item.description,
                 item.channel,
                 item.publishedDisplay,
                 item.languageCode,
@@ -1406,20 +1438,25 @@ object YouTubeRepository {
     }
 
     /**
-     * Checks official public YouTube RSS feeds for the Saudi Makkah / Madinah broadcaster channels.
+     * Checks live broadcast availability for Makkah (Masjid al-Haram) or Madinah (Masjid an-Nabawi)
+     * across the ordered 3-source chain (Official Saudi YouTube -> Quran Hayat HLS -> Haramain Voice),
+     * plus recent recorded official RSS uploads kept strictly separate from live status.
      *
-     * STRICT ZERO-API-KEY POLICY:
-     * - Zero YouTube HTML scraping (`channel/<id>/live` HTML is never scraped).
-     * - Zero fabricated LIVE badges or hardcoded stream video IDs.
-     * - Official channel RSS (`feeds/videos.xml`) provides recent uploaded/recorded broadcasts ONLY;
-     *   active live stream status cannot be confirmed without YouTube Data API v3 credentials.
-     * - Recorded RSS uploads are clearly returned as [recentRecordedUploads] and never presented as LIVE.
+     * Honesty rules:
+     * - NEVER treats a recent recorded RSS upload as a live broadcast.
+     * - NEVER returns [LiveBroadcastState.LIVE_CONFIRMED] merely from HTTP 200; returns
+     *   [LiveBroadcastState.CONNECTING] with the resolved candidate source until the actual
+     *   in-app player confirms active live playback.
+     * - Returns [LiveBroadcastState.OFFLINE] when disconnected and [LiveBroadcastState.SOURCE_UNAVAILABLE]
+     *   when all supported live sources fail.
      */
     suspend fun checkHarameynLiveStatus(
         context: Context,
-        location: HarameynLocation
+        location: HarameynLocation,
+        startFromSourceIndex: Int = 0
     ): LiveStreamStatusResult = withContext(Dispatchers.IO) {
         val channel = HARAMEYN_CHANNELS.getValue(location)
+        val orderedSources = HarameynLiveSources.sourcesFor(location)
 
         if (!isNetworkAvailable(context)) {
             return@withContext LiveStreamStatusResult(
@@ -1430,44 +1467,99 @@ object YouTubeRepository {
                 streamTitle = channel.nameEn,
                 watchOnYouTubeUrl = channel.officialChannelUrl,
                 isEmbeddableConfirmed = false,
-                statusDetail = "Offline — connect to internet to check official channel feed."
+                statusDetail = "Offline — connect to internet to watch the live broadcast.",
+                resolvedSource = null,
+                sourceAttempts = orderedSources.map {
+                    LiveSourceAttempt(it, LiveSourceAttemptStatus.PENDING)
+                }
             )
         }
 
-        val rssResult = executeGetWithRetry(channel.feedUrl, maxAttempts = 2)
-        if (rssResult.body == null) {
+        val attempts = orderedSources.mapIndexed { idx, src ->
+            if (idx < startFromSourceIndex) {
+                LiveSourceAttempt(src, LiveSourceAttemptStatus.FAILED, "Skipped after prior failure")
+            } else {
+                LiveSourceAttempt(src, LiveSourceAttemptStatus.PENDING)
+            }
+        }.toMutableList()
+
+        var resolved: ResolvedLiveStreamSource? = null
+        var lastError: String? = null
+
+        for (idx in startFromSourceIndex.coerceAtLeast(0) until orderedSources.size) {
+            val candidate = orderedSources[idx]
+            attempts[idx] = LiveSourceAttempt(candidate, LiveSourceAttemptStatus.TESTING, "Probing source")
+            val outcome = HarameynLiveSourceResolver.probeSource(candidate, httpClient)
+            if (outcome.resolved != null) {
+                resolved = outcome.resolved
+                attempts[idx] = LiveSourceAttempt(
+                    candidate,
+                    LiveSourceAttemptStatus.TESTING,
+                    "Awaiting player playback confirmation"
+                )
+                break
+            } else {
+                lastError = outcome.failureReason ?: "Source unavailable"
+                attempts[idx] = LiveSourceAttempt(candidate, LiveSourceAttemptStatus.FAILED, lastError)
+            }
+        }
+
+        val recordedUploads = fetchHarameynRecordedUploadsInternal(channel)
+
+        if (resolved != null) {
             return@withContext LiveStreamStatusResult(
                 location = location,
                 channel = channel,
-                state = LiveBroadcastState.CURRENTLY_UNAVAILABLE,
-                verifiedVideoId = null,
-                streamTitle = channel.nameEn,
-                watchOnYouTubeUrl = channel.officialChannelUrl,
+                state = LiveBroadcastState.CONNECTING,
+                verifiedVideoId = resolved.youtubeVideoId,
+                streamTitle = resolved.resolvedTitle.ifBlank { channel.nameEn },
+                publishedDisplay = recordedUploads.firstOrNull()?.publishedDisplay.orEmpty(),
+                watchOnYouTubeUrl = resolved.externalOpenUrl,
                 isEmbeddableConfirmed = false,
-                statusDetail = rssResult.errorMessage ?: "Official channel feed currently unavailable."
+                recentRecordedUploads = recordedUploads,
+                statusDetail = "Connecting to ${resolved.config.labelEn} — waiting for active playback confirmation.",
+                resolvedSource = resolved,
+                sourceAttempts = attempts
             )
         }
 
-        val channelMeta = VERIFIED_CHANNELS.firstOrNull { it.channelId == channel.channelId }
-        val recordedUploads = parseAtomFeedXml(rssResult.body, channelMeta).take(6)
+        val finalState = if (recordedUploads.isNotEmpty()) {
+            LiveBroadcastState.LIVE_STATUS_UNCONFIRMED
+        } else {
+            LiveBroadcastState.SOURCE_UNAVAILABLE
+        }
 
         LiveStreamStatusResult(
             location = location,
             channel = channel,
-            state = LiveBroadcastState.LIVE_STATUS_UNCONFIRMED,
+            state = finalState,
             verifiedVideoId = null,
             streamTitle = channel.nameEn,
             publishedDisplay = recordedUploads.firstOrNull()?.publishedDisplay.orEmpty(),
             watchOnYouTubeUrl = channel.officialChannelUrl,
             isEmbeddableConfirmed = false,
             recentRecordedUploads = recordedUploads,
-            statusDetail = "Official RSS reachable; live stream status cannot be confirmed without YouTube Data API credentials."
+            statusDetail = lastError ?: "All supported live sources are currently unavailable.",
+            resolvedSource = null,
+            sourceAttempts = attempts
         )
     }
 
-    /**
-     * Checks official YouTube oEmbed endpoint to verify a video exists and returns embeddable metadata.
-     */
+    suspend fun fetchHarameynRecordedUploads(
+        context: Context,
+        location: HarameynLocation
+    ): List<YouTubeVideoItem> = withContext(Dispatchers.IO) {
+        if (!isNetworkAvailable(context)) return@withContext emptyList()
+        fetchHarameynRecordedUploadsInternal(HARAMEYN_CHANNELS.getValue(location))
+    }
+
+    private fun fetchHarameynRecordedUploadsInternal(channel: HarameynStreamChannel): List<YouTubeVideoItem> {
+        val rssResult = executeGetWithRetry(channel.feedUrl, maxAttempts = 1)
+        val body = rssResult.body ?: return emptyList()
+        val channelMeta = VERIFIED_CHANNELS.firstOrNull { it.channelId == channel.channelId }
+        return parseAtomFeedXml(body, channelMeta).take(6)
+    }
+
     fun fetchOEmbedJson(videoId: String): JSONObject? {
         if (!isValidVideoId(videoId)) return null
         val url = "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=$videoId&format=json"
@@ -1487,6 +1579,47 @@ object YouTubeRepository {
             sdf.format(Date(timestampMs))
         } catch (_: Exception) {
             ""
+        }
+    }
+
+    // =========================================================
+    // REAL PLAYER-VERIFIED DURATION CACHE (NEVER FABRICATED)
+    // =========================================================
+
+    fun recordPlayerVerifiedDuration(context: Context, videoId: String, durationSeconds: Int) {
+        if (!isValidVideoId(videoId) || durationSeconds <= 0) return
+        verifiedDurationCache[videoId] = durationSeconds
+        try {
+            val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            val raw = prefs.getString(KEY_VERIFIED_DURATIONS_JSON, "{}") ?: "{}"
+            val json = runCatching { JSONObject(raw) }.getOrDefault(JSONObject())
+            json.put(videoId, durationSeconds)
+            prefs.edit().putString(KEY_VERIFIED_DURATIONS_JSON, json.toString()).apply()
+        } catch (e: Exception) {
+            Log.w(TAG, "Failed saving verified duration: ${e::class.java.simpleName}")
+        }
+    }
+
+    fun getPlayerVerifiedDuration(context: Context, videoId: String): Int? {
+        ensureVerifiedDurationsLoaded(context)
+        return verifiedDurationCache[videoId]
+    }
+
+    private fun ensureVerifiedDurationsLoaded(context: Context) {
+        if (verifiedDurationCache.isNotEmpty()) return
+        try {
+            val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            val raw = prefs.getString(KEY_VERIFIED_DURATIONS_JSON, null) ?: return
+            val json = JSONObject(raw)
+            val keys = json.keys()
+            while (keys.hasNext()) {
+                val key = keys.next()
+                val sec = json.optInt(key, -1)
+                if (isValidVideoId(key) && sec > 0) {
+                    verifiedDurationCache[key] = sec
+                }
+            }
+        } catch (_: Exception) {
         }
     }
 
@@ -1582,8 +1715,13 @@ object YouTubeRepository {
     }
 
     fun clearTestCaches() {
+        cacheGeneration.incrementAndGet()
+        inFlightRequests.values.forEach { it.cancel() }
         memoryCache.clear()
         inFlightRequests.clear()
+        channelHealthMap.clear()
+        verifiedDurationCache.clear()
+        ChannelCatalogLoader.clearCacheForTest()
     }
 
     private fun serializeVideosJson(items: List<YouTubeVideoItem>): String {
@@ -1597,12 +1735,18 @@ object YouTubeRepository {
                 put("channelKey", item.channelKey)
                 put("thumbnail", item.thumbnail)
                 put("publishedIso", item.publishedIso)
+                put("updatedIso", item.updatedIso)
                 put("publishedDisplay", item.publishedDisplay)
                 put("publishedEpochMs", item.publishedEpochMs)
                 put("videoUrl", item.videoUrl)
+                put("description", item.description)
                 put("languageCode", item.languageCode)
+                put("languageGroup", item.languageGroup.id)
                 put("verifiedPodcastLanguage", item.verifiedPodcastLanguage.id)
                 put("categories", JSONArray(item.categories.map { it.id }))
+                if (item.durationSeconds != null) put("durationSeconds", item.durationSeconds)
+                put("durationStatus", item.durationStatus.wireValue)
+                if (item.viewCount != null) put("viewCount", item.viewCount)
             }
             arr.put(obj)
         }
@@ -1626,9 +1770,32 @@ object YouTubeRepository {
             }
             val title = obj.optString("title")
             val channel = obj.optString("channel")
+            val description = obj.optString("description", "")
             val storedPodcastLang = obj.optString("verifiedPodcastLanguage", "")
             val verifiedLang = PodcastLanguageSection.entries.firstOrNull { it.id == storedPodcastLang }
                 ?: verifyPodcastLanguageFromContent(title, channel)
+            val storedLangGroup = obj.optString("languageGroup", "")
+            val resolvedGroup = if (storedLangGroup.isNotBlank()) {
+                LectureLanguageGroup.fromCode(storedLangGroup)
+            } else {
+                val chMeta = VERIFIED_CHANNELS.firstOrNull { it.key == obj.optString("channelKey") }
+                detectVideoLanguageGroup(title, description, chMeta)
+            }
+            val durSec = if (obj.has("durationSeconds") && !obj.isNull("durationSeconds")) {
+                obj.optInt("durationSeconds", -1).takeIf { it > 0 }
+            } else {
+                null
+            }
+            val durStatus = if (obj.has("durationStatus")) {
+                DurationVerificationStatus.fromWire(obj.optString("durationStatus"))
+            } else {
+                LectureDurationConfig.evaluateDuration(durSec, obj.optString("videoUrl").contains("/shorts/"))
+            }
+            val views = if (obj.has("viewCount") && !obj.isNull("viewCount")) {
+                obj.optLong("viewCount", -1L).takeIf { it >= 0L }
+            } else {
+                null
+            }
 
             result.add(
                 YouTubeVideoItem(
@@ -1639,12 +1806,18 @@ object YouTubeRepository {
                     channelKey = obj.optString("channelKey"),
                     thumbnail = obj.optString("thumbnail"),
                     publishedIso = obj.optString("publishedIso"),
+                    updatedIso = obj.optString("updatedIso", ""),
                     publishedDisplay = obj.optString("publishedDisplay"),
                     publishedEpochMs = obj.optLong("publishedEpochMs", 0L),
                     videoUrl = obj.optString("videoUrl", "https://www.youtube.com/watch?v=$id"),
-                    languageCode = obj.optString("languageCode", "en"),
+                    description = description,
+                    languageCode = obj.optString("languageCode", "und"),
+                    languageGroup = resolvedGroup,
                     verifiedPodcastLanguage = verifiedLang,
                     categories = cats.ifEmpty { listOf(LectureCategory.LATEST_LECTURES) },
+                    durationSeconds = durSec,
+                    durationStatus = durStatus,
+                    viewCount = views,
                     isFromCache = true,
                     isCacheExpired = false
                 )
@@ -1653,34 +1826,7 @@ object YouTubeRepository {
         return result
     }
 
-    internal fun parseIsoDateEpoch(iso: String): Long {
-        if (iso.isBlank()) return 0L
-        val normalized = iso.replace("Z", "+0000")
-            .replace(Regex("([+-]\\d\\d):(\\d\\d)$"), "$1$2")
-        val patterns = listOf(
-            "yyyy-MM-dd'T'HH:mm:ssZ",
-            "yyyy-MM-dd'T'HH:mm:ss.SSSZ",
-            "yyyy-MM-dd"
-        )
-        for (pattern in patterns) {
-            try {
-                val sdf = SimpleDateFormat(pattern, Locale.US).apply {
-                    timeZone = TimeZone.getTimeZone("UTC")
-                }
-                val parsed = sdf.parse(normalized)
-                if (parsed != null) return parsed.time
-            } catch (_: Exception) {
-            }
-        }
-        return 0L
-    }
+    internal fun parseIsoDateEpoch(iso: String): Long = YouTubeRssParser.parseIsoDateEpoch(iso)
 
-    internal fun formatIsoDateShort(iso: String): String {
-        if (iso.isBlank()) return ""
-        return if (iso.length >= 10 && iso[4] == '-' && iso[7] == '-') {
-            iso.substring(0, 10)
-        } else {
-            iso.take(16)
-        }
-    }
+    internal fun formatIsoDateShort(iso: String): String = YouTubeRssParser.formatIsoDateShort(iso)
 }

@@ -604,17 +604,20 @@ fun ZakatResultSection(
         // Action Buttons: Edit Inputs / Recalculate / Reset
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.fillMaxWidth()
         ) {
             OutlinedButton(
                 onClick = onEditInputs,
+                shape = RoundedCornerShape(12.dp),
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp),
                 modifier = Modifier
                     .weight(1f)
                     .heightIn(min = 48.dp)
                     .testTag("zakat_edit_inputs_button")
             ) {
-                Icon(Icons.Default.Edit, contentDescription = null, modifier = Modifier.size(18.dp))
-                Spacer(modifier = Modifier.width(6.dp))
+                Icon(Icons.Default.Edit, contentDescription = null, modifier = Modifier.size(16.dp))
+                Spacer(modifier = Modifier.width(4.dp))
                 Text(
                     text = AppLocalization.get("zakat_edit_inputs", language),
                     maxLines = 1,
@@ -623,13 +626,15 @@ fun ZakatResultSection(
             }
             OutlinedButton(
                 onClick = onRecalculate,
+                shape = RoundedCornerShape(12.dp),
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp),
                 modifier = Modifier
                     .weight(1f)
                     .heightIn(min = 48.dp)
                     .testTag("zakat_recalculate_button")
             ) {
-                Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(18.dp))
-                Spacer(modifier = Modifier.width(6.dp))
+                Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
+                Spacer(modifier = Modifier.width(4.dp))
                 Text(
                     text = AppLocalization.get("zakat_recalculate", language),
                     maxLines = 1,
@@ -638,13 +643,19 @@ fun ZakatResultSection(
             }
             TextButton(
                 onClick = onReset,
+                contentPadding = PaddingValues(horizontal = 8.dp, vertical = 6.dp),
                 modifier = Modifier
+                    .widthIn(max = 110.dp)
                     .heightIn(min = 48.dp)
                     .testTag("zakat_reset_button")
             ) {
-                Icon(Icons.Default.RestartAlt, contentDescription = null, modifier = Modifier.size(18.dp))
+                Icon(Icons.Default.RestartAlt, contentDescription = null, modifier = Modifier.size(16.dp))
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(AppLocalization.get("zakat_reset", language))
+                Text(
+                    text = AppLocalization.get("zakat_reset", language),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
         }
 

@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import com.example.data.location.AppLocationManager
+import com.example.data.podcast.PodcastRefreshWorker
 import com.example.data.ramadan.RamadanDailyRefreshWorker
 import com.example.data.ramadan.RamadanRepository
 import com.example.data.repository.PrayerCalculator
@@ -37,5 +38,6 @@ class PrayerBootReceiver : BroadcastReceiver() {
             reason = "system_event:$action"
         )
         RamadanDailyRefreshWorker.schedulePeriodicRefresh(appCtx)
+        PodcastRefreshWorker.schedulePeriodicRefresh(appCtx)
     }
 }

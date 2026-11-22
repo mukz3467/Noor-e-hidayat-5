@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.data.location.UserLocation
@@ -255,11 +256,14 @@ fun RamadanDashboardTab(
                     Spacer(modifier = Modifier.height(10.dp))
                     Row(
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         OutlinedButton(
                             onClick = onRefreshTimings,
                             enabled = !state.isSyncingTimings,
+                            shape = RoundedCornerShape(12.dp),
+                            contentPadding = PaddingValues(horizontal = 10.dp, vertical = 8.dp),
                             modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("ram_refresh_timings_btn")
                         ) {
                             if (state.isSyncingTimings) {
@@ -268,15 +272,29 @@ fun RamadanDashboardTab(
                                 Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(18.dp))
                             }
                             Spacer(modifier = Modifier.width(6.dp))
-                            Text(AppLocalization.get("ram_refresh_timings", language), fontSize = 12.sp)
+                            Text(
+                                text = AppLocalization.get("ram_refresh_timings", language),
+                                fontSize = 12.sp,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
                         }
                         TextButton(
                             onClick = onOpenPrayerTimes,
-                            modifier = Modifier.heightIn(min = 48.dp).testTag("ram_open_prayer_settings_btn")
+                            contentPadding = PaddingValues(horizontal = 8.dp, vertical = 8.dp),
+                            modifier = Modifier
+                                .widthIn(max = 150.dp)
+                                .heightIn(min = 48.dp)
+                                .testTag("ram_open_prayer_settings_btn")
                         ) {
                             Icon(Icons.Default.LocationOn, contentDescription = null, modifier = Modifier.size(18.dp))
                             Spacer(modifier = Modifier.width(4.dp))
-                            Text(location.cityName, fontSize = 12.sp)
+                            Text(
+                                text = location.cityName,
+                                fontSize = 12.sp,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
                         }
                     }
                 }

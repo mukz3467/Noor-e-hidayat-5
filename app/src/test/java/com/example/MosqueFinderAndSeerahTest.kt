@@ -1111,4 +1111,161 @@ class MosqueFinderAndSeerahTest {
         assertEquals("04:30-22:00", nomItems.first().openingHours)
         assertEquals("Kotwali Road, Faisalabad", nomItems.first().address)
     }
+
+    @Test
+    fun mosqueMap_hdStyleAssetsZeroBlack_hiDpiPins_andAccuracyCircle() {
+        // 1. Validate both local HD satellite/hybrid MapLibre styles parse cleanly and prevent blackouts on zoom
+        listOf("mosque_hybrid_3d_style.json", "mosque_satellite_hd_style.json").forEach { assetName ->
+            val raw = appContext.assets.open(assetName).bufferedReader().use { it.readText() }
+            val json = org.json.JSONObject(raw)
+            val layers = json.getJSONArray("layers")
+            assertTrue("$assetName must have non-empty layers", layers.length() >= 5)
+
+            // First layer must be a non-black background layer so unloaded tiles never expose #000000 OpenGL canvas
+            val firstLayer = layers.getJSONObject(0)
+            assertEquals("background", firstLayer.getString("type"))
+            val bgColor = firstLayer.getJSONObject("paint").getString("background-color")
+            assertNotEquals("#000000", bgColor.lowercase())
+
+            // Every raster layer must have maxzoom >= 24 (never hides on zoom) and raster-fade-duration == 0 (no black flicker)
+            var rasterCount = 0
+            for (i in 0 until layers.length()) {
+                val layer = layers.getJSONObject(i)
+                if (layer.optString("type") == "raster") {
+                    rasterCount++
+                    assertTrue(
+                        "$assetName raster layer ${layer.getString("id")} must allow overzoom >= 24",
+                        layer.optInt("maxzoom", 24) >= 24
+                    )
+                    val paint = layer.getJSONObject("paint")
+                    assertEquals(0, paint.optInt("raster-fade-duration", -1))
+                }
+            }
+            assertTrue("$assetName must define at least one HD raster layer", rasterCount >= 1)
+        }
+
+        // 2. Verify Hybrid 3D Satellite style has real 3D lighting, Terrarium DEM hillshade, all-buildings 3D extrusion,
+        //    and smooth deep-zoom satellite cross-fade to 0.0 opacity so full zoom never blurs or smears
+        val hybridJson = org.json.JSONObject(
+            appContext.assets.open("mosque_hybrid_3d_style.json").bufferedReader().use { it.readText() }
+        )
+        assertTrue("mosque_hybrid_3d_style.json must define directional 3D light", hybridJson.has("light"))
+        val hybridSources = hybridJson.getJSONObject("sources")
+        assertTrue("mosque_hybrid_3d_style.json must define aws-terrarium-dem", hybridSources.has("aws-terrarium-dem"))
+        assertEquals("terrarium", hybridSources.getJSONObject("aws-terrarium-dem").getString("encoding"))
+
+        val hybridLayers = hybridJson.getJSONArray("layers")
+        var foundHillshade = false
+        var foundSolidBuilding3d = false
+        var foundSatelliteDeepZoomFade = false
+        for (i in 0 until hybridLayers.length()) {
+            val layer = hybridLayers.getJSONObject(i)
+            when (layer.optString("id")) {
+                "terrain-hillshade" -> {
+                    assertEquals("hillshade", layer.getString("type"))
+                    foundHillshade = true
+                }
+                "building-3d" -> {
+                    assertEquals("fill-extrusion", layer.getString("type"))
+                    val paint = layer.getJSONObject("paint")
+                    assertTrue(
+                        "building-3d must enable vertical gradient shading",
+                        paint.optBoolean("fill-extrusion-vertical-gradient", false)
+                    )
+                    val filterStr = layer.optJSONArray("filter")?.toString().orEmpty()
+                    assertFalse(
+                        "building-3d filter must include all mapped buildings, not exclude un-heighted buildings",
+                        filterStr.contains("\"has\",\"height\"") || filterStr.contains("\"has\",\"render_height\"")
+                    )
+                    foundSolidBuilding3d = true
+                }
+                "satellite-imagery-base" -> {
+                    val paint = layer.getJSONObject("paint")
+                    val opacityExpr = paint.optJSONArray("raster-opacity")?.toString().orEmpty()
+                    assertTrue(
+                        "satellite-imagery-base must cross-fade opacity to 0 at deep zoom so full zoom stays sharp",
+                        opacityExpr.contains("interpolate") && opacityExpr.endsWith(",0]")
+                    )
+                    foundSatelliteDeepZoomFade = true
+                }
+            }
+        }
+        assertTrue("terrain-hillshade layer missing", foundHillshade)
+        assertTrue("building-3d solid sunlit layer missing", foundSolidBuilding3d)
+        assertTrue("satellite-imagery-base deep-zoom fade missing", foundSatelliteDeepZoomFade)
+
+        // 2b. Verify both satellite styles use native MapLibre tileSize=256 and maxzoom=18 (avoiding grey Z19 placeholders & blur)
+        listOf("mosque_hybrid_3d_style.json" to "esri-world-imagery", "mosque_satellite_hd_style.json" to "esri-world-imagery-hd").forEach { (assetName, hdSourceId) ->
+            val styleJson = org.json.JSONObject(
+                appContext.assets.open(assetName).bufferedReader().use { it.readText() }
+            )
+            val hdSource = styleJson.getJSONObject("sources").getJSONObject(hdSourceId)
+            assertEquals("$assetName $hdSourceId must use native tileSize=256", 256, hdSource.getInt("tileSize"))
+            assertEquals("$assetName $hdSourceId must cap native fetch at Z18 Maxar tiles", 18, hdSource.getInt("maxzoom"))
+        }
+        val hybridLayerIds = (0 until hybridLayers.length()).map { hybridLayers.getJSONObject(it).optString("id") }.toSet()
+        assertTrue("arch-housenumbers layer missing", hybridLayerIds.contains("arch-housenumbers"))
+        assertTrue("arch-roads-minor-fill layer missing", hybridLayerIds.contains("arch-roads-minor-fill"))
+        assertTrue("arch-waterway layer missing", hybridLayerIds.contains("arch-waterway"))
+
+        // 3. Verify all MapStylePreset zoom ceilings match crisp rendering capabilities
+        MapStylePreset.entries.forEach { preset ->
+            assertTrue("${preset.id} maxCameraZoom must be in 17.5..21.0", preset.maxCameraZoom in 17.5..21.0)
+        }
+        assertEquals(21.0, MapStylePreset.HYBRID_3D.maxCameraZoom, 0.001)
+        assertEquals(17.5, MapStylePreset.SATELLITE_HD.maxCameraZoom, 0.001)
+        assertEquals("asset://mosque_satellite_hd_style.json", MapStylePreset.SATELLITE_HD.styleUrl)
+        assertFalse(MapStylePreset.SATELLITE_HD.hasBuiltIn3dLayer)
+        assertTrue(AppLocalization.get("mosque_street_view_3d", AppLanguage.ENGLISH).isNotBlank())
+        assertTrue(AppLocalization.get("mosque_street_view_3d", AppLanguage.URDU).isNotBlank())
+
+        // 4. Verify 2x HiDPI supersampled pin bitmaps
+        val pin = MapLibreRuntimeHelper.buildPinBitmap(android.graphics.Color.GREEN, android.graphics.Color.WHITE, false)
+        assertEquals(128, pin.width)
+        assertEquals(128, pin.height)
+        val teardrop = MapLibreRuntimeHelper.buildSelectedTeardropBitmap()
+        assertEquals(160, teardrop.width)
+        assertEquals(196, teardrop.height)
+
+        // 5. Verify real-scale GPS accuracy circle polygon ring is closed & matches requested radius
+        val ring = MapLibreRuntimeHelper.buildAccuracyCircleRing(31.4504, 73.1350, 25f)
+        assertEquals(49, ring.size)
+        assertEquals(ring.first().latitude(), ring.last().latitude(), 0.000001)
+        assertEquals(ring.first().longitude(), ring.last().longitude(), 0.000001)
+        assertTrue(ring.any { it.latitude() > 31.4504 } && ring.any { it.latitude() < 31.4504 })
+    }
+
+    @Test
+    fun nominatimService_countrySearchResolvesToMajorCitiesNotRuralCentroid() {
+        runBlocking {
+            // Production path (endpointForTest == null): searching "Pakistan" or "پاکستان" must land in Islamabad + major cities
+            val pkRes = NominatimGeocoderService.searchSubmittedArea("Pakistan")
+            assertTrue(pkRes.isSuccess)
+            val pkCities = pkRes.getOrThrow()
+            assertTrue("Pakistan should return multiple major cities", pkCities.size >= 5)
+            assertEquals("Islamabad", pkCities.first().shortName)
+            assertEquals(33.6844, pkCities.first().latitude, 0.01)
+            assertEquals(73.0479, pkCities.first().longitude, 0.01)
+            assertTrue(pkCities.any { it.shortName == "Lahore" })
+            assertTrue(pkCities.any { it.shortName == "Karachi" })
+            assertTrue(pkCities.any { it.shortName == "Faisalabad" })
+
+            // Urdu script country search resolves identically with zero network calls
+            val pkUrdu = NominatimGeocoderService.searchSubmittedArea("پاکستان").getOrThrow()
+            assertEquals("Islamabad", pkUrdu.first().shortName)
+
+            // Saudi Arabia resolves to Makkah + Madinah + Riyadh
+            val ksaCities = NominatimGeocoderService.searchSubmittedArea("Saudi Arabia").getOrThrow()
+            assertEquals("Makkah", ksaCities.first().shortName)
+            assertTrue(ksaCities.any { it.shortName == "Madinah" })
+
+            // India resolves to Delhi + Mumbai
+            val inCities = NominatimGeocoderService.searchSubmittedArea("India").getOrThrow()
+            assertEquals("Delhi", inCities.first().shortName)
+            assertTrue(inCities.any { it.shortName == "Mumbai" })
+
+            assertEquals(0, NominatimGeocoderService.networkRequestCountForTest)
+        }
+    }
 }
+

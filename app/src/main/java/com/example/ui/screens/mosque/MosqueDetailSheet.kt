@@ -23,6 +23,7 @@ import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material.icons.filled.Route
 import androidx.compose.material.icons.filled.Schedule
 import androidx.compose.material.icons.filled.Straighten
+import androidx.compose.material.icons.filled.ViewInAr
 import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -455,6 +456,36 @@ fun MosqueDetailSheet(
                 Text(
                     text = AppLocalization.get("mosque_get_directions", language),
                     fontWeight = FontWeight.Bold
+                )
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            OutlinedButton(
+                onClick = {
+                    val streetViewUri = Uri.parse("google.streetview:cbll=${mosque.latitude},${mosque.longitude}")
+                    val launchedStreetView = runCatching {
+                        context.startActivity(Intent(Intent.ACTION_VIEW, streetViewUri))
+                        true
+                    }.getOrDefault(false)
+                    if (!launchedStreetView) {
+                        val maps3dUrl = "https://www.google.com/maps/@?api=1&map_action=map&center=${mosque.latitude},${mosque.longitude}&zoom=20&basemap=satellite"
+                        runCatching {
+                            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(maps3dUrl)))
+                        }
+                    }
+                },
+                shape = RoundedCornerShape(12.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .defaultMinSize(minHeight = 48.dp)
+                    .testTag("mosque_street_view_btn")
+            ) {
+                Icon(Icons.Default.ViewInAr, contentDescription = null)
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(
+                    text = AppLocalization.get("mosque_street_view_3d", language),
+                    fontWeight = FontWeight.SemiBold
                 )
             }
 

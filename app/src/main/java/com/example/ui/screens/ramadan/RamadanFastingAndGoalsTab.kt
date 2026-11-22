@@ -23,6 +23,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.data.model.AppLanguage
 import com.example.data.ramadan.FastingStatus
@@ -271,37 +272,66 @@ fun RamadanFastingAndGoalsTab(
                     }
 
                     Spacer(modifier = Modifier.height(8.dp))
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
-                        listOf(5, 10, 20).forEach { pgs ->
-                            OutlinedButton(
-                                onClick = { RamadanRepository.logQuranReading(context, pagesRead = pgs) },
-                                modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("ram_quick_log_${pgs}_btn")
-                            ) {
-                                Text("+$pgs")
+                    Column(
+                        verticalArrangement = Arrangement.spacedBy(8.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Row(
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            listOf(5, 10, 20).forEach { pgs ->
+                                OutlinedButton(
+                                    onClick = { RamadanRepository.logQuranReading(context, pagesRead = pgs) },
+                                    shape = RoundedCornerShape(12.dp),
+                                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 6.dp),
+                                    modifier = Modifier
+                                        .weight(1f)
+                                        .heightIn(min = 48.dp)
+                                        .testTag("ram_quick_log_${pgs}_btn")
+                                ) {
+                                    Text("+$pgs", maxLines = 1, softWrap = false)
+                                }
                             }
                         }
                         Button(
                             onClick = { showLogReadingDialog = true },
-                            modifier = Modifier.heightIn(min = 48.dp).testTag("ram_log_quran_btn")
+                            shape = RoundedCornerShape(12.dp),
+                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 10.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(min = 48.dp)
+                                .testTag("ram_log_quran_btn")
                         ) {
-                            Text(AppLocalization.get("ram_log_reading", language))
+                            Text(
+                                text = AppLocalization.get("ram_log_reading", language),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
                         }
                     }
 
                     Spacer(modifier = Modifier.height(10.dp))
                     val targetSurah = QuranData.surahs.getOrNull(quickSurahNumber - 1)
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.SpaceBetween,
+                    Column(
+                        verticalArrangement = Arrangement.spacedBy(8.dp),
                         modifier = Modifier.fillMaxWidth()
                     ) {
-                        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
                             IconButton(
                                 onClick = { if (quickSurahNumber > 1) quickSurahNumber-- }
                             ) { Text("-") }
                             Text(
                                 text = "Surah $quickSurahNumber: ${targetSurah?.nameEnglish ?: ""}",
-                                style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Medium)
+                                style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Medium),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis,
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.weight(1f)
                             )
                             IconButton(
                                 onClick = { if (quickSurahNumber < 114) quickSurahNumber++ }
@@ -309,11 +339,20 @@ fun RamadanFastingAndGoalsTab(
                         }
                         FilledTonalButton(
                             onClick = { onOpenQuranReader(quickSurahNumber) },
-                            modifier = Modifier.heightIn(min = 48.dp).testTag("ram_open_quran_btn")
+                            shape = RoundedCornerShape(12.dp),
+                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 10.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(min = 48.dp)
+                                .testTag("ram_open_quran_btn")
                         ) {
                             Icon(Icons.Default.MenuBook, contentDescription = null, modifier = Modifier.size(18.dp))
                             Spacer(modifier = Modifier.width(6.dp))
-                            Text(AppLocalization.get("ram_open_quran_reader", language))
+                            Text(
+                                text = AppLocalization.get("ram_open_quran_reader", language),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
                         }
                     }
 

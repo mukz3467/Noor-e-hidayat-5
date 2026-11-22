@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.data.huqooq.*
 import com.example.data.model.AppLanguage
@@ -262,17 +263,27 @@ fun HuqooqInheritanceCalculatorScreen(
                 ) {
                     OutlinedButton(
                         onClick = { resetAll() },
-                        modifier = Modifier.height(48.dp).testTag("calc_reset_btn")
+                        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 8.dp),
+                        modifier = Modifier.widthIn(max = 130.dp).height(48.dp).testTag("calc_reset_btn")
                     ) {
-                        Text(AppLocalization.get("hq_calc_reset", language))
+                        Text(
+                            text = AppLocalization.get("hq_calc_reset", language),
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
                     }
                     Button(
                         onClick = { runCalculate() },
+                        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 8.dp),
                         modifier = Modifier.weight(1f).height(48.dp).testTag("calc_calculate_btn")
                     ) {
                         Icon(Icons.Default.Calculate, contentDescription = null)
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text(AppLocalization.get("hq_calc_calculate", language))
+                        Text(
+                            text = AppLocalization.get("hq_calc_calculate", language),
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
                     }
                 }
             }

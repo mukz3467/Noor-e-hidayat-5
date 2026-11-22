@@ -142,11 +142,13 @@ data class MosqueSearchState(
 enum class MapStylePreset(
     val id: String,
     val styleUrl: String,
-    val hasBuiltIn3dLayer: Boolean
+    val hasBuiltIn3dLayer: Boolean,
+    val maxCameraZoom: Double
 ) {
-    HYBRID_3D("hybrid_3d", "asset://mosque_hybrid_3d_style.json", true),
-    LIBERTY("liberty", "https://tiles.openfreemap.org/styles/liberty", true),
-    BRIGHT("bright", "https://tiles.openfreemap.org/styles/bright", false)
+    HYBRID_3D("hybrid_3d", "asset://mosque_hybrid_3d_style.json", true, 21.0),
+    SATELLITE_HD("satellite_hd", "asset://mosque_satellite_hd_style.json", false, 17.5),
+    LIBERTY("liberty", "https://tiles.openfreemap.org/styles/liberty", true, 21.0),
+    BRIGHT("bright", "https://tiles.openfreemap.org/styles/bright", false, 21.0)
 }
 
 enum class OSRMRouteProfile(

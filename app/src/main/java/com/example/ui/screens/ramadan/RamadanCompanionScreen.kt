@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.data.location.AppLocationManager
@@ -212,8 +213,11 @@ private fun RamadanInternalPrefsTab(
                         }
                     }
 
-                    Spacer(modifier = Modifier.height(10.dp))
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
+                    Spacer(modifier = Modifier.height(12.dp))
+                    Column(
+                        verticalArrangement = Arrangement.spacedBy(8.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
                         Button(
                             onClick = {
                                 if (parseDateKeyToCalendar(startDateText) == null) {
@@ -222,17 +226,35 @@ private fun RamadanInternalPrefsTab(
                                     RamadanRepository.setConfirmedRamadanStart(context, startDateText.trim(), monthLen)
                                 }
                             },
-                            modifier = Modifier.weight(1f).heightIn(min = 48.dp).testTag("ram_apply_confirmed_start_btn")
+                            shape = RoundedCornerShape(12.dp),
+                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 10.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(min = 48.dp)
+                                .testTag("ram_apply_confirmed_start_btn")
                         ) {
-                            Text(AppLocalization.get("ram_set_confirmed_start", language))
+                            Text(
+                                text = AppLocalization.get("ram_set_confirmed_start", language),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
                         }
                         OutlinedButton(
                             onClick = {
                                 RamadanRepository.setConfirmedRamadanStart(context, null, 30)
                             },
-                            modifier = Modifier.heightIn(min = 48.dp).testTag("ram_clear_confirmed_start_btn")
+                            shape = RoundedCornerShape(12.dp),
+                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 10.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(min = 48.dp)
+                                .testTag("ram_clear_confirmed_start_btn")
                         ) {
-                            Text(AppLocalization.get("ram_clear_confirmed_start", language))
+                            Text(
+                                text = AppLocalization.get("ram_clear_confirmed_start", language),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
                         }
                     }
                 }
@@ -254,9 +276,15 @@ private fun RamadanInternalPrefsTab(
                     Spacer(modifier = Modifier.height(6.dp))
                     OutlinedButton(
                         onClick = onOpenPrayerTimes,
+                        shape = RoundedCornerShape(12.dp),
+                        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 10.dp),
                         modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)
                     ) {
-                        Text(AppLocalization.get("ram_prayer_city_method_btn", language))
+                        Text(
+                            text = AppLocalization.get("ram_prayer_city_method_btn", language),
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis
+                        )
                     }
                 }
             }

@@ -799,6 +799,180 @@ object AppLocalization {
             AppLanguage.ARABIC to "يتم الحساب محلياً دون اتصال • تتأثر دقة البوصلة بالتداخل المغناطيسي القريب ويجب المعايرة عند الحاجة.",
             AppLanguage.HINDI to "सभी गणनाएँ आपके डिवाइस पर ऑफ़लाइन होती हैं • चुंबकीय व्यवधान से कम्पास सटीकता प्रभावित हो सकती है।"
         ),
+        "qibla_mode_live" to mapOf(
+            AppLanguage.ENGLISH to "Live",
+            AppLanguage.URDU to "لائیو",
+            AppLanguage.ARABIC to "مباشر",
+            AppLanguage.HINDI to "लाइव"
+        ),
+        "qibla_mode_assisted" to mapOf(
+            AppLanguage.ENGLISH to "Assisted",
+            AppLanguage.URDU to "معاون",
+            AppLanguage.ARABIC to "مساعِد",
+            AppLanguage.HINDI to "सहायक"
+        ),
+        "qibla_mode_manual" to mapOf(
+            AppLanguage.ENGLISH to "Manual",
+            AppLanguage.URDU to "دستی",
+            AppLanguage.ARABIC to "يدوي",
+            AppLanguage.HINDI to "मैन्युअल"
+        ),
+        "qibla_mode_auto_badge" to mapOf(
+            AppLanguage.ENGLISH to "Auto-selected",
+            AppLanguage.URDU to "خودکار منتخب",
+            AppLanguage.ARABIC to "محدد تلقائياً",
+            AppLanguage.HINDI to "स्वचालित चयनित"
+        ),
+        "qibla_sensor_geomag_rv" to mapOf(
+            AppLanguage.ENGLISH to "Geomagnetic Rotation Vector (No Gyro)",
+            AppLanguage.URDU to "جیومیگنیٹک روٹیشن ویکٹر (بغیر جائرو)",
+            AppLanguage.ARABIC to "متجه الدوران المغناطيسي (بدون جيروسكوب)",
+            AppLanguage.HINDI to "जियोमैग्नेटिक रोटेशन वेक्टर (बिना जाइरो)"
+        ),
+        "qibla_sensor_gravity_mag" to mapOf(
+            AppLanguage.ENGLISH to "Gravity + Magnetometer",
+            AppLanguage.URDU to "گریویٹی + میگنیٹومیٹر",
+            AppLanguage.ARABIC to "الجاذبية + المستشعر المغناطيسي",
+            AppLanguage.HINDI to "ग्रेविटी + मैग्नेटोमीटर"
+        ),
+        "qibla_sensor_game_rv" to mapOf(
+            AppLanguage.ENGLISH to "Game Rotation Vector (Relative)",
+            AppLanguage.URDU to "گیم روٹیشن ویکٹر (اضافی رخ)",
+            AppLanguage.ARABIC to "متجه الدوران النسبي (بدون مغناطيس)",
+            AppLanguage.HINDI to "गेम रोटेशन वेक्टर (सापेक्ष)"
+        ),
+        "qibla_sensor_gyroscope" to mapOf(
+            AppLanguage.ENGLISH to "Gyroscope (Relative Rotation)",
+            AppLanguage.URDU to "جائروسکوپ (اضافی گردش)",
+            AppLanguage.ARABIC to "جيروسكوب (دوران نسبي)",
+            AppLanguage.HINDI to "जाइरोस्कोप (सापेक्ष घूर्णन)"
+        ),
+        "qibla_reason_live_rv" to mapOf(
+            AppLanguage.ENGLISH to "Live Compass active using fused 9-axis orientation sensors (Magnetometer, Accelerometer & Gyroscope).",
+            AppLanguage.URDU to "لائیو کمپاس فعال ہے (روٹیشن ویکٹر: میگنیٹومیٹر + ایکسلرومیٹر + جائروسکوپ)۔",
+            AppLanguage.ARABIC to "البوصلة المباشرة نشطة عبر مستشعر متجه الدوران المدمج.",
+            AppLanguage.HINDI to "रोटेशन वेक्टर सेंसर (मैग्नेटोमीटर + एक्सेलेरोमीटर + जाइरोस्कोप) से लाइव कम्पास सक्रिय है।"
+        ),
+        "qibla_reason_live_geomag" to mapOf(
+            AppLanguage.ENGLISH to "Live Compass active using geomagnetic heading fusion (works accurately without a Gyroscope).",
+            AppLanguage.URDU to "لائیو کمپاس فعال ہے (جیومیگنیٹک روٹیشن ویکٹر — جائروسکوپ کے بغیر بھی درست کام کرتا ہے)۔",
+            AppLanguage.ARABIC to "البوصلة المباشرة نشطة عبر متجه الدوران المغناطيسي (تعمل بدون جيروسكوب).",
+            AppLanguage.HINDI to "जियोमैग्नेटिक रोटेशन वेक्टर से लाइव कम्पास सक्रिय है (जाइरोस्कोप के बिना भी काम करता है)।"
+        ),
+        "qibla_reason_live_grav_mag" to mapOf(
+            AppLanguage.ENGLISH to "Live Compass active using gravity tilt and magnetic heading sensors.",
+            AppLanguage.URDU to "لائیو کمپاس فعال ہے (گریویٹی + میگنیٹومیٹر سینسر)۔",
+            AppLanguage.ARABIC to "البوصلة المباشرة نشطة باستخدام مستشعر الجاذبية والمستشعر المغناطيسي.",
+            AppLanguage.HINDI to "ग्रेविटी + मैग्नेटोमीटर सेंसर संयोजन से लाइव कम्पास सक्रिय है।"
+        ),
+        "qibla_reason_live_accel_mag" to mapOf(
+            AppLanguage.ENGLISH to "Live Compass active using tilt and magnetic field sensors (works without a Gyroscope).",
+            AppLanguage.URDU to "لائیو کمپاس فعال ہے (ایکسلرومیٹر + میگنیٹومیٹر — جائروسکوپ کے بغیر کام کرتا ہے)۔",
+            AppLanguage.ARABIC to "البوصلة المباشرة نشطة باستخدام مقياس التسارع والمستشعر المغناطيسي (تعمل بدون جيروسكوب).",
+            AppLanguage.HINDI to "एक्सेलेरोमीटर + मैग्नेटोमीटर से लाइव कम्पास सक्रिय है (जाइरोस्कोप के बिना काम करता है)।"
+        ),
+        "qibla_reason_no_mag_assisted_avail" to mapOf(
+            AppLanguage.ENGLISH to "No Magnetometer detected, so Manual Qibla Mode was auto-selected. You can also switch to Assisted Mode using an external Sun or North reference.",
+            AppLanguage.URDU to "میگنیٹومیٹر دستیاب نہیں، اس لیے دستی قبلہ موڈ خودکار منتخب ہوا۔ آپ سورج یا شمال کے حوالے سے معاون موڈ بھی استعمال کر سکتے ہیں۔",
+            AppLanguage.ARABIC to "لا يوجد مستشعر مغناطيسي، لذا تم اختيار الوضع اليدوي تلقائياً. يمكنك التبديل للوضع المساعِد باستخدام مرجع الشمس أو الشمال.",
+            AppLanguage.HINDI to "मैग्नेटोमीटर नहीं मिला, इसलिए मैन्युअल क़िबला मोड चुना गया। आप सूर्य या उत्तर संदर्भ से सहायक मोड भी उपयोग कर सकते हैं।"
+        ),
+        "qibla_reason_no_mag_manual_only" to mapOf(
+            AppLanguage.ENGLISH to "No Magnetometer or relative orientation sensor detected. Manual Qibla Mode shows exact calculated bearing and N/S/E/W reference.",
+            AppLanguage.URDU to "میگنیٹومیٹر یا گردش سینسر دستیاب نہیں۔ دستی قبلہ موڈ درست زاویہ اور شمال/جنوب/مشرق/مغرب رہنمائی دکھاتا ہے۔",
+            AppLanguage.ARABIC to "لا يتوفر مستشعر مغناطيسي أو مستشعر اتجاه. يعرض الوضع اليدوي زاوية القبلة الدقيقة واتجاهات البوصلة الثابتة.",
+            AppLanguage.HINDI to "मैग्नेटोमीटर या ओरिएंटेशन सेंसर उपलब्ध नहीं है। मैन्युअल मोड सटीक कोण और उत्तर/दक्षिण/पूर्व/पश्चिम संदर्भ दिखाता है।"
+        ),
+        "qibla_reason_manual_user" to mapOf(
+            AppLanguage.ENGLISH to "Manual Qibla Mode selected. Showing static N/S/E/W reference and exact geographic bearing without relying on compass sensors.",
+            AppLanguage.URDU to "دستی قبلہ موڈ منتخب ہے۔ سینسر کے بغیر درست جغرافیائی زاویہ اور ساکن شمال/جنوب/مشرق/مغرب نقشہ دکھایا جا رہا ہے۔",
+            AppLanguage.ARABIC to "تم اختيار الوضع اليدوي. يتم عرض زاوية القبلة الجغرافية الدقيقة ومخطط الاتجاهات الثابت.",
+            AppLanguage.HINDI to "मैन्युअल क़िबला मोड चुना गया। सेंसर के बिना सटीक कोण और स्थिर दिशा संदर्भ दिखाया जा रहा है।"
+        ),
+        "qibla_reason_assisted_unanchored" to mapOf(
+            AppLanguage.ENGLISH to "Assisted Direction Mode: a gyroscope alone cannot detect True North. Point the top of your phone toward the Sun or verified True North, then tap Lock Reference.",
+            AppLanguage.URDU to "معاون موڈ: صرف جائروسکوپ حقیقی شمال معلوم نہیں کر سکتا۔ فون کا اوپری حصہ سورج یا معلوم شمال کی طرف کر کے حوالہ لاک کریں۔",
+            AppLanguage.ARABIC to "الوضع المساعِد: الجيروسكوب وحده لا يحدد الشمال الحقيقي. وجّه أعلى الهاتف نحو الشمس أو الشمال الحقيقي ثم اضغط تثبيت المرجع.",
+            AppLanguage.HINDI to "सहायक मोड: केवल जाइरोस्कोप वास्तविक उत्तर नहीं बता सकता। फ़ोन का ऊपरी हिस्सा सूर्य या वास्तविक उत्तर की ओर कर संदर्भ लॉक करें।"
+        ),
+        "qibla_reason_assisted_anchored" to mapOf(
+            AppLanguage.ENGLISH to "Assisted Direction active relative to your locked external reference. Re-lock if gyroscope drift occurs.",
+            AppLanguage.URDU to "معاون سمت فعال ہے (لاک کیے گئے بیرونی حوالے کے مطابق)۔ اگر ڈرفٹ ہو تو دوبارہ لاک کریں۔",
+            AppLanguage.ARABIC to "الاتجاه المساعِد نشط وفق المرجع الخارجي المثبّت. أعد التثبيت عند حدوث انحراف.",
+            AppLanguage.HINDI to "लॉक किए गए बाहरी संदर्भ के अनुसार सहायक दिशा सक्रिय है। विचलन होने पर पुनः लॉक करें।"
+        ),
+        "qibla_reason_assisted_no_sensor" to mapOf(
+            AppLanguage.ENGLISH to "No Gyroscope or Game Rotation sensor detected on this device. Assisted relative tracking is unavailable; use Manual Qibla Mode.",
+            AppLanguage.URDU to "اس فون میں جائروسکوپ یا گیم روٹیشن سینسر موجود نہیں۔ براہِ کرم دستی قبلہ موڈ استعمال کریں۔",
+            AppLanguage.ARABIC to "لا يوجد جيروسكوب أو مستشعر دوران نسبي في هذا الجهاز. استخدم الوضع اليدوي.",
+            AppLanguage.HINDI to "इस डिवाइस में जाइरोस्कोप या गेम रोटेशन सेंसर उपलब्ध नहीं है। कृपया मैन्युअल क़िबला मोड उपयोग करें।"
+        ),
+        "qibla_assisted_title" to mapOf(
+            AppLanguage.ENGLISH to "Assisted Direction (Reference-Locked)",
+            AppLanguage.URDU to "معاون سمت (حوالہ لاک)",
+            AppLanguage.ARABIC to "الاتجاه المساعِد (بمرجع مثبّت)",
+            AppLanguage.HINDI to "सहायक दिशा (संदर्भ-लॉक्ड)"
+        ),
+        "qibla_assisted_sun_status" to mapOf(
+            AppLanguage.ENGLISH to "Current Sun Azimuth: %d° (%s) • Altitude: %d°",
+            AppLanguage.URDU to "موجودہ سورج کا زاویہ: %d° (%s) • بلندی: %d°",
+            AppLanguage.ARABIC to "سمت الشمس الحالي: %d° (%s) • الارتفاع: %d°",
+            AppLanguage.HINDI to "वर्तमान सूर्य कोण: %d° (%s) • ऊँचाई: %d°"
+        ),
+        "qibla_assisted_sun_below" to mapOf(
+            AppLanguage.ENGLISH to "Sun is currently below the horizon or directly overhead — use True North lock or Manual Mode.",
+            AppLanguage.URDU to "سورج اس وقت افق سے نیچے یا عین سر پر ہے — حقیقی شمال لاک یا دستی موڈ استعمال کریں۔",
+            AppLanguage.ARABIC to "الشمس حالياً تحت الأفق أو في السمت — استخدم تثبيت الشمال الحقيقي أو الوضع اليدوي.",
+            AppLanguage.HINDI to "सूर्य अभी क्षितिज के नीचे या ठीक सिर के ऊपर है — वास्तविक उत्तर लॉक या मैन्युअल मोड चुनें।"
+        ),
+        "qibla_assisted_lock_sun" to mapOf(
+            AppLanguage.ENGLISH to "Lock to Sun (%d°)",
+            AppLanguage.URDU to "سورج پر لاک کریں (%d°)",
+            AppLanguage.ARABIC to "تثبيت على الشمس (%d°)",
+            AppLanguage.HINDI to "सूर्य पर लॉक करें (%d°)"
+        ),
+        "qibla_assisted_lock_north" to mapOf(
+            AppLanguage.ENGLISH to "Lock to True North (0°)",
+            AppLanguage.URDU to "حقیقی شمال پر لاک کریں (0°)",
+            AppLanguage.ARABIC to "تثبيت على الشمال الحقيقي (0°)",
+            AppLanguage.HINDI to "वास्तविक उत्तर पर लॉक करें (0°)"
+        ),
+        "qibla_assisted_reset_lock" to mapOf(
+            AppLanguage.ENGLISH to "Reset Reference Lock",
+            AppLanguage.URDU to "حوالہ لاک ری سیٹ کریں",
+            AppLanguage.ARABIC to "إعادة تعيين المرجع",
+            AppLanguage.HINDI to "संदर्भ लॉक रीसेट करें"
+        ),
+        "qibla_assisted_switch_manual" to mapOf(
+            AppLanguage.ENGLISH to "Open Manual Qibla Mode",
+            AppLanguage.URDU to "دستی قبلہ موڈ کھولیں",
+            AppLanguage.ARABIC to "فتح الوضع اليدوي للقبلة",
+            AppLanguage.HINDI to "मैन्युअल क़िबला मोड खोलें"
+        ),
+        "qibla_static_ref_label" to mapOf(
+            AppLanguage.ENGLISH to "Static N/S/E/W Reference (North at Top)",
+            AppLanguage.URDU to "ساکن سمت کا نقشہ (شمال اوپر کی طرف)",
+            AppLanguage.ARABIC to "مخطط اتجاهات ثابت (الشمال للأعلى)",
+            AppLanguage.HINDI to "स्थिर दिशा संदर्भ (उत्तर ऊपर की ओर)"
+        ),
+        "qibla_turn_right" to mapOf(
+            AppLanguage.ENGLISH to "Turn right %d° toward Qibla",
+            AppLanguage.URDU to "قبلہ کی طرف %d° دائیں مڑیں",
+            AppLanguage.ARABIC to "استدر يميناً %d° نحو القبلة",
+            AppLanguage.HINDI to "क़िबला की ओर %d° दाएँ मुड़ें"
+        ),
+        "qibla_turn_left" to mapOf(
+            AppLanguage.ENGLISH to "Turn left %d° toward Qibla",
+            AppLanguage.URDU to "قبلہ کی طرف %d° بائیں مڑیں",
+            AppLanguage.ARABIC to "استدر يساراً %d° نحو القبلة",
+            AppLanguage.HINDI to "क़िबला की ओर %d° बाएँ मुड़ें"
+        ),
+        "qibla_waiting_sensor_hint" to mapOf(
+            AppLanguage.ENGLISH to "Move phone gently to receive live heading reading...",
+            AppLanguage.URDU to "لائیو سمت حاصل کرنے کے لیے فون کو آہستہ حرکت دیں...",
+            AppLanguage.ARABIC to "حرّك الهاتف برفق لاستقبال قراءة البوصلة المباشرة...",
+            AppLanguage.HINDI to "लाइव दिशा रीडिंग के लिए फ़ोन को हल्के से घुमाएँ..."
+        ),
         "qibla_city_dialog_title" to mapOf(
             AppLanguage.ENGLISH to "Select Location Worldwide",
             AppLanguage.URDU to "دنیا بھر سے شہر منتخب کریں",
@@ -1856,6 +2030,18 @@ object AppLocalization {
             AppLanguage.ARABIC to "العربية",
             AppLanguage.HINDI to "अरबी"
         ),
+        "lectures_lang_ur_hi" to mapOf(
+            AppLanguage.ENGLISH to "Urdu / Hindi",
+            AppLanguage.URDU to "اردو / ہندی",
+            AppLanguage.ARABIC to "الأردية / الهندية",
+            AppLanguage.HINDI to "उर्दू / हिंदी"
+        ),
+        "lectures_lang_unknown" to mapOf(
+            AppLanguage.ENGLISH to "Language Unconfirmed",
+            AppLanguage.URDU to "زبان غیر مصدقہ",
+            AppLanguage.ARABIC to "اللغة غير مؤكدة",
+            AppLanguage.HINDI to "भाषा अपुष्ट"
+        ),
         "lectures_watch_in_app" to mapOf(
             AppLanguage.ENGLISH to "Play In-App",
             AppLanguage.URDU to "ایپ میں چلائیں",
@@ -2022,6 +2208,102 @@ object AppLocalization {
             AppLanguage.ARABIC to "الفتاوى والأسئلة الشرعية",
             AppLanguage.HINDI to "इस्लामी प्रश्नोत्तर"
         ),
+        "lecture_cat_prophets" to mapOf(
+            AppLanguage.ENGLISH to "Stories of the Prophets",
+            AppLanguage.URDU to "قصص الانبیاء",
+            AppLanguage.ARABIC to "قصص الأنبياء",
+            AppLanguage.HINDI to "पैग़ंबरों के क़िस्से"
+        ),
+        "lecture_cat_battles" to mapOf(
+            AppLanguage.ENGLISH to "Islamic Battles & Expeditions",
+            AppLanguage.URDU to "غزوات و اسلامی جنگیں",
+            AppLanguage.ARABIC to "الغزوات والمعارك الإسلامية",
+            AppLanguage.HINDI to "ग़ज़वात और इस्लामी युद्ध"
+        ),
+        "lecture_cat_sahaba" to mapOf(
+            AppLanguage.ENGLISH to "Sahaba Stories",
+            AppLanguage.URDU to "واقعاتِ صحابہ کرام",
+            AppLanguage.ARABIC to "قصص الصحابة",
+            AppLanguage.HINDI to "सहाबा के वाक़िआत"
+        ),
+        "lecture_cat_caliphates" to mapOf(
+            AppLanguage.ENGLISH to "Islamic Caliphates & Civilization",
+            AppLanguage.URDU to "خلافت اور اسلامی تہذیب",
+            AppLanguage.ARABIC to "الخلافة والحضارة الإسلامية",
+            AppLanguage.HINDI to "इस्लामी ख़िलाफ़त और सभ्यता"
+        ),
+        "lectures_duration_min_fmt" to mapOf(
+            AppLanguage.ENGLISH to "Long-form %d+ min",
+            AppLanguage.URDU to "طویل بیانات %d+ منٹ",
+            AppLanguage.ARABIC to "محاضرات طويلة %d+ دقيقة",
+            AppLanguage.HINDI to "लंबे व्याख्यान %d+ मिनट"
+        ),
+        "lectures_duration_confirmed_fmt" to mapOf(
+            AppLanguage.ENGLISH to "Long-Form • %s",
+            AppLanguage.URDU to "طویل بیان • %s",
+            AppLanguage.ARABIC to "محاضرة طويلة • %s",
+            AppLanguage.HINDI to "लंबा व्याख्यान • %s"
+        ),
+        "lectures_duration_unverified_badge" to mapOf(
+            AppLanguage.ENGLISH to "Duration unverified in RSS",
+            AppLanguage.URDU to "دورانیہ RSS میں غیر مصدقہ",
+            AppLanguage.ARABIC to "المدة غير متوفرة في RSS",
+            AppLanguage.HINDI to "RSS में अवधि अपुष्ट"
+        ),
+        "lectures_duration_rss_notice" to mapOf(
+            AppLanguage.ENGLISH to "Long-form filter (%d+ min, Shorts excluded). YouTube public RSS feeds omit video duration; durations are verified honestly when loaded in the player.",
+            AppLanguage.URDU to "طویل بیانات فلٹر (%d+ منٹ، شارٹس خارج)۔ یوٹیوب RSS میں دورانیہ شامل نہیں ہوتا؛ پلیئر میں کھلنے پر حقیقی دورانیہ تصدیق ہوتا ہے۔",
+            AppLanguage.ARABIC to "فلتر المحاضرات الطويلة (%d+ دقيقة، استبعاد المقاطع القصيرة). خلاصات يوتيوب RSS لا توفر المدة؛ يتم التحقق منها عند التشغيل.",
+            AppLanguage.HINDI to "लंबे व्याख्यान फ़िल्टर (%d+ मिनट, शॉर्ट्स बाहर)। YouTube RSS में अवधि नहीं होती; प्लेयर में लोड होने पर वास्तविक अवधि सत्यापित होती है।"
+        ),
+        "lectures_duration_only_confirmed" to mapOf(
+            AppLanguage.ENGLISH to "Confirmed Long-Form Only",
+            AppLanguage.URDU to "صرف مصدقہ طویل بیانات",
+            AppLanguage.ARABIC to "المؤكدة الطويلة فقط",
+            AppLanguage.HINDI to "केवल सत्यापित लंबे वीडियो"
+        ),
+        "lectures_duration_include_unverified" to mapOf(
+            AppLanguage.ENGLISH to "Exclude Shorts (Show RSS)",
+            AppLanguage.URDU to "شارٹس خارج (RSS دکھائیں)",
+            AppLanguage.ARABIC to "استبعاد القصير (عرض RSS)",
+            AppLanguage.HINDI to "शॉर्ट्स हटाएं (RSS दिखाएं)"
+        ),
+        "lectures_shorts_filtered_fmt" to mapOf(
+            AppLanguage.ENGLISH to "%d short clips excluded",
+            AppLanguage.URDU to "%d مختصر کلپس خارج کیے گئے",
+            AppLanguage.ARABIC to "تم استبعاد %d مقاطع قصيرة",
+            AppLanguage.HINDI to "%d छोटे क्लिप हटाए गए"
+        ),
+        "lectures_short_detected_warning" to mapOf(
+            AppLanguage.ENGLISH to "Verified duration is under %d minutes (short clip).",
+            AppLanguage.URDU to "مصدقہ دورانیہ %d منٹ سے کم ہے (مختصر کلپ)۔",
+            AppLanguage.ARABIC to "المدة المؤكدة أقل من %d دقائق (مقطع قصير).",
+            AppLanguage.HINDI to "सत्यापित अवधि %d मिनट से कम है (छोटा क्लिप)।"
+        ),
+        "lectures_directory_btn" to mapOf(
+            AppLanguage.ENGLISH to "Channel Directory (%d Verified)",
+            AppLanguage.URDU to "چینل ڈائریکٹری (%d مصدقہ)",
+            AppLanguage.ARABIC to "دليل القنوات (%d موثقة)",
+            AppLanguage.HINDI to "चैनल निर्देशिका (%d सत्यापित)"
+        ),
+        "lectures_directory_title" to mapOf(
+            AppLanguage.ENGLISH to "Verified Islamic Channel Directory",
+            AppLanguage.URDU to "مصدقہ اسلامی چینل ڈائریکٹری",
+            AppLanguage.ARABIC to "دليل القنوات الإسلامية الموثقة",
+            AppLanguage.HINDI to "सत्यापित इस्लामी चैनल निर्देशिका"
+        ),
+        "lectures_directory_target_note" to mapOf(
+            AppLanguage.ENGLISH to "Only verified official channels with canonical YouTube UC IDs appear in the feed. Unverified candidates are held separately until ownership and RSS XML are confirmed.",
+            AppLanguage.URDU to "فیڈ میں صرف مصدقہ آفیشل چینلز (مستند UC ID کے ساتھ) شامل کیے جاتے ہیں۔ غیر مصدقہ امیدوار علیحدہ رکھے جاتے ہیں۔",
+            AppLanguage.ARABIC to "تظهر القنوات الرسمية الموثقة فقط بمعرّف UC الصحيح. تُحفظ القنوات المرشحة منفصلة حتى يتم التحقق منها.",
+            AppLanguage.HINDI to "फ़ीड में केवल सत्यापित आधिकारिक चैनल (UC ID के साथ) दिखाए जाते हैं। असत्यापित चैनल अलग रखे जाते हैं।"
+        ),
+        "lectures_load_more_channels" to mapOf(
+            AppLanguage.ENGLISH to "Load More Verified Channels (%d/%d)",
+            AppLanguage.URDU to "مزید مصدقہ چینلز لوڈ کریں (%d/%d)",
+            AppLanguage.ARABIC to "تحميل المزيد من القنوات الموثقة (%d/%d)",
+            AppLanguage.HINDI to "और सत्यापित चैनल लोड करें (%d/%d)"
+        ),
         // Live Makkah & Madinah Verification & Player Error States
         "live_tab_makkah" to mapOf(
             AppLanguage.ENGLISH to "Live Makkah",
@@ -2084,10 +2366,10 @@ object AppLocalization {
             AppLanguage.HINDI to "यूट्यूब पर आधिकारिक चैनल खोलें"
         ),
         "live_policy_footer" to mapOf(
-            AppLanguage.ENGLISH to "Streams play via the official YouTube IFrame Player API directly from the verified Saudi Broadcasting Authority channels. Status is verified live without fabricated stream badges.",
-            AppLanguage.URDU to "نشریات سرکاری سعودی براڈکاسٹنگ اتھارٹی کے مستند چینلز سے آفیشل یوٹیوب IFrame پلیئر کے ذریعے چلائی جاتی ہیں اور اسٹیٹس کی حقیقی تصدیق کی جاتی ہے۔",
-            AppLanguage.ARABIC to "يتم التشغيل عبر واجهة يوتيوب الرسمية من القنوات الرسمية لهيئة الإذاعة والتلفزيون السعودية مع التحقق الفعلي من حالة البث.",
-            AppLanguage.HINDI to "प्रसारण आधिकारिक सऊदी ब्रॉडकास्टिंग चैनलों से यूट्यूब IFrame प्लेयर के माध्यम से चलता है और स्थिति की वास्तविक जांच की जाती है।"
+            AppLanguage.ENGLISH to "Plays official Saudi Broadcasting Authority streams (Saudi Quran TV for Makkah, Saudi Sunnah TV for Madinah) with automatic fallback through verified relays. Status shows LIVE only when active playback is confirmed.",
+            AppLanguage.URDU to "سرکاری سعودی نشریات (مکہ کے لیے سعودی قرآن ٹی وی، مدینہ کے لیے سعودی سنہ ٹی وی) مستند ریلے ذرائع کے خودکار بیک اپ کے ساتھ چلائی جاتی ہیں۔ لائیو بیج صرف حقیقی پلے بیک کی تصدیق پر دکھایا جاتا ہے۔",
+            AppLanguage.ARABIC to "يعرض البث الرسمي لهيئة الإذاعة والتلفزيون السعودية (قناة القرآن الكريم لمكة وقناة السنة النبوية للمدينة) مع التحويل التلقائي عبر مصادر موثقة. لا تظهر شارة مباشر إلا بعد تأكيد التشغيل الفعلي.",
+            AppLanguage.HINDI to "आधिकारिक सऊदी प्रसारण (मक्का के लिए सऊदी कुरान टीवी, मदीना के लिए सऊदी सुन्नह टीवी) सत्यापित रिले फ़ॉलबैक के साथ चलता है। लाइव बैज केवल वास्तविक प्लेबैक की पुष्टि होने पर ही दिखाया जाता है।"
         ),
         "player_connecting" to mapOf(
             AppLanguage.ENGLISH to "Initializing Official YouTube Player...",
@@ -2486,6 +2768,216 @@ object AppLocalization {
             AppLanguage.ARABIC to "آخر تحديث: %s",
             AppLanguage.HINDI to "अंतिम अपडेट: %s"
         ),
+        "pod_source_official" to mapOf(
+            AppLanguage.ENGLISH to "Official Channel",
+            AppLanguage.URDU to "آفیشل چینل",
+            AppLanguage.ARABIC to "قناة رسمية",
+            AppLanguage.HINDI to "आधिकारिक चैनल"
+        ),
+        "pod_source_hosted" to mapOf(
+            AppLanguage.ENGLISH to "Hosted Interview",
+            AppLanguage.URDU to "میزبان انٹرویو",
+            AppLanguage.ARABIC to "لقاء مستضاف",
+            AppLanguage.HINDI to "होस्टेड इंटरव्यू"
+        ),
+        "pod_source_unavailable" to mapOf(
+            AppLanguage.ENGLISH to "Channel Unavailable",
+            AppLanguage.URDU to "چینل دستیاب نہیں",
+            AppLanguage.ARABIC to "القناة غير متوفرة",
+            AppLanguage.HINDI to "चैनल उपलब्ध नहीं"
+        ),
+        "pod_type_episode" to mapOf(
+            AppLanguage.ENGLISH to "Podcast Episode",
+            AppLanguage.URDU to "پوڈکاسٹ قسط",
+            AppLanguage.ARABIC to "حلقة بودكاست",
+            AppLanguage.HINDI to "पॉडकास्ट एपिसोड"
+        ),
+        "pod_type_interview" to mapOf(
+            AppLanguage.ENGLISH to "Full Interview",
+            AppLanguage.URDU to "مکمل انٹرویو",
+            AppLanguage.ARABIC to "مقابلة كاملة",
+            AppLanguage.HINDI to "पूर्ण इंटरव्यू"
+        ),
+        "pod_type_discussion" to mapOf(
+            AppLanguage.ENGLISH to "Long-Form Discussion",
+            AppLanguage.URDU to "طویل علمی نشست",
+            AppLanguage.ARABIC to "حوار مطوّل",
+            AppLanguage.HINDI to "दीर्घ चर्चा"
+        ),
+        "pod_type_qa" to mapOf(
+            AppLanguage.ENGLISH to "Islamic Q&A",
+            AppLanguage.URDU to "سوال و جواب",
+            AppLanguage.ARABIC to "سؤال وجواب",
+            AppLanguage.HINDI to "इस्लामी प्रश्नोत्तर"
+        ),
+        "pod_type_educational" to mapOf(
+            AppLanguage.ENGLISH to "Educational Discussion",
+            AppLanguage.URDU to "تعلیمی گفتگو",
+            AppLanguage.ARABIC to "درس علمي",
+            AppLanguage.HINDI to "शैक्षिक चर्चा"
+        ),
+        "pod_type_lecture" to mapOf(
+            AppLanguage.ENGLISH to "Full Lecture",
+            AppLanguage.URDU to "مکمل لیکچر",
+            AppLanguage.ARABIC to "محاضرة كاملة",
+            AppLanguage.HINDI to "पूर्ण व्याख्यान"
+        ),
+        "pod_cat_all_eligible" to mapOf(
+            AppLanguage.ENGLISH to "All Eligible Videos",
+            AppLanguage.URDU to "تمام مستند ویڈیوز",
+            AppLanguage.ARABIC to "جميع المقاطع المؤهلة",
+            AppLanguage.HINDI to "सभी योग्य वीडियो"
+        ),
+        "pod_cat_complete_episodes" to mapOf(
+            AppLanguage.ENGLISH to "Complete Podcast Episodes",
+            AppLanguage.URDU to "مکمل پوڈکاسٹ اقساط",
+            AppLanguage.ARABIC to "حلقات البودكاست الكاملة",
+            AppLanguage.HINDI to "पूर्ण पॉडकास्ट एपिसोड"
+        ),
+        "pod_cat_full_interviews" to mapOf(
+            AppLanguage.ENGLISH to "Full Interviews",
+            AppLanguage.URDU to "مکمل انٹرویوز",
+            AppLanguage.ARABIC to "المقابلات الكاملة",
+            AppLanguage.HINDI to "पूर्ण इंटरव्यू"
+        ),
+        "pod_cat_long_discussions" to mapOf(
+            AppLanguage.ENGLISH to "Long-Form Discussions",
+            AppLanguage.URDU to "طویل علمی مباحث",
+            AppLanguage.ARABIC to "الحوارات المطوّلة",
+            AppLanguage.HINDI to "दीर्घ चर्चाएँ"
+        ),
+        "pod_cat_islamic_qa" to mapOf(
+            AppLanguage.ENGLISH to "Islamic Q&A",
+            AppLanguage.URDU to "اسلامی سوال و جواب",
+            AppLanguage.ARABIC to "الفتاوى والأسئلة",
+            AppLanguage.HINDI to "इस्लामी प्रश्नोत्तर"
+        ),
+        "pod_cat_history_seerah" to mapOf(
+            AppLanguage.ENGLISH to "Islamic History & Seerah",
+            AppLanguage.URDU to "اسلامی تاریخ و سیرت",
+            AppLanguage.ARABIC to "التاريخ الإسلامي والسيرة",
+            AppLanguage.HINDI to "इस्लामी इतिहास व सीरत"
+        ),
+        "pod_cat_islamic_lifestyle" to mapOf(
+            AppLanguage.ENGLISH to "Islamic Lifestyle",
+            AppLanguage.URDU to "اسلامی طرزِ زندگی",
+            AppLanguage.ARABIC to "أسلوب الحياة الإسلامي",
+            AppLanguage.HINDI to "इस्लामी जीवनशैली"
+        ),
+        "pod_cat_youth_family" to mapOf(
+            AppLanguage.ENGLISH to "Youth & Family",
+            AppLanguage.URDU to "نوجوان اور خاندان",
+            AppLanguage.ARABIC to "الشباب والأسرة",
+            AppLanguage.HINDI to "युवा व परिवार"
+        ),
+        "pod_cat_repentance_self" to mapOf(
+            AppLanguage.ENGLISH to "Repentance & Self-Improvement",
+            AppLanguage.URDU to "توبہ اور اصلاحِ نفس",
+            AppLanguage.ARABIC to "التوبة وإصلاح النفس",
+            AppLanguage.HINDI to "तौबा व आत्म-सुधार"
+        ),
+        "pod_cat_latest_long_form" to mapOf(
+            AppLanguage.ENGLISH to "Latest Long-Form Videos",
+            AppLanguage.URDU to "تازہ ترین طویل ویڈیوز",
+            AppLanguage.ARABIC to "أحدث المقاطع الطويلة",
+            AppLanguage.HINDI to "नवीनतम दीर्घ वीडियो"
+        ),
+        "pod_cat_most_viewed" to mapOf(
+            AppLanguage.ENGLISH to "Most Viewed Long-Form",
+            AppLanguage.URDU to "سب سے زیادہ دیکھی گئی ویڈیوز",
+            AppLanguage.ARABIC to "الأكثر مشاهدة",
+            AppLanguage.HINDI to "सर्वाधिक देखे गए वीडियो"
+        ),
+        "pod_scholars_section" to mapOf(
+            AppLanguage.ENGLISH to "Verified Scholars (%d)",
+            AppLanguage.URDU to "مستند علمائے کرام (%d)",
+            AppLanguage.ARABIC to "العلماء الموثوقون (%d)",
+            AppLanguage.HINDI to "सत्यापित विद्वान (%d)"
+        ),
+        "pod_channels_section" to mapOf(
+            AppLanguage.ENGLISH to "Verified Islamic History Channel",
+            AppLanguage.URDU to "مستند اسلامی تاریخ چینل",
+            AppLanguage.ARABIC to "قناة التاريخ الإسلامي الموثوقة",
+            AppLanguage.HINDI to "सत्यापित इस्लामी इतिहास चैनल"
+        ),
+        "pod_verified_count" to mapOf(
+            AppLanguage.ENGLISH to "%d verified long-form videos",
+            AppLanguage.URDU to "%d مستند طویل ویڈیوز",
+            AppLanguage.ARABIC to "%d مقطع طويل موثّق",
+            AppLanguage.HINDI to "%d सत्यापित दीर्घ वीडियो"
+        ),
+        "pod_shorts_filtered_note" to mapOf(
+            AppLanguage.ENGLISH to "%d Shorts/clips automatically filtered out",
+            AppLanguage.URDU to "%d شارٹس اور کلپس خودکار طور پر ہٹا دیے گئے",
+            AppLanguage.ARABIC to "تم استبعاد %d مقطع قصير تلقائياً",
+            AppLanguage.HINDI to "%d शॉर्ट्स/क्लिप स्वतः फ़िल्टर किए गए"
+        ),
+        "pod_load_more" to mapOf(
+            AppLanguage.ENGLISH to "Load More Verified Videos",
+            AppLanguage.URDU to "مزید مستند ویڈیوز لوڈ کریں",
+            AppLanguage.ARABIC to "تحميل المزيد من المقاطع الموثّقة",
+            AppLanguage.HINDI to "और सत्यापित वीडियो लोड करें"
+        ),
+        "pod_quota_banner" to mapOf(
+            AppLanguage.ENGLISH to "YouTube API quota limit reached — showing verified cached videos.",
+            AppLanguage.URDU to "یوٹیوب API کی حد مکمل ہو گئی — محفوظ مستند ویڈیوز دکھائی جا رہی ہیں۔",
+            AppLanguage.ARABIC to "تم الوصول للحد اليومي لواجهة يوتيوب — يتم عرض المقاطع الموثّقة المحفوظة.",
+            AppLanguage.HINDI to "यूट्यूब API सीमा पूरी हो गई — सहेजे गए सत्यापित वीडियो दिखाए जा रहे हैं।"
+        ),
+        "pod_auto_refresh_note" to mapOf(
+            AppLanguage.ENGLISH to "Auto-refreshes every ~30 min when online (subject to Android battery scheduling). YouTube videos stream online only.",
+            AppLanguage.URDU to "آن لائن ہونے پر ہر ~30 منٹ بعد خودکار تازہ کاری (اینڈرائیڈ بیٹری شیڈولنگ کے مطابق)۔ یوٹیوب ویڈیوز صرف آن لائن چلتی ہیں۔",
+            AppLanguage.ARABIC to "تحديث تلقائي كل ~30 دقيقة عند الاتصال (وفق جدولة بطارية أندرويد). مقاطع يوتيوب تُبث عبر الإنترنت فقط.",
+            AppLanguage.HINDI to "ऑनलाइन होने पर हर ~30 मिनट में स्वतः रिफ्रेश (एंड्रॉइड बैटरी शेड्यूलिंग के अधीन)। यूट्यूब वीडियो केवल ऑनलाइन चलते हैं।"
+        ),
+        "pod_back_to_scholars" to mapOf(
+            AppLanguage.ENGLISH to "All Scholars",
+            AppLanguage.URDU to "تمام علماء",
+            AppLanguage.ARABIC to "جميع العلماء",
+            AppLanguage.HINDI to "सभी विद्वान"
+        ),
+        "pod_unavailable_scholar_msg" to mapOf(
+            AppLanguage.ENGLISH to "No verified official YouTube channel with eligible long-form videos is currently available for this scholar.",
+            AppLanguage.URDU to "اس عالم کے لیے اس وقت کوئی مستند آفیشل یوٹیوب چینل یا اہل طویل ویڈیو دستیاب نہیں ہے۔",
+            AppLanguage.ARABIC to "لا تتوفر حالياً قناة يوتيوب رسمية موثّقة بمقاطع طويلة مؤهلة لهذا الشيخ.",
+            AppLanguage.HINDI to "इस विद्वान के लिए वर्तमान में कोई सत्यापित आधिकारिक यूट्यूब चैनल या योग्य दीर्घ वीडियो उपलब्ध नहीं है।"
+        ),
+        "pod_search_scholars_hint" to mapOf(
+            AppLanguage.ENGLISH to "Search scholars or channels...",
+            AppLanguage.URDU to "علماء یا چینلز تلاش کریں...",
+            AppLanguage.ARABIC to "ابحث عن العلماء أو القنوات...",
+            AppLanguage.HINDI to "विद्वान या चैनल खोजें..."
+        ),
+        "pod_search_videos_hint" to mapOf(
+            AppLanguage.ENGLISH to "Search verified long-form videos...",
+            AppLanguage.URDU to "مستند طویل ویڈیوز تلاش کریں...",
+            AppLanguage.ARABIC to "ابحث في المقاطع الطويلة الموثّقة...",
+            AppLanguage.HINDI to "सत्यापित दीर्घ वीडियो खोजें..."
+        ),
+        "pod_subtab_suggestions" to mapOf(
+            AppLanguage.ENGLISH to "Suggested Videos",
+            AppLanguage.URDU to "تجویز کردہ ویڈیوز",
+            AppLanguage.ARABIC to "المقاطع المقترحة",
+            AppLanguage.HINDI to "सुझाए गए वीडियो"
+        ),
+        "pod_subtab_scholars" to mapOf(
+            AppLanguage.ENGLISH to "Scholars & Channels",
+            AppLanguage.URDU to "علماء اور چینلز",
+            AppLanguage.ARABIC to "العلماء والقنوات",
+            AppLanguage.HINDI to "विद्वान और चैनल"
+        ),
+        "pod_catalog_channels_badge" to mapOf(
+            AppLanguage.ENGLISH to "%d+ verified channels • Long-form only (No Shorts)",
+            AppLanguage.URDU to "%d+ مستند چینلز • صرف طویل ویڈیوز (شارٹس کے بغیر)",
+            AppLanguage.ARABIC to "%d+ قناة موثّقة • مقاطع طويلة فقط (بدون شورتس)",
+            AppLanguage.HINDI to "%d+ सत्यापित चैनल • केवल दीर्घ वीडियो (कोई शॉर्ट्स नहीं)"
+        ),
+        "pod_more_verified_channels" to mapOf(
+            AppLanguage.ENGLISH to "More Verified Channels (%d)",
+            AppLanguage.URDU to "مزید مستند چینلز (%d)",
+            AppLanguage.ARABIC to "المزيد من القنوات الموثّقة (%d)",
+            AppLanguage.HINDI to "अधिक सत्यापित चैनल (%d)"
+        ),
         "live_status_unconfirmed" to mapOf(
             AppLanguage.ENGLISH to "Live broadcast status cannot be confirmed",
             AppLanguage.URDU to "لائیو نشریات کی تصدیق ممکن نہیں",
@@ -2515,6 +3007,60 @@ object AppLocalization {
             AppLanguage.URDU to "ریکارڈ شدہ ویڈیو چلائیں",
             AppLanguage.ARABIC to "تشغيل التسجيل",
             AppLanguage.HINDI to "रिकॉर्डेड वीडियो चलाएं"
+        ),
+        "live_phase_connecting" to mapOf(
+            AppLanguage.ENGLISH to "CONNECTING",
+            AppLanguage.URDU to "کنیکٹ ہو رہا ہے",
+            AppLanguage.ARABIC to "جارٍ الاتصال",
+            AppLanguage.HINDI to "कनेक्ट हो रहा है"
+        ),
+        "live_phase_reconnecting" to mapOf(
+            AppLanguage.ENGLISH to "RECONNECTING",
+            AppLanguage.URDU to "دوبارہ کنیکٹ ہو رہا ہے",
+            AppLanguage.ARABIC to "إعادة الاتصال",
+            AppLanguage.HINDI to "पुनः कनेक्ट हो रहा है"
+        ),
+        "live_phase_source_unavailable" to mapOf(
+            AppLanguage.ENGLISH to "SOURCE UNAVAILABLE",
+            AppLanguage.URDU to "ذریعہ دستیاب نہیں",
+            AppLanguage.ARABIC to "المصدر غير متاح",
+            AppLanguage.HINDI to "स्रोत अनुपलब्ध"
+        ),
+        "live_source_unavailable_desc" to mapOf(
+            AppLanguage.ENGLISH to "All supported live sources (Official YouTube, Quran Hayat, and Haramain Voice) failed to start playback. Tap Retry or open a source in your browser.",
+            AppLanguage.URDU to "تمام دستیاب لائیو ذرائع (آفیشل یوٹیوب، قرآن حیات، اور حرمین وائس) فی الحال شروع نہیں ہو سکے۔ دوبارہ کوشش کریں یا براؤزر میں کھولیں۔",
+            AppLanguage.ARABIC to "تعذر تشغيل جميع مصادر البث المباشر المدعومة (يوتيوب الرسمي، قرآن حياة، وصوت الحرمين). اضغط على إعادة المحاولة أو افتح مصدراً في المتصفح.",
+            AppLanguage.HINDI to "सभी समर्थित लाइव स्रोत (आधिकारिक यूट्यूब, कुरान हयात और हरमैन वॉइस) अभी शुरू नहीं हो सके। पुनः प्रयास करें या ब्राउज़र में खोलें।"
+        ),
+        "live_fallback_relay_note" to mapOf(
+            AppLanguage.ENGLISH to "Playing via automatic fallback relay of the official Saudi broadcaster signal.",
+            AppLanguage.URDU to "خودکار بیک اپ کے ذریعے سرکاری سعودی نشریات کا ریلے چل رہا ہے۔",
+            AppLanguage.ARABIC to "يتم التشغيل عبر مصدر بديل تلقائي ينقل إشارة البث السعودي الرسمي.",
+            AppLanguage.HINDI to "आधिकारिक सऊदी प्रसारण सिग्नल के स्वचालित फ़ॉलबैक रिले के माध्यम से चल रहा है।"
+        ),
+        "live_sources_label" to mapOf(
+            AppLanguage.ENGLISH to "Stream Sources",
+            AppLanguage.URDU to "نشریاتی ذرائع",
+            AppLanguage.ARABIC to "مصادر البث",
+            AppLanguage.HINDI to "स्ट्रीम स्रोत"
+        ),
+        "live_open_quranhayat" to mapOf(
+            AppLanguage.ENGLISH to "Quran Hayat",
+            AppLanguage.URDU to "قرآن حیات",
+            AppLanguage.ARABIC to "قرآن حياة",
+            AppLanguage.HINDI to "कुरान हयात"
+        ),
+        "live_open_haramainvoice" to mapOf(
+            AppLanguage.ENGLISH to "Haramain Voice",
+            AppLanguage.URDU to "حرمین وائس",
+            AppLanguage.ARABIC to "صوت الحرمين",
+            AppLanguage.HINDI to "हरमैन वॉइस"
+        ),
+        "live_return_to_live" to mapOf(
+            AppLanguage.ENGLISH to "Return to Live Stream",
+            AppLanguage.URDU to "لائیو نشریات پر واپس جائیں",
+            AppLanguage.ARABIC to "العودة إلى البث المباشر",
+            AppLanguage.HINDI to "लाइव स्ट्रीम पर लौटें"
         ),
         // ==================== GLOBAL ZAKAT CALCULATOR ====================
         "zakat_global_subtitle" to mapOf(
@@ -4411,6 +4957,42 @@ object AppLocalization {
             AppLanguage.ARABIC to "تُستمد بيانات المساجد حصراً من خريطة الشارع المفتوحة. قد تغيب بعض المساجد الريفية أو الحديثة غير المضافة بعد.",
             AppLanguage.HINDI to "मस्जिदों की जानकारी केवल OpenStreetMap से आती है। कुछ ग्रामीण या नई मस्जिदें मानचित्र पर न हों; स्थानीय पुष्टि अवश्य करें।"
         ),
+        "mosque_results_count_fmt" to mapOf(
+            AppLanguage.ENGLISH to "%d mosques found (%d km)",
+            AppLanguage.URDU to "%d مساجد ملیں (%d کلومیٹر)",
+            AppLanguage.ARABIC to "تم العثور على %d مساجد (%d كم)",
+            AppLanguage.HINDI to "%d मस्जिदें मिलीं (%d किमी)"
+        ),
+        "mosque_result_single_fmt" to mapOf(
+            AppLanguage.ENGLISH to "1 mosque found (%d km)",
+            AppLanguage.URDU to "1 مسجد ملی (%d کلومیٹر)",
+            AppLanguage.ARABIC to "تم العثور على مسجد واحد (%d كم)",
+            AppLanguage.HINDI to "1 मस्जिद मिली (%d किमी)"
+        ),
+        "mosque_load_more_fmt" to mapOf(
+            AppLanguage.ENGLISH to "Show more mosques (%d remaining)",
+            AppLanguage.URDU to "مزید مساجد دکھائیں (%d باقی)",
+            AppLanguage.ARABIC to "عرض المزيد من المساجد (%d متبقية)",
+            AppLanguage.HINDI to "और मस्जिदें दिखाएँ (%d शेष)"
+        ),
+        "mosque_expand_radius_fmt" to mapOf(
+            AppLanguage.ENGLISH to "Expand search to %d km",
+            AppLanguage.URDU to "دائرہ %d کلومیٹر تک بڑھائیں",
+            AppLanguage.ARABIC to "توسيع البحث إلى %d كم",
+            AppLanguage.HINDI to "खोज का दायरा %d किमी तक बढ़ाएँ"
+        ),
+        "mosque_prev_cd" to mapOf(
+            AppLanguage.ENGLISH to "Previous mosque",
+            AppLanguage.URDU to "پچھلی مسجد",
+            AppLanguage.ARABIC to "المسجد السابق",
+            AppLanguage.HINDI to "पिछली मस्जिद"
+        ),
+        "mosque_next_cd" to mapOf(
+            AppLanguage.ENGLISH to "Next mosque",
+            AppLanguage.URDU to "اگلی مسجد",
+            AppLanguage.ARABIC to "المسجد التالي",
+            AppLanguage.HINDI to "अगली मस्जिद"
+        ),
         "mosque_live_data_badge" to mapOf(
             AppLanguage.ENGLISH to "Live OpenStreetMap data",
             AppLanguage.URDU to "تازہ اوپن اسٹریٹ میپ ڈیٹا",
@@ -4616,10 +5198,22 @@ object AppLocalization {
             AppLanguage.HINDI to "मिली मस्जिदें नाम से फ़िल्टर करें..."
         ),
         "mosque_style_hybrid" to mapOf(
-            AppLanguage.ENGLISH to "Hybrid 3D",
-            AppLanguage.URDU to "ہائبرڈ 3D",
-            AppLanguage.ARABIC to "هجين 3D",
-            AppLanguage.HINDI to "हाइब्रिड 3D"
+            AppLanguage.ENGLISH to "3D Satellite",
+            AppLanguage.URDU to "3D سیٹلائٹ",
+            AppLanguage.ARABIC to "قمر صناعي 3D",
+            AppLanguage.HINDI to "3D सैटेलाइट"
+        ),
+        "mosque_style_satellite_hd" to mapOf(
+            AppLanguage.ENGLISH to "HD Satellite",
+            AppLanguage.URDU to "ایچ ڈی سیٹلائٹ",
+            AppLanguage.ARABIC to "قمر صناعي HD",
+            AppLanguage.HINDI to "HD सैटेलाइट"
+        ),
+        "mosque_street_view_3d" to mapOf(
+            AppLanguage.ENGLISH to "Street View / 3D Maps",
+            AppLanguage.URDU to "اسٹریٹ ویو / 3D میپس",
+            AppLanguage.ARABIC to "التجول الافتراضي / خرائط 3D",
+            AppLanguage.HINDI to "स्ट्रीट व्यू / 3D मैप्स"
         ),
         "mosque_filters_label" to mapOf(
             AppLanguage.ENGLISH to "Filters",

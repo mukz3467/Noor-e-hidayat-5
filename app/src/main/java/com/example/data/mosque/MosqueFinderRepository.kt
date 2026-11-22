@@ -16,7 +16,11 @@ object MosqueFinderRepository {
 
     const val CACHE_STALE_AGE_MS = 24 * 60 * 60 * 1000L // 24 hours
     const val DEDUP_WINDOW_MS = 1800L
-    val RADIUS_OPTIONS_METERS = listOf(1000, 3000, 5000, 10_000, 25_000)
+    const val DEFAULT_PAGE_SIZE = 20
+    val RADIUS_OPTIONS_METERS = listOf(1000, 3000, 5000, 10_000)
+
+    fun nextLargerRadiusMeters(currentRadiusMeters: Int): Int? =
+        RADIUS_OPTIONS_METERS.firstOrNull { it > currentRadiusMeters }
 
     private const val CACHE_DIR_NAME = "mosque_cache"
     private const val LAST_SEARCH_FILE = "last_mosque_search.json"
@@ -262,6 +266,7 @@ object MosqueFinderRepository {
     ) {
         if (liveResult.isSuccess) {
             val payload = liveResult.getOrNull()!!
+            val cleanSorted = OverpassMosqueService.deduplicateMosques(payload.items)
             lastCompletedQueryKey = queryKey
             lastCompletedTimestampMs = payload.fetchedAtMs
             saveCache(
@@ -271,11 +276,11 @@ object MosqueFinderRepository {
                 radiusMeters = radiusMeters,
                 label = label,
                 endpoint = payload.endpointUsed,
-                items = payload.items,
+                items = cleanSorted,
                 timestampMs = payload.fetchedAtMs
             )
             _state.value = _state.value.copy(
-                mosques = payload.items,
+                mosques = cleanSorted,
                 isLoading = false,
                 errorMessage = null,
                 isFromCache = false,
@@ -592,6 +597,6 @@ object MosqueFinderRepository {
                 )
             )
         }
-        return list.sortedBy { it.distanceMeters }
+        return OverpassMosqueService.deduplicateMosques(list)
     }
 }
